@@ -1,6 +1,6 @@
 ---
-title: Surface Book 3 GPU 技術概述
-description: 本文說明在商務用平面15寸模型中，由 Nvidia Quadro RTX 3000 啟用的高級功能。
+title: Surface Book 3 Quadro RTX 3000 技術概觀
+description: 本文將說明使用 Nvidia Quadro RTX 3000 的高級功能，在商務用15寸模型中選取 Surface Book 3，並包含 ISV 測試應用程式的相關資訊。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -8,18 +8,17 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 5/06/2020
+ms.date: 7/02/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: d93008acfdbddd9d47c3a948f2fec392ac83d025
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
-ms.translationtype: MT
+ms.openlocfilehash: 52de90847d85698cba25cc511a4c6eda327c810d
+ms.sourcegitcommit: 1b673d9d3240d6217b36fcc5fea53c23ab8cf367
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831209"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857580"
 ---
-# Surface Book 3 Quadro RTX 3000 技術概述
+# Surface Book 3 Quadro RTX 3000 技術概觀
 
 NVIDIA® Quadro RTX™ 3000 GPU 的 Surface Book 3，專為需要即時轉譯、AI 加速、高級圖形及計算效能的專業人員建立。 Quadro RTX 3000 基本會變更您可以使用的新 Surface Book （3）執行的動作：
 
@@ -89,34 +88,41 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | NVIDIA Optimus                                             | 是             |
 
  
-## App 加速
+## & app 加速的 ISV 測試
 
-下表顯示 Quadro RTX 3000 如何在主要的專業應用程式之間提供明顯的加速速度。 它包含 SPECview perf 13 基準測試結果，比較 Surface Book 3 15 寸與 NVIDIA Quadro RTX 3000，以及從2020年3月的 NVIDIA GeForce GTX 1060 裝置的 Surface Book 2 15-寸。
+如表格3所示，Surface Book 3 （含 Quadro RTX 3000）是由主要的 Isv 進行測試和核准，並能在專業應用程式之間提供極快的加速。 SPECview perf 13 基準測試結果比較 Surface Book 3 15-英寸與 nvidia Quadro RTX 3000，以及使用 NVIDIA GeForce GTX 1060 裝置的 Surface Book 2 15-寸。
 
-**表 3. Surface Book 3 上的 App 加速使用 Quadro RTX 3000**
+**表 3. 使用 Quadro RTX 3000 在 Surface Book 3 上 & 應用程式加速進行 ISV 測試**
 
-| **App**                                     | **Quadro RTX 3000 app 加速功能**<br>                                                                                                                                                                                                                                                                                                                                          |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Adobe Dimension                             | -RTX-加速光線追蹤功能可為2D 演出者和設計工具提供全面的3D 轉譯。                                                                                                                                                                                                                                                                                                     |
-| Adobe 物質 Alchemist                   | -利用 RTX 加速的 AI，輕鬆建立及混合材質。                                                                                                                                                                                                                                                                                                                             |
-| Adobe 物質刷                     | 將素材繪製到3d 模型上（含 RTX 加速 bakers）和 Iray RTX 轉譯，以針對互動式及批次轉譯工作流程產生影像影像。 <br>                                      |
-| Adobe 物質設計工具                    | -撰寫含 RTX 加速 bakers 的程式化資料<br>-使用 NVIDIA Iray 轉譯，包括紋理/物質和點陣圖紋理匯出，以在任何與 MDL 相容的 Iray 中轉譯。<br>-DXR-加速的輕型與環境遮蔽選擇。                                                                                                                                  |
-| Adobe Photoshop                             | -CUDA 核心加速可讓您快速進行編輯，包括 [模糊] 圖庫、[液化]、[智慧銳化] 和 [透視] 等功能，讓您可以順利且快速地修改影像。                                                                                                                                                                        |
-| Adobe Lightroom                             | -更快速地編輯含 GPU 加速視口的高解析度影像，這可讓您更大的3D 場景進行模型，以及更複雜的動畫 rigging。<br>-GPU 加速影像處理可大大改善回應，特別是在4K 或更高解析度的顯示器上。<br>-GPU 加速的已加上 AI-已準備好的 [增強詳細資料]，以微調原始影像的色彩詳細資料。 |
-| Adobe Illustrator                           | -更快速地使用 GPU 加速畫布來平移和縮放，讓圖形設計人員和 illustrators 能夠流暢且互動地在複雜的向量圖形之間移動及放大和縮小。                                                                                                                                                                                                        |
-| 各個<br>Premiere Pro                       | -使用 GPU 加速效果對 CPU 的更快速地編輯及轉譯影片。<br>-GPU CUDA 技術的 GPU 速度效果，可即時進行影片編輯及更快的最終畫面轉譯。<br>-GPU-加速 AI 自動 Reframe 功能，可將橫向影片智慧地轉換為動態追蹤或方形影片。                                           |
-| Autodesk<br>Revit                           | -GPU 加速的視口，可讓您更順暢、更具交互性的設計體驗。<br>-支援協力廠商 GPU-加速的3D 輸出（例如 V-射線與 Enscape）。                                                                                                                                                                                                                                      |
-| Autodesk<br>3ds 最大值                         | -可讓您快速、互動式3D 建模及設計的 GPU 加速視口圖形。<br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br>-與 Surface Book 2 15 相比，速度超過70%。                                                                                                                                               |
-| Autodesk<br>Maya                            | -RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br>-OpenGL 視口加速度。                                                                                                                                                                                                                                                                             |
-| Dassault Systemes<br>Solidworks             | -Solidworks 互動式 Ray 追蹤（視覺效果），由 RT 核心和 Tensor 內核加速;AI-加速 denoiser。<br>-與 Surface Book 2 15 相比，執行的速度超過50%。                                                                                                                                                                                                             |
-| Dassault Systemes<br>3D 體驗平臺 | -CATIA 互動射線追蹤器（即時轉譯），加速了 RT 核心。<br>-Catia 與 Surface Book 2 15 相比，可執行檔速度超過100%。                                                                                                                                                                                                                                                     |
-| ImageVis3D                                  | -與 Surface Book 2 15 相比，執行的速度超過2倍。                                                                                                                                                                                                                                                                                                                                       |
-| McNeel & 關聯<br>Rhino 3D             | -GPU-加速的視口，提供流暢且互動式的建模及設計體驗。<br>-支援 GPU 加速3D 轉譯的週期。                                                                                                                                                                                                                                                     |
-| Siemens NX                                  | -Siemens NX 互動式射線追蹤器（Ray 追蹤錄音室）加速了 RT 核心。<br>-與 Surface Book 2 15 相比，執行的速度超過10倍。                                                                                                                                                                                                                                                 |
-| Esri ArcGIS                                 | -即時的結果，是由於 DL inferencing 利用 tensor 的核心而產生的時間和周數。                                                                                                                                                                                                                                                                                                     |
-| PTC Creo                                    | -Creo 的即時工程模擬工具（Creo 類比活）是以 CUDA 為基礎。<br>-與 Surface Book 2 15 相比，執行的速度超過15%。                                                                                                                                                                                                                                               |
-| Luxion KeyShot                              | -Solidworks、Creo 和 Rhino 使用的協力廠商互動式 Ray 追蹤。 OptiX™ AI-加速 denoising，以 RT 核心為加速。                                                                                                                                                                                                                                                                   |
-| ANSYS<br>探索即時                     | ANSYS 即時工程模擬工具（ANSYS 發現活）建立于 CUDA 上。                                                                                                                                                                                                                                                                                                                  |
+| **App**                                             | **說明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Adobe Dimension**                                 | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>-RTX-加速光線追蹤功能可為2D 演出者和設計工具提供全面的3D 轉譯。                                                                                                                                                                                                                                                                                                             |
+| **Adobe Illustrator**                               | -更快速地使用 GPU 加速畫布來平移和縮放，讓圖形設計人員和 illustrators 能夠流暢且互動地在複雜的向量圖形之間移動及放大和縮小。                                                                                                                                                                                                                                                                                             |
+| **Adobe Lightroom**                                 | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>-更快速地編輯含 GPU 加速視口的高解析度影像，這可讓您更大的3D 場景進行模型，以及更複雜的動畫 rigging。<br><br>-GPU 加速影像處理可大大改善回應，特別是在4K 或更高解析度的顯示器上。<br><br>-GPU 加速的已加上 AI-已準備好的 [增強詳細資料]，以微調原始影像的色彩詳細資料。 |
+| **Adobe Photoshop**                                 | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>-CUDA 核心加速可讓您快速進行編輯，包括 [模糊] 圖庫、[液化]、[智慧銳化] 和 [透視] 等功能，讓您可以順利且快速地修改影像。                                                                                                                                                                              |
+| **各個**<br>**Premiere Pro**                       | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>-使用 GPU 加速效果對 CPU 的更快速地編輯及轉譯影片。<br><br>-GPU CUDA 技術的 GPU 速度效果，可即時進行影片編輯及更快的最終畫面轉譯。<br><br>-GPU-加速 AI 自動 Reframe 功能，可將橫向影片智慧地轉換為動態追蹤或方形影片。                                           |
+| **Adobe 物質 Alchemist**                       | -利用 RTX 加速的 AI，輕鬆建立及混合材質。                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Adobe 物質刷**                         | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>將素材繪製到3d 模型上（含 RTX 加速 bakers）和 Iray RTX 轉譯，以針對互動式及批次轉譯工作流程產生影像影像。                                                                                                                                                                                                                            |
+| **Adobe 物質設計工具**                        | -撰寫含 RTX 加速 bakers 的程式化資料。<br><br>-使用 NVIDIA Iray 轉譯，包括紋理/物質和點陣圖紋理匯出，以在任何與 MDL 相容的 Iray 中轉譯。<br><br>-DXR-加速的輕型與環境遮蔽選擇。                                                                                                                                                                                                              |
+| **ANSYS**<br>**探索即時**                     | ANSYS 即時工程模擬工具（ANSYS 發現活）建立于 CUDA 上。                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Autodesk**<br>**Revit**                           | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-GPU 加速的視口，可讓您更順暢、更具交互性的設計體驗。<br><br>-支援協力廠商 GPU-加速的3D 輸出（例如 V-射線與 Enscape）。                                                                                                                                                                                                                                        |
+| **Autodesk**<br>**3ds 最大值**                         | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-可讓您快速、互動式3D 建模及設計的 GPU 加速視口圖形。<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-與 Surface Book 2 15 相比，速度超過70%。                                                                                                                                                        |
+| **Autodesk**<br>**Maya**                            | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-OpenGL 視口加速度。                                                                                                                                                                                                                                                                                  |
+| **Bentley MicroStation**                            | **Bentley-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Dassault Systemes**<br>**3D 體驗平臺** | -CATIA 互動射線追蹤器（即時轉譯），加速了 RT 核心。<br><br>-Catia 與 Surface Book 2 15 相比，可執行檔速度超過100%。                                                                                                                                                                                                                                                                                                                                     |
+| **Dassault Systemes**<br>**Solidworks**             | -Solidworks 互動式 Ray 追蹤（視覺效果），由 RT 核心和 Tensor 內核加速;AI-加速 denoiser。<br><br>-與 Surface Book 2 15 相比，執行的速度超過50%。                                                                                                                                                                                                                                                                                             |
+| **ImageVis3D**                                      | -與 Surface Book 2 15 相比，執行的速度超過2倍。                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Esri ArcGIS**                                     | -即時的結果，是由於 DL inferencing 利用 tensor 的核心而產生的時間和周數。                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Luxion KeyShot**                                  | -Solidworks、Creo 和 Rhino 使用的協力廠商互動式 Ray 追蹤。 OptiX™ AI-加速 denoising，以 RT 核心為加速。                                                                                                                                                                                                                                                                                                                                                        |
+| **McNeel & 關聯**<br>**Rhino 3D**             | **Rhino-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-GPU-加速的視口，提供流暢且互動式的建模及設計體驗。<br><br>-支援 GPU 加速3D 轉譯的週期。                                                                                                                                                                                                                                                         |
+| **PTC Creo**                                        | -Creo 的即時工程模擬工具（Creo 類比活）是以 CUDA 為基礎。<br><br>-與 Surface Book 2 15 相比，執行的速度超過15%。                                                                                                                                                                                                                                                                                                                                |
+| **Siemens NX**                                      | -Siemens NX 互動式射線追蹤器（Ray 追蹤錄音室）加速了 RT 核心。<br><br>-與 Surface Book 2 15 相比，執行的速度超過10倍。                                                                                                                                                                                                                                                                                                                                    |
+
+
+
+
+
+
 ## Sku
 
 **表 4. 使用 Quadro RTX 3000 Sku 的 Surface Book 3**
@@ -136,6 +142,6 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 ## 深入了解
 
-- [Surface Book 3 GPU 技術概述](surface-book-GPU-overview.md)
+- [Surface Book 3 GPU 技術概觀](surface-book-GPU-overview.md)
 - [商務用 Surface](https://www.microsoft.com/surface/business)
 - [Microsoft 認知工具組（CNTK）](https://docs.microsoft.com/cognitive-toolkit/)
