@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Microsoft Surface
+title: 適用於 IT 專業人員的 Microsoft Surface
 summary: 瞭解如何規劃、部署及管理 Microsoft Surface 和 Surface Hub 裝置。
 brand: windows
 metadata:
@@ -12,43 +12,59 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: 7c723733836ee00e43571714c7df2ca11d3a8a49
-  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.openlocfilehash: d751e7a08f492ed3b5799da08b5d0014123a758f
+  ms.sourcegitcommit: a292b4843d5808745b8320b721829a91d2b1a5d0
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "10837088"
+  ms.lasthandoff: 07/09/2020
+  ms.locfileid: "10861180"
+highlightedContent:
+  items:
+  - title: Surface 裝置文件
+    itemType: learn
+    url: https://docs.microsoft.com/surface/get-started
+  - title: Surface Hub 文件
+    itemType: learn
+    url: https://docs.microsoft.com/surface-hub/index
 additionalContent:
   sections:
-  - title: 適用於 IT 專業人員
+  - title: Surface 資源
+    summary: 尋找您 Microsoft Surface 裝置的資源。
     items:
-    - title: Surface 裝置文件
-      summary: 運用透過雲端結合之 Surface、Windows 和 Office 的威力。 尋找可協助您在組織中規劃、部署及管理 Surface 裝置的工具、逐步指南和其他資源。
-      url: https://docs.microsoft.com/en-us/surface/get-started
-    - title: Surface Hub 文件
-      summary: 瞭解如何部署和管理 Surface Hub 2S，這是多合一數位互動式白板、會議平台及共同作業運算裝置。
-      url: https://docs.microsoft.com/surface-hub/index
-  - title: 其他資源
-    items:
-    - title: 社群
+    - title: Surface 概觀
+      links:
+      - text: 商務用 Surface Go 2
+        url: https://www.microsoft.com/surface/business/surface-go-2
+      - text: 商務用 Surface Book 3
+        url: https://www.microsoft.com/surface/business/surface-book-3
+      - text: 探索所有 Surface 系列產品
+        url: https://www.microsoft.com/surface/business
+    - title: Surface 社群
       links:
       - text: Surface IT 專業人員部落格
         url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
       - text: Surface 裝置技術社群
         url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
-    - title: 學習
+    - title: Surface 說明
       links:
-      - text: Microsoft Learn 上的 Surface 訓練課程
-        url: https://docs.microsoft.com/learn/browse/?term=Surface
-      - text: Surface Hub 2S 採用指南
-        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
-      - text: Microsoft Mechanics Surface 影片
-        url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-    - title: 需要協助？
+      - text: 連絡 Surface 支援
+        url: contact-surface-support.md
+  - title: Surface Hub 資源
+    summary: 尋找您 Microsoft Surface Hub 的資源。
+    items:
+    - title: Surface Hub 概觀
       links:
-      - text: Surface 裝置
-        url: https://support.microsoft.com/products/surface-devices
-      - text: Surface Hub
-        url: https://support.microsoft.com/hub/4343507/surface-hub-help
+      - text: Surface Hub 2S 的新增功能
+        url: /surface-hub/surface-hub-2s-whats-new.md
+      - text: Surface Hub 2S 技術規格
+        url: /surface-hub/surface-hub-2s-techspecs.md
+      - text: 作業系統基本資訊
+        url: /surface-hub/differences-between-surface-hub-and-windows-10-enterprise.md
+    - title: Surface Hub 社群
+      links:
+      - text: Surface Hub 技術社群
+        url: https://techcommunity.microsoft.com/t5/surface-hub/bd-p/SurfaceHub
+    - title: Surface Hub 說明
+      links:
       - text: 連絡 Surface Hub 支援
         url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
