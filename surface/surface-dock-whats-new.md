@@ -12,12 +12,12 @@ ms.date: 6/25/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 92838599a9d05dbe75f1caad948b97c9cb75bcac
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1f6f4a7efb8dc345487e5e5054374f81a91a20d5
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831196"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860633"
 ---
 # 表面停靠2的新功能
 
@@ -35,19 +35,16 @@ ms.locfileid: "10831196"
 - Windows 10 版本1809。 不支援 Windows 7、Windows 8 或非 Surface 主機裝置。 表面固定2可搭配下列 Surface 裝置使用：
 
   - Surface Pro （第5代）
-  - 使用 LTE Advanced 的 Surface Pro （第5代）
   - Surface 膝上型電腦（第1代）
   - Surface Pro 6
   - Surface Book 2
   - Surface Laptop 2
   - Surface Go
-  - 配備 LTE Advanced 的 Surface Go 
   - Surface Pro 7
+  - Surface Pro X 
   - Surface 膝上型電腦3
   - Surface Book 3
   - 表面移2
-  - 含 LTE Advanced 的表面 [移至 2]
-
 
 ## 表面固定2個元件
 
@@ -65,7 +62,6 @@ ms.locfileid: "10831196"
 
   - Surface Book 3
   - 表面移2
-  - 含 LTE Advanced 的表面 [移至 2]
   - Surface Pro 7
   - Surface Pro X
   - Surface 膝上型電腦3
@@ -74,7 +70,6 @@ ms.locfileid: "10831196"
 
   - Surface Pro 6
   - Surface Pro （第5代）
-  - 使用 LTE Advanced 的 Surface Pro （第5代）
   - Surface Laptop 2
   - Surface 膝上型電腦（第1代）
   - Surface Go

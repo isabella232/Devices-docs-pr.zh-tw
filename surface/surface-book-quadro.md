@@ -8,15 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/02/2020
+ms.date: 7/07/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 52de90847d85698cba25cc511a4c6eda327c810d
-ms.sourcegitcommit: 1b673d9d3240d6217b36fcc5fea53c23ab8cf367
+ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857580"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860643"
 ---
 # Surface Book 3 Quadro RTX 3000 技術概觀
 
@@ -106,7 +107,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | **Adobe 物質設計工具**                        | -撰寫含 RTX 加速 bakers 的程式化資料。<br><br>-使用 NVIDIA Iray 轉譯，包括紋理/物質和點陣圖紋理匯出，以在任何與 MDL 相容的 Iray 中轉譯。<br><br>-DXR-加速的輕型與環境遮蔽選擇。                                                                                                                                                                                                              |
 | **ANSYS**<br>**探索即時**                     | ANSYS 即時工程模擬工具（ANSYS 發現活）建立于 CUDA 上。                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Autodesk**<br>**Revit**                           | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-GPU 加速的視口，可讓您更順暢、更具交互性的設計體驗。<br><br>-支援協力廠商 GPU-加速的3D 輸出（例如 V-射線與 Enscape）。                                                                                                                                                                                                                                        |
-| **Autodesk**<br>**3ds 最大值**                         | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-可讓您快速、互動式3D 建模及設計的 GPU 加速視口圖形。<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-與 Surface Book 2 15 相比，速度超過70%。                                                                                                                                                        |
+| **Autodesk**<br>**AutoCad**                         | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-可讓您快速、互動式3D 建模及設計的 GPU 加速視口圖形。<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-與 Surface Book 2 15 相比，速度超過70%。                                                                                                                                                        |
 | **Autodesk**<br>**Maya**                            | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-OpenGL 視口加速度。                                                                                                                                                                                                                                                                                  |
 | **Bentley MicroStation**                            | **Bentley-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Dassault Systemes**<br>**3D 體驗平臺** | -CATIA 互動射線追蹤器（即時轉譯），加速了 RT 核心。<br><br>-Catia 與 Surface Book 2 15 相比，可執行檔速度超過100%。                                                                                                                                                                                                                                                                                                                                     |
