@@ -15,19 +15,19 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 98de32213861aa53ac00a565d4f81f0199995077
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
+ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831193"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868747"
 ---
 # Surface 裝置的最佳支援解決方案
 
 > [!Note]
-> **家用使用者**：本文僅適用于 IT 專業人員和技術支援代理商，且僅適用于 Surface 裝置。 如果您正在尋找有關家用裝置問題的說明，請參閱[Surface 裝置](https://support.microsoft.com/products/surface-devices)說明。
+> **家用使用者**：本文僅適用于 IT 專業人員和技術支援代理商，且僅適用于 Surface 裝置。 如果您正在尋找有關家用裝置問題的說明，請參閱[Surface 支援](contact-surface-support.md?tabs=online)。
 
-這些是 Microsoft 支援解決方案，用於解決您在企業中使用 Surface 裝置時可能會遇到的常見問題。 如果此處未列出您的問題，請[聯絡 Microsoft 支援](https://support.microsoft.com/supportforbusiness/productselection)。
+這些是 Microsoft 支援解決方案，用於解決您在企業中使用 Surface 裝置時可能會遇到的常見問題。 如果此處未列出您的問題，[請聯絡 Surface 支援](contact-surface-support.md?tabs=online)。
 
 ## Surface 驅動程式與固件
 
@@ -54,7 +54,7 @@ Microsoft 會定期發行 Surface 裝置的更新及解決方案。 為了確保
 
 ## 螢幕破裂或刮痕問題
 
-- [連絡 Microsoft 支援服務](https://support.microsoft.com/supportforbusiness/productselection)
+- [連絡 Surface 支援](contact-surface-support.md?tabs=online)
 
 ## 表面電源或電池問題
 
