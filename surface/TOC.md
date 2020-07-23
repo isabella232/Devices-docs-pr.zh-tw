@@ -67,6 +67,7 @@
 ### [Surface DMA 保護](dma-protect.md)
 
 ## 疑難排解
+### [連絡 Surface 支援](contact-surface-support.md)
 ### [Surface 裝置的最佳支援解決方案](support-solutions-surface.md)
 ### [使用商務用 Surface 診斷工具組修正常見的 Surface 問題](surface-diagnostic-toolkit-for-business-intro.md)
 #### [部署商務用 Surface 診斷工具組](surface-diagnostic-toolkit-business.md)
