@@ -2,7 +2,6 @@
 documentType: LandingData
 title: Surface Hub
 metadata:
-  document_id: null
   title: Surface Hub
   description: 尋找可協助您在組織中安裝、設定及管理 Surface Hub 的工具與資源。
   keywords: Surface Hub，Windows 10
@@ -27,7 +26,7 @@ sections:
   - title: 部署
   - items:
       - type: markdown
-        text: ' 取得 Surface Hub 的設定、應用程式管理、安裝以及網路管理等資訊。<br>  <table><tr><td><img src=''images/deploy1.png'' width=''192'' height=''192''><br>**設定 Surface Hub**<br>檢閱準備使用全新體驗來設定 Surface Hub 所需的資訊。<br><a href=''https://docs.microsoft.com/surface-hub/setup-worksheet-surface-hub''>設定工作表</a><br><a href=''https://docs.microsoft.com/surface-hub/first-run-program-surface-hub''>初次執行程式</a><br><a href=''https://docs.microsoft.com/surface-hub/appendix-a-powershell-scripts-for-surface-hub''>PowerShell 指令碼</a></td><td><img src=''images/deploy2.png'' width=''192'' height=''192''><br>**安裝 app**<br>安裝及管理 Surface Hub 上之應用程式的選項。<br><a href=''https://docs.microsoft.com/surface-hub/install-apps-on-surface-hub''>安裝應用程式</a><br><a href=''https://docs.microsoft.com/surface-hub/whiteboard-collaboration''>白板至白板共同作業</a><br><a href=''https://docs.microsoft.com/surface-hub/provisioning-packages-for-surface-hub''>建立佈建套件</a></td><td><img src=''images/deploy3.png'' width=''192'' height=''192''><br>**設定 Surface Hub 網路**<br>Surface Hub 網路案例。<br><a href=''https://docs.microsoft.com/surface-hub/wireless-network-management-for-surface-hub''>無線網路管理</a><br><a href=''https://docs.microsoft.com/surface-hub/use-room-control-system-with-surface-hub''>使用會議室控制系統</a><br><a href=''https://docs.microsoft.com/surface-hub/connect-and-display-with-surface-hub''>使用 Surface Hub 連接其他裝置。</a></td></tr> </table> '
+        text: ' 取得 Surface Hub 的設定、應用程式管理、安裝以及網路管理等資訊。<br>  <table><tr><td><img src=''images/deploy1.png'' width=''192'' height=''192''><br>**設定 Surface Hub**<br>檢閱準備使用全新體驗來設定 Surface Hub 所需的資訊。<br><a href=''https://docs.microsoft.com/surface-hub/setup-worksheet-surface-hub''>設定工作表</a><br><a href=''https://docs.microsoft.com/surface-hub/first-run-program-surface-hub''>初次執行程式</a><br><a href=''https://docs.microsoft.com/surface-hub/appendix-a-powershell-scripts-for-surface-hub''>PowerShell 指令碼</a></td><td><img src=''images/deploy2.png'' width=''192'' height=''192''><br>**安裝應用程式**<br>安裝及管理 Surface Hub 上之應用程式的選項。<br><a href=''https://docs.microsoft.com/surface-hub/install-apps-on-surface-hub''>安裝應用程式</a><br><a href=''https://docs.microsoft.com/surface-hub/whiteboard-collaboration''>白板至白板共同作業</a><br><a href=''https://docs.microsoft.com/surface-hub/provisioning-packages-for-surface-hub''>建立佈建套件</a></td><td><img src=''images/deploy3.png'' width=''192'' height=''192''><br>**設定 Surface Hub 網路**<br>Surface Hub 網路案例。<br><a href=''https://docs.microsoft.com/surface-hub/wireless-network-management-for-surface-hub''>無線網路管理</a><br><a href=''https://docs.microsoft.com/surface-hub/use-room-control-system-with-surface-hub''>使用會議室控制系統</a><br><a href=''https://docs.microsoft.com/surface-hub/connect-and-display-with-surface-hub''>使用 Surface Hub 連接其他裝置。</a></td></tr> </table> '
   - title: 管理
   - items:
       - type: markdown
