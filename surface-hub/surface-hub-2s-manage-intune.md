@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1d1b836c18a41982497bb28c57f379408c04f8a5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832045"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893106"
 ---
 # 使用 Intune 管理 Surface Hub 2S
 
@@ -35,17 +35,27 @@ Surface Hub 2S 可讓 IT 系統管理員使用行動裝置管理（MDM）提供�
 
 在初始設定過程中，在將 Surface Hub 連結至一個已啟用 Intune 自動註冊功能的 Azure AD 租用者帳號時，裝置便會進行 Intune 的自動註冊程序。 如需更多詳細資訊，可參照 [ Windows 裝置適用的 Intune 註冊方法](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods)。 Surface Hub 要成為 Intune 的「相容裝置」，則必須具有 Azure AD 的附屬連結和 Intune 的自動註冊功能。 
 
-## [Windows 10 團隊版] 設定
+## 使用 Intune 管理 Windows 10 小組版設定
 
-選取 [Windows 10 團隊版] 以預先設定 Surface Hub 和 Surface Hub 2S 的 [裝置限制] 設定。
+1. 登入**Microsoft 端點管理員**，選取 [**裝置**設定配置  >  **檔**]  >  **建立設定檔**。 
+2. 在 [**平臺**] 底下，選取 [ **Windows 10 及更新**的  >  **裝置限制（Windows 10 團隊）** ]，然後選取 [**建立**]。 
+3. 您現在可以流覽並選取 [Surface Hub] 和 [Surface Hub 2] 的 [預置裝置限制] 設定。
 
  ![設定 Surface Hub 2S 的裝置限制。](images/sh2-set-intune3.png) <br>
 
-這些設定包括使用者體驗和應用程式行為、Azure Log Analytics 註冊、[維護] 視窗設定、[工作模式] 設定和 Miracast 設定。 適用 [Windows 10 團隊版] 設定的完整清單，可參照 [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)。
+這些設定涵蓋下列類別： App 與體驗、Azure operational insights、維護、會話及無線投影。  
 
-## 其他可支援的設定服務提供者（Csp）
+## 支援的配置服務提供者（Csp）
 
-如需其他可支援的 Csp，請參閱 [Windows 10 中 Surface Hub Csps](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)。
+除了可透過 Intune 主控台直接使用的原則之外，還有許多配置服務提供者（Csp）對應到登錄機碼或檔案。 
+
+Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新的 Csp。 透過 Windows 測試人員計畫在預覽中提供的[Windows 10 Team 2020 更新](surface-hub-install-2020preview.md)，包含超過20個適用于 surface Hub 和 surface hub 2 的新功能和更新裝置管理原則。 這些 MDM 原則賦予 IT 管理員對來自 Microsoft Store 的 app 更新的控制權，以及無線投影設定（例如服務品質與 802.1 x 有線驗證），以及新的隱私權/GDPR 相關設定等。
+
+如需詳細資訊，請參閱下列資源： 
+
+- [設定服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
+- [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+- [Microsoft Surface Hub 支援的 CSPs 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
 
 ## 服務品質（QoS）設定
 

@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/07/2020
+ms.date: 7/20/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
-ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.openlocfilehash: 3bfdcf1d95b058270b741b7959d9161c66652b4c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860643"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893085"
 ---
 # Surface Book 3 Quadro RTX 3000 技術概觀
 
@@ -95,7 +95,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 **表 3. 使用 Quadro RTX 3000 在 Surface Book 3 上 & 應用程式加速進行 ISV 測試**
 
-| **App**                                             | **說明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **App**                                             | **描述**                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Adobe Dimension**                                 | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>-RTX-加速光線追蹤功能可為2D 演出者和設計工具提供全面的3D 轉譯。                                                                                                                                                                                                                                                                                                             |
 | **Adobe Illustrator**                               | -更快速地使用 GPU 加速畫布來平移和縮放，讓圖形設計人員和 illustrators 能夠流暢且互動地在複雜的向量圖形之間移動及放大和縮小。                                                                                                                                                                                                                                                                                             |
@@ -116,7 +116,8 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | **Esri ArcGIS**                                     | -即時的結果，是由於 DL inferencing 利用 tensor 的核心而產生的時間和周數。                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Luxion KeyShot**                                  | -Solidworks、Creo 和 Rhino 使用的協力廠商互動式 Ray 追蹤。 OptiX™ AI-加速 denoising，以 RT 核心為加速。                                                                                                                                                                                                                                                                                                                                                        |
 | **McNeel & 關聯**<br>**Rhino 3D**             | **Rhino-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-GPU-加速的視口，提供流暢且互動式的建模及設計體驗。<br><br>-支援 GPU 加速3D 轉譯的週期。                                                                                                                                                                                                                                                         |
-| **PTC Creo**                                        | -Creo 的即時工程模擬工具（Creo 類比活）是以 CUDA 為基礎。<br><br>-與 Surface Book 2 15 相比，執行的速度超過15%。                                                                                                                                                                                                                                                                                                                                |
+| **PTC Creo**                                        | -Creo 的即時工程模擬工具（Creo 類比活）是以 CUDA 為基礎。<br><br>-與 Surface Book 2 15 相比，執行的速度超過15%。                                                                                                                                                                                        |
+| **Siemens SolidEdge 2020**                                        |  **Siemens-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**                                                                                                                                                                                 |
 | **Siemens NX**                                      | -Siemens NX 互動式射線追蹤器（Ray 追蹤錄音室）加速了 RT 核心。<br><br>-與 Surface Book 2 15 相比，執行的速度超過10倍。                                                                                                                                                                                                                                                                                                                                    |
 
 
@@ -128,7 +129,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 **表 4. 使用 Quadro RTX 3000 Sku 的 Surface Book 3**
 
-| **顯示器** | **處理者**                     | **GPU**                                                                                          | **RAM**    | **儲存體** |
+| **顯示** | **處理者**                     | **GPU**                                                                                          | **RAM**    | **儲存空間** |
 | ----------- | --------------------------------- | ------------------------------------------------------------------------------------------------ | ---------- | ----------- |
 | 15英寸 | 四核 10 Gen 雙核 i7-1065G7 | 英特爾虹彩™加上圖形<br>NVIDIA Quadro RTX 3000。 最大-Q 設計與 6GB GDDR6 圖形記憶體 | 32 LPDDR4x | 512 GB      |
 | 15英寸 | 四核 10 Gen 雙核 i7-1065G7 | 英特爾虹彩™加上圖形<br>NVIDIA Quadro RTX 3000。 最大-Q 設計與 6GB GDDR6 圖形記憶體 | 32 LPDDR4x | 1 TB        |
