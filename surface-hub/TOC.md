@@ -19,7 +19,7 @@
 #### [Surface Hub 2S 連接埠和數字鍵台概觀](surface-hub-2s-port-keypad-overview.md)
 #### [將裝置連接至 Surface Hub 2S](surface-hub-2s-connect.md)
 ### [針對 Microsoft Surface Hub 2S 準備您的環境](surface-hub-2s-prepare-environment.md)
-### [設定 Surface Hub 2S 的簡易驗證](surface-hub-2s-phone-authenticate.md)
+
 
 ## 部署
 ### [Surface Hub 2S 採用與訓練](surface-hub-2s-adoption-kit.md)
@@ -35,6 +35,8 @@
 ### [Surface Hub Teams 應用程式](hub-teams-app.md)
 
 ## 管理
+### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
+### [在 Surface Hub 安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)        
 ### [使用 Microsoft Intune 管理 Surface Hub 2S](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S 設定的本機管理](local-management-surface-hub-settings.md)
 ### [管理裝置帳戶密碼變換](surface-hub-2s-manage-passwords.md)
@@ -45,9 +47,12 @@
 ### [將 ActiveSync 原則套用到裝置帳戶](apply-activesync-policies-for-surface-hub-device-accounts.md)
 ### [在 Surface Hub 2S 上更新手寫筆韌體](surface-hub-2s-pen-firmware.md)
 
+
 ## 安全
 ### [Surface Hub 安全性概述](surface-hub-security.md)
 ### [使用 SEMM 和 UEFI 保護及管理 Surface Hub 2S](surface-hub-2s-secure-with-uefi-semm.md)
+### [在 Surface Hub 的新式驗證](surface-hub-modern-auth.md) 
+### [在 Surface Hub 上設定無密碼登入](surface-hub-2s-phone-authenticate.md) 
 ### [Surface Hub 如何處理 Wi-Fi Direct 的安全性問題](surface-hub-wifi-direct.md)
 
 ## 疑難排解
@@ -88,6 +93,8 @@
 
 ## 管理
 ### [管理 Microsoft Surface Hub](manage-surface-hub.md)
+### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
+### [在 Surface Hub 安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)    
 ### [適用於 Surface Hub 的 PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [遠端 Surface Hub 管理](remote-surface-hub-management.md)
 #### [使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)
@@ -113,6 +120,8 @@
 ## 安全
 ### [使用 Microsoft Authenticator 登入 Surface Hub](surface-hub-authenticator-app.md)
 ### [儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)
+### [在 Surface Hub 的新式驗證](surface-hub-modern-auth.md) 
+### [在 Surface Hub 上設定無密碼登入](surface-hub-2s-phone-authenticate.md) 
 ### [Surface Hub 如何處理 Wi-Fi Direct 的安全性問題](surface-hub-wifi-direct.md)
 
 ## 疑難排解
