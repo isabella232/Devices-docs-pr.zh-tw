@@ -14,16 +14,16 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: 91cde5fdf4a7745d491bd2eb928baca75955b90d
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f41974193d62e4c0cbc1e286976105c20534d906
+ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831395"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10897061"
 ---
 # 管理和部署 Surface 驅動程式與韌體更新
 
-您管理 Surface 驅動程式和固件更新的方式會視您的環境和組織需求而有所不同。 在 Surface 裝置上，固件會公開給作業系統作為驅動程式，並顯示在 [裝置管理器] 中，讓裝置固件及驅動程式能夠使用 Windows Update 或商務用 Windows Update 來自動更新。 雖然這種簡化的方法可能適用于啟動和中小型企業，但大型組織通常需要 IT 系統管理員在內部發佈更新。 這可能會涉及完整的規劃、應用程式相容性測試、試驗及驗證更新，然後再在整個網路上進行最終核准與發佈。
+您管理 Surface 驅動程式和固件更新的方式會視您的環境和組織需求而有所不同。 在 Surface 裝置上，固件會公開給作業系統作為驅動程式，且會顯示在 [裝置管理器] 中。 這可讓裝置固件及驅動程式使用 Windows Update 或商務用 Windows Update 來自動更新。 雖然這種簡化的方法可能適用于啟動和中小型企業，但大型組織通常需要 IT 系統管理員在內部發佈更新。 這可能會涉及完整的規劃、應用程式相容性測試，以及先導和驗證更新，然後再在整個網路上進行最終核准與發佈。
 
 > [!NOTE]
 > 本文適用于技術支援代理商和 IT 專業人員，且僅適用于 Surface 裝置。 如果您正在尋找在家用裝置上安裝 Surface 更新或固件的協助，請參閱[更新 Surface 固件和 Windows 10](https://support.microsoft.com/help/4023505)。
@@ -32,7 +32,7 @@ ms.locfileid: "10831395"
 
 ## 在商業環境中的中央更新管理
 
-Microsoft 有精簡的工具可用於管理裝置，包括驅動程式和固件更新--融入從 devicemanagement.microsoft.com 存取的[Microsoft 端點管理器系統管理中心](https://devicemanagement.microsoft.com/)的單一整合體驗。
+Microsoft 有精簡的工具可用於管理裝置，包括驅動程式和固件更新--融入名為[Microsoft 端點管理員](https://devicemanagement.microsoft.com/)系統管理中心且從[devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/#home)存取的單一整合體驗。
 
 ### 使用 Configuration Manager 和 Intune 管理更新
 
@@ -40,13 +40,13 @@ Microsoft 端點 Configuration Manager 可讓您與 Configuration Manager 用戶
 
 如需詳細步驟，請參閱下列資源：
 
-- [如何在 Configuration Manager 中管理 Surface driver 更新](https://docs.microsoft.com/surface/manage-surface-driver-updates-configuration-manager)
+- [在 Configuration Manager 中管理 Surface 驅動程式更新](https://docs.microsoft.com/surface/manage-surface-driver-updates-configuration-manager)
 - [使用 Configuration Manager 部署應用程式](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications)
 - [端點建構管理員檔](https://docs.microsoft.com/configmgr/)
 
 ### 使用 Microsoft 部署工具組管理更新
 
-在端點設定管理員中包含，Microsoft 部署工具套件（MDT）包含您可能會根據您的環境而要使用的選用部署工具。 這些包括 Windows 評估與部署套件（Windows ADK）、Windows 系統圖像管理器（Windows SIM）、部署映射服務與管理（DISM），以及使用者狀態遷移工具（USMT）。 您可以從 [ [Microsoft 部署工具](https://www.microsoft.com/download/details.aspx?id=54259)] 的 [下載] 頁面下載最新版本的 MDT。
+Microsoft 部署工具組（MDT）包含在端點建構管理員中。 它包含您可能會想要使用的選用部署工具（視您的環境而定）。 這些包括 Windows 評估與部署套件（Windows ADK）、Windows 系統圖像管理器（Windows SIM）、部署映射服務與管理（DISM），以及使用者狀態遷移工具（USMT）。 您可以從 [ [Microsoft 部署工具](https://www.microsoft.com/download/details.aspx?id=54259)] 的 [下載] 頁面下載最新版本的 MDT。
 
 如需詳細步驟，請參閱下列資源：
 
@@ -54,13 +54,13 @@ Microsoft 端點 Configuration Manager 可讓您與 Configuration Manager 用戶
 - [使用 Microsoft Deployment Toolkit 部署 Windows10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 - [使用 Microsoft 部署工具組將 Windows 10 部署到 Surface 裝置](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)
 
-表面驅動程式和固件更新封裝為 Windows Installer （* .msi）檔案。 若要部署這些 Windows 安裝程式套件，您可以使用端點建構管理員或 MDT。 如需針對裝置和作業系統選取正確的 .msi 檔案的相關資訊，請參閱以下有關下載 .msi 檔案的指導方針。
+表面驅動程式和固件更新封裝為 Windows Installer （* .msi）檔案。 若要部署這些 Windows 安裝程式套件，您可以使用端點建構管理員或 MDT。 如需如何為裝置和作業系統選取正確的 .msi 檔案的相關資訊，請參閱下列章節有關下載 .msi 檔案的指導方針。
 
 如需有關如何使用端點建構管理員部署更新的指示，請參閱使用[Configuration Manager 部署應用程式](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications)。 如需如何使用 MDT 部署更新的相關指示，請參閱[使用 Mdt 部署 Windows 10 影像](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)。
 
 **WindowsPE 和 Surface 固件與驅動程式**
 
-端點設定管理員和 MDT 在部署程式期間都使用 Windows 預先安裝環境（WindowsPE）。 WindowsPE 只支援一組有限的基本驅動程式，例如網路介面卡和儲存控制器的驅動程式。 不屬於 WindowsPE 的 Windows 元件驅動程式可能會產生錯誤。 最佳做法是，將部署程式設定為在 WindowsPE 階段只使用所需的驅動程式，就能避免這類錯誤。
+端點設定管理員和 MDT 在部署程式期間都使用 Windows 預先安裝環境（WindowsPE）。 WindowsPE 僅支援一組有限的基本驅動程式，例如網路介面卡和儲存控制器的驅動程式。 不屬於 WindowsPE 的 Windows 元件驅動程式可能會產生錯誤。 最佳做法是，將部署程式設定為在 WindowsPE 階段只使用所需的驅動程式，就能避免這類錯誤。
 
 ### Endpoint Configuration Manager
 
@@ -68,22 +68,22 @@ Microsoft 端點 Configuration Manager 可讓您與 Configuration Manager 用戶
 
 ## 支援的裝置
 
-在 Surface Pro 2 及更新版本中，可使用可下載的 .msi 檔案。 在發行時，此頁面提供最新 Surface 裝置（例如 Surface Pro 7、Surface Pro X 和 Surface 膝上型3） .msi 檔案的相關資訊。
+可下載的 .msi 檔案可供 Surface Pro 2 和更新版本的裝置使用。 在發行時，此頁面提供最新 Surface 裝置（例如 Surface Pro 7 及 Surface 膝上型3） .msi 檔案的相關資訊。
 
 ## 使用 DFCI 管理固件
 
-在 Intune 內建裝置固件設定介面（DFCI）設定檔（現已提供給[公用預覽](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)），Surface UEFI 管理會將新式管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供安全性設定（包括啟動選項和內建週邊設備）的控制權，並針對未來的高級安全性案例奠定基礎。 如需詳細資訊，請參閱：
+透過將裝置固件配置介面（DFCI）設定檔內建到 Intune （現已提供給[公用預覽](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)），Surface UEFI 管理會將新式管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供安全性設定（包括啟動選項和內建週邊設備）的控制權，並針對未來的高級安全性案例奠定基礎。 如需詳細資訊，請參閱下列文章：
 
 - [Surface UEFI 設定的 Intune 管理](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
 - [Ignite 2019：宣佈從 Intune 遠端系統管理 SURFACE UEFI 設定](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)。
 
 ## 更新部署程式的最佳做法
 
-為了維持穩定的環境，強烈建議您使用最新版本的 Windows 10 維護同位。  如需最佳做法建議，請參閱[建立適用于 Windows 10 更新的部署環](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)。
+若要維持穩定的環境，我們強烈建議您使用最新版本的 Windows 10 維護同位。  如需最佳做法建議，請參閱[建立適用于 Windows 10 更新的部署環](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)。
 
 ## 可下載的 Surface 更新套件
 
-Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surface 裝置的所有必要累計驅動程式和固件更新。 更新套件可能包含以下部分或所有元件：
+Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surface 裝置所需的所有必要累計驅動程式和固件更新。 更新套件可能包含以下部分或所有元件：
 
 - Wi-fi 和 LTE
 - 影片
@@ -98,7 +98,7 @@ Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surfa
 ### 下載 .msi 檔案
 
 1. 在 Microsoft 下載中心，流覽以[下載 Surface 的驅動程式和固件](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware)。
-2. 選取與 Surface 模型和 Windows 版本相符的 .msi 檔案名。 .Msi 檔案名包括安裝驅動程式和固件所需的最低 Windows 組建編號。 例如，如下列圖表所示，若要使用 Windows 10 的組建18362來更新 Surface Book 2，請選擇 [ **SurfaceBook2_Win10_18362_19.101.13994.msi]。** 針對 Windows 10 版組建16299的 Surface Book 2，請選擇 [ **SurfaceBook2_Win10_16299_1803509_3.msi**]。
+2. 選取與 Surface 模型和 Windows 版本相符的 .msi 檔案名。 .Msi 檔案名包括安裝驅動程式和固件所需的最低 Windows 組建編號。 例如，請參閱下圖。 若要更新具有 Windows 10 組建18362的 Surface Book 2，請選擇 [ **SurfaceBook2_Win10_18362_19.101.13994.msi]。** 針對 Windows 10 版組建16299的 Surface Book 2，請選擇 [ **SurfaceBook2_Win10_16299_1803509_3.msi**]。
 
     ![圖 1。 下載 Surface 更新](images/fig1-downloads-msi.png)
 

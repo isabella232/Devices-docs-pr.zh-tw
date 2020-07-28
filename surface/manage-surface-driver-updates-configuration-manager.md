@@ -1,5 +1,5 @@
 ---
-title: 在 Configuration Manager 中管理 Surface driver 更新
+title: 在 Configuration Manager 中管理 Surface 驅動程式更新
 description: 本文將說明管理和部署 Surface 裝置的固件與驅動程式更新的可用選項。
 ms.assetid: b64879c4-37eb-4fcf-a000-e05cbb3d26ea
 ms.reviewer: ''
@@ -14,14 +14,14 @@ ms.sitesec: library
 ms.author: daclark
 ms.topic: article
 audience: itpro
-ms.openlocfilehash: 1a9c8c64bd524de58696c73a28795b69cc70a7b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: be32309b26ff6a873c36927cc39595022c4dbb90
+ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831661"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10897071"
 ---
-# 在 Configuration Manager 中管理 Surface driver 更新
+# 在 Configuration Manager 中管理 Surface 驅動程式更新
 
 ## 摘要
 
@@ -119,7 +119,7 @@ ms.locfileid: "10831661"
 
    如果您在前一節的步驟6中找不到您所選取的產品，請仔細檢查是否已儲存 SUP 設定。
 
-   您也可以等到下一個同步處理完成，然後檢查 [Configuration Manager] 主控台的 [軟體更新] 中是否列出 Surface 驅動程式和固件更新。 例如，主控台可能會顯示下列資訊：
+   您也可以等到下一個同步處理完成，然後檢查 [Configuration Manager] 主控台的 [軟體更新] 中是否列出 Surface 驅動程式和固件更新。 例如，主控台可能會顯示下列資訊。
 
    ![所有軟體更新搜尋結果](images/manage-surface-driver-updates-4.png)
 
@@ -162,24 +162,23 @@ ms.locfileid: "10831661"
 
 如果您是從上游 Windows Server Update Services （WSUS）伺服器進行同步處理，而不是 Microsoft Update，請確定上游 WSUS 伺服器已設定為支援及同步處理 Surface 驅動程式更新。 所有下游伺服器都限制在上游 WSUS 伺服器資料庫中存在的更新中。
 
-在 WSUS 中，已分類為驅動程式的68000更新超過個。 為了防止非 Surface 相關的驅動程式與 Configuration Manager 同步處理，Microsoft 會篩選出針對允許清單的驅動程式同步處理。 在新的 [允許] 清單發佈並併入 Configuration Manager 之後，新的驅動程式會在下一次同步處理之後新增到主控台。 Microsoft 旨在取得在每個月的 [允許] 清單中新增至 [允許] 清單的 Surface 驅動程式，使其可供與 Configuration Manager 同步處理。
+在 WSUS 中，已分類為驅動程式的68000更新超過個。 為了防止非 Surface 相關的驅動程式與 Configuration Manager 同步處理，Microsoft 會篩選出針對允許清單的驅動程式同步處理。 在新的 [允許] 清單發佈並併入 Configuration Manager 之後，新的驅動程式會在下一次同步處理之後新增到主控台。 Microsoft 旨在讓 Surface 驅動程式與每月更新版本保持關聯，以讓其可供同步處理至 Configuration Manager。
 
-如果您的 Configuration Manager 環境處於離線狀態，則在您每次將[服務更新](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool)匯入至 Configuration manager 時，都會匯入新的 [允許] 清單。 您也必須先匯入包含驅動程式的[新 WSUS 目錄](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected)，然後才會在 Configuration Manager 主控台中顯示更新。 因為獨立的 WSUS 環境包含的驅動程式多於 Configuration Manager SUP，所以建議您建立具有線上功能的 Configuration Manager 環境，並將它設定為同步處理 Surface 驅動程式。 這提供較小的 WSUS 匯出，與離線環境非常相似。
+如果您的 Configuration Manager 環境處於離線狀態，則每次匯入[服務更新](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool)到 Configuration Manager 時，都會匯入新的 [允許] 清單。 您也必須先匯入包含驅動程式的[新 WSUS 目錄](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected)，然後才會在 Configuration Manager 主控台中顯示更新。 由於獨立的 WSUS 環境所含的驅動程式多於 Configuration Manager SUP，因此我們建議您建立具有線上功能的 Configuration Manager 環境，並將它設定為同步處理 Surface 驅動程式。 這提供較小的 WSUS 匯出，與離線環境非常相似。
 
-如果您的 Configuration Manager 環境是線上且能夠偵測到新的更新，您將會自動收到清單的更新。 如果您沒有看到預期的驅動程式，請查看 WCM. 記錄及 WsyncMgr 是否有任何同步處理失敗。
+如果您的 Configuration Manager 環境是線上且能夠偵測到新的更新，您將會自動收到清單的更新。 如果您沒有看到預期的驅動程式，請查看 WCM .log 及 WsyncMgr 檔案，以瞭解任何同步處理失敗的問題。
 
-**我的 Configuration Manager 環境處於離線狀態，我可以將 Surface 驅動程式手動匯入到 WSUS 嗎？**
+**我的 Configuration Manager 環境處於離線狀態。 我可以將 Surface 驅動程式手動匯入到 WSUS 嗎？**
 
 不。 即使更新已匯入 WSUS，如果 [允許] 清單中未列出更新，就不會匯入 Configuration Manager 主控台進行部署。 您必須使用[服務連線工具](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool)，才能匯入 Configuration Manager 的服務更新，以更新 [允許] 清單。
 
 **我需要哪些替代方法才能部署 Surface 驅動程式和固件更新？**
 
-如需有關如何透過替代通道部署 Surface 驅動程式和固件更新的相關資訊，請參閱[管理 Surface 驅動程式和固件更新](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates)。 如果您想要下載 .msi 或 .exe 檔案，然後透過傳統軟體部署通道進行部署，請參閱[使用 Configuration Manager 讓 Surface 固件保持更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)。
+如需有關如何透過替代通道部署 Surface 驅動程式和固件更新的相關資訊，請參閱[管理 Surface 驅動程式和固件更新](manage-surface-driver-and-firmware-updates.md)。 如果您想要下載 .msi 或 .exe 檔案，然後透過傳統軟體部署通道進行部署，請參閱[使用 Configuration Manager 讓 Surface 固件保持更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)。
 
 ## 其他資訊
 
 如需有關 Surface 驅動程式和固件更新的詳細資訊，請參閱下列文章：
 
-- [下載 Surface 裝置的最新韌體與驅動程式](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)
-- [管理 Surface 的驅動程式和韌體更新](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
-- [Surface 和 System Center Configuration Manager 的考量](https://docs.microsoft.com/surface/considerations-for-surface-and-system-center-configuration-manager)
+- [管理 Surface 的驅動程式和韌體更新](manage-surface-driver-and-firmware-updates.md)
+- [Surface 和 System Center Configuration Manager 的考量](considerations-for-surface-and-system-center-configuration-manager.md)
