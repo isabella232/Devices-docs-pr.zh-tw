@@ -52,6 +52,7 @@
 ### [電池限制設定](battery-limit.md)
 ### [Surface 亮度控制](microsoft-surface-brightness-control.md)
 ### [Surface 資產標記](assettag.md)
+### [適用於 Surface 裝置的電源喚醒](wake-on-power-for-surface.md)
 
 ## 安全
 
