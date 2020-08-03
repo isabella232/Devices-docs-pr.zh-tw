@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 05/11/2020
+ms.date: 07/31/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9233ca1f7e32e2017424e9fb6ceb0556de9d37bd
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831199"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902981"
 ---
 # 部署商務用 Surface 診斷工具組
 
@@ -179,6 +179,14 @@ ms.locfileid: "10831199"
 - [使用命令的 [表面診斷工具] 進行商務用](surface-diagnostic-toolkit-command-line.md)
 
 ## 變更與更新
+
+
+### 版本2.121.139
+*發行日期： 31 2020 年7月*<br>
+此版本的商業表面診斷工具組會新增下列支援：
+
+- 順暢支援體驗
+- 錯誤修正
 
 ### 版本2.94.139。0
 *發行日期：2020年5月11日*<br>

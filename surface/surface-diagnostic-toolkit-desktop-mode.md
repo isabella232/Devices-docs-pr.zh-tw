@@ -1,6 +1,6 @@
 ---
 title: 在桌面模式中使用商務用 Surface 診斷工具組
-description: 如何使用 SDT 來協助貴組織中的使用者執行該工具，以找出並診斷 Surface 裝置的問題。
+description: 如何使用 SDT 來協助貴組織中的使用者執行該工具，以找出並診斷 Surface 裝置的問題，以及直接從工具提交支援要求。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,16 +11,19 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 9e6b34a8d34081fc12cab4851104f0b67c3dfea4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 7/31/2020
+ms.openlocfilehash: ec4a90d0d72956eaa4f98e928d128dca70d49c59
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831191"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902958"
 ---
 # 在桌面模式中使用商務用 Surface 診斷工具組
 
-本主題說明如何使用 Surface 診斷工具箱（SDT），協助貴組織中的使用者執行該工具，以找出並診斷 Surface 裝置的問題。 成功執行 SDT 可以快速判斷問題是否是由失敗的硬體或使用者錯誤所導致。 如需在 SDT 中支援的 Surface 裝置清單，請參閱適用于[企業的部署表面診斷工具](surface-diagnostic-toolkit-business.md)組。
+本主題說明如何使用 Surface 診斷工具箱（SDT），協助貴組織中的使用者執行該工具，以找出並診斷其 Surface 裝置的問題，以及直接從工具提交支援要求。 
+
+成功執行 SDT 可以快速判斷問題是否是由失敗的硬體或使用者錯誤所導致。 如需在 SDT 中支援的 Surface 裝置清單，請參閱適用于[企業的部署表面診斷工具](surface-diagnostic-toolkit-business.md)組。
 
 
 1. 引導使用者從軟體發佈點或網路共用安裝[SDT 套件](surface-diagnostic-toolkit-business.md#create-custom-sdt)。 安裝完成後，您就可以透過一系列測試來引導使用者。 
@@ -32,12 +35,12 @@ ms.locfileid: "10831191"
 
 3. 當 SDT 代表裝置有最新的更新時，請按一下 [**繼續**] 以移至可用測試的目錄，如圖2所示。
 
-    ![從 SDT 選項中選取 ](images/sdt-desk-2.png)
+    ![從 SDT 選項中選取 ](images/sdt1.png)
  *圖2。從 SDT 選項中選取*
 
 4. 您可以選擇執行所有診斷測試。 或者，如果您已懷疑某個特定問題（例如出現錯誤的顯示或電源問題），請按一下 [**選取**] 以從可用的測試中進行選擇，然後按一下 [**執行已選取**]，如圖3所示。 如需每個測試的詳細資料，請參閱下表。 
 
-    ![選取 [硬體測試 ](images/sdt-desk-3.png)
+    ![選取 [硬體測試 ](images/sdt2.png)
  *圖 3]。選取硬體測試*
 
     硬體測試 | 描述
@@ -52,9 +55,15 @@ ms.locfileid: "10831191"
     感應器 | 檢查裝置中不同感應器的運作方式
     硬體 |  檢查不同硬體元件（例如圖形卡和相機）的問題
 
+5. 當所有測試完成時，工具會詢問您是否已修正問題。 
 
+ ![您的問題是否已解決？ ](images/sdt3.png)
+*圖3a。您的問題是否已解決？*
 
-
+6. 如果問題未解決，或是您不知道，您可以**透過選取 [與我們聯繫]** 來提交支援票證，**立即取得協助。**
+ 
+ ![提交支援票證的 ](images/sdt4.png)
+ *數位3b。提交支援票證*
 
 <span id="multiple" />
 
