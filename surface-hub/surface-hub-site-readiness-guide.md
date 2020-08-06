@@ -9,12 +9,12 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f523fcfb29a2a7141dcc13183d7b0bc2801fc796
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 74b48d6fb7501d8c17d17604b5b2dbc9eff308c9
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831416"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916014"
 ---
 # Surface Hub 場地整備指南 
 
@@ -26,7 +26,7 @@ ms.locfileid: "10831416"
 
 ## 網站準備規劃
 
-房間必須足夠大，才能提供良好的觀賞角度，但足夠小，以讓麥克風從房間中的人員挑選清楚的信號。 大部分大約22英尺（七米）的房間將提供良好的會議體驗。 在會議區域中，裝載 Surface Hub 的位置：
+房間必須足夠大，才能提供良好的觀賞角度，但足夠小，以讓麥克風從房間中的人員挑選清楚的信號。 大部分大約22英尺 (七米) 長的房間將提供良好的會議體驗。 在會議區域中，裝載 Surface Hub 的位置：
 
 - 聊天室中的每個人都可以看到它。
 - 人們可以接觸到觸控式螢幕的四個邊緣。
@@ -40,13 +40,13 @@ ms.locfileid: "10831416"
 Surface Hub 會送達：
 - 兩個 Microsoft Surface Hub 畫筆
 - 針對 Surface Hub 自訂的 Microsoft 無線鍵盤
-- 9英尺 NEMA 5-15P （美國標準）以 C13 電源線
+- 9英尺 NEMA 5-15P (美國標準) 以 C13 電源線
 
 您必須提供：
 - Cat 5e 或 Cat 6 網路纜線
-- 顯示纜線（選用）
-- 音訊纜線（選用）
-- 輸入 A 至 B USB 纜線（選用）
+- 顯示 (選用的纜線) 
+- 音訊纜線 (選用) 
+- 輸入 A 至 B USB 纜線 (選用) 
 
 如需有關纜線埠的詳細資訊，請參閱[55 「Microsoft Surface hub 技術資訊](surface-hub-technical-55.md)或[84」 microsoft surface hub 技術資訊](surface-hub-technical-84.md)區段。 如需有關纜線的詳細資訊，請參閱[有線](#wired)連線。 
 
@@ -63,7 +63,7 @@ Microsoft Surface Hub 有內部電腦，不需要外部電腦系統。
     - 其他交流插座 
     - Ethernetports 
     - 音訊埠 
-    - 影片埠（DisplayPort、HDMI、VGA 等等） 
+    - 影片埠 (DisplayPort、HDMI、VGA 等等。 )  
 
 
 ## 當 Surface Hub 到達時
@@ -115,13 +115,14 @@ Surface Hub 很大且很厚，所以讓我們知道它何時送達以及安全�
 由於無線連線是基於 Miracast，因此您不需要纜線或其他設定規劃即可使用。 您的使用者可以在大多數啟用 Miracast 的 Windows 8.1 和 Windows 10 裝置上載入 Miracast。 然後，他們可以從電腦或手機將其顯示專案投影至 Surface Hub 螢幕。
 
 <span id="wired" />
+
 #### 有線連接
 
 使用有線連線時，纜線會將電腦、平板電腦或手機的資訊傳送到 Surface Hub。 有三種視頻纜線選項，它們都使用相同的 USB 2.0 纜線。 纜線束可以包含其中一個或所有的連線選項。
 
-- DisplayPort （DisplayPort 纜線 + USB 2.0 纜線）
-- HDMI （HDMI 電纜 + USB 2.0 纜線）
-- VGA （VGA 電纜 + 3.5 mm 音訊纜線 + USB 2.0 纜線）
+- DisplayPort (DisplayPort 纜線 + USB 2.0 電纜) 
+- HDMI (HDMI 電纜 + USB 2.0 電纜) 
+- VGA (VGA 電纜 + 3.5 mm 音訊纜線 + USB 2.0 纜線) 
 
 例如，若要為所有三個影片選項提供音訊、影片及 touchback 功能，您的有線連線纜線束必須包括：
 
@@ -137,6 +138,6 @@ Surface Hub 很大且很厚，所以讓我們知道它何時送達以及安全�
 
 
 
-## 也請參閱
+## 請參閱
 
 [觀賞影片 (請在快顯媒體播放器中開啟)](https://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  

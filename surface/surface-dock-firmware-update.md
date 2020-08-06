@@ -11,12 +11,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: aab4c67a6a262b11cd5982ebe145afbddfeaa1c9
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 8/05/2020
+ms.openlocfilehash: 331d5122c6c64a99dad48ff6e5a90f38ce3d4ed4
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831282"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916024"
 ---
 # Microsoft Surface Dock 固件更新：適用于 IT 系統管理員的技術資訊
 
@@ -25,7 +26,7 @@ ms.locfileid: "10831282"
 
 本文說明如何使用 Microsoft Surface Dock 固件更新來更新 Surface Dock 固件。 當您在 Surface 裝置上安裝時，它會更新連接至 Surface 裝置的任何 Surface Dock。 
 
-這個工具取代舊版的 Microsoft Surface Dock 更新程式工具，先前可供下載，成為它的 Surface 工具的一部分。 舊版工具已命名為 Surface_Dock_Updater_vx.xx.xxx.x.msi （其中 x 代表版本號碼），而且不能再供下載，也不應該使用。
+這個工具取代舊版的 Microsoft Surface Dock 更新程式工具，先前可供下載，成為它的 Surface 工具的一部分。 舊版工具已命名為 Surface_Dock_Updater_vx.xx.xxx.x.msi (其中 x 表示版本號碼) 且不再提供下載，因此不應使用。
 
 ## 安裝 Surface Dock 固件更新
 
@@ -38,7 +39,7 @@ ms.locfileid: "10831282"
     - 更新需要執行 Windows 10 版本1803或更新版本的 Surface 裝置。
     - 安裝 MSI 檔案時，可能會提示您重新開機表面。 不過，不需要重新開機就能執行更新。
 
-2. 從表面固定（使用電源配接器）中斷 Surface 裝置的連接，請等候大約5秒，然後重新連接。 Surface Dock 固件更新將在背景中悄悄地更新 Dock。 這個程式可能需要幾分鐘的時間才能完成，即使中斷也會繼續。 
+2. 從表面塢站中斷 Surface 裝置 (使用電源配接器) ，請等候大約5秒，然後重新連線。 Surface Dock 固件更新將在背景中悄悄地更新 Dock。 這個程式可能需要幾分鐘的時間才能完成，即使中斷也會繼續。 
 
 ## 監視 Surface Dock 固件更新
 
@@ -57,8 +58,8 @@ ms.locfileid: "10831282"
 4. 事件2007與下列文字表示成功更新：**固件更新已完成。 hr = 0 DriverTelementry EventCode = 2007**。 
     - 如果更新未成功，則事件 ID 2007 將會顯示為**錯誤**事件，而不是**資訊**。 此外，Windows 登錄版中報告的版本不會是最新版本。
 5. 更新完成後，Windows 登錄會顯示更新的 DWORD 值，與目前的工具版本相對應。 如需詳細資訊，請參閱本文的[版本參考](#versions-reference)一節。 例如：
-    - Component10CurrentFwVersion 0x04ac3970 （78395760）
-    - Component20CurrentFwVersion 0x04915a70 （76634736）
+    - Component10CurrentFwVersion 0x04ac3970 (78395760) 
+    - Component20CurrentFwVersion 0x04915a70 (76634736) 
 
 >[!TIP]
 >如果您在事件文字中看到「無法找到來源 SurfaceDockFwUpdate 的事件 ID xxxx 的描述」，就表示這是預期的方式，而且可以忽略。
@@ -71,7 +72,7 @@ ms.locfileid: "10831282"
 
 ## 網路部署
 
-您可以使用 Windows 安裝程式命令（Msiexec.exe）來將 Surface Dock 固件更新部署到網路上的多個裝置。 使用 Microsoft 端點建構管理員或其他部署工具時，請輸入下列語法，以確保安裝為緘默：
+您可以使用 Windows 安裝程式命令 ( # A0) ，將 Surface Dock 固件更新部署到網路上的多個裝置。 使用 Microsoft 端點建構管理員或其他部署工具時，請輸入下列語法，以確保安裝為緘默：
 
 - **Msiexec.exe/i \<path to msi file\> /quiet/norestart** 
 
@@ -99,8 +100,8 @@ ms.locfileid: "10831282"
 
 Surface dock 固件由兩個元件組成：
 
-- **Component10：** 微控制器單元（MCU）固件
-- **Component20：** 顯示埠（DP）固件。
+- **Component10：** (MCU) 固件的微控制器單元
+- **Component20：** 顯示埠 (DP) 固件。
 
 成功完成 Surface Dock 固件更新會產生這些固件元件的新登錄項值。
 
@@ -122,9 +123,9 @@ Surface dock 固件由兩個元件組成：
 
 **表 1. Surface Dock 固件更新的記錄檔**
 
-| 記錄檔                              | 位置                               | 附註                                                                                                                                                                                                         |
+| 記錄檔                              | Location                               | 附註                                                                                                                                                                                                         |
 | -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Dock 固件更新記錄 | 需要指定路徑（請參閱記事） | 此工具的舊版版本會將事件寫入應用程式和服務 Logs\Microsoft Surface Dock 更新程式。                                                                                                  |
+| Surface Dock 固件更新記錄 | 需要指定路徑 (請參閱記事)  | 此工具的舊版版本會將事件寫入應用程式和服務 Logs\Microsoft Surface Dock 更新程式。                                                                                                  |
 | Windows 裝置安裝記錄       | %windir%\inf\setupapi.dev.log           | 如需使用裝置安裝記錄的詳細資訊，請參閱[SetupAPI 記錄](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-)檔。 |
 
 
@@ -154,7 +155,17 @@ Surface dock 固件由兩個元件組成：
 ## 版本參考
 
 >[!NOTE]
->安裝檔案是以下列命名格式發行： **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** （ex： Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi）並預設安裝至 C:\Program Files\SurfaceUpdate。
+>安裝檔案是以下列命名格式發行： **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex： Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) 並預設安裝至 C:\Program Files\SurfaceUpdate。
+
+### 版本1.53.139。0
+*發行日期：2020年8月4日*
+
+此版本的 Surface Dock 固件更新包含錯誤修正及支援：
+- 使用 Surface Pro X 更新 Surface Dock 1。 
+   > [!NOTE]
+   > 如果您正在執行 Surface Pro X，請下載。ARM64 組建。 針對所有其他裝置，請使用 AMD64 組建。 
+ 
+
 
 ### 版本1.42.139 
 *發行日期： 18 2019 年9月*
