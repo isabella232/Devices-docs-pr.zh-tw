@@ -35,8 +35,9 @@
 ### [Surface Hub Teams 應用程式](hub-teams-app.md)
 
 ## 管理
-### [安裝 Windows 10 團隊版 2020 更新預覽版](surface-hub-install-2020preview.md)  
-### [在 Surface Hub 上安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)        
+### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
+### [已知問題 - Windows 10 團隊版 2020 更新](surface-hub-2020-team-update-known-issues.md)
+### [在 Surface Hub 安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)        
 ### [使用 Microsoft Intune 管理 Surface Hub 2S](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S 設定的本機管理](local-management-surface-hub-settings.md)
 ### [管理裝置帳戶密碼變換](surface-hub-2s-manage-passwords.md)
@@ -93,8 +94,8 @@
 
 ## 管理
 ### [管理 Microsoft Surface Hub](manage-surface-hub.md)
-### [安裝 Windows 10 團隊版 2020 更新預覽版](surface-hub-install-2020preview.md)  
-### [在 Surface Hub 上安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)    
+### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
+### [在 Surface Hub 安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)    
 ### [適用於 Surface Hub 的 PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [遠端 Surface Hub 管理](remote-surface-hub-management.md)
 #### [使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)
