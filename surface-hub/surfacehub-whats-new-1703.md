@@ -10,12 +10,12 @@ ms.date: 01/18/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: bdc6e384839606fe6138c75e190d68a84679f5b4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 722309a6b018c32bde329cb7b2cdd68b859fc1ca
+ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831348"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924939"
 ---
 # Windows10 (版本 1703) 中 Microsoft Surface Hub 的新增功能有哪些？
 
@@ -65,7 +65,7 @@ Microsoft 擴充了[透過區域網路傳送 Miracast 串流的能力](miracast-
     
 ## 結束工作階段
 
-**[我已完成]** 現在已更名為 **[結束工作階段]**。 [了解如何使用 [結束工作階段]。](i-am-done-finishing-your-surface-hub-meeting.md) 
+**[我已完成]** 現在已更名為 **[結束工作階段]**。 [了解如何使用 [結束工作階段]。](finishing-your-surface-hub-meeting.md) 
 
 ![結束工作階段](images/end-session.png)
 
