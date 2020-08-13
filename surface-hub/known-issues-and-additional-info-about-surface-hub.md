@@ -5,16 +5,16 @@ ms.assetid: aee90a0c-fb05-466e-a2b1-92de89d0f2b7
 keywords: surface、hub、問題
 ms.prod: surface-hub
 ms.sitesec: library
-author: todmccoy
+author: greg-lindsay
 ms.author: v-todmc
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: ec6746098203b5e91e2aaf3b044d21b81c31c897
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f9b658daa4b398fda442976b7bce2f560a1b39f6
+ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831482"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926265"
 ---
 # Microsoft Surface Hub 已知問題及其他相關資訊
 
@@ -27,5 +27,5 @@ ms.locfileid: "10831482"
 <br/>我們已注意到一組影響 Surface Hub 上的登入和檔存取的問題。 我們正在積極調查這些問題。 如有解決方法，客戶可以重設裝置，並將其中樞設定為使用本機管理員帳戶。 重新配置為使用本機管理員帳戶之後，「我的會議與檔案」就會如期運作。
 - **Azure AD 加入時的單一登入**
 <br/>Surface Hub 是專為公用空格設計的，會影響使用者認證的儲存方式。 因此，目前在裝置加入 Azure AD 時，單一登入的運作方式目前有一些限制。 Microsoft 已注意到這項限制，且正在積極調查解析度的選項。
-- **如果 Surface Hub 在易記名稱中有點字元（.），則可在基礎結構投影上使用 Miracast**
-<br/>如果易記的名稱在名稱（.）中包含句號或點（例如，"Room42"），Surface Hub 使用者可能會遇到投影裝置的問題。 若要解決此問題，請在 [**設定**Surface Hub] 中變更中樞的易記名稱  >  **Surface Hub**  >  ** **，然後重新開機裝置。 Microsoft 正在努力解決這個問題。
+- **如果 Surface Hub 在 [易記名稱] 中有點字元 (，請將針對基礎結構投影的 Miracast 移至 Surface Hub。在易記名稱中 ) **
+<br/>如果易記的名稱在名稱 ( 中包含句號或點，則 Surface Hub 使用者可能會遇到投影裝置的問題。 ) -例如「Room42」。 若要解決此問題，請在 [**設定**Surface Hub] 中變更中樞的易記名稱  >  **Surface Hub**  >  ** **，然後重新開機裝置。 Microsoft 正在努力解決這個問題。
