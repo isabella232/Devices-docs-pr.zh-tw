@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ce77122aecfc9a30ac9dc52dfea7e0b0ccf7e1f
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9158bec3d2285e5e8d4f9f56e582ff2320a34024
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831981"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934873"
 ---
 # 建立佈建套件 (Surface Hub)
 
@@ -95,7 +95,7 @@ ms.locfileid: "10831981"
 <tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>您可以在 Active Directory 中註冊裝置，並指定安全性群組使用「設定」應用程式、註冊 Azure Active Directory 以允許全域系統管理員使用「設定」應用程式，或在裝置上建立本機系統管理員。</br></br>若要在 Active Directory 中註冊裝置，請輸入最低權限使用者帳戶的認證以將裝置加入網域，並指定該安全性群組在 Surface Hub 上擁有系統管理員認證。 當註冊 Active Directory 裝置的佈建套件正套用到已重設的 Surface Hub 時，如果所列的帳戶是網域系統管理員，或是最初設定 Surface Hub 的同一個帳戶，則只會使用相同的網域帳戶。 否則，必須在佈建套件中使用不同的網域帳戶。</br></br>在您使用 Windows 設定設計工具精靈設定大量 Azure AD 註冊前，請<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">設定 Azure AD 加入組織</a>。 您 Azure AD 租用戶中的 <strong>\[每位使用者的裝置數目上限\]</strong> 設定決定您在精靈中使用的大量權杖可使用多少次。 若要在 Azure AD 中註冊裝置，請選取該選項，並為您將使用精靈取得的大量權杖輸入易記的名稱。 設定權杖的到期日 (上限為自您取得權杖起的 30 天)。 按一下 <strong>\[Get bulk token\]</strong> (取得大量權杖)。 在 [ <strong> Let&#39;s 已登入 </strong> ] 視窗中，輸入擁有將裝置加入至 Azure AD 的許可權，然後輸入密碼的帳戶。 按一下 <strong>\[接受\]</strong> 將必要的權限授與 Windows 設定設計工具。</br></br>若要建立本機系統管理員帳戶，請選取該選項，並輸入使用者名稱與密碼。 </br></br><strong>重要：</strong>如果您在佈建套件中建立本機帳戶，您必須使用 <strong>\[設定\] </strong>應用程式每隔 42 天變更一次密碼。 如果在該期內沒有變更密碼，帳戶會被鎖，因而無法登入。  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
 <tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>將 MDM 中的註冊切換為 <strong>\[是\]</strong> 或 <strong>\[否\]</strong>。 </br></br>如果您切換為 <strong>\[是\]</strong>，則必須提供服務帳戶和密碼，或經授權註冊裝置的憑證指紋，此外也必須指定驗證類型。 如果您的 MDM 提供者需要，亦請輸入探索服務、註冊服務及原則服務的 URL。 <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">深入了解使用 MDM 管理 Surface Hub。</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
 <tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>您可以在佈建套件中安裝多個通用 Windows 平台 (UWP) 應用程式。 如需設定方面的協助，請參閱<a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">使用應用程式佈建電腦</a> (英文)。 </br></br><strong>重要： </strong> 雖然嚮導介面可讓您選取傳統的 Win32 應用程式，但只能在將套用至 Surface Hub 的置備套件中包含 UWP app。 如果您包含傳統型 Win32 應用程式，佈建將會失敗。 </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>您不&#39;t 設定此步驟中的任何設定。 它會提供指示以包含內含裝置帳戶清單的設定檔。 設定檔不得包含欄標頭。 當您將佈建套件套用到 Surface Hub 時，如果 USB 磁碟機上包含 Surface Hub 設定檔，您可以從檔案中選取帳戶及裝置的易記名稱。 請參閱<a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">範例設定檔</a>中的範例。</br></br><strong>重要： </strong> 設定檔只能在全新的設定體驗（OOBE）中套用，且只能與使用 windows 10 版本1703發行的 Windows 配置設計工具所建立的預配套件搭配使用。  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>您不&#39;t 設定此步驟中的任何設定。 它會提供指示以包含內含裝置帳戶清單的設定檔。 設定檔不得包含欄標頭。 當您將佈建套件套用到 Surface Hub 時，如果 USB 磁碟機上包含 Surface Hub 設定檔，您可以從檔案中選取帳戶及裝置的易記名稱。 請參閱<a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">範例設定檔</a>中的範例。</br></br><strong>重要：設定檔案 </strong> 只能在全新設定體驗期間套用 (OOBE) ，且只能與使用 windows 10 版本1703發行的 Windows 配置設計工具所建立的預配套件搭配使用。  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
 <tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish"/></br></br>您可以設定密碼保護您的佈建套件。 當您將佈建套件套用到裝置上時，您必須輸入此密碼。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
@@ -107,7 +107,7 @@ Surface Hub 設定檔包含您的裝置可用來與 Exchange 和商務用 Skype 
 
 使用 Microsoft Excel 或其他 CSV 編輯器建立名為 `SurfaceHubConfiguration.csv` 的 CSV 檔。 在該檔案中，以下列格式輸入裝置帳戶及易記名稱清單︰
 
-```
+```console
 <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
 ```
 >[!IMPORTANT]
@@ -116,7 +116,7 @@ Surface Hub 設定檔包含您的裝置可用來與 Exchange 和商務用 Skype 
 
 以下為 `SurfaceHubConfiguration.csv` 的範例。 
 
-```
+```console
 Rainier@contoso.com,password,Rainier Surface Hub
 Adams@contoso.com,password,Adams Surface Hub
 Baker@contoso.com,password,Baker Surface Hub
@@ -156,11 +156,11 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
    
 3. 為您的專案命名，然後按一下 **\[下一步\]**。
 
-4. 選取** [通用於 Windows10 團隊版]**，按一下 **[下一步]**，然後按一下 **[完成]**。
+4. 選取 [ **通用至 Windows 10 小組**]，按一下 **[下一步**]，然後按一下 **[完成]**。
 
     ![ICD 新專案](images/icd-new-project.png)
 
-5. 在專案中 **[可用的自訂項目]** 底下，選取 **[通用小組版本設定]**。
+5. 在專案中，選取 [ **可用的自訂**設定] 底下的 [ **常用團隊設定**]。
 
     ![ICD 通用設定](images/icd-common-settings.png)
 
@@ -201,7 +201,7 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
 
 2. 在 ICD 中，於 **[可用的自訂項目]** 窗格中，移至 **[執行階段設定]** > **[UniversalAppInstall]** > **[DeviceContextAppLicense]**。
 
-3. 輸入 **LicenseProductId** 然後按一下 **[新增]**。 為了保持一致性，請使用應用程式授權中的應用程式授權識別碼。 使用文字編輯器開啟授權檔案。 然後，在 \<License\> 標記中使用**LicenseID**屬性中的值。
+3. 輸入 **LicenseProductId** 然後按一下 **[新增]**。 為了保持一致性，請使用應用程式授權中的應用程式授權識別碼。 使用文字編輯器開啟授權檔案。 然後，在 \<License\> 標記中使用 **LicenseID** 屬性中的值。
 
 4. 選取新的 **[LicenseProductId]** 節點。 針對 **[LicenseInstall]**，按一下 **[瀏覽]** 來尋找並選取您在步驟 1 中重新命名的授權檔案。
 

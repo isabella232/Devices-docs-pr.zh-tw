@@ -11,16 +11,16 @@ audience: Admin
 ms.topic: article
 ms.date: 03/27/2020
 ms.localizationpriority: High
-ms.openlocfilehash: 880aca8d59269d198c4b36a05f2a38ceaaeaab16
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f6022c4fd16cd8afbbea892e73ad831f12b10eaa
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831423"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934853"
 ---
 # Surface Hub 安全性概述
 
-Surface Hub 提供鎖定計算設備，具有執行 Windows 10 團隊版作業系統的自訂平台韌體。 產生的裝置採用傳統「單一使用」安全 kiosk，「只執行所需的」哲學，並為其提供新式工作。 Surface Hub 是建置以支援豐富的共同作業使用者體驗，受到保護以防禦不斷演變的安全性威脅。
+Surface Hub 提供執行 Windows 10 小組作業系統的自訂平臺固件，以鎖定的計算裝置。 產生的裝置採用傳統「單一使用」安全 kiosk，「只執行所需的」哲學，並為其提供新式工作。 Surface Hub 是建置以支援豐富的共同作業使用者體驗，受到保護以防禦不斷演變的安全性威脅。
 
 Surface Hub 內建在 Windows 10 上，提供企業級新式安全性，讓 IT 系統管理員能夠使用 BitLocker、信賴平台模組 2.0 (TPM) 強制執行資料保護，以及使用 Windows Defender (也稱為 Microsoft Defender) 的雲端技術安全性。
 
@@ -28,7 +28,7 @@ Surface Hub 內建在 Windows 10 上，提供企業級新式安全性，讓 IT �
 
 當 Surface Hub 開啟時，就會立即開始安全性通訊協定。 從韌體層級開始，Surface Hub 只會載入作業系統及其元件，以回應多重安全性檢查。 Surface Hub 採用稱為「深入防禦」的策略，其中涉及到分層獨立防護子元件，以便在部分失敗時保護整個系統。 這個產業實務經過實證，在抵禦子元件的潛在單邊入侵和弱點，有很高的效率。
 
-Microsoft 會靜態且安全地設定新式整合可延伸韌體介面 (UEFI)，只從內部儲存體啟動經過驗證的 Windows 10 團隊版作業系統。  執行前，系統會驗證 Surface Hub 上所執行每一行程式碼的簽章。 只有由 Microsoft 所簽署的應用程式 (屬於作業系統或是透過 Microsoft Store 安裝)，才能在 Surface Hub 上執行。 無法符合這些需求的程式碼或應用程式會遭到封鎖。
+新式的整合可延伸韌體介面 (UEFI) 是由 Microsoft 靜態且安全地設定，以僅從內部儲存啟動已驗證的 Windows 10 小組作業系統。  執行前，系統會驗證 Surface Hub 上所執行每一行程式碼的簽章。 只有由 Microsoft 所簽署的應用程式 (屬於作業系統或是透過 Microsoft Store 安裝)，才能在 Surface Hub 上執行。 無法符合這些需求的程式碼或應用程式會遭到封鎖。
 
 Surface Hub 安全性系統包含下列項目：
 

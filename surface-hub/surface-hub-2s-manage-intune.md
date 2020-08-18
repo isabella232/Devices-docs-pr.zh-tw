@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893106"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934863"
 ---
 # 使用 Intune 管理 Surface Hub 2S
 
@@ -35,21 +35,21 @@ Surface Hub 2S 可讓 IT 系統管理員使用行動裝置管理（MDM）提供�
 
 在初始設定過程中，在將 Surface Hub 連結至一個已啟用 Intune 自動註冊功能的 Azure AD 租用者帳號時，裝置便會進行 Intune 的自動註冊程序。 如需更多詳細資訊，可參照 [ Windows 裝置適用的 Intune 註冊方法](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods)。 Surface Hub 要成為 Intune 的「相容裝置」，則必須具有 Azure AD 的附屬連結和 Intune 的自動註冊功能。 
 
-## 使用 Intune 管理 Windows 10 小組版設定
+## 使用 Intune 管理 Windows 10 團隊設定
 
 1. 登入**Microsoft 端點管理員**，選取 [**裝置**設定配置  >  **檔**]  >  **建立設定檔**。 
-2. 在 [**平臺**] 底下，選取 [ **Windows 10 及更新**的  >  **裝置限制（Windows 10 團隊）** ]，然後選取 [**建立**]。 
+2. 在 [**平臺**] 底下，選取 windows 10 小組 (的**windows 10 及更新**的  >  **裝置限制) **然後選取 [**建立**]。 
 3. 您現在可以流覽並選取 [Surface Hub] 和 [Surface Hub 2] 的 [預置裝置限制] 設定。
 
  ![設定 Surface Hub 2S 的裝置限制。](images/sh2-set-intune3.png) <br>
 
 這些設定涵蓋下列類別： App 與體驗、Azure operational insights、維護、會話及無線投影。  
 
-## 支援的配置服務提供者（Csp）
+##  (Csp) 支援的 Configuration services 提供者
 
-除了可透過 Intune 主控台直接使用的原則之外，還有許多配置服務提供者（Csp）對應到登錄機碼或檔案。 
+除了可透過 Intune 主控台直接使用的原則之外，還有許多配置服務提供者 (與登錄機碼或檔案對應的 Csp) 。 
 
-Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新的 Csp。 透過 Windows 測試人員計畫在預覽中提供的[Windows 10 Team 2020 更新](surface-hub-install-2020preview.md)，包含超過20個適用于 surface Hub 和 surface hub 2 的新功能和更新裝置管理原則。 這些 MDM 原則賦予 IT 管理員對來自 Microsoft Store 的 app 更新的控制權，以及無線投影設定（例如服務品質與 802.1 x 有線驗證），以及新的隱私權/GDPR 相關設定等。
+Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新的 Csp。 透過 Windows 測試人員計畫在預覽中提供的 [Windows 10 Team 2020 更新](surface-hub-install-2020preview.md)，包含超過20個適用于 surface Hub 和 surface hub 2 的新功能和更新裝置管理原則。 這些 MDM 原則賦予 IT 管理員對來自 Microsoft Store 的 app 更新的控制權，以及無線投影設定（例如服務品質與 802.1 x 有線驗證），以及新的隱私權/GDPR 相關設定等。
 
 如需詳細資訊，請參閱下列資源： 
 
@@ -63,7 +63,7 @@ Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新�
 
 ### Microsoft Teams 的 QoS 設定 
 
-|**名稱**|**說明**|**OMA-URI**|**類型**|**值**|
+| 名稱 | 說明 | OMA-URI | 類型 | 值 |
 |:------ |:------------- |:--------- |:------ |:------- |
 |**音效連接埠**| 音訊連接埠範圍 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | 字串  | 3478-3479 |
 |**音效 DSCP**| 音訊連接埠標示 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | 整數 | 46 |
@@ -101,7 +101,7 @@ Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新�
 
 若要設定模式，請在自訂 [裝置設定設定檔] 中新增下列設定。
 
-|**名稱**|**說明**|**OMA-URI**|**類型**|**值**|
+| 名稱 | 說明 | OMA-URI | 類型 | 值 |
 |:--- |:--- |:--- |:--- |:--- |
 |**Teams 應用程式識別碼**|App 名稱|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|字串| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Teams 應用程式模式**|Teams 模式|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|整數| 0 或 1 或 2|
