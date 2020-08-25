@@ -8,24 +8,24 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/20/2020
+ms.date: 8/21/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 3bfdcf1d95b058270b741b7959d9161c66652b4c
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: d0783879c3e0cab2f44ea01cdc15b96a1b4e9c21
+ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893085"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "10959955"
 ---
 # Surface Book 3 Quadro RTX 3000 技術概觀
 
 NVIDIA® Quadro RTX™ 3000 GPU 的 Surface Book 3，專為需要即時轉譯、AI 加速、高級圖形及計算效能的專業人員建立。 Quadro RTX 3000 基本會變更您可以使用的新 Surface Book （3）執行的動作：
 
-- **Ray 追蹤**-在使用 30 RT 核心來進行硬體加速的 Ray 追蹤前，產生精美的轉譯、設計和動畫速度。
-- **人工智慧**-使用 GPU 加速 AI 的 240 Tensor 核心版，移除重複、繁瑣的工作及計算密集型作業。
-- **先進的圖形和計算技術**在您的最高效能中使用非凡的速度和互動，並以 1920 CUDA 核心及 6GB GDDR6 記憶體來計算工作負載。
+- **Ray 追蹤** -在使用 30 RT 核心來進行硬體加速的 Ray 追蹤前，產生精美的轉譯、設計和動畫速度。
+- **人工智慧** -使用 GPU 加速 AI 的 240 Tensor 核心版，移除重複、繁瑣的工作及計算密集型作業。
+- **先進的圖形和計算技術** 在您的最高效能中使用非凡的速度和互動，並以 1920 CUDA 核心及 6GB GDDR6 記憶體來計算工作負載。
 
 ## 企業成績方案
 
@@ -33,7 +33,7 @@ NVIDIA® Quadro RTX™ 3000 GPU 的 Surface Book 3，專為需要即時轉譯、
  
 Quadro 包含專為 Quadro RTX 3000 遠端系統管理 Surface Book 3 裝置的專用企業工具。 IT 管理員可以遠端設定圖形系統、儲存/還原配置、連續監視圖形系統，並視需要執行遠端疑難排解。 這些功能以及部署工具可協助最大化正常運作時間並將 IT 支援需求降至最低。
  
-NVIDIA 開發並維持企業（ODE）的 Quadro 最佳驅動程式，這些驅動程式已經過調整、測試和驗證，以提供企業級的穩定性、可靠性、可用性，以及支援延伸產品的可用性。 每個驅動程式版本都涉及超過2000名使用專業應用程式測試套件與測試案例，以及 WHQL 認證的測試人員數。 系統會持續監視安全威脅，併發行定期安全更新，以防範新探索到的漏洞。 此外，透過 Windows Update 發行之前，Quadro 驅動程式也會透過 Surface 工程進行額外的測試層。
+NVIDIA 開發及維護 Quadro 最佳驅動程式，讓企業 (ODE) 經過調整、測試和驗證，以提供企業級穩定性、可靠性、可用性，以及支援延伸產品的可用性。 每個驅動程式版本都涉及超過2000名使用專業應用程式測試套件與測試案例，以及 WHQL 認證的測試人員數。 系統會持續監視安全威脅，併發行定期安全更新，以防範新探索到的漏洞。 此外，透過 Windows Update 發行之前，Quadro 驅動程式也會透過 Surface 工程進行額外的測試層。
  
 
 ## 專為計算密集型工作負載所打造
@@ -41,7 +41,7 @@ NVIDIA 開發並維持企業（ODE）的 Quadro 最佳驅動程式，這些驅�
 Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦的最佳圖形效能，讓高級專業人員能隨時隨地進行工作。
  
 - **創意專業人員，例如設計人員與 animators。** Quadro RTX 可透過 Turing 優化的 ray 追蹤 Api （例如 NVIDIA OptiX、Microsoft DXR 和 Vulkan）來啟用即時電影品質轉譯。
-- **使用大型、複雜電腦輔助設計（CAD）模型和元件的架構師和工程人員。** RTX 平臺的功能是新的 NGX SDK，可將功能強大的 AI 功能 infuse 至視覺應用程式。 這能透過智慧操作來釋放影像的時間和資源、重複執行的工作自動化，以及優化計算密集型程式。
+- **架構師與工程師使用大型、複雜的電腦輔助設計 (CAD) 模型和元件。** RTX 平臺的功能是新的 NGX SDK，可將功能強大的 AI 功能 infuse 至視覺應用程式。 這能透過智慧操作來釋放影像的時間和資源、重複執行的工作自動化，以及優化計算密集型程式。
 - **跨製造業、媒體和娛樂、內科及其他行業的軟體發展人員。** Quadro RTX 利用業界領先的軟體 Sdk 和 Api，透過光線追蹤、深入學習及點陣化功能來加快應用程式開發。
 - **資料科學家使用 Tensor 核心與 CUDA 核心，以加速計算密集型工作與其他深入學習作業。** 透過使用感應器、增加連線能力和深入瞭解，研究人員與開發人員可以讓您從自治機動車到科學研究等所有專案啟用 AI 應用程式。
 
@@ -50,13 +50,13 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 | **元件**                                       | **說明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RT 核心                                            | 專用的硬體式射線式 ray 追蹤技術可讓 GPU 以實際精確的陰影、反射及 refractions 來轉譯電影品質、擁有照片的物件和環境。  即時 ray 追蹤引擎可與 NVIDIA OptiX、Microsoft DXR 和 Vulkan Api 搭配使用，以提供更多的真實感，遠遠超出使用傳統轉譯技術所能達到的程度。 RT 核心使用少量的射線 casted 穿過圖元，加速限制式大量階層（BVH）遍歷和光線轉換函數。                                     |
-| 增強的 tensor 核心                               | 混合式精確度核心專門針對深入學習矩陣演算法而構建，提供與前代相比的訓練的 8x TFLOPS。  Quadro RTX 3000 使用 240 Tensor 核心;每個 Tensor 核心會針對每個時鐘執行64浮點數融合式乘法-add （FMA）運算，每個流式處理多處理器（SM）會在每個時鐘上執行總共1024個浮點運算。 除了支援 FP16/FP32 矩陣運算之外，新的 Tensor 核心新增了 INT8 （每個時鐘2048的整數運算），以及適用于矩陣運算的實驗 INT4 和 INT1 （二進位）精確度模式。 |
-| Turing 優化的軟體                           | 深入學習架構（例如 Microsoft 認知工具（CNTK）、Caffe2、MXNet、TensorFlow 及其他人，提供極快的訓練時間及更高的多重節點訓練效能。 GPU 加速文件庫（例如 cuDNN、cuBLAS 和 TensorRT）可提供較高的效能，以深入瞭解學習與高效能計算（HPC）應用程式。                                                                                                                                                                                           |
+| RT 核心                                            | 專用的硬體式射線式 ray 追蹤技術可讓 GPU 以實際精確的陰影、反射及 refractions 來轉譯電影品質、擁有照片的物件和環境。  即時 ray 追蹤引擎可與 NVIDIA OptiX、Microsoft DXR 和 Vulkan Api 搭配使用，以提供更多的真實感，遠遠超出使用傳統轉譯技術所能達到的程度。 RT 核心使用低數目的射線 casted 穿過圖元，以加速邊界音量階層 (BVH) 遍歷和光線轉換函數。                                     |
+| 增強的 tensor 核心                               | 混合式精確度核心專門針對深入學習矩陣演算法而構建，提供與前代相比的訓練的 8x TFLOPS。  Quadro RTX 3000 使用 240 Tensor 核心;每個 Tensor 核心都會執行64浮點數融合式乘法-新增 (FMA) 每個時鐘的作業，以及每個流式處理多處理器 (SM) 每個時鐘總共執行1024個別的浮點運算。 除了支援 FP16/FP32 矩陣作業之外，新的 Tensor 核心新增了 INT8 (2048 每個時鐘) 的整數運算，以及實驗 INT4 和 INT1 (二元) 精度模式，以進行矩陣運算。 |
+| Turing 優化的軟體                           | 深入瞭解 Microsoft 認知工具組 (CNTK) 、Caffe2、MXNet、TensorFlow 及其他人，提供極快的訓練時間及更高的多重節點訓練效能。 GPU 加速文件庫（例如 cuDNN、cuBLAS 和 TensorRT）可提供較高的效能來進行深入學習推理，以及高效能的計算 (HPC) 應用程式。                                                                                                                                                                                           |
 | NVIDIA CUDA 平行計算平臺             | 從本機執行標準程式設計語言（例如，C/c + + 和 Fortran），以及 Api （例如 OpenCL、OpenACC 和直接計算），以加速諸如光線追蹤、影片和影像處理等技術，以及計算流體的動態。                                                                                                                                                                                                                                                                                                                                        |
-| 高級流式處理多處理器（SM）架構 | 合併的共用記憶體與 L1 快取會大大改善效能，同時簡化程式設計並減少達到最佳應用程式效能所需的調整。                                                                                                                                                                                                                                                                                                                                                                                                |
+|  (SM) 架構的高級流式處理多處理器 | 合併的共用記憶體與 L1 快取會大大改善效能，同時簡化程式設計並減少達到最佳應用程式效能所需的調整。                                                                                                                                                                                                                                                                                                                                                                                                |
 | 高效能 GDDR6 記憶體             | Quadro RTX 3000 功能6GB 的框架緩衝區，讓它成為處理大型資料集與延遲區分應用程式的理想平臺。                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 單一指令、多個執行緒（SIMT）          | 新的獨立執行緒排程功能可在小型作業間共用資源，以進行更精細的同步處理及在平行線程之間共同作業。                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 單一指令、多個執行緒 (SIMT)           | 新的獨立執行緒排程功能可在小型作業間共用資源，以進行更精細的同步處理及在平行線程之間共同作業。                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 混合式精確度計算                           | 16位浮點精度計算可讓您訓練及部署較大的神經網路。 透過獨立的並行整數和浮點數據路徑，Turing SM 能使用混合式計算和定址計算來更有效率地處理工作負載。                                                                                                                                                                                                                                                                                          |
 | 動態負載平衡                              | 提供圖形的 GPU 資源的動態分配功能，並視需要計算工作，以最大化資源利用率。                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 計算搶佔                                  | 指令等級的搶佔可提供更精細的計算任務控制，以避免長時間執行的應用程式不需要獨佔系統資源或超時。                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -80,8 +80,8 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | 著色器模型                                               | 5.1             |
 | DirectX                                                    | 12.1            |
 | PCIe 產生                                            | 3               |
-| 單精確度浮點效能（TFLOPS，峰值） | 5.4             |
-| Tensor 效能（頂端、峰值）                            | 42.9            |
+| 單精確度浮點效能 (TFLOPS、峰值)  | 5.4             |
+| Tensor 效能 (頂端、峰值)                             | 42.9            |
 | NVIDIA FXAA/TX AA 消除鋸齒                             | 是             |
 | 影片的 GPU 直接                                       | 是             |
 | Vulkan 支援                                             | 是             |
@@ -105,20 +105,20 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | **Adobe 物質 Alchemist**                       | -利用 RTX 加速的 AI，輕鬆建立及混合材質。                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Adobe 物質刷**                         | **Adobe-在 Surface Book 3 中使用 Quadro RTX 3000 進行測試及核准**<br><br>將素材繪製到3d 模型上（含 RTX 加速 bakers）和 Iray RTX 轉譯，以針對互動式及批次轉譯工作流程產生影像影像。                                                                                                                                                                                                                            |
 | **Adobe 物質設計工具**                        | -撰寫含 RTX 加速 bakers 的程式化資料。<br><br>-使用 NVIDIA Iray 轉譯，包括紋理/物質和點陣圖紋理匯出，以在任何與 MDL 相容的 Iray 中轉譯。<br><br>-DXR-加速的輕型與環境遮蔽選擇。                                                                                                                                                                                                              |
-| **ANSYS**<br>**探索即時**                     | ANSYS 即時工程模擬工具（ANSYS 發現活）建立于 CUDA 上。                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **ANSYS**                     | **ANSYS-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-ANSYS 以 CUDA 為基礎的即時工程模擬工具。                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Autodesk**<br>**Revit**                           | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-GPU 加速的視口，可讓您更順暢、更具交互性的設計體驗。<br><br>-支援協力廠商 GPU-加速的3D 輸出（例如 V-射線與 Enscape）。                                                                                                                                                                                                                                        |
 | **Autodesk**<br>**AutoCad**                         | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-可讓您快速、互動式3D 建模及設計的 GPU 加速視口圖形。<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-與 Surface Book 2 15 相比，速度超過70%。                                                                                                                                                        |
 | **Autodesk**<br>**Maya**                            | **Autodesk-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-RTX-加速的射線追蹤和 AI denoising，並使用預設的 Arnold 轉譯器。<br><br>-OpenGL 視口加速度。                                                                                                                                                                                                                                                                                  |
 | **Bentley MicroStation**                            | **Bentley-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **Dassault Systemes**<br>**3D 體驗平臺** | -CATIA 互動射線追蹤器（即時轉譯），加速了 RT 核心。<br><br>-Catia 與 Surface Book 2 15 相比，可執行檔速度超過100%。                                                                                                                                                                                                                                                                                                                                     |
-| **Dassault Systemes**<br>**Solidworks**             | -Solidworks 互動式 Ray 追蹤（視覺效果），由 RT 核心和 Tensor 內核加速;AI-加速 denoiser。<br><br>-與 Surface Book 2 15 相比，執行的速度超過50%。                                                                                                                                                                                                                                                                                             |
+| **Dassault Systemes**<br>**3D 體驗平臺** | 為 CATIA 互動式 Ray 追蹤 (即時轉譯) 由 RT 核心加速。<br><br>-Catia 與 Surface Book 2 15 相比，可執行檔速度超過100%。                                                                                                                                                                                                                                                                                                                                     |
+| **Dassault Systemes**<br>**Solidworks**             | -Solidworks 互動射線追蹤 (視覺化) 透過 RT 核心和 Tensor 內核加速;AI-加速 denoiser。<br><br>-與 Surface Book 2 15 相比，執行的速度超過50%。                                                                                                                                                                                                                                                                                             |
 | **ImageVis3D**                                      | -與 Surface Book 2 15 相比，執行的速度超過2倍。                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Esri ArcGIS**                                     | -即時的結果，是由於 DL inferencing 利用 tensor 的核心而產生的時間和周數。                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Luxion KeyShot**                                  | -Solidworks、Creo 和 Rhino 使用的協力廠商互動式 Ray 追蹤。 OptiX™ AI-加速 denoising，以 RT 核心為加速。                                                                                                                                                                                                                                                                                                                                                        |
 | **McNeel & 關聯**<br>**Rhino 3D**             | **Rhino-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**<br><br>-GPU-加速的視口，提供流暢且互動式的建模及設計體驗。<br><br>-支援 GPU 加速3D 轉譯的週期。                                                                                                                                                                                                                                                         |
-| **PTC Creo**                                        | -Creo 的即時工程模擬工具（Creo 類比活）是以 CUDA 為基礎。<br><br>-與 Surface Book 2 15 相比，執行的速度超過15%。                                                                                                                                                                                        |
+| **PTC Creo**                                        |**PTC-已在 Surface Book 3 中使用 Quadro RTX 3000 進行測試和核准**<br><br> -Creo 的即時工程模擬工具 (Creo CUDA 上建立的類比即時) 。<br><br>-與 Surface Book 2 15 相比，執行的速度超過15%。                                                                                                                                                                                        |
 | **Siemens SolidEdge 2020**                                        |  **Siemens-已針對 Surface Book 3 （含 Quadro RTX 3000）測試及核准**                                                                                                                                                                                 |
-| **Siemens NX**                                      | -Siemens NX 互動式射線追蹤器（Ray 追蹤錄音室）加速了 RT 核心。<br><br>-與 Surface Book 2 15 相比，執行的速度超過10倍。                                                                                                                                                                                                                                                                                                                                    |
+| **Siemens NX**                                      | -Siemens NX 互動式 Ray 追蹤 (Ray 追蹤 Studio) 由 RT 核心加速。<br><br>-與 Surface Book 2 15 相比，執行的速度超過10倍。                                                                                                                                                                                                                                                                                                                                    |
 
 
 
@@ -129,7 +129,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 **表 4. 使用 Quadro RTX 3000 Sku 的 Surface Book 3**
 
-| **顯示** | **處理者**                     | **GPU**                                                                                          | **RAM**    | **儲存空間** |
+| **顯示** | **處理器**                     | **GPU**                                                                                          | **RAM**    | **儲存空間** |
 | ----------- | --------------------------------- | ------------------------------------------------------------------------------------------------ | ---------- | ----------- |
 | 15英寸 | 四核 10 Gen 雙核 i7-1065G7 | 英特爾虹彩™加上圖形<br>NVIDIA Quadro RTX 3000。 最大-Q 設計與 6GB GDDR6 圖形記憶體 | 32 LPDDR4x | 512 GB      |
 | 15英寸 | 四核 10 Gen 雙核 i7-1065G7 | 英特爾虹彩™加上圖形<br>NVIDIA Quadro RTX 3000。 最大-Q 設計與 6GB GDDR6 圖形記憶體 | 32 LPDDR4x | 1 TB        |
@@ -146,4 +146,4 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 - [Surface Book 3 GPU 技術概觀](surface-book-GPU-overview.md)
 - [商務用 Surface](https://www.microsoft.com/surface/business)
-- [Microsoft 認知工具組（CNTK）](https://docs.microsoft.com/cognitive-toolkit/)
+- [Microsoft 認知工具組 (CNTK) ](https://docs.microsoft.com/cognitive-toolkit/)
