@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7d79fab22b62e6ef29832be6241c484e9caf72e0
-ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
+ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
+ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10959945"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963583"
 ---
 # 重設及恢復 Surface Hub 2
 
@@ -60,9 +60,9 @@ ms.locfileid: "10959945"
 
 1. 關閉裝置：
 
-   1. 按向上鍵按鈕時，按下 [電源] 按鈕。
+   1. 按下 [音量] 按鈕時，按下 [電源] 按鈕。
    1. 持續按兩個按鈕，直到您看到 [Windows 標誌]。
-   1. 放開 [電源] 按鈕，但繼續按住音量按鈕，直到安裝 UI 開始。
+   1. 放開 [電源] 按鈕，但繼續按住 [音量] 按鈕，直到安裝 UI 開始。
 
    ![* 使用 [音量] 和 [電源] 按鈕來啟動復原 *](images/sh2-keypad.png) <br>
    **圖 2. [音量] 和 [電源] 按鈕**
