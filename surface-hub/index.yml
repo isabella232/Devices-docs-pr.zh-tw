@@ -14,19 +14,19 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: a90db8580a7dba5adab63636ce2a0a238aae65b2
-  ms.sourcegitcommit: 3b18d846bb68149c45b13d9ff122e993440b1f9e
+  ms.openlocfilehash: 16e4f74623e3dfdcd2aafd43a80950612f0029c7
+  ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "10917501"
+  ms.lasthandoff: 09/01/2020
+  ms.locfileid: "10986315"
 landingContent:
 - title: 準備使用 Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
-    - text: 針對公開預覽釋出新 Surface Hub OS 更新
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823
+    - text: 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
+      url: surface-hub-2s-migrate-os.md
     - text: 安裝 Windows 10 團隊版 2020 更新預覽組建
       url: surface-hub-install-2020preview.md
     - text: 在 Surface Hub 安裝及設定新版 Microsoft Edge
