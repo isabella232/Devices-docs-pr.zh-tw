@@ -14,12 +14,12 @@ manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
 ms.date: 09/01/2020
-ms.openlocfilehash: a6ea1742ab767a99e7b4868e56d081bf0016785b
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
+ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986325"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993663"
 ---
 # Microsoft Surface Enterprise 管理模式
 
@@ -92,7 +92,7 @@ Surface UEFI 配置套件是在 Surface 裝置上實現及管理 SEMM 的主要�
 ### 使用 SEMM 設定高級設定
 **表 1. 進階設定**
 
-| 設定                            | 描述                                                                                                                                                                                        |
+| 設定                            | 說明                                                                                                                                                                                        |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 適用於 PXE 開機 的 IPv6                  | 可讓您管理 PXE 啟動的 IPv6 支援。 如果您未設定此設定，則會停用 IPv6 啟動的 IPv6 支援。                                                                               |
 | 替代開機                     | 您可以在啟動期間按下 [音量] 按鈕和 [電源] 按鈕，來管理使用替代啟動順序直接從 USB 或乙太裝置啟動。 如果您未設定此設定，則會啟用備用啟動。 |
@@ -209,10 +209,10 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 1.  在您的 C：磁片磁碟機上建立一個資料夾，您將在此儲存腳本;例如，C:\SEMM。
 2.  將範例腳本複製到記事本或對等的文字編輯器，然後將檔案儲存為 PowerShell 腳本 (. ps1) 。
 3.  使用系統管理員認證登入您的電腦，並開啟提升許可權的 PowerShell 會話。
-4.  確定您的許可權已設定為允許腳本執行。 除非您修改執行原則，否則預設會封鎖腳本執行。 若要深入瞭解，請參閱關於執行原則。
+4.  確定您的許可權已設定為允許腳本執行。 除非您修改執行原則，否則預設會封鎖腳本執行。 若要深入瞭解，請參閱 [關於執行原則](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies)。
 5.  在命令提示字元中，輸入腳本的完整路徑，然後按 Enter。 此腳本會建立名為 TempOwner 的示範證書。
 
-或者，您可以使用 PowerShell 建立自己的自我簽署憑證。 如需詳細資訊，請參閱下列 PowerShell 檔： [新-SelfSignedCertificate] (https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)
+或者，您可以使用 PowerShell 建立自己的自我簽署憑證。 如需詳細資訊，請參閱下列 PowerShell 檔： [ [新-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)]。
 
 
 
