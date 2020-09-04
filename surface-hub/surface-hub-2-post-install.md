@@ -1,6 +1,6 @@
 ---
-title: 適用于 Surface Hub 的 Windows 10 安裝後配置
-description: 適用于 Surface Hub 的 Windows 10 安裝後配置
+title: 在 Surface Hub 2 上設定 Windows 10 專業版或企業版
+description: 本文包含可確保使用個人化大型螢幕觸控和手寫筆電腦時的最佳體驗的建議。
 keywords: Surface Hub、Windows 10、桌面、安裝、設定
 ms.prod: surface-hub
 ms.mktglfcycl: deploy
@@ -13,14 +13,14 @@ ms.audience: itpro
 author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d6a1cdb2cac01b48c80e0fa4b7ccb6d3bcdb76ac
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 47852284c35d213b81dd7b87ca875b400d8c713f
+ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986426"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "10994589"
 ---
-# 適用于 Surface Hub 的 Windows 10 安裝後配置
+# 在 Surface Hub 2 上設定 Windows 10 專業版或企業版
 
 **適用于： Surface Hub 秒** 
 
@@ -135,14 +135,20 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 若要將圖示新增到工作列，以啟用單一觸控螢幕鎖定，類似 Windows-L 鍵盤快速鍵： 
 
 1.  在桌面上按一下並按住或按一下滑鼠右鍵，然後選取 [**新增**  >  **快速鍵**  >  **流覽**  >  **桌面**] [  >  **OK**  >  **下一步**]。
-2.  提供快捷方式的名稱，例如 **鎖定我的電腦**，然後選取 **[完成]**。
-3.  以滑鼠右鍵按一下或輕觸並按住桌面上新建立的快捷方式，然後選取 [ **屬性**]。 在 [ **快捷方式** ] 索引標籤上的 [ **目標** ] 欄位中，輸入下列內容： **Rundll32.exe User32.dll、LockWorkStation**
-4.  選取 [ **變更] 圖示** 按鈕，然後流覽至 [ **C:\Windows\System32\imageres.dll** ]，然後選取要使用的圖示。 
-5. 請參閱下列範例：
+
+1.  提供快捷方式的名稱，例如 **鎖定我的電腦**，然後選取 **[完成]**。
+
+1.  以滑鼠右鍵按一下或輕觸並按住桌面上新建立的快捷方式，然後選取 [ **屬性**]。 在 [ **快捷方式** ] 索引標籤上的 [ **目標** ] 欄位中，輸入下列內容： **Rundll32.exe User32.dll、LockWorkStation**
+
+1.  選取 [ **變更] 圖示** 按鈕，然後流覽至 [ **C:\Windows\System32\imageres.dll** ]，然後選取要使用的圖示。 
+
+    請參閱下列範例：
 
     ![選擇圖示](images/lock.png)
-6.  選取 **[確定]** 儲存快捷方式。
-7.  以滑鼠右鍵按一下或輕觸並按住快速鍵，然後選取 [ **釘選到工作列**]。
+    
+1.  選取 **[確定]** 儲存快捷方式。
+
+1.  以滑鼠右鍵按一下或輕觸並按住快速鍵，然後選取 [ **釘選到工作列**]。
 
 ## 應用程式
 
@@ -151,14 +157,16 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 若要更新所有已安裝的 Microsoft Store 應用程式：
 
 1. 開啟 Microsoft Store 應用程式，然後選取右上角的 [ **查看更多** 省略號]。
-2. 選取 [ **下載與更新**]。
-2. 選取 [ **取得更新**]。
+2. 選取 **[下載和更新]**。
+2. 選取 **[取得更新]**。
 
 ### Microsoft Whiteboard
 
 若要安裝 Microsoft 白板：
 
-1. 選取工作列右下角的 [ **Windows Ink 工作區** ] 圖示 ![ ](images/ink.png) ，然後下載 [ **白板**]。
+ - 選取工作列右下角的 [ **Windows Ink 工作區** ] 圖示，然後下載 [ **白板**]。
+ 
+   ![筆跡工作區](images/ink.png) 
 
 或者，您可以從 Microsoft 網上商店安裝白板：
 
@@ -275,9 +283,9 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 
 1. 搜尋 **軟體中心** 並將它開啟。
 2. 選取 [功能窗格] 中的 **選項** 。
-3. 展開 [ **電源管理** ] 區段，然後選取 [ **不將 IT 部門的電源設定套用至此電腦**] 核取方塊。
+3. 展開 [ **電源管理** ] 區段，然後選取 [ **不要將 IT 部門的電源設定套用至此電腦**]。
 
-  ![軟體設定](images/soft-cntr.png)
+   ![軟體設定](images/soft-cntr.png)
 
 ### 音效設定
 
@@ -327,4 +335,4 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 
 ## 相關主題
 
-[在 Surface Hub 2 上遷移至 Windows 10 專業版或企業版](surface-hub-2s-migrate-os.md)
+[移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
