@@ -35,8 +35,8 @@
 ### [Surface Hub Teams 應用程式](hub-teams-app.md)
 
 ## 管理
-### [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
-### [Surface Hub 2 的 Windows 10 安裝後配置](surface-hub-2-post-install.md)
+### [在 Surface Hub 2 上移轉到 Windows 10 專業版或企業版](surface-hub-2s-migrate-os.md)
+### [Surface Hub 2 的 Windows 10 安裝後設定](surface-hub-2-post-install.md)
 ### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
 ### [已知問題 - Windows 10 團隊版 2020 更新](surface-hub-2020-team-update-known-issues.md)
 ### [在 Surface Hub 安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)        
