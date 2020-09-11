@@ -1,7 +1,7 @@
 ---
 title: 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 description: 本文將說明從 Surface Hub 2 上的 Windows 10 小組遷移到 Windows 10 專業版或 Windows 10 企業版的程式。
-keywords: 使用逗號分隔值
+keywords: Surface Hub 桌面，Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/08/2020
+ms.date: 09/09/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: e47ee735c0ba1cc0782c892b64d50f7e9d09f355
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+ms.openlocfilehash: 5431cb9c11fbcfadf0ef517164521c237fb6b3bb
+ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004485"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009621"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -232,7 +232,7 @@ SEMM 套件必須使用憑證加以保護，才能驗證設定檔的簽名，然
 
    ![選取 [管理] & 從 USB 安裝](images/shm-fig21.png)
    
-5. 選取 [ **立即重新開機**]，如下所示。 裝置將會關閉。
+5. 選取 [ **立即重新開機**]，如下所示。 裝置將會重新開機，並在畫面中間顯示白色4方形標誌，然後將它關閉。
 
    ![選取 [立即重新開機]](images/shm-fig25.png)
    
@@ -245,7 +245,7 @@ SEMM 套件必須使用憑證加以保護，才能驗證設定檔的簽名，然
    > [!NOTE]
    > 一旦您在裝置上啟用 SEMM，就會套用新的 UEFI 設定 **EnableOSMigration** 。 您將無法再存取 Windows 10 小組，必須繼續進行下一個步驟，並安裝 Windows 10 專業版或 Windows 10 Enterprise。 
 
-8. 裝置將會重新開機，顯示畫面中間的白色四個方形，然後再次關閉。
+8. 裝置將會重新開機，在畫面中間顯示白色4方形標誌，然後再按一次將它關閉
 
 ### 安裝 Windows 10 專業版或企業版
 
@@ -253,7 +253,7 @@ SEMM 套件必須使用憑證加以保護，才能驗證設定檔的簽名，然
 
 2. 裝置將會啟動，您會在畫面中間看到白色的4方形，然後您會在白色四個方形標誌下方看到旋轉的圓形。
 
-3. 如果裝置不會自動引導至 USB 磁片磁碟機，請關閉裝置 (拔下電源線，然後再插回 [) ]，然後按下再放開 [電源] 按鈕，然後按住 [音量] 按鈕，直到您看到 [四個方形標誌] 下方的旋轉圓形。
+3. 如果裝置不會自動引導至 USB 磁片磁碟機，請關閉裝置電源 (拔下電源線，然後再插回) 。 重新插入電源線之後，裝置會在幾秒後啟動至畫面中間的白色4方形標誌，或者，您可以按下並放開電源按鈕來重新開啟裝置。 在螢幕中間看到4方塊標誌之後，按住 [音量] 按鈕，直到您看到位於白色四個方形標誌下方的旋轉圓形。
  
    ![從 USB 啟動至 Windows 10](images/shm-fig26.png)
    
