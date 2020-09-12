@@ -7,20 +7,26 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 92a634e897d3e0c9163fe092aaf7992f625de991
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cae09fa3a21fe497d021f38621085b639b15c4da
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831500"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013403"
 ---
 # 作業系統基本資訊 (Surface Hub)
 
 Surface Hub 作業系統 Windows 10 團隊版是以 Windows 10 企業版為基礎，針對企業管理、安全性及其他功能提供豐富支援。 但是，它們之間有重要差異。 企業版是針對電腦設計，Windows 10 團隊版則是針對大型螢幕和會議室從頭開始設計。 當您評估 Surface Hub 的安全性和管理需求時，最好是將它視為新的作業系統。 本文的設計是為協助凸顯 Surface Hub 上的 Windows 10 團隊版和 Windows 10 企業版的主要差異，以及這些差異對您的組織有哪些意義。
+
+從2020年9月開始，客戶可以選擇遷移至 Windows 10 專業中心或 Surface Hub 的 Enterprise。 若要深入了解，請參閱下列主題：
+
+- [宣佈 Surface Hub 2 上的 Windows 10 專業版與企業版的可用性](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
+
+- [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
 
 ## 使用者介面
 
@@ -132,7 +138,7 @@ Surface Hub 不支援 Windows 10 企業版中的管理功能，例如 Microsoft 
 
 ### 遠端管理及監視工具
 
-Surface Hub 支援透過行動裝置管理（MDM）解決方案（例如[Microsoft Intune](https://docs.microsoft.com/intune/)和透過[Azure 監視器](https://azure.microsoft.com/services/monitor/)監視）進行遠端系統管理。 
+Surface Hub 支援透過行動裝置管理 (MDM) 解決方案（例如 [Microsoft Intune](https://docs.microsoft.com/intune/) 和透過 [Azure 監視器](https://azure.microsoft.com/services/monitor/)進行監視）來進行遠端系統管理。 
 
 *這可能會影響下列組織原則：* <br> Surface Hub 不支援安裝大部分傳統電腦管理及監視工具所需的 Win32 代理程式，例如 System Center Operations Manager。
 
