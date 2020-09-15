@@ -14,18 +14,20 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 16e4f74623e3dfdcd2aafd43a80950612f0029c7
-  ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+  ms.openlocfilehash: 97f710f427c6183cb34dadb07f6aa9f6637464ed
+  ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/01/2020
-  ms.locfileid: "10986315"
+  ms.lasthandoff: 09/11/2020
+  ms.locfileid: "11013423"
 landingContent:
 - title: 準備使用 Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
-    - text: 在 Surface Hub 2 上移轉到 Windows 10 專業版或企業版
+    - text: 宣布 Surface Hub 2 上 Windows 10 專業版和企業版的可用性
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107
+    - text: 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
       url: surface-hub-2s-migrate-os.md
     - text: 安裝 Windows 10 團隊版 2020 更新預覽組建
       url: surface-hub-install-2020preview.md
