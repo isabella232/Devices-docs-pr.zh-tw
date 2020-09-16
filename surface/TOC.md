@@ -30,6 +30,7 @@
 
 ### [部署 Surface 裝置](deploy.md)
 ### [Windows Autopilot 與 Surface 裝置](windows-autopilot-and-surface-devices.md)
+### [適用於 Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)
 ### [Surface 上的 Windows 虛擬桌面](windows-virtual-desktop-surface.md)
 ### [部署、管理及維護 Surface Pro X](surface-pro-arm-app-management.md)
 ### [Surface Pro X 應用程式相容性](surface-pro-arm-app-performance.md)
