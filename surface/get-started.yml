@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 312da1d432abce125161febfd7bca3eb82e22074
-  ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
+  ms.openlocfilehash: 5cbfeee6dee7dcb921b5cbecaaeca7b4461073dc
+  ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/08/2020
-  ms.locfileid: "10918903"
+  ms.lasthandoff: 09/16/2020
+  ms.locfileid: "11016402"
 landingContent:
 - title: Surface 裝置
   linkLists:
@@ -42,10 +42,10 @@ landingContent:
   linkLists:
   - linkListType: deploy
     links:
-    - text: Surface 部署加速器工具
-      url: microsoft-surface-deployment-accelerator.md
     - text: Autopilot 和 Surface 裝置
       url: windows-autopilot-and-surface-devices.md
+    - text: Windows Autopilot 的 Surface 註冊支援
+      url: surface-autopilot-registration-support.md
     - text: Surface 上的 Windows 虛擬桌面
       url: windows-virtual-desktop-surface.md
 - title: 管理 Surface 裝置
@@ -76,15 +76,15 @@ landingContent:
       url: surface-diagnostic-toolkit-for-business-intro.md
     - text: SEMM 與 UEFI
       url: surface-enterprise-management-mode.md
-    - text: 電池限制設定
-      url: battery-limit.md
+    - text: Surface 部署加速器工具
+      url: microsoft-surface-deployment-accelerator.md
 - title: 疑難排解
   linkLists:
   - linkListType: learn
     links:
     - text: 熱門支援解決方案
       url: support-solutions-surface.md
-    - text: 相容 Surface 裝置中的 SSD 移除最佳做法
+    - text: 在相容 Surface 裝置中移除 SSD 的最佳做法
       url: surface-ssd-removal-guide.md
     - text: Surface IT 專業人員部落格
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro

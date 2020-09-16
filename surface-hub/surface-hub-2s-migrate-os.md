@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 09/15/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 44e7ca08ca4b8c077d430cba2a8cb4b674b68631
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
+ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013433"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016452"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -26,6 +26,11 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 
 > [!IMPORTANT]
 >與典型的升級或遷移不同，此程式必須遵循說明性程式，如本頁面所述。 在繼續之前，請先查看 [解決方案元件](#solution-components) 與 [遷移及安裝工作流程](#migration-and-installation-workflow-summary) 。
+
+
+> [!NOTE]
+> 當您安裝 Windows 10 專業版或企業版時，您將需要與現有的 Windows 10 小組授權分開的新授權。 
+
 
 您可以從 Windows 10 小組開始遷移，使用不同的電腦和可下載的工具- **SURFACE UEFI 配置** 器，建立包含您套用至 Surface Hub 2 秒的新 UEFI 設定的套件。  Surface UEFI 配置處理常式會將介面轉換成 Surface Enterprise 管理模式 (SEMM) ，旨在協助集中管理公司環境中的 Surface 裝置。 若要深入瞭解 SEMM，請參閱 [Microsoft Surface Enterprise 管理模式檔](https://docs.microsoft.com/surface/surface-enterprise-management-mode)。
  
@@ -93,7 +98,7 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 
 - 中型企業及其他人可以選擇從協力廠商提供者取得憑證。 對於沒有足夠 IT 專業知識或專門 IT 安全小組的組織而言，這是我們的建議選項。
 
-- 或者，您也可以根據下列檔來產生含 PowerShell 腳本的自我簽署憑證： [Surface Enterprise 管理模式憑證需求](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements)。 或者，您可以使用 PowerShell 根據下列檔來建立您自己的憑證： [ [新-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)]。
+- 或者，您也可以根據下列檔來產生含 PowerShell 腳本的自我簽署憑證： [Surface Enterprise 管理模式憑證需求](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements)。 或者，您可以使用 PowerShell 根據下列檔來建立您自己的憑證： [ [新-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)]。
 
 SEMM 套件必須使用憑證加以保護，才能驗證設定檔的簽名，然後才能套用 UEFI 設定。 若要深入瞭解，請參閱 [Surface Enterprise 管理模式](https://docs.microsoft.com/surface/surface-enterprise-management-mode) 檔。
  
@@ -274,3 +279,9 @@ SEMM 套件必須使用憑證加以保護，才能驗證設定檔的簽名，然
 
 如果您想要將裝置還原至 Windows 10 小組，請參閱 [重設及恢復 Surface Hub 2 秒](surface-hub-2s-recover-reset.md)
 
+## 版本歷程記錄
+
+| 版本 | 日期               | 描述                                                                                           |
+| ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| 向量. 1.1  | 2020年9月15日 | 在簡介中放入其他記事，說明安裝新作業系統的授權需求。 |
+| 向量. 1.0  | 2020年9月1日  | 新文章                                                                                           |
