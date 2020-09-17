@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 0e136bd0a69db7a4c4e5cea7d2c065727dcc8fcc
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 3ede7311289dc4bc720735c0142ff3a46fbb69e7
+ms.sourcegitcommit: 582c5a79881c58c4f1aa66cfcab46db966ca9f24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016434"
+ms.locfileid: "11016554"
 ---
 # Microsoft Surface 部署加速器
 
@@ -36,6 +36,9 @@ Microsoft Surface 部署加速器 (SDA) 使用免費的 Microsoft 部署工具�
 
 1. USB 拇指磁片磁碟機大小至少 16 GB。 USB 磁片磁碟機將會設定格式。
 2. Windows 10 專業版或 Windows 10 企業版的 .iso 檔案。 媒體建立工具可用於下載 Windows 10 並建立 .iso 檔案。 如需詳細資訊，請參閱 [下載 Windows 10](https://www.microsoft.com/software-download/windows10)。
+3. 在執行 Windows 10 版本2004或更新版本的裝置上使用網際網路存取。
+
+如需詳細的需求清單，請參閱讀我檔案的 [ [先決條件](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) ] 區段。
 
 ## 如何執行 SDA
 
@@ -52,17 +55,20 @@ Microsoft Surface 部署加速器 (SDA) 使用免費的 Microsoft 部署工具�
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. 執行 SDA 腳本，為您的環境指定參數。 例如，下列命令會建立可啟動的 USB 磁片磁碟機，以用於在 Surface Hub 2 上安裝 Windows 10：
+8. 執行 SDA 腳本，為您的環境指定參數。 您可以使用此腳本來建立影像，以在各種不同的 Surface 裝置上安裝 Windows 10。 如需支援裝置的完整清單，請參閱 SDA 讀我檔案中的 [裝置參數說明](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) 。 
+
+    例如，下列命令會建立可啟動的 USB 磁片磁碟機，以用於 [在 Surface Hub 2 上安裝 Windows 10](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os)：
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
     ```
+    [範例腳本] 輸出如下所示。
 
    ![執行 Surface 部署加速器工具](images/sda1.png)
 
     此腳本將需要大約45分鐘的時間才能執行，但可能需要較長的時間，視可用的 CPU 和磁片資源而定。 
 
-    在建立 Windows 影像之後，腳本會要求您確認您的 USB 磁片磁碟機盤符。 然後 USB 磁片磁碟機將會格式化、設定為可引導，以及複製的檔案，以啟用 Surface 裝置的自訂 Windows 10 影像。
+    在建立 Windows 影像之後，腳本會要求您插入並確認您的 USB 磁片磁碟機盤符。 然後 USB 磁片磁碟機將會格式化、設定為可引導，以及複製的檔案，以啟用 Surface 裝置的自訂 Windows 10 影像。
 
 9. 將 USB 磁片磁碟機插入您要安裝 Windows 10 的裝置，然後重新開機以開始安裝 Windows 10。 在 BIOS 中必須啟用 USB 啟動，這可能會要求您暫時停用 [安全啟動]。
 
@@ -72,5 +78,4 @@ Microsoft Surface 部署加速器 (SDA) 使用免費的 Microsoft 部署工具�
 ## 相關連結
 
  - [在 GitHub 上發佈的開啟來源映射部署工具](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
-
  - [下載並安裝 Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
