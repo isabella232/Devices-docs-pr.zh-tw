@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface 和 Surface Hub 產品的支援資訊。
-ms.openlocfilehash: 52be75fdec27e1ccf4d68be36afab19c77db540a
-ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926295"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030410"
 ---
 # Surface 支援
 
@@ -39,7 +39,7 @@ ms.locfileid: "10926295"
 > [!NOTE]
 > 您需要使用您的 Microsoft 帳戶或 Azure Active Directory 帳戶登入線上提交入口網站。  
 
-商務客戶： [提交您的服務要求](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727)。 
+商務客戶： [提交您的服務要求](https://support.microsoft.com/supportforbusiness/productselection)。 
 
 Microsoft Premier 客戶： [在服務中樞上提交您的服務要求](https://serviceshub.microsoft.com/support/contactsupport)。 
 

@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/11/2020
-ms.openlocfilehash: da3624d5eb271e999334b4859cfb6123eeabfa46
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 09/18/2020
+ms.openlocfilehash: dc1a9b4480f37af6d74699a2e693ef8d5318da76
+ms.sourcegitcommit: 8bd03770279d5e53446436781226ffd51eeec916
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11029227"
 ---
 # Microsoft Surface Data Eraser
 
@@ -34,26 +34,13 @@ ms.locfileid: "10831235"
 
 相容的 Surface 裝置包括：
 
-* Surface Book 3
-* 表面移2
-* Surface Pro 7
-* Surface Pro X
-* Surface 膝上型電腦3
-* Surface Pro 6
-* Surface Laptop 2
-* Surface Go
-* Surface Book 2
-* 配備 LTE Advanced 的 Surface Pro (型號 1807)
-* Surface Pro (型號 1796)
-* Surface 膝上型電腦
-* Surface Studio
-* Surface Studio 2
-* Surface Book
-* Surface Pro 4
-* Surface 3 LTE
-* Surface 3
-* Surface Pro 3
-* Surface Pro 2
+- Surface Book (所有版本) 
+- 表面移 (所有版本) 
+- Surface Pro X (所有版本) 
+- Surface 膝上型電腦 (所有版本) 
+- Surface Studio (所有版本) 
+- Surface Pro 2 及更新版本
+- 在 Surface Hub 2 上的 Windows 10 專業版與企業版
 
 某些 Microsoft Surface Data Eraser 可發揮作用的情況包括：
 
@@ -80,7 +67,7 @@ ms.locfileid: "10831235"
 
 若要建立 Microsoft Surface Data Eraser USB 磁碟機，請先使用本文章開頭提供的連結從 Microsoft 下載中心安裝 Microsoft Surface Data Eraser 安裝工具。 您不需要 Surface 裝置來建立 *USB* 磁碟機。 下載安裝檔到電腦之後，請按照下列步驟安裝 Microsoft Surface Data Eraser 建立工具：
 
-1.  執行您從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=46703)下載的 DataEraserSetup.msi 安裝檔。
+1.  執行您從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=46703)下載的 DataEraserSetup.msi 安裝檔。
 
 2.  選取接受授權條款的核取方塊，然後按一下 **\[安裝\]**。
 
@@ -103,7 +90,7 @@ ms.locfileid: "10831235"
        *圖 2. 選取裝置架構*
     
 
-4. 從 [ **Usb 拇指磁片磁碟機選項**] 頁面選取您選擇的 usb 磁片磁碟機，如圖3所示，然後按一下 [**開始**] 以開始 USB 建立程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
+4. 從 [ **Usb 拇指磁片磁碟機選項** ] 頁面選取您選擇的 usb 磁片磁碟機，如圖3所示，然後按一下 [ **開始** ] 以開始 USB 建立程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
 
    >[!NOTE]
    >如果 \[開始\] 按鈕已停用，請檢查您的抽取式磁碟機總容量至少為 4 GB。
@@ -114,7 +101,7 @@ ms.locfileid: "10831235"
 
 5. 建立程序完成之後，則 USB 磁碟機已經格式化且所有二進位檔都已經複製到其中。 按一下 **\[成功\]**。
 
-6. 顯示 **\[恭喜\]** 畫面之後，即可退出並移除 USB 磁碟機。 這個 USB 磁碟機現在可插入 Surface 裝置，從其開機並抹除該裝置上的所有檔案。 按一下 [**完成**] 以完成 USB 建立進程，如圖4所示。
+6. 顯示 **\[恭喜\]** 畫面之後，即可退出並移除 USB 磁碟機。 這個 USB 磁碟機現在可插入 Surface 裝置，從其開機並抹除該裝置上的所有檔案。 按一下 [ **完成** ] 以完成 USB 建立進程，如圖4所示。
 
    ![Surface Data Eraser USB 建立程序](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
 
@@ -142,7 +129,7 @@ ms.locfileid: "10831235"
    >[!NOTE]
    >如果您的裝置無法使用這些步驟開機至 USB，您可能需要開啟 Surface UEFI 中的 **\[Enable Alternate Boot Sequence\] (啟用替代開機順序)** 選項。 您可以在[管理 Surface UEFI 設定](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings)中深入了解Surface UEFI 開機設定。
 
-3. 當 Surface 裝置啟動時，會顯示**SoftwareLicenseTerms**文字檔，如圖5所示。
+3. 當 Surface 裝置啟動時，會顯示 **SoftwareLicenseTerms** 文字檔，如圖5所示。
 
    ![使用 Microsoft Surface Data Eraser USB 磁碟機開機](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
@@ -172,6 +159,17 @@ ms.locfileid: "10831235"
 
 Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新版本所提供之變更的詳細資訊，請參閱下列各項：
 
+### 3.33.139
+*發行日期：2020年9月9日*
+
+這個版本的 Surface 資料橡皮擦包含錯誤修正，並新增支援： 
+
+- 重新設計架構以減少更新新產品發行的需求
+- 提供新工具更新通知
+- 遙測新增
+- 在 Surface Hub 2 上的 Windows 10 專業版與企業版
+
+
 ### 3.30.139
 *發行日期： 11 2020 年5月11日*
 
@@ -181,12 +179,12 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 - 新的 SSD 在 Surface 中轉中
 
 ### 3.28.137
-*發行日期：2019年11月11日*此版本的表面資料橡皮擦：
+*發行日期：2019年11月11日* 此版本的表面資料橡皮擦：
 
 - 包含錯誤修正
 
 ### 版本3.21.137
-*發行日期：2019年10月 21*日這個版本的 Surface 資料橡皮擦是針對 x86 編譯，並新增下列裝置的支援：
+*發行日期：2019年10月 21* 日這個版本的 Surface 資料橡皮擦是針對 x86 編譯，並新增下列裝置的支援：
 
 - 支援 Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3
 
@@ -223,7 +221,7 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 ### 版本3.2.58。0
 此版本的 Microsoft Surface Data Eraser 新增下列支援：
 
-- Surface Pro 和 Surface 膝上型電腦裝置的其他儲存設備（磁片磁碟機）
+- 針對 Surface Pro 和 Surface 膝上型電腦裝置 (磁片磁碟機) 的其他儲存裝置
 
 
 ### 版本 3.2.46.0
