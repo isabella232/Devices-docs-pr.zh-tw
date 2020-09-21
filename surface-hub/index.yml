@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 97f710f427c6183cb34dadb07f6aa9f6637464ed
-  ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+  ms.openlocfilehash: 610ce6cc1adaba8a3c583790bb72d6c675b40c18
+  ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "11013423"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "11026986"
 landingContent:
 - title: 準備使用 Surface Hub 2S
   linkLists:
@@ -35,6 +35,8 @@ landingContent:
       url: surface-hub-install-chromium-edge.md
     - text: Surface Hub 更新歷程記錄
       url: surface-hub-update-history.md
+    - text: Surface Hub 2 上適用於 Windows 10 專業版和企業版的重要附加元件
+      url: surface-hub-2-essential-add-ons.md
   - linkListType: video
     links:
     - text: 採用與訓練影片
