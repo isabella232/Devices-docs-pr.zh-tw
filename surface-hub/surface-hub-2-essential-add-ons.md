@@ -12,15 +12,15 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.date: 09/16/2020
+ms.date: 09/18/2020
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d908c937c331e36f6b82f4c3c5ee213abf8a0176
-ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
+ms.openlocfilehash: 24998848f16803585bc414d50e2099745943dcc7
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026998"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030420"
 ---
 # 適用于 Surface Hub 2 的 Windows 10 專業版與企業版的重要附加元件
 
@@ -54,6 +54,7 @@ ms.locfileid: "11026998"
 | **系統需求**          | Windows 10 專業版（Windows 10 企業版）。                                                                                               |
 | **Windows 認證**       | Windows 10                                                                                                                           |
 | ** (遠) 的接受率** | 1/1.5 萬美元。 顯示生物特徵安全系統不正確地接受未經授權使用者的存取嘗試的可能性。 |
+| **False 拒絕比率 (FRR) ** | 4.9%。 FRR 顯示生物識別安全系統不正確拒絕受授權使用者的存取嘗試的可能性。 |
 
 
 > [!NOTE]
