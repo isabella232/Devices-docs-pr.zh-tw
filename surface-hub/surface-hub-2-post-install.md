@@ -14,16 +14,17 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: f6ea6324799981e57c36a11b33cf2e22ea80039e
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+ms.date: 09/22/2020
+appliesto:
+- Surface Hub 2S
+ms.openlocfilehash: dd580a3b67ffa7c46ce823765d589fec47fadb44
+ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004475"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072840"
 ---
 # 設定 Windows 10 專業版或 Surface Hub 2 企業版
-
-**適用于： Surface Hub 秒** 
 
 完成遷移至 Windows 10 專業版或企業版的安裝程式後，您可以執行下列步驟來設定 Surface Hub 2 上的 app 和設定。 建議使用這些步驟，以確保使用此個人化大型螢幕觸控和手寫筆電腦時的最佳體驗。
 
@@ -182,7 +183,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 3. 安裝 **Surface** app。 這應該是第一個列出的 app。 您可能需要將您的 MSA 與書店建立關聯，才能安裝 app。
 4. 將 **表面** app 釘選到工作列。
 
-### 剪取 & 素描
+### 剪取與繪圖
 
 1. 開啟 [ **剪取 & 草圖** ] app，然後將它釘選到工作列。
 2. 選取右上角的省略號，然後選取 [ **設定**]。
@@ -251,9 +252,8 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 1. 選取 [**開始**  >  **設定**] [  >  **系統**  >  **電源 & 睡眠**]。
 2. 設定 [電源模式] 滑杆以 **獲得最佳效能**。
-3. 將畫面和睡眠值設定為您的喜好設定。
-
-### 螢幕保護裝置程式
+3. 您也可以將畫面和睡眠值設定為您的喜好設定，同時也會在偵測到移動時，在 Doppler 的目前狀態偵測中喚醒。 因此，建議您在**4 小時**後將畫面設定為**在2小時後**關閉，並將電腦關閉，以進行最佳做法。
+### 螢幕保護裝置程式。
 
 1. 搜尋 **鎖定畫面** 並開啟 **鎖定畫面設定**。
 2. 將 **螢幕超時設定** 和 **螢幕保護裝置程式設定** 設定為您的喜好設定。
@@ -314,7 +314,7 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 4. 驗證工作列 app。
     - Connect App
     - [鎖定] 圖示
-    - 剪取 & 素描
+    - 剪取與繪圖
     - 小組 (（如果適用）) 
     - Office 應用程式 (（如果適用）) 
     - Surface 應用程式
@@ -324,12 +324,11 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 6. [確認投影到此電腦] 已啟用 [連線] App (應用程式在連接) 之前不需要執行。
 7. 驗證電源和睡眠設定。
     - 螢幕保護裝置程式：15分鐘，設定為 (無]) 、Mystify 或空白;已選取 [需要密碼的核取方塊]
-    - 螢幕：2小時
-    - 電腦：4小時
+    - 螢幕： **在2小時後關閉。**
+    - PC：  **4 小時後關閉。**
 8. 驗證 Windows Hello 是否正常運作。
-9. 驗證電源設定。
-10. 驗證同步處理您的設定已停用。
-11. 確認啟動 app。
+9. 驗證同步處理您的設定已停用。
+10. 確認啟動 app。
 
 > [!TIP]
 > 安裝並設定 Windows 10 之後，Surface Hub 的配置可以像管理任何其他的 Windows 10 裝置一樣進行管理。
