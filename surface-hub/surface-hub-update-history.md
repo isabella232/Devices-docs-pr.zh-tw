@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 031a826a8868d9452e13bb1ffc6b43eeb287f181
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: f608e18d04a0d6c48ad2990715b400c95b6d8c12
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934833"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078723"
 ---
 # Surface Hub 更新歷程記錄
 
@@ -30,7 +30,20 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 ## Windows 10 團隊版創意者更新1703
 
 <details>
-<summary>2020年5月4日-Surface Hub 秒更新</summary>
+<summary>2020年9月1日-Surface Hub 秒更新</summary>
+
+此更新針對 Surface Hub 的2秒，並提供以下所述的驅動程式和固件更新：
+
+* 表面 SMC 固件更新-1.177.139。0
+  * 改善欄位修復案例。
+* Surface SSD 固件更新-5.14.139。0
+  * 改善系統穩定性。
+* Surface Serial Hub 驅動程式-9.40.139。0
+  * 改善系統穩定性。
+</details>
+
+<details>
+<summary>2020年5月4日-Surface Hub 第2秒更新</summary>
 
 此更新針對 Surface Hub 的2秒，並提供以下所述的驅動程式和固件更新：
 
@@ -62,7 +75,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2020年2月11日-根據 KB4537765 * (OS 組建 15063.2284) 的小組更新</summary>
+<summary>2020年2月11日-以 KB4537765 * 為基礎的小組更新 (作業系統組建 15063.2284) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -74,7 +87,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2020年1月14日：根據 KB4534296 * (OS 組建 15063.2254) 的小組更新</summary>
+<summary>2020年1月14日：以 KB4534296 * 為基礎的小組更新 (作業系統組建 15063.2254) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -85,7 +98,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2019年9月24日—根據 KB4516059 * (OS 組建 15063.2078) 的小組更新</summary>
+<summary>2019年9月24日-以 KB4516059 * 為基礎的小組更新 (作業系統組建 15063.2078) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -101,7 +114,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2019年8月17日-根據 KB4512474 * (作業系統組建 15063.2021) 的小組更新</summary>
+<summary>2019年8月17日-以 KB4512474 * 為基礎的小組更新 (作業系統組建 15063.2021) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -113,7 +126,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
  </details>
 
 <details>
-<summary>2019年6月18日—根據 KB4503289 * (OS 組建 15063.1897) 的小組更新</summary>
+<summary>2019年6月18日-以 KB4503289 * 為基礎的小組更新 (作業系統組建 15063.1897) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -127,7 +140,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2019年5月28日-根據 KB4499162 * (作業系統組建 15063.1835) 的小組更新</summary>
+<summary>2019年5月28日-根據 KB4499162 * (OS 組建 15063.1835) 的小組更新</summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -141,7 +154,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2019年4月25日-根據 KB4493436 * (OS 組建 15063.1784) 的小組更新</summary>
+<summary>2019年4月25日：根據 KB4493436 * (作業系統組建 15063.1784) 的小組更新</summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -152,7 +165,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2018年11月27日—根據 KB4467699 * (作業系統組建15063.1478 的更新小組) </summary>
+<summary>2018年11月27日：以 KB4467699 * 為基礎的小組更新 (作業系統組建 15063.1478) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -447,7 +460,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 </details>
 
 <details>
-<summary>2016年11月4日（以 KB3200970 * 為基礎）更新 Windows 10 小組周年紀念日版 (作業系統組建 14393.447) </summary>
+<summary>2016年11月4日：根據 KB3200970 * (作業系統組建 14393.447) 的小組更新</summary>
 
 此更新至 Windows 10 小組周年紀念日更新 (版本 1607) 的 Surface Hub 包括品質改良及安全性修正程式。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -516,7 +529,7 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 ## Windows 10 版本1511更新
 
 <details>
-<summary>2016年11月4日，Windows 10 Team (版 1511) 上的版本 (作業系統組建 10586.679) </summary>
+<summary>2016年11月4日：根據 KB3198586 * (作業系統組建 10586.679) 的小組更新</summary>
 
 Windows 10 小組 (版本 1511) 的更新，包括 [windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中所述的品質改良及安全性修正程式。 此更新中沒有 Surface Hub 特定專案。
 
@@ -524,7 +537,7 @@ Windows 10 小組 (版本 1511) 的更新，包括 [windows 10 更新歷程記�
 </details>
 
 <details>
-<summary>2016年7月12日-KB3172985 * (作業系統組建 10586.494) </summary>
+<summary>2016年7月12日-以 KB3172985 * 為基礎的小組更新 (作業系統組建 10586.494) </summary>
 
 此更新包括品質改善及安全性修正程式。 此更新不會引進任何新的作業系統功能。 針對 Surface Hub 的主要變更 (那些尚未包含在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)) 中的變更，包括：
 
@@ -546,7 +559,7 @@ Windows 10 小組 (版本 1511) 的更新，包括 [windows 10 更新歷程記�
 </details>
 
 <details>
-<summary>2016年6月14日-KB3163018 * (作業系統組建 10586.420) </summary>
+<summary>2016年6月14日-以 KB3163018 * 為基礎的小組更新 (作業系統組建 10586.420) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 此更新不會引進任何新的作業系統功能。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -556,7 +569,7 @@ Windows 10 小組 (版本 1511) 的更新，包括 [windows 10 更新歷程記�
 </details>
 
 <details>
-<summary>2016年5月10日： KB3156421 * (作業系統組建 10586.318) </summary>
+<summary>2016年5月10日-以 KB3156421 * 為基礎的小組更新 (作業系統組建 10586.318) </summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 此更新不會引進任何新的作業系統功能。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 
@@ -567,7 +580,7 @@ Windows 10 小組 (版本 1511) 的更新，包括 [windows 10 更新歷程記�
 </details>
 
 <details>
-<summary>2016年4月12日-KB3147458 * (作業系統組建 10586.218) </summary>
+<summary>2016年4月12日—根據 KB3147458 * (OS 組建 10586.218) 的小組更新</summary>
 
 此 Surface Hub 更新包括品質改善與安全性修正。 此更新不會引進任何新的作業系統功能。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4018124/windows-10-update-history)中尚未說明，包括：
 

@@ -1,5 +1,5 @@
 ---
-title: Surface Hub 2 秒 85-寸
+title: Surface Hub 2S 85 英吋
 description: 本文將介紹 Surface Hub 2 秒85英寸。
 keywords: Surface Hub 2 秒85，技術規格
 ms.prod: surface-hub
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/25/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 40c16aa783e0880a3d28178ed936a68d7dc49c1a
-ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
+ms.openlocfilehash: 149e3498b2d976b5ab090db1726d56eb2357ffc5
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072822"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078733"
 ---
 # Surface Hub 2 秒 85 "概覽 & 技術規格
 
@@ -35,7 +35,7 @@ ms.locfileid: "11072822"
 
 | 元件    | 說明                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 三維        | 44.5 "x 62.8" x 3.4 "<br> (1130mm x 1595mm x 85.6 mm)                                                                                                                                                                                                         |
+| 三維        | 44.5 "x 77.1" x 3.4 "<br> (1130mm x 1959mm x 85.6 mm)                                                                                                                                                                                                         |
 | 粗細            | 185磅 (84kg)                                                                                                                                                                                                                                             |
 | 解決方法        | 3840 x 2160                                                                                                                                                                                                                                               |
 | 顯示器           | PixelSense™顯示、16:9 長寬比、10位色彩、30.5 mm 框線寬度、防眩向、IPS 液晶顯示幕，以及20同時觸摸點的儲存格內觸控                                                                                                           |
