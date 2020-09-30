@@ -5,7 +5,7 @@
 ## 概觀
 ### [IT 管理員適用的 Surface Hub 2S 的新功能](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S 50 英吋技術規格](surface-hub-2s-techspecs.md) 
-### [Surface Hub 2S 85 英吋](surface-hub-2s-85.md)
+### [Surface Hub 2S 85 英吋技術規格](surface-hub-2s-85.md)
 ### [作業系統基本資訊 (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [調整 Surface Hub 2S 的亮度、音量及輸入](surface-hub-2s-onscreen-display.md)
 ### [在 Surface Hub 上使用 Microsoft Whiteboard](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
