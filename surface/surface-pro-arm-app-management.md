@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 4/15/2020
+ms.date: 10/01/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: d1e7aa41f8219f0ae6ccd81a36fa0fc142dd1c3c
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 758cde12ea79e42630dad55b06eb50d0ab9dda12
+ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831519"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "11093126"
 ---
 # 部署、管理及維護 Surface Pro X
 
@@ -92,9 +92,8 @@ Surface Pro X 已設計成使用 Windows Update 來為家庭使用者和小型�
 - 原生 ARM64 和 Microsoft Store UWP 應用程式在最佳化電池使用時間的同時，利用 ARM 型處理器的完整原生速度提供絕佳使用者體驗。
 - 使用專為透過 ARM 型處理器執行之 Windows 10 電腦所設計的驅動程式的應用程式。
 
-### 不支援
-
-- x64 應用程式無法在採用 ARM 型處理器的 Windows 10 電腦上執行。
+> [!NOTE]
+> 使用預覽版中透過 Windows 測試人員計畫即將推出的 64 位元模擬，您就能在 Surface Pro X 上執行 64 位元 (x64) 應用程式。
 
 如需有關在 Surface Pro X 上執行應用程式的詳細資訊，請參閱：
 
