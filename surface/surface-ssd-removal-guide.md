@@ -8,7 +8,7 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 8/7/2020
+ms.date: 10/7/2020
 ms.reviewer: johnk
 manager: laurawi
 ms.audience: itpro
@@ -19,20 +19,20 @@ appliesto:
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 66860af06f4fad8f19ca26702350f19cc85ffef1
-ms.sourcegitcommit: bad416f04c6877f2200f134a69146bb633155f22
+ms.openlocfilehash: 00109e4e1bb3873fc2914b2044f58e6fa3b6c211
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919222"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104805"
 ---
 # 從相容的 Surface 裝置移除 SSD 的最佳做法
 
 > [!IMPORTANT]
-> 本文僅供企業組織中合格的 IT 技術人員使用。 它描述合格的 IT 技術人員在有可移除 SSDs 的 Surface 裝置中移除及取代 SSDs 時所建議的最佳做法。 
+> 本文僅供企業組織中合格的 IT 技術人員使用。 它描述由合格的 IT 技術人員在 Surface 膝上型電腦3或 Surface Pro X 中移除和取代 SSDs 時所建議的最佳做法。 
 
 > [!WARNING]
-> 開啟裝置和取代裝置元件可能會帶來電擊、裝置損壞、火災及個人傷亡風險，以及其他危害。  當您執行這類活動時，請務必謹慎使用。 遵循[企業 RSSD 移除指南](https://www.microsoft.com/download/100440)中所識別的安全預防措施和程式。 如果您無法遵循「在企業版 rSSD 移除指南」中所指定的安全預防措施及程式，我們建議您取得專業協助。
+> 開啟裝置和取代裝置元件可能會帶來電擊、裝置損壞、火災及個人傷亡風險，以及其他危害。  當您執行這類活動時，請務必謹慎使用。 遵循 [企業 RSSD 移除指南](https://www.microsoft.com/download/100440)中所識別的安全預防措施和程式。 如果您無法遵循「在企業版 rSSD 移除指南」中所指定的安全預防措施及程式，我們建議您取得專業協助。
 
 ## 必要條件
 
@@ -52,21 +52,21 @@ ms.locfileid: "10919222"
 ## [管理 BitLocker] 
 
 > [!NOTE]
-> 本節包含對硬碟啟用 BitLocker 加密的組織的建議。 如需詳細資訊，請參閱[BitLocker 恢復指南](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)。 
+> 本節包含對硬碟啟用 BitLocker 加密的組織的建議。 如需詳細資訊，請參閱 [BitLocker 恢復指南](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)。 
 
 ### 如果在 SSD 移除與取代期間停用 BitLocker 加密
 
 如果可在 SSD 移除與取代之前解除加密裝置，請遵循下列步驟關閉 BitLocker：
 
-1.  在 [**設定**] 中，輸入**bitlocker**，然後選取 [**管理 bitlocker**]。 
-2.  選取 [**關閉 Bitlocker**]。 
+1.  在 [ **設定**] 中，輸入 **bitlocker**，然後選取 [ **管理 bitlocker**]。 
+2.  選取 [ **關閉 Bitlocker**]。 
 3.  關閉裝置電源。 
 
 ### 如果在 SSD 移除與取代期間啟用 BitLocker 加密
 
 如果在 SSD 移除和取代之前，裝置經過加密，請遵循下列步驟來產生 BitLocker 復原金鑰，並將它儲存至 USB 儲存空間：
 
-1.  在 [**設定**] 中，輸入**Bitlocker**。
+1.  在 [ **設定**] 中，輸入 **Bitlocker**。
 2. 選取 [**管理 bitlocker**  > **產生 bitlocker 復原金鑰**]。
 2.  插入 USB 磁片磁碟機。 
 3.  將修復金鑰儲存至 USB 儲存空間。  
@@ -75,7 +75,7 @@ ms.locfileid: "10919222"
 
 ## 移除並取代 SSD 
 
-1.  使用適用于[企業的 RSSD 移除指南](https://www.microsoft.com/download/100440)中的指示來移除 SSD。 
+1.  使用適用于 [企業的 RSSD 移除指南](https://www.microsoft.com/download/100440)中的指示來移除 SSD。 
 2. 將原始的 SSD 放入新的裝置，然後將新裝置連接至有線網際網路連線。
 2.  開啟新裝置的電源。 在啟動期間，裝置可能會進行固件更新。  
  
@@ -91,7 +91,7 @@ ms.locfileid: "10919222"
 4.  使用密碼重新登入，然後在系統提示時設定 Windows Hello 及 PIN。 
     - 如果裝置已在 BitLocker 停用，以協助 SSD 移除及取代，且您想要在更換之後啟用 bitlocker，請移至**bitlocker**  >  **管理 bitlocker**[  >  **繼續 bitlocker**]。  
 6.  執行適用于商務 () SDT 的 Microsoft Surface 診斷工具組，以驗證完整的裝置功能。  
-7.  流覽至 [**設定**啟用] 以檢查 Windows 啟用  >  ** **。  如果您看到任何錯誤訊息，請選取 [**疑難排解**]。 
+7.  流覽至 [**設定**啟用] 以檢查 Windows 啟用  >  ** **。  如果您看到任何錯誤訊息，請選取 [ **疑難排解**]。 
 8.  開啟**office 應用程式**，然後**流覽至 [** 檔案  >  **帳戶**]，然後檢查是否有任何錯誤訊息，以檢查 office 帳戶。  
 
 ### 管理加密 SSDs 
@@ -109,8 +109,8 @@ ms.locfileid: "10919222"
 6.  當您完全登入後，請移至 [**開始**  >  **帳戶**  >  **登出**]。  
 7.  使用密碼重新登入，然後設定 Windows Hello 並新增 PIN。 
 8.  如果裝置是 BitLocker 停用的，可協助 SSD 移除及取代，而且如果您想要在更換後啟用 bitlocker，請移至 [**設定**  >  **bitlocker**  >  **管理 bitlocker**  >  **繼續 bitlocker**]。  
-9.  執行**SDT**以驗證完整的裝置功能。  
-10. 流覽至 [**設定**啟用] 以檢查 Windows 啟用  >  ** **。  如果您看到任何錯誤訊息，請選取 [**疑難排解**]。
+9.  執行 **SDT** 以驗證完整的裝置功能。  
+10. 流覽至 [**設定**啟用] 以檢查 Windows 啟用  >  ** **。  如果您看到任何錯誤訊息，請選取 [ **疑難排解**]。
 11. 若要檢查 office 帳戶的狀態，請開啟**office 應用程式**，然後**移至 [** 檔案帳戶]，  >  **Account**檢查是否有任何錯誤訊息。
 
 ## 詳細資訊 
@@ -120,4 +120,4 @@ ms.locfileid: "10919222"
 - [企業版的 rSSD 移除指南](https://www.microsoft.com/download/100440)
 - [BitLocker 修復指南](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
 
-仍需要協助？ 移至[Microsoft 社區](https://answers.microsoft.com/)。
+仍需要協助？ 移至 [Microsoft 社區](https://answers.microsoft.com/)。

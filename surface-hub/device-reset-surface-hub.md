@@ -12,26 +12,26 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/31/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: c5cf643d0f4a68344bb098916a909dd66e1dac9b
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1c8d8b6d89ec1a20550b7aa13c82c73a239c3965
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831869"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104815"
 ---
 # 重設或復原 Surface Hub
 
 本文說明如何重設或復原 Microsoft Surface Hub。  
 
-[重設 Surface Hub](#reset-a-surface-hub)會將其作業系統傳回至上一個累積式 Windows 更新，並移除所有本機使用者檔案和配置資訊。 移除的資訊包括下列各項：
+[重設 Surface Hub](#reset-a-surface-hub) 會將其作業系統傳回至上一個累積式 Windows 更新，並移除所有本機使用者檔案和配置資訊。 移除的資訊包括下列各項：
 
 - 裝置帳戶
 - 裝置本機系統管理員的帳戶資訊
 - 網域加入或 Azure AD 加入資訊
-- 行動裝置管理（MDM）註冊資訊
+- 行動裝置管理 (MDM) 註冊資訊
 - 使用 MDM 或 [設定] 應用程式所設定的配置資訊
 
-[從雲端復原 Surface Hub](#recover-a-surface-hub-from-the-cloud)也會移除此資訊。 此外，Surface Hub 會下載新的作業系統映射並進行安裝。 您可以指定是否要讓復原處理常式保留其他儲存在 Surface Hub 中的資訊。
+[從雲端復原 Surface Hub](#recover-a-surface-hub-from-the-cloud) 也會移除此資訊。 此外，Surface Hub 會下載新的作業系統映射並進行安裝。 您可以指定是否要讓復原處理常式保留其他儲存在 Surface Hub 中的資訊。
 
 ## 重設 Surface Hub
 
@@ -51,15 +51,15 @@ ms.locfileid: "10831869"
 
    ![顯示 Surface Hub 之 [設定] 應用程式的影像。](images/sh-settings.png)
 
-1. 選取 [**更新 & 安全性**]。
+1. 選取 [ **更新 & 安全性**]。
 
    ![在 Surface Hub 的 [設定] app 中顯示 [更新 & 安全群組的影像。](images/sh-settings-update-security.png)
 
-1. 選取 [**恢復**]，然後在 [**重設裝置**] 底下，選取 [**開始**使用]。
+1. 選取 [ **恢復**]，然後在 [ **重設裝置**] 底下，選取 [ **開始**使用]。
 
    ![在 Surface Hub 的 [設定] 應用程式中顯示 [重設裝置] 選項的影像。](images/sh-settings-reset-device.png)
 
-   重設程式完成後，Surface Hub 會再次開始[執行第一個 run 程式](first-run-program-surface-hub.md)。 如果重設程式遇到問題，它會將 Surface Hub 滾回到先前現有的作業系統影像，然後顯示 [歡迎] 畫面。
+   重設程式完成後，Surface Hub 會再次開始 [執行第一個 run 程式](first-run-program-surface-hub.md) 。 如果重設程式遇到問題，它會將 Surface Hub 滾回到先前現有的作業系統影像，然後顯示 [歡迎] 畫面。
 
 <span id="cloud-recovery" />
 
@@ -73,23 +73,23 @@ ms.locfileid: "10831869"
 - [Surface Hub 已鎖定](#recover-a-locked-surface-hub)
 
 >[!IMPORTANT]
->**從雲端程式復原**需要已開啟的網際網路連線（無 proxy 或其他驗證）。 建議使用乙太網路連接。
+>**從雲端程式復原**需要有線連線， (沒有 proxy 或其他驗證提示) 。
 
 ### 還原不良狀態中的 Surface Hub
 
-如果裝置帳戶出現無法穩定的狀態，或如果管理員帳戶遇到問題，您可以使用 [設定] app 來啟動雲端復原程式。 當[裝置重設](#reset-a-surface-hub)處理常式無法修正問題時，您應該只使用雲端復原程式。
+如果裝置帳戶出現無法穩定的狀態，或如果管理員帳戶遇到問題，您可以使用 [設定] app 來啟動雲端復原程式。 當 [裝置重設](#reset-a-surface-hub) 處理常式無法修正問題時，您應該只使用雲端復原程式。
 
-1. 在 Surface Hub 上，選取 [**設定** &gt; **更新 & 安全性**復原] &gt; ** **。
+1. 在 Surface Hub 上，選取 [ **設定** &gt; **更新 & 安全性**復原] &gt; ** **。
 
-1. 在 **[從雲端復原**] 底下，選取 [**立即重新開機**]。
+1. 在 **[從雲端復原**] 底下，選取 [ **立即重新開機**]。
 
    ![從雲端復原](images/recover-from-the-cloud.png)
 
 ### 復原鎖定的 Surface Hub
 
-在極少數的情況下，Surface Hub 可能會在工作階段末端清理使用者和應用程式資料時遇到錯誤。 發生這種情況時，裝置會自動重新開機並再次嘗試該作業。 但如果此操作重複失敗，裝置會自動鎖定以保護使用者資料。 若要解除鎖定，您必須[重設裝置](#reset-a-surface-hub)，或者如果沒有作用，請從雲端復原。
+在極少數的情況下，Surface Hub 可能會在工作階段末端清理使用者和應用程式資料時遇到錯誤。 發生這種情況時，裝置會自動重新開機並再次嘗試該作業。 但如果此操作重複失敗，裝置會自動鎖定以保護使用者資料。 若要解除鎖定，您必須 [重設裝置](#reset-a-surface-hub) ，或者如果沒有作用，請從雲端復原。
 
-1. 在 Surface Hub 底部找出電源開關。 電源開關位於電源線連接的旁邊。 如需有關 power 開關的詳細資訊，請參閱[Surface Hub 網站準備指南（PDF）](surface-hub-site-readiness-guide.md)。
+1. 在 Surface Hub 底部找出電源開關。 電源開關位於電源線連接的旁邊。 如需有關 power 開關的詳細資訊，請參閱 [Surface Hub 網站準備就緒指南 (PDF) ](surface-hub-site-readiness-guide.md)。
 
 1. 當 Surface Hub 顯示 [歡迎] 畫面時，請使用 power 開關關閉 Surface Hub。
 
@@ -97,9 +97,9 @@ ms.locfileid: "10831869"
 
 1. 重複步驟 3 3 的時間，或直到 Surface Hub 顯示「正在準備自動修復」訊息。 顯示此訊息之後，Surface Hub 就會顯示 [Windows RE] 畫面。
 
-1. 選取 [**高級選項**]。
+1. 選取 [ **高級選項**]。
 
-1. 選取 **[從雲端復原**]。 （您也可以選取 [**重設**]。 不過，**從雲端復原**是建議的方法。
+1. 選取 **[從雲端復原**]。  (（您也可以選取 [ **重設**]）。 不過， **從雲端復原** 是建議的方法。 ) 
 
    ![從雲端復原](images/recover-from-cloud.png)
 1. 如果系統提示您輸入 Bitlocker 金鑰，請執行下列其中一項操作：
@@ -107,7 +107,7 @@ ms.locfileid: "10831869"
    - 若要保留 Bitlocker 在 Surface Hub 上保護的資訊，請輸入 Bitlocker 金鑰。
    - 若要捨棄受保護的資訊，請選取 [**略過此磁片磁碟機**]  
 
-1. 出現提示時，請選取 [**重新安裝**]。
+1. 出現提示時，請選取 [ **重新安裝**]。
 
     ![重新安裝](images/reinstall.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "10831869"
 
 ## 連絡客戶支援
 
-如果您有任何疑問或需要協助，您可以[建立支援要求](https://support.microsoft.com/supportforbusiness/productselection)。
+如果您有任何疑問或需要協助，您可以 [建立支援要求](https://support.microsoft.com/supportforbusiness/productselection)。
 
 
 ## 相關主題

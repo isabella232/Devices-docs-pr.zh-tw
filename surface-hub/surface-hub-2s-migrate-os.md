@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/29/2020
+ms.date: 10/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 0c6a52d1023377f51ae6a63879e54b86db16cb9a
-ms.sourcegitcommit: 35f64110ce8e0c0b019b02023d746f648f554c1c
+ms.openlocfilehash: 0a74a082d1afe48c938fcc4780407d56cfdd121e
+ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088627"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11105274"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -87,7 +87,7 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 
 在不同的電腦上：
 
-- 從表面工具下載 Microsoft [SURFACE UEFI 配置](https://www.microsoft.com/download/details.aspx?id=46703) 器。 安裝 Windows 10 團隊後，surface UEFI 配置器不能在 Surface Hub 2 秒執行。
+- 選取 [ [表面工具] 頁面](https://www.microsoft.com/download/details.aspx?id=46703)上的 [下載] 按鈕，選取並下載 Surface UEFI 設定檔。MSI 檔案，並將它安裝在不同的電腦上。 安裝 Windows 10 小組版時，Surface UEFI 組態工具無法在 Surface Hub 2 上執行。
 
 - 下載 [Surface Hub 2 驅動程式和固件 Windows 安裝程式。](https://www.microsoft.com/download/details.aspx?id=101974) 安裝新作業系統時要套用的 MSI 檔案。
 
@@ -107,6 +107,7 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 ### 建立 SEMM 套件
 
 1. 安裝先前下載到個別電腦的 **SURFACE UEFI 配置** 工具。 
+
 2. 開啟 **SURFACE UEFI 配置** 器，然後選取 [ **開始**]。
 
    ![開啟 Surface UEFI 配置器](images/shm-fig2.png)
@@ -137,14 +138,14 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
    
 9. 設定 **UEFI 密碼** ，然後選取 **[確定]**。
 
- > [!IMPORTANT]
+   > [!IMPORTANT]
    > 將密碼儲存在您的組織中負責管理 Surface Hub 的 IT 系統管理員可存取的安全位置。 如果密碼遺失，就不會有復原程式。 
 
    ![輸入您的 UEFI 密碼](images/shm-fig9.png)
 
-10. 選取 [ **Surface Hub 2 秒** ]，然後選取 **[下一步]**。
+10. 選取 [ **Surface Hub 2 秒**]，然後選取 **[下一步]**。
 
-   ![選取 Surface Hub 2 秒](images/shm-fig10.png)
+    ![選取 Surface Hub 2 秒](images/shm-fig10.png)
    
 11. 選取 **\[下一步\]**。
 
@@ -159,7 +160,7 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
     ![將 [啟用作業系統遷移] 設定為 [開啟]](images/shm-fig12.png)
 
 > [!NOTE]
-> 在您套用 SEMM 套件之後，所有的 UEFI 設定都會以灰色顯示 (在裝置上的 UEFI 功能表中的 [鎖定]) 。 這包含其他設定（例如 IPv6 for PXE 啟動）的預設值。 若要修改 UEFI 設定，您需要套用另一個 SEMM 套件，或取消將裝置從 SEMM 取消註冊。
+> 在您套用 SEMM 套件之後，所有的 UEFI 設定都會以灰色顯示 (在裝置上的 UEFI 功能表中的 [鎖定]) 。 這包含其他設定（例如 IPv6 for PXE 啟動）的預設值。 若要在完成遷移之後修改 UEFI 設定，您需要套用另一個 SEMM 套件，或取消將裝置從 SEMM 取消註冊。 如果您套用另一個 SEMM 套件來修改 UEFI 設定，則您必須在使用 UEFI 設定檔工具建立新的 SEMM 套件時，使用原始證書。 
 
 #### 將 SEMM 套件儲存至 USB 磁片磁碟機
 
@@ -213,10 +214,12 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 6. 在 Surface Hub ( 2 上複製 Windows 10 專業版與企業版的 SEMM 套件檔案和驅動程式及固件。MSI 檔案) 至 USB 快閃記憶體磁片磁碟機的根目錄 (**BOOTME**) 包含您的 Windows 10 影像。 BOOTME USB 磁片磁碟機包含：
 
     - 您的 Windows 10 可引導影像
+    
     - SEMM 套件檔案 (複製到 USB 磁片磁碟機的根目錄) 
-        - DfciUpdate.dfi
-        - 含有 SEMM 指紋的文字檔。 在此範例中 (： SurfaceUEFI_2020Aug25_1058.txt。 自動產生的日期時間戳記會對應到您使用 Surface UEFI 設定檔建立檔案的日期。 ) 
-    - Surface Hub 2 上的 Windows 10 專業版與企業版的驅動程式和固件 ( # A0) 
+    
+      - DfciUpdate.dfi
+      - 含有 SEMM 指紋的文字檔。 在此範例中 (： SurfaceUEFI_2020Aug25_1058.txt。 自動產生的日期時間戳記會對應到您使用 Surface UEFI 設定檔建立檔案的日期。 ) 
+      - Surface Hub 2 上的 Windows 10 專業版與企業版的驅動程式和固件 ( # A0) 
 
 ### 更新 Surface Hub 2 的 UEFI 以啟用作業系統遷移
 
@@ -282,7 +285,7 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 
 ## 版本歷程記錄
 
-| 版本 | 日期               | 描述                                                                                           |
+| 版本 | 日期               | 說明                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
 | 向量. 1.2  | 2020年9月29日 | 每個可用性意見反應的其他更新。                                                        |
 | 向量. 1.1  | 2020年9月15日 | 在簡介中放入其他記事，說明安裝新作業系統的授權需求。 |
