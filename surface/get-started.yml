@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Surface devices documentation
-summary: Harness the power of Surface, Windows, and Office connected together through the cloud.
+title: Surface 裝置文件
+summary: 運用透過雲端結合之 Surface、Windows 和 Office 的威力。
 metadata:
-  title: Surface devices documentation
-  description: Get started with Microsoft Surface devices
+  title: Surface 裝置文件
+  description: Microsoft Surface 裝置快速入門
   ms.service: product-insights
   ms.topic: landing-page
   manager: laurawi
@@ -18,105 +18,105 @@ metadata:
   ms.lasthandoff: 10/01/2020
   ms.locfileid: "11093096"
 landingContent:
-- title: Surface devices
+- title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Surface Laptop Go  for Business
+    - text: Surface 膝上型電腦前往商務用
       url: https://www.microsoft.com/surface/business/surface-laptop-go
-    - text: Surface Pro X for Business
+    - text: 商務用 Surface Pro X
       url: https://www.microsoft.com/surface/business/surface-pro-x
-    - text: Explore all Surface family products
+    - text: 探索所有 Surface 系列產品
       url: https://www.microsoft.com/surface/business
-- title: Get started
+- title: 開始使用
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Book 3 GPU technical overview
+    - text: Surface Book 3 GPU 技術概觀
       url: surface-book-gpu-overview.md
-    - text: Surface Book 3 Quadro RTX 3000 technical overview
+    - text: Surface Book 3 Quadro RTX 3000 技術概觀
       url: surface-book-quadro.md
-    - text: What’s new in Surface Dock 2
+    - text: 表面停靠2的新功能
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
-    - text: Zero Touch Deployment with Surface & AutoPilot
+    - text: 使用 Surface & AutoPilot 進行零觸控部署
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: Surface Pro X and Windows on ARM in a remote world
+    - text: 遠端世界上的 Surface Pro X 和 Windows on ARM
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Chip to Cloud Modern Endpoint Protection from Microsoft
+    - text: 從 Microsoft 開始，Surface Security-從 Microsoft 到雲端的雲端端點保護
       url: https://youtu.be/uadAecDbqf4
-- title: Deploy Surface devices
+- title: 部署 Surface 裝置
   linkLists:
   - linkListType: deploy
     links:
-    - text: Autopilot and Surface devices
+    - text: Autopilot 和 Surface 裝置
       url: windows-autopilot-and-surface-devices.md
-    - text: Surface Registration Support for Windows Autopilot
+    - text: 適用於 Windows Autopilot 的 Surface 註冊支援
       url: surface-autopilot-registration-support.md
-    - text: Windows Virtual Desktop on Surface
+    - text: Surface 上的 Windows 虛擬桌面
       url: windows-virtual-desktop-surface.md
-- title: Manage Surface devices
+- title: 管理 Surface 裝置
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Manage and deploy Surface driver and firmware updates
+    - text: 管理和部署 Surface 驅動程式與韌體更新
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Best practice power settings for Surface devices
+    - text: Surface 裝置的最佳做法電源設定
       url: maintain-optimal-power-settings-on-Surface-devices.md
-    - text: Optimize Wi-Fi connectivity for Surface devices
+    - text: 最佳化 Surface 裝置的 Wi-Fi 連線能力
       url: surface-wireless-connect.md
-- title: Explore security guidance
+- title: 探索安全性指導
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
+    - text: '使用 Surface Enterprise 管理模式的安全 Surface Dock 2 埠 (SEMM) '
       url: secure-surface-dock-ports-semm.md
-    - text: Intune management of Surface UEFI settings
+    - text: Surface UEFI 設定的 Intune 管理
       url: surface-manage-dfci-guide.md
-    - text: Surface Data Eraser tool
+    - text: Surface Data Eraser 工具
       url: microsoft-surface-data-eraser.md
-- title: Discover Surface tools
+- title: 探索 Surface 工具
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Surface Diagnostic Toolkit for Business
+    - text: 商務用 Surface 診斷工具組
       url: surface-diagnostic-toolkit-for-business-intro.md
-    - text: SEMM and UEFI
+    - text: SEMM 與 UEFI
       url: surface-enterprise-management-mode.md
-    - text: Surface Deployment Accelerator tool
+    - text: Surface 部署加速器工具
       url: microsoft-surface-deployment-accelerator.md
-- title: Troubleshoot
+- title: 疑難排解
   linkLists:
   - linkListType: learn
     links:
-    - text: Top support solutions
+    - text: 熱門支援解決方案
       url: support-solutions-surface.md
-    - text: Best practices for SSD removal in compatible Surface devices
+    - text: 在相容 Surface 裝置中移除 SSD 的最佳做法
       url: surface-ssd-removal-guide.md
-    - text: Surface IT Pro Blog
+    - text: Surface IT 專業人員部落格
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
-    - text: Protecting your data during Surface repair or service
+    - text: 在 Surface 修理或服務期間保護您的資料
       url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Troubleshoot Surface Dock and docking stations
+    - text: Surface 擴充座和連接基座的疑難排解
       url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
-- title: Participate in Surface Community
+- title: 參與 Surface 社區
   linkLists:
   - linkListType: learn
     links:
-    - text: Surface IT Pro blog
+    - text: Surface IT 專業人員部落格
       url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
     - text: Surface 裝置技術社群
       url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
     - text: Microsoft Mechanics Surface 影片
       url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-- title: Need help?
+- title: 需要協助？
   linkLists:
   - linkListType: learn
     links:
-    - text: Contact Surface Support
+    - text: 連絡 Surface 支援
       url: contact-surface-support.md
-    - text: Surface for Business warranty and extended service plans
+    - text: 商務用 Surface 保固與擴充服務方案
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
