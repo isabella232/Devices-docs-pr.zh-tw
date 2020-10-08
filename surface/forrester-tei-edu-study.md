@@ -1,6 +1,6 @@
 ---
-title: The Total Economic Impact of Microsoft Surface for Education
-description: This page provides a downloadable PDF of a Forrester Consulting study on the potential return on investment (ROI) for K-12 schools deploying Surface.
+title: 適用于教育版的 Microsoft Surface 總經濟影響
+description: 此頁面為 Forrester 諮詢研究提供可下載的 PDF，其中提供了在 K 個學校部署表面所帶來的潛在 (投資回報) 。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -19,13 +19,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/06/2020
 ms.locfileid: "11099877"
 ---
-# The Total Economic Impact of Microsoft Surface for Education
+# 適用于教育版的 Microsoft Surface 總經濟影響
 
-Access to individual computing devices is critical for the education of K-12 students. Benefits of this access include better instruction, enhanced creativity and collaboration, fulfillment of accessibility and special learning requirements, and teaching workplace technology skill sets. Microsoft Surface devices create better outcomes for students, while also making it easier for IT organizations to support 1:1 student device models as well as freeing up teachers’ and administrators’ time.
+存取個別的計算裝置對於 K-12 學生的教育而言是至關重要的。 這項存取的好處包括較佳的指示、增強的創造性與共同作業、協助工具和特殊學習需求的執行，以及教學工作場所技術的技能集合。 Microsoft Surface 裝置可為學生建立更佳的結果，同時讓 IT 組織更容易支援1:1 學生裝置模型，以及釋放教師與系統管理員的時間。
 
-Microsoft commissioned Forrester Consulting to conduct a Total Economic Impact&trade; (TEI) study and examine the potential return on investment (ROI) for K-12 schools deploying Surface. The purpose of this study is to provide readers with a framework to evaluate the potential financial impact of Surface on their organizations. Adopting Surface as the device of choice for an institution improves student outcomes, helps overworked IT departments, frees up instructors’ time, and reduces total cost of ownership (TCO) for devices.
+Microsoft [Forrester 諮詢] 可執行總體經濟影響 &trade; (TEI) 研究，並檢查在第10個學校部署表面上的潛在投資回報 (ROI) 。 此研究的目的是向讀者提供架構，以評估 Surface 對組織的潛在財務影響。 採用 Surface 作為機構選擇的裝置可改善學生的結果、協助大量 IT 部門、釋放教師的時間，並降低總體擁有成本 (裝置的 TCO) 。
 
-[![The Total Economic Impact of Microsoft Surface for Education](./images/download-report.png)](./media/forrester-tei-microsoft-surface-for-education.pdf)
+[![T在教育版 Microsoft Surface 中產生的經濟效益總成本）(./images/download-report.png)](./media/forrester-tei-microsoft-surface-for-education.pdf)
 
 
 
