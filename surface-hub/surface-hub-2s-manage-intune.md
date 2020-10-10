@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
-ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
+ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
+ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078743"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105939"
 ---
 # 使用 Intune 管理 Surface Hub 2S
 
@@ -92,19 +92,25 @@ Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新�
 > [!NOTE]
 > 兩個表格都顯示出預設的連接埠範圍。 系統管理員可以變更商務用 Skype 和 Teams 控制台的連接埠範圍。
 
-## Microsoft Teams 模式設定
+## Microsoft 團隊設定
 
-您可以使用 Intune 設定 Microsoft Teams 應用程式的模式。 Surface Hub 2S 會在模式 0 中隨 Microsoft Teams 一起安裝完成，可支援 Microsoft Teams 和商務用 Skype。 您可以調整模式，如下所示。
+您可以使用 Intune 設定各種 Microsoft 團隊設定。
 
-### 模式：
+### 型號
+
+Surface Hub 2S 會在模式 0 中隨 Microsoft Teams 一起安裝完成，可支援 Microsoft Teams 和商務用 Skype。 模式的運作方式如下所述：
 
 - 模式 0－ 商務用 Skype 具 Microsoft Teams 功能，適於排定會議期程。
 - 模式 1－ Microsoft Teams 具商務用 Skype 功能,適於排定會議期程。
 - 模式 2－ 僅具 Microsoft Teams 功能。
 
-若要設定模式，請在自訂 [裝置設定設定檔] 中新增下列設定。
+若要調整模式，請將下列設定新增至 [自訂裝置設定檔](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
 
-| 名稱 | 說明 | OMA-URI | 類型 | 值 |
+| Name | 說明 | OMA-URI | 類型 | 值 |
 |:--- |:--- |:--- |:--- |:--- |
 |**Teams 應用程式識別碼**|App 名稱|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|字串| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Teams 應用程式模式**|Teams 模式|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|整數| 0 或 1 或 2|
+
+### 協同會議與鄰近性加入
+
+團隊協同會議與鄰近性加入功能可 [透過透過](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) Intune 設定檔部署的 XML 檔案進行設定。

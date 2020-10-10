@@ -8,7 +8,7 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 08/19/2020
+ms.date: 10/09/2020
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
@@ -17,12 +17,13 @@ appliesto:
 - Surface Pro X
 - Surface Laptop 3
 - Surface Book 3
-ms.openlocfilehash: 9d83fe9b7febf996d2cb314399505ed050a69a92
-ms.sourcegitcommit: b94832cba98e01014f7d184c85d79f8339e046c4
+- Surface Laptop Go
+ms.openlocfilehash: 20d1b187a565f210eedc632be1addeac5dd714ba
+ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941662"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105858"
 ---
 # Surface UEFI 設定的 Intune 管理
 
@@ -54,6 +55,7 @@ Crucially、DFCI 啟用零觸控管理，不需要 IT 系統管理員手動互�
 - Surface Pro X
 - Surface 膝上型電腦3
 - Surface Book 3
+- Surface 膝上型電腦前往
 
 > [!NOTE]
 > Surface Pro X 不支援內建相機、音訊和 Wi-fi/藍牙的 DFCI 設定管理。
@@ -84,7 +86,7 @@ DFCI 環境需要設定包含設定的 DFCI 設定檔，以及將設定套用到
     ![建立 DFCI 設定檔](images/df1.png)
 
 5. 按一下 **[確定]** ，然後選取 [ **建立**]。
-6. 選取 [ **作業** ]，然後在 [ **選取要包含的群組** ] 底下，選取包含您目標裝置的 Azure AD 安全性群組，如下圖所示。 按一下 **[儲存]**。
+6. 選取 [ **作業** ]，然後在 [ **選取要包含的群組** ] 底下，選取包含您目標裝置的 Azure AD 安全性群組，如下圖所示。 按一下**儲存**。
 
     ![指派安全性群組](images/df2a.png)
 
