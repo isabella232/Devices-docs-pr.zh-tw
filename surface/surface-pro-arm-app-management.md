@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 202818488f19c82ba9d08cfcbfcd091e3e8b7bf6
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105838"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114621"
 ---
 # 部署、管理及維護 Surface Pro X
 
@@ -96,8 +96,7 @@ Surface Pro X 已設計成使用 Windows Update 來為家庭使用者和小型�
 
 ### FastTrack 應用程式 Assure 
 
-The App Assure 計劃可供商業客戶用於 ARM 上針對 Windows 10 的 LOB、ISV 和 Microsoft 第一方應用程。 如果商業版在 ARM 上使用 Windows 10 發生應用程式相容性問題，Microsoft 會提供開發人員資源，以便在不額外付費的情況下，進行疑難排解和協助修復應用程式。 若要深入瞭解，請瀏覽 aka.ms/AppAssure
-
+The App Assure 計劃可供商業客戶用於 ARM 上針對 Windows 10 的 LOB、ISV 和 Microsoft 第一方應用程。 如果商業客戶在 ARM 上使用 Windows 10 發生應用程式相容性問題，Microsoft 會提供開發人員資源，以便在不額外付費的情況下，進行疑難排解和協助修復應用程式。 若要深入瞭解，請瀏覽 [aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) (英文)。
 
 如需有關在 Surface Pro X 上執行應用程式的詳細資訊，請參閱：
 
