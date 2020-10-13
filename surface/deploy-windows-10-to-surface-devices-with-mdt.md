@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 部署工具箱（Surface）將 Windows 10 部署到 Surface 裝置
+title: 使用 Microsoft 部署工具組 (Surface) 將 Windows 10 部署到 Surface 裝置
 description: 逐步瞭解如何使用 Microsoft 部署工具套件將 Windows 10 部署到 Surface 裝置的建議程式。
 keywords: windows 10 surface、自動化、自訂、mdt
 ms.prod: w10
@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.date: 04/24/2020
-ms.openlocfilehash: b13b0a7fa486d2360c5e69ad1578c85a5e46a91d
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: 858b6726f1127e3c439864f8946274ed0ea1edd3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831558"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114561"
 ---
 # 使用 Microsoft 部署工具組將 Windows 10 部署到 Surface 裝置
 
@@ -29,12 +29,13 @@ ms.locfileid: "10831558"
 - Surface Pro 4 及更新版本
 - Surface Book 及更新版本
 - Surface 膝上型電腦及更新版本
+- Surface 膝上型電腦前往
 - Surface Go
 - Surface 3
 - Windows 10
 
 > [!NOTE]
-> Surface Pro X 不支援 MDT。如需詳細資訊，請參閱[部署、管理及維護 Surface Pro X](surface-pro-arm-app-management.md)。
+> Surface Pro X 不支援 MDT。如需詳細資訊，請參閱 [部署、管理及維護 Surface Pro X](surface-pro-arm-app-management.md)。
 
-如需有關使用 MDT 的最新資訊，請參閱[使用 Mdt 部署 Windows 10 影像](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)。
+如需有關使用 MDT 的最新資訊，請參閱 [使用 Mdt 部署 Windows 10 影像](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)。
 

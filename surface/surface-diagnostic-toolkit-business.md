@@ -8,20 +8,20 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902981"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114661"
 ---
 # 部署商務用 Surface 診斷工具組
 
-適用于商務用 Microsoft Surface 診斷工具組（SDT）可讓 IT 系統管理員快速調查、疑難排解及解決與 Surface 裝置的硬體、軟體及固件問題。 除了取得裝置健康情況深入資訊以及解決問題的指示之外，您還可以執行診斷測試和軟體修復範圍。 
+商務 () SDT 的 Microsoft Surface 診斷工具組可讓 IT 系統管理員快速調查、疑難排解及解決 Surface 裝置的硬體、軟體及固件問題。 除了取得裝置健康情況深入資訊以及解決問題的指示之外，您還可以執行診斷測試和軟體修復範圍。 
 
 具體來說，SDT for Business 可讓您：
 
@@ -46,6 +46,7 @@ ms.locfileid: "10902981"
 
 在 Surface 3 和更新版本的裝置上支援 SDT for Business，包括：
 
+- Surface 膝上型電腦前往
 - Surface Book 3
 - 表面移2
 - Surface Pro X
@@ -72,7 +73,7 @@ ms.locfileid: "10902981"
 若要建立可發佈給組織中使用者的 SDT 套件：
 
 1. 使用系統管理員帳戶登入您的 Surface 裝置。
-2. 從 [[表面工具](https://www.microsoft.com/download/details.aspx?id=46703)] 下載您的 Windows 安裝程式套件（.msi），並將它複製到 surface 裝置上（例如桌面）的喜好位置。
+2. 從 [ [表面工具](https://www.microsoft.com/download/details.aspx?id=46703) ] 下載 Windows 安裝程式套件 ( .msi) ，然後將它複製到 surface 裝置上的可取位置，例如 [桌面]。
 3. [SDT 設定] 嚮導隨即出現，如圖1所示。 按 **\[下一步\]**。 
 
     >[!NOTE]
@@ -82,17 +83,17 @@ ms.locfileid: "10902981"
 
     *圖 1。 表面診斷工具組設定向導*
 
-4. [SDT 設定向導] 出現時，請按 **[下一步]**，接受使用者授權合約（EULA）。
+4. 當 [SDT 安裝精靈] 出現時，請按 **[下一步]**，接受使用者授權合約 (EULA) 
 
 5. 在 [安裝選項] 畫面上，視需要變更預設安裝位置。 
-6. 選取 [設定類型] 底下的 [**高級**]。 
+6. 選取 [設定類型] 底下的 [ **高級**]。 
 
     >[!NOTE]
     >標準選項可讓使用者在其 Surface 裝置上直接執行診斷工具，前提是他們已使用系統管理員帳戶登入他們的裝置。 
     
      ![安裝選項：高級](images/sdt-install.png)
 
-7. 按一下 **[下一步]** ，然後按一下 [**安裝**]。 
+7. 按一下 **[下一步]** ，然後按一下 [ **安裝**]。 
 
 ## 使用命令列安裝
 如有需要，您可以在命令提示字元中安裝 SDT，並設定自訂旗標以在 [管理員模式] 中安裝該工具。 SDT 包含下列安裝選項標誌：
@@ -117,7 +118,7 @@ ms.locfileid: "10902981"
 
 [SDT] 和 [SDT] 應用程式主控台都已安裝 `C:\Program Files\Microsoft\Surface\Microsoft Surface Diagnostic Toolkit for Business` 。
 
-除了 .exe 檔案之外，SDT 還會安裝 JSON 檔案和 admin.dll 檔案（modules\admin.dll），如圖2所示。
+除了 .exe 檔案之外，SDT 還會安裝 JSON 檔案和 admin.dll 檔案 ( # A1) ，如圖2所示。
 
 ![檔案資源管理器中的 SDT 已安裝檔案清單](images/sdt-2.png)
 
@@ -129,8 +130,8 @@ ms.locfileid: "10902981"
 
 建立自訂套件可讓您將工具目標設定為特定的已知問題。
 
-1. 按一下 [**開始 > 執行**]、輸入**表面**，然後按一下 [**表面診斷工具] 以取得商務**用。 
-2. 當工具開啟時，按一下 [**建立自訂套件**]，如圖3所示。
+1. 按一下 [ **開始 > 執行**]、輸入 **表面** ，然後按一下 [ **表面診斷工具] 以取得商務**用。 
+2. 當工具開啟時，按一下 [ **建立自訂套件**]，如圖3所示。
 
     ![[建立自訂套件] 選項](images/sdt-3.png)
 
@@ -138,7 +139,7 @@ ms.locfileid: "10902981"
 
 ### 語言和遙測設定
 
-  建立套件時，您可以選取 [語言設定] 或 [選擇不傳送遙測資訊給 Microsoft]。 根據預設，SDT 會將遙測傳送至 Microsoft，以使用[Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改善應用程式。 如果您想要拒絕，請在建立自訂套件時清除核取方塊，如下所示。 或者，在 [**安裝選項**] 頁面上，清除 [在 SDT 設定期間，**傳送遙測至 Microsoft** ] 核取方塊。 
+  建立套件時，您可以選取 [語言設定] 或 [選擇不傳送遙測資訊給 Microsoft]。 根據預設，SDT 會將遙測傳送至 Microsoft，以使用 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改善應用程式。 如果您想要拒絕，請在建立自訂套件時清除核取方塊，如下所示。 或者，在 [**安裝選項**] 頁面上，清除 [在 SDT 設定期間，**傳送遙測至 Microsoft** ] 核取方塊。 
 
 >[!NOTE]
 >此設定不會影響執行需要網際網路連線（例如 Windows Update 和軟體修復），或使用 app 工具列中的 [笑臉] 或 [苦臉] 按鈕提供意見反應的測試及修復時，在 Microsoft 伺服器上自動儲存的最小遙測。 
@@ -151,7 +152,7 @@ ms.locfileid: "10902981"
 
 ### [Windows Update] 頁面
 
-選取適用于貴組織的選項。 大多數擁有多個使用者的組織通常會選取透過 Windows Server Update Services （WSUS）接收更新，如圖5所示。 如果您使用的是 [本機 Windows 更新套件] 或 [WSUS]，請視需要輸入路徑。 
+選取適用于貴組織的選項。 大多數擁有多個使用者的組織通常會選取透過 Windows Server Update Services (WSUS 接收更新) ，如圖5所示。 如果您使用的是 [本機 Windows 更新套件] 或 [WSUS]，請視需要輸入路徑。 
 
 ![選取 [Windows Update] 選項](images/sdt-5.png)
 
@@ -180,6 +181,17 @@ ms.locfileid: "10902981"
 
 ## 變更與更新
 
+### 版本2.124.139。0
+
+此版本的商業表面診斷工具組會新增下列支援：
+
+- 順暢整合的支援
+- 儲存所有測試結果
+- 檢查影像是否已建立自訂
+- 在裝置管理器中包含警告
+- Dock 固件版本
+- 在儲存測試中將磁碟機標示為可能的失敗
+- 移除商店連結 
 
 ### 版本2.121.139
 *發行日期： 31 2020 年7月*<br>

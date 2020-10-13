@@ -9,17 +9,17 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 08/04/2020
+ms.date: 10/12/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 3eb177e976bd99ec245996db8cb22eab639f63cc
-ms.sourcegitcommit: c0676329f894135388b6d52f85ee8ac9507a836e
+ms.openlocfilehash: ec1d53a4bdbcaaf6606dcb0e52fc81de92a2a53b
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905670"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114541"
 ---
 # 系統 SKU 參考
 
@@ -51,9 +51,11 @@ ms.locfileid: "10905670"
 | Surface 膝上型電腦2商業版                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
 | Surface Pro X                 | Surface Pro X    | Surface_Pro_X_1876         |
+| Surface Pro X 與 SQ2 處理器                | Surface Pro X    | Surface_Pro_X_H_1876        |
 | Surface 膝上型電腦 3 13 "英特爾 | Surface 膝上型電腦3 | Surface_Laptop_3_1867：1868 |
 | Surface 膝上型電腦 3 15 "英特爾 | Surface 膝上型電腦3 | Surface_Laptop_3_1872      |
 | Surface 膝上型電腦 3 15 "AMD   | Surface 膝上型電腦3 | Surface_Laptop_3_1873      | 
+| Surface 膝上型電腦前往  | Surface 膝上型電腦前往 | Surface_Laptop_Go_1943      | 
 
 ## 範例 
 
@@ -65,10 +67,10 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **使用系統資訊來檢索 SKU**  
-您也可以在 [**系統資訊**] 中找到裝置的系統 SKU 和系統模型。 若要這樣做，請執行下列步驟：
+您也可以在 [ **系統資訊**] 中找到裝置的系統 SKU 和系統模型。 若要這樣做，請執行下列步驟：
 
-1. 選取 [**開始**]，然後在搜尋方塊中輸入 [ **MSInfo32** ]。  
-1. 選取 [**系統資訊**]。
+1. 選取 [ **開始**]，然後在搜尋方塊中輸入 [ **MSInfo32** ]。  
+1. 選取 [ **系統資訊**]。
 
 **在任務序列中使用 SKU WMI 條件**  
 您可以在 Microsoft 部署工具組中使用系統 SKU 資訊 (MDT) 或 Microsoft 端點建構管理員，做為任務序列 WMI 條件的一部分。

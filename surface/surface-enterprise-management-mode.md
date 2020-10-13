@@ -13,20 +13,20 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 09/01/2020
-ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
-ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
+ms.date: 10/12/2020
+ms.openlocfilehash: 463759d2dd01b9333d10a66c1781055f4a5217ac
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993663"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114641"
 ---
 # Microsoft Surface Enterprise 管理模式
 
 Microsoft Surface Enterprise 管理模式 (SEMM) 是具有 Surface UEFI 的 Surface 裝置功能，可讓您保護及管理貴組織內的固件設定。 有了 SEMM，IT 專業人員就能準備 UEFI 設定的設定，並在 Surface 裝置上安裝它們。 除了能夠設定 UEFI 設定之外，SEMM 也會使用憑證來保護設定不會受到未經授權的篡改或移除。 SEMM 是必須能夠將 Surface Hub 2 級遷移到 Windows 10 專業版與企業版的需求。
 
 >[!NOTE]
->SEMM 只能在具有 Surface UEFI 固件的裝置上使用。 這是由大多數其他 Surface 裝置組成，包括 Surface Pro 7、Surface Pro X、Surface Hub 2，以及 Surface 膝上型3商業 Sku 與 Intel 處理器。 SEMM 在15「Surface 膝上型電腦 3 SKU （含 AMD 處理器）上不受支援， (僅提供零售 SKU) 。 
+>SEMM 只能在具有 Surface UEFI 固件的裝置上使用。 這是由大多數其他 Surface 裝置組成，包括 Surface Pro 7、Surface Pro X、Surface Hub 2 及 surface 膝上型3商業 Sku （含 Intel 處理器），以及 Surface 膝上型電腦。 SEMM 在15「Surface 膝上型電腦 3 SKU （含 AMD 處理器）上不受支援， (僅提供零售 SKU) 。 
 
 當 Surface 裝置是由 SEMM 進行設定，並以 SEMM 憑證加以保護時，它們會被視為已在 SEMM 中 *註冊* 。 移除 SEMM 憑證並將 UEFI 設定傳回給裝置的使用者時，Surface 裝置會被視為 SEMM 中的 *unenrolled* 。
 
@@ -174,7 +174,7 @@ Surface UEFI 重設套件只是用來執行一個工作，以取消從 SEMM 取�
 * **到期日** –從證書建立開始的15個月
 * **金鑰匯出原則** –可匯出的
 
-此外，建議您在雙層公開金鑰基礎結構 (的 PKI) 架構（ (CA) 專用於 SEMM，從而啟用憑證吊銷）中驗證 SEMM 憑證。 如需雙層 PKI 設定的詳細資訊，請參閱 [測試實驗室指南：部署 AD CS 雙層 Pki 層次結構](https://technet.microsoft.com/library/hh831348)。
+此外，建議您在雙層公開金鑰基礎結構 (的 PKI) 架構（ (CA) 專用於 SEMM，從而啟用憑證吊銷）中驗證 SEMM 憑證。 如需雙層 PKI 設定的詳細資訊，請參閱 [測試實驗室指南：部署 AD CS Two-Tier PKI](https://technet.microsoft.com/library/hh831348)階層。
 
 ### 自我簽署憑證 
 您可以使用下列範例 PowerShell 腳本，建立可在概念驗證案例中使用的自我簽署憑證。
@@ -241,6 +241,18 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 針對特定裝置類型建立配置套件的 PowerShell 範例也可以用來建立獨立于序號碼的重設套件。 如果憑證仍然有效，您可以使用 PowerShell 建立重設套件來重設 SEMM。
 
 ## 版本歷程記錄
+
+
+### 版本2.78.139。0
+
+此版本的 SEMM 包括：
+
+- 支援 Surface 膝上型電腦和 Surface Pro X
+- 新版本發行的通知
+- 建立自訂套件以變更擁有權的能力
+- 錯誤修正
+
+
 
 
 ### 版本2.73.136。0

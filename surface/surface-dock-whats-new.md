@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/01/2020
+ms.date: 10/12/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 19aba3e88afd7b17de5b391d1bfe6eaf77db38e9
-ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+ms.openlocfilehash: e96242ab9cef127238bda3ee3ea797c943479798
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093136"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114681"
 ---
 # 表面停靠的新功能 
 
@@ -45,6 +45,7 @@ ms.locfileid: "11093136"
   - Surface 膝上型電腦3
   - Surface Book 3
   - 表面移2
+  - Surface 膝上型電腦前往
 
 ## 表面固定2個元件
 
@@ -115,7 +116,7 @@ ms.locfileid: "11093136"
 
 
 
-1. *裝置必須設定為透過 Surface Enterprise 管理模式，在局域網上喚醒 (SEMM) 或裝置固件控制介面 (DFCI) ，才能從休眠或關閉狀態進行喚醒。 從休眠或電源關閉喚醒在 Surface Pro 7、Surface 膝上型電腦3、Surface Pro X、Surface Book 3 和 Surface Go 2 上受到支援。  部分功能所需的軟體授權。 單獨出售。*
+1. *裝置必須設定為透過 Surface Enterprise 管理模式，在局域網上喚醒 (SEMM) 或裝置固件控制介面 (DFCI) ，才能從休眠或 Power-Off 狀態進行喚醒。 從休眠或 Power-Off 喚醒是在 Surface Pro 7、Surface 膝上型電腦3、Surface Pro X、Surface Book 3 和 Surface Go 2 上支援。  部分功能所需的軟體授權。 單獨出售。*
 
 2. *部分功能所需的軟體授權。 單獨出售。*
 
