@@ -17,12 +17,12 @@ ms.topic: article
 ms.date: 10/21/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: 25705f889f70e3d12dfef690c34e03d98254725e
-ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
+ms.openlocfilehash: a17d4b05e6ee5f7415fed62d96b9e0a62a6dc123
+ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "11133178"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134401"
 ---
 # 設定 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -44,13 +44,14 @@ ms.locfileid: "11133178"
 
     - 這裡使用的設定是用來啟用最佳的螢幕觸控體驗，因此您可能不想同步處理其他裝置。
     
-4. 將裝置重新開機。
+4. 重新開機裝置。
 
 ## 啟用觸控式鍵盤與觸控板
 
 1. 按住或以滑鼠右鍵按一下工作列，然後選取 [ **顯示觸控式鍵盤] 按鈕** ，然後選取 [ **顯示觸控板] 按鈕**。 
 
     - 觸控式鍵盤對直接使用者輸入很有説明，而虛擬觸控板可協助您精確選擇、懸停工具提示，或代替按一下滑鼠右鍵。 
+    
     - 請參閱以下範例。
 
       ![觸控設定](images/touch.png)
@@ -63,10 +64,9 @@ ms.locfileid: "11133178"
     
     3. 選取上方列的 [最後一個鍵盤類型] 旁的 [啟用標準]，然後在第二個數據列的最後一個選項上啟用 [浮動]，這在這個大型螢幕上很有説明。 請參閱以下範例。
 
-      ![鍵盤設定](images/kbd.png)
+       ![鍵盤設定](images/kbd.png)
  
 3. 設定軟鍵盤設定。
-
 
     1. 選取觸控式鍵盤上的 [ **設定** ] 圖示，或搜尋並開啟 **輸入設定**。
     
@@ -90,6 +90,7 @@ ms.locfileid: "11133178"
 使用 [商務用 OneDrive](https://docs.microsoft.com/onedrive/onedrive) 在您所有的工作裝置之間輕鬆共用工具、記錄及其他檔案。
 
 - OneDrive 可讓您在膝上型電腦、Surface Hub 桌面與 Intune 管理的行動裝置之間共用您的工作檔案。 您可以在任何裝置上編輯檔案，而且所有網路連接的裝置都會隨變更進行更新。
+
 - 考慮 Surface Hub SSD 的大小 (128GB) ，如果您在 Surface Hub 桌面裝置上設定 OneDrive，請確定預設設定是在您使用它們時，讓檔案保持線上並下載檔案。
 
 若要將 OneDrive 設定為只在需要時下載檔案，請設定 [檔案 **隨選** ] 設定，以 **在您使用時儲存空間和下載**檔案。 如需詳細資訊，請參閱 [在 Windows 中查詢及設定檔案的隨選狀態](https://docs.microsoft.com/onedrive/files-on-demand-windows)。
@@ -116,13 +117,17 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 5. 確認設定設定為讓檔案保持線上，且只在您使用檔案時才下載檔案：
 
     1. 開啟 [檔案資源管理器]。
-    2. 在**Microsoft \ \<SharePoint Document Folder Name\> **上流覽並以滑鼠右鍵選取。
+    
+    2. 流覽至並以滑鼠右鍵按一下您的 SharePoint 名稱;例如 [ **Contoso \ \<SharePoint Document Folder Name\> **]。
+    
     3. 選取 [ **釋放空間**]。
+    
     4. [狀態] 欄會顯示 [檔案] 和 [資料夾] 的狀態。 如需詳細資訊，請參閱 [使用 OneDrive 同步處理用戶端同步處理 SharePoint](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd)檔案。
     
 6. 團隊通道檔案是儲存在 SharePoint 網站中，所有的 SharePoint 檔功能都相同，包括版本歷程記錄，以及同步處理到您的本機桌面裝置。 若要同步處理團隊通道檔：
 
-    1. 流覽至 [感 **興趣的小組] 頻道** ，然後選取頂端的 [檔案] 索引標籤。 然後選取 [**同步**處理]。檔案將會開始進行同步處理，並會顯示在桌上型電腦的 [檔案資源管理器] **\ [Microsoft \ \<name of the Teams Channel\> **]。
+    1. 流覽至 [感 **興趣的小組] 頻道** ，然後選取頂端的 [檔案] 索引標籤。 然後選取 [**同步**處理]。檔案將會開始同步處理，並會顯示在**桌上型電腦 \ Contoso \ \<name of the Teams Channel\> **的檔案資源管理器中。
+    
     2. 使用您用來同步處理 SharePoint 網站的相同程式，將檔案保留在雲端，並只在使用時進行下載，只要在 [團隊頻道名稱] 上按一下並按住或以滑鼠右鍵按一下，然後選取 [ **釋放空間**]。
 
 ## Surface Hub 手寫筆設定
@@ -153,7 +158,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 2. 在靠近頁面底部的位置，選取會開啟此對話方塊的 [筆快速鍵]，如下所示：
 
-![畫筆快速鍵](images/sh2-pen-shortcuts.png)
+   ![畫筆快速鍵](images/sh2-pen-shortcuts.png)
 
 ## 相機配置
 
@@ -200,7 +205,9 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 若要更新所有已安裝的 Microsoft Store 應用程式：
 
 1. 開啟 Microsoft Store 應用程式，然後選取右上角的 [ **查看更多** 省略號]。
+
 2. 選取 [下載與更新]****。
+
 2. 選取 [取得更新]****。
 
 ### Microsoft Whiteboard
@@ -246,6 +253,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 3. 如果已安裝 Outlook，請務必將 Outlook OST 設定為只儲存最後兩周的快取。 這將大大減少磁片使用量和設定時間。
 
     - 選取 **[** 檔案  >  **帳戶設定**]，然後選取您的帳戶。
+    
     - 選取 [ **變更** ]，然後將 [使用快取 **Exchange 模式]** 的滑杆設定為14天。
 
 ### Microsoft Teams
@@ -307,6 +315,11 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 下載並安裝新的 [Edge Chromium 瀏覽器](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL)。
 
+
+### Surface Hub 硬體診斷工具
+
+您可以從 Microsoft 網上商店免費取得 [Surface Hub 硬體診斷工具](https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g) 。 此工具的設計目的是協助您確保 Surface Hub 發揮最佳效果。 它包含可判斷您的固件是否為最新且已正確設定的測試。 互動式測試可讓您確認必要的功能是否如預期運作。 如果遇到問題，可以將結果儲存起來，與 Surface Hub 支援小組分享。 按一下連結以從 Microsoft 網上商店安裝，然後將應用程式釘選到工作列。
+
 ## 其他設定
 
 ### 選取以啟動白板的 [畫筆尾部]
@@ -336,7 +349,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 2. 將 **螢幕超時設定** 和 **螢幕保護裝置程式設定** 設定為您的喜好設定。 建議的預設值為：
 
    - [螢幕保護裝置程式] 可 (無]) 或您選擇的螢幕保護裝置程式。
-   - 等待 "時間到15分鐘。
+   - 等待時間15分鐘。
    - 在 [繼續] 上，顯示 [登入] 畫面。
 
 
@@ -406,7 +419,7 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 
    1. 在提升許可權的命令提示字元中，輸入 **gpupdate/force/boot/wait： 0**。
    
-3. 將裝置重新開機。
+3. 重新開機裝置。
 
 4. 驗證工作列 app。
 

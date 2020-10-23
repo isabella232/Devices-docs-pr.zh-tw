@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 1a54d40faf9c3738bd07595b57a1c2d5a86373b4
-  ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+  ms.openlocfilehash: 01c1cc2ea75e79825c80cc6f02970a755ae35b75
+  ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/01/2020
-  ms.locfileid: "11093096"
+  ms.lasthandoff: 10/23/2020
+  ms.locfileid: "11134381"
 landingContent:
 - title: Surface 裝置
   linkLists:
@@ -28,14 +28,14 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-pro-x
     - text: 探索所有 Surface 系列產品
       url: https://www.microsoft.com/surface/business
-- title: 開始使用
+- title: 入門
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Book 3 GPU 技術概觀
-      url: surface-book-gpu-overview.md
-    - text: Surface Book 3 Quadro RTX 3000 技術概觀
-      url: surface-book-quadro.md
+    - text: 使用 Microsoft Surface 提高 ROI
+      url: forrester-tei-study.md
+    - text: Surface 上的 Windows 虛擬桌面
+      url: windows-virtual-desktop-surface.md
     - text: 表面停靠2的新功能
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
@@ -56,52 +56,52 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: 適用於 Windows Autopilot 的 Surface 註冊支援
       url: surface-autopilot-registration-support.md
-    - text: Surface 上的 Windows 虛擬桌面
-      url: windows-virtual-desktop-surface.md
+    - text: Surface 部署加速器工具
+      url: microsoft-surface-deployment-accelerator.md
 - title: 管理 Surface 裝置
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 管理和部署 Surface 驅動程式與韌體更新
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Surface 裝置的最佳做法電源設定
-      url: maintain-optimal-power-settings-on-Surface-devices.md
-    - text: 最佳化 Surface 裝置的 Wi-Fi 連線能力
-      url: surface-wireless-connect.md
+    - text: Surface UEFI 設定的 Intune 管理
+      url: surface-manage-dfci-guide.md
+    - text: 部署、管理及維護 Surface Pro X
+      url: surface-pro-arm-app-management.md
+- title: 疑難排解
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: 部署商務用 Surface 診斷工具組
+      url: surface-diagnostic-toolkit-business.md
+    - text: 熱門支援解決方案
+      url: support-solutions-surface.md
+    - text: 在相容 Surface 裝置中移除 SSD 的最佳做法
+      url: surface-ssd-removal-guide.md
+    - text: 在 Surface 修理或服務期間保護您的資料
+      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
+    - text: Surface 擴充座和連接基座的疑難排解
+      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
 - title: 探索安全性指導
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Surface 裝置上的 DMA 保護
+      url: dma-protect.md
     - text: '使用 Surface Enterprise 管理模式的安全 Surface Dock 2 埠 (SEMM) '
       url: secure-surface-dock-ports-semm.md
-    - text: Surface UEFI 設定的 Intune 管理
-      url: surface-manage-dfci-guide.md
     - text: Surface Data Eraser 工具
       url: microsoft-surface-data-eraser.md
 - title: 探索 Surface 工具
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 商務用 Surface 診斷工具組
-      url: surface-diagnostic-toolkit-for-business-intro.md
+    - text: 部署商務用 Surface 診斷工具組
+      url: surface-diagnostic-toolkit-business.md
     - text: SEMM 與 UEFI
       url: surface-enterprise-management-mode.md
-    - text: Surface 部署加速器工具
-      url: microsoft-surface-deployment-accelerator.md
-- title: 疑難排解
-  linkLists:
-  - linkListType: learn
-    links:
-    - text: 熱門支援解決方案
-      url: support-solutions-surface.md
-    - text: 在相容 Surface 裝置中移除 SSD 的最佳做法
-      url: surface-ssd-removal-guide.md
-    - text: Surface IT 專業人員部落格
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
-    - text: 在 Surface 修理或服務期間保護您的資料
-      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Surface 擴充座和連接基座的疑難排解
-      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+    - text: 電池限制設定
+      url: battery-limit.md
 - title: 參與 Surface 社區
   linkLists:
   - linkListType: learn
