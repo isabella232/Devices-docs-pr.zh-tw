@@ -1,37 +1,36 @@
 ---
 title: 在 Surface Hub 上管理 Windows 更新
-description: 您可以設定 [維護] 視窗、推遲更新，或使用 Windows Server Update Services (WSUS) ，以管理 Microsoft Surface Hub 或 Surface Hub 2 的 Windows 更新。
+description: 說明管理 Microsoft Surface Hub 或 Surface Hub 2 的更新的最佳做法。
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
 ms.reviewer: ''
 manager: laurawi
-keywords: 管理 Windows 更新, Surface Hub, WindowsServer Update Services, WSUS
+keywords: 管理 Windows 更新、Surface Hub、Windows Server Update Services
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 72214ec9436e6ea106d9e42c957664631ee88a0a
-ms.sourcegitcommit: f74253629aaf073b35b1af69439f76e63392c5aa
+ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103787"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142892"
 ---
 # 在 Surface Hub 上管理 Windows 更新
 
-新版本的 Surface Hub 作業系統是透過 Windows Update 發行，和 Windows10 版本一樣。 您有幾個方式可以管理要在您的 Surface Hub 上安裝哪些更新，以及套用更新的時間。
-- **商務用 Windows Update**：商務用 Windows Update 是 Windows10 中的一組新功能，是針對為企業提供額外控制能力所設計，可讓企業控制 Windows Update 安裝版本的方式與時機，同時降低裝置管理成本。 使用此方法，Surface Hub 就會直接連線到 Microsoft 的 Windows Update 服務。
-- **WindowsServer Update Services (WSUS)**：這是一組服務，可以讓 IT 系統管理員取得 Windows Update 判斷適用於他們企業裝置的更新、對更新執行其他測試和評估，並可選取想要安裝的更新。 使用此方法，Surface Hub 將會從 WSUS 接收更新，而非從 Windows Update 接收更新。
+新版本的 Surface Hub 作業系統是透過 Windows Update 發行，和 Windows10 版本一樣。 此頁面說明管理 Surface Hub 裝置更新的最佳做法。 
 
-您也可以設定 Surface Hub 從商務用 Windows Update 與 WSUS 接收更新。 請參閱[將商務用 Windows Update 與 WindowsServer Update Services 整合](https://technet.microsoft.com/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services)以了解詳細資料。
+## 商務用 Windows Update
 
-| 功能 | 商務用 Windows Update | Windows Server Update Services (WSUS) |
-| ------------ | --------------------------- | ------------------------------------- |
-| 直接從 Microsoft 的 Windows Update 服務接收更新，不需要額外的基礎結構。  | 是  | 否  |
-| 延遲更新以提供額外時間進行測試和評估。 | 是  | 是  |
-| 部署更新以選取裝置群組。 | 是 | 是 |
-| 定義維護期間以用於安裝更新。 | 是  | 是  |
+Windows 版企業版更新是一組功能，可讓企業在 Windows Update 安裝發行時以及減少裝置管理成本的同時，提供進一步的控制。 使用此方法，Surface Hub 就會直接連線到 Microsoft 的 Windows Update 服務。
+
+- 直接從 Microsoft 的 Windows Update 服務接收更新，不需要額外的基礎結構。 
+- 延遲更新以提供額外時間進行測試和評估。 
+- 部署更新以選取裝置群組。 
+- 定義維護期間以用於安裝更新。 
 
 > [!TIP]
 > 使用點對點內容共用來降低更新期間的頻寬問題。 請參閱[為 Windows10 更新最佳化更新傳遞](https://technet.microsoft.com/itpro/windows/manage/waas-optimize-windows-10-updates)以了解詳細資料。
@@ -56,6 +55,7 @@ Surface Hub 作業系統會在[半年度管道](https://docs.microsoft.com/windo
 
 
 ## 使用商務用 Windows Update
+
 和所有 Windows10 裝置一樣，Surface Hub 也包括**商務用 Windows Update (WUfB)**，可讓您控制裝置的更新方式。 商務用 Windows Update 有助於減少裝置管理的成本、提供所有更新部署的控制、更快速地存取安全性更新，並持續提供來自 Microsoft 的最新創新功能。 如需詳細資訊，請參閱[使用商務用 Windows Update 來管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
 **設定商務用 Windows Update：**
@@ -67,9 +67,10 @@ Surface Hub 作業系統會在[半年度管道](https://docs.microsoft.com/windo
 
 
 ### 將 Surface Hub 群組到部署更新步調
+
 使用部署更新步調來控制更新將推出到您 Surface Hub 的時間，讓您有時間驗證它們。 例如，您可以先更新一小群的裝置以確認品質，然後再更廣泛地向您的組織推出。 視您組織中管理 Surface Hub 的人員而定，可以考慮將 Surface Hub 合併到您已經為其他 Windows10 裝置建置的部署更新步調中。 如需部署更新步調的相關詳細資訊，請參閱[為 Windows10 更新建置部署更新步調](https://technet.microsoft.com/itpro/windows/manage/waas-deployment-rings-windows-10-updates)。
 
-此表格提供部署更新步調的範例。
+請參閱下表，瞭解部署響鈴的範例。
 
 | 部署更新步調 | 更新步調大小 | 維護分支 | 功能更新延遲 | 品質更新延遲 (安全性修正、驅動程式及其他更新) | 驗證步驟 |
 | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -79,10 +80,8 @@ Surface Hub 作業系統會在[半年度管道](https://docs.microsoft.com/windo
 | 任務關鍵性 (例如執行董事會中的裝置) | 小型 | 半年度管道 |  發行之後 180 天 (功能更新的最長延遲天數)。 | 發行之後 30 天 (品質更新的最長延遲天數)。 | 監視裝置使用情況和使用者意見反應。 |
 
 
-
-
-
 ### 設定 Surface Hub 接收更新的時機
+
 在您已經為 Surface Hub 決定部署更新步調之後，請針對每個更新步調設定更新延遲原則：
 - 若要延遲功能更新，請為每個更新步調設定適當的 [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays) 原則。
 - 若要延遲品質更新，請為每個更新步調設定適當的 [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays) 原則。
@@ -90,22 +89,9 @@ Surface Hub 作業系統會在[半年度管道](https://docs.microsoft.com/windo
 > [!NOTE]
 > 如果您在更新推出期間遇到問題，您可以使用 [Update/PauseFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausefeatureupdates) 和 [Update/PauseQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausequalityupdates) 暫停更新。
 
-
-## 使用 Windows Server Update Services
-
-您可以將 Surface Hub 連線到您的 Windows Server Update Services (WSUS) 伺服器來管理更新。 更新將會透過您 WSUS 伺服器中設定的核准或自動部署規則來控制，所以將不會在您選擇部署新的升級之前部署它們。
-
-**手動將 Surface Hub 連線到 WSUS 伺服器：**
-1. 在 Surface Hub 上，開啟 **\[設定\]**。
-2. 出現提示時，請輸入裝置系統管理員認證。
-3. 瀏覽至 **\[更新與安全性\]** > **\[Windows Update\]** > **\[進階選項\]** > **\[設定 WindowsServer Update Services (WSUS) 伺服器\]**。
-4. 按一下 **\[使用 WSUS 伺服器以下載更新\]**，然後輸入您 WSUS 伺服器的 URL。
-
-若要使用 MDM 將 Surface Hub 連線到 WSUS 伺服器，請設定適當的 [Update/UpdateServiceUrl](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) 原則。
-
 **如果您使用 proxy 伺服器或其他方法封鎖 URL**
 
-如果您使用 WSUS 以外的其他方式封鎖特定的 URL 並避免更新時，您需要將以下 Windows Update 信任的網站 URL 新增到「允許清單」：
+將下列 Windows 更新信任的網站 Url 新增至 [允許清單]：
 - `http(s)://*.update.microsoft.com`
 - `http://download.windowsupdate.com` 
 - `http://windowsupdate.microsoft.com`
@@ -114,7 +100,7 @@ Surface Hub 作業系統會在[半年度管道](https://docs.microsoft.com/windo
 
 ## 維護期間
 
-為確保裝置在上班時間一律可以使用，Surface Hub 會在指定的維護期間執行其管理功能。 在維護視窗期間，Surface Hub 會透過 Windows Update 或 WSUS 自動安裝更新，並在視窗結束之前的20分鐘重新開機裝置。
+為確保裝置在上班時間一律可以使用，Surface Hub 會在指定的維護期間執行其管理功能。 在維護視窗期間，Surface Hub 會透過 Windows Update 自動安裝更新，並在視窗結束之前的20分鐘重新開機裝置。
 
 Surface Hub 會依照這些指導方針套用更新：
 - 在下一個維護期間安裝更新。 如果會議排程在維護期間開始，或者如果 Surface Hub 感應器偵測到裝置為使用中，則擱置的更新將延遲至下一個維護期間。

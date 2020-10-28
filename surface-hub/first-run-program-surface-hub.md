@@ -10,14 +10,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ad65170b3cc2534fec1b22730c718025026d7bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e070c28d13cd8466bff47022f4508fdb8aa06331
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831841"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142912"
 ---
 # 初次執行程式 (Surface Hub)
 
@@ -71,7 +71,7 @@ ms.locfileid: "10831841"
 ### 發生什麼事？
 
 >[!NOTE]
-> 只要輸入了本頁面的設定後，除非重設裝置，否則無法回到此畫面 (請參閱 [裝置重設](device-reset-surface-hub.md))。 繼續之前，請確定已進行適當設定。
+> 只要輸入了本頁面的設定後，除非重設裝置，否則無法回到此畫面 (請參閱 [裝置重設](device-reset-surface-hub.md))。 繼續之前，請確定已進行適當設定。
 
  
 
@@ -93,7 +93,7 @@ ms.locfileid: "10831841"
 -   您可以選取其中一個顯示的無線網路。 如果網路受到保護，系統會將您引導至登入頁面。 如需詳細資訊，請參閱 [無線網路設定](#wireless) 。
 -   按一下 **\[略過此步驟\]**，以略過連線到網路的步驟。 系統會將您引導至 [\[為您進行設定\] 頁面](#set-up-for-you)。
     >[!NOTE]
-    >注意：如果您略過此步驟，裝置將不具備網路連線，而您的 Surface Hub 上將不會有任何需要網路連線的功能運作，包括系統更新以及電子郵件和行事曆的同步處理功能。 您可以稍後使用 [設定] 連線到無線網路（請參閱[無線網路管理](wireless-network-management-for-surface-hub.md)）。
+    >注意：如果您略過此步驟，裝置將不具備網路連線，而您的 Surface Hub 上將不會有任何需要網路連線的功能運作，包括系統更新以及電子郵件和行事曆的同步處理功能。 您可以稍後使用 [設定] (查看 [無線網路管理](wireless-network-management-for-surface-hub.md)) 來連線至無線網路。
 
      
 
@@ -128,17 +128,17 @@ ms.locfileid: "10831841"
 
 -   您可以選擇要使用的無線網路，而不是有限的有線連線。
 -   您可以選取 **\[略過此步驟\]** 來略過連線到網路的步驟。 系統會將您引導至 [\[為您進行設定\] 頁面](#set-up-for-you)。
-    **記事** 如果您略過這種情況，裝置將沒有網路連線，而且任何需要網路連線的內容都無法在 Surface Hub 上運作，包括電子郵件和行事曆同步處理等專案。 您可以稍後使用 [設定] 連線到無線網路（請參閱[無線網路管理](wireless-network-management-for-surface-hub.md)）。
+    **注意**：如果您略過此步驟，裝置將不具備網路連線，而您的 Surface Hub 上將不會有任何需要網路連線的功能運作，包括電子郵件和行事曆的同步處理等功能。 您可以稍後使用 [設定] (查看 [無線網路管理](wireless-network-management-for-surface-hub.md)) 來連線至無線網路。
 
      
 
 -   您可以選取 **[輸入 Proxy 設定]**，讓您能夠指定使用網路 Proxy 的方式。 系統會將您引導至下一個畫面。
 
-![顯示網路 Proxy 頁面的影像。](images/setupnetworksetup-2.png)
+    ![顯示網路 Proxy 頁面的影像。](images/setupnetworksetup-2.png)
 
-如果您在上一個畫面中，按一下** \[輸入 Proxy 設定\]**，您將會看見這個畫面。
+    如果您在上一個畫面中，按一下** \[輸入 Proxy 設定\]**，您將會看見這個畫面。
 
-![顯示 Proxy 伺服器設定詳細資料的影像。](images/setupnetworksetup-4.png)
+    ![顯示 Proxy 伺服器設定詳細資料的影像。](images/setupnetworksetup-4.png)
 
 ### 詳細資料
 
@@ -154,7 +154,7 @@ ms.locfileid: "10831841"
 您可以選取 **\[略過此步驟\]** 來略過連線到網路的步驟。 系統會將您引導至 [\[為您進行設定\] 頁面](#set-up-for-you)。
 
 >[!NOTE]
->注意：如果您略過此步驟，裝置將不具備網路連線，而您的 Surface Hub 上將不會有任何需要網路連線的功能運作，包括電子郵件和行事曆的同步處理等功能。 您可以稍後使用 [設定] 連線到無線網路（請參閱[無線網路管理](wireless-network-management-for-surface-hub.md)）。
+>注意：如果您略過此步驟，裝置將不具備網路連線，而您的 Surface Hub 上將不會有任何需要網路連線的功能運作，包括電子郵件和行事曆的同步處理等功能。 您可以稍後使用 [設定] (查看 [無線網路管理](wireless-network-management-for-surface-hub.md)) 來連線至無線網路。
 
  
 
@@ -371,9 +371,10 @@ Surface Hub 需要兩個適用於裝置的名稱，其預設值如下：
 加入 Azure AD 有兩個主要優點：
 
 1.  有一些組織的員工將能以系統管理員身分存取裝置，而且能夠啟動 [設定]應用程式並設定裝置。 擁有系統管理員權限的使用者將定義於您的 Azure AD 訂用帳戶中。
+
 2.  如果您的 Azure AD 連線到行動裝置管理 (MDM) 解決方案，裝置將會利用該 MDM 解決方案來註冊，因此您可以套用原則和設定。
 
-![顯示當您將 Surface Hub 加入 Azure Active Directory 時的訊息影像。](images/setupjoiningazuread-1.png)
+    ![顯示當您將 Surface Hub 加入 Azure Active Directory 時的訊息影像。](images/setupjoiningazuread-1.png)
 
 ### 詳細資料
 
@@ -451,7 +452,7 @@ Surface Hub 將使用提供的網域、來自 [[使用 Active Directory 網域�
 
 若要取得最新的功能與修正程式，您應該在完成所有先前的初次執行步驟之後，立即更新 Surface Hub。
 
-1.  確定裝置能夠存取 Windows Update 伺服器或 WindowsServer Update Services (WSUS)。 若要設定 WSUS，請參閱[使用 WSUS](manage-windows-updates-for-surface-hub.md#use-windows-server-update-services)。
+1.  請確定裝置有權存取 Windows 補救伺服器。 
 2.  開啟 \[設定\]，依序按一下 **\[更新與安全性\]**、**\[Windows Update\]** 及 **\[檢查更新\]**。
 3.  如果有可用的更新，即會加以下載。 下載完成之後，按一下 **\[立即更新\]** 按鈕以安裝更新。
 4.  安裝更新之後，請依照螢幕上的提示執行。 您可能需要重新啟動裝置。
