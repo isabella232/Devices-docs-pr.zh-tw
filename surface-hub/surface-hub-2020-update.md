@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 3e376a740aa16333cbbabc812b0c0193ab90d585
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
+ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142928"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "11143638"
 ---
 # 安裝 Windows 10 Team 2020 更新 
 
@@ -48,7 +48,7 @@ Windows 10 團隊2020更新帶來了主要的裝置部署和管理功能以及�
  
 ## 開始之前
 
-安裝 Windows 10 team 2020 更新之前，請確定您已儲存與您的裝置相關聯的 BitLocker 金鑰。
+安裝 Windows 10 team 2020 更新之前，請確定您已儲存與您的裝置相關聯的 BitLocker 金鑰。 若要深入瞭解，請參閱 [Windows 10 Team 2020 更新 iin 的新功能](surface-hub-2020-update-whats-new.md)
 
 **手動儲存 BitLocker 金鑰**
 
