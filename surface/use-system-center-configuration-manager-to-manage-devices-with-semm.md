@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/13/2020
-ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
-ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
+ms.date: 10/28/2020
+ms.openlocfilehash: 2d31f520d8c4da54f47b2b89b58b43e2cb983f1a
+ms.sourcegitcommit: 7f5b97275fe301ef700f9c77954a1054e2e8d046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117849"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145614"
 ---
 # 搭配 SEMM 使用 Microsoft Endpoint Configuration Manager 管理裝置
 
@@ -388,11 +388,6 @@ ms.locfileid: "11117849"
 
 執行 ShowSettingsOptions.ps1 的電腦必須安裝 Microsoft Surface UEFI 管理員，但腳本不需要 Surface 裝置。
 
-若要查看裝置最新的設定名稱和識別碼，最好的方法是使用 ConfigureSEMM.ps1 腳本，或 <device name> 從 [IT 下載的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703)中的 SEMM_Powershell.zip 中 ConfigureSEMM。
-
-您可以在 ConfigureSEMM.ps1 腳本中查看所有裝置的名稱和識別碼。
-
-您可以在 ConfigureSEMM-ps1 腳本中看到設定特定裝置的名稱和識別碼 <device name> 。 
 
 ## 部署 SEMM Configuration Manager 腳本
 
