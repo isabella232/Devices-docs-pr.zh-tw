@@ -3,6 +3,7 @@
 # Surface Hub 2S
 
 ## 概觀
+### [Windows 10 團隊版 2020 更新中的新功能](surface-hub-2020-update-whats-new.md)
 ### [IT 管理員適用的 Surface Hub 2S 的新功能](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S 50 英吋技術規格](surface-hub-2s-techspecs.md) 
 ### [Surface Hub 2S 85 英吋技術規格](surface-hub-2s-85.md)
