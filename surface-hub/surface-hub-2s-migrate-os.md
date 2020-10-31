@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 10/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 96aec50335ab08e9d524c5ae1a595695c1de46d4
-ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+ms.openlocfilehash: 12742cc887ba495f8f7cbded8bd84dc4fd63b6f6
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134391"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145968"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -167,6 +167,9 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 1. 將 USB 磁片磁碟機連線至您的電腦。 選擇 [ **中心2秒** ]，然後選取 **[下一步]**。
 
    ![選取 [USB]](images/shm-fig13.png)
+
+> [!WARNING]
+> 在建立 SEMM 套件時，會清除 USB 磁片磁碟機上的所有現有資料。 在建立 SEMM 套件之前，請先從您要儲存的 USB 磁片磁碟機中移除任何檔案。
    
 2. 選取 [ **建立**]。
 
@@ -286,7 +289,7 @@ Surface Hub 秒數是由 Windows 10 小組預先安裝的，這是 Windows 10 �
 
 ## 版本歷程記錄
 
-| 版本 | 日期               | 說明                                                                                           |
+| 版本 | 日期               | 描述                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
 | 向量. 1.2  | 2020年9月29日 | 每個可用性意見反應的其他更新。                                                        |
 | 向量. 1.1  | 2020年9月15日 | 在簡介中放入其他記事，說明安裝新作業系統的授權需求。 |

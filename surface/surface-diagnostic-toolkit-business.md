@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114661"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145958"
 ---
 # 部署商務用 Surface 診斷工具組
 
@@ -25,7 +25,7 @@ ms.locfileid: "11114661"
 
 具體來說，SDT for Business 可讓您：
 
-- [自訂套件。](#create-custom-sdt)
+- [自訂套件。](#preparing-the-sdt-package-for-distribution)
 - [使用命令執行應用程式。](surface-diagnostic-toolkit-command-line.md)
 - [執行多個硬體測試以進行問題的疑難排解。](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [產生記錄來分析問題。](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ ms.locfileid: "11114661"
 ![檔案資源管理器中的 SDT 已安裝檔案清單](images/sdt-2.png)
 
 *圖 2. 由 SDT 安裝的檔案*
-
-<span id="create-custom-sdt" />
 
 ## 準備用於發佈的 SDT 套件
 

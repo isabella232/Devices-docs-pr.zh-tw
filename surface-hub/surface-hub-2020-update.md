@@ -1,5 +1,5 @@
 ---
-title: 安裝 Windows 10 Team 2020 更新
+title: 安裝 Windows 10 團隊版 2020 更新
 description: 取得 Surface Hub 作業系統、Windows 10 Team 2020 更新的最新更新。
 keywords: 使用逗號分隔值
 ms.prod: surface-hub
@@ -11,14 +11,14 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
-ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
+ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "11143638"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145948"
 ---
-# 安裝 Windows 10 Team 2020 更新 
+# 安裝 Windows 10 團隊版 2020 更新 
 
 新的 Surface Hub 作業系統、以 Windows 10 版本20H2 為基礎的 **Windows 10 小組2020更新**現已提供給所有 Surface Hub 2 裝置使用。  
 
@@ -48,7 +48,7 @@ Windows 10 團隊2020更新帶來了主要的裝置部署和管理功能以及�
  
 ## 開始之前
 
-安裝 Windows 10 team 2020 更新之前，請確定您已儲存與您的裝置相關聯的 BitLocker 金鑰。 若要深入瞭解，請參閱 [Windows 10 Team 2020 更新 iin 的新功能](surface-hub-2020-update-whats-new.md)
+安裝 Windows 10 team 2020 更新之前，請確定您已儲存與您的裝置相關聯的 BitLocker 金鑰。 若要深入瞭解，請參閱 [Windows 10 Team 2020 更新的新增功能](surface-hub-2020-update-whats-new.md)。
 
 **手動儲存 BitLocker 金鑰**
 
