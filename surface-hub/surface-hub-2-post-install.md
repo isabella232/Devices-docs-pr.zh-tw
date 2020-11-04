@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 11/03/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: a17d4b05e6ee5f7415fed62d96b9e0a62a6dc123
-ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+ms.openlocfilehash: b86776b56e892c34ea8b5abbc55d5c48723a5f9e
+ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134401"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154125"
 ---
 # 設定 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -34,7 +34,7 @@ ms.locfileid: "11134401"
 
 1. 使用具有裝置上的本機系統管理員許可權的帳戶登入。  
 
-    - 在 Azure AD 已加入的裝置上，執行 Azure AD 連接的使用者會自動新增到本機管理員群組中。 Azure AD 全域系統管理員和 Azure AD 裝置管理員 [也是本機管理員](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)。 
+    - 在 Azure AD 已加入的裝置上，執行 Azure AD 連接的使用者會自動新增到本機管理員群組中。 Azure AD 全域系統管理員和 Azure AD 裝置管理員 <a href="https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin" target="_blank"> 也是本機管理員 </a> 。 
     
     - 您可以在命令提示字元中輸入 **net localgroup 管理員** ，以列出具有本機系統管理員許可權的帳戶。
     
@@ -83,17 +83,17 @@ ms.locfileid: "11134401"
 
 如果您使用的是裝置作為主要 Windows 裝置，或者您經常使用它來輸入或精確作業，請連接鍵盤和滑鼠。
 
-如果您的 Surface Hub 裝置靠近電腦，您可以使用 [沒有框線的滑鼠](https://aka.ms/mm) 在 surface HUB 和電腦之間順暢移動。 如需詳細資訊，請參閱 [從車庫取得 Microsoft 下載：不含框線的滑鼠](https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/)。
+如果您的 Surface Hub 裝置靠近電腦，您可以使用 <a href="https://aka.ms/mm" target="_blank"> 沒有框線的滑鼠在 </a> surface HUB 和電腦之間順暢移動。 如需詳細資訊，請參閱 <a href="https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/" target="_blank"> 從車庫取得 Microsoft 下載：不含框線的滑鼠。 </a>
 
 ## 商務用 OneDrive
 
-使用 [商務用 OneDrive](https://docs.microsoft.com/onedrive/onedrive) 在您所有的工作裝置之間輕鬆共用工具、記錄及其他檔案。
+使用 <a href="https://docs.microsoft.com/onedrive/onedrive" target="_blank"> 商務用 OneDrive 在 </a> 您所有的工作裝置之間輕鬆共用工具、記錄及其他檔案。
 
 - OneDrive 可讓您在膝上型電腦、Surface Hub 桌面與 Intune 管理的行動裝置之間共用您的工作檔案。 您可以在任何裝置上編輯檔案，而且所有網路連接的裝置都會隨變更進行更新。
 
 - 考慮 Surface Hub SSD 的大小 (128GB) ，如果您在 Surface Hub 桌面裝置上設定 OneDrive，請確定預設設定是在您使用它們時，讓檔案保持線上並下載檔案。
 
-若要將 OneDrive 設定為只在需要時下載檔案，請設定 [檔案 **隨選** ] 設定，以 **在您使用時儲存空間和下載**檔案。 如需詳細資訊，請參閱 [在 Windows 中查詢及設定檔案的隨選狀態](https://docs.microsoft.com/onedrive/files-on-demand-windows)。
+若要將 OneDrive 設定為只在需要時下載檔案，請設定 [檔案 **隨選** ] 設定，以 **在您使用時儲存空間和下載**檔案。 如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/onedrive/files-on-demand-windows" target="_blank"> 在 Windows 中查詢及設定檔案的隨選狀態 </a> 。
 
 ![OneDrive 設定](images/onedrive.png)
 
@@ -122,7 +122,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
     
     3. 選取 [ **釋放空間**]。
     
-    4. [狀態] 欄會顯示 [檔案] 和 [資料夾] 的狀態。 如需詳細資訊，請參閱 [使用 OneDrive 同步處理用戶端同步處理 SharePoint](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd)檔案。
+    4. [狀態] 欄會顯示 [檔案] 和 [資料夾] 的狀態。 如需詳細資訊，請參閱 <a href="https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd" target="_blank"> 使用 OneDrive 同步處理用戶端同步處理 SharePoint 檔案 </a> 。
     
 6. 團隊通道檔案是儲存在 SharePoint 網站中，所有的 SharePoint 檔功能都相同，包括版本歷程記錄，以及同步處理到您的本機桌面裝置。 若要同步處理團隊通道檔：
 
@@ -164,13 +164,13 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 您可以將相機安裝在裝置的頂端或任一側。 如果您是將中樞與桌面支架（而非車）配合使用，或者與中樞接近，請將相機安裝在位置，以優化相機角度。 相機不會自動旋轉，因此您必須使用2mm 十六進位金鑰來手動旋轉相機。 
 
-如需如何將相機側邊裝載並手動旋轉相機的詳細資訊，請參閱 [Surface Hub 2 的相機鏡頭方向](https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation)。
+如需如何將相機側邊裝載並手動旋轉相機的詳細資訊，請參閱 <a href="https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation" target="_blank"> Surface Hub 2 的相機鏡頭方向 </a> 。
 
 ## Windows Hello 設定
 
 執行 Windows 10 企業版的 Surface Hub 2-2 可提供完整的 Win32 桌面應用程式，以及生物識別 Windows Hello 選項。 Surface Hub 2 指紋辨識器配件可以插入裝置上的任何 USB 埠。 
 
-若要定購 Surface Hub 2 指紋辨識器，或查看技術規格，請參閱 [適用于 Surface Hub 2 的 Windows 10 專業版和企業版的重要附加](surface-hub-2-essential-add-ons.md)元件。 
+若要定購 Surface Hub 2 指紋辨識器，或查看技術規格，請參閱 (surface-hub-2-essential-add-ons.md "target =" _blank ">適用于 Surface Hub 2 的 Windows 10 專業版和 Enterprise 的附加元件 </a> 。 
 
 插入指紋閱讀程式後，請選取 [**啟動**  >  **設定**  >  **帳戶**] 登  >  **入選項**  >  **Windows Hello 指紋**以註冊您的指紋。
 
@@ -246,7 +246,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 ### Microsoft Office
 
-1. 開啟 [Office 入口網站](https://portal.office.com/account#installs) ，並安裝您想要的應用程式。
+1. 開啟 <a href="https://portal.office.com/account#installs" target="_blank"> Office 入口網站 </a> ，並安裝您想要的應用程式。
 
 2. 將所需的 Office 應用程式釘選到工作列。
 
@@ -258,7 +258,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 ### Microsoft Teams
 
-1. 下載並安裝 [Microsoft 團隊](https://teams.microsoft.com/downloads)。
+1. 下載並安裝 <a href="https://teams.microsoft.com/downloads" target="_blank"> Microsoft 團隊 </a> 。
 
 2. 將設定設定為自動啟動應用程式 (選用的) 。
 
@@ -305,20 +305,20 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 **您的電話**app 預設會安裝在 Windows 10 上。 如果不存在，您也可以從 Windows 市集中安裝它。
 
-如需設定 app 的相關資訊，請參閱 [如何在 Windows 10 設定您的電話，以及如何在您的電腦與手機之間同步處理資料](https://www.windowscentral.com/how-set-your-phone-windows-10)。 另請參閱 [如何修正您在 Windows 10 上的手機應用程式常見問題](https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10)。
+如需設定 app 的相關資訊，請參閱 <a href="https://www.windowscentral.com/how-set-your-phone-windows-10" target="_blank"> 如何在 Windows 10 設定您的電話，以及如何在您的電腦與手機之間同步處理資料 </a> 。 另請參閱 <a href="https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10" target="_blank"> 如何修正您在 Windows 10 上的手機應用程式常見問題 </a> 。
 
 ### 超級別致區域
 
-**Super 別致區域** 可協助使用者排列視窗，以最大化螢幕空間。 它現在包含在 GitHub 上的 [PowerToys](https://github.com/microsoft/PowerToys/releases) 中。
+**Super 別致區域** 可協助使用者排列視窗，以最大化螢幕空間。 它現在包含在 <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> GitHub 上的 PowerToys 中 </a> 。
 
 ### Edge Chromium 瀏覽器
 
-下載並安裝新的 [Edge Chromium 瀏覽器](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL)。
+下載並安裝新的 <a href="https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL" target="_blank"> Edge Chromium 瀏覽器 </a> 。
 
 
 ### Surface Hub 硬體診斷工具
 
-您可以從 Microsoft 網上商店免費取得 [Surface Hub 硬體診斷工具](https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g) 。 此工具的設計目的是協助您確保 Surface Hub 發揮最佳效果。 它包含可判斷您的固件是否為最新且已正確設定的測試。 互動式測試可讓您確認必要的功能是否如預期運作。 如果遇到問題，可以將結果儲存起來，與 Surface Hub 支援小組分享。 按一下連結以從 Microsoft 網上商店安裝，然後將應用程式釘選到工作列。
+您 <a href="https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g" target="_blank"> </a> 可以從 Microsoft 網上商店免費取得 Surface Hub 硬體診斷工具。 此工具的設計目的是協助您確保 Surface Hub 發揮最佳效果。 它包含可判斷您的固件是否為最新且已正確設定的測試。 互動式測試可讓您確認必要的功能是否如預期運作。 如果遇到問題，可以將結果儲存起來，與 Surface Hub 支援小組分享。 按一下連結以從 Microsoft 網上商店安裝，然後將應用程式釘選到工作列。
 
 ## 其他設定
 
@@ -454,4 +454,4 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 
 ## 相關主題
 
-[移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
+<a href="surface-hub-2s-migrate-os.md" target="_blank"> 移轉到 Windows 10 專業版或 Surface Hub 2 企業版</a>
