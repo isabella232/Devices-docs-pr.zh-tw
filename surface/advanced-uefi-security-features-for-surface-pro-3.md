@@ -13,12 +13,12 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 9460b4a5e8b44cbf4b6af57d01aab3b09afb49de
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 6a5c53c3e161bd4c49069a0665896762ce587618
+ms.sourcegitcommit: e9190a6fe68b8a7cd9b024aea4be9f885f0de388
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831312"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163182"
 ---
 # Surface Pro 3 進階 UEFI 安全性功能
 
@@ -54,7 +54,7 @@ ms.locfileid: "10831312"
 | WiFi           | 啟用或停用 Surface 裝置內建的 Wi-Fi 收發機。 此設定也會停用藍牙。                                                                              | **已啟用**、已停用                       |
 | 藍牙      | 啟用或停用 Surface 裝置內建的藍牙收發機。                                                                                                        | **已啟用**、已停用                       |
 
- 
+ 
 
 ## 自動化其他安全性設定
 
@@ -69,12 +69,13 @@ ms.locfileid: "10831312"
 
 **範例指令碼**
 
->**注意**:&nbsp;&nbsp;以下範例指令碼中所使用的 UEFI 密碼會以純文字呈現。 我們強烈建議您將指令碼儲存在受保護的位置，並於受控制的環境中執行。
+> [!NOTE]
+> 以下範例指令碼中所使用的 UEFI 密碼會以純文字呈現。 我們強烈建議您將指令碼儲存在受保護的位置，並於受控制的環境中執行。
 
 
 顯示所有可設定的選項：
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -99,7 +100,7 @@ foreach ($uefiOption in $uefiOptions)
 
 設定或變更 UEFI 密碼：
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -115,7 +116,7 @@ $Password.ProposedValue = "12345"
 
 查看所建議之變更的狀態：
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -141,7 +142,7 @@ if ($details.Count -gt 0)
 
 將 UEFI 還原為預設值：
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -166,11 +167,4 @@ foreach ($uefiOption in $uefiOptions)
 -   03 - 無法辨識其中一組建議值
 -   0F - 解除鎖定密碼與目前設定的密碼不符
 
- 
-
- 
-
-
-
-
-
+ 
