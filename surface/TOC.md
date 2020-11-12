@@ -79,7 +79,6 @@
 #### [部署商務用 Surface 診斷工具組](surface-diagnostic-toolkit-business.md)
 #### [在桌面模式中使用商務用 Surface 診斷工具組](surface-diagnostic-toolkit-desktop-mode.md)
 #### [使用命令執行商務用 Surface 診斷工具組](surface-diagnostic-toolkit-command-line.md)
-### [Surface 文件的變更歷程記錄](change-history-for-surface.md)
 ### [終端使用者說明](https://support.microsoft.com/products/surface-devices)
 
 ## 保固與擴充服務方案
