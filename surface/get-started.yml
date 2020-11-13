@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 01c1cc2ea75e79825c80cc6f02970a755ae35b75
-  ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+  ms.openlocfilehash: c356595e058c45cc95631d2ebd12ee2e5cc75c1d
+  ms.sourcegitcommit: b1c630dcf12530cf7034478bfe66ad3bb11b59c9
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/23/2020
-  ms.locfileid: "11134381"
+  ms.lasthandoff: 11/12/2020
+  ms.locfileid: "11166645"
 landingContent:
 - title: Surface 裝置
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-pro-x
     - text: 探索所有 Surface 系列產品
       url: https://www.microsoft.com/surface/business
-- title: 入門
+- title: 開始使用
   linkLists:
   - linkListType: get-started
     links:
@@ -76,12 +76,8 @@ landingContent:
       url: surface-diagnostic-toolkit-business.md
     - text: 熱門支援解決方案
       url: support-solutions-surface.md
-    - text: 在相容 Surface 裝置中移除 SSD 的最佳做法
-      url: surface-ssd-removal-guide.md
-    - text: 在 Surface 修理或服務期間保護您的資料
-      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Surface 擴充座和連接基座的疑難排解
-      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+    - text: Windows 版裝置的 Surface 驅動程式與固件週期
+      url: surface-driver-firmware-lifecycle-support.md
 - title: 探索安全性指導
   linkLists:
   - linkListType: how-to-guide
