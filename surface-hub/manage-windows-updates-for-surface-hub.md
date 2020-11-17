@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: e5ffefa44560d01135b3ac656d9357f1115110ba
+ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142892"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "11174723"
 ---
 # 在 Surface Hub 上管理 Windows 更新
 
@@ -120,7 +120,7 @@ Surface Hub 會依照這些指導方針套用更新：
 2.  瀏覽至 **\[更新與安全性\]** > **\[Windows Update\]** > **\[進階選項\]**。
 3.  在 **\[維護時間\]** 下方，選取 **\[變更\]**。
 
-若要使用 MDM 變更維護期間，請設定 [SurfaceHub 設定服務提供者](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)中的 **\[MOMAgent\]** 節點。 如需更多詳細資料，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。
+若要使用 MDM 變更維護視窗，請在[SurfaceHub 配置服務提供者](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)中設定**MaintenanceHoursSimple**節點。 如需更多詳細資料，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。
 
 
 ## 詳細資訊
