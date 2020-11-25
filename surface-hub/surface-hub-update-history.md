@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: ab43155ee5e2973c5c45fc9ce8dd1395e3ca8bc5
-ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
+ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
+ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "11174743"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11190066"
 ---
 # Surface Hub 更新歷程記錄
 
@@ -28,6 +28,28 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 請參閱「[Surface Hub 重要資訊](https://support.microsoft.com/products/surface-devices/surface-hub)」頁面，以取得目前和過去發行中可能需要您注意的相關主題。
 
 ## Windows 10 小組2020更新 (20H2) 
+
+<details>
+<summary>2020年11月24日-Surface Hub 秒更新</summary>
+
+此更新針對 Surface Hub 的2秒，並提供以下所述的驅動程式和固件更新：
+
+* 表面 SMC 固件更新-3.91.139。0
+  * 改善連線備用的可靠性。
+* Surface Touch 固件更新-3.91.139。0
+  * 改善連線的待機觸控回應。
+* Surface USB 音訊固件更新-3.91.139。0
+* Surface 手寫筆固件更新-3.91.139。0
+</details>
+
+<details>
+<summary>2020年10月27日-Surface Hub 秒更新</summary>
+
+此更新針對 Surface Hub 的2秒，並提供以下所述的驅動程式和固件更新：
+
+* Surface System 聚合器固件更新-4.14.139。0
+* Surface UEFI 更新-694.3386.768。0
+</details>
 
 <details>
 <summary>Windows 10 Team 2020 更新 Surface Hub-一般版本資訊 (作業系統組建 19042.572) </summary>
