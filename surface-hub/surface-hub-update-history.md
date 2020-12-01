@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
-ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
+ms.openlocfilehash: f45a2f202cdf350c6e51bb78a2bf87019a89453a
+ms.sourcegitcommit: 7c00ca47fe81a4f5b3a3317afabb4d028ff21289
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11190066"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "11192844"
 ---
 # Surface Hub 更新歷程記錄
 
@@ -28,6 +28,24 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 請參閱「[Surface Hub 重要資訊](https://support.microsoft.com/products/surface-devices/surface-hub)」頁面，以取得目前和過去發行中可能需要您注意的相關主題。
 
 ## Windows 10 小組2020更新 (20H2) 
+
+<details>
+<summary>2020年11月30日-以 KB4586853 * 為基礎的小組更新 (作業系統組建 19042.662) </summary>
+
+此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4581839/windows-10-update-history)中尚未說明，包括：
+
+* 更新至 [隱私權設定] 頁面以提供其他選項。
+* 修正以確保結束會話清除完全移除所有與 Edge Chromium 相關的資料。
+* 解決 [歡迎/開始] 畫面上未顯示已開始的會議問題。
+* 解決非 en-us 區域設定的雲端復原問題。
+* 商務用 Skype
+  * 改善方向音訊效能。
+  * 當您在商務用 Skype 通話期間使用手寫筆時，會減少「手寫筆」音效。
+* 在註冊至 Windows 測試人員計畫時，改善可靠性。
+* 改善 Windows 團隊命令介面的可靠性。
+
+請參閱 [Surface Hub 管理員指南](https://docs.microsoft.com/surface-hub/) ，以啟用/停用裝置功能及服務。 *[KB4586853](https://support.microsoft.com/help/4586853)
+</details>
 
 <details>
 <summary>2020年11月24日-Surface Hub 秒更新</summary>
