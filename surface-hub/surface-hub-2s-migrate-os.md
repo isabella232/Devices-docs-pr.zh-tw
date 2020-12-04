@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/13/2020
+ms.date: 12/03/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: d1099da397e47ad1ea44645623dce48498259eaa
-ms.sourcegitcommit: 5c396f37ed90f81373b9fdf8464cb9163f2797d4
+ms.openlocfilehash: 01c5c8a5c6b9f7ed657829fe792fc9eecd1facb5
+ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168572"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195398"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -65,7 +65,7 @@ Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理
 
 在您將 Surface Hub 從 Windows 10 小組遷移至 Windows 10 桌上出版前，您需要至少 *694.2938.768.0*的 UEFI 版本。
  
-若要在您的系統上驗證 UEFI 版本：
+**若要在您的系統上驗證 UEFI 版本：**
 
 1. 在 Surface Hub 2 的 [首頁] 頁面上，選取 [**開始**]，然後在 [**所有應用程式**]  >  **表面**) 開啟 [Surface app] (。
 
@@ -74,9 +74,9 @@ Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理
 
        ![在 Surface app 中顯示您的 Surface 頁面的螢幕擷取畫面。](images/shm-fig1.png)
  
-   - 如果 UEFI 版本早于 *694.2938.768.0*，請使用 Windows Update 取得目前的版本。
-
-若要使用 Windows Update 來更新 UEFI：
+   - 如果 UEFI 版本早于版本694.2938.768.0，您將需要安裝 Windows 10 Team 2020 更新裸機復原 (BMR) 影像或使用 Windows Update 來取得目前版本。
+   
+**若要透過 Windows Update 更新 UEFI：**
 
 1. 在 Surface Hub 2 秒，請以系統 **管理員**身分登入。 
     >[!Note]
@@ -85,8 +85,14 @@ Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理
 1. 移至 [**所有應用程式**設定] 的 [  >  **Settings**  >  **更新與安全性**]  >  **Windows update**，然後安裝所有更新。 
 1. 重新開機裝置。 
 1. 使用 Surface app 驗證 UEFI 版本。 
-2. 重複這些步驟，直到 UEFI 版本為 *694.2938.768.0* 或更新版本。
-3. 如果您在多次嘗試後沒看到更新的 UEFI，請核取 [ **更新歷程記錄** ] 並尋找任何失敗的固件安裝實例。 您可能需要重設裝置 (**設定**  >  **更新 & 安全**  >  **重設裝置**) 。
+1. 在此情況下，如果 UEFI 版本尚不是版本694.2938.768.0 或更新版本，您可以重複上述步驟，或安裝 Windows 10 Team 2020 更新裸機復原 (BMR) 影像，即可取得最新的 UEFI。
+
+**若要透過裸機復原來更新 UEFI (BMR) 影像：**
+
+1.  移至 [ [surface](https://support.microsoft.com/surfacerecoveryimage)復原] 網站，然後選取 [ **Surface Hub 2 秒**]
+3.  輸入您的中樞序列值， (位於中樞背面，位於 [電源連接] 旁邊。 ) 
+4.  按照指示，透過安裝 Windows 10 Team 2020 更新，將影像下載到格式化的 USB 磁片磁碟機。
+5.  更新完成之後，裝置第一次進入 OOBE 時，您不需要完成 OOBE，就會更新 UEFI 版本。 請改為按住電源按鈕，直到螢幕關閉為止，再關閉裝置電源。 
 
 ### 下載 Surface UEFI 配置器和 Surface Hub 2 驅動程式與固件
 
@@ -165,10 +171,20 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
     
     ![將 [啟用作業系統遷移] 設定為 [開啟]。](images/shm-fig12.png)
 
-> [!NOTE]
-> 在您套用 SEMM 套件之後，請在裝置的 UEFI 功能表中，所有的 UEFI 設定都無法使用 (鎖定) 。 其他設定（例如 **IPv6 FOR PXE 啟動** ）的預設值也無法使用。 
->
->若要在完成遷移後變更 UEFI 設定，請套用另一個 SEMM 套件，或從 SEMM 取消註冊裝置。 如果您套用另一個 SEMM 套件來變更 UEFI 設定，則在建立新的 SEMM 套件時，您必須使用原始證書。 使用 UEFI 組態工具工具，並將 **EnableOSMigration** 關閉 (不在開啟，如原始的遷移步驟) 所示。
+### 管理 SEMM 登記
+
+將裝置註冊至 SEMM 會影響您管理裝置的後續方式。 例如，在您套用 SEMM 套件之後，在裝置的 UEFI 功能表中，所有 UEFI 設定都無法使用 (鎖定) 。 其他設定（例如 **IPv6 FOR PXE 啟動** ）的預設值也無法使用。 
+
+若要在完成遷移後變更 UEFI 設定，請套用另一個 SEMM 套件，或從 SEMM 取消註冊裝置。 如果您套用另一個 SEMM 套件來變更 UEFI 設定，則在建立新的 SEMM 套件時，您必須使用原始證書。 使用 UEFI 組態工具工具，並將 **EnableOSMigration** 關閉 (不在開啟，如原始的遷移步驟) 所示。
+
+#### 與合作夥伴合作
+
+如果您的公司已將遷移移至 Windows 10 專業版或 Surface Hub 2 上的企業，您可能會想要讓合作夥伴將 SEMM 憑證、SEMM 套件和 UEFI 密碼轉讓給您。  或者，在您遷移中心之後，您可以立即取消從 SEMM 進行註冊，這將允許對 UEFI 進行本機管理，並將裝置傳輸至另一方。 不過，仍強烈建議使用 UEFI 密碼（可在遷移之後進行設定）。 若要深入瞭解，請參閱 [管理 SURFACE UEFI 設定](https://docs.microsoft.com/surface/manage-surface-uefi-settings)。 
+
+#### 回退至 Windows 10 團隊
+
+如果您在遷移之後選擇將裝置還原至 Windows 10 小組（ [如下所述](#roll-back-to-windows-10-team)），建議您首先取消從 SEMM 取消中樞。 若要深入瞭解，請參閱 [從 SEMM 取消註冊 Surface 裝置](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)。
+
 
 #### 將 SEMM 套件儲存至 USB 磁片磁碟機
 
@@ -299,12 +315,16 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
 如果您想要將裝置還原至 Windows 10 小組，請參閱 <a href="surface-hub-2s-recover-reset.md" target="_blank"> 重設及恢復 Surface Hub 2 秒 </a> 。
 
+> [!NOTE]
+> 在回滾至 Windows 10 小組之前，建議您先取消從 SEMM 取消中樞。 若要深入瞭解，請參閱 [從 SEMM 取消註冊 Surface 裝置](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)。
+
 ## 版本歷程記錄
 
 下表摘要列出本文所做的變更。
 
 | 版本 | 日期               | 描述                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| 向量. 1.3  | 2020年12月3日 | 已更新有關管理 SEMM 登記的指導方針                                                        |
 | 向量. 1.2  | 2020年9月29日 | 針對可用性意見反應的各種更新。                                                        |
 | 向量. 1.1  | 2020年9月15日 | 在簡介中放置了說明安裝新作業系統的授權需求。 |
 | 向量. 1.0  | 2020年9月1日  | 新文章。                                                                                           |
