@@ -9,18 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 12/07/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6d8c41872481d86316d8985871fe74823e005ed8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e171d7c2db8a0d69594ca8d5f3a54f33ecebc9ae
+ms.sourcegitcommit: dc08a2096a1fe955eb67e736e2a4453f75e926be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831917"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "11196726"
 ---
 # 建立 Surface Hub 2S 裝置帳戶
 
-建立 Surface Hub 裝置帳戶（又稱為會議室信箱），Surface Hub 2 是透過 Microsoft 團隊或商務用 Skype 來接收、核准或拒絕會議邀請，並加入會議。 在全新安裝體驗（OOBE）設定期間，設定裝置帳戶。 如有需要，您可以稍後再變更（不需進行 OOBE 設定）。
+建立 Surface Hub 裝置帳戶 (也稱為會議室信箱) 可讓 Surface Hub 2 使用 Microsoft 團隊或商務用 Skype 來接收、核准或拒絕會議邀請，並加入會議。 在全新的體驗中設定裝置帳戶 (OOBE) 設定。 如有需要，您可以在稍後 (進行變更，而不需要在 OOBE 設定) 。
 
 與預設停用的標準會議室信箱不同，您必須啟用 Surface Hub 2 裝置帳戶，才能登入 Microsoft 團隊和商務用 Skype。 Surface Hub 2/2 依賴 Exchange ActiveSync，這需要裝置帳戶上的 ActiveSync 信箱原則。 套用 Exchange Online 隨附的預設 ActiveSync 信箱原則。
 
@@ -31,11 +31,11 @@ ms.locfileid: "10831917"
 - 如果預設 ActiveSync 信箱原則已由其他人或其他程式修改，您可能需要建立並指派新的 ActiveSync 信箱原則。
 
 > [!NOTE]  
-> Surface Hub 裝置帳戶不支援協力廠商聯合身分識別身分識別提供者（FIPs），而且必須是標準的 Active Directory 或 Azure Active Directory 帳戶。
+> Surface Hub 裝置帳戶不支援協力廠商同盟身分識別提供者 (FIPs) ，而且必須是標準的 Active Directory 或 Azure Active Directory 帳戶。
 
 ## 使用 Microsoft 365 系統管理中心建立帳戶
 
-1. 在 Microsoft 365 系統管理中心中，移至 [**資源**]，然後選擇 [**會議室] & 裝置**]，然後選取 [ **+ 會議室**]。
+1. 在 Microsoft 365 系統管理中心中，移至 [ **資源** ]，然後選擇 [ **會議室] & 裝置** ]，然後選取 [ **+ 會議室**]。
 
 2. 提供裝置帳戶的名稱和電子郵件地址。 保留預設狀態中不變的剩餘設定。
 
@@ -43,19 +43,17 @@ ms.locfileid: "10831917"
 
    ![保留預設狀態中不變的剩餘設定](images/sh2-account3.png)
 
-3. 設定裝置帳戶的密碼。 若要設定密碼，請選擇 [**使用者**]，然後選取 [作用中的**使用者**]。 現在，搜尋新建立的使用者來設定密碼。 確定您**沒有**選取 [**讓此使用者在第一次登入時變更密碼**] 選項。
+3. 設定裝置帳戶的密碼。 若要設定密碼，請選擇 [ **使用者** ]，然後選取 [作用中的 **使用者**]。 現在，搜尋新建立的使用者來設定密碼。 確定您**沒有**選取 [**讓此使用者在第一次登入時變更密碼**] 選項。
 
    ![設定裝置帳戶的密碼](images/sh2-account4.png)
 
-4. 使用 Office 365 授權指派會議室。 建議您指派**Office 365 會議室**授權，這個新選項會自動啟用商務用 Skype Online 和 Microsoft 團隊的帳戶。
+4. 使用 Office 365 授權指派會議室。 建議您指派 **Office 365 會議室** 授權，這個新選項會自動啟用商務用 Skype Online 和 Microsoft 團隊的帳戶。
 
    ![指派 Office 365 授權](images/sh2-account5.png)
 
 ### 透過 PowerShell 完成設定
 
-- **商務用 Skype：** 若是 [僅限商務用 Skype] （內部部署或線上），您可以執行 [**啟用-CsMeetingRoom** ] 來啟用商務用 skype 物件，以啟用音訊和大廳保留等功能。
-
-- **Microsoft 團隊及商務用 Skype 行事曆：** 為此帳戶設定行事[**曆自動處理**](https://docs.microsoft.com/surface-hub/surface-hub-2s-account?source=docs#set-calendar-auto-processing)。
+- **Microsoft 團隊及商務用 Skype 行事曆：** 為此帳戶設定行事 [**曆自動處理**](https://docs.microsoft.com/surface-hub/surface-hub-2s-account?source=docs#set-calendar-auto-processing) 。
 
 ## 使用 PowerShell 建立帳戶
 
@@ -64,42 +62,54 @@ ms.locfileid: "10831917"
 ### 連線至 Exchange Online PowerShell
 
 ```powershell
-$365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential (Get-Credential) -Authentication Basic –AllowRedirection
-$ImportResults = Import-PSSession $365Session
+Install-Module -Name ExchangeOnlineManagement
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName admin@contoso.com -ShowProgress $true
 ```
 
-### 建立新的會議室信箱
+### 建立信箱
 
 ```powershell
-New-Mailbox -MicrosoftOnlineServicesID account@YourDomain.com -Alias SurfaceHub2S -Name SurfaceHub2S -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString  -String "<Enter Strong Password>" -AsPlainText -Force)
+New-Mailbox -MicrosoftOnlineServicesID 'SurfaceHub01@contoso.com' -Alias SurfaceHub01 -Name "Surface Hub 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String 'Pass@word1' -AsPlainText -Force)
 ```
 
 ### 設定行事曆自動處理
 
 ```powershell
-Set-CalendarProcessing -Identity "account@YourDomain.com" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This room is equipped with a Surface Hub"
+Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Surface Hub. Please make sure this meeting is a Microsoft Teams meeting!"
+```
+
+### 如果需要使用電子郵件應用程式，請啟用 ActiveSync
+
+ 如果 unchnaged，預設的 ActiveSync 原則就會運作。 否則，請建立新的原則並指派。
+
+```powershell
+New-MobileDeviceMailboxPolicy -Name:"SurfaceHub" -PasswordEnabled:$false
+#Assign Policy to Hub:
+Set-CASMailbox -Identity SurfaceHub01@contoso.com -ActiveSyncMailboxPolicy "SurfaceHub"
+```
+### 連線到 Azure AD
+
+```powershell
+Connect-AzureAD
 ```
 
 ### 指派授權
 
 ```powershell
-Connect-MsolService
-Set-Msoluser -UserPrincipalName account@YourDomain.com -UsageLocation IE
-Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "contoso:MEETING_ROOM"
+Set-AzureADUser -ObjectId 'SurfaceHub01@contoso.com' -UsageLocation US
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 
+$License.SkuId = "c7df2760-2c81-4ef7-b578-5b5392b571df" 
+$Licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses 
+$Licenses.AddLicenses = $License 
+Set-AzureADUserLicense -ObjectId 'SurfaceHub01@contoso.com' -AssignedLicenses $Licenses
 ```
 
-## 使用 PowerShell 連線到商務用 Skype Online
-
-### 安裝預備元件
-
-- [Visual c + + 2017 可轉散發元件](https://aka.ms/vs/15/release/vc_redist.x64.exe)
-- [商務用 Skype Online PowerShell 模組](https://www.microsoft.com/download/confirmation.aspx?id=39366)
+### 檢查可用的授權
 
 ```powershell
-Import-Module LyncOnlineConnector
-$SfBSession = New-CsOnlineSession -Credential (Get-Credential)
-Import-PSSession $SfBSession -AllowClobber
-
-# Enable the Skype for Business meeting room
-Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPool(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
+Get-AzureADUser -Filter "userPrincipalName eq 'SurfaceHub01@contoso.com'" |fl *
+#Meeting Room Standard SKU:
+6070a4c8-34c6-4937-8dfb-39bbc6397a60
 ```
