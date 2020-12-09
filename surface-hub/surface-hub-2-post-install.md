@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 11/03/2020
+ms.date: 12/08/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: b86776b56e892c34ea8b5abbc55d5c48723a5f9e
-ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
+ms.openlocfilehash: 7accbe3d905af3b295f92c002eecd5d77356672d
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154125"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203550"
 ---
 # 設定 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -85,6 +85,29 @@ ms.locfileid: "11154125"
 
 如果您的 Surface Hub 裝置靠近電腦，您可以使用 <a href="https://aka.ms/mm" target="_blank"> 沒有框線的滑鼠在 </a> surface HUB 和電腦之間順暢移動。 如需詳細資訊，請參閱 <a href="https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/" target="_blank"> 從車庫取得 Microsoft 下載：不含框線的滑鼠。 </a>
 
+## 工作列版面配置範例
+
+完成下列步驟以設定/設定您的 Surface Hub （適用于 Windows 10 專業版或企業版）之後，我們建議您利用將最常用的應用程式釘選到工作列，以快速地啟動每個應用程式。 以下是工作列可能看起來的範例：
+
+ ![工作列版面配置](images/taskblyt.png)
+### 更新已安裝的應用程式
+
+若要更新所有已安裝的 Microsoft Store 應用程式：
+
+1. 開啟 Microsoft Store 應用程式，然後選取右上角的 [ **查看更多** 省略號]。
+2. 選取 [ **下載與更新]。**
+3. 選取 [**取得更新**]
+
+### 掃描並安裝所有的 Windows 更新
+遷移至 Windows 10 專業版或 Windows 10 企業版後，可能會有可供您安裝的服務和功能更新。 
+
+- 移至 [**設定**  >  **更新 & 安全性**>，然後選取 [**檢查更新**]。
+- 如果有任何更新，請安裝它們、重新開機，然後重複程式，直到您看到下列通知：
+
+> [!div class="mx-imgBorder"]
+> ![Windows Update [您是最新的通知]](images/wustatus.png)
+
+
 ## 商務用 OneDrive
 
 使用 <a href="https://docs.microsoft.com/onedrive/onedrive" target="_blank"> 商務用 OneDrive 在 </a> 您所有的工作裝置之間輕鬆共用工具、記錄及其他檔案。
@@ -134,7 +157,7 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 **將藍牙 Surface 中樞觸筆配對**
 
-對筆進行配對，將畫筆固件保持在最新狀態，並在 [藍牙裝置設定] 頁面或 Surface 應用程式中取得電池計量資訊：
+配對手寫筆以將畫筆固件保持在最新狀態，在 [藍牙裝置設定] 頁面或 Surface 應用程式中，設定繪圖筆的快捷方式，並取得電池計量資訊：
 
 1. 選取 [**啟動**  >  **設定**  >  **裝置**]。
 
@@ -200,15 +223,6 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 ## 應用程式
 
-### 更新已安裝的應用程式
-
-若要更新所有已安裝的 Microsoft Store 應用程式：
-
-1. 開啟 Microsoft Store 應用程式，然後選取右上角的 [ **查看更多** 省略號]。
-
-2. 選取 [下載與更新]****。
-
-2. 選取 [取得更新]****。
 
 ### Microsoft Whiteboard
 
@@ -307,9 +321,21 @@ SharePoint 和團隊通道檔案也可以使用 OneDrive 同步處理引擎，�
 
 如需設定 app 的相關資訊，請參閱 <a href="https://www.windowscentral.com/how-set-your-phone-windows-10" target="_blank"> 如何在 Windows 10 設定您的電話，以及如何在您的電腦與手機之間同步處理資料 </a> 。 另請參閱 <a href="https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10" target="_blank"> 如何修正您在 Windows 10 上的手機應用程式常見問題 </a> 。
 
-### 超級別致區域
+###  別致區域
 
-**Super 別致區域** 可協助使用者排列視窗，以最大化螢幕空間。 它現在包含在 <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> GitHub 上的 PowerToys 中 </a> 。
+
+[**別致區域**] 是 <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> GitHub 上稱為 PowerToys 的工具集合的一部分 </a> 。 在 Surface Hub 2，您可以在顯示 ( 「zone」」 ) 上定義固定的版面配置，然後選取將在每個區域中執行的 app，這是一種很好的方式。 
+
+
+[PowerToys wiki](https://github.com/microsoft/PowerToys/wiki)提供如何使用及自訂每個工具的指示，包括[FancyZones](https://github.com/microsoft/PowerToys/wiki/FancyZones-Overview)。 在高層次上（在安裝 PowerToys 之後），您可以選取或建立自訂的版面配置，然後按住 shift 鍵，然後拖曳或使用鍵盤鍵，將執行中的 app 移至特定區域。 使用藍牙或 USB 鍵盤和滑鼠將協助您解決此情況，或者您可以使用螢幕上的觸控式鍵盤和觸控板。
+
+**Power 玩具秘訣**
+- 若要在 GitHub 上接收 PowerToys 發行更新的電子郵件通知，請按一下 [頁面](https://github.com/microsoft/PowerToys/releases)頂端的 [註冊] 按鈕。
+- 安裝 PowerToys 之後，您就可以透過將 PowerToys 設定 [ **自動下載更新** ] 設定為 [開啟]，來接收 Windows 通知和/或下載並安裝最新的更新。
+- 若要移至 [PowerToys 設定]，請在工作列上選取 [向上 carat] 執行的 **應用程式** ，然後以滑鼠右鍵按一下或按住 PowerToys 圖示，直到功能表出現為止。 選取 [設定]。
+- 在 [PowerToys 設定] 頁面底部，將 [ **自動下載更新** ] 設為 [開啟]。
+- 發佈更新時，系統會顯示 Windows 通知，提供何時安裝更新的選項。
+
 
 ### Edge Chromium 瀏覽器
 
@@ -415,7 +441,7 @@ Surface Hub 2 在本機儲存空間中有一個 128GB SSD，所以在正常使�
 
 1. 掃描並安裝所有的 Windows 更新。
 
-2. 更新群組原則
+2. 更新群組原則。
 
    1. 在提升許可權的命令提示字元中，輸入 **gpupdate/force/boot/wait： 0**。
    
