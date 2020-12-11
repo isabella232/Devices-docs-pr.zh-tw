@@ -26,7 +26,6 @@
 ## 部署
 ### [Surface Hub 2S 採用與訓練](surface-hub-2s-adoption-kit.md)
 ### [Surface Hub 2S 採用影片](surface-hub-2s-adoption-videos.md)
-
 ### [第一次安裝 Surface Hub 2S](surface-hub-2s-setup.md)
 ### [將裝置連接至 Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Surface Hub 2S 部署檢查清單](surface-hub-2s-deploy-checklist.md)
@@ -40,7 +39,7 @@
 ### [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
 ### [設定 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2-post-install.md)
 ### [Surface Hub 2 上適用於 Windows 10 專業版和企業版的重要附加元件](surface-hub-2-essential-add-ons.md)
-### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
+### [安裝 Windows 10 團隊版 2020 更新](surface-hub-2020-update.md)  
 ### [已知問題 - Windows 10 團隊版 2020 更新](surface-hub-2020-team-update-known-issues.md)
 ### [在 Surface Hub 2S 上設定非全域系統管理員帳戶](surface-hub-2s-nonglobal-admin.md)
 ### [在 Surface Hub 上安裝及設定新的 Microsoft Edge](surface-hub-install-chromium-edge.md)        
@@ -99,9 +98,8 @@
 #### [初次執行程式](first-run-program-surface-hub.md)
 
 ## 管理
-### [管理 Microsoft Surface Hub](manage-surface-hub.md)
-### [安裝 Windows 10 團隊版 2020 更新預覽組建](surface-hub-install-2020preview.md)  
-### [在 Surface Hub 安裝及設定新版 Microsoft Edge](surface-hub-install-chromium-edge.md)    
+### [管理 Microsoft Surface Hub](manage-surface-hub.md) 
+### [在 Surface Hub 上安裝及設定新的 Microsoft Edge](surface-hub-install-chromium-edge.md)    
 ### [適用於 Surface Hub 的 PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [遠端 Surface Hub 管理](remote-surface-hub-management.md)
 #### [使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)
