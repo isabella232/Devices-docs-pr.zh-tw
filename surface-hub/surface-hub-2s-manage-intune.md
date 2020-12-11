@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/23/2020
+ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
-ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
+ms.openlocfilehash: 6b5dac9f418207293e3b9b386d59fd26762feb72
+ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11206297"
 ---
 # 使用 Intune 管理 Surface Hub 2S
 
@@ -52,13 +52,14 @@ Surface Hub 2S 可讓 IT 系統管理員使用行動裝置管理（MDM）提供�
 
 除了可透過 Intune 主控台直接使用的原則之外，還有許多配置服務提供者 (與登錄機碼或檔案對應的 Csp) 。 
 
-Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新的 Csp。 透過 Windows 測試人員計畫在預覽中提供的 [Windows 10 Team 2020 更新](surface-hub-install-2020preview.md)，包含超過20個適用于 surface Hub 和 surface hub 2 的新功能和更新裝置管理原則。 這些 MDM 原則賦予 IT 管理員對來自 Microsoft Store 的 app 更新的控制權，以及無線投影設定（例如服務品質與 802.1 x 有線驗證），以及新的隱私權/GDPR 相關設定等。
+Microsoft 通常會針對每個新版本的 Windows 10 作業系統，提供新的 Csp。 [Windows 10 Team 2020 更新](surface-hub-2020-update.md)包含超過20個適用于 surface Hub 和 surface hub 2 的新與更新的裝置管理原則。 這些 MDM 原則賦予 IT 管理員對來自 Microsoft Store 的 app 更新的控制權，以及無線投影設定（例如服務品質與 802.1 x 有線驗證），以及新的隱私權/GDPR 相關設定等。
 
 如需詳細資訊，請參閱下列資源： 
 
 - [設定服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
 - [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 - [Microsoft Surface Hub 支援的 CSPs 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- [Surface Hub 團隊2020更新的新功能](surface-hub-2020-update-whats-new.md)
 
 ## 服務品質（QoS）設定
 
@@ -106,7 +107,7 @@ Surface Hub 2S 會在模式 0 中隨 Microsoft Teams 一起安裝完成，可支
 
 若要調整模式，請將下列設定新增至 [自訂裝置設定檔](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
 
-| Name | 說明 | OMA-URI | 類型 | 值 |
+| 名稱 | 說明 | OMA-URI | 類型 | 值 |
 |:--- |:--- |:--- |:--- |:--- |
 |**Teams 應用程式識別碼**|App 名稱|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|字串| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Teams 應用程式模式**|Teams 模式|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|整數| 0 或 1 或 2|
