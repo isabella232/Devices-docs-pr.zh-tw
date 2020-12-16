@@ -18,18 +18,18 @@ appliesto:
 - Surface Laptop 3
 - Surface Book 3
 - Surface Laptop Go
-ms.openlocfilehash: 20d1b187a565f210eedc632be1addeac5dd714ba
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: e984741a8367935eab18351815c5f00d9f8a72b7
+ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105858"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11228544"
 ---
 # Surface UEFI 設定的 Intune 管理
 
 ## 簡介
 
-從雲端管理裝置的能力在整個生命週期中大大簡化 IT 部署與資源調配。 使用裝置固件設定介面 (DFCI 內建于 Microsoft Intune 中的) 設定檔 (現已在 [公用預覽版](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)) 中提供，Surface UEFI 管理會將現代管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供安全性設定（包括啟動選項和內建週邊設備）的控制權，並針對未來的高級安全性案例奠定基礎。 如需常見問題的解答，請參閱 [Ignite 2019：宣佈從 Intune 遠端系統管理 SURFACE UEFI 設定](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)。
+從雲端管理裝置的能力在整個生命週期中大大簡化 IT 部署與資源調配。 使用 Device 固件配置介面 (DFCI 在 [Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)內建的) 設定檔，Surface UEFI 管理會將新式管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供安全性設定（包括啟動選項和內建週邊設備）的控制權，並針對未來的高級安全性案例奠定基礎。 如需常見問題的解答，請參閱 [Ignite 2019：宣佈從 Intune 遠端系統管理 SURFACE UEFI 設定](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)。
 
 ### 背景
 
@@ -39,9 +39,9 @@ ms.locfileid: "11105858"
 
 ### DFCI 與 SEMM
 
-到目前為止，管理固件所需的註冊裝置在 Surface Enterprise 管理模式中 (SEMM) 以及持續進行手動 IT 密集型任務的額外負荷。 例如，SEMM 需要 IT 員工以實際方式存取每個電腦，以在證書管理程式中輸入兩位數的 pin。 雖然 SEMM 對於嚴格內部部署環境中的組織而言是一個不錯的解決方案，但其複雜性和 IT 密集型需求都能讓使用成本變得非常昂貴。
+先前，管理固件所需的註冊裝置在 Surface Enterprise 管理模式中 (SEMM) 與持續進行手動 IT 密集型任務的額外負荷。 例如，SEMM 需要 IT 員工以實際方式存取每個電腦，以在證書管理程式中輸入兩位數的 pin。 雖然 SEMM 對於嚴格內部部署環境中的組織而言是一個不錯的解決方案，但其複雜性和 IT 密集型需求都能讓使用成本變得非常昂貴。
 
-現在，您可以在 Microsoft Intune 中使用新的整合式 UEFI 固件管理功能，在單一主機中進行提供、安全性和精簡更新等新功能，讓您能更輕鬆地使用鎖定硬體的功能，現在已與 [Microsoft 端點管理員](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)整合 下圖顯示直接在裝置上 (left) 中查看，以及在端點管理員主控台中查看 (右側) 的 UEFI 設定。
+ 使用 Microsoft Intune 中的整合 UEFI 固件管理功能，可簡化並更輕鬆地使用在單一主控台中進行提供、安全性和精簡更新的新功能，讓您可以更輕鬆地使用鎖定硬體的功能，現在已與 [Microsoft 端點管理員](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)進行整合。 下圖顯示直接在裝置上 (left) 中查看，以及在端點管理員主控台中查看 (右側) 的 UEFI 設定。
 
 ![在裝置上顯示的 UEFI 設定 (left) ，而在端點管理員主控台中則 (右側) ](images/uefidfci.png)
 
@@ -86,7 +86,7 @@ DFCI 環境需要設定包含設定的 DFCI 設定檔，以及將設定套用到
     ![建立 DFCI 設定檔](images/df1.png)
 
 5. 按一下 **[確定]** ，然後選取 [ **建立**]。
-6. 選取 [ **作業** ]，然後在 [ **選取要包含的群組** ] 底下，選取包含您目標裝置的 Azure AD 安全性群組，如下圖所示。 按一下**儲存**。
+6. 選取 [ **作業** ]，然後在 [ **選取要包含的群組** ] 底下，選取包含您目標裝置的 Azure AD 安全性群組，如下圖所示。 按一下 **[儲存]**。
 
     ![指派安全性群組](images/df2a.png)
 

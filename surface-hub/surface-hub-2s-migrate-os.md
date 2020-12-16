@@ -9,16 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/03/2020
+ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 01c5c8a5c6b9f7ed657829fe792fc9eecd1facb5
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
+ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195398"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11228554"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
+
+- [文章版本歷程記錄](#version-history)
 
 Surface Hub 秒是預先預先安裝了 Windows 10 團隊。 此自訂版本的 Windows 10 是設計來協助在會議室環境中共同作業。 現在，您可以選擇執行 Windows 10 專業版或企業版來使用 Surface Hub 2，就像任何其他電腦一樣。 
 
@@ -82,7 +84,7 @@ Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理
     >[!Note]
     > 如果您不知道您的使用者名稱或系統管理員密碼，您必須重設裝置。 如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> 重設及恢復 Surface Hub 2 秒。</a>
 
-1. 移至 [**所有應用程式**設定] 的 [  >  **Settings**  >  **更新與安全性**]  >  **Windows update**，然後安裝所有更新。 
+1. 移至 [**所有應用程式**設定] 的 [  >  ****  >  **更新與安全性**]  >  **Windows update**，然後安裝所有更新。 
 1. 重新開機裝置。 
 1. 使用 Surface app 驗證 UEFI 版本。 
 1. 在此情況下，如果 UEFI 版本尚不是版本694.2938.768.0 或更新版本，您可以重複上述步驟，或安裝 Windows 10 Team 2020 更新裸機復原 (BMR) 影像，即可取得最新的 UEFI。
@@ -267,7 +269,7 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
    ![輸入 UEFI 密碼。](images/shm-fig22.png)
    
-4. 在 UEFI 功能表中，選取**Management**[  >  **從 USB 安裝**管理元件]。
+4. 在 UEFI 功能表中，選取****[  >  **從 USB 安裝**管理元件]。
 
    ![選取 [管理] 並從 U S B 安裝。](images/shm-fig21.png)
    
@@ -302,7 +304,7 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
 ### 安裝 Surface Hub 2 驅動程式和固件
 
-為了確保您的裝置擁有所有最新的更新和驅動程式，請 <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> 在 Surface Hub 2 上安裝適用于 Windows 10 專業版和 ENTERPRISE OS 的驅動程式和固件 </a> 。
+為了確保您的裝置擁有所有最新的更新和驅動程式，請 <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> 在 Surface Hub 2 上安裝適用于 Windows 10 專業版和 ENTERPRISE OS 的驅動程式和固件 </a> 。 安裝驅動程式和固件 MSI 之後，請重新開機裝置。 然後，在再次開啟 Hub 之後，請將電腦的電源持續一小時，然後重新開機裝置。 第二次重新開機時，系統不會提示您。 視電腦的狀態在遷移至 Windows 10 專業版或企業版前，您可能需要執行第二個步驟，以確保所有的固件都已更新。
  
 ## 設定建議的設定
 
@@ -322,9 +324,10 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
 下表摘要列出本文所做的變更。
 
-| 版本 | 日期               | 描述                                                                                           |
+| 版本 | 日期               | 說明                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| 向量. 1.3  | 2020年12月3日 | 已更新有關管理 SEMM 登記的指導方針                                                        |
+| 向量. 1.4  | 2020年12月14日 | 提供有關安裝 MSI 檔案（適用于 Surface Hub 2 的 Windows 10 專業版和 Enterprise OS）的 [詳細資訊](#install-surface-hub-2-drivers-and-firmware) ，說明您可能需要重新開機第二次，視系統的狀態而定。                                                          |
+| 向量. 1.3  | 2020年12月3日 | 更新了有關 [管理 SEMM 註冊](#managing-semm-enrollment)的指導方針。                                                       |
 | 向量. 1.2  | 2020年9月29日 | 針對可用性意見反應的各種更新。                                                        |
 | 向量. 1.1  | 2020年9月15日 | 在簡介中放置了說明安裝新作業系統的授權需求。 |
 | 向量. 1.0  | 2020年9月1日  | 新文章。                                                                                           |
