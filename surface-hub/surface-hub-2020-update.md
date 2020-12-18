@@ -9,18 +9,20 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/08/2020
+ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7035d4c89e2ef5937d0480cf2d77db2e7e829488
-ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
+ms.openlocfilehash: 043c7ed49dafab7e0f3d042f5b98d527ffe0610f
+ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203535"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237213"
 ---
 # 安裝 Windows 10 團隊版 2020 更新 
 
 新的 Surface Hub 作業系統、以 Windows 10 版本20H2 為基礎的 **Windows 10 小組2020更新**現已提供給所有 Surface Hub 2 裝置使用。  
+
+- 另請參閱： [已知問題： Windows 10 Team 2020 更新](surface-hub-2020-update.md)
 
 ## 分配
 
@@ -65,4 +67,5 @@ Windows 10 團隊2020更新帶來了主要的裝置部署和管理功能以及�
 
 ## 深入了解
 
+- [已知問題： Windows 10 Team 2020 更新](surface-hub-2020-update.md)
 - [Surface Hub Windows 10 小組2020更新的重要更新](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
