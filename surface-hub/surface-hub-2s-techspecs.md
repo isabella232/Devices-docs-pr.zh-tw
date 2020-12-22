@@ -9,16 +9,16 @@ manager: laurawi
 ms.author: greglin
 audience: Admin
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 12/21/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c563a518cf1e30ce6e1aa95a4e71e748acdbf906
-ms.sourcegitcommit: 4f89d9af7bd0865828d097ed4a7863d8d396d41f
+ms.openlocfilehash: aa895e2fe5e2774d17f7f4729a3d1d613f59612d
+ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "11076381"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "11238078"
 ---
-# Surface Hub 2 秒50英寸技術規格
+# Surface Hub 2S 50 英吋技術規格
 
 |**項目**|**詳細資料**|
 |:------ |:--------- |
@@ -30,8 +30,8 @@ ms.locfileid: "11076381"
 |**顯示器**| PixelSense 顯示、3:2 長寬比、10位色彩、15.5 mm 框線、防眩防眩、IPS 液晶屏 |
 |**處理器**| 四核第8代英特爾酷睿 i5 處理器、8 GB RAM、128 GB SSD <sup> 1</sup> |
 |**圖形**| 英特爾 UHD 圖形620 |
-|**無線**| Wi-fi 5 (IEEE 802.11 a/b/g/n/ac 相容) 藍牙無線4.1 技術 <br> Miracast 顯示 |
-|**連線**| USB-A <br> 迷你 DisplayPort 1.2 影片輸出 <br> RJ45 十億位元乙太 (1000/100/10 BaseT)  <br> HDMI 視頻輸入 (HDMI 2.0、HDCP 2.2/1.4)  <br> 含 DisplayPort 輸入的 USB-C <br> 顯示幕上有四個 USB-C ()  |
+|**無線**| Wi-Fi 5 (IEEE 802.11 a/b/g/n/ac 相容) 藍牙無線4.1 技術 <br> Miracast 顯示 |
+|**連線**| USB-A <br> Mini-DisplayPort 1.2 影片輸出 <br> RJ45 十億位元乙太 (1000/100/10 BaseT)  <br> HDMI 視頻輸入 (HDMI 2.0、HDCP 2.2/1.4)  <br> 含 DisplayPort 輸入的 USB-C <br> 顯示幕上有四個 USB-C ()  |
 |**感應器**| Doppler 空間使用量 <sup> 2</sup> <br> 加速計 <br> 迴轉儀 |
 |**音訊/視訊**| 全向正面的三向立體喇叭 <br> 完整區段 8-元素 MEMS 麥克風陣列 <br> Microsoft Surface Hub 2 相機、4K、USB-C 連線、90學位 HFOV |
 |**手寫筆**| Microsoft Surface Hub 2 手寫筆 (使用中)  |
@@ -46,5 +46,11 @@ ms.locfileid: "11076381"
 |**輸入功率、待機**| 最大 5 W  |
 
 > [!NOTE]
-> <sup>1 </sup> 系統軟體會使用大量儲存空間。 可用的儲存空間會根據系統軟體更新和應用程式的使用方式而有所變更。 1 GB = 1000000000 位元組。 如需詳細資訊，請參閱 Surface.com/Storage。 <br> <sup>2 </sup> Doppler 感應器在香港、印度、科威特和阿曼中都無法使用，因為政府規定。
+> <sup>1 </sup> 系統軟體會使用大量儲存空間。 可用的儲存空間會根據系統軟體更新和應用程式的使用方式而有所變更。 1 GB = 1000000000 位元組。 如需詳細資訊，請參閱 Surface.com/Storage。 <br> <sup>2 </sup> Doppler 感應器在香港、印度、科威特和阿曼中都無法使用，因為有當地法規。
 <br> <sup></sup>部分功能所需的3個軟體授權。 單獨出售。<br> 
+
+> [!NOTE]
+> Surface Hub 在一天內最多可以持續使用18個小時。 若要優化效率，Surface Hub 會使用智慧感應器，在沒有偵測到目前狀態時關閉指示燈畫面，這表示一天結束時不需要再加電。 如果裝置是在24小時的工作場所環境中安裝，則可以停用感應器，以符合最大使用的每日18個小時。 請注意，視訊訊號顯示時間可能會造成螢幕上出現燒入或影像保留。 若要深入瞭解管理電源設定，請參閱：
+>
+> - [本機管理 Surface Hub 設定](local-management-surface-hub-settings.md)
+> - [SurfaceHub CSP-Windows 用戶端管理](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
