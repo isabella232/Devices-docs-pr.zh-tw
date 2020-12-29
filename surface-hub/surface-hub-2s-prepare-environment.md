@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/21/2019
+ms.date: 12/28/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: dddab2adce1bec9ff722a3324b9c4b1be609ae89
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: af66449806c9aa525fa3f5df84012d3daeed96ba
+ms.sourcegitcommit: dbd14649442ad039aeb265cd60ed029d483a4bb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934843"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "11251450"
 ---
 # 針對 Surface Hub 2S 準備您的環境
 
@@ -27,6 +27,11 @@ ms.locfileid: "10934843"
 Office 365 端點可透過防火牆直接傳送所有受信任的 Office 365 網路要求，以繞過所有其他的資料包層級檢查或處理，協助優化您的網路。 此功能可減少延遲及您的周邊容量需求。
 
 Microsoft 會定期使用新功能和功能更新 Office 365 服務，這可能會改變所需的埠、Url 和 IP 位址。 若要評估、設定及掌握最新變更，請訂閱 [Office 365 IP 位址和 URL Web 服務](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)。
+
+> [!NOTE]
+> Surface Hub 可與 Microsoft 團隊、商務用 Skype Server 2019、商務用 Skype Server 2015 或商務用 Skype Online 搭配使用。
+較舊的平臺（例如 Lync Server 2013）不受支援。 在 GCC-High 或 DoD 環境中不支援 Surface Hub。
+
 
 ## 裝置附屬
 
@@ -44,8 +49,10 @@ Microsoft 會定期使用新功能和功能更新 Office 365 服務，這可能�
 
 如果您使用內部部署的 Active Directory 網域服務來建立 Surface Hub 2 的關聯，您必須使用網域上的安全性群組來管理 [設定] app 的存取權。 這有助於確保所有安全群組成員都有權變更 Surface Hub 2 的設定。 另請注意下列事項：
 
-- 當 Surface Hub 2 擁有您的內部部署 Active Directory 網域服務的子公司時，可將 BitLocker 金鑰儲存在 Active Directory 架構中。 如需詳細資訊，請參閱 [準備貴組織以進行 BitLocker：規劃與原則](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)。 
+- 當 Surface Hub 2 擁有您的內部部署 Active Directory 網域服務的子公司時，可將 BitLocker 金鑰儲存在 Active Directory 架構中。 如需詳細資訊，請參閱 [準備貴組織以進行 BitLocker：規劃與原則](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)。
+
 - 貴組織的根信任 Ca 會推送至 Surface Hub 2 中的相同容器，這表示您不需要使用置備套件匯入它們。
+
 - 您仍可在 Intune 中註冊裝置，以集中管理 Surface Hub 2 的設定。
 
 ## Azure Active Directory
