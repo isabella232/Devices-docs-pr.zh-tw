@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 043c7ed49dafab7e0f3d042f5b98d527ffe0610f
-ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
+ms.openlocfilehash: b3f1f0884273728abc8b4f6e8662190dacdaf2b2
+ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237213"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "11253962"
 ---
 # 安裝 Windows 10 團隊版 2020 更新 
 
@@ -39,14 +39,17 @@ ms.locfileid: "11237213"
 | 3     | 美國、德國                            | TBD |
 | 4     | 化                                 | TBD  |
 
-## 使用 Windows 10 團隊版 v1703 維護 Surface Hub 2 
+## 使用 Windows 10 Team 版本1703維護 Surface Hub 
 
-所有地區的客戶都可以使用商務用 Windows Update 或使用裸機復原 (BMR) 影像來繼續更新其 Surface Hub 2/2 裝置，如在 [Surface Hub 2 的重設及修復](surface-hub-2s-recover-reset.md)中所述。 Windows 10 Team Edition 版本1703的完整服務支援排程為在2021年3月16日為止繼續。
+Windows 10 Team Edition 版本1703的完整服務支援排程為在2021年3月16日為止繼續。
 
+### 2個裝置 
 
-## V1 裝置支援 
+所有地區的客戶都可以繼續使用商務用 Windows 更新，或使用裸機復原 (BMR) 影像，將其 Surface Hub 秒裝置更新為2020更新，如在 [Surface Hub 2 的重設及恢復](surface-hub-2s-recover-reset.md)中所述。
 
-初次發行為 Surface Hub 2 裝置，Windows 10 Team 2020 更新將在 Surface Hub v1 裝置上立即提供。 若要深入瞭解，請參閱 [SURFACE IT 專業版博客](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-available-october-27/ba-p/1810739)。
+### V1 裝置 
+
+所有地區的客戶現在都可以 [使用 Surface Hub 恢復工具](surface-hub-recovery-tool.md)，將其 Surface hub v1 裝置更新為2020更新。 更新這些裝置至 Windows 10 Team 2020 更新的其他方法即將推出。 若要深入瞭解，請參閱 [SURFACE IT 專業版博客](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update/ba-p/2000144)。
  
 ## 新功能
 
@@ -54,7 +57,7 @@ Windows 10 團隊2020更新帶來了主要的裝置部署和管理功能以及�
  
 ## 開始之前
 
-安裝 Windows 10 team 2020 更新之前，請確定您已儲存與您的裝置相關聯的 BitLocker 金鑰。 
+安裝 Windows 10 Team 2020 更新之前，請確定您已儲存與您的裝置相關聯的 BitLocker 金鑰。 
 
 **手動儲存 BitLocker 金鑰**
 

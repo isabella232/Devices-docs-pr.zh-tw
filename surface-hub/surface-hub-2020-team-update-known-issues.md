@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c17d9b41bf4abc74319b16932074343edbe988d1
-ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
+ms.openlocfilehash: 1c4bd5b065da282c3bf9df10ce65d30c70dae363
+ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237223"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "11253972"
 ---
 # 已知問題： Windows 10 Team 2020 更新 
 
@@ -35,7 +35,6 @@ ms.locfileid: "11237223"
 | 如果客戶不支援混合式新式驗證，行事曆與內部部署信箱的同步處理就會失敗。   | 如果客戶未在其拓撲中啟用內部部署裝置的混合式新式驗證，則中樞會嘗試強制執行混合式新式驗證。 在這種情況下，Exchange 會停止同步處理會議到裝置。 因此，裝置不會接收新的會議。                                                                                                                                        | 客戶可以在其內部部署 Exchange 伺服器上啟用混合式新式驗證，但前提是其拓撲允許。 否則，裝置不應該安裝2020更新。<br> <br>**深入瞭解：** [如何將 Exchange Server 內部部署設定為使用混合式新式驗證](https://docs.microsoft.com/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication)。                                                                                                |
 | 套用條件式存取原則設定時，登入會受到影響。                                    | 使用需要裝置層級資訊的合規性原則設定（例如「需要 ) 防火牆」）來設定裝置時 (會觸發條件式存取錯誤53000。 當使用者無法登入裝置時，就會發生這種情況。                                                                                                                                                                                                 | 客戶可以排除需要裝置層級資訊在 Surface Hub 裝置上執行的規範原則設定。 如果由於合規性或安全性限制而無法進行這種情況，中樞裝置就不應該安裝2020更新。<br> <br>**深入瞭解**： [使用規範原則來設定您使用 Intune 管理的裝置規則](https:/docs.microsoft.com/mem/intune/protect/device-compliance-get-started)。 |
 | 中樞2裝置無法使用 WSUS 接收驅動程式更新。                                             | Surface Hub 2 秒支援 Windows Update 和商務用 Windows 更新，以發佈驅動程式;不支援透過 Windows Server Update Services (WSUS) 進行發佈。                                                                                                                                                                                                                                                                      | 如果使用 WSUS，請遷移至商務用 Windows 更新。<br> <br>**深入瞭解**： [什麼是商務用 Windows 更新？](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)                                                                                                                                                                                                                                                                                                                            |
-| Microsoft 網上的白板無法從 Microsoft 網上商店更新                                               | 升級至 Windows 10 Team 2020 更新後，Microsoft 白板 app 無法透過 Microsoft Store 進行更新。                                                                                                                                                                                                                                                                                                                       | 卸載白板應用程式，然後從 Microsoft 網上商店或您的 MDM 提供者重新安裝。                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 使用電話登入 Surface Hub 時，Azure Active Directory 已加入裝置的單一登入失敗 | 如果 IT 系統管理員已將租使用者設定為使用 [passwordless 驗證](surface-hub-2s-phone-authenticate.md) 來登入 Surface Hub，且裝置已由 AAD 加入，則使用者無法使用行動裝置（例如手機）登入。                                                                                                       | 手動登入 Surface Hub。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | [動作中心] 有 [無法選按設定] 連結。 | 此連結不應出現在 Windows 10 小組中，可能會造成混淆。   | 此功能與2020更新之前相同;[開始] 功能表的 [應用程式] 區段應該用來啟動 [設定] app。    |
 | 在更新為2020年11月24日的 Windows 10 Team 2020 更新後，中心2個裝置會報告所有0的序列值。 | 升級至 Surface Hub 2 月24日更新後，Windows 10 小組2020更新或安裝 Windows 10 Team 2020 復原影像，而某些裝置報告的序列值全是零。 這可防止裝置註冊到 MDM 提供者。  | 在使用2020年11月24日更新的 Windows 10 Team 2020 更新裝置之前，請確定裝置已安裝 Windows 10 版 Team 創意者更新的年9月 1 2020 日更新。 深入瞭解： [Surface Hub 更新歷程記錄](surface-hub-update-history.md)。 **注意：** 裝置在移至**SMC 固件更新 3.91.139.0**之前，請先安裝**Surface SMC 固件更新 1.177.139.0** 。 這可防止將序列值設為零 |
