@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: 9878e64e414f4fe9ec3abfbd49adf233edc1da1d
+ms.sourcegitcommit: 53d1eac8840fafbcd155798fce0d8c843f48dca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228554"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "11255485"
 ---
 # 移轉到 Windows 10 專業版或 Surface Hub 2 企業版
 
@@ -34,7 +34,7 @@ Surface Hub 秒是預先預先安裝了 Windows 10 團隊。 此自訂版本的 
 
 使用個別的電腦和可下載的工具 *SURFACE UEFI 配置*器，從 Windows 10 小組開始遷移。 使用此工具來建立包含您套用至 Surface Hub 2 秒的新 UEFI 設定的套件。  
 
-Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理模式的介面。 它旨在協助集中管理公司環境中的 Surface 裝置上的固件設定。 如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> MICROSOFT SEMM 檔</a>
+Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理模式的介面。 它旨在協助集中管理公司環境中的 Surface 裝置上的固件設定。 如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> MICROSOFT SEMM 檔 </a> 。
  
 
 ## 解決方案元件
@@ -81,26 +81,34 @@ Surface UEFI 配置處理常式在 (SEMM) 中，成為 Surface Enterprise 管理
 **若要透過 Windows Update 更新 UEFI：**
 
 1. 在 Surface Hub 2 秒，請以系統 **管理員**身分登入。 
+
     >[!Note]
     > 如果您不知道您的使用者名稱或系統管理員密碼，您必須重設裝置。 如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> 重設及恢復 Surface Hub 2 秒。</a>
 
 1. 移至 [**所有應用程式**設定] 的 [  >  ****  >  **更新與安全性**]  >  **Windows update**，然後安裝所有更新。 
+
 1. 重新開機裝置。 
-1. 使用 Surface app 驗證 UEFI 版本。 
+
+1. 使用 Surface app 驗證 UEFI 版本。
+
 1. 在此情況下，如果 UEFI 版本尚不是版本694.2938.768.0 或更新版本，您可以重複上述步驟，或安裝 Windows 10 Team 2020 更新裸機復原 (BMR) 影像，即可取得最新的 UEFI。
 
 **若要透過裸機復原來更新 UEFI (BMR) 影像：**
 
-1.  移至 [ [surface](https://support.microsoft.com/surfacerecoveryimage)復原] 網站，然後選取 [ **Surface Hub 2 秒**]
-3.  輸入您的中樞序列值， (位於中樞背面，位於 [電源連接] 旁邊。 ) 
+1.  移至 [ [surface](https://support.microsoft.com/surfacerecoveryimage) 復原] 網站，然後選取 [ **Surface Hub 2 秒**]。
+
+3.  輸入您的中樞序列值， (位於中樞背面，位於 [電源連接]) 旁邊。
+
 4.  按照指示，透過安裝 Windows 10 Team 2020 更新，將影像下載到格式化的 USB 磁片磁碟機。
+
 5.  更新完成之後，裝置第一次進入 OOBE 時，您不需要完成 OOBE，就會更新 UEFI 版本。 請改為按住電源按鈕，直到螢幕關閉為止，再關閉裝置電源。 
 
 ### 下載 Surface UEFI 配置器和 Surface Hub 2 驅動程式與固件
 
 在不同的電腦上：
 
-1. 在 [ <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> 表面工具] 頁面上 </a> ，選取 [ **下載**]。  
+1. 在 [ <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> 表面工具] 頁面上 </a> ，選取 [ **下載**]。
+
 1. 選取並下載 Surface UEFI 設定檔 MSI 檔案，並將它安裝在不同的電腦上。 安裝 Windows 10 小組版時，Surface UEFI 組態工具無法在 Surface Hub 2 上執行。
 
 1. 下載 <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> Surface Hub 2 驅動程式和固件 Windows 安裝程式 MSI 檔案 </a> 。 當您安裝新的作業系統時，您將會用到這個檔案。
@@ -191,6 +199,7 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 #### 將 SEMM 套件儲存至 USB 磁片磁碟機
 
 1. 將 USB 磁片磁碟機連線至您的電腦。 
+
 1. 選擇 [ **中心2秒**]，然後選取 **[下一步]**。
 
    ![選取 [USB]](images/shm-fig13.png)
@@ -225,24 +234,25 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
 1. 若要建立 Windows 10 專業版安裝，請在 [ <a href="https://www.microsoft.com/software-download/windows10" target="_blank"> 下載 windows 10] </a> 頁面上，依照指示下載媒體建立工具。 若要下載 Windows 10 企業版，請移至 <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" target="_blank"> Microsoft 大量授權服務中心 </a> 。
 
-2. 插入新的 USB 儲存空間磁片磁碟機。 
+1. 插入新的 USB 儲存空間磁片磁碟機。 
+
 1. 開啟 [媒體建立工具]，選取 [ **建立安裝媒體**]，然後選取 **[下一步]**。
 
    ![建立安裝媒體。](images/shm-fig16.png)
    
-3. 選取 [語言]，然後選擇 [ **Windows 10** ] 和 [ **64 位 (x64) **]。 然後選取 **[下一步]**。
+1. 選取 [語言]，然後選擇 [ **Windows 10** ] 和 [ **64 位 (x64) **]。 然後選取 **[下一步]**。
 
    ![選取 [語言]，然後選擇 [Windows 10] 和 [64 位]。 然後選取 [下一步]。](images/shm-fig17.png)
    
-4. 選取 [ **USB 快閃記憶體磁片磁碟機**]，然後選取 **[下一步]**。
+1. 選取 [ **USB 快閃記憶體磁片磁碟機**]，然後選取 **[下一步]**。
 
    ![選取 [U S B 快閃記憶體磁碟機]，然後選取 [下一步]。](images/shm-fig18.png)
    
-5. 下載完成後，請選取 **[完成]**。
+1. 下載完成後，請選取 **[完成]**。
 
    ![選取 [完成]。](images/shm-fig19.png)
    
-6. 在 Surface Hub 2 上複製 SEMM 套件檔案和 Windows 10 專業版作業系統的驅動程式及固件， (MSI 檔案) 到包含您 Windows 10 影像 (*BOOTME*) 的 USB 快閃記憶體磁片磁碟機根目錄。 BOOTME USB 磁片磁碟機包含：
+1. 在 Surface Hub 2 上複製 SEMM 套件檔案和 Windows 10 專業版作業系統的驅動程式及固件， (MSI 檔案) 到包含您 Windows 10 影像 (*BOOTME*) 的 USB 快閃記憶體磁片磁碟機根目錄。 BOOTME USB 磁片磁碟機包含：
 
     - 您的 Windows 10 可引導影像。
     
@@ -296,7 +306,7 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
 3. 如果裝置不會自動引導至 USB 磁片磁碟機，請關閉裝置 (拔下電源線，然後再插回) 。 再次插入電源線之後，裝置會在幾秒後啟動。 然後，您會在畫面中間看到白色標誌。 
 
-    如果裝置沒有開啟，請按下並放開 [電源] 按鈕。 在畫面中間看到標誌之後，按住 [音量] 按鈕，直到您看到白色標誌下方的旋轉圓形。
+    如果裝置沒有開啟，請按下並放開 [電源] 按鈕。 在畫面中間看到標誌之後，按住 **音量** 按鈕，直到您看到白色標誌下方的旋轉圓形。
  
    ![從 U S B 磁片磁碟機啟動至 Windows 10。](images/shm-fig26.png)
    
@@ -324,7 +334,7 @@ Surface UEFI 設定檔建立的 SEMM 套件必須以憑證加以保護。 憑證
 
 下表摘要列出本文所做的變更。
 
-| 版本 | 日期               | 說明                                                                                           |
+| 版本 | 日期               | 描述                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
 | 向量. 1.4  | 2020年12月14日 | 提供有關安裝 MSI 檔案（適用于 Surface Hub 2 的 Windows 10 專業版和 Enterprise OS）的 [詳細資訊](#install-surface-hub-2-drivers-and-firmware) ，說明您可能需要重新開機第二次，視系統的狀態而定。                                                          |
 | 向量. 1.3  | 2020年12月3日 | 更新了有關 [管理 SEMM 註冊](#managing-semm-enrollment)的指導方針。                                                       |
