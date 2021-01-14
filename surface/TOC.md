@@ -4,18 +4,17 @@
 
 ## 概觀
 
+### [商務用 Surface Pro 7+](https://www.microsoft.com/surface/business/surface-pro-7-plus)
+### [商務用 Surface Go 2](https://www.microsoft.com/surface/business/surface-go-2)
+### [商務用 Surface Pro X](https://www.microsoft.com/surface/business/surface-pro-x)
+### [商務用 Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)
+### [商務用 Surface Studio 2](https://www.microsoft.com/surface/business/surface-studio-2)
+### [商務用 Surface Book 3](https://www.microsoft.com/surface/business/surface-book-3)
 ### [使用 Microsoft Surface 提高 ROI](forrester-tei-study.md)
 ### [Microsoft Surface 教育版對整體經濟的影響](forrester-tei-edu-study.md)
 ### [Surface Dock 的新增功能](surface-dock-whats-new.md)
 ### [Surface Book 3 GPU 技術概觀](surface-book-GPU-overview.md)
 ### [Surface Book 3 Quadro RTX 3000 技術概觀](surface-book-quadro.md)
-### [商務用 Surface Book 3](https://www.microsoft.com/surface/business/surface-book-3)
-### [商務用 Surface Go 2](https://www.microsoft.com/surface/business/surface-go-2)
-### [商務用 Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)
-### [商務用 Surface Pro X](https://www.microsoft.com/surface/business/surface-pro-x)
-### [商務用 Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)
-### [商務用 Surface Studio 2](https://www.microsoft.com/surface/business/surface-studio-2)
-
 ### [LTE Advanced 帶來安全、隨處工作的行動力](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## 方案
