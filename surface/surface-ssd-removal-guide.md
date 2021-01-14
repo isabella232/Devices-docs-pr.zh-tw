@@ -8,33 +8,35 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 01/13/2020
 ms.reviewer: ''
 manager: laurawi
 ms.audience: itpro
 audience: ITPro
 appliesto:
-- Surface Laptop 3
+- Surface Pro 7+
 - Surface Pro X
 - Surface Laptop Go
+- Surface Laptop 3
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 56c740b39d86ea3fab386e88efa6932e050bb957
-ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
+ms.openlocfilehash: b65feb24803311aba809819cd6da273ed6934c75
+ms.sourcegitcommit: 41124d496abaa38a0d989159f2afec3542d562ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "11133168"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269104"
 ---
 # 從相容的 Surface 裝置移除 SSD 的最佳做法
 
 > [!IMPORTANT]
 > 本文僅供企業組織中合格的 IT 技術人員使用。 它描述由合格的 IT 技術人員在下列相容 Surface 裝置中移除及取代 SSDs 的建議最佳做法： 
 
-- Surface 膝上型電腦3 
-- Surface Pro X 
+- Surface Pro 7 +
+- Surface Pro X
 - Surface 膝上型電腦前往
+- Surface 膝上型電腦3
 
 > [!WARNING]
 > 開啟裝置和取代裝置元件可能會帶來電擊、裝置損壞、火災及個人傷亡風險，以及其他危害。  當您執行這類活動時，請務必謹慎使用。 遵循 [企業 RSSD 移除指南](https://www.microsoft.com/download/100440)中所識別的安全預防措施和程式。 如果您無法遵循「在企業版 rSSD 移除指南」中所指定的安全預防措施及程式，我們建議您取得專業協助。
@@ -80,7 +82,7 @@ ms.locfileid: "11133168"
 
 ## 移除並取代 SSD 
 
-1.  使用適用于 [企業的 RSSD 移除指南](https://www.microsoft.com/download/100440)中的指示來移除 SSD。 
+1.  使用適用于 [企業的 RSSD 移除指南](https://www.microsoft.com/download/100440)中所包含的裝置指示，移除 SSD。 
 2.  將原始的 SSD 放入新的裝置，並將新裝置連接至有線網際網路連線。
 3.  開啟新裝置的電源。 在啟動期間，裝置可能會進行固件更新。  
  
@@ -116,7 +118,7 @@ ms.locfileid: "11133168"
 8.  如果裝置是 BitLocker 停用的，可協助 SSD 移除及取代，而且如果您想要在更換後啟用 bitlocker，請移至 [**設定**  >  **bitlocker**  >  **管理 bitlocker**  >  **繼續 bitlocker**]。  
 9.  執行 **[SDT](surface-diagnostic-toolkit-for-business-intro.md)** 以驗證完整的裝置功能。  
 10. 若要查看 Windows 啟用，請選取 [**設定**  >  **啟用**]。  如果您看到任何錯誤訊息，請選取 [ **疑難排解**]。
-11. 若要檢查 office 帳戶的狀態，請開啟**office 應用程式**，然後**移至 [** 檔案帳戶]，  >  **Account**檢查是否有任何錯誤訊息。
+11. 若要檢查 office 帳戶的狀態，請開啟**office 應用程式**，然後**移至 [** 檔案帳戶]，  >  **** 檢查是否有任何錯誤訊息。
 
 ## 深入了解
 
