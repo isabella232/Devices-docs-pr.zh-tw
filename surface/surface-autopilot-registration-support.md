@@ -1,5 +1,5 @@
 ---
-title: Windows Autopilot 的 Surface 註冊支援
+title: 適用於 Windows Autopilot 的 Surface 註冊支援
 description: 本文說明提交 Autopilot 註冊要求至 Microsoft 支援的需求。
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,14 @@ ms.date: 9/14/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9a308edb37cc2cfd99490acad16bd2ae6a4d458a
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 4ff3803701ffe71e1c5c0c36200c40e833a7fb25
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016467"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271387"
 ---
-# Windows Autopilot 的 Surface 註冊支援
+# 適用於 Windows Autopilot 的 Surface 註冊支援
 
 您現在可以在 Microsoft 支援中取得為 Windows Autopilot 部署註冊 Surface 裝置的簡化程式。 從2020年9月起，客戶與 Microsoft 雲端解決方案供應商 (Csp) 可以透過提交要求到 Microsoft 支援來註冊 Surface 裝置。 此頁面概述下列支援的 Autopilot 註冊案例的需求：
  
@@ -44,7 +44,7 @@ ms.locfileid: "11016467"
 
 ## 提交支援要求
 
-  [![Get Autopilot 註冊支援 Surface](images/autopilot-reg-support-surface.png)](https://support.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
+  [![Get Autopilot 註冊支援 Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  

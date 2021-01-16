@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 01/15/2021
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
-ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
+ms.openlocfilehash: 227463e484a6f3b933fc1118d9dec058f93074a8
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "11145958"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271577"
 ---
 # 部署商務用 Surface 診斷工具組
 
@@ -46,27 +46,15 @@ ms.locfileid: "11145958"
 
 在 Surface 3 和更新版本的裝置上支援 SDT for Business，包括：
 
-- Surface 膝上型電腦前往
-- Surface Book 3
-- 表面移2
-- Surface Pro X
-- Surface Pro 7
-- Surface 膝上型電腦3
-- Surface Pro 6
-- Surface Laptop 2
-- Surface Go
-- 使用 LTE 的 Surface
-- Surface Book 2
-- 配備 LTE Advanced 的 Surface Pro (型號 1807)
-- Surface Pro (型號 1796)
-- Surface 膝上型電腦
-- Surface Studio
-- Surface Studio 2
-- Surface Book
-- Surface Pro 4
+- Surface Book-所有代
+- 表面上移-全部代
+- Surface 膝上型電腦-所有代
+- Surface Pro 3 及更新版本
+- Surface Pro X-所有代
+- Surface Studio-所有代
 - Surface 3 LTE
 - Surface 3
-- Surface Pro 3
+
 
 ## 安裝適用于商務的 Surface 診斷工具箱
 
@@ -178,6 +166,15 @@ ms.locfileid: "11145958"
 - [使用命令的 [表面診斷工具] 進行商務用](surface-diagnostic-toolkit-command-line.md)
 
 ## 變更與更新
+
+### 版本2.131.139。0
+
+此版本的商業表面診斷工具組會新增下列支援：
+
+- Surface Pro 7 + 支援
+- Surface Pro X 的流暢支援體驗
+- 安全性改進
+- 包括的使用者經驗改進
 
 ### 版本2.124.139。0
 

@@ -11,18 +11,18 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: tokatz
 manager: laurawi
-ms.date: 10/26/2020
-ms.openlocfilehash: d211ceea20b89824d45e433cf9670abe137130a0
-ms.sourcegitcommit: 07ac65bf70c8c6efcda28eecc3013983fc386e0d
+ms.date: 01/15/2021
+ms.openlocfilehash: 69ca7bc7383a122dfd4f069135319b92ff7edfb0
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11136140"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271377"
 ---
 # 最佳化 Surface 裝置的 Wi-Fi 連線能力
 
 
-為了與全天的電池使用時間保持連線，Surface 裝置會實施無線連線設定，以平衡效能和電源保留。 在最苛刻的行動案例之外，使用者可以維持足夠的無線連線，而不需修改預設的網路介面卡或相關設定。 此頁面重點說明行動案例中使用最新 Surface 裝置（包括 Surface Pro 7、Surface Pro X、Surface mobile 3、Surface Book 3、表面移至2及 Surface 膝上型電腦）的重要無線連線考慮。  
+為了與全天的電池使用時間保持連線，Surface 裝置會實施無線連線設定，以平衡效能和電源保留。 在最苛刻的行動案例之外，使用者可以維持足夠的無線連線，而不需修改預設的網路介面卡或相關設定。 此頁面重點說明行動案例中使用最新 Surface 裝置（包括 Surface Pro 7 +、Surface 膝上型電腦 Go、Surface Go 2、surface Pro X、Surface mobile 3、Surface Book 3 和 Surface Pro 7）的重要無線連線考慮。
 
 ## 必要條件
 
@@ -35,7 +35,7 @@ ms.locfileid: "11136140"
 - **802.11 r。** 「**快速 BSS 轉換** 」可減少您在裝置上移動到其他 AP 之前所需的機架數，以加速連線到新的無線存取點。 在2019之後發行的新一代 Surface 裝置中，使用者可能會在裝置上存取漫遊加強設定。 雖然建議您不要修改預設設定，但使用者應該知道這項功能，並瞭解特定設定對保持連線的能力有何影響。
 - **802.11 k。** **[鄰居報告]** 可在鄰近存取點提供目前條件的相關資訊。 它可以協助您的 Surface 裝置使用信號強度（例如 AP 利用率）以外的準則來選擇最佳 AP。
 
-特定 Surface 裝置也可以使用 802.11 v 「BSS 轉換管理幀」，這項功能很像 802.11 k，提供附近的候選人 Ap 資訊。 這些包括 Surface Go、Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3。 
+特定 Surface 裝置也可以使用 802.11 v 「BSS 轉換管理幀」，這項功能很像 802.11 k，提供附近的候選人 Ap 資訊。 這些包括 Surface Pro 7 +、表面移、表面移至2、Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3。 
 
 ## 管理使用者設定
 

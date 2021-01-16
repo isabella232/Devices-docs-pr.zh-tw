@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 9/14/2020
-ms.openlocfilehash: d2a948d236ffa286192937cc5ca71099b6eeeafb
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 31f11db8c3ab12d1af754267022d9060d3a8c026
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016422"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271099"
 ---
 # Windows Autopilot 與 Surface 裝置
 
@@ -45,7 +45,7 @@ Windows Autopilot 已註冊的裝置會在第一次啟動時透過一個名為�
 
 ## 現代化管理
 
-Autopilot 是適用于 Surface 裝置的建議部署選項，包括 Surface Pro 7、Surface 膝上型3和 Surface Pro X （專為透過 Autopilot 進行部署而設計）。
+Autopilot 是 Surface 裝置的建議部署選項，包括 Surface Pro 7 +、Surface mobile 3、Surface Pro 7 及 Surface Pro X （專為透過 Autopilot 進行部署而設計）。
 
  最佳做法是使用 Microsoft 雲端解決方案提供者的說明來註冊 Surface 裝置。 此步驟可讓您直接從 Intune 管理 Surface 中的 UEFI 固件設定。 它不需要實際觸控裝置就能管理證書。 如需詳細資訊，請參閱 [Intune 的 SURFACE UEFI 設定](surface-manage-dfci-guide.md) 。
 
@@ -53,7 +53,7 @@ Autopilot 是適用于 Surface 裝置的建議部署選項，包括 Surface Pro 
 
 透過 Windows Autopilot 廣泛部署 Surface 裝置，包括購買時由 Surface 合作夥伴進行註冊，需要 Windows 10 版本 1709 (秋季創意者更新) 或更新版本。
 
-這些 Windows 版本支援4000個位元組 (4k) 雜湊值，可唯一識別 Windows Autopilot 的裝置，以便在規模進行部署時使用。 所有新的 Surface 裝置，包括 Surface Pro 7、Surface Pro X 及 Surface 膝上型電腦3，隨附于 Windows 10 版本1903或更新版本。
+這些 Windows 版本支援4000個位元組 (4k) 雜湊值，可唯一識別 Windows Autopilot 的裝置，以便在規模進行部署時使用。 所有新的 Surface 裝置，包括 Surface Pro 7 +、Surface Pro X 和 Surface 膝上型電腦3隨附于 Windows 10 版本1903或更新版本。
 
 ## 需要修復或更換的 Surface 裝置上的 Exchange 體驗
 
@@ -87,4 +87,4 @@ Microsoft 會自動檢查 Autopilot 註冊的每個 Surface，並將裝置從客
 如需有關 Windows Autopilot 的詳細資訊，請參閱：
 - [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 - [Windows Autopilot 需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
-- [Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)
+- [適用於 Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)

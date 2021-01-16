@@ -13,12 +13,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: a56f6e01a4d7bf1cc40d73f34c3abf8e04443989
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 1/15/2021
+ms.openlocfilehash: 709286cc0d62bd0b4c1e28e7626529fc4a215ae2
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114611"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271120"
 ---
 # 適用於 Surface 裝置的網路喚醒
 
@@ -51,6 +52,7 @@ WOL 支援下列裝置：
 * Surface Pro 7
 * Surface 膝上型電腦3
 * Surface 膝上型電腦前往
+* Surface Pro 7 +
 
 ## WOL 驅動程式
 

@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 10/12/2020
-ms.openlocfilehash: 8b201ce45533c28740a7c6bdfcb56688ada25718
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 2ae1b7b3af93c1449b96bf6307c830a928c1f0a7
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114701"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271407"
 ---
 # Microsoft Surface Data Eraser
 
@@ -160,6 +160,13 @@ ms.locfileid: "11114701"
 
 Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新版本所提供之變更的詳細資訊，請參閱下列各項：
 
+### 2.34.139.0
+*發行日期：2021年1月15日*
+
+此版本的表面資料橡皮擦：
+
+- 包含錯誤修正
+
 ### 3.33.139
 *發行日期：2020年9月9日*
 
@@ -180,16 +187,21 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 - 新的 SSD 在 Surface 中轉中
 
 ### 3.28.137
-*發行日期：2019年11月11日* 此版本的表面資料橡皮擦：
+*發行日期：2019年11月11日*
+
+此版本的表面資料橡皮擦：
 
 - 包含錯誤修正
 
 ### 版本3.21.137
-*發行日期：2019年10月 21* 日這個版本的 Surface 資料橡皮擦是針對 x86 編譯，並新增下列裝置的支援：
+*發行日期：2019年10月21日*
 
-- 支援 Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3
+這個版本的 Surface 資料橡皮擦是針對 x86 編譯，並新增下列裝置的支援：
+
+- Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3
 
 ### 版本3.2.78。0
+
 *發行日期：2018年12月4日*
 
 此版本的表面資料橡皮擦：
@@ -198,6 +210,7 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 
 
 ### 版本3.2.75。0
+
 *發行日期：2018年11月12日*
 
 此版本的表面資料橡皮擦：
@@ -206,6 +219,7 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 - 修正 SD 記憶卡的相關問題
 
 ### 版本3.2.69。0
+
 *發行日期：2018年10月12日*
 
 此版本的表面資料橡皮擦會增加下列專案的支援：
@@ -214,18 +228,21 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 - Surface Laptop 2
 
 ### 版本3.2.68。0
+
 此版本的 Microsoft Surface Data Eraser 新增下列支援：
 
 - Surface Go
 
 
 ### 版本3.2.58。0
+
 此版本的 Microsoft Surface Data Eraser 新增下列支援：
 
 - 針對 Surface Pro 和 Surface 膝上型電腦裝置 (磁片磁碟機) 的其他儲存裝置
 
 
 ### 版本 3.2.46.0
+
 此版本的 Microsoft Surface Data Eraser 新增下列支援：
 
 - 配備 LTE Advanced 的 Surface Pro

@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f45a2f202cdf350c6e51bb78a2bf87019a89453a
-ms.sourcegitcommit: 7c00ca47fe81a4f5b3a3317afabb4d028ff21289
+ms.openlocfilehash: ad4de8a154e1169eb0beb08685a3c6a75056b94d
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "11192844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271080"
 ---
 # Surface Hub 更新歷程記錄
 
@@ -28,6 +28,15 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 請參閱「[Surface Hub 重要資訊](https://support.microsoft.com/products/surface-devices/surface-hub)」頁面，以取得目前和過去發行中可能需要您注意的相關主題。
 
 ## Windows 10 小組2020更新 (20H2) 
+
+<details>
+<summary>2020年12月11日-Surface Hub 秒更新</summary>
+
+此更新針對 Surface Hub 的2秒，並提供以下所述的驅動程式和固件更新：
+
+* 表面 SMC 固件更新-3.92.139。0
+* Surface UEFI 更新-694.3447.768。0
+</details>
 
 <details>
 <summary>2020年11月30日-以 KB4586853 * 為基礎的小組更新 (作業系統組建 19042.662) </summary>

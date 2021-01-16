@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Microsoft Surface 和 Surface Hub 產品的支援資訊。
-ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+ms.openlocfilehash: 41ed1cf624317234fb8786bb2c8615e6eed58551
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105254"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271537"
 ---
 # Surface 支援
 
@@ -41,7 +41,7 @@ ms.locfileid: "11105254"
 
 使用 [ [保修及服務索賠] 表單](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx)，加速您的保修與服務要求。 如需如何使用表單的詳細資訊，請參閱 [保修與服務索賠形式指示](warranty-and-service-claim-form.md) ，並將它附加到您的案例提交。
 
-商務客戶： [提交您的服務要求](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727)。 
+商務客戶： [提交您的服務要求](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727&hidden=false)。 
 
 Microsoft Premier 客戶： [在服務中樞上提交您的服務要求](https://serviceshub.microsoft.com/support/contactsupport)。 
 

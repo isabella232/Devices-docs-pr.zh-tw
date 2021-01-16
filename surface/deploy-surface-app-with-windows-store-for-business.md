@@ -13,17 +13,19 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 811feff1f0643ab0ba5d624c5f7d561ba5b0cd4d
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 1/15/2021
+ms.openlocfilehash: 87e24bcfa1e2d4ab05d24a05b203fea92637d3f4
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114711"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271070"
 ---
 # 使用 Microsoft Store for Business 和教育版部署 Surface app
 
 **適用於**
 
+- Surface Pro 7 +
 - Surface 膝上型電腦前往
 - Surface Pro 7
 - Surface 膝上型電腦3

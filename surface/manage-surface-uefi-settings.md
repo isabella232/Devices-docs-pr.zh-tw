@@ -12,13 +12,13 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 10/12/2020
-ms.openlocfilehash: 218f98b23adcb7bae2af92655d85144c6e5665e6
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: d8d47db3bd6f69783670b285a797337373e02d72
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114721"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271427"
 ---
 # 管理 Surface UEFI 設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "11114721"
 
 以下是支援 UEFI 管理： 
 
-- Surface Pro 4、Surface Pro (5 代) 、Surface Pro 6、Surface Pro 7、Surface Pro X
+- Surface Pro 4、Surface Pro (5 代) ，Surface Pro 6，Surface Pro 7，Surface Pro 7 +，surface Pro X
 - Surface 膝上型電腦 (1 Gen) ，Surface 膝上型2，Surface 膝上型3，Surface 膝上型電腦移至
 - Surface Studio (1 Gen) ，Surface Studio 2
 - Surface Book、Surface Book 2、Surface Book 3
@@ -36,7 +36,7 @@ ms.locfileid: "11114721"
 
 ## 支援雲端管理
 
-使用裝置固件設定介面 (DFCI 內建于 Microsoft Intune 中的) 設定檔 (現已在公用預覽版) 中提供，Surface UEFI 管理會將現代管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供安全性設定（包括啟動選項和內建週邊設備）的控制權，並針對未來的高級安全性案例奠定基礎。 DFCI 目前可供 Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3使用。 如需詳細資訊，請參閱 [SURFACE UEFI 設定的 Intune 管理](surface-manage-dfci-guide.md)。
+使用裝置固件設定介面 (DFCI 內建于 Microsoft Intune 中的) 設定檔 (現已在公用預覽版) 中提供，Surface UEFI 管理會將現代管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供安全性設定（包括啟動選項和內建週邊設備）的控制權，並針對未來的高級安全性案例奠定基礎。 DFCI 目前可供 Surface Pro 7 +、Surface 膝上型電腦前往、Surface Book 3、Surface 膝上型電腦3、Surface Pro 7 及 Surface Pro X 使用。 如需詳細資訊，請參閱 [SURFACE UEFI 設定的 Intune 管理](surface-manage-dfci-guide.md)。
 
 ## 開啟 Surface UEFI 功能表
 
@@ -165,9 +165,7 @@ ms.locfileid: "11114721"
 零觸控 UEFI 管理可讓您使用在名為 [裝置固件設定介面] (DFCI) 中的裝置設定檔，在 Intune 中遠端系統管理 UEFI 設定。 如果您未設定此設定，管理具有 DFCI 的合格裝置的功能會設定為 [ **就緒**]。 若要防止 DFCI， **請選取 [退出宣告]**。 
 
 > [!NOTE]
-> 只有 Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3提供 [UEFI 管理設定] 頁面和使用 DFCI。  
-
-如需詳細資訊，請參閱 [SURFACE UEFI 設定的 Intune 管理](surface-manage-dfci-guide.md)。
+> [UEFI 管理設定] 頁面與 DFCI 目前可供 Surface Pro 7 +、Surface 膝上型電腦版、Surface mobile 3、Surface 膝上型電腦3、Surface Pro 7 及 Surface Pro X 使用。若要深入瞭解，請參閱 [SURFACE UEFI 設定的 Intune 管理](surface-manage-dfci-guide.md)。
 
 ## UEFI 功能表：結束 
 

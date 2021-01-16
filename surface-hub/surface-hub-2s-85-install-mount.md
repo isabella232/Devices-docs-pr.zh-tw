@@ -1,5 +1,5 @@
 ---
-title: 安裝及裝載 Surface Hub 2 85
+title: 安裝及裝載 Surface Hub 2S 85
 description: 瞭解如何安裝及裝載 Surface Hub 2 到 2 85。
 keywords: 使用逗號分隔值
 ms.prod: surface-hub
@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 01/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: b01c9e2a98e6b8064c3fd27c1b4909174872cbcb
-ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
+ms.openlocfilehash: 65a1784fbbcea8861d6d9ed7a160cbe39d4d4d6c
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "11255773"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271587"
 ---
 # 安裝及裝入 Surface Hub 2 到 2 85 "
 
@@ -24,7 +24,7 @@ ms.locfileid: "11255773"
 
 ## 取消裝箱影片
 
-隨附的如何安裝 Surface Hub 2 至85」的影片現已推出。 開始之前，請先查看 [取消裝箱及安裝 Surface Hub 2 85](https://aka.ms/Hub2S85Unboxing)」。
+隨附的如何使用影片來移動和安裝 Surface Hub 2 至 2 85」現已推出。 開始之前，請複習 [Microsoft Surface Hub 2 85 "-取消裝箱及設定](https://aka.ms/Hub2S85Unboxing)。 
 
 ## 遵循所有安全預防措施 
 

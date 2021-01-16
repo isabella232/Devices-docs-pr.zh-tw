@@ -13,17 +13,18 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 appliesto:
+- Surface Pro 7+
 - Surface Pro 7
 - Surface Pro X
 - Surface Laptop 3
 - Surface Book 3
 - Surface Laptop Go
-ms.openlocfilehash: e984741a8367935eab18351815c5f00d9f8a72b7
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: dde34126c726ec0ac8093a665804c4fb0f639e3e
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228544"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271567"
 ---
 # Surface UEFI 設定的 Intune 管理
 
@@ -51,6 +52,7 @@ Crucially、DFCI 啟用零觸控管理，不需要 IT 系統管理員手動互�
 
 下列裝置支援 DFCI：
 
+- Surface Pro 7 +
 - Surface Pro 7
 - Surface Pro X
 - Surface 膝上型電腦3
@@ -86,7 +88,7 @@ DFCI 環境需要設定包含設定的 DFCI 設定檔，以及將設定套用到
     ![建立 DFCI 設定檔](images/df1.png)
 
 5. 按一下 **[確定]** ，然後選取 [ **建立**]。
-6. 選取 [ **作業** ]，然後在 [ **選取要包含的群組** ] 底下，選取包含您目標裝置的 Azure AD 安全性群組，如下圖所示。 按一下 **[儲存]**。
+6. 選取 [ **作業** ]，然後在 [ **選取要包含的群組** ] 底下，選取包含您目標裝置的 Azure AD 安全性群組，如下圖所示。 按一下 [儲存]****。
 
     ![指派安全性群組](images/df2a.png)
 
@@ -148,7 +150,7 @@ Intune 提供作用中標籤來委派管理權利和適用性規則來管理裝�
 
 ## 在 Autopilot 中註冊裝置
 
-如上述所述，DFCI 只能套用在由您的轉銷商或分銷商在 Windows Autopilot 中註冊的裝置上，而且目前僅支援（在 Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3）。 基於安全性的考慮，您無法將裝置「自行提供」 Autopilot。
+如上述所述，DFCI 只能套用在由您的轉銷商或分銷商在 Windows Autopilot 中註冊的裝置上，且僅適用于 Surface Pro 7 +、Surface 膝上型電腦版、Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3。 基於安全性的考慮，您無法將裝置「自行提供」 Autopilot。 若要深入瞭解，請參閱 [Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)。 
 
 ## 手動同步處理 Autopilot 裝置
 

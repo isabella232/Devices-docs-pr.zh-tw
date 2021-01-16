@@ -2,13 +2,13 @@
 title: 如何啟用表面電源喚醒
 ms.author: v-todmc
 author: mccoybot
-ms.date: 7/30/2020
 audience: ITPro
 search.appverid:
 - SPO160
 - MET150
 appliesto:
 - Surface Book 3
+- Surface Pro 7+
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro X
@@ -26,12 +26,13 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: dee2a2962cf6b70a1bf11cf597b4d41f4b5568e4
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 6ad359861f6af29c567bf0fbf26878ec15c7c642
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114571"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271557"
 ---
 # 適用於 Surface 裝置的電源喚醒
 
@@ -39,6 +40,7 @@ ms.locfileid: "11114571"
 
 在下列裝置上可使用 [喚醒電源] 功能：
 
+- Surface Pro 7 +
 - Surface Book 3
 - Surface Pro 7
 - Surface 膝上型電腦3
@@ -61,13 +63,13 @@ Surface UEFI 設定檔可讓您將個別的 UEFI 設定儲存在 Windows 安裝�
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="選取 [Surface 裝置]，然後選取 [下一步]。":::
 3.  選取 [**開始**]，然後選取 [設定**套件**] 下的 [**建立**]。
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="選取 [Surface 裝置]，然後選取 [下一步]。":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="選取 [建立配置套件]。":::
 4.  選取 [ **憑證保護**]，然後新增您的憑證 .pfx 檔案。 
 5. 輸入您的密碼，選取 **[下一步]**，視需要新增 **密碼保護**，然後選取 **[下一步]**。
 6.  在 [ **選擇您要設定目標的表面類型** ] 頁面上，視需要選取您的目標裝置。 例如，選取 [ **Surface Pro 7**]。
 7.  在 [ **高級功能** ] 頁面上，選取 [ **電源喚醒**]，將功能設定為 [ **開啟**]，然後選取 **[下一步]**。
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="選取 [Surface 裝置]，然後選取 [下一步]。"::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="選取 [電源開啟後喚醒] 並設定為 [開啟]。"::: 
 8.  在 [ **成功** ] 頁面上，選取 [ **結束**]。
 
     > [!NOTE]
@@ -86,10 +88,10 @@ Surface UEFI 設定檔可讓您將個別的 UEFI 設定儲存在 Windows 安裝�
 
 2.  在 [ **警告** ] 對話方塊中，視需要選取 **[確定] 或 [** 停用 BitLocker]。
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="選取 [Surface 裝置]，然後選取 [下一步]。":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="視需要選取 [確定] 或 [停用 BitLocker]。":::
 3.  在 [歡迎] 頁面上，選取 **[下一步]** 以執行套件，並套用新設定的 UEFI 設定。
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="選取 [Surface 裝置]，然後選取 [下一步]。":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="在 [歡迎] 頁面中，選取 [下一步]。":::
 4.  重新開機您的裝置。 
 
 [電源開啟] 現已設定。 若要測試設定，請關閉您的裝置，中斷電源連接，然後重新連接電源。 裝置應該會自動啟動。 

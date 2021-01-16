@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 8/12/2020
+ms.date: 01/15/2021
 ms.reviewer: rohenr
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a3dfb5e4b2e5dc87dd4ae1dbced943e6be0772df
-ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+ms.openlocfilehash: bf6f98b8abf665f65b33a0f03c44d386ebbee5b4
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926305"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271527"
 ---
 # Surface 上的 Windows 虛擬桌面
 
@@ -31,15 +31,15 @@ Windows 虛擬桌面 (WVD) 是在 Azure 雲端執行的綜合桌面和應用程�
 
 ### Windows 虛擬桌面合作夥伴整合
 
-如需 Windows 虛擬桌面版核准合作夥伴提供者與獨立軟體廠商的清單，請參閱[Windows 虛擬桌面合作夥伴](https://docs.microsoft.com/azure/virtual-desktop/partners)整合。 有些合作夥伴也會提供虛擬桌面作為服務 (DaaS) 。 DaaS 能讓您不需要維護您自己的虛擬機器 (Vm，只要提供完整管理的全包式桌面和虛擬化服務即可) 。 在世界各地將自訂的桌面提供給使用者，讓公司能夠快速調整以隨時在需要的雲端桌上型電腦上調整。
+如需 Windows 虛擬桌面版核准合作夥伴提供者與獨立軟體廠商的清單，請參閱 [Windows 虛擬桌面合作夥伴](https://docs.microsoft.com/azure/virtual-desktop/partners)整合。 有些合作夥伴也會提供虛擬桌面作為服務 (DaaS) 。 DaaS 能讓您不需要維護您自己的虛擬機器 (Vm，只要提供完整管理的全包式桌面和虛擬化服務即可) 。 在世界各地將自訂的桌面提供給使用者，讓公司能夠快速調整以隨時在需要的雲端桌上型電腦上調整。
  
 ## Microsoft Surface 裝置
 
 Surface 工程具有長時間的新的創新標準，因為它不需要觸控、語音、筆跡或 Surface 撥號，就能想像與裝置互動的更自然方式。 而且使用 Windows 10 專業版的 [晶片到雲端365整合] 和 Windows 10 專業版的安全性與可管理性，Surface 以所要的方式提供連線的硬體、軟體、應用程式和服務。 雖然您可以從 Windows 裝置執行 WVD dating 回到 Windows 7，但是 Microsoft Surface 裝置提供獨特的優點，包括支援：
 
-- **靈活的外形規格**（例如，surface Go 2、surface pro 7 及 Surface pro X 與手寫筆、觸控和可插拔的鍵盤）。 您甚至可以使用新的 Surface 雙核來連接至 WVD。
-- **持續性、隨選即用時的工作案例**-使用離線和裝置存取，以獲得更有效率的體驗。
-- **Windows 10 新式裝置安全性與可管理性**-在任何地方都能靈活地提供生產力。
+- **靈活的外形** 規格（例如 Surface Pro 7 +、surface Go 2、surface pro 7 及 Surface pro X 與手寫筆、觸控和可分離的鍵盤）。 您甚至可以使用新的 Surface 雙核來連接至 WVD。
+- **持續性、隨選即用時的工作案例** -使用離線和裝置存取，以獲得更有效率的體驗。
+- **Windows 10 新式裝置安全性與可管理性** -在任何地方都能靈活地提供生產力。
 
 ## 靈活的外形規格與特優的使用者體驗
 
@@ -47,7 +47,7 @@ Microsoft Surface for Business 系列包含多種不同的外形規格，包括�
 
 ### 現代虛擬桌面端點
 
-表面二合1裝置，包括表面效果[2](https://www.microsoft.com/p/surface-go-2) (10.5 ") ， [Surface pro 7](https://www.microsoft.com/surface/devices/surface-pro-7/) (12" ) 和[Surface pro X](https://www.microsoft.com/p/surface-pro-x/) (13 ") ，為使用者提供最佳的雲端桌面端點，將便攜性、多功能性、電源及全天電池的最佳平衡結合在一起。 若要將 Surface Pro 7 移至 dock 和多台顯示器，請從「平板電腦模式」的網站工程師移至平板電腦模式，將 Surface Pro 7 連接至固定工作場所的多功能。
+表面二合1裝置，包括表面效果 [2](https://www.microsoft.com/p/surface-go-2) (10.5 ") ， [surface pro 7 +](https://www.microsoft.com/surface/business/surface-pro-7-plus) (12" ) 及 [surface pro X](https://www.microsoft.com/p/surface-pro-x/) (13 ") ，為使用者提供最佳的雲端桌面端點，以實現可攜性、多功能性、電源及全天電池的最佳平衡。 若要將 Surface Pro 7 移至 dock 和多台顯示器，請從「平板電腦模式」的網站工程師移至平板電腦模式，將 Surface Pro 7 連接至固定工作場所的多功能。
 
  與傳統的 [固定 VDI "終端" 不一樣，Surface 裝置可讓使用者從任何地方工作，並讓公司在無法預見的事件期間保持可供使用且可執行檔操作，從嚴重天氣到公開健康情況緊急情況。 隨著持久、隨選和即時案例的支援，Surface devices 可有效協助公司維持日常作業，並減少中斷事件的風險。 專為在 Surface 2 一體裝置上提高生產力的功能包括：
 
@@ -63,7 +63,7 @@ Microsoft Surface for Business 系列包含多種不同的外形規格，包括�
 
 ### 裝置重新導向支援
 
-上面所列的以表面為中心的生產力體驗，在 Windows 虛擬桌面環境中，您可以利用裝置重新導向功能與 Windows 10 更具吸引力。 Surface 提供各種裝置重新導向支援，特別是在與 OEM 瘦用戶端和固定終端、Android、iOS/macOS 以及 Web 的存取權相比。 Windows [收件匣] (MSTSC) 及 Windows 桌面 (MSRDC) 用戶端提供大部分的裝置重新導向功能，包括輸入重新導向 (鍵盤、滑鼠、手寫筆和觸控) 、埠重新導向 (串列與 USB) 及其他重定向 (相機、剪貼簿、印表機、掃描器、智慧卡和喇叭) 。 如需裝置重新導向支援的詳細比較，請參閱裝置重新導向[檔](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare#redirection-support)。
+上面所列的以表面為中心的生產力體驗，在 Windows 虛擬桌面環境中，您可以利用裝置重新導向功能與 Windows 10 更具吸引力。 Surface 提供各種裝置重新導向支援，特別是在與 OEM 瘦用戶端和固定終端、Android、iOS/macOS 以及 Web 的存取權相比。 Windows [收件匣] (MSTSC) 及 Windows 桌面 (MSRDC) 用戶端提供大部分的裝置重新導向功能，包括輸入重新導向 (鍵盤、滑鼠、手寫筆和觸控) 、埠重新導向 (串列與 USB) 及其他重定向 (相機、剪貼簿、印表機、掃描器、智慧卡和喇叭) 。 如需裝置重新導向支援的詳細比較，請參閱裝置重新導向 [檔](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare#redirection-support)。
 
 ### 熟悉的桌面體驗
 
@@ -125,20 +125,20 @@ Azure N-系列可在 Surface 裝置上使用這些功能，讓您隨時隨地都
 
 - **硬體加密。** 裝置加密可讓您保護 Surface 上的資料，使其只能由授權的人員存取。 在軟體使用受保護的金鑰和度量單位來驗證軟體有效性時，所有商務用 Surface 裝置都有一個離散受信任的平臺模組 (dTPM) 。
 - **Windows Defender。** Windows Defender 防毒軟體彙集了電腦學習、大型資料分析、深度威脅抵抗研究，以及 Microsoft 雲端基礎結構來保護裝置。  此工具是內置的，而且不需要在裝置或 VDI 環境中部署額外的代理程式，以簡化管理和優化裝置啟動。 Windows Defender 是內建的，而且不需要在裝置或 VDI 環境中部署額外的代理程式，以簡化管理和優化裝置啟動。 真正的全新體驗。
-- **抽取式磁碟磁碟機**-較新的 Surface 裝置的子集功能可移除 SSD 磁碟機 <a href="#6"><sup> 6 </sup></a> ，提供更進一步控制資料保留。
+- **抽取式磁碟磁碟機** -較新的 Surface 裝置的子集功能可移除 SSD 磁碟機 <a href="#6"><sup> 6 </sup></a> ，提供更進一步控制資料保留。
 - **新式驗證-** Microsoft 365 和 Surface 是一個提供每個 Windows 安全性功能的一體化平臺， (受授權與啟用) 的制約。 所有 Surface 產品群組裝置都隨附自訂的相機，專為 Windows Hello 企業版設計，提供生物特徵安全性，可透過裝置與 VDI 的體驗順利保持。
-- **新式固件管理**-使用裝置固件配置介面 (DFCI) ， <a href="#7"><sup> 7 個 </sup></a> IT 系統管理員可以在固件層級（例如 mics、USB 埠、SD 卡插槽、相機和藍牙）停用硬體元素，從而移除週邊設備電源。 Windows Defender 認證防護會使用虛擬化的安全性，因此只有有許可權的系統軟體可以存取它們。
-- **向後和向前相容性**-Windows 10 裝置可在硬體、軟體和服務之間提供向後和轉寄相容性。 Microsoft 有一個強有力的記錄，可維護硬體、週邊、軟體和服務的傳統支援，同時包含最新的技術。 企業可以規劃 IT 投資，以提供較長的使用時間。
-- **舊版 windows 7 工作負載的橋接器**-適用于依賴舊版 windows OS 環境的方案案例，企業可以使用在 Azure 中執行的 Windows 7 的 VDI 實例。 這會在表面（例如表面）上啟用支援，而不需要依賴舊版 Windows 7 電腦，而不再接收最新的安全性更新。  除了這些「未來的校對」好處之外，當您已部署新式 Windows 10 硬體時，任何舊版工作的遷移都會大大簡化。
-- **零觸控部署**-Autopilot 是 Surface 裝置的建議新式管理部署選項。 Surface 上的 windows Autopilot 是 Windows 10 中的雲端部署技術。 您可以在 Surface 中使用 Windows Autopilot，在零觸程式中從盒式遠端部署和設定裝置。 Windows Autopilot 已註冊的裝置會在第一次啟動時透過一個名為「硬體雜湊」的唯一裝置簽名來識別網際網路。 它們是使用新式管理解決方案（例如 Azure Active Directory (Azure AD) 與行動裝置管理）自動進行註冊和設定。
+- **新式固件管理** -使用裝置固件配置介面 (DFCI) ， <a href="#7"><sup> 7 個 </sup></a> IT 系統管理員可以在固件層級（例如 mics、USB 埠、SD 卡插槽、相機和藍牙）停用硬體元素，從而移除週邊設備電源。 Windows Defender 認證防護會使用虛擬化的安全性，因此只有有許可權的系統軟體可以存取它們。
+- **向後和向前相容性** -Windows 10 裝置可在硬體、軟體和服務之間提供向後和轉寄相容性。 Microsoft 有一個強有力的記錄，可維護硬體、週邊、軟體和服務的傳統支援，同時包含最新的技術。 企業可以規劃 IT 投資，以提供較長的使用時間。
+- **舊版 windows 7 工作負載的橋接器** -適用于依賴舊版 windows OS 環境的方案案例，企業可以使用在 Azure 中執行的 Windows 7 的 VDI 實例。 這會在表面（例如表面）上啟用支援，而不需要依賴舊版 Windows 7 電腦，而不再接收最新的安全性更新。  除了這些「未來的校對」好處之外，當您已部署新式 Windows 10 硬體時，任何舊版工作的遷移都會大大簡化。
+- **零觸控部署** -Autopilot 是 Surface 裝置的建議新式管理部署選項。 Surface 上的 windows Autopilot 是 Windows 10 中的雲端部署技術。 您可以在 Surface 中使用 Windows Autopilot，在零觸程式中從盒式遠端部署和設定裝置。 Windows Autopilot 已註冊的裝置會在第一次啟動時透過一個名為「硬體雜湊」的唯一裝置簽名來識別網際網路。 它們是使用新式管理解決方案（例如 Azure Active Directory (Azure AD) 與行動裝置管理）自動進行註冊和設定。
 
 ### Surface 裝置：將環境影響降至最低
 
-Surface 會執行生命週期評定來計算裝置在產品生命週期的主要階段所產生的環境影響，讓 Microsoft 能夠將這些影響降至最低。 每個 Surface 產品都有一個 ECO 設定檔，其中包含有關溫室氣體排放、主要能源消耗量與材質組合資料、封裝、回收及相關準則的詳細資料。 若要下載每個 Surface 裝置的設定檔，請參閱 Microsoft 下載中心的[ECO 設定檔](https://www.microsoft.com/download/details.aspx?id=55974)。
+Surface 會執行生命週期評定來計算裝置在產品生命週期的主要階段所產生的環境影響，讓 Microsoft 能夠將這些影響降至最低。 每個 Surface 產品都有一個 ECO 設定檔，其中包含有關溫室氣體排放、主要能源消耗量與材質組合資料、封裝、回收及相關準則的詳細資料。 若要下載每個 Surface 裝置的設定檔，請參閱 Microsoft 下載中心的 [ECO 設定檔](https://www.microsoft.com/download/details.aspx?id=55974) 。
 
 ## 摘要
 
-在 Surface 上使用 Windows 虛擬桌面，可以為組織提供更大的彈性與復原能力，以滿足使用者、干係人及客戶的需求。 在 Surface 裝置上執行 Windows 虛擬桌面解決方案，提供與對舊版裝置繼續依賴性相關的獨特優點。  彈性形式的外形（例如表面效果2和 Surface Pro 7）連線至雲端 (或離線) ，讓使用者隨時都能使用生產力。 無論員工是在持續性、隨選或即時案例中運作，在 Surface 上的 Windows 虛擬桌面電腦都能利用多功能性來供應商業，以維持公眾健康情況緊急或其他無法預見事件的整個中斷。 使用 Windows 10 的內建的多層次安全性和新式管理，公司可以利用雲端服務的擴展生態系統來快速部署及縮放 Windows 桌面及 app。 簡單地說，在 Surface 上，Windows 虛擬桌面電腦會針對各種規模的組織和企業提供極大需求的技術。
+在 Surface 上使用 Windows 虛擬桌面，可以為組織提供更大的彈性與復原能力，以滿足使用者、干係人及客戶的需求。 在 Surface 裝置上執行 Windows 虛擬桌面解決方案，提供與對舊版裝置繼續依賴性相關的獨特優點。  彈性形式的外觀，例如表面上2和 Surface Pro 7 + 連線至雲端 (或離線) ，讓使用者隨時都能使用生產力。 無論員工是在持續性、隨選或即時案例中運作，在 Surface 上的 Windows 虛擬桌面電腦都能利用多功能性來供應商業，以維持公眾健康情況緊急或其他無法預見事件的整個中斷。 使用 Windows 10 的內建的多層次安全性和新式管理，公司可以利用雲端服務的擴展生態系統來快速部署及縮放 Windows 桌面及 app。 簡單地說，在 Surface 上，Windows 虛擬桌面電腦會針對各種規模的組織和企業提供極大需求的技術。
 
 ## 深入了解
 
@@ -157,7 +157,7 @@ Surface 會執行生命週期評定來計算裝置在產品生命週期的主要
 <a id="2">2. </a> 電池使用時間與設定、使用狀況及其他因素明顯不同。<br>
 <a id="3">3. 服務 </a> 供應商的網路使用的服務可用性和效能。 若要瞭解詳細資料、相容性、定價、SIM 卡及啟用，請與您的服務提供者聯繫。 查看 surface.com 的所有規格與頻率。<br>
 <a id="4">4. </a> Forrester 諮詢，「Forrester 總體經濟影響™研究：利用 microsoft 365 企業版的您的 ROI （由 microsoft、2018委託），充分發揮您的效益。<br>
-<a id="5">5. </a> Surface go 和 Surface go 2 使用協力廠商 UEFI，且不支援 DFCI。 DFCI 目前可供 Surface Book 3、Surface 膝上型電腦3、Surface Pro 7 及 Surface Pro X 使用。深入瞭解管理 Surface UEFI 設定。<br>
+<a id="5">5. </a> Surface go 和 Surface go 2 使用協力廠商 UEFI，且不支援 DFCI。 DFCI 目前可供 Surface Pro 7 +、Surface 膝上型電腦前往、Surface Book 3、Surface 膝上型電腦3、Surface Pro 7 及 Surface Pro X 使用。<br>
 <a id="6">6. </a> 可在 Surface 膝上型電腦3和 Surface Pro X 上使用的可移動 SSD。請注意，硬碟不是使用者移除。 根據 Microsoft 指示，硬碟只有訓練有素的技術人員可移除。<br>
-<a id="7"></a>DFCI 目前可供 Surface Book 3、Surface 膝上型3、Surface pro 7 及 Surface Pro X 使用。[深入](https://docs.microsoft.com/surface/manage-surface-uefi-settings)瞭解管理 Surface UEFI 設定。
+<a id="7"></a>DFCI 目前可供 Surface Pro 7 +、Surface 膝上型電腦開始、Surface Book 3、Surface 膝上型電腦3、Surface pro 7 及 Surface Pro X 使用。[進一步](surface-manage-dfci-guide.md)瞭解管理 Surface UEFI 設定。
 

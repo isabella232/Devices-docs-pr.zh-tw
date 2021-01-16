@@ -9,17 +9,17 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 1/15/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: ec1d53a4bdbcaaf6606dcb0e52fc81de92a2a53b
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 2140faf346229842bffc4f9348041f4667b94686
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114541"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271367"
 ---
 # 系統 SKU 參考
 
@@ -49,6 +49,8 @@ ms.locfileid: "11114541"
 | Surface 膝上型電腦                                               | Surface 膝上型電腦   | Surface_Laptop                   |
 | Surface 膝上型電腦2消費者                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
 | Surface 膝上型電腦2商業版                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
+| Surface Pro 7 +                                               | Surface Pro 7 + | Surface_Pro_7 + _1960|
+| Surface Pro 7 + LTE                                           | Surface Pro 7 + | Surface_Pro_7 + _with_LTE_Advanced_1961|
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
 | Surface Pro X                 | Surface Pro X    | Surface_Pro_X_1876         |
 | Surface Pro X 與 SQ2 處理器                | Surface Pro X    | Surface_Pro_X_H_1876        |
