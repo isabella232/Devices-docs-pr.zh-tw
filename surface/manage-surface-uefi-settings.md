@@ -12,17 +12,17 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 01/15/2021
-ms.openlocfilehash: d8d47db3bd6f69783670b285a797337373e02d72
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.date: 01/25/2021
+ms.openlocfilehash: af9eac171dea5d29ce9776766a2c5842bea9eb8c
+ms.sourcegitcommit: 1b12ea363785697ddc705b0a0cc7bb35cad6b327
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271427"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11300694"
 ---
 # 管理 Surface UEFI 設定
 
-所有目前及未來的 Surface 裝置代都使用獨特的整合可延伸韌體介面， (由 Microsoft 專為這些裝置設計的 UEFI) 。 Surface UEFI 設定能讓您啟用或停用內建的裝置和元件、保護 UEFI 設定不被變更，以及調整 Surface 裝置的啟動設定。 
+ Surface 電腦裝置的設計目的是要利用 Microsoft 專為這些裝置設計的獨特的整合可延伸韌體介面 (UEFI) 。 Surface UEFI 設定能讓您啟用或停用內建的裝置和元件、保護 UEFI 設定不被變更，以及調整 Surface 裝置的啟動設定。 
 
 ## 支援的產品
 
@@ -32,7 +32,7 @@ ms.locfileid: "11271427"
 - Surface 膝上型電腦 (1 Gen) ，Surface 膝上型2，Surface 膝上型3，Surface 膝上型電腦移至
 - Surface Studio (1 Gen) ，Surface Studio 2
 - Surface Book、Surface Book 2、Surface Book 3
-- 表面，表面移2
+- 表面 Go，表面移 2[ <sup> 1 </sup> ](#references)
 
 ## 支援雲端管理
 
@@ -227,6 +227,10 @@ ms.locfileid: "11271427"
 ![表示安全開機已停用的 Surface 開機畫面](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
 
 *圖 20. 表示 Surface UEFI 設定中安全開機已停用的 Surface 開機畫面*
+
+## 參考
+
+1. 表面圖和表面 Go 2 使用協力廠商 UEFI，且不支援 DFCI。 
 
 ## 相關主題
 
