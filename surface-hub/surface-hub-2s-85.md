@@ -9,27 +9,24 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/21/2020
+ms.date: 11/26/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7fe02f0e377c8ac586f7e60387f1d8e1f071a15a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
+ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238098"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "11304501"
 ---
 # Surface Hub 2 秒 85 "概覽 & 技術規格
 
-[85] 版本的 Surface Hub 系列會將 Surface Hub 的2次體驗帶入需要較大螢幕（例如會議室、棋盤或較大的 huddle 空間）的空間。 從2021年1月的 Surface Hub 2 85」提供下列體驗：
+[85] 版本的 Surface Hub 系列會將 Surface Hub 的2次體驗帶入需要較大螢幕（例如會議室、棋盤或較大的 huddle 空間）的空間。 Surface Hub 2 85 "提供下列體驗：
 
 - **專為群組共同作業而設計。** 在 microsoft 團隊中，邀請您同時在 Microsoft 白板中同時進行筆跡加上較大的遠端參與者。
 - **一致的 Surface Hub 2 到2體驗。** 提供相同的 premium 設計、4K 顯示技術、觸控、手寫筆/筆跡、計算墨水匣及相機支援（如 Surface Hub 2 50」）。
 - **與現有和新的 A/V 系統整合。** 與 Microsoft 團隊認證的外設結合，並與 Microsoft 團隊聊天室整合。
 
 ![Surface Hub 2 秒 85 "](images/hub-2s-85.png)
-
-> [!NOTE]
-> *2021中的 Surface Hub 2顯示預發行產品;受管制認證/核准的產品和功能可能會有所變更，而且可能會因國家/地區而異。*
 
 ## Surface Hub 2 秒 85 "技術規格
 
