@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
-ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
+ms.openlocfilehash: 88f5d912f7505aecaa5bd7ba659acab2d6c4fa1a
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963583"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304806"
 ---
 # 重設及恢復 Surface Hub 2
 
@@ -26,20 +26,23 @@ ms.locfileid: "10963583"
 
 ## 重設裝置
 
+   > [!IMPORTANT]
+   > 在重設裝置之前，請確定您有可用的 BitLocker 金鑰，因為稍後會提示您輸入。 若要深入瞭解，請參閱 [儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)。
+
 1. 若要重設裝置，請選取 [ **開始**使用]。
 
 2. 出現 [ **準備好重設此裝置** ] 視窗時，請選取 [ **重設**]。 
   
-   > [!NOTE]
-   > Surface Hub 2 秒從恢復分區重新安裝作業系統。 這可能需要長達一小時的時間才能完成。
+   > [!IMPORTANT]
+   > 當中樞重新開機至 [恢復] 分區時，系統會提示您輸入 BitLocker 金鑰。 跳過該提示會導致重設失敗。 輸入 BitLocker 金鑰之後，Hub 就會從復原分區重新安裝作業系統。 這可能需要長達一小時的時間才能完成。
   
 3. 若要重新設定裝置，請執行第一次設定程式。
 
 4. 如果您使用 Microsoft Intune 或其他行動裝置管理解決方案管理裝置，請停用並刪除前一筆記錄，然後重新註冊新的裝置。 如需詳細資訊，請參閱 [使用 [擦除]、[停用] 或 [手動 unenrolling 裝置] 移除裝置](https://docs.microsoft.com/intune/devices-wipe)。
 
-> [!div class="mx-imgBorder"]
-> ![* Surface Hub 2 秒的重設與復原 *](images/sh2-reset.png)
-<br/>*圖 1。 重設及恢復 Surface Hub 2* 
+   > [!div class="mx-imgBorder"]
+   > ![* Surface Hub 2 秒的重設與復原 *](images/sh2-reset.png)
+   <br/>*圖 1。 重設及恢復 Surface Hub 2* 
 
 ## 使用 USB 恢復磁片磁碟機來復原 Surface Hub 的2到2秒
 
@@ -64,8 +67,8 @@ ms.locfileid: "10963583"
    1. 持續按兩個按鈕，直到您看到 [Windows 標誌]。
    1. 放開 [電源] 按鈕，但繼續按住 [音量] 按鈕，直到安裝 UI 開始。
 
-   ![* 使用 [音量] 和 [電源] 按鈕來啟動復原 *](images/sh2-keypad.png) <br>
-   **圖 2. [音量] 和 [電源] 按鈕**
+      ![* 使用 [音量] 和 [電源] 按鈕來啟動復原 *](images/sh2-keypad.png)
+      <br>*圖 2. [音量] 和 [電源] 按鈕*
 
 1. 在 [語言選取範圍] 畫面上，選取 Surface Hub 2 秒的顯示語言。
 

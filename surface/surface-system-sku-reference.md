@@ -1,7 +1,7 @@
 ---
-title: '系統 SKU 參照 (Surface) '
-description: 請參閱系統模型和系統 SKU 名稱的參考。
-keywords: uefi、設定、固件、安全、semm
+title: Surface 系統 SKU 參考
+description: 請參閱所有 Surface 裝置的系統模型和系統 SKU 名稱參考。
+keywords: uefi、設定、固件、安全、semm、Autopilot
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -9,21 +9,21 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 1/15/2021
+ms.date: 01/27/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 2140faf346229842bffc4f9348041f4667b94686
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: 0fe13750e7e8c8188b52726c114a6b3668434d39
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271367"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304826"
 ---
-# 系統 SKU 參考
+# Surface 系統 SKU 參考
 
-本檔提供系統模型和系統 SKU 名稱的參考，您可以使用 PowerShell 或 WMI 快速判斷特定裝置的電腦狀態。
+此檔提供一個參照，可用於各種 IT 工作，例如使用 Windows Autopilot 註冊 Surface 裝置，或使用 PowerShell 或 WMI 驗證特定裝置的電腦狀態。
 
 系統模型和系統 SKU 是儲存在系統管理 BIOS 中的變數，在 Surface 裝置的 UEFI 層中 (SMBIOS) 表格中。 每當您需要區分具有相同系統模型名稱（例如 Surface Pro 和 Surface Pro）與 LTE Advanced 的裝置時，請使用系統 SKU 名稱。
 
@@ -81,3 +81,8 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
  ``` 
+
+## 深入了解
+
+- [WMI 參考](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [適用於 Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)

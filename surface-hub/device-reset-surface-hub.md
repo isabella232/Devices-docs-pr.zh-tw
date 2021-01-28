@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/31/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 1c8d8b6d89ec1a20550b7aa13c82c73a239c3965
-ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
+ms.openlocfilehash: 73c7cf5a387bf7506bb69f62100171df4d94ad2d
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104815"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304816"
 ---
 # 重設或復原 Surface Hub
 
@@ -31,7 +31,7 @@ ms.locfileid: "11104815"
 - 行動裝置管理 (MDM) 註冊資訊
 - 使用 MDM 或 [設定] 應用程式所設定的配置資訊
 
-[從雲端復原 Surface Hub](#recover-a-surface-hub-from-the-cloud) 也會移除此資訊。 此外，Surface Hub 會下載新的作業系統映射並進行安裝。 您可以指定是否要讓復原處理常式保留其他儲存在 Surface Hub 中的資訊。
+[從雲端復原 Surface Hub](#recover-a-surface-hub-from-the-cloud) 也會移除此資訊。 此外，Surface Hub 會下載新的作業系統映射並進行安裝。 您可以指定是否要讓復原處理常式保留其他儲存在 Surface Hub 中的資訊。 如果您需要復原其中兩個選項都無法使用的 Surface Hub， [Surface Hub 恢復工具](surface-hub-recovery-tool.md) 會使用相同的作業系統影像。
 
 ## 重設 Surface Hub
 
@@ -51,12 +51,15 @@ ms.locfileid: "11104815"
 
    ![顯示 Surface Hub 之 [設定] 應用程式的影像。](images/sh-settings.png)
 
-1. 選取 [ **更新 & 安全性**]。
+2. 選取 [ **更新 & 安全性**]。
 
    ![在 Surface Hub 的 [設定] app 中顯示 [更新 & 安全群組的影像。](images/sh-settings-update-security.png)
 
-1. 選取 [ **恢復**]，然後在 [ **重設裝置**] 底下，選取 [ **開始**使用]。
+3. 選取 [ **恢復**]，然後在 [ **重設裝置**] 底下，選取 [ **開始**使用]。
 
+   > [!IMPORTANT]
+   > 在重設裝置之前，請確定您有可用的 BitLocker 金鑰，因為稍後會提示您輸入。 若要深入瞭解，請參閱 [儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)。 當中樞重新開機至 [恢復] 分區時，系統會提示您輸入 BitLocker 金鑰。 跳過該提示會導致重設失敗。
+   
    ![在 Surface Hub 的 [設定] 應用程式中顯示 [重設裝置] 選項的影像。](images/sh-settings-reset-device.png)
 
    重設程式完成後，Surface Hub 會再次開始 [執行第一個 run 程式](first-run-program-surface-hub.md) 。 如果重設程式遇到問題，它會將 Surface Hub 滾回到先前現有的作業系統影像，然後顯示 [歡迎] 畫面。
@@ -81,7 +84,7 @@ ms.locfileid: "11104815"
 
 1. 在 Surface Hub 上，選取 [ **設定** &gt; **更新 & 安全性**復原] &gt; ** **。
 
-1. 在 **[從雲端復原**] 底下，選取 [ **立即重新開機**]。
+2. 在 **[從雲端復原**] 底下，選取 [ **立即重新開機**]。
 
    ![從雲端復原](images/recover-from-the-cloud.png)
 
@@ -91,27 +94,27 @@ ms.locfileid: "11104815"
 
 1. 在 Surface Hub 底部找出電源開關。 電源開關位於電源線連接的旁邊。 如需有關 power 開關的詳細資訊，請參閱 [Surface Hub 網站準備就緒指南 (PDF) ](surface-hub-site-readiness-guide.md)。
 
-1. 當 Surface Hub 顯示 [歡迎] 畫面時，請使用 power 開關關閉 Surface Hub。
+2. 當 Surface Hub 顯示 [歡迎] 畫面時，請使用 power 開關關閉 Surface Hub。
 
-1. 使用 power 開關來再次開啟 Surface Hub。 裝置隨即啟動並顯示 Surface Hub 標誌畫面。 當您在 Surface Hub 標誌底下看到旋轉點時，請使用 power 開關再次關閉 Surface Hub。  
+3. 使用 power 開關來再次開啟 Surface Hub。 裝置隨即啟動並顯示 Surface Hub 標誌畫面。 當您在 Surface Hub 標誌底下看到旋轉點時，請使用 power 開關再次關閉 Surface Hub。  
 
-1. 重複步驟 3 3 的時間，或直到 Surface Hub 顯示「正在準備自動修復」訊息。 顯示此訊息之後，Surface Hub 就會顯示 [Windows RE] 畫面。
+4. 重複步驟 3 3 的時間，或直到 Surface Hub 顯示「正在準備自動修復」訊息。 顯示此訊息之後，Surface Hub 就會顯示 [Windows RE] 畫面。
 
-1. 選取 [ **高級選項**]。
+5. 選取 [ **高級選項**]。
 
-1. 選取 **[從雲端復原**]。  (（您也可以選取 [ **重設**]）。 不過， **從雲端復原** 是建議的方法。 ) 
+6. 選取 **[從雲端復原**]。  (（您也可以選取 [ **重設**]）。 不過， **從雲端復原** 是建議的方法。 ) 
 
    ![從雲端復原](images/recover-from-cloud.png)
-1. 如果系統提示您輸入 Bitlocker 金鑰，請執行下列其中一項操作：
+7. 如果系統提示您輸入 Bitlocker 金鑰，請執行下列其中一項操作：
 
    - 若要保留 Bitlocker 在 Surface Hub 上保護的資訊，請輸入 Bitlocker 金鑰。
    - 若要捨棄受保護的資訊，請選取 [**略過此磁片磁碟機**]  
 
-1. 出現提示時，請選取 [ **重新安裝**]。
+8. 出現提示時，請選取 [ **重新安裝**]。
 
     ![重新安裝](images/reinstall.png)
 
-1. 若要重新分區磁片，請選取 **[是]**。
+9. 若要重新分區磁片，請選取 **[是]**。
 
    ![重新分割](images/repartition.png)
 

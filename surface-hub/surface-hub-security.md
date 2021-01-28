@@ -9,18 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/27/2020
+ms.date: 01/26/2021
 ms.localizationpriority: High
-ms.openlocfilehash: f6022c4fd16cd8afbbea892e73ad831f12b10eaa
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: 446166618161fc54a77bab94b2d61ad85359a082
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934853"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304846"
 ---
 # Surface Hub 安全性概述
 
-Surface Hub 提供執行 Windows 10 小組作業系統的自訂平臺固件，以鎖定的計算裝置。 產生的裝置採用傳統「單一使用」安全 kiosk，「只執行所需的」哲學，並為其提供新式工作。 Surface Hub 是建置以支援豐富的共同作業使用者體驗，受到保護以防禦不斷演變的安全性威脅。
+Surface Hub 在執行 Windows 10 小組作業系統的自訂平臺固件中，提供與裝置類似的鎖定體驗。 產生的裝置採用傳統「單一使用」安全 kiosk，「只執行所需的」哲學，並為其提供新式工作。 Surface Hub 是建置以支援豐富的共同作業使用者體驗，受到保護以防禦不斷演變的安全性威脅。
 
 Surface Hub 內建在 Windows 10 上，提供企業級新式安全性，讓 IT 系統管理員能夠使用 BitLocker、信賴平台模組 2.0 (TPM) 強制執行資料保護，以及使用 Windows Defender (也稱為 Microsoft Defender) 的雲端技術安全性。
 
