@@ -1,6 +1,6 @@
 ---
-title: PowerShell for Surface Hub (Surface Hub)
-description: 可協助設定和管理您 Microsoft Surface Hub 的 PowerShell 指令碼。
+title: Surface Hub (v1) 的 PowerShell
+description: 此頁面包含適用于原始 Surface Hub (v1) 的 PowerShell 腳本
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -10,18 +10,19 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/10/2018
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c0fa06153dc5597827f2973ecc9f728e35d79e85
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195378"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311999"
 ---
-# 適用於 Surface Hub 的 PowerShell
+# Surface Hub (v1) 的 PowerShell
 
-可協助設定和管理您 Microsoft Surface Hub 的 PowerShell 指令碼。
+> [!NOTE]
+ >此頁面包含適用于原始 Surface Hub (v1) 的 PowerShell 腳本。 如需 Surface Hub 2 的最新帳戶建立腳本，請參閱 [建立 Surface hub 2 的裝置帳戶](surface-hub-2s-account.md)。
 
 -   [適用於 Surface Hub 系統管理員的 PowerShell 指令碼](#scripts-for-admins)
     -   [建立內部部署帳戶](#create-on-premises-ps-scripts)
@@ -30,7 +31,7 @@ ms.locfileid: "11195378"
     -   [啟用商務用 Skype (EnableSfb.ps1)](#enable-sfb-ps-scripts)
 -   [實用的 Cmdlet](#useful-cmdlets)
     -   [建立與 Surface Hub 相容的 Exchange ActiveSync 原則](#create-compatible-as-policy)
-    -   [允許適用於 ActiveSync 的裝置識別碼](#whitelisting-device-ids-cmdlet)
+    -   [允許適用於 ActiveSync 的裝置識別碼](#allowing-device-ids-for-activesync)
     -   [自動接受和拒絕會議邀請](#auto-accept-meetings-cmdlet)
     -   [接受外部會議邀請](#accept-ext-meetings-cmdlet)
     
@@ -993,7 +994,7 @@ else
 
 ## <a href="" id="acct-verification-ps-scripts"></a>帳戶驗證指令碼
 
-這個指令碼將會驗證先前在 Surface Hub 上建立的裝置帳戶，而不論用來建立它的方法為何。 這個指令碼基本上已通過/失敗。 如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。 例如，您可能會看到：
+此腳本會驗證先前在 Surface Hub 和 Surface Hub 2 上建立的裝置帳戶，無論使用哪一個方法來建立它。 這個指令碼基本上已通過/失敗。 如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。 例如，您可能會看到：
 
 ``` syntax
 15 tests executed
@@ -1642,7 +1643,7 @@ Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <a href="" id="whitelisting-device-ids-cmdlet"></a>允許適用於 ActiveSync 的裝置識別碼
+### 允許適用於 ActiveSync 的裝置識別碼
 
 若要允許帳戶 `$strRoomUpn`，請執行下列命令：
 

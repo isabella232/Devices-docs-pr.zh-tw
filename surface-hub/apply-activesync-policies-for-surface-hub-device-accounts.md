@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 6e93069c2d90bdc4c2f505bc28ba0ec1a4f08076
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: b5f828ee6757c150b1287e8210c81592e970b74a
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831626"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311959"
 ---
 # 將 ActiveSync 原則套用到裝置帳戶 (Surface Hub)
 
@@ -31,17 +31,15 @@ Microsoft Surface Hub 的裝置帳戶會使用 ActiveSync 來同步處理電子�
 
 ## 允許 DeviceID
 
-
-您的組織可能有一個全域原則，以防止同步處理 Surface Hub 上佈建的裝置帳戶。 若要設定這個屬性，請參閱 [允許適用於 ActiveSync 的裝置識別碼](appendix-a-powershell-scripts-for-surface-hub.md#whitelisting-device-ids-cmdlet)。
+您的組織可能有一個全域原則，以防止同步處理 Surface Hub 上佈建的裝置帳戶。 若要設定這個屬性，請參閱 [允許適用於 ActiveSync 的裝置識別碼](appendix-a-powershell-scripts-for-surface-hub.md#allowing-device-ids-for-activesync)。
 
 ## 設定 PasswordEnabled
 
-
 裝置帳戶必須具有 ActiveSync 原則，並將 **PasswordEnabled** 屬性設為 False 或 0。 若要設定這個屬性，請參閱 [建立與 Surface Hub 相容的 Microsoft Exchange ActiveSync 原則](appendix-a-powershell-scripts-for-surface-hub.md#create-compatible-as-policy)。
 
- 
+ 
 
- 
+ 
 
 
 

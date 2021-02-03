@@ -1,5 +1,5 @@
 ---
-title: 系統管理員群組管理 (Surface Hub)
+title: 系統管理員群組管理
 description: 您可以在裝置上開啟 \[設定\] 應用程式，個別設定每一個 Microsoft Surface Hub。
 ms.assetid: FA67209E-B355-4333-B903-482C4A3BDCCE
 ms.reviewer: ''
@@ -10,28 +10,29 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 716e409bf988e7178ec45e21165aad070d027eee
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 36c6010307603b36b8798a09aed26f8b337b2c1b
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831898"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311949"
 ---
-# 系統管理員群組管理 (Surface Hub)
+# Surface Hub 的管理員群組管理
 
 
-在個別裝置上使用 \[設定\] 應用程式，可各自設定其上的 Surface Hub。 為防止未經授權的使用者變更設定，\[設定\] 應用程式要求您必須提供系統管理員認證才能開啟應用程式。
+在個別裝置上使用 [設定] 應用程式，可各自設定其上的 Surface Hub。 為防止未經授權的使用者變更設定，\[設定\] 應用程式要求您必須提供系統管理員認證才能開啟應用程式。
 
 
 ## 系統管理員群組管理
 
-您可以使用下列三種方式的其中一種來設定裝置的系統管理員帳戶：
+您可以透過下列方式設定裝置的管理員帳戶：
 
--   建立本機系統管理員帳戶
--   將裝置加入 Active Directory (AD) 網域
--   Azure Active Directory (Azure AD) 加入裝置
+- [建立本機系統管理員帳戶](#create-a-local-admin-account)
+- [網域將裝置加入 Active Directory](#domain-join-the-device-to-active-directory)
+- [Azure AD 加入裝置](#azure-ad-join-the-device)
+- [在已加入 Azure AD 的裝置上設定非全域管理員帳戶 (Surface Hub 2 秒) ](#configure-non-global-admin-accounts-on-azure-ad-joined-devices)
 
 
 ### 建立本機系統管理員帳戶
@@ -40,7 +41,7 @@ ms.locfileid: "10831898"
 
 請注意，所有目錄服務都不會備份本機系統管理員帳戶資訊。 如果裝置沒有 Active Directory (AD) 或 Azure Active Directory (Azure AD) 的存取權，建議您只選擇本機系統管理員。 如果您決定變更本機系統管理員的密碼，可以在 \[設定\] 中變更。 不過，如果您想要將使用本機系統管理員變更為使用來自您網域或 Azure AD 租用戶的群組，則您需要[重設裝置](device-reset-surface-hub.md)，然後再次進行初次程式。
 
-### 將裝置加入 Active Directory (AD) 網域
+### 網域將裝置加入 Active Directory
 
 您可以將 Surface Hub 加入您的 AD 網域，以允許來自指定安全性群組的使用者進行設定。 在初次執行時，請選擇使用 [Active Directory Domain Services](first-run-program-surface-hub.md#use-active-directory-domain-services)。 您將需要提供能夠加入您選擇之網域的認證，以及現有安全性群組的名稱。 所有屬於該安全性群組成員的使用者都可以輸入他們的認證，並將 \[設定\] 解除鎖定。
 
@@ -56,9 +57,9 @@ Surface Hub 不支援從網域控制站套用群組原則或憑證。
 > 如果您的 Surface Hub 失去網域的信任 (例如，如果您在 Surface Hub 加入網域之後，將它從網域移除)，您將無法在裝置中進行驗證並開啟 \[設定\]。 如果您決定移除 Surface Hub 與您網域的信任關係，請先[重設裝置](device-reset-surface-hub.md)。
 
 
-### Azure Active Directory (Azure AD) 加入裝置
+### Azure AD 加入裝置
 
-您可以將 Surface Hub 加入 Azure AD，以允許來自您 Azure AD 租用戶的 IT 專業人員進行設定。 在初次執行時，請選擇使用 [Microsoft Azure Active Directory](first-run-program-surface-hub.md#use-microsoft-azure-active-directory)。 您需要提供能夠加入您選擇之 Azure AD 租用戶的認證。 成功加入 Azure AD 之後，適當的人員將會在裝置上獲得系統管理員權限。
+您可以使用 azure Active Directory (Azure AD) 加入 Surface Hub，以允許來自 Azure AD 租使用者的 IT 專業人員設定設定。 在初次執行時，請選擇使用 [Microsoft Azure Active Directory](first-run-program-surface-hub.md#use-microsoft-azure-active-directory)。 您需要提供能夠加入您選擇之 Azure AD 租用戶的認證。 成功加入 Azure AD 之後，適當的人員將會在裝置上獲得系統管理員權限。
 
 根據預設，所有的**全域系統管理員**都會在加入 Azure AD 的 Surface Hub 上獲得系統管理員權限。 透過 **Azure AD Premium** 或 **Enterprise Mobility Suite (EMS)**，您將可以新增額外的系統管理員：
 1.  在 [Azure 傳統入口網站](https://manage.windowsazure.com/)中，按一下 **Active Directory**，然後按一下您組織目錄的名稱。
@@ -71,13 +72,13 @@ Surface Hub 會透過加入 Azure AD 來：
 - 將系統管理員權限授與 Azure AD 租用戶中適當的使用者。
 - 透過將裝置的 BitLocker 修復金鑰儲存在用來將裝置加入 Azure AD 的帳戶底下來備份它。 請參閱[儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)來取得詳細資料。
 
-### 透過 Azure Active Directory join 自動登記
+#### 透過 Azure Active Directory join 自動登記
 
 Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動註冊 Intune。 
 
-如需詳細資訊，請參閱[啟用 Windows 10 自動註冊](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)。
+如需詳細資訊，請參閱 [啟用 Windows 10 自動註冊](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)。
 
-### 我應該選擇哪一個？
+#### 我應該選擇哪一個？
 
 如果您的組織使用 AD 或 Azure AD，我們建議您選擇加入網域或加入 Azure AD (主要是基於安全性考量)。 使用者將能夠使用自己的認證進行驗證並解除鎖定 \[設定\]，而且可以移入或移出與您的網域相關聯的安全性群組。
 
@@ -89,3 +90,6 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 | &nbsp;                                            | 您的組織使用 Azure AD Premium 或 Enterprise Mobility Suite (EMS) | 全域系統管理員及額外的系統管理員 |
 
 
+### 在 Azure AD-已加入的裝置上設定非全域管理員帳戶
+
+針對連接至 Azure AD 的 Surface Hub 2 裝置，Windows 10 Team 2020 更新可讓您限制系統管理員許可權，以管理 Surface Hub 2 上的 [設定] 應用程式。 這可讓您只對 Surface Hub 2 的作用域管理員許可權，並防止可能不需要的管理員存取整個 Azure AD 網域。 若要深入瞭解，請參閱 [在 Surface Hub 2 秒設定非全域管理員帳戶](surface-hub-2s-nonglobal-admin.md)。

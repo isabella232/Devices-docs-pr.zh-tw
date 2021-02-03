@@ -13,21 +13,26 @@ ms.reviewer: scottmca
 ms.localizationpriority: medium
 ms.audience: itpro
 manager: jarrettr
+ms.date: 02/02/2021
 appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
 - Surface Laptop 3
-ms.openlocfilehash: d7ae6fc434f77cad86e73f111243968493de4ff2
-ms.sourcegitcommit: e6224f81f8efb6ac862afec0e60e3ddb182e9e6f
+ms.openlocfilehash: fb51dd3785882e74c90d8b2717e4cc499d492d6f
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247305"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312059"
 ---
 # 如何在 MDT 部署期間啟用 Surface 膝上型電腦鍵盤
 
 本文討論使用 Microsoft 部署工具組 (MDT) 的部署方法。 您也可以將此資訊套用到其他部署方法。 在大部分的 Surface 裝置上，鍵盤應該在 (LTI) 的精簡觸控安裝期間運作。 不過，Surface 膝上型電腦需要一些其他驅動程式，才能啟用鍵盤。 針對 Surface 膝上型電腦 (1 Gen) 和 Surface 膝上型電腦2裝置，您必須準備可讓您指定使用鍵盤驅動程式的資料夾結構和選取設定檔，以便在 Windows 預先安裝環境 (Windows PE) 階段（在 LTI 中）使用。 如需此資料夾結構的詳細資訊，請參閱 [使用 MDT 部署 Windows 10 影像：步驟5：準備驅動程式儲存庫](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository)。
 
+> [!TIP]    
+> 在相同的 Windows PE 啟動實例中，針對 Surface 膝上型電腦2和 Surface 膝上型電腦3使用鍵盤驅動程式時，如果 Windows PE 中的鍵盤或觸控板無法運作，您可能需要手動重設固件：
+>
+> - 按住電源按鈕30秒鐘。 如果您已連線至 (PSU) 的電源裝置，請按住電源按鈕，直到您看到 PSU 線尾端的燈短暫關閉，然後再重新開啟。
 
 > [!IMPORTANT]
 > 如果您要將 Windows 10 影像部署到已預先安裝 Windows 10 的 Surface 膝上型電腦，請參閱 KB [4032347：在 s 模式中，將 windows 部署到已預先安裝 windows 10 的 surface 裝置時會發生問題](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues)。
@@ -50,78 +55,8 @@ ms.locfileid: "11247305"
    ![在部署工作臺中顯示 WindowsPEX64 資料夾位置的影像](./images/surface-laptop-keyboard-1.png)
 
 4. 以滑鼠右鍵按一下 [ **WindowsPEX64** ] 資料夾，然後選取 [匯 **入驅動程式**]。
+
 5. 依照 [匯入驅動程式] 嚮導中的指示，將驅動程式資料夾匯入 [WindowsPEX64] 資料夾。  
-
-> [!NOTE]
->  檢查已下載的 MSI 套件，以判斷格式和目錄結構。  目錄結構將會以 SurfacePlatformInstaller (較舊的 MSI 檔案) 或 SurfaceUpdate (較新的 MSI 檔案，) 視 MSI 的發行時間而定。 
-
-若要支援 Surface 膝上型電腦 (1 Gen) ，請匯入下列資料夾：
-
- - SurfacePlatformInstaller\Drivers\System\GPIO
- - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
- - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
- - SurfacePlatformInstaller\Drivers\System\PreciseTouch
-
-或者，對於以 "SurfaceUpdate" 開頭的較新的 MSI 檔案，請使用：
-
-- SurfaceUpdate\SerialIOGPIO
-- SurfaceUpdate\SurfaceHidMiniDriver
-- SurfaceUpdate\SurfaceSerialHubDriver
-- SurfaceUpdate\Itouch
-
-若要支援 Surface 膝上型電腦2，請匯入下列資料夾：
-
- - SurfacePlatformInstaller\Drivers\System\GPIO
- - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
- - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
- - SurfacePlatformInstaller\Drivers\System\I2C
- - SurfacePlatformInstaller\Drivers\System\SPI
- - SurfacePlatformInstaller\Drivers\System\UART
- - SurfacePlatformInstaller\Drivers\System\PreciseTouch
-
-或者，對於以 "SurfaceUpdate" 開頭的較新的 MSI 檔案，請使用：
-
-- SurfaceUpdate\SerialIOGPIO
-- SurfaceUpdate\IclSerialIOI2C
-- SurfaceUpdate\IclSerialIOSPI
-- SurfaceUpdate\IclSerialIOUART
-- SurfaceUpdate\SurfaceHidMini
-- SurfaceUpdate\SurfaceSerialHub
-- SurfaceUpdate\Itouch
-
- 
-若要支援含英特爾處理器的 Surface 膝上型電腦3，請匯入下列資料夾：
-
-- SurfaceUpdate\IclSerialIOGPIO
-- SurfaceUpdate\IclSerialIOI2C
-- SurfaceUpdate\IclSerialIOSPI
-- SurfaceUpdate\IclSerialIOUART
-- SurfaceUpdate\SurfaceHidMini
-- SurfaceUpdate\SurfaceSerialHub
-- SurfaceUpdate\SurfaceHotPlug
-- SurfaceUpdate\Itouch
-
-匯入下列資料夾將在 Surface 膝上型電腦3的 PE 中啟用完整的鍵盤、軌跡板和觸控功能。
-
-- IclSerialIOGPIO
-- IclSerialIOI2C
-- IclSerialIOSPI
-- IclSerialIOUART
-- itouch
-- IclChipset
-- IclChipsetLPSS
-- IclChipsetNorthpeak
-- ManagementEngine
-- SurfaceAcpiNotify
-- SurfaceBattery
-- SurfaceDockIntegration
-- SurfaceHidMini
-- SurfaceHotPlug
-- SurfaceIntegration
-- SurfaceSerialHub
-- SurfaceService
-- SurfaceStorageFwUpdate
-
 
     > [!NOTE]
     >  檢查已下載的 MSI 套件，以判斷格式和目錄結構。  目錄結構將會以 SurfacePlatformInstaller (較舊的 MSI 檔案) 或 SurfaceUpdate (較新的 MSI 檔案，) 視 MSI 的發行時間而定。 
@@ -153,19 +88,89 @@ ms.locfileid: "11247305"
     或者，對於以 "SurfaceUpdate" 開頭的較新的 MSI 檔案，請使用：
 
     - SurfaceUpdate\SerialIOGPIO
-    - SurfaceUpdate\IclSerialIOI2C
-    - SurfaceUpdate\IclSerialIOSPI
-    - SurfaceUpdate\IclSerialIOUART
+    - SurfaceUpdate\serialioi2c
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
+    - SurfaceUpdate\SurfaceHidMini
+    - SurfaceUpdate\SurfaceSerialHub
+    - SurfaceUpdate\Itouch
+
+     
+    若要支援含英特爾處理器的 Surface 膝上型電腦3，請匯入下列資料夾：
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
+    - SurfaceUpdate\SurfaceHidMini
+    - SurfaceUpdate\SurfaceSerialHub
+    - SurfaceUpdate\SurfaceHotPlug
+    - SurfaceUpdate\Itouch
+
+    匯入下列資料夾將在 Surface 膝上型電腦3的 PE 中啟用完整的鍵盤、軌跡板和觸控功能。
+
+    - SerialIOGPIO
+    - SerialIOI2C
+    - SerialIOSPI
+    - SerialIOUART
+    - itouch
+    - 高速晶片組
+    - ChipsetLPSS
+    - ChipsetNorthpeak
+    - ManagementEngine
+    - SurfaceAcpiNotify
+    - SurfaceBattery
+    - SurfaceDockIntegration
+    - SurfaceHidMini
+    - SurfaceHotPlug
+    - SurfaceIntegration
+    - SurfaceSerialHub
+    - SurfaceService
+    - SurfaceStorageFwUpdate
+
+     > [!NOTE]
+     >  檢查已下載的 MSI 套件，以判斷格式和目錄結構。  目錄結構將會以 SurfacePlatformInstaller (較舊的 MSI 檔案) 或 SurfaceUpdate (較新的 MSI 檔案，) 視 MSI 的發行時間而定。 
+
+     若要支援 Surface 膝上型電腦 (1 Gen) ，請匯入下列資料夾：
+
+    - SurfacePlatformInstaller\Drivers\System\GPIO
+    - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
+    - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
+    - SurfacePlatformInstaller\Drivers\System\PreciseTouch
+
+    或者，對於以 "SurfaceUpdate" 開頭的較新的 MSI 檔案，請使用：
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SurfaceHidMiniDriver
+    - SurfaceUpdate\SurfaceSerialHubDriver
+    - SurfaceUpdate\Itouch
+
+    若要支援 Surface 膝上型電腦2，請匯入下列資料夾：
+
+    - SurfacePlatformInstaller\Drivers\System\GPIO
+    - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
+    - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
+    - SurfacePlatformInstaller\Drivers\System\I2C
+    - SurfacePlatformInstaller\Drivers\System\SPI
+    - SurfacePlatformInstaller\Drivers\System\UART
+    - SurfacePlatformInstaller\Drivers\System\PreciseTouch
+
+    或者，對於以 "SurfaceUpdate" 開頭的較新的 MSI 檔案，請使用：
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
     - SurfaceUpdate\SurfaceHidMini
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\Itouch
 
     若要支援含英特爾處理器的 Surface 膝上型電腦3，請匯入下列資料夾：
 
-    - SurfaceUpdate\IclSerialIOGPIO
-    - SurfaceUpdate\IclSerialIOI2C
-    - SurfaceUpdate\IclSerialIOSPI
-    - SurfaceUpdate\IclSerialIOUART
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
     - SurfaceUpdate\SurfaceHidMini
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\SurfaceHotPlug
