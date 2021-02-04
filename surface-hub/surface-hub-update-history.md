@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 28f6f844818a00078f2efa812da8bdd7dc28b115
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+ms.openlocfilehash: b26351fa822f1c3bc8933578902ea304581f5e6f
+ms.sourcegitcommit: 040dffc996fa5be0d93103b5093748c8d919679e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311989"
+ms.locfileid: "11312709"
 ---
 # Surface Hub 更新歷程記錄
 
@@ -28,6 +28,20 @@ Windows 10 的設計目的是服務，這表示它會透過定期軟體更新自
 請參閱「[Surface Hub 重要資訊](https://support.microsoft.com/products/surface-devices/surface-hub)」頁面，以取得目前和過去發行中可能需要您注意的相關主題。
 
 ## Windows 10 小組2020更新 (20H2) 
+
+<details>
+<summary>2021年2月2日-以 KB4598291 * 為基礎的小組更新 (作業系統組建 19042.789) </summary>
+
+此 Surface Hub 更新包括品質改善與安全性修正。 Surface Hub 的主要更新，在 [Windows 10 更新歷程記錄](https://support.microsoft.com/help/4581839/windows-10-update-history)中尚未說明，包括：
+
+* 在裝置帳戶的 UPN 不等於其 SMTP 的情況下，允許與 Exchange 進行行事曆同步處理的修正。
+* 新增管理員在與 Exchange 進行行事曆同步處理期間停用新式驗證的能力。
+* 確保 Surface Hub 使用者在「使用裝置帳號憑證」功能啟用之後，系統不會提示您輸入 proxy 認證。
+* 解決在使用需要驗證的 proxy 時，Windows Update 和 Store Update 檢查無法完成的問題。
+* 在有線攝取案例中改善連接應用程式的可靠性。
+
+請參閱 [Surface Hub 管理員指南](https://docs.microsoft.com/surface-hub/) ，以啟用/停用裝置功能及服務。 *[KB4598291](https://support.microsoft.com/help/4598291)
+</details>
 
 <details>
 <summary>2021年1月15日-Surface Hub 秒更新</summary>
