@@ -70,12 +70,12 @@
 ### [如何包裝及送回 Surface Hub 2S 以便進行維修](surface-hub-2s-pack-components.md)
 ### [變更歷程記錄](surface-hub-2s-change-history.md)
 
-# Surface Hub
+# Surface Hub (v1)
 ## 概觀
 ### [Windows 10 (版本 1703) 中 Surface Hub 的新增功能](surfacehub-whats-new-1703.md)
 ### [作業系統基本資訊 (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
-### [55 吋 Microsoft Surface Hub 的技術資訊](surface-hub-technical-55.md)
-### [84 吋 Microsoft Surface Hub 的技術資訊](surface-hub-technical-84.md)
+### [55 吋 Microsoft Surface Hub (v1) 的技術資訊](surface-hub-technical-55.md)
+### [84 吋 Microsoft Surface Hub (v1) 的技術資訊](surface-hub-technical-84.md)
 ### [在 Surface Hub 上使用 Microsoft Whiteboard](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
 
 ## 規劃
