@@ -1,8 +1,8 @@
 ---
-title: 84「Surface Hub 的技術資訊
+title: 84「Surface Hub (v1) 的技術資訊
 ms.reviewer: ''
 manager: laurawi
-description: 84「Surface Hub 的規格
+description: 84「Surface Hub (v1) 的規格
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e8f01a7e6ce087f649d99c1fc13f149fa375fc8a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 6d309dbc05cd4fcb9abae54bd8a604787b74b312
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314456"
 ---
-# 84「Surface Hub 的技術資訊
+# 84「Surface Hub (v1) 的技術資訊
 
 |
 --- | ---
@@ -100,28 +102,28 @@ RJ11、下 i/o | ![](images/rj11.png) | 連接到會議室控制系統。
 
 ## 埠與間隙的圖表
 
-**_84 「Surface Hub _」的上方視圖_*
+***84 [Surface Hub] 的上方視圖***
 
 ![](images/sh-84-top.png)
 
 ---
 
 
-_*_84 [Surface Hub] 的正面視圖_*_
+***84 [Surface Hub] 的正面視圖***
 
 ![](images/sh-84-front.png)
 
 
 ---
 
-_*_84「Surface Hub 的底端視圖_*_
+***84「Surface Hub 的底端視圖***
 
 ![](images/sh-84-bottom.png)
 
 
 ---
 
-_*_84 英吋 Surface Hub 上的取代電腦連接埠。_*_
+***84 英吋 Surface Hub 上的取代電腦連接埠。***
 
 ![](images/sh-84-rpc-ports.png)
 
@@ -129,21 +131,21 @@ _*_84 英吋 Surface Hub 上的取代電腦連接埠。_*_
 
 ---
 
-_*_84「Surface Hub 的後部視圖_*_
+***84「Surface Hub 的後部視圖***
 
 ![](images/sh-84-rear.png)
 
 
 ---
 
-_*_84 "Surface Hub 的對應_*_
+***84 "Surface Hub 的對應***
 
 ![](images/sh-84-clearance.png)
 
 ---
 
 
-_*_84「Surface Hub 上的可移除抬起控點_*_
+***84「Surface Hub 上的可移除抬起控點***
 
 ![](images/sh-84-hand.png)
 
@@ -151,17 +153,17 @@ _*_84「Surface Hub 上的可移除抬起控點_*_
 ---
 
 
-_*_84 [Surface Hub] 背面的牆上裝入執行緒_*_
+***84 [Surface Hub] 背面的牆上裝入執行緒***
 
 ![](images/sh-84-wall.png)
 
 ---
-_*_在84「Surface Hub 的上方視圖中抬起控點_*_
+***在84「Surface Hub 的上方視圖中抬起控點***
 
 ![](images/sh-84-hand-top.png)
 
 ---
-_*_84 "Surface Hub 的側視圖_**
+***84 "Surface Hub 的側視圖***
 
 ![](images/sh-84-side.png)
 

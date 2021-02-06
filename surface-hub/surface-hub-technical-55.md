@@ -1,8 +1,8 @@
 ---
-title: 55「Surface Hub 的技術資訊
+title: 55「Surface Hub (v1) 的技術資訊
 ms.reviewer: ''
 manager: laurawi
-description: 55「Surface Hub 的規格
+description: 55「Surface Hub (v1) 的規格
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e321b64ebbbc62da70cfdc1979053ee8facb7235
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 5d0c88b1e0b7fdd0f144a7ee641dcab7599c68a1
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314446"
 ---
-# 55「Surface Hub 的技術資訊
+# 55「Surface Hub (v1) 的技術資訊
 
 |
 --- | ---
@@ -103,56 +105,56 @@ RJ11、下 i/o | ![](images/rj11.png) | 連接到會議室控制系統。
 
 ## 埠與間隙的圖表
 
-**_55 「Surface Hub _」的上方視圖_*
+***55 [Surface Hub] 的上方視圖***
 
 ![](images/sh-55-top.png)
 
 ---
 
 
-_*_55 [Surface Hub] 的正面視圖_*_
+***55 [Surface Hub] 的正面視圖***
 
 ![](images/sh-55-front.png)
 
 
 ---
 
-_*_55「Surface Hub 的底端視圖_*_
+***55「Surface Hub 的底端視圖***
 
 ![](images/sh-55-bottom.png)
 
 
 ---
 
-_*_55 英吋 Surface Hub 上的取代電腦連接埠。_*_
+***55 英吋 Surface Hub 上的取代電腦連接埠。***
 
 ![](images/sh-55-rpc-ports.png)
 
 
 ---
 
-_*_55「Surface Hub」右側的小鍵盤_*_
+***55「Surface Hub」右側的小鍵盤***
 
 ![](images/key-55.png)
 
 
 ---
 
-_*_55「Surface Hub 的後部視圖_*_
+***55「Surface Hub 的後部視圖***
 
 ![](images/sh-55-rear.png)
 
 
 ---
 
-_*_55 "Surface Hub 的對應_*_
+***55 "Surface Hub 的對應***
 
 ![](images/sh-55-clearance.png)
 
 ---
 
 
-_*_55 [Surface Hub] 的正面和底部 handholds 及間隙_*_
+***55 [Surface Hub] 的正面和底部 handholds 及間隙***
 
 ![](images/sh-55-hand.png)
 
@@ -160,7 +162,7 @@ _*_55 [Surface Hub] 的正面和底部 handholds 及間隙_*_
 ---
 
 
-_*_55 [Surface Hub] 的後部 handholds 和間隙_**
+***55 [Surface Hub] 的後部 handholds 和間隙***
 
 ![](images/sh-55-hand-rear.png)
 

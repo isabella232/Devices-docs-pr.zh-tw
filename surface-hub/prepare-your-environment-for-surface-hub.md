@@ -1,5 +1,5 @@
 ---
-title: 針對 Microsoft Surface Hub 準備您的環境
+title: '準備您的環境以進行 Microsoft Surface Hub (v1) '
 description: 本節包含準備您環境時所需步驟的概觀，讓您能夠使用所有的 Microsoft Surface Hub 功能。
 ms.assetid: 336A206C-5893-413E-A270-61BFF3DF7DA9
 ms.reviewer: ''
@@ -12,14 +12,16 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 12/04/2017
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ee406df6d3022f04a80f4ce253bd76f6473f1c8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 95b575e5213e3e11685b342cb2a7b77eb3e868a0
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832050"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314396"
 ---
-# 針對 Microsoft Surface Hub 準備您的環境
+# 準備您的環境以進行 Microsoft Surface Hub (v1) 
 
 
 本節包含安裝程式相依性與安裝程序的概觀。 檢閱本節中的資訊，協助您準備您的環境，並收集設定 Surface Hub 所需的資訊。
@@ -33,7 +35,7 @@ ms.locfileid: "10832050"
 | Active Directory 或 Azure Active Directory (Azure AD) | <p>Surface Hub 使用 Active Directory 或 Azure AD 帳戶 (稱為**裝置帳戶**) 來存取 Exchange 與商務用 Skype 服務。 Surface Hub 必須能夠連線到 Active Directory 網域控制站或 Azure AD 租用戶來驗證裝置帳戶的認證，以及存取諸如裝置帳戶的顯示名稱、別名、Exchange 伺服器與工作階段初始通訊協定 (SIP) 位址等資訊。</p>您也可以將 Surface Hub 加入到網域或加入到 Azure AD，以允許一組授權的使用者設定 Surface Hub 上的設定。 |
 | Exchange (Exchange 2013 或更新版本或 Exchange Online) 與 Exchange ActiveSync | <p>Exchange 可用於啟用電子郵件和行事曆功能，而且也可以讓使用裝置的使用者將會議邀請傳送到 Surface Hub，以啟用單一碰觸式會議加入功能。</p>ActiveSync 可用來將裝置帳戶的行事曆和電子郵件同步處理到 Surface Hub。 如果裝置無法使用 ActiveSync，將不會在歡迎畫面中顯示會議，而且不會啟用加入會議與以電子郵件傳送白板的功能。 |
 | 商務用 Skype (Lync Server 2013 或更新版本，或商務用 Skype Online)  | 商務用 Skype 可用於各種不同的會議功能，例如視訊通話、傳送即時訊息和螢幕畫面分享。|
-| 行動裝置管理（MDM）解決方案（Microsoft Intune、Microsoft 端點建構管理員，或支援的協力廠商 MDM 提供者） | 如果您想要從遠端一次就套用設定或安裝應用程式到多個裝置，您必須設定 MDM 解決方案，並將裝置註冊到該解決方案。 如需詳細資訊，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。 |
+| 行動裝置管理 (MDM) 方案 (Microsoft Intune、Microsoft 端點建構管理員，或支援的協力廠商 MDM 提供者)  | 如果您想要從遠端一次就套用設定或安裝應用程式到多個裝置，您必須設定 MDM 解決方案，並將裝置註冊到該解決方案。 如需詳細資訊，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。 |
 | Microsoft Operations Management Suite (OMS)   | OMS 是用來監視 Surface Hub 裝置的健康情況。 如需詳細資訊，請參閱[監視 Surface Hub](monitor-surface-hub.md)。 |
 | 網路與網際網路存取   | 為正常運作，Surface Hub 必須能夠存取有線或無線網路。 整體而言，建議使用有線連線。 有線和無線連線皆支援 802.1x 驗證。</br></br></br>**802.1X 驗證：** 在 Windows 10 版本 1703 中，適用於有線和無線連線的 802.1X 驗證會在 Surface Hub 中預設啟用。 如果您的組織未使用 802.1X 驗證，並不需要設定，且 Surface Hub 仍會繼續正常運作。 如果您使用 802.1X 驗證，您必須確定驗證憑證已安裝在 Surface Hub 上。 您可以使用 MDM 中的 [ClientCertificateInstall CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/clientcertificateinstall-csp) 將憑證傳送到 Surface Hub，或者可以在初次執行或透過「設定」應用程式[建立佈建套件](provisioning-packages-for-surface-hub.md)並安裝起來。 將憑證套用到 Surface Hub 之後，802.1X 驗證將會開始自動運作。</br>**注意：** 如需在 Surface Hub 上啟用 802.1X 有線驗證的詳細資訊，請參閱[啟用 802.1x 有線驗證](enable-8021x-wired-authentication.md)。</br></br>**動態 IP：** 無法設定 Surface Hub 使用靜態 IP。 它必須使用 DHCP 來指派 IP 位址。</br></br>**Proxy 伺服器：** 如果您的拓撲需要連線到 Proxy 伺服器以連線網際網路服務，您可以在初次執行期間或在 \[設定\] 中設定它。 Proxy 認證會儲存在 Surface Hub 工作階段期間之間，且只需設定一次。 |
 
@@ -43,9 +45,9 @@ ms.locfileid: "10832050"
 - NTP：123
 
 如果您將 Surface Hub 與商務用 Skype 配合使用，您將需要開啟額外的埠。 請遵循下列指導方針：
-- 如果您使用商務用 Skype Online，請參閱[Office 365 IP url 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)。
+- 如果您使用商務用 Skype Online，請參閱 [Office 365 IP url 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)。
 - 如果您使用商務用 Skype Server，請參閱商務用 skype [server：內部伺服器的埠和通訊協定](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/network-requirements/ports-and-protocols)。 
-- 如果您使用的是商務用 Skype Online 與商務用 Skype Server 的混合式，您必須從[Office 365 IP url 和 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)及[商務用 skype server：內部伺服器的埠和通訊協定](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/network-requirements/ports-and-protocols?toc=/SkypeForBusiness/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json)開啟所有已記錄的埠。
+- 如果您使用的是商務用 Skype Online 與商務用 Skype Server 的混合式，您必須從 [Office 365 IP url 和 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US) 及 [商務用 skype server：內部伺服器的埠和通訊協定](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/network-requirements/ports-and-protocols?toc=/SkypeForBusiness/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json)開啟所有已記錄的埠。
 
 Microsoft 會收集診斷資料以協助改善您的 Surface Hub 體驗。 新增這些網站新增到您的允許清單︰
 - 診斷資料用戶端端點： `https://vortex.data.microsoft.com/`

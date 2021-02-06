@@ -12,12 +12,15 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 36c6010307603b36b8798a09aed26f8b337b2c1b
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: c76ac577c1560020bf865a25d4a812343089013a
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314436"
 ---
 # Surface Hub 的管理員群組管理
 
@@ -51,7 +54,7 @@ Surface Hub 會透過加入網域來：
 - 透過將裝置的 BitLocker 修復金鑰儲存在 AD 中的電腦物件底下來備份它。 請參閱[儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)來取得詳細資料。
 - 透過網域控制站同步處理系統時鐘以進行加密通訊
 
-Surface Hub 不支援從網域控制站套用群組原則或憑證。
+Surface Hub 不支援從網網域控制站套用群組原則或憑證。
 
 > [!NOTE]
 > 如果您的 Surface Hub 失去網域的信任 (例如，如果您在 Surface Hub 加入網域之後，將它從網域移除)，您將無法在裝置中進行驗證並開啟 \[設定\]。 如果您決定移除 Surface Hub 與您網域的信任關係，請先[重設裝置](device-reset-surface-hub.md)。

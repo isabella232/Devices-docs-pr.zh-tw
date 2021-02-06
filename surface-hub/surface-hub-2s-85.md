@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/26/2020
+ms.date: 02/05/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
-ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
+ms.openlocfilehash: 01d9712bce55a6be28a58adccdc9a2eef0837c52
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "11304501"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314386"
 ---
 # Surface Hub 2 秒 85 "概覽 & 技術規格
 
@@ -28,14 +28,16 @@ ms.locfileid: "11304501"
 
 ![Surface Hub 2 秒 85 "](images/hub-2s-85.png)
 
-## Surface Hub 2 秒 85 "技術規格
+## Surface Hub 2S 85" 技術規格
 
 | 元件    | 說明                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 三維        | 44.5 "x 77.1" x 3.4 "<br> (1130mm x 1959mm x 85.6 mm)                                                                                                                                                                                                         |
-| 粗細            | 185磅 (84kg)                                                                                                                                                                                                                                             |
+| 三維        | 44.5 "x 77.1" x 3.4 "<br> (1130 mm x 1959 mm x 85.6 mm)                                                                                                                                                                                                         |
+| 發貨尺寸        | 89.5 "x 62" x 22.8 "<br> (2275 mm x 1573 mm x 580 mm)                                                                                                                                                                                                         |
+| 粗細            | 185磅 (84 公斤)                                                                                                                                                                                                                                             |
+| 裝貨體重            | 399磅 (181 公斤)                                                                                                                                                                                                                                             |
 | 解決方法        | 3840 x 2160                                                                                                                                                                                                                                               |
-| 顯示器           | PixelSense™顯示、16:9 長寬比、10位色彩、30.5 mm 框線寬度、防眩向、IPS 液晶顯示幕，以及20同時觸摸點的儲存格內觸控                                                                                                           |
+| 顯示           | PixelSense™顯示、16:9 長寬比、10位色彩、30.5 mm 框線寬度、防眩向、IPS 液晶顯示幕，以及20同時觸摸點的儲存格內觸控                                                                                                           |
 | 運算           | 模組式計算盒式磁帶<br>四核第八代英特爾®核心™ i5 處理器、8GB RAM、128GB SSD <sup> 1</sup>                                                                                                                                                      |
 | 軟體 <sup> 2</sup>         | Windows 10 團隊作業系統 <sup> 3</sup><br>適用于 Surface Hub 的 Microsoft 團隊<br>商務用 Skype<br>Microsoft Whiteboard<br>Microsoft Office (行動裝置) <br>Microsoft Power BI                                                                                                   |
 | 連線       | USB-A<br>Mini-DisplayPort 影片輸出<br>RJ45 十億位元乙太網<br>HDMI 視頻輸入<br>含 DisplayPort 輸入的 USB-C®<br> (3) USB-C® ([顯示])                                                                                                            |
@@ -45,7 +47,7 @@ ms.locfileid: "11304501"
 | 感應器           | Doppler 佔用感應器 <sup> 4</sup>                                                                                                                                                                                                                                 |
 | 無線          | Wi-Fi 5： IEEE 802.11 a/b/n/ac 相容<br>藍牙®無線5.0 技術<br>Miracast 顯示                                                                                                                                                      |
 | 產          | 大小寫：以 mineral 複合 resin 的精度加工鋁<br>色彩：白金<br>物理按鈕：電源、音量、來源                                                                                                                            |
-| 瑕疵擔保         | 1年有限硬體保修 <sup> 5</sup>                                                                                                                                                                                                                          |
+| 瑕疵擔保。         | 1年有限硬體保修 <sup> 5</sup>                                                                                                                                                                                                                          |
 | 方塊中的內容 |  (1) Surface Hub 2 秒<br> (2) Surface Hub 2 筆<br> (1) Surface Hub 2 相機<br>4m AC 電源線<br>快速入門手冊                                                                                                                                         |
 
 > [!NOTE]
