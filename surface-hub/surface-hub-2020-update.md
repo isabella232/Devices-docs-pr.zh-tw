@@ -11,18 +11,21 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c89063765462a76ae48d17e1480bbff29f48ebdc
-ms.sourcegitcommit: 8bca7edea5401dfc97614e18a058a023aa9497c4
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 291a2eda0c1fa6e5e2fd2240861c8570d00054df
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "11254202"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319177"
 ---
 # 安裝 Windows 10 團隊版 2020 更新 
 
-新的 Surface Hub 作業系統、以 Windows 10 版本20H2 為基礎的 **Windows 10 小組2020更新**現已提供給所有 Surface Hub 2 裝置使用。  
+新的 Surface Hub 作業系統、以 Windows 10 版本20H2 為基礎的 **Windows 10 小組2020更新**現已提供 Surface hub 2 和原始 Surface hub (v1) 。 
 
-- 另請參閱： [已知問題： Windows 10 Team 2020 更新](surface-hub-2020-update.md)
+- 另請參閱： [已知問題： Windows 10 Team 2020 更新](surface-hub-2020-team-update-known-issues.md)
 
 ## 分配
 
@@ -34,14 +37,14 @@ ms.locfileid: "11254202"
 
 | 階段 | 國家/地區                         | 入門          |
 | ----- | -------------------------------------- | ----------------- |
-| sr-1     | 紐西蘭、澳大利亞、加拿大、比利時、墨西哥 | 2020年10月27日  |
-| pplx-2     | 英國、日本、瑞士、義大利          | 2020年11月10日 |
-| 3     | 美國、德國                            | TBD |
-| 4     | 化                                 | TBD  |
+| sr-1     | 紐西蘭、澳大利亞、加拿大、比利時、墨西哥 | 2020年10月  |
+| pplx-2     | 英國、日本、瑞士、義大利          | 2020年11月 |
+| 3     | 美國、德國                            | 2021年2月晚上日 |
+| 4     | 化                                 | 2021年2月晚上日 |
 
 ## 使用 Windows 10 Team 版本1703維護 Surface Hub 
 
-Windows 10 Team Edition 版本1703的完整服務支援排程為在2021年3月16日為止繼續。
+[Windows 10 Team Edition 版本 1703](https://support.microsoft.com/topic/november-12-2019-kb4525245-os-build-15063-2172-dfc81b85-11a6-54ef-4370-11408193419f)的完整服務支援排程為在2021年3月16日為止繼續。
 
 ### 2個裝置 
 
@@ -49,7 +52,7 @@ Windows 10 Team Edition 版本1703的完整服務支援排程為在2021年3月16
 
 ### V1 裝置 
 
-所有地區的客戶現在都可以 [使用 Surface Hub 恢復工具](surface-hub-recovery-tool.md)，將其 Surface hub v1 裝置更新為2020更新。 更新這些裝置至 Windows 10 Team 2020 更新的其他方法即將推出。 若要深入瞭解，請參閱 [SURFACE IT 專業版博客](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update/ba-p/2000144)。
+所有地區的客戶現在都可以 [使用 Surface Hub 恢復工具](surface-hub-recovery-tool.md)，將其 Surface hub v1 裝置更新為2020更新。 更新這些裝置至 Windows 10 Team 2020 更新的其他方法即將推出。 若要深入瞭解，請參閱 [SURFACE IT 專業版博客](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655)。
  
 ## 新功能
 
@@ -70,5 +73,5 @@ Windows 10 團隊2020更新帶來了主要的裝置部署和管理功能以及�
 
 ## 深入了解
 
-- [已知問題： Windows 10 Team 2020 更新](surface-hub-2020-team-update-known-issues.md)
-- [Surface Hub Windows 10 小組2020更新的重要更新](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
+- [Windows 10 團隊版 2020 更新中的新功能](surface-hub-2020-update-whats-new.md)
+- [Windows 10 團隊版的更新推出](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655)

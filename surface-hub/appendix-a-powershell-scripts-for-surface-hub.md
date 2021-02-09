@@ -14,12 +14,12 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 09d600efbf07bb58de1b5ebffcb6731e4125a62d
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11317977"
 ---
 # Surface Hub (v1) 的 PowerShell
 
@@ -68,11 +68,11 @@ ms.locfileid: "11314426"
 
 帳戶建立指令碼將執行下列動作：
 
--   要求系統管理員認證
--   在您的網域/租用戶中建立裝置帳戶
--   建立與 Surface Hub 相容的 ActiveSync 原則或將它指派給裝置帳戶
+-   要求管理員認證。
+-   在您的網域/租使用者中建立裝置帳戶。
+-   建立或指派 Surface Hub 相容性 ActiveSync 原則至裝置帳戶 (s) 。
 -   在 Exchange 和商務用 Skype 中為建立的帳戶設定各種屬性。
--   將授權和權限指派給建立的帳戶
+-   將授權和許可權指派給已建立的帳戶 (s) 。
 
 以下是指令碼所設定的屬性：
 
@@ -551,7 +551,7 @@ else
 
 ### <a href="" id="create-os356-ps-scripts"></a>使用 Office 365 建立裝置帳戶
 
-利用[使用 Office 365 建立裝置帳戶](create-a-device-account-using-office-365.md)中所述的方式來建立帳戶
+如在 [使用 Office 365 建立裝置帳戶](create-a-device-account-using-office-365.md)中所述，建立帳戶。
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -998,7 +998,7 @@ else
 
 此腳本會驗證先前在 Surface Hub 和 Surface Hub 2 上建立的裝置帳戶，無論使用哪一個方法來建立它。 這個指令碼基本上已通過/失敗。 如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。 例如，您可能會看到：
 
-``` syntax
+```console
 15 tests executed
 0 failures
 2 warnings

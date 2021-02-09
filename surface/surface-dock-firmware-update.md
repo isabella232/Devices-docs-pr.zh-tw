@@ -1,6 +1,6 @@
 ---
-title: Microsoft Surface Dock 固件更新-適用于 IT 系統管理員的技術資訊
-description: 本文說明如何使用 Microsoft Surface Dock 固件更新來更新 Surface Dock 固件。 當您在 Surface 裝置上安裝時，它會更新連接至 Surface 裝置的任何 Surface Dock。
+title: Microsoft Surface Dock 1 固件更新
+description: 本文說明如何使用 Microsoft Surface Dock 固件更新來安裝和管理原始 Surface Dock 1 上的固件。 在 Surface 裝置上安裝後，它會更新連接至 Surface 裝置的 Surface Dock 1 裝置。
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -11,20 +11,23 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.date: 8/07/2020
-ms.openlocfilehash: 9069903421d6e621dfbc31cd1cfaffb045fa9f19
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 2/08/2021
+ms.openlocfilehash: a0acaaf0676c3f4403a2b233297781579ca1f4ae
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114551"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319207"
 ---
-# Microsoft Surface Dock 固件更新：適用于 IT 系統管理員的技術資訊
+# Microsoft Surface Dock 固件更新
 
 > [!IMPORTANT]
 > 本文包含適用于 IT 系統管理員的技術指示。 如果您是家用版使用者，請參閱如何在 Microsoft 支援網站上[更新 Surface Dock 固件](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)   。 支援網站上的指示與下列一般安裝步驟相同，但本文有其他資訊可監視、驗證和部署到網路上的多個裝置的更新。
 
-本文說明如何使用 Microsoft Surface Dock 固件更新來更新原始 Surface Dock 1 上的固件，且不適用於 Surface Dock 2。 當您在 Surface 裝置上安裝時，它會更新連接至 Surface 裝置的任何 Surface Dock。 
+本文說明如何使用 Microsoft Surface Dock 固件更新來安裝和管理原始 Surface Dock 1 上的固件。 在 Surface 裝置上安裝後，它會更新連接至 Surface 裝置的 Surface Dock 1 裝置。
+
+> [!NOTE]
+> 本文不適用於透過 Windows Update 或使用 Microsoft 端點建構管理員或其他 MSI 部署工具自動接收更新的 Surface Dock 2。 若要深入瞭解，請參閱 [Surface Dock 的新增功能](surface-dock-whats-new.md)。
 
 這個工具取代舊版的 Microsoft Surface Dock 更新程式工具，先前可供下載，成為它的 Surface 工具的一部分。 舊版工具已命名為 Surface_Dock_Updater_vx.xx.xxx.x.msi (其中 x 表示版本號碼) 且不再提供下載，因此不應使用。
 
@@ -51,13 +54,17 @@ ms.locfileid: "11114551"
 
 2. 在提升許可權的命令提示字元中輸入下列命令：
 
-    ```cmd
+    ```console
     Reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters"
     ```
 3. 如本文 [下一節](#install-the-surface-dock-firmware-update) 所述，安裝更新。
+
 4. 事件2007與下列文字表示成功更新： **固件更新已完成。 hr = 0 DriverTelementry EventCode = 2007**。 
-    - 如果更新未成功，則事件 ID 2007 將會顯示為 **錯誤** 事件，而不是 **資訊**。 此外，Windows 登錄版中報告的版本不會是最新版本。
+
+   如果更新未成功，則事件 ID 2007 將會顯示為 **錯誤** 事件，而不是 **資訊**。 此外，Windows 登錄版中報告的版本不會是最新版本。
+   
 5. 更新完成後，Windows 登錄會顯示更新的 DWORD 值，與目前的工具版本相對應。 如需詳細資訊，請參閱本文的 [版本參考](#versions-reference) 一節。 例如：
+
     - Component10CurrentFwVersion 0x04ac3970 (78395760) 
     - Component20CurrentFwVersion 0x04915a70 (76634736) 
 
@@ -76,15 +83,16 @@ ms.locfileid: "11114551"
 
 - **Msiexec.exe/i \<path to msi file\> /quiet/norestart** 
 
-  例如：
-  ```
-  msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
-  ```
+例如：
 
-  > [!NOTE]
-  > 預設不會建立記錄檔。 若要建立記錄檔，您需要附加 "/l*v [path]"。例如： Msiexec.exe/i \<path to msi file\> /l*v%windir%\logs\ SurfaceDockFWI .log "
+```console
+msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
+```
 
-  如需詳細資訊，請參閱 [命令列選項](https://docs.microsoft.com/windows/win32/msi/command-line-options) 檔。
+> [!NOTE]
+> 預設不會建立記錄檔。 若要建立記錄檔，您需要附加 "/l*v [path]"。例如： Msiexec.exe/i \<path to msi file\> /l*v%windir%\logs\ SurfaceDockFWI .log "
+
+如需詳細資訊，請參閱 [命令列選項](https://docs.microsoft.com/windows/win32/msi/command-line-options) 檔。
 
 > [!IMPORTANT]
 > 如果您想要使用任何其他方法，讓 Surface Dock 保持更新，請參閱 [更新 Surface dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) 以取得詳細資料。
@@ -164,14 +172,20 @@ Surface dock 固件由兩個元件組成：
 - 使用 Surface Pro X 更新 Surface Dock 1。 
    > [!NOTE]
    > 如果您正在執行 Surface Pro X，請下載。ARM64 組建。 針對所有其他裝置，請使用 AMD64 組建。 
+
+#### 登錄機碼值
+
+指示固件更新狀態的登錄值不會與舊版此工具保持相同： 
+
+- Component10CurrentFwVersion 更新到 **4ac3970**。
+- Component20CurrentFwVersion 更新到 **4a1d570**。
  
-
-
 ### 版本1.42.139 
 *發行日期： 18 2019 年9月*
 
 此版本（包含在 Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI 中）會更新背景中的固件。 
-**更新的登錄機碼值：**<br>
+
+#### 更新的登錄機碼值
 
 - Component10CurrentFwVersion 更新到 **4ac3970**。
 - Component20CurrentFwVersion 更新到 **4a1d570**。
