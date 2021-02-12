@@ -1,0 +1,122 @@
+### YamlMime:Landing
+title: Surface Duo 文件
+summary: 使用 Microsoft 365 和 Android 行動裝置應用程式的雙螢幕提供行動生產力
+metadata:
+  title: Surface Duo 文件
+  description: Microsoft Surface Duo 快速入門
+  ms.service: product-insights
+  ms.topic: landing-page
+  manager: laurawi
+  author: greg-lindsay
+  ms.author: greglin
+  audience: itpro
+  ms.localizationpriority: medium
+  ms.openlocfilehash: 21a98b8daa3cb3200109edbf65f3344c2058cf11
+  ms.sourcegitcommit: 37e0994e2b8ae62b0352b016b698edcc7ca500fb
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "11326026"
+landingContent:
+- title: 新功能
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: 適用於 Surface Duo 的 Fluent UI 架構
+      url: https://devblogs.microsoft.com/surface-duo/fluent-ui-android-dual-screen
+    - text: 將 Android 企業版專用裝置註冊為 Azure AD 共用裝置模式
+      url: https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-enroll-android-enterprise-dedicated/ba-p/1820093
+    - text: Surface Duo 使用 Microsoft 機制背後的意義
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/behind-the-scenes-on-surface-duo-with-microsoft-mechanics/ba-p/1665998
+- title: 開始使用
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 探索使用 Surface Duo (YouTube) 的新方式
+      url: https://www.youtube.com/playlist?list=PLNA-j_cL4mUTCt7P_IZrMZL5Manoz4QrX
+    - text: 尋找 Surface Duo 的商業轉銷商
+      url: https://www.microsoft.com/surface/business/where-to-buy-microsoft-surface
+    - text: 新增受控的 Google Play 應用程式
+      url: https://docs.microsoft.com/mem/intune/apps/apps-add-android-for-work
+- title: Surface Duo
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Surface Duo 管理概觀
+      url: surface-duo-manage.md
+    - text: Surface Duo 安全性概觀
+      url: surface-duo-secure.md
+    - text: Surface Duo 技術規格
+      url: https://www.microsoft.com/surface/business/surface-duo
+- title: 在 MDM 管理中註冊 Surface Duo
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 註冊 Android 企業版工作設定檔裝置
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll
+    - text: 註冊完全受控的裝置
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-fully-managed-enroll
+    - text: 註冊專用裝置
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-kiosk-enroll
+- title: 註冊 Surface Duo
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 針對 Surface Duo 設定 Android 企業版工作設定檔
+      url: surface-duo-config-work-profile.md
+    - text: 新增受控 Android 企業版裝置的應用程式設定原則
+      url: https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-android
+    - text: 使用 Microsoft Intune 管理裝置
+      url: https://docs.microsoft.com/mem/intune/remote-actions/device-management
+  - linkListType: video
+    links:
+    - text: 在企業版中使用 Surface Duo 部署、管理及啟用生產力
+      url: https://youtu.be/DOsBMNFmdfw
+- title: 探索安全性指導
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Android 企業版安全性設定架構
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework
+    - text: Android 企業版工作設定檔安全性設定
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-security-settings
+    - text: Android 企業版合規性設定
+      url: https://docs.microsoft.com/mem/intune/protect/compliance-policy-create-android-for-work
+- title: 開發 Surface Duo 應用程式
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 取得 Surface Duo SDK
+      url: https://docs.microsoft.com/dual-screen/android/get-duo-sdk
+    - text: 將 Android 應用程式帶入 Surface Duo
+      url: https://docs.microsoft.com/dual-screen/android/bring-to-duo
+    - text: 使用 Surface Duo 模擬器
+      url: https://docs.microsoft.com/dual-screen/android/use-emulator
+- title: Surface Duo 疑難排解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Android 企業版裝置問題疑難排解
+      url: https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-android-enrollment
+    - text: 行動應用程式管理疑難排解
+      url: https://docs.microsoft.com/mem/intune/apps/troubleshoot-mam
+    - text: Android 裝置的 Surface 生命週期
+      url: surface-lifecycle-android-devices.md
+- title: 參與 Surface 社群
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Microsoft Ignite - Android 裝置管理
+      url: https://youtu.be/szQMosnYETc
+    - text: Surface IT 專業人員部落格
+      url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+    - text: Surface 裝置技術社群
+      url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+- title: 需要協助？
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: 連絡 Surface Duo 支援
+      url: /surface-duo/contact-surface-duo-support
+    - text: 商務用 Surface 保固與擴充服務方案
+      url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
