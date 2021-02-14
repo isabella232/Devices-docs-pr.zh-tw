@@ -11,34 +11,34 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: aa883bb614b3d0230e00b4b8254e673182d60751
-  ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
+  ms.openlocfilehash: 9360df030e5a562dfeb3ad471c228408122c3471
+  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "11255684"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "11328177"
 landingContent:
 - title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Surface Pro 7 + for Business
+    - text: 商務用 Surface Pro 7+
       url: https://www.microsoft.com/surface/business/surface-pro-7-plus
-    - text: Surface 膝上型電腦前往商務用
+    - text: Surface Laptop Go for Business
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: 商務用 Surface Pro X
       url: https://www.microsoft.com/surface/business/surface-pro-x
     - text: 探索所有 Surface 系列產品
       url: https://www.microsoft.com/surface/business
-- title: 入門
+- title: 開始使用
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Pro 7 + for Business 中的新功能
+    - text: 商務用 Surface Pro 7+ 的新增功能
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
     - text: Surface 上的 Windows 虛擬桌面
       url: windows-virtual-desktop-surface.md
-    - text: 表面停靠2的新功能
+    - text: Surface Dock 2 的新增功能
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
@@ -46,9 +46,9 @@ landingContent:
     links:
     - text: 使用 Surface & AutoPilot 進行零觸控部署
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: 遠端世界上的 Surface Pro X 和 Windows on ARM
+    - text: 遠端世界 ARM 上的 Surface Pro X 和 Windows
       url: https://youtu.be/bDw77ZQNPPw
-    - text: 從 Microsoft 開始，Surface Security-從 Microsoft 到雲端的雲端端點保護
+    - text: Surface 安全性 – Microsoft 的至雲端新式端點保護的晶片
       url: https://youtu.be/uadAecDbqf4
 - title: 部署 Surface 裝置
   linkLists:
@@ -58,7 +58,7 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: 適用於 Windows Autopilot 的 Surface 註冊支援
       url: surface-autopilot-registration-support.md
-    - text: Surface 部署加速器工具
+    - text: Surface 部署快速鍵工具
       url: microsoft-surface-deployment-accelerator.md
 - title: 管理 Surface 裝置
   linkLists:
@@ -84,9 +84,9 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Surface 裝置上的 DMA 保護
+    - text: Surface 裝置上的 DMA Protection
       url: dma-protect.md
-    - text: '使用 Surface Enterprise 管理模式的安全 Surface Dock 2 埠 (SEMM) '
+    - text: '使用 Surface Enterprise 管理模式在 SEMM (保護 Surface Dock 2 埠) '
       url: secure-surface-dock-ports-semm.md
     - text: Surface Data Eraser 工具
       url: microsoft-surface-data-eraser.md
@@ -100,7 +100,7 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: 電池限制設定
       url: battery-limit.md
-- title: 參與 Surface 社區
+- title: 參與 Surface 社群
   linkLists:
   - linkListType: learn
     links:
@@ -116,5 +116,5 @@ landingContent:
     links:
     - text: 連絡 Surface 支援
       url: contact-surface-support.md
-    - text: 商務用 Surface 保固與擴充服務方案
+    - text: 商務用 Surface 保固與保護方案
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
