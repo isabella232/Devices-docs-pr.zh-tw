@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/11/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 34a05eeabd284e0ad43317577b8e7ff9348ffe21
-ms.sourcegitcommit: 7e028c1e66fb393dc0e8917dac257ce95e5e9ce7
+ms.openlocfilehash: 0cc444eab51e9c3cc0bf2f9c2f0c36ac491906b1
+ms.sourcegitcommit: 7b09b4bc757c5385c4f5560713cb03448afde9ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327337"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "11339364"
 ---
 # 使用 Surface Hub Recovery Tool
 
@@ -56,9 +56,9 @@ ms.locfileid: "11327337"
 Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/details.aspx?id=52210)的 Surface Hub 工具下載，檔案名為**SurfaceHub_Recovery_v2.7.139.0.msi。**
 
 > [!IMPORTANT]
-> 此版本于 2021 年 2 月 11 日發行，會取代先前無法再運作的版本。 如果您先前下載過此工具，請捨棄並使用目前版本。
+> 此版本于 2021 年 2 月 11 日發行，取代先前無法再運作的版本。 如果您先前下載過此工具，請卸載並安裝目前版本。
 
-若要開始下載，請按一下****[下載**SurfaceHub_Recovery_v2.7.139.0.msi，再**按一下 [下一**步**。 從快顯視窗中，選擇下列其中一項：
+若要開始下載，請按一下****[下載**SurfaceHub_Recovery_v2.7.139.0.msi，然後**按 [下一**步**。 從快顯視窗選擇下列其中一項：
 
 - 按一下 **[** 執行並立即開始安裝。
 - 按一下 **[儲存** 以將下載複製到您的電腦，供日後安裝。
@@ -82,7 +82,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 
 4. 在選取圖像視窗中，按一下**RS2**或其後續版本******20H2，** 選取 [繼續，然後選取**下載影像。**
 
-     ![修復工具選取圖像 ](images/shrt-select-image.png) ![ 復原工具下載圖像](images/shrt-download-image.png)
+     ![修復工具選取圖像 ](images/shrt-select-image.png) ![ 修復工具下載圖像](images/shrt-download-image.png)
 
 5. 下載復原映射的時間取決於網際網路連線速度。 在一般的公司關係上，最多可能需要一小時的時間下載 8 GB 圖像檔案。
 
@@ -90,7 +90,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 
 
 
-5. 下載完成後，工具會指示您連接 SSD 磁片磁碟機。 如果工具找不到附加的磁片磁碟機，使用中的纜線很有可能不會向 Windows 報告 SSD 的名稱。  影像工具必須先將光碟機名稱尋找為「LITEON L CH-128V2S USB 裝置」，才能繼續。  若要瞭解如何從 Surface Hub 移除現有磁片磁碟機，請參閱[Surface Hub SSD 更換。](surface-hub-ssd-replacement.md)
+5. 下載完成後，工具會指示您連接 SSD 磁片磁碟機。 如果工具找不到附加的磁片磁碟機，使用中的纜線很有可能不會向 Windows 報告 SSD 名稱。  影像工具必須先將光碟機名稱尋找為「LITEON L CH-128V2S USB 裝置」，才能繼續。  若要瞭解如何從 Surface Hub 移除現有磁片磁碟機，請參閱[Surface Hub SSD 更換。](surface-hub-ssd-replacement.md)
 
     ![連接 SSD](images/shrt-drive.png)
 
@@ -98,7 +98,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 
 
 
-    在將系統映射新用至磁片磁碟機之前，系統會重新區整並格式化 SSD。 複製系統二進位檔案大約需要 30 分鐘，但可能需要較長的時間，視 USB 母線的速度、使用的纜線或您系統安裝的防毒軟體而不同。
+    將系統映射新用至磁片磁碟機之前，系統會重新區整並格式化 SSD。 複製系統二進位檔案大約需要 30 分鐘，但可能需要較長的時間，視 USB 母線的速度、使用的纜線或您系統安裝的防毒軟體而不同。
 
 
 
@@ -109,14 +109,14 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 工具無法對 SSD 進行影像 | 請確定您使用的是出廠時提供的 SSD 和其中一個測試纜線。
 重新製作程式顯示為暫停/凍結 | 可以放心關閉並重新啟動 Surface Hub 修復工具，對 SSD 不會造成任何影響。
 工具無法識別該磁碟機 | 確認 Surface Hub SSD 列舉為Lite-On LITEON L CH-128V2S USB 裝置」的磁片磁碟機。  如果硬碟被識別為另一個已命名的裝置，表示您目前的纜線不相容。 請嘗試上述其他纜線或其中一條測試纜線。
-錯誤：-2147024809 | 開啟磁片管理器並移除 Surface Hub 磁片磁碟機上的磁碟分割。  將硬碟中斷連接並重新連接到主機電腦。 再次重新開機影像工具。
+錯誤：-2147024809 | 開啟磁片管理器並移除 Surface Hub 磁片磁碟機上的磁碟分割。  將硬碟中斷連接並重新連接到主機電腦。 重新開機影像工具。
 
 如果工具無法重新映射您的硬碟，請聯絡 [Surface Hub 支援](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)人員。
 
 ## 版本歷程記錄
 
 
-### 版本 v2.7.139.0
+### 版本 2.7.139.0
 
 *發行日期：2021 年 2 月 11 日*<br>
 此版本的 Surface Hub 修復工具新增下列支援：
@@ -124,7 +124,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 - 安全性更新
 
 
-### 版本 v2.0.139.0
+### 版本 2.0.139.0
 
 > [!IMPORTANT]
 > 此版本已無法運作。 請下載上列的目前版本。 
@@ -132,7 +132,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 *發行日期：2020 年 12 月 18 日*<br>
 此版本的 Surface Hub 修復工具新增下列支援：
 - 更新以支援 Windows 10 小組 2020 更新 (20H2) 
-- 使用者體驗的改良功能
+- 使用者體驗改進
 - 架構變更
 - 遙測新增專案
 
