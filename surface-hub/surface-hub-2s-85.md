@@ -1,7 +1,7 @@
 ---
 title: Surface Hub 2S 85 英吋
-description: 本文將介紹 Surface Hub 2 秒85英寸。
-keywords: Surface Hub 2 秒85，技術規格
+description: 本文將介紹 Surface Hub 2S 85 英吋。
+keywords: Surface Hub 2S 85，技術規格
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,60 +9,60 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/05/2021
+ms.date: 02/26/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 01d9712bce55a6be28a58adccdc9a2eef0837c52
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: 88a4937033c7dbb1a15574e82aef2670ebab17e7
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314386"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385201"
 ---
-# Surface Hub 2 秒 85 "概覽 & 技術規格
+# <a name="surface-hub-2s-85-overview--tech-specs"></a>Surface Hub 2S 85" 概觀&技術規格
 
-[85] 版本的 Surface Hub 系列會將 Surface Hub 的2次體驗帶入需要較大螢幕（例如會議室、棋盤或較大的 huddle 空間）的空間。 Surface Hub 2 85 "提供下列體驗：
+Surface Hub 系列 85" 版本將 Surface Hub 2S 體驗帶到需要較大螢幕的空間，例如會議室、會議室或更大的空間。 Surface Hub 2S 85" 提供下列體驗：
 
-- **專為群組共同作業而設計。** 在 microsoft 團隊中，邀請您同時在 Microsoft 白板中同時進行筆跡加上較大的遠端參與者。
-- **一致的 Surface Hub 2 到2體驗。** 提供相同的 premium 設計、4K 顯示技術、觸控、手寫筆/筆跡、計算墨水匣及相機支援（如 Surface Hub 2 50」）。
-- **與現有和新的 A/V 系統整合。** 與 Microsoft 團隊認證的外設結合，並與 Microsoft 團隊聊天室整合。
+- **專為群組共同合作設計。** 在 Microsoft Whiteboard 中同時邀請同時使用書寫功能，以及 Microsoft Teams 中較大型的遠端出席者。
+- **一致的 Surface Hub 2S 體驗。** 提供與 Surface Hub 2S 50 相同的進位設計、4K 顯示技術、觸控、手寫筆/筆墨、計算卡匣和相機支援。
+- **與現有及新的 A/V 系統整合。** 與 Microsoft Teams 認證的周邊環境結合，並整合 Microsoft Teams 會議室。
 
-![Surface Hub 2 秒 85 "](images/hub-2s-85.png)
+![Surface Hub 2S 85"](images/hub-2s-85.png)
 
-## Surface Hub 2S 85" 技術規格
+## <a name="surface-hub-2s-85-tech-specs"></a>Surface Hub 2S 85" 技術規格
 
 | 元件    | 說明                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 三維        | 44.5 "x 77.1" x 3.4 "<br> (1130 mm x 1959 mm x 85.6 mm)                                                                                                                                                                                                         |
-| 發貨尺寸        | 89.5 "x 62" x 22.8 "<br> (2275 mm x 1573 mm x 580 mm)                                                                                                                                                                                                         |
-| 粗細            | 185磅 (84 公斤)                                                                                                                                                                                                                                             |
-| 裝貨體重            | 399磅 (181 公斤)                                                                                                                                                                                                                                             |
+| 尺寸        | 44.5" x 77.1" x 3.4"<br> (1130 mm x 1959 mm x 85.6 mm)                                                                                                                                                                                                         |
+| 出貨維度        | 89.5" x 62" x 22.8"<br> (2275 mm x 1573 mm x 580 mm)                                                                                                                                                                                                         |
+| 粗細            | 185 磅 (84)                                                                                                                                                                                                                                             |
+| 出貨重量            | 399 磅 (181)                                                                                                                                                                                                                                             |
 | 解決方法        | 3840 x 2160                                                                                                                                                                                                                                               |
-| 顯示           | PixelSense™顯示、16:9 長寬比、10位色彩、30.5 mm 框線寬度、防眩向、IPS 液晶顯示幕，以及20同時觸摸點的儲存格內觸控                                                                                                           |
-| 運算           | 模組式計算盒式磁帶<br>四核第八代英特爾®核心™ i5 處理器、8GB RAM、128GB SSD <sup> 1</sup>                                                                                                                                                      |
-| 軟體 <sup> 2</sup>         | Windows 10 團隊作業系統 <sup> 3</sup><br>適用于 Surface Hub 的 Microsoft 團隊<br>商務用 Skype<br>Microsoft Whiteboard<br>Microsoft Office (行動裝置) <br>Microsoft Power BI                                                                                                   |
-| 連線       | USB-A<br>Mini-DisplayPort 影片輸出<br>RJ45 十億位元乙太網<br>HDMI 視頻輸入<br>含 DisplayPort 輸入的 USB-C®<br> (3) USB-C® ([顯示])                                                                                                            |
-| 圖形          | 英特爾® UHD 圖形620                                                                                                                                                                                                                                   |
-| 音訊/視頻       | 100Hz-12KHz 的範圍3路立體喇叭，包括 (2) mid/高範圍，以及 (1) 在後部凸塊中的中/低範圍。 <br>完整區段 8-元素 MEMS 麥克風陣列<br>Microsoft Surface Hub 2 相機、4K、USB-C®連接，90度 HFOV |
-| 手寫筆               | Microsoft Surface Hub 2 手寫筆 (使用中) <br>表面超薄觸筆相容                                                                                                                                                                                       |
-| 感應器           | Doppler 佔用感應器 <sup> 4</sup>                                                                                                                                                                                                                                 |
-| 無線          | Wi-Fi 5： IEEE 802.11 a/b/n/ac 相容<br>藍牙®無線5.0 技術<br>Miracast 顯示                                                                                                                                                      |
-| 產          | 大小寫：以 mineral 複合 resin 的精度加工鋁<br>色彩：白金<br>物理按鈕：電源、音量、來源                                                                                                                            |
-| 瑕疵擔保。         | 1年有限硬體保修 <sup> 5</sup>                                                                                                                                                                                                                          |
-| 方塊中的內容 |  (1) Surface Hub 2 秒<br> (2) Surface Hub 2 筆<br> (1) Surface Hub 2 相機<br>4m AC 電源線<br>快速入門手冊                                                                                                                                         |
+| 顯示器           | PixelSense™ Display， 16：9 長寬比， 10 位色彩， 30.5mm 外邊界寬度， 防震， IPS SDK， 儲存格內觸控與 20 個同時觸控點                                                                                                           |
+| 運算           | 模組式計算卡匣<br>四核心第 8 代 Intel®核心™ i5 處理器、8 GB RAM、128 GB SSD <sup> 1</sup>                                                                                                                                                      |
+| 軟體 <sup> 2</sup>         | Windows 10 小組作業系統<br>Surface Hub 的 Microsoft Teams<br>商務用 Skype<br>Microsoft Whiteboard<br>Microsoft Office (Mobile) <br>Microsoft Power BI                                                                                                   |
+| 連線       | USB-A<br>Mini-DisplayPort影片輸出<br>RJ45 Gigabit 乙太網路<br>HDMI 視區輸入<br>USB-C® DisplayPort 輸入<br> (顯示 3) USB-C® (3)                                                                                                            |
+| 圖形          | Intel®超文字圖形 620                                                                                                                                                                                                                                   |
+| 音訊/視音訊       | 100Hz - 12KHz 範圍 3 向身歷聲喇叭，包括 (2) 中/高範圍和 (1) 中/低範圍後方凸排。 <br>全頻 8 元素 MEMS 麥克風陣列<br>Microsoft Surface Hub 2 相機，4K，USB-C®連接，90 度FCOV |
+| 手寫筆               | Microsoft Surface Hub 2 觸控筆 (使用中) <br>Surface 輕薄觸控筆相容                                                                                                                                                                                       |
+| 感應器           | Doppler 感應器 <sup> 3</sup>                                                                                                                                                                                                                                 |
+| 無線          | Wi-Fi 5：IEEE 802.11 a/b/g/n/ac 相容<br>藍牙®無線 5.0 技術<br>Miracast 顯示器                                                                                                                                                      |
+| 外部          | 母體：精確機制的金屬與複合式元件<br>色彩：白白<br>實體按鈕：電源、音量、來源                                                                                                                            |
+| 瑕疵擔保。         | 1 年有限硬體保 <sup> 固 4</sup>                                                                                                                                                                                                                          |
+| 方塊中的專案 |  (Surface Hub 2S) 1<br> (2) Surface Hub 2 觸控筆<br> (1) Surface Hub 2 相機<br>4m AC Power Cable<br>快速入門手冊                                                                                                                                         |
 
 > [!NOTE]
-> Surface Hub 在一天內最多可以持續使用18個小時。 若要優化效率，Surface Hub 會使用智慧感應器，在沒有偵測到目前狀態時關閉指示燈畫面，這表示一天結束時不需要再加電。 如果裝置是在24小時的工作場所環境中安裝，則可以停用感應器，以符合最大使用的每日18個小時。 請注意，視訊訊號顯示時間可能會造成螢幕上出現燒入或影像保留。 若要深入瞭解管理電源設定，請參閱：
+> Surface Hub 每天最多可持續使用 18 小時。 為了優化效率，Surface Hub 使用智慧感應器在不再偵測到目前狀態時關閉 LED 螢幕，這表示一天結束時不需要關機。 如果裝置安裝在 24 小時工作場所環境中，可以停用感應器，以符合每天 18 小時的最大使用建議。 請注意，視訊的長時間顯示可能會導致畫面出現燒錄或影像保留。 若要深入瞭解如何管理電源設定，請參閱：
 >
 > - [本機管理 Surface Hub 設定](local-management-surface-hub-settings.md)
-> - [SurfaceHub CSP-Windows 用戶端管理](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
-### 參考
+> - [SurfaceHub CSP - Windows 用戶端管理](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
-1. 系統軟體與更新會佔用大量儲存空間。 可用的儲存空間會根據系統軟體與更新及應用程式使用量的變化而有所變更。 1 GB = 1000000000 位元組。 1 TB = 1000 GB。 如需詳細資訊，請參閱 [Surface Storage](https://www.surface.com/storage) 。
-2. 部分功能所需的軟體授權。 單獨出售。
-3. 從 Windows 10 小組升級到 Windows 10 專業版或企業版目前僅適用于 Surface Hub 2 50」。 深入瞭解在 [Surface Hub 2 上遷移至 Windows 10 專業版或企業版](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os)。
-4. Doppler 感應器在香港、印度、科威特和阿曼中無法使用。
-5. 除您的消費者法律權利之外，還有 Microsoft 有限保修。 
+### <a name="references"></a>參考
 
-## 深入了解
+1. 系統軟體和更新會使用大量的儲存空間。 可用的儲存空間可能會根據系統軟體與更新和應用程式使用量而有所變更。 1 GB = 10 億位元組。 1 TB = 1，000 GB。 請參閱 [Surface Storage 以](https://www.surface.com/storage) 進一步查看詳細資料。
+2. 某些功能所需的軟體授權。 另行購買。
+3. Doppler 感應器不適用於香港、印度、科威特和阿拉伯。
+4. Microsoft 的有限保固是您的消費者法律權利之一。 
 
-- [Surface Hub 2-2 85 "-以大量規模進行共同作業](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-2s-85-quot-collaboration-at-a-massive-scale/ba-p/1669717)
+## <a name="learn-more"></a>深入了解
+
+- [Surface Hub 2S 85" - 大規模共同合作](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-2s-85-quot-collaboration-at-a-massive-scale/ba-p/1669717)
