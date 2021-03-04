@@ -12,24 +12,24 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 935f67e88af8b784230becb1cd89f7360b8a0857
-ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
+ms.openlocfilehash: 5e7fca007549d8804a756ef2a042f092f0acb1c3
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924959"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387439"
 ---
-# 管理 Microsoft Surface Hub
+# <a name="manage-microsoft-surface-hub"></a>管理 Microsoft Surface Hub
 
-完成 Microsoft Surface Hub 的初始設定之後，就可以使用下列數種方法來修改或變更裝置的設定和組態：
+初始設定 Microsoft Surface Hub 之後，可以修改或變更裝置設定和設定：
 
 - **本機管理** - 使用個別 Surface Hub 上的 **\[設定\]** 應用程式來在本機上設定。 為防止未經授權的使用者變更設定，[設定]應用程式要求您必須提供系統管理員認證才能開啟應用程式。 如需詳細資訊，請參閱[Surface Hub 設定的本機管理](local-management-surface-hub-settings.md)。
-- **遠端系統管理**-Surface HUB 允許 IT 管理員使用行動裝置管理 (MDM) 提供者（例如 microsoft Intune、Microsoft Endpoint Configuration Manager 及其他協力廠商提供者）來管理設定與原則。 此外，系統管理員可以使用 Microsoft Operations Management Suite (OMS) 監視 Surface Hub。 如需詳細資訊，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)與[監視您的 Microsoft Surface Hub](monitor-surface-hub.md)。 
+- 遠端**管理**- Surface Hub 允許 IT 系統管理員使用行動裝置管理 (MDM) 提供者管理設定和策略，例如 Microsoft Intune、Microsoft Endpoint Configuration Manager 和其他協力廠商提供者。 此外，系統管理員可以使用 Azure 監視器監控 Surface Hub。  詳細資訊請參閱使用 MDM 提供者管理 [設定](manage-settings-with-mdm-for-surface-hub.md)，以及使用 Azure 監視器監控 Surface Hub 以 [追蹤其健康情況](https://docs.microsoft.com/azure/azure-monitor/insights/surface-hubs)。 
 
 > [!NOTE]
-> 這些管理方法不會互斥。 裝置可以同時是本機管理與遠端管理 (如果您選擇的話)。 不過，當 Surface Hub 與管理伺服器同步時，MDM 原則與設定會覆寫任何本機變更。 
+> 這些管理方法不會互斥。 裝置可以同時是本機管理與遠端管理 (如果您選擇的話)。 不過，當 Surface Hub 與管理伺服器同步處理時，MDM 策略和設定會覆寫本地變更。 
 
-## 本節內容
+## <a name="in-this-section"></a>本節內容
 
 深入了解管理及更新 Surface Hub。
 
@@ -47,9 +47,9 @@ ms.locfileid: "10924959"
 | [現有無線網路或區域網路上的 Miracast](miracast-over-infrastructure.md) | 您可以在您的無線網路或區域網路上使用 Miracast 以連接到 Surface Hub。 |
  [啟用 802.1x 有線驗證](enable-8021x-wired-authentication.md) | Surface Hub 裝置上已啟用 802.1x 有線驗證 MDM 原則。 
 | [使用會議室控制系統](https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | 會議室控制系統可以與您的 Microsoft Surface Hub 搭配使用。|
-[使用 Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | 使用 Surface Hub 恢復工具來重新影像 Surface Hub SSD。
-[Surface Hub SSD 取代](surface-hub-ssd-replacement.md) | 瞭解如何在 Surface Hub 中移除及取代固態硬碟。
+[使用 Surface Hub Recovery Tool](surface-hub-recovery-tool.md) | 使用 Surface Hub 修復工具重新映射 Surface Hub SSD。
+[Surface Hub SSD 取代](surface-hub-ssd-replacement.md) | 瞭解如何移除及取代 Surface Hub 中的實心磁碟機。
 
-## 相關主題
+## <a name="related-topics"></a>相關主題
 
 - [檢視 Surface Hub 及 Windows 10 上的 Power BI 簡報模式](https://powerbi.microsoft.com/documentation/powerbi-mobile-win10-app-presentation-mode/)

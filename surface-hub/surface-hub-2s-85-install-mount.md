@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/01/2020
+ms.date: 03/02/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 28278827aeba20f46d5fd79b7a1de6c54bfce1e8
-ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+ms.openlocfilehash: 1fab09ef21dbddbb2b4f292acd716c6e6cbaff7e
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "11385251"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387486"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>安裝和安裝 Surface Hub 2S 85"
 
@@ -24,7 +24,11 @@ ms.locfileid: "11385251"
 
 ## <a name="unboxing-video"></a>取消文字方塊影片
 
-目前提供如何移動及安裝 Surface Hub 2S 85 的影片。 開始之前，請先查看 [Microsoft Surface Hub 2S 85" 取消框線及設定](https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV)。  
+- 開始之前，請先查看 Microsoft Surface Hub 2S 85" 取消框線和設定影片：
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
+
+- 本影片的中文版本請參閱下方的附件[B。](#appendix-b-unboxing-video) 
 
 ## <a name="follow-all-safety-precautions"></a>遵循所有安全預防措施 
 
@@ -37,7 +41,7 @@ ms.locfileid: "11385251"
 >- 為了避免發生脫扣危險，請保持元件區沒有包裝材料。
 
 > [!IMPORTANT]
->繼續進行之前，請審查下列附件中列出的其他 [安全](#appendix) 資訊。
+>繼續進行之前，請審查下列附件 A 中列出的 [其他](#appendix-a-additional-safety-information) 安全資訊。
 
 ## <a name="1-remove-outer-packaging-materials"></a>1. 移除外包裝材料
 
@@ -151,9 +155,7 @@ Surface Hub 2S 85" 使用 600 x 600 VESA 安裝模式。 如下圖所示，Micro
 
 在右側背面的套件中，可找到一組額外的內部包裝系帶材料。
 
-## <a name="appendix"></a>附錄 
-
-### <a name="additional-safety-information"></a>其他安全資訊
+## <a name="appendix-a-additional-safety-information"></a>附件 A：其他安全資訊
 
 > [!WARNING]
 > **重物/人體工學提升**<br>
@@ -203,6 +205,14 @@ Surface Hub 2S 85" 使用 600 x 600 VESA 安裝模式。 如下圖所示，Micro
 > [!WARNING]
 >  **適當的安裝**<br>
 為了避免與不當裝置安裝相關的危險，安裝必須由在開始作業之前已閱讀並瞭解安裝指示的人執行。 如果您沒有所需的設備或專業知識，或如果您不確定的安裝表面，可以適當支援，請查閱專業安裝程式。
+
+
+## <a name="appendix-b-unboxing-video"></a>附件 B：取消為視訊建立框
+
+
+### <a name="microsoft-surface-hub-2s-85-unboxing-and-set-up-video-chinese"></a>Microsoft Surface Hub 2S 85" 取消框線及設定視 (中文) 
+
+> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV]
 
 
 ## <a name="more-information"></a>詳細資訊

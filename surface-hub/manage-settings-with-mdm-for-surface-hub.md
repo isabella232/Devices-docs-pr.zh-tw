@@ -10,35 +10,35 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/07/2018
+ms.date: 03/03/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2bee8b58b7978923c6e60e43f9e10a85dc4bec06
-ms.sourcegitcommit: 17170c03206d190851b5f8e794fcc83ebbed7b5f
+ms.openlocfilehash: d09a95d25b4f4ae86d64acd7d7f16f004f991ce3
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103899"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387500"
 ---
-# 使用 MDM 提供者管理設定 (Surface Hub)
+# <a name="manage-settings-with-an-mdm-provider-surface-hub"></a>使用 MDM 提供者管理設定 (Surface Hub)
 
 Surface Hub 和其他 Windows10 裝置允許 IT 系統管理員使用行動裝置管理 (MDM) 提供者管理設定與原則。 內建的管理元件會與管理伺服器通訊，因此不需要在裝置上安裝額外的用戶端。 如需詳細資訊，請參閱 [Windows10 行動裝置管理](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx)。
 
-Surface Hub 已使用 Microsoft 的第一方 MDM 提供者驗證：
+Surface Hub 已與 Microsoft 的第一方 MDM 提供者進行驗證：
 - Microsoft Intune 獨立式
-- 內部部署的 MDM 與 Microsoft 端點 Configuration Manager
+- 使用 Microsoft 端點群組原則管理員的內部部署 MDM
 
 您也可以使用任何可以使用 MDM 通訊協定與 Windows10 通訊的協力廠商 MDM 提供者來管理 Surface Hub。
 
-## <a href="" id="enroll-into-mdm"></a>將 Surface Hub 註冊到 MDM
-您可以使用大量、手動或自動登記來註冊 Surface Hub。
+## <a name="enroll-a-surface-hub-into-mdm"></a><a href="" id="enroll-into-mdm"></a>將 Surface Hub 註冊到 MDM
+您可以使用大量、手動或自動註冊來註冊 Surface Hub。
 
-### 大量註冊
+### <a name="bulk-enrollment"></a>大量註冊
 **設定大量註冊**
 - Surface Hub 支援使用[佈建 CSP](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx) 來大量註冊到 MDM。 如需詳細資訊，請參閱 [Windows10 大量註冊](https://msdn.microsoft.com/library/windows/hardware/mt613115.aspx)。<br>
 --或--
-- 如果您擁有內部部署的 Microsoft 端點 Configuration Manager 基礎結構，請參閱 [如何使用 Microsoft 端點配置系統管理器在內部部署行動裝置管理中大量註冊裝置](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)。
+- 如果您有內部部署 Microsoft Endpoint Configuration Manager 基礎結構，請參閱如何在 Microsoft 端點群組原則管理員中大量註冊使用 [內部部署行動裝置管理的裝置](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)。
 
-### 手動註冊
+### <a name="manual-enrollment"></a>手動註冊
 **設定手動註冊**
 1. 在 Surface Hub 上，開啟 **\[設定\]**。
 2. 出現提示時，請輸入裝置系統管理員認證。
@@ -46,21 +46,21 @@ Surface Hub 已使用 Microsoft 的第一方 MDM 提供者驗證：
 4. 在 **\[裝置管理\]** 下，選取 **\[+ 裝置管理\]**。
 5. 依照對話方塊中的指示來連線到您的 MDM 提供者。
 
-### 透過 Azure Active Directory join 自動登記
+### <a name="automatic-enrollment-via-azure-active-directory-join"></a>透過 Azure Active Directory 加入自動註冊
 
-Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動註冊 Intune。 
+Surface Hub 現在支援將裝置加入 Azure Active Directory 以自動註冊 Intune 的能力。 
 
-第一步是設定自動 MDM 註冊。 請參閱 [啟用 Windows 10 自動註冊](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)。
+第一個步驟是設定自動 MDM 註冊。 請參閱 [啟用 Windows 10 自動註冊](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)。
 
-接著，當裝置在第一次執行期間進行設定時，請加入宣告 Azure Active Directory 的選項，請參閱 [設定此裝置的管理員頁面](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
+然後在首次執行期間設定裝置時，加入宣告 Azure Active Directory 的選項，請參閱設定此裝置 [頁面的系統管理員](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
 
-## 使用 MDM 管理 Surface Hub 設定
+## <a name="manage-surface-hub-settings-with-mdm"></a>使用 MDM 管理 Surface Hub 設定
 
-您可以使用 MDM 管理某些 [Surface Hub CSP 設定](#supported-surface-hub-csp-settings)，以及某些 [Windows10 設定](#supported-windows-10-settings)。 根據您使用的 MDM 提供者，您可以使用內建使用者介面設定這些設定，或者部署自訂 SyncML。 Microsoft Intune 和 Microsoft 端點設定管理員提供內建體驗，以協助建立 Surface Hub 的原則範本。 請參閱您的 MDM 提供者文件，以了解如何建立及部署 SyncML。
+您可以使用 MDM 管理某些 [Surface Hub CSP 設定](#supported-surface-hub-csp-settings)，以及某些 [Windows10 設定](#supported-windows-10-settings)。 根據您使用的 MDM 提供者，您可以使用內建使用者介面設定這些設定，或者部署自訂 SyncML。 Microsoft Intune 和 Microsoft Endpoint Configuration Manager 提供內建體驗，可協助建立 Surface Hub 的策略範本。 請參閱您的 MDM 提供者文件，以了解如何建立及部署 SyncML。
 
-### 支援的 Surface Hub CSP 設定
+### <a name="supported-surface-hub-csp-settings"></a>支援的 Surface Hub CSP 設定
 
-您可以使用 MDM，設定下列表格中的 Surface Hub 設定。 此表格會識別 Microsoft Intune、Microsoft 端點建構管理員或 SyncML 是否支援此設定。
+您可以使用 MDM，設定下列表格中的 Surface Hub 設定。 表格可識別 Microsoft Intune、Microsoft 端點組設定管理員或 SyncML 是否支援此設定。
 
 如需詳細資訊，請參閱 [SurfaceHub 設定服務提供者](https://msdn.microsoft.com/library/windows/hardware/mt608323)。 
 
@@ -74,7 +74,7 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 |                 針對無線投影使用的 Miracast 通道                  |                                               InBoxApps/WirelessProjection/Channel                                               |                       是                        | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 |              連線到您的 Operations Management Suite 工作區               |                                         MOMAgent/WorkspaceID <br> MOMAgent/WorkspaceKey                                          |                       是                        | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 |                         歡迎畫面背景影像                          |                                             InBoxApps/Welcome/CurrentBackgroundPath                                              |                       是                        | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
-|               歡迎畫面上顯示的會議資訊                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       是                        | 是。<br> [使用自訂的設定]。 ( # 範例-管理 surface 中樞-使用-microsoft-端點-configuration manager |             是             |
+|               歡迎畫面上顯示的會議資訊                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       是                        | 是。<br> [使用自訂設定]。 (#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager |             是             |
 |                      無線投影的易記名稱                       |                                                     Properties/FriendlyName                                                      | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 |                   裝置帳戶                                                 | DeviceAccount/*`<name_of_policy>`* <br> 請參閱 [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)。 |                        否                        |                       否                        |             是             |
 |                               指定 Skype 網域                               |                                              InBoxApps/SkypeForBusiness/DomainName                                               |                    是 </br>                     | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
@@ -92,13 +92,13 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-### 支援的 Windows10 設定
+### <a name="supported-windows-10-settings"></a>支援的 Windows10 設定
 
 除了 Surface Hub 特定設定以外，還有許多所有 Windows10 裝置通用的設定。 這些設定定義在[設定服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)中。 
 
-下表包含已使用 Surface Hub 驗證之 Windows10 設定的相關資訊。 有包含下列領域之設定的表格：安全性、瀏覽器、Windows 更新、Windows Defender、遠端重新開機、憑證和記錄檔。 每個資料表都會識別 Microsoft Intune、Microsoft 端點建構管理員或 SyncML 是否支援此設定。
+下表包含已使用 Surface Hub 驗證之 Windows10 設定的相關資訊。 有包含下列領域之設定的表格：安全性、瀏覽器、Windows 更新、Windows Defender、遠端重新開機、憑證和記錄檔。 每個資料表會識別 Microsoft Intune、Microsoft 端點組設定管理員或 SyncML 是否支援該設定。
 
-#### 安全性設定
+#### <a name="security-settings"></a>安全性設定
 
 |      設定       |                                            詳細資料                                             |                                                                          CSP 參考                                                                           |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |--------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -111,7 +111,7 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。 
 
-#### 瀏覽器設定
+#### <a name="browser-settings"></a>瀏覽器設定
 
 |                          設定                          |                                                                        詳細資料                                                                        |                                                                             CSP 參考                                                                              |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -121,13 +121,13 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 |                    允許不要追蹤功能                     |                                                          用來啟用「不要追蹤」標頭。                                                          |                          [Browser/AllowDoNotTrack](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDoNotTrack)                          | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 |                       允許快顯視窗                       |                                                         用來封鎖快顯瀏覽器視窗。                                                          |                              [Browser/AllowPopups](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowPopups)                              | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 |                 允許搜尋建議                  |                                                  用來封鎖網址列中的搜尋建議。                                                  |       [Browser/AllowSearchSuggestionsinAddressBar](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSearchSuggestionsinAddressBar)       | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
-|                     允許 Windows Defender SmartScreen                     |                                                       讓這個功能保持啟用，以開啟 Windows Defender SmartScreen。                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
-| 避免忽視網站的 Windows Defender SmartScreen 警告 |     如需額外的安全性，請用來防止使用者忽略 Windows Defender SmartScreen 警告，並封鎖他們存取可能有害的網站。     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
-|  避免忽略檔案的 Windows Defender SmartScreen 警告   | 如需額外的安全性，請用來防止使用者忽略 Windows Defender SmartScreen 警告，並封鎖他們無法從 Microsoft Edge 下載未驗證的檔案。 | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
+|                     允許 Windows Defender SmartScreen                     |                                                       保持啟用此功能以開啟 Windows Defender SmartScreen。                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
+| 避免忽略網站的 Windows Defender SmartScreen 警告 |     為增加安全性，請使用來避免使用者忽略 Windows Defender SmartScreen 警告，並封鎖他們存取潛在惡意網站。     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
+|  防止忽略檔案的 Windows Defender SmartScreen 警告   | 為了增加安全性，請使用防止使用者忽略 Windows Defender SmartScreen 警告，並禁止他們從 Microsoft Edge 下載未驗證的檔案。 | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### Windows Update 設定
+#### <a name="windows-update-settings"></a>Windows Update 設定
 
 |                      設定                      |                                                                                                           詳細資料                                                                                                            |                                                                    CSP 參考                                                                    |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -141,37 +141,37 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### Windows Defender 設定
+#### <a name="windows-defender-settings"></a>Windows Defender 設定
 
 |      設定      |                                              詳細資料                                               |                                                     CSP 參考                                                      |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |-------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
 | Defender 原則 |            用來設定各種 Defender 設定，包括排定的掃描時間。            | Defender/*`<name of policy>`* <br> 請參閱[原則 CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
-|  Defender 狀態  | 用來啟動 Defender 掃描、強制執行安全情報更新、查詢偵測到的任何威脅。 |                   [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       是                        |                       是                       |             是             |
+|  Defender 狀態  | 用於啟動 Defender 掃描、強制安全性智慧更新、查詢偵測到的任何威脅。 |                   [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       是                        |                       是                       |             是             |
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### 遠端重新開機
+#### <a name="remote-reboot"></a>遠端重新開機
 
 |                       設定                        |                                                          詳細資料                                                          |                                                             CSP 參考                                                             |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-|            立即將裝置重新開機             | 搭配 OMS 使用，以最小化支援成本 – 請參閱[監視您的 Microsoft Surface Hub](monitor-surface-hub.md)。 |        ./Vendor/MSFT/Reboot/RebootNow <br> 請參閱[重新開機 CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)        |                       是                        |                       否                        |             是             |
+|            立即將裝置重新開機             | 與 Azure 監視器一起使用以將支援成本降到最低 – 請參閱監控[您的 Microsoft Surface Hub。](monitor-surface-hub.md) |        ./Vendor/MSFT/Reboot/RebootNow <br> 請參閱[重新開機 CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)        |                       是                        |                       否                        |             是             |
 |    在排定的日期和時間將裝置重新開機    |                                                        請參閱上面的資訊。                                                         |     ./Vendor/MSFT/Reboot/Schedule/Single <br> 請參閱[重新開機 CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)     | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 | 每日在排定的日期和時間將裝置重新開機 |                                                        請參閱上面的資訊。                                                         | ./Vendor/MSFT/Reboot/Schedule/DailyRecurrent <br> 請參閱[重新開機 CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | 是 <br> [使用自訂原則。](#example-manage-surface-hub-settings-with-microsoft-intune) | 是。<br> [使用自訂設定。](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             是             |
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### 安裝憑證
+#### <a name="install-certificates"></a>安裝憑證
 
 |             設定             |                           詳細資料                            |                                           CSP 參考                                            |                                                         支援<br>Intune？                                                          |                                                                  支援<br>Configuration Manager？                                                                  | 支援<br>SyncML\*? |
 |---------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| 安裝受信任的 CA 憑證 | 用來部署受信任的根與中繼 CA 憑證。 | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | 是。 <br> 請參閱[設定 Intune 憑證設定檔](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles)。 | 是。 <br> 請參閱 [如何在 Microsoft 端點設定管理員中建立證書設定檔](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles)。 |             是             |
+| 安裝受信任的 CA 憑證 | 用來部署受信任的根與中繼 CA 憑證。 | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | 是。 <br> 請參閱[設定 Intune 憑證設定檔](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles)。 | 是。 <br> 瞭解如何 [在 Microsoft Endpoint Configuration Manager 中建立憑證設定檔](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles)。 |             是             |
 
 <!--
 | Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
 -->
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### 收集記錄檔
+#### <a name="collect-logs"></a>收集記錄檔
 
 |     設定      |                      詳細資料                       |                                     CSP 參考                                      | 支援<br>Intune？ | 支援<br>Configuration Manager？ | 支援<br>SyncML\*? |
 |------------------|----------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------|------------------------------------------|-----------------------------|
@@ -181,7 +181,7 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 | Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### 設定網路服務品質 (QoS) 原則
+#### <a name="set-network-quality-of-service-qos-policy"></a>設定網路服務品質 (QoS) 原則
 
 |        設定         |                                                            詳細資料                                                             |                                                    CSP 參考                                                     |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -189,7 +189,7 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### 設定網路 Proxy
+#### <a name="set-network-proxy"></a>設定網路 Proxy
 
 |      設定      |                               詳細資料                               |                                                CSP 參考                                                 |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |-------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -197,7 +197,7 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-#### 設定 [開始] 功能表
+#### <a name="configure-start-menu"></a>設定 [開始] 功能表
 
 |       設定        |                                                                       詳細資料                                                                        |                                                        CSP 參考                                                         |            支援<br>Intune？             |    支援<br>Configuration Manager？     | 支援<br>SyncML\*? |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -205,8 +205,8 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 
 \*SyncML 支援的「設定」也可以在 Windows 設定設計工具佈建套件中設定。
 
-### 產生設定的 OMA URI 
-您需要使用設定的 OMA URI，在 Intune 中建立自訂原則，或在 Microsoft 端點建構管理員中建立自訂設定。
+### <a name="generate-oma-uris-for-settings"></a>產生設定的 OMA URI 
+您必須使用設定 OMA URI 在 Intune 中建立自訂策略，或在 Microsoft 端點組設定管理員中建立自訂設定。
 
 **產生 CSP 文件中任何設定的 OMA URI**
 1. 在 CSP 文件中，識別 CSP 的根節點。 一般而言，這看起來像是 `./Vendor/MSFT/<name of CSP>` <br>
@@ -222,17 +222,17 @@ Surface Hub 現在支援透過將裝置加入 Azure Active Directory 來自動�
 - bool (布林值)
 
 
-## 範例︰使用 Microsoft Intune 管理 Surface Hub 設定
+## <a name="example-manage-surface-hub-settings-with-microsoft-intune"></a>範例︰使用 Microsoft Intune 管理 Surface Hub 設定
 
 您可以使用 Microsoft Intune 管理 Surface Hub 設定。 如需了解自訂設定，請依照[如何在 Microsoft Intune 中設定自訂裝置設定](https://docs.microsoft.com/intune/custom-settings-configure)中的指示進行。 針對 **\[平台\]** 選取 **\[Windows 10 和更新版本\]**，並在 **\[設定檔類型\]** 中選取 **\[裝置限制 (Windows 10 團隊版)\]**。
 
 
 
-## 範例：使用 Microsoft 端點 Configuration Manager 管理 Surface Hub 設定
-Configuration Manager 支援管理不需要 Configuration Manager 用戶端來管理的新式裝置，包括 Surface Hub。 如果您已使用 Configuration Manager 管理組織中的其他裝置，您可以繼續使用 Configuration Manager 主控台作為管理 Surface Hub 的單一位置。
+## <a name="example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager"></a>範例：使用 Microsoft Endpoint Configuration Manager 管理 Surface Hub 設定
+Configuration Manager 支援管理不需要 Configuration Manager 用戶端來管理的新式裝置，包括 Surface Hub。 如果您已經使用 Configuration Manager 來管理貴組織的其他裝置，您可以繼續使用 Configuration Manager 主控台做為管理 Surface Hub 的單一位置。
 
 > [!NOTE]
-> 這些指示是以 Configuration Manager 的目前分支為基礎。
+> 這些指示是以 Configuration Manager 目前的分支為基礎。
 
 **建立 Surface Hub 設定的設定項目**
 
@@ -267,9 +267,9 @@ Configuration Manager 支援管理不需要 Configuration Manager 用戶端來�
 18. 一旦您完成後，在 **\[瀏覽設定\]** 對話方塊上，按一下 **\[關閉\]**。
 19. 完成精靈。 <br> 您可以在 **\[資產與合規性\]** 工作區的 **\[設定項目\]** 節點中檢視新的設定項目。
 
-如需詳細資訊，請參閱針對 [沒有 Microsoft 端點 Configuration Manager 用戶端管理的 windows 8.1 和 windows 10 裝置建立設定項目](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)。
+有關詳細資訊，請參閱建立 [Windows 8.1 和 Windows 10](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)裝置在沒有 Microsoft 端點 Configuration Manager 用戶端的情況下管理的組組專案。
 
-## 相關主題
+## <a name="related-topics"></a>相關主題
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)
 

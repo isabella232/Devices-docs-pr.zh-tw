@@ -1,48 +1,48 @@
 ---
 title: 作業系統基本資訊 (Surface Hub)
-description: 本主題說明 Windows 10 小組作業系統的獨特層面，以及它與 Windows 10 企業版有何差異。
+description: 本主題說明 Windows 10 小組作業系統的獨特層面，以及它與 Windows 10 企業版的不同。
 keywords: 變更歷程記錄
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 03/03/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: cae09fa3a21fe497d021f38621085b639b15c4da
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: f3ffcc46912fba3313e4489f5713b6ffcacf2d8a
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013403"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387474"
 ---
-# 作業系統基本資訊 (Surface Hub)
+# <a name="operating-system-essentials-surface-hub"></a>作業系統基本資訊 (Surface Hub)
 
 Surface Hub 作業系統 Windows 10 團隊版是以 Windows 10 企業版為基礎，針對企業管理、安全性及其他功能提供豐富支援。 但是，它們之間有重要差異。 企業版是針對電腦設計，Windows 10 團隊版則是針對大型螢幕和會議室從頭開始設計。 當您評估 Surface Hub 的安全性和管理需求時，最好是將它視為新的作業系統。 本文的設計是為協助凸顯 Surface Hub 上的 Windows 10 團隊版和 Windows 10 企業版的主要差異，以及這些差異對您的組織有哪些意義。
 
-從2020年9月開始，客戶可以選擇遷移至 Windows 10 專業中心或 Surface Hub 的 Enterprise。 若要深入了解，請參閱下列主題：
+從 2020 年 9 月開始，客戶可選擇在 Surface Hub 2S 上移移至 Windows 10 專業版或企業版。 若要深入了解，請參閱下列主題：
 
-- [宣佈 Surface Hub 2 上的 Windows 10 專業版與企業版的可用性](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
+- [宣佈 Surface Hub 2 上的 Windows 10 專業版和企業版推出](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
 
 - [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
 
-## 使用者介面
+## <a name="user-interface"></a>使用者介面
 
-### 殼層 (作業系統使用者介面)
+### <a name="shell-os-user-interface"></a>殼層 (作業系統使用者介面)
 
 Surface Hub 的殼層是針對大型螢幕和將觸控功能最佳化而從頭開始設計。 它並沒有使用和 Windows 10 企業版相同的殼層。
 
 *這可能會影響下列組織原則：* <br> Windows 10 企業版殼層中相關控制向的設定不適用於 Surface Hub。
 
-### 鎖定畫面和螢幕保護程式
+### <a name="lock-screen-and-screensaver"></a>鎖定畫面和螢幕保護程式
 
 Surface Hub 沒有鎖定畫面或螢幕保護裝置，但它有稱為歡迎畫面的類似功能。 歡迎畫面會顯示裝置帳戶的行事曆中排定的會議，以及對以下 Surface Hub 最常用應用程式的簡易進入點 - 商務用 Skype、白板及連線。
 
 *這可能會影響下列組織原則：* <br> 鎖定畫面、螢幕逾時及螢幕保護程式的設定不適用於 Surface Hub。
 
-### 使用者登入
+### <a name="user-sign-in"></a>使用者登入
 
 Surface Hub 是針對在公共空間 (例如會議室) 使用所設計。 與 Windows 電腦不同，任何人都能接觸和使用 Surface Hub，且不需要使用者登入。 為了啟用這項公用功能，Surface Hub 不支援和 Windows 10 企業版登入方式一樣的 Windows 登入 (例如，將使用者登入作業系統，並在整個作業系統使用這些認證)。 反而是，永遠有本機自動登入的低權限使用者登入 Surface Hub。 不支援登入任何另外的使用者，包括系統管理員使用者 (例如，當系統管理員登入時，他們並未登入作業系統)。
 
@@ -51,7 +51,7 @@ Surface Hub 是針對在公共空間 (例如會議室) 使用所設計。 與 Wi
 
 *這可能會影響下列組織原則：* <br> 一般而言，Surface Hub 會使用鎖定功能，而不是使用者存取控制，來強制執行安全性。 與密碼需求、互動式登入、使用者帳戶，以及存取控制有關的原則不適用於 Surface Hub。
 
-### 儲存及瀏覽檔案
+### <a name="saving-and-browsing-files"></a>儲存及瀏覽檔案
 
 使用者可以存取 Surface Hub 上的一組有限目錄。
 - 音樂
@@ -64,9 +64,9 @@ Surface Hub 是針對在公共空間 (例如會議室) 使用所設計。 與 Wi
 
 *這可能會影響下列組織原則：* <br> 與檔案及資料夾的存取權限和擁有權有關的原則不適用於 Surface Hub。 使用者無法瀏覽及儲存檔案到系統目錄與網路資料夾。
 
-## 應用程式
+## <a name="applications"></a>應用程式
 
-### 預設應用程式
+### <a name="default-applications"></a>預設應用程式
 
 Surface Hub 上有幾個例外的預設通用 Windows 平台 (UWP)應用程式也可以在 Windows 10 電腦上使用。
 
@@ -94,13 +94,13 @@ Surface Hub 上預先安裝的 UWP應用程式：
 
 *這可能會影響下列組織原則：* <br> 請使用 Windows 10 企業版的指導方針來判斷 Surface Hub 上預設應用程式的功能和網路需求。
 
-### 安裝應用程式、驅動程式及服務
+### <a name="installing-apps-drivers-and-services"></a>安裝應用程式、驅動程式及服務
 
 為協助保留裝置原本的設備特性，Surface Hub 僅支援安裝通用 Windows 平台 (UWP) 應用程式，不支援安裝傳統 Win32應用程式、服務及驅動程式。 此外，只有系統管理員有權安裝 UWP應用程式。
 
 *這可能會影響下列組織原則：* <br> 員工只能使用系統管理員已經安裝的應用程式，以協助防止用於非預期用途。 Surface Hub 不支援安裝大部分傳統電腦管理及監視工具所需的 Win32 代理程式。
 
-## 安全性和鎖定
+## <a name="security-and-lockdown"></a>安全性和鎖定
 
 針對要在公共空間 (例如會議室) 使用的 Surface Hub，其自訂作業系統會實作 Windows 10 中可用的許多安全性和鎖定功能。
 
@@ -122,47 +122,45 @@ Surface Hub 會實作這些 Windows 10 安全性功能：
 
 *這可能會影響下列組織原則：* <br> 在針對 Surface Hub 執行您的安全性評估時，請考量這些功能。
 
-## 管理
+## <a name="management"></a>管理
 
-### 裝置設定
+### <a name="device-settings"></a>裝置設定
 
 裝置設定可以透過設定應用程式設定。 設定應用程式已經針對 Surface Hub 自訂，但也包含許多 Windows 10 Desktop 中許多熟悉的設定。 開啟設定應用程式時會顯示使用者帳戶控制 (UAC) 提示，以確認系統管理員的認證，但這樣並不會將系統管理員登入系統中。
 
 *這可能會影響下列組織原則：* <br> 員工可以使用 Surface Hub 開會，但無法修改任何裝置設定。 除了鎖定功能之外，這也可以確保員工只能將裝置用於會議功能。
 
-### 管理功能
+### <a name="administrative-features"></a>管理功能
 
 Surface Hub 不支援 Windows 10 企業版中的管理功能，例如 Microsoft Management Console、執行、命令提示字元、PowerShell、登錄編輯程式、事件檢視器，以及工作管理員。 設定應用程式包含 Surface Hub 本機可用的所有系統管理功能。
 
-*這可能會影響下列組織原則：* <br> Surface Hubs 的管理方式和傳統電腦不同。 請使用 MDM 來設定設定，以及使用 OMS 來監視您的 your Surface Hub。
+### <a name="remote-management-and-monitoring"></a>遠端管理及監視工具
 
-### 遠端管理及監視工具
-
-Surface Hub 支援透過行動裝置管理 (MDM) 解決方案（例如 [Microsoft Intune](https://docs.microsoft.com/intune/) 和透過 [Azure 監視器](https://azure.microsoft.com/services/monitor/)進行監視）來進行遠端系統管理。 
+Surface Hub 支援透過行動裝置管理 (MDM) 解決方案 ，例如 Microsoft [Intune](https://docs.microsoft.com/intune/) 和透過 [Azure 監視器監控](https://azure.microsoft.com/services/monitor/)。 
 
 *這可能會影響下列組織原則：* <br> Surface Hub 不支援安裝大部分傳統電腦管理及監視工具所需的 Win32 代理程式，例如 System Center Operations Manager。
 
-### 群組原則
+### <a name="group-policy"></a>群組原則
 
-Surface Hub 不支援 Windows 群組原則，包括審計。 請改用 MDM 套用原則到您的 Surface Hub。 如需 MDM 的詳細資訊，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。
+Surface Hub 不支援 Windows 群組原則，包括稽核。 請改用 MDM 套用原則到您的 Surface Hub。 如需 MDM 的詳細資訊，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。
 
 *這可能會影響下列組織原則：* <br> 請使用 MDM 管理 Surface Hub，不要使用群組原則。
 
-### 遠端協助
+### <a name="remote-assistance"></a>遠端協助
 
 Surface Hub 不支援遠端單協助。
 
 *這可能會影響下列組織原則：* <br> 和遠端協助有關的原則不適用於 Surface Hub。
 
-## 網路
+## <a name="network"></a>網路
 
-### 網域加入和 Azure Active Directory (Azure AD) 加入 
+### <a name="domain-join-and-azure-active-directory-azure-ad-join"></a>網域加入和 Azure Active Directory (Azure AD) 加入 
 
 Surface Hub 主要使用網域加入和 Azure AD 加入來提供由目錄支援的系統管理員群組。 使用者無法使用網域帳戶登入。 如需相關資訊，請參閱[系統管理員群組管理](admin-group-management-for-surface-hub.md)。
 
 *這可能會影響下列組織原則：* <br> 當 Surface Hub 加入您的網域時不會套用群組原則。 和網域成員有關的原則不適用於 Surface Hub。
 
-### 評估網域資源
+### <a name="accessing-domain-resources"></a>評估網域資源
 
 使用者可以登入 Microsoft Edge 以存取內部網路網站和線上資源 (例如 Office 365)。 如果您的 Surface Hub 是使用裝置帳戶設定，系統會用它來存取 Exchange 和商務用 Skype。 但是，Surface Hub 不支援存取網域資源，例如檔案共用和印表機。
 
@@ -176,7 +174,7 @@ Surface Hub 主要使用網域加入和 Azure AD 加入來提供由目錄支援�
 *Organization policies that this may affect:* <br> 
 -->
 
-### 診斷資料
+### <a name="diagnostic-data"></a>診斷資料
 
 Surface Hub OS 會使用 Windows 10 已連線使用者體驗與遙測元件，來收集和傳輸診斷資料。 如需詳細資訊，請參閱[在您的組織中設定 Windows 診斷資料](https://technet.microsoft.com/itpro/windows/manage/configure-windows-diagnostic-data-in-your-organization)。
 
