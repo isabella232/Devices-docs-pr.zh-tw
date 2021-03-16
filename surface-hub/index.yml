@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 9be85d412a96351e8cb92013eb6ca0afe9b7c304
-  ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+  ms.openlocfilehash: 0aa7a76d8b010991b7c3dbc7c4c12f35f3715acb
+  ms.sourcegitcommit: ea853f2dba67e63e6df33538670fd581e17facab
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/03/2021
-  ms.locfileid: "11385131"
+  ms.lasthandoff: 03/15/2021
+  ms.locfileid: "11408798"
 landingContent:
 - title: 準備使用 Surface Hub 2S
   linkLists:
@@ -27,9 +27,9 @@ landingContent:
     links:
     - text: Surface Hub Windows 10 團隊版 2020 更新 - 2 月狀態
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-february-status/ba-p/2118369
-    - text: 透過 Windows Update 提供的 Surface Hub v1 2020 更新
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/2020-update-for-surface-hub-v1-available-via-windows-update/ba-p/2118370
-    - text: Surface Hub 2S 85 吋安裝及璧掛 (整備指南)
+    - text: Surface Hub Windows 10 團隊版 2020 更新 – Hub v1 狀態
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-hub-v1-status/ba-p/2118371
+    - text: 安裝及裝載 Surface Hub 2S 85 吋 (整備指南)
       url: surface-hub-2s-85-install-mount.md
     - text: Windows 10 團隊版 2020 更新中的新功能
       url: surface-hub-2020-update-whats-new.md
@@ -103,6 +103,8 @@ landingContent:
       text: 服務與保固
     - url: surface-hub-2s-recover-reset.md
       text: 復原與重設 Surface Hub 2S
+    - url: device-reset-surface-hub.md
+      text: 從雲端復原 Surface Hub v1
     - url: support-solutions-surface-hub.md
       text: Surface Hub 支援解決方案
     - text: Surface Hub 更新歷程記錄
