@@ -1,7 +1,7 @@
 ---
-title: '在 Surface 裝置的局域網上喚醒 (表面) '
-description: 瞭解您可以如何使用 LAN 喚醒來遠端喚醒裝置，以執行管理或維護工作，或自動啟用管理解決方案，即使裝置已斷電也一樣。
-keywords: 更新、部署、驅動程式、wol、局域網喚醒
+title: 適用於 Surface 裝置的網路喚醒
+description: 瞭解如何使用 LAN 喚醒來遠端喚醒裝置，以自動執行管理工作。
+keywords: 更新、部署、驅動程式、wol、wake-on-lan
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -10,68 +10,55 @@ ms.localizationpriority: medium
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: scottmca
+ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 1/15/2021
-ms.openlocfilehash: 709286cc0d62bd0b4c1e28e7626529fc4a215ae2
-ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
+ms.date: 3/19/2021
+ms.openlocfilehash: 1fbbf899876d154469d48fa75a179196697205c1
+ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271120"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "11442155"
 ---
-# 適用於 Surface 裝置的網路喚醒
+# <a name="wake-on-lan-for-surface-devices"></a>適用於 Surface 裝置的網路喚醒
 
-執行 Windows 10 （版本1607）的 Surface 裝置 (也稱為 Windows 10 周年紀念更新) 或更新版本，並使用 Surface 乙太網卡連線至有線網路，就能從連線的待機 (WOL) 進行喚醒。 有了 WOL，您就可以遠端喚醒裝置來執行管理或維護工作，或啟用管理解決方案 (例如 Microsoft 端點 Configuration Manager) 自動進行。 例如，您可以將應用程式部署到與 Surface Dock 或 Surface Pro 3 插接站固定的 Surface 裝置，方法是在夜間辦公室是空的情況下，使用 Microsoft 端點組態管理員。
+使用 Surface 乙太網路介面卡連接到有線網路的 Surface 裝置可以利用從已連接待命 (喚醒 LAN) WOL。 使用 WOL，您可以使用 Microsoft 端點管理員/Microsoft Intune 等管理解決方案，遠端喚醒裝置並自動執行管理工作。
 
->[!NOTE]
->Surface 裝置必須連線到 AC 電源，且處於連線的待機 (睡眠) 以支援 WOL。 在休眠或關閉的裝置中無法進行 WOL。
+## <a name="wol-supported-devices"></a>支援 WOL 的裝置
 
-## 支援的裝置
+- Surface 乙太網路介面卡
+- Surface USB-C 到乙太網路和 USB 介面卡
+- Surface Dock 2
+- Surface Pro 6 及更高版本
+- Surface Book (代) 
+- Surface Laptop (代代) 
+- Surface Go (代) 
+- Surface Studio 2 (請參閱) 
 
-WOL 支援下列裝置：
 
-* Surface 乙太網卡
-* 從 USB 到乙太網路和 USB 配接器的 Surface
-* Surface 擴充座
-* Surface Pro 3 的 surface 插接站
-* Surface 3
-* Surface Pro 3
-* Surface Pro 4
-* Surface Pro (5 代) 
-* Surface Pro (5 Gen) 與 LTE Advanced
-* Surface Book
-* Surface 膝上型電腦 (1 Gen) 
-* Surface Pro 6
-* Surface Book 2
-* Surface Laptop 2
-* Surface Go
-* 配備 LTE Advanced 的 Surface Go
-* Surface Studio 2 (請參閱以下的 Surface Studio 2 指示) 
-* Surface Pro 7
-* Surface 膝上型電腦3
-* Surface 膝上型電腦前往
-* Surface Pro 7 +
+## <a name="using-surface-wol"></a>使用 Surface WOL
 
-## WOL 驅動程式
+IT 系統管理員可以使用 LAN 要求喚醒 (包含目的電腦的 MAC 位址的) 封包來觸發裝置。 若要傳送神奇的封包，然後使用 WOL 喚醒裝置，您必須知道目標裝置和乙太網路介面卡的 MAC 位址。 由於魔術封包不使用 IP 網路通訊協定，因此無法使用裝置 IP 位址或 DNS 名稱。
 
-若要在 Surface 裝置上啟用 WOL 支援，必須有 Surface 乙太網配接器的特定驅動程式。 此驅動程式不包含在 Surface 裝置的標準驅動程式和固件套件中，您必須另行下載並安裝。 您可以從 Microsoft 下載中心的 [ [表面工具](https://www.microsoft.com/download/details.aspx?id=46703) ] 頁面上，下載 surface WOL 驅動程式 ( # A0) 。
+許多管理解決方案 ，例如 Microsoft 端點組組管理員和協力廠商 Microsoft Store 應用程式，都提供 WOL 的內建支援。 請注意，裝置必須處於已 (睡眠模式) 並連接到 AC 電源。 若要深入瞭解使用端點設定管理員喚醒裝置，請參閱在 LAN [上設定喚醒 - Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)。
 
-您可以在 Surface 裝置上執行這個 Microsoft Windows 安裝程式 ( .msi) 檔案，以安裝 Surface WOL 驅動程式，也可以使用應用程式部署方案（例如 Microsoft 端點設定管理員）將它發佈到 Surface 裝置。 若要在部署期間包含 Surface WOL 驅動程式，您可以在部署期間將 .msi 檔案安裝為應用程式。 您也可以解壓縮 Surface WOL 驅動程式檔案，將它們包含在部署程式中。 例如，您可以將它們包含在您的 Microsoft 部署工具組中， (MDT) 部署共用。 您可以在 [使用 Microsoft 部署工具組將 Windows 10 部署到 Surface 裝置](https://technet.microsoft.com/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt)中，深入瞭解使用 MDT 的 surface 部署。
 
-> [!NOTE]
-> 在安裝 SurfaceWOL.msi 期間，下列登錄機碼會設定為1的值，這可讓您輕鬆識別已安裝 WOL 驅動程式的系統。 如果您選擇在部署期間單獨提取並安裝這些驅動程式，則不會設定此登錄機碼，且必須手動設定或使用腳本進行設定。
-> 
-> **HKLM\SYSTEM\CurrentControlSet\Control\Power AllowSystemRequiredPowerRequests** 
+## <a name="to-check-wol-is-enabled-on-your-device"></a>若要檢查您的裝置上已啟用 WOL
 
-若要解壓縮 SurfaceWOL.msi 的內容，請使用 MSIExec 系統管理安裝選項 (**/a**) ，如下列範例所示，將內容解壓縮至 [C:\WOL\] 資料夾：
+1. 在乙太網路連接裝置上，選取您的網路介面卡，然後 **選取屬性**。
 
-   `msiexec /a surfacewol.msi targetdir=C:\WOL /qn`
+   > [!div class="mx-imgBorder"]
+   > ![Surface 乙太網路介面卡](images/surface-ethernet.png)
 
-## Surface Studio 2 指示
+2. 選取**設定**  >  **進位**。
+3. 卷起 **至新式備用 WoL 魔術封包** ，並確保 **已選取啟用** 。
 
-若要在 Surface Studio 2 上啟用 WOL，您必須使用下列程式
+     ![檢查您的裝置上已啟用 WOL](images/ethernet-wol-setting.png)
+
+## <a name="appendix-surface-studio-2"></a>附件：Surface Studio 2
+
+若要在 Surface Studio 2 上啟用 WOL，請使用下列程式。
 
 1. 建立下列登錄機碼：
 
@@ -89,14 +76,9 @@ WOL 支援下列裝置：
 
     ```powercfg /SETACVALUEINDEX SCHEME_BALANCED SUB_NONE CONNECTIVITYINSTANDBY 1```
 
-## 使用 Surface WOL
 
-Surface WOL 驅動程式會符合 WOL 標準，讓裝置是由稱為幻資料包的特殊網路通訊 woken。 幻數資料包包含6個位元組的 255 (或十六進位) 中的 FF，後面接著是目的電腦的 MAC 位址的16個重複專案。 您可以在 [維琪百科](https://wikipedia.org/wiki/Wake-on-LAN#Magic_packet)上進一步瞭解幻資料包和 WOL 標準。
+## <a name="learn-more"></a>深入了解
 
->[!NOTE]
->若要使用 WOL 傳送幻資料包並喚醒裝置，您必須知道目標裝置和乙太網路介面卡的 MAC 位址。 因為幻資料包不使用 IP 網路通訊協定，所以無法使用裝置的 IP 位址或 DNS 名稱。
+- [Microsoft Surface USB-C 到乙太網路和 USB 介面卡](https://www.microsoft.com/p/surface-usb-c-to-ethernet-and-usb-adapter/8wt81cglrblp?)
 
-許多管理解決方案（例如建構管理員）提供 WOL 的內建支援。 還有許多解決方案，包括 Microsoft Store app、PowerShell 模組、協力廠商應用程式，以及可讓您傳送幻資料包來喚醒裝置的協力廠商管理解決方案。 例如，您可以使用 TechNet [腳本中心] 的 [ [局域網喚醒] PowerShell 模組](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4) 。 
-
->[!NOTE]
->在裝置與幻資料包 woken 之後，如果應用程式不積極地在系統上預防睡眠，或 AllowSystemRequiredPowerRequests 登錄機碼沒有設定為1，裝置就會回到睡眠狀態，這可讓應用程式防止睡眠。 如需此登錄機碼的詳細資訊，請參閱本文的 [ [WOL 驅動程式](#wol-driver) ] 區段。
+- [Surface USB 3.0 Gb 乙太網路介面卡](https://www.microsoft.com/p/surface-usb-30-gigabit-ethernet-adapter/8xn9fqvzbvq0?)

@@ -22,7 +22,7 @@
 #### [設定工作表](setup-worksheet-surface-hub.md)
 #### [Surface Hub 2S 連接埠和數字鍵台概觀](surface-hub-2s-port-keypad-overview.md)
 #### [將裝置連接至 Surface Hub 2S](surface-hub-2s-connect.md)
-### [針對 Microsoft Surface Hub 2S 準備您的環境](surface-hub-2s-prepare-environment.md)
+### [針對 Microsoft Surface Hub 準備您的環境](prepare-your-environment-for-surface-hub.md)
 
 
 ## 部署

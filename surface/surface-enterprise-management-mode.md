@@ -1,7 +1,7 @@
 ---
-title: 'Surface Enterprise 管理模式 (Surface) '
-description: 瞭解使用 Surface UEFI 的 Surface 裝置的這項功能如何協助您保護及管理貴組織內的固件設定。
-keywords: uefi、設定、固件、安全、semm
+title: 'Surface Enterprise management mode (Surface) '
+description: 瞭解 Surface 裝置與 Surface UEFI 的這項功能如何協助保護及管理貴組織的固件設定。
+keywords: uefi， configure， firmware， secure， semm
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -13,175 +13,179 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 01/15/2021
-ms.openlocfilehash: e6f81639253c646f5d3956243a80f4d61c91028a
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.date: 03/18/2021
+ms.openlocfilehash: 011f4d0270c47b976e10dbece2adb70559222b79
+ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271417"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "11442181"
 ---
-# Microsoft Surface Enterprise 管理模式
+# <a name="microsoft-surface-enterprise-management-mode"></a>Microsoft Surface 企業管理模式
 
-Microsoft Surface Enterprise 管理模式 (SEMM) 是具有 Surface UEFI 的 Surface 裝置功能，可讓您保護及管理貴組織內的固件設定。 有了 SEMM，IT 專業人員就能準備 UEFI 設定的設定，並在 Surface 裝置上安裝它們。 除了能夠設定 UEFI 設定之外，SEMM 也會使用憑證來保護設定不會受到未經授權的篡改或移除。 SEMM 是必須能夠將 Surface Hub 2 級遷移到 Windows 10 專業版與企業版的需求。
-
->[!NOTE]
->SEMM 只能在具有 Surface UEFI 固件的裝置上使用。 這是由大多數其他 Surface 裝置組成，包括 Surface Pro 7 +、Surface Pro X、Surface Hub 2 及 Surface 膝上型3商業 Sku （含 Intel 處理器），以及 Surface 膝上型電腦。 SEMM 在15「Surface 膝上型電腦 3 SKU （含 AMD 處理器）上不受支援， (僅提供零售 SKU) 。 
-
-當 Surface 裝置是由 SEMM 進行設定，並以 SEMM 憑證加以保護時，它們會被視為已在 SEMM 中 *註冊* 。 移除 SEMM 憑證並將 UEFI 設定傳回給裝置的使用者時，Surface 裝置會被視為 SEMM 中的 *unenrolled* 。
-
-您可以使用兩個管理選項來管理 SEMM 和註冊 Surface 裝置，這是獨立的工具或與 Microsoft 端點建構管理員的整合。 本文將說明稱為 Microsoft Surface UEFI 配置單元的 SEMM 獨立工具。 如需有關如何使用 Microsoft 端點設定管理員管理 SEMM 的詳細資訊，請參閱 [使用 Microsoft 端點組態管理員管理裝置與 SEMM](https://technet.microsoft.com/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm)。
-
-
-## Microsoft Surface UEFI 配置器
-
-SEMM 的主要工作區是 Microsoft Surface UEFI 配置單元，如圖1所示。 Microsoft Surface UEFI 設定檔是用來建立 Windows 安裝程式 ( .msi) 套件或 WinPE 影像的工具，用於在 Surface 裝置上登錄、設定及取消註冊 SEMM。 這些套件包含指定 UEFI 設定的設定檔。 SEMM 套件也會包含已安裝並儲存在固件中的憑證，並用於在應用 UEFI 設定之前驗證設定檔的簽名。
+Microsoft Surface 企業管理模式 (SEMM) 是 Surface UEFI 的 Surface 裝置功能，可讓您保護和管理貴組織的固件設定。 使用 SEMM，IT 專業人員可以準備 UEFI 設定設定，並安裝在 Surface 裝置上。 除了能夠設定 UEFI 設定之外，SEMM 也會使用憑證來保護設定，避免未經授權的竄改或移除。 SEMM 是能夠將 Surface Hub 2S 遷移到 Windows 10 專業版和企業版的需求。
 
 >[!NOTE]
->您現在可以使用 Surface UEFI 配置器和 SEMM 來管理 Surface Dock 2 上的埠。 若要深入瞭解，請參閱 [使用 SEMM 的安全 Surface Dock 2 埠](secure-surface-dock-ports-semm.md)。
+>SEMM 僅適用于具有 Surface UEFI 固件的裝置。 這包括大多數 Surface 裝置，包括 Surface Pro 7+、Surface Pro 7、Surface Pro X、Surface Hub 2S、Surface Laptop 3 具有 Intel 處理器的商業 SUS，以及 Surface Laptop Go。 具有AMD 處理器的 15" Surface Laptop 3 SKU 不支援 SEMM (僅提供零售 SKU) 。 
 
-![Microsoft Surface UEFI 配置器](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
+當 Surface 裝置是由 SEMM 所配置，且使用 SEMM 憑證進行保護** 時，即視為已註冊于 SEMM。 移除 SEMM 憑證，且將 UEFI 設定控制權退還給裝置使用者時，Surface 裝置在 SEMM 中視為未註冊。 **
 
-*圖 1。 Microsoft Surface UEFI 配置器*
+您可以使用兩種系統管理選項來管理 SEMM 並註冊 Surface 裝置 ：獨立工具或與 Microsoft 端點 Configuration Manager 整合。 本文說明 SEMM 獨立工具 ，稱為 Microsoft Surface UEFI Configurator。 若要瞭解如何使用 Microsoft 端點群組原則管理員管理 SEMM，請參閱使用 Microsoft 端點組組管理員使用 [SEMM 管理裝置](https://technet.microsoft.com/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm)。
 
-
-您可以在三種模式中使用 Microsoft Surface UEFI 配置單元工具：
-
-* [SURFACE UEFI 配置套件](#configuration-package)。 使用此模式來建立 Surface UEFI 配置套件，以在 SEMM 中註冊 Surface 裝置，以及在已註冊的裝置上設定 UEFI 設定。
-* [SURFACE UEFI 重設套件](#reset-package)。 使用此模式從 SEMM 取消註冊 Surface 裝置。
-* [SURFACE UEFI 恢復要求](#recovery-request)。 使用此模式來回應從 SEMM 取消註冊 Surface 裝置的復原要求，而該裝置的重設套件作業不成功。
+> [!NOTE]
+> Surface Pro X 僅透過 UEFI Manager 支援 SEMM。 您可以從 IT 的 Surface Tools 下載 UEFI [Manager。](https://www.microsoft.com/download/details.aspx?id=46703) 詳細資訊，請參閱[部署、管理及維護 Surface Pro X。](surface-pro-arm-app-management.md)
 
 
-#### 下載 Microsoft Surface UEFI 配置器
+## <a name="microsoft-surface-uefi-configurator"></a>Microsoft Surface UEFI Configurator
 
-您可以從 Microsoft 下載中心的 [ [表面工具](https://www.microsoft.com/download/details.aspx?id=46703) ] 頁面下載 MICROSOFT Surface UEFI 設定檔。
+SEMM 的主要工作區是 Microsoft Surface UEFI Configurator，如圖 1 所示。 Microsoft Surface UEFI 設定器是用來建立 Windows Installer (.msi) 套件或 WinPE 影像的工具，用來在 Surface 裝置上註冊、設定及取消註冊 SEMM。 這些套件包含設定檔案，其中指定 UEFI 的設定。 SEMM 套件也包含憑證，該憑證會安裝並儲存在固件中，用來在套用 UEFI 設定之前驗證組組檔案的簽名。
 
-### 配置套件
+>[!TIP]
+>現在，您可以使用 Surface UEFI Configurator 和 SEMM 來管理 Surface Dock 2 上的埠。 若要深入瞭解，請參閱使用 SEMM 保護 [Surface Dock 2 埠](secure-surface-dock-ports-semm.md)。
 
-Surface UEFI 配置套件是在 Surface 裝置上實現及管理 SEMM 的主要機制。 這些套件包含在 Microsoft Surface UEFI 設定檔和憑證檔案中建立套件時指定的 UEFI 設定檔案，如圖2所示。 當您第一次在尚未註冊 SEMM 的 Surface 裝置上執行配置套件時，它會在裝置的固件中設定證書檔案，並在 SEMM 中註冊該裝置。 在 SEMM 中註冊裝置時，系統會提示您在儲存證書檔案並完成註冊前，先提供 SEMM 憑證指紋的最後兩位數，以確認該操作。 此確認要求在註冊時，使用者必須在裝置上實際出現，才能執行確認。
+![Microsoft Surface UEFI Configurator](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
 
-![使用憑證保護 SEMM 設定套件](images/surface-ent-mgmt-fig2-securepackage.png "Secure a SEMM configuration package with a certificate")
+*圖 1。 Microsoft Surface UEFI Configurator*
 
-*圖 2. 使用憑證保護 SEMM 設定套件*
 
-如需 SEMM 憑證需求的詳細資訊，請參閱本文的 [Surface Enterprise 管理模式證書需求](#surface-enterprise-management-mode-certificate-requirements) 一節。
+您可以在三種模式中使用 Microsoft Surface UEFI Configurator 工具：
 
->[!NOTE]
->您也可以使用 SEMM 來指定 UEFI 密碼，以查看 Surface UEFI 的 **安全性**、 **裝置**、 **啟動**設定或 **企業管理** 頁面所需。
+* [Surface UEFI 組組套件](#configuration-package)。 使用此模式可建立 Surface UEFI 設定套件，以在 SEMM 中註冊 Surface 裝置，以及設定已註冊的裝置上的 UEFI 設定。
+* [Surface UEFI 重設套件](#reset-package)。 使用此模式從 SEMM 取消註冊 Surface 裝置。
+* [Surface UEFI 修復要求](#recovery-request)。 使用此模式回應復原要求，從 SEMM 取消註冊 Surface 裝置，而重設套件作業失敗。
 
-在裝置註冊 SEMM 之後，系統會讀取配置檔案，並將檔案中指定的設定套用至 UEFI。 當您在已在 SEMM 中註冊的裝置上執行設定套件時，系統會針對儲存在裝置固件中的憑證檢查設定檔的簽名。 如果簽名不相符，就不會將變更套用到裝置。
 
-### 使用 SEMM 在 Surface UEFI 中啟用或停用裝置
+#### <a name="download-microsoft-surface-uefi-configurator"></a>下載 Microsoft Surface UEFI Configurator
 
-下列清單顯示所有可在 SEMM 中管理的裝置：
+您可以在 Microsoft 下載中心的 IT 版 Surface [工具](https://www.microsoft.com/download/details.aspx?id=46703) 頁面下載 Microsoft Surface UEFI 配置程式。
 
-* 插接 USB 埠
+### <a name="configuration-package"></a>組組套件
+
+Surface UEFI 組組套件是在 Surface 裝置上執行和管理 SEMM 的主要機制。 這些套件包含在 Microsoft Surface UEFI 設定器中建立套件時指定的 UEFI 設定設定檔和憑證檔案，如圖 2 所示。 當第一次在尚未在 SEMM 註冊的 Surface 裝置上執行組組套件時，它會在裝置的固件中規定憑證檔案，並註冊 SEMM 中的裝置。 在 SEMM 中註冊裝置時，系統會提示您確認作業，在儲存憑證檔案並完成註冊之前，先提供 SEMM 憑證指紋的最後兩位數。 此確認要求使用者在註冊時實際存在於裝置上，才能執行確認。
+
+![使用憑證保護 SEMM 組組套件](images/surface-ent-mgmt-fig2-securepackage.png "Secure a SEMM configuration package with a certificate")
+
+*圖 2. 使用憑證保護 SEMM 組組套件*
+
+請參閱 [本文的 Surface Enterprise Management Mode 證書](#surface-enterprise-management-mode-certificate-requirements) 需求一節，以進一瞭解 SEMM 憑證的需求。
+
+>[!TIP]
+>您也可以使用 SEMM 指定 UEFI 密碼，以查看 Surface ** **UEFI**** 的安全性、**裝置**、**** 開機組組或企業管理頁面。
+
+在 SEMM 中註冊裝置之後，系統即會讀取設定檔，且檔案中指定的設定會適用于 UEFI。 當您在已在 SEMM 註冊的裝置上執行組組套件時，設定檔的簽名會針對儲存在裝置固件中的憑證進行檢查。 如果簽章不相符，將不會將任何變更適用于裝置。
+
+### <a name="enable-or-disable-devices-in-surface-uefi-with-semm"></a>在 Surface UEFI 中啟用或停用具有 SEMM 的裝置
+
+下列清單顯示您可以在 SEMM 中管理的所有可用裝置：
+
+* 固定 USB 埠
 * 板載音訊
 * DGPU
 * 實體鍵盤保護蓋
-* 微型 SD 記憶卡
+* Micro SD Card
 * 前方攝影機
 * 後方攝影機
-* Windows Hello 版紅外攝影機
-* 僅限藍牙
+* 適用于 Windows Hello 的紅外線相機
+* 僅藍牙
 * Wi-Fi 和藍牙
 *              LTE           
 
  >[!NOTE]
->出現在 [UEFI 裝置] 頁面上的內建裝置，可能會根據您的裝置或公司環境而有所不同。 例如，Surface Pro X 上不支援 UEFI 裝置頁面;LTE 只會出現在裝有 LTE 的裝置上。 
-### 使用 SEMM 設定高級設定
+>顯示在 UEFI 裝置頁面中的內建裝置可能會根據您的裝置或公司環境而有所差異。 例如，Surface Pro X 不支援 UEFI 裝置頁面;LTE 只會出現在配備 LTE 的裝置上。 
+### <a name="configure-advanced-settings-with-semm"></a>使用 SEMM 設定進位設定
 **表 1. 進階設定**
 
-| 設定                            | 描述                                                                                                                                                                                        |
+| 設定                            | 說明                                                                                                                                                                                        |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 適用於 PXE 開機 的 IPv6                  | 可讓您管理 PXE 啟動的 IPv6 支援。 如果您未設定此設定，則會停用 IPv6 啟動的 IPv6 支援。                                                                               |
-| 替代開機                     | 您可以在啟動期間按下 [音量] 按鈕和 [電源] 按鈕，來管理使用替代啟動順序直接從 USB 或乙太裝置啟動。 如果您未設定此設定，則會啟用備用啟動。 |
-| 開機順序鎖定                    | 可讓您鎖定啟動順序以防止變更。 如果您未設定此設定，則會停用 [啟動訂單鎖定]。                                                                                                        |
-| USB 開機                           | 可讓您管理 USB 裝置的啟動。 如果您未設定此設定，則會啟用 USB 啟動。                                                                                                                 |
-| 網路堆疊                      | 可讓您管理網路堆疊啟動設定。 如果您未設定此設定，系統會停用管理網路堆疊啟動設定的功能。                                                                                                           |
-| 自動開啟電源                      | 可讓您管理自動啟動電源設定。 如果您未設定此設定，則會啟用 [自動加電] 功能。                                                                                                        |
-| 同時多執行緒 (SMT)  | 可讓您管理同時多執行緒 (SMT) ，以啟用或停用超執行緒。 如果您未設定此設定，則會啟用 SMT。                                                  |
-|啟用電池限制| 可讓您管理電池限制功能。 如果您未設定此設定，則會啟用電池計量限制 |
-| 安全性                           | 顯示 [Surface UEFI **安全性** ] 頁面。 如果您未設定此設定，就會顯示 [安全性] 頁面。                                                                                                                 |
-| 裝置                            | 顯示 [Surface UEFI **裝置** ] 頁面。 如果您未設定此設定，就會顯示 [裝置] 頁面。                                                                                                                     |
-| 開機                               | 顯示 [Surface UEFI **啟動** ] 頁面。 如果您未設定此設定，就會顯示 [引導] 頁面。                                                                                                                                                            |
-| DateTime                           | 顯示 [Surface UEFI **日期 DateTime** ] 頁面。 如果您未設定此設定，則會顯示 [日期時間] 頁面。                                                                                                                |
-| EnableOSMigration                          | 可讓您將 Surface Hub 2 從 Windows 10 小組遷移至 Windows 10 專業版或企業版。 如果您未設定此設定，Surface Hub 2 裝置就只能執行 Windows 10 團隊作業系統。   注意：在 Windows 10 小組與 Windows 10 專業版/企業版之間，在 Surface Hub 2 上無法使用雙啟動。                                                                                                           |
+| 適用於 PXE 開機 的 IPv6                  | 可讓您管理 PXE 啟動的 IPv6 支援。 如果您沒有設定此設定，則 PXE 啟動的 IPv6 支援會停用。                                                                               |
+| 替代開機                     | 可讓您在啟動期間同步選取降低音量按鈕和 Power 按鈕，管理使用替代啟動順序以直接引導至 USB 或乙太網路裝置。 如果您沒有設定此設定，系統即會啟用備用啟動。 |
+| 開機順序鎖定                    | 可讓您鎖定啟動順序，以防止變更。 如果您沒有設定此設定，即會停用啟動順序鎖定。                                                                                                        |
+| USB 開機                           | 可讓您管理啟動至 USB 裝置。 如果您沒有設定此設定，則 USB 啟動已啟用。                                                                                                                 |
+| 網路堆疊                      | 可讓您管理網路堆疊啟動設定。 如果您沒有設定此設定，則管理網路堆疊啟動設定的能力會停用。                                                                                                           |
+| 自動上電                      | 可讓您管理自動開機設定。 如果您沒有設定此設定，即會啟用自動電源。                                                                                                        |
+| 同時使用 SMT (執行緒)  | 可讓您管理 SMT 的同步多執行緒 (，) 啟用或停用超執行緒。 如果您沒有設定此設定，SMT 會啟用。                                                  |
+|啟用電池限制| 可讓您管理電池限制功能。 如果您沒有設定此設定，則啟用電池限制 |
+| 安全性                           | 顯示 Surface UEFI **安全性** 頁面。 如果您沒有設定此設定，系統會顯示安全性頁面。                                                                                                                 |
+| 裝置                            | 顯示 Surface UEFI **裝置** 頁面。 如果您沒有設定此設定，會顯示裝置頁面。                                                                                                                     |
+| 開機                               | 顯示 Surface UEFI **啟動** 頁面。 如果您沒有設定此設定，系統會顯示啟動頁面。                                                                                                                                                            |
+| DateTime                           | 顯示 Surface UEFI **DateTime** 頁面。 如果您沒有設定此設定，則會顯示 DateTime 頁面。                                                                                                                |
+| EnableOSMigration                          | 可讓您將 Surface Hub 2 從 Windows 10 小組遷移到 Windows 10 專業版或企業版。 如果您沒有設定此設定，Surface Hub 2 裝置只能執行 Windows 10 小組作業系統。   注意：Surface Hub 2 無法提供 Windows 10 小組與 Windows 10 專業版/企業版之間的雙開機。                                                                                                           |
 
 
 >[!NOTE]
->當您建立 SEMM 設定套件時，[ **成功** ] 頁面上會顯示兩個字元，如圖3所示。
+>當您建立 SEMM 組組套件時，成功頁面上會顯示兩**** 個字元，如圖 3 所示。
 
 ![憑證指紋顯示](images/surface-ent-mgmt-fig5-success.png "Certificate thumbprint display")
 
-*圖 3. 在成功頁面上顯示證書指紋的最後兩個字元*
+*圖 3. 在成功頁面上顯示憑證指紋的最後兩個字元*
 
-這些字元是憑證指紋的最後兩個字元，因此應該記下或錄製。 必須有字元來確認在 Surface 裝置上的 SEMM 註冊，如圖4所示。
+這些字元是憑證指紋的最後兩個字元，應該寫下或錄製。 需要字元才能確認在 Surface 裝置上註冊 SEMM，如圖 4 所示。
 
 ![SEMM 中的註冊確認](images/surface-ent-mgmt-fig6-enrollconfirm.png "Enrollment confirmation in SEMM")
 
-*圖 4. 在 SEMM 中使用 SEMM 憑證指紋進行註冊確認*
+*圖 4. 使用 SEMM 憑證指紋在 SEMM 中註冊確認*
 
 >[!NOTE]
->您可以在 CertMgr 中開啟 .pfx 檔案，讓擁有證書檔案存取權的管理員 ( .pfx) 可隨時讀取指紋。 若要使用 CertMgr 查看指紋，請遵循此程式：
->1. 以滑鼠右鍵按一下 .pfx 檔案，然後按一下 [ **開啟**]。
->2. 展開 [功能窗格] 中的資料夾。
+>具有憑證檔案 (.pfx) 的系統管理員隨時都可以在 CertMgr 中開啟 .pfx 檔案來讀取指紋。 若要使用 CertMgr 來查看指紋： 
+>1. 以滑鼠右鍵按一下 .pfx 檔案，然後按一下 [ **開啟**。
+>2. 展開流覽窗格中的資料夾。
 >3. 按一下 [憑證]****。
->4. 在主要窗格中，以滑鼠右鍵按一下您的憑證，然後按一下 [ **開啟**]。
->5. 按一下 [ **詳細資料** ] 索引標籤。
->6. [**全部**] 或 [**僅限屬性**] 必須在 [**顯示**] 下拉式功能表中選取。
->7. 選取欄位 **指紋**。
+>4. 以滑鼠右鍵按一下主窗格中的憑證，然後按一下 [ **開啟**。
+>5. 按一下 [ **詳細資料>** 選項卡。
+>6. **在**顯示**下拉式功能表**中，必須選取所有或**** 僅屬性。
+>7. 選取拇 **指列印欄位**。
 
-若要在 SEMM 中註冊 Surface 裝置，或從設定套件套用 UEFI 設定，您只需執行該 .msi 檔案，並在預定的 Surface 裝置上使用系統管理許可權。 您可以使用應用程式部署或作業系統部署技術（例如 [Microsoft 端點配置系統管理器](https://technet.microsoft.com/library/mt346023) ）或 [microsoft 部署工具](https://technet.microsoft.com/windows/dn475741)組。 當您在 SEMM 中註冊裝置時，您必須在物理上顯示，以確認裝置上的註冊。 當您將設定套用到已在 SEMM 中註冊的裝置時，不需要使用者互動。
+若要在 SEMM 中註冊 Surface 裝置，或從組組套件套用 UEFI 組配置，您只需要在預定的 Surface 裝置上執行具有系統管理許可權的 .msi 檔案。 您可以使用應用程式部署或作業系統部署技術，例如 [Microsoft 端點組組管理員](https://technet.microsoft.com/library/mt346023) 或 Microsoft [部署工具組](https://technet.microsoft.com/windows/dn475741)。 當您在 SEMM 中註冊裝置時，您必須實際出席，以確認裝置上的註冊。 當您將群組原則適用于已在 SEMM 中註冊的裝置時，不需要使用者互動。
 
-如需如何在 SEMM 中註冊 Surface 裝置或使用 SEMM 套用 Surface UEFI 設定的逐步逐步解說，請參閱 [使用 SEMM 註冊及設定 surface 裝置](https://technet.microsoft.com/itpro/surface/enroll-and-configure-surface-devices-with-semm)。
+若要逐步瞭解如何在 SEMM 中註冊 Surface 裝置，或在 SEMM 中適用 Surface UEFI 設定，請參閱使用 [SEMM](https://technet.microsoft.com/itpro/surface/enroll-and-configure-surface-devices-with-semm)註冊及設定 Surface 裝置。
 
-### 重設套件
+### <a name="reset-package"></a>重設套件
 
-Surface UEFI 重設套件只是用來執行一個工作，以取消從 SEMM 取消對 Surface 裝置的註冊。 重設套件包含從裝置的固件中移除 SEMM 憑證的 [簽署指示]，並將 [UEFI] 設定重設為 [出廠預設值]。 就像 Surface UEFI 設定套件一樣，必須使用在 Surface 裝置上預配的相同 SEMM 憑證來簽署重設套件。 當您建立 SEMM 重設套件時，您必須提供您想要重設之 Surface 裝置的序列值。 SEMM 的 [重設套件] 不是通用的，且專用於一個裝置。
+Surface UEFI 重設套件只會用來執行一項工作 ，從 SEMM 取消註冊 Surface 裝置。 重設套件包含簽署指示，以從裝置固件移除 SEMM 憑證，以及將 UEFI 設定重設為出廠預設值。 就像 Surface UEFI 組組套件一樣，重設套件必須以與 Surface 裝置上所配置的相同 SEMM 憑證簽署。 當您建立 SEMM 重設套件時，您必須提供要重設的 Surface 裝置序號。 SEMM 重設套件並非通用套件，且只針對一個裝置。
 
-### 復原要求
+### <a name="recovery-request"></a>復原要求
 
-在某些情況下，可能無法使用 Surface UEFI 重設套件。  (例如，如果 Windows 在 Surface 裝置上無法使用 ) 。在這些案例中，您可以從 SEMM 中的 [ **企業管理** ] (頁面取消對 surface 裝置進行取消註冊，如圖 5) 中的 [恢復要求] 作業。
+在某些情況下，可能無法使用 Surface UEFI 重設套件。  (例如，如果 Windows 在 Surface 裝置上無法使用。) 在這些情況下，您可以使用修復要求作業，透過 Surface UEFI () 的企業管理**** 頁面，從 SEMM 取消註冊 Surface 裝置。
 
-![啟動 SEMM 的恢復要求](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
+> [!div class="mx-imgBorder"]
+> ![啟動 SEMM 復原要求](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
 
-*圖 5. 在企業管理頁面上啟動 SEMM 的恢復要求*
+*圖 5. 在企業管理頁面上啟動 SEMM 修復要求*
 
-當您在 [ **企業管理** ] 頁面上使用此程式來重設 Surface 裝置上的 SEMM 時，系統會提供您的 [重設要求]。 此重設要求可以儲存為檔案至 USB 磁片磁碟機、複製成文字，或以 QR 程式碼的形式讀取，只要行動裝置就能輕鬆地以電子郵件或 messaged 的方式進行。 使用 Microsoft Surface UEFI 設定檔重設要求選項載入重設要求檔案，或輸入重設要求文字或 QR 程式碼。 Microsoft Surface UEFI 配置器會產生可在 Surface 裝置上輸入的驗證碼。 如果您在 Surface 裝置上輸入程式碼，然後按一下 [ **重新開機**]，裝置將會從 SEMM unenrolled。 
-
->[!NOTE]
->重設要求在建立之後就會過期兩個小時。
-
-如需如何從 SEMM 取消註冊 Surface 裝置的逐步逐步解說，請參閱 [從 SEMM 中取消註冊 surface 裝置](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm)。
-
-## Surface Enterprise 管理模式證書需求
-在 Microsoft Surface UEFI 設定檔中使用 SEMM 時，需要有認證，才能驗證設定檔的簽名，然後才能套用 UEFI 設定。 這個憑證可確保在裝置註冊 SEMM 之後，只可使用以核准證書建立的套件來修改 UEFI 的設定。
+當您使用企業管理頁面上的流程來重**** 設 Surface 裝置上的 SEMM 時，系統會提供重設要求。 此重設要求可以儲存為檔案至 USB 磁碟機、複製為文字，或以 QR 程式碼與行動裝置一起讀取，以輕鬆以電子郵件或訊息進行。 使用 Microsoft Surface UEFI 設定程式重設要求選項來載入重設要求檔案，或輸入重設要求文字或 QR 程式碼。 Microsoft Surface UEFI Configurator 會產生可在 Surface 裝置上輸入的驗證碼。 如果您在 Surface 裝置上輸入程式碼，然後按一下 **[重新開機**，裝置將會從 SEMM 取消註冊。 
 
 >[!NOTE]
->需要 SEMM 憑證，才能在已註冊的 Surface 裝置上對 SEMM 或 Surface UEFI 設定執行任何修改。 如果 SEMM 憑證損毀或遺失，SEMM 就無法移除或重設。 使用適用于備份與恢復的方案，據此管理您的 SEMM 憑證。
+>重設要求會在建立後兩小時到期。
 
-使用 Microsoft Surface UEFI 設定檔工具所建立的套件會以憑證簽署。 這個憑證可確保在裝置註冊 SEMM 之後，只可使用以核准證書建立的套件來修改 UEFI 的設定。 
-### 建議的憑證設定
-建議針對 SEMM 憑證使用下列設定：
+若要逐步瞭解如何從 SEMM 取消註冊 Surface 裝置，請參閱從 [SEMM](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm)取消註冊 Surface 裝置。
 
-* **金鑰演算法** -RSA 
-* **金鑰長度** –2048
+## <a name="surface-enterprise-management-mode-certificate-requirements"></a>Surface 企業管理模式憑證需求
+將 SEMM 與 Microsoft Surface UEFI 設定器一起使用，需要憑證來驗證組組檔案的簽名，才能使用 UEFI 設定。 此憑證可確保在裝置註冊 SEMM 之後，只有使用核准憑證所建立套件才能用來修改 UEFI 的設定。
+
+>[!NOTE]
+>需要 SEMM 憑證才能在已註冊的 Surface 裝置上對 SEMM 或 Surface UEFI 設定執行任何修改。 如果 SEMM 憑證已損壞或遺失，就無法移除或重設 SEMM。 使用適當的備份及復原解決方案管理您的 SEMM 憑證。
+
+使用 Microsoft Surface UEFI Configurator 工具所建立套件會以憑證簽署。 此憑證可確保在裝置註冊 SEMM 之後，只有使用核准憑證所建立套件才能用來修改 UEFI 的設定。 
+### <a name="recommended-certificate-settings"></a>建議的憑證設定
+SEMM 憑證建議使用下列設定：
+
+* **金鑰演算法** – RSA 
+* **金鑰長度** – 2048
 * **雜湊演算法** – SHA-256
-* **類型** -SSL 伺服器驗證
-* **金鑰使用量** -數位簽章、金鑰解碼
-* **提供者** -Microsoft 增強的 RSA 和 AES 加密提供者
-* **到期日** –從證書建立開始的15個月
-* **金鑰匯出原則** –可匯出的
+* **類型** - SSL Server 驗證
+* **金鑰使用量** – 數位簽章、金鑰加密
+* **提供者** – Microsoft 增強版 RSA 和 AES 加密提供者
+* **到期日** – 自建立憑證起 15 個月
+* **金鑰匯出政策** – 可匯出
 
-此外，建議您在雙層公開金鑰基礎結構 (的 PKI) 架構（ (CA) 專用於 SEMM，從而啟用憑證吊銷）中驗證 SEMM 憑證。 如需雙層 PKI 設定的詳細資訊，請參閱 [測試實驗室指南：部署 AD CS Two-Tier PKI](https://technet.microsoft.com/library/hh831348)階層。
+此外，建議在兩層公用金鑰基礎結構 (PKI) 架構中驗證 SEMM 憑證，而中間憑證授權單位 (CA) 是專門用於 SEMM 的架構，啟用憑證撤銷。 有關雙層級 PKI 組的資訊，請參閱測試實驗室指南：部署 [AD CS Two-Tier PKI 階層](https://technet.microsoft.com/library/hh831348)。
 
-### 自我簽署憑證 
-您可以使用下列範例 PowerShell 腳本，建立可在概念驗證案例中使用的自我簽署憑證。
-若要使用此腳本，請將下列文字複製到記事本，然後將檔案儲存為 PowerShell 腳本 (. ps1) 。 
+### <a name="self-signed-certificate"></a>自我簽署憑證 
+您可以使用下列範例 PowerShell 腳本建立自我簽署憑證，以用於概念證明案例。
+若要使用此腳本，請複製下列文字至記事本，然後將檔案儲存為 PowerShell 腳本 (.ps1) 。 
 
 > [!NOTE]
-> 此腳本會建立密碼為的憑證 `12345678` 。建議您不要在生產環境中使用此腳本產生的憑證。
+> 此腳本會建立具有 密碼的憑證 `12345678` 。此腳本產生的憑證不建議用於生產環境。
   
 ```powershell
 if (-not (Test-Path "Demo Certificate"))  { New-Item -ItemType Directory -Force -Path "Demo Certificate" }
@@ -207,123 +211,126 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 ```
 
 >[!IMPORTANT]
->若要與 SEMM 和 Microsoft Surface UEFI 配置器搭配使用，必須使用私密金鑰及密碼保護來匯出憑證。 Microsoft Surface UEFI 設定檔將會在必要時提示您選取 SEMM 憑證檔案 ( .pfx) 及證書密碼。
+>為了與 SEMM 和 Microsoft Surface UEFI Configurator 一起使用，憑證必須以私密金鑰和密碼保護方式匯出。 Microsoft Surface UEFI Configurator 會提示您視需要選取 SEMM 憑證檔案 (.pfx) 和憑證密碼。
 
-1.  在您的 C：磁片磁碟機上建立一個資料夾，您將在此儲存腳本;例如，C:\SEMM。
-2.  將範例腳本複製到記事本或對等的文字編輯器，然後將檔案儲存為 PowerShell 腳本 (. ps1) 。
-3.  使用系統管理員認證登入您的電腦，並開啟提升許可權的 PowerShell 會話。
-4.  確定您的許可權已設定為允許腳本執行。 除非您修改執行原則，否則預設會封鎖腳本執行。 若要深入瞭解，請參閱 [關於執行原則](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies)。
-5.  在命令提示字元中，輸入腳本的完整路徑，然後按 Enter。 此腳本會建立名為 TempOwner 的示範證書。
+1.  在 C 上建立資料夾：您將儲存腳本的磁碟機;例如，C：\SEMM。
+2.  將範例腳本複製到記事本或同等文字編輯器，然後以 PowerShell 腳本 (.ps1) 。
+3.  使用系統管理員認證來登錄您的電腦，並開啟提升的 PowerShell 會話。
+4.  請確定您的許可權設定為允許腳本執行。 根據預設，除非您修改執行策略，否則腳本會禁止執行。 若要深入瞭解，請參閱 [關於執行策略](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies)。
+5.  在命令提示符中，輸入腳本的完整路徑，然後按 Enter。 腳本會建立名為 TempOwner.pfx 的示範憑證。
 
-或者，您可以使用 PowerShell 建立自己的自我簽署憑證。 如需詳細資訊，請參閱下列 PowerShell 檔： [ [新-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)]。
+或者，您可以使用 PowerShell 建立自己的自我簽署憑證。 詳細資訊，請參閱下列 PowerShell 檔 [：New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)。
 
 
 
 
 >[!NOTE]
->對於在其 PKI 基礎結構中使用離線根目錄的組織，Microsoft Surface UEFI 配置必須在連線至根 CA 的環境中執行，以驗證 SEMM 憑證。 由 Microsoft Surface UEFI 設定檔產生的套件可以轉移成檔案，因此可以使用 [可移動儲存空間] （例如 USB 杆），在離線網路環境外傳輸。
+>針對在 PKI 基礎結構中使用離線根目錄的組織，Microsoft Surface UEFI Configurator 必須在連線至根 CA 的環境中執行，以驗證 SEMM 憑證。 Microsoft Surface UEFI Configurator 產生的套件可以以檔案方式傳輸，因此可以在離線網路環境外使用可移除的儲存空間傳輸，例如 USB 記憶棒。
 
-### 管理證書常見問題
+### <a name="managing-certificates-faq"></a>管理憑證常見問題
 
-建議的 *最小* 長度為15個月。 您可以使用到期日不超過15個月的憑證，或使用超過15個月的憑證。
+建議的最小 *長度* 為 15 個月。 您可以使用在 15 個月內到期的憑證，或使用超過 15 個月的憑證。
 
 >[!NOTE] 
->憑證到期後，就不會自動續約。 
+>憑證到期時，它不會自動續約。 
 
 
-**過期的憑證會影響 SEMM 已註冊裝置的功能嗎？**<br><br>
-否，憑證只會影響 SEMM 中的 IT 管理員管理工作，且在裝置功能到期時不會有任何影響。
+**過期的憑證會影響 SEMM 註冊的裝置功能嗎？**<br><br>
+否，憑證只會影響 SEMM 中的 IT 系統管理員管理工作，且在到期時不會影響裝置功能。
 
 
-**SEMM 套件和憑證是否需要在擁有它的所有電腦上更新？**
+**需要在所有擁有 SEMM 套件和憑證的機器上更新嗎？**
 
-如果您想要 SEMM 重設或還原作業正常運作，憑證必須有效且未過期。 
+如果您希望 SEMM 重設或復原能夠生效，憑證必須有效且不會過期。 
 
-**針對我們所訂購的每個 surface，會建立大容量重設套件嗎？ 在我們的環境中，您可以使用其中一個程式來重設所有電腦嗎？**
+**可以針對我們訂購的每個曲面建立大量重設套件嗎？ 可以建立可重設環境中所有電腦之機器的建立嗎？**
 
-針對特定裝置類型建立配置套件的 PowerShell 範例也可以用來建立獨立于序號碼的重設套件。 如果憑證仍然有效，您可以使用 PowerShell 建立重設套件來重設 SEMM。
+為特定裝置類型建立設定套件的 PowerShell 範例也可以用來建立與序列值無關的重設套件。 如果憑證仍然有效，您可以使用 PowerShell 建立重設套件來重設 SEMM。
 
-## 版本歷程記錄
+## <a name="version-history"></a>版本歷程記錄
 
-### 版本2.79.139。0
-
-此版本的 SEMM 包括：
-- Surface Pro 7 + 支援
-- 改善使用者體驗
-
-
-### 版本2.78.139。0
+### <a name="version-2791390"></a>版本 2.79.139.0
 
 此版本的 SEMM 包括：
+- 支援 Surface Pro 7+
+- 使用者體驗改良功能
 
-- 支援 Surface 膝上型電腦和 Surface Pro X
-- 新版本發行的通知
+
+### <a name="version-2781390"></a>版本 2.78.139.0
+
+此版本的 SEMM 包括：
+
+- Surface Laptop Go 和 Surface Pro X 的支援
+- 新版本發行通知
 - 建立自訂套件以變更擁有權的能力
 - 錯誤修正
 
-### 版本2.73.136。0
+### <a name="version-2731360"></a>版本 2.73.136.0
 
 此版本的 SEMM 包括：
 
-- 現在，您可以使用 SEMM 在 Surface Hub2S 上停用音訊。
-- 針對 Dock 2 的 Surface Pro X 的支援
-- 針對 Dock 2 相關作業的 UEFI 管理員支援
-- 表面上的 [重設套件錯誤] 修正
-- 支援將 Surface Hub 2 裝置從 Windows 10 團隊作業系統遷移至 Windows 10 專業版或企業版。
+- 現在可以使用 SEMM 在 Surface Hub2S 上停用音訊
+- 支援 Surface Pro X for Dock 2
+- 支援 Dock 2 相關作業的 UEFI Manager
+- Surface Go 重設套件錯誤修正
+- 支援將 Surface Hub 2 裝置從 Windows 10 小組作業系統移遷移到 Windows 10 專業版或企業版。
 
-### 版本2.71.139。0
+### <a name="version-2711390"></a>版本 2.71.139.0
 
-此版本的 SEMM 會針對 Surface mobile 3、Surface 膝上型3和 Surface Pro 7 新增對 Surface Dock 2 管理功能的支援，包括：
+此版本的 SEMM 新增了 Surface Book 3、Surface Laptop 3 和 Surface Pro 7 的 Surface Dock 2 管理功能支援，包括：
 
-- 啟用音訊 (鎖定/解鎖) 、乙太網路和 USB 埠
-- 能夠為已驗證及未驗證的主機建立 dock 套件
+- 啟用音訊 (鎖定/解除鎖定) 乙太網路和 USB 埠
+- 為已驗證和未經驗證的主機建立固定套件的能力
 
-### 版本2.70.130。0
+### <a name="version-2701300"></a>版本 2.70.130.0
 
 此版本的 SEMM 包括：
 
-- 表面 [移至 2] 支援
+- 支援 Surface Go 2
 - Surface Book 3 的支援
 - 錯誤修正
 
 
-### 版本2.59.139。0
+### <a name="version-2591390"></a>版本 2.59.139.0
 
-* 支援 Surface Pro 7、Surface Pro X，以及含英特爾處理器的 Surface 膝上型 3 13.5 "和 15" 模型。 注意： Surface 膝上型電腦 3 15 "不支援 AMD 處理器。
+* 支援 Surface Pro 7、Surface Pro X 和 Surface Laptop 3 13.5" 和 15" 型號的 Intel 處理器。
 
-- 支援喚醒功能
+  > [!NOTE]
+  > Surface Laptop 3 15" 的AMD 處理器不受支援。
 
-### 版本2.54.139。0
-* 支援至 Surface Hub 的2秒
+- 支援 Power 喚醒功能
+
+### <a name="version-2541390"></a>版本 2.54.139.0
+* 支援 Surface Hub 2S
 * 錯誤修正
 
-### 版本2.43.136。0
-* 支援以啟用/停用 simulatenous multithreating 
-* 針對某些裝置，分別提供 WiFi 與藍牙選項 
+### <a name="version-2431360"></a>版本 2.43.136.0
+* 支援啟用/停用模擬多執行緒 
+* 部分裝置個別的 WiFi 和藍牙選項 
 * 已移除 Surface Studio 的電池限制 
 
-### 版本2.26.136。0
-* 在 Surface Studio 2 中新增支援
+### <a name="version-2261360"></a>版本 2.26.136.0
+* 新增支援至 Surface Studio 2
 * 電池限制功能
 
-### 版本2.21.136。0
+### <a name="version-2211360"></a>版本 2.21.136.0
 * 新增支援至 Surface Pro 6
-* 新增支援至 Surface 膝上型電腦2
+* 新增 Surface Laptop 2 的支援
 
-### 版本2.14.136。0
-* 將支援新增至表面
+### <a name="version-2141360"></a>版本 2.14.136.0
+* 新增支援至 Surface Go
 
-### 版本 2.9.136.0
+### <a name="version-291360"></a>版本 2.9.136.0
 * 新增支援至 Surface Book 2
-* 新增支援至 Surface Pro LTE
-* 協助工具增強功能
+* 為 Surface Pro LTE 新增支援
+* 協助工具改良功能
 
-### 版本1.0.74。0
-* 新增支援至 Surface 膝上型電腦
-* 將支援新增至 Surface Pro
-* 錯誤修正及一般改進
+### <a name="version-10740"></a>版本 1.0.74.0
+* 在 Surface Laptop 中新增支援
+* 新增支援至 Surface Pro
+* 錯誤修正和一般改進
 
-## 相關主題
+## <a name="related-topics"></a>相關主題
 
 - [使用 SEMM 註冊及設定 Surface 裝置](enroll-and-configure-surface-devices-with-semm.md)
 - [從 SEMM 取消 Surface 裝置的註冊](unenroll-surface-devices-from-semm.md)
