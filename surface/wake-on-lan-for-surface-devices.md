@@ -14,16 +14,16 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 3/19/2021
-ms.openlocfilehash: 1fbbf899876d154469d48fa75a179196697205c1
-ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "11442155"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442887"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a>適用於 Surface 裝置的網路喚醒
 
-使用 Surface 乙太網路介面卡連接到有線網路的 Surface 裝置可以利用從已連接待命 (喚醒 LAN) WOL。 使用 WOL，您可以使用 Microsoft 端點管理員/Microsoft Intune 等管理解決方案，遠端喚醒裝置並自動執行管理工作。
+使用 Surface 乙太網路介面卡連接到有線網路的 Surface 裝置可以利用從已連接待命 (LAN 喚醒) WOL。 使用 WOL，您可以使用 Microsoft 端點管理員/Microsoft Intune 等管理解決方案，遠端喚醒裝置並自動執行管理工作。
 
 ## <a name="wol-supported-devices"></a>支援 WOL 的裝置
 
@@ -32,19 +32,19 @@ ms.locfileid: "11442155"
 - Surface Dock 2
 - Surface Pro 6 及更高版本
 - Surface Book (代) 
-- Surface Laptop (代代) 
+- Surface Laptop (代) 
 - Surface Go (代) 
 - Surface Studio 2 (請參閱) 
 
 
 ## <a name="using-surface-wol"></a>使用 Surface WOL
 
-IT 系統管理員可以使用 LAN 要求喚醒 (包含目的電腦的 MAC 位址的) 封包來觸發裝置。 若要傳送神奇的封包，然後使用 WOL 喚醒裝置，您必須知道目標裝置和乙太網路介面卡的 MAC 位址。 由於魔術封包不使用 IP 網路通訊協定，因此無法使用裝置 IP 位址或 DNS 名稱。
+IT 系統管理員可以使用 LAN 要求上的喚醒 (包含目的電腦的 MAC 位址的) 封包來觸發裝置。 若要使用 WOL 傳送魔術封包並喚醒裝置，您必須知道目標裝置和乙太網路介面卡的 MAC 位址。 由於魔術封包不使用 IP 網路通訊協定，因此無法使用裝置 IP 位址或 DNS 名稱。
 
 許多管理解決方案 ，例如 Microsoft 端點組組管理員和協力廠商 Microsoft Store 應用程式，都提供 WOL 的內建支援。 請注意，裝置必須處於已 (睡眠模式) 並連接到 AC 電源。 若要深入瞭解使用端點設定管理員喚醒裝置，請參閱在 LAN [上設定喚醒 - Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)。
 
 
-## <a name="to-check-wol-is-enabled-on-your-device"></a>若要檢查您的裝置上已啟用 WOL
+### <a name="to-check-wol-is-enabled-on-your-device"></a>若要檢查您的裝置上已啟用 WOL
 
 1. 在乙太網路連接裝置上，選取您的網路介面卡，然後 **選取屬性**。
 
