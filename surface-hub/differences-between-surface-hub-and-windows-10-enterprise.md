@@ -7,24 +7,24 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: f3ffcc46912fba3313e4489f5713b6ffcacf2d8a
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 9c76f9405146c5cda4afe6b46ce7e1cce0062682
+ms.sourcegitcommit: 88ce9e77afdc3d09984edc05286cd0f1eb054223
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387474"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "11448297"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>作業系統基本資訊 (Surface Hub)
 
 Surface Hub 作業系統 Windows 10 團隊版是以 Windows 10 企業版為基礎，針對企業管理、安全性及其他功能提供豐富支援。 但是，它們之間有重要差異。 企業版是針對電腦設計，Windows 10 團隊版則是針對大型螢幕和會議室從頭開始設計。 當您評估 Surface Hub 的安全性和管理需求時，最好是將它視為新的作業系統。 本文的設計是為協助凸顯 Surface Hub 上的 Windows 10 團隊版和 Windows 10 企業版的主要差異，以及這些差異對您的組織有哪些意義。
 
-從 2020 年 9 月開始，客戶可選擇在 Surface Hub 2S 上移移至 Windows 10 專業版或企業版。 若要深入了解，請參閱下列主題：
+從 2020 年 9 月開始，客戶可選擇在 Surface Hub 2S 上移至 Windows 10 專業版或企業版。 若要深入了解，請參閱下列主題：
 
-- [宣佈 Surface Hub 2 上的 Windows 10 專業版和企業版推出](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
+- [宣佈 Surface Hub 2 上的 Windows 10 專業版和企業版的可用性](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
 
 - [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
 
@@ -71,26 +71,26 @@ Surface Hub 是針對在公共空間 (例如會議室) 使用所設計。 與 Wi
 Surface Hub 上有幾個例外的預設通用 Windows 平台 (UWP)應用程式也可以在 Windows 10 電腦上使用。
 
 Surface Hub 上預先安裝的 UWP應用程式：
+
 - 鬧鐘與時鐘
 - 小算盤
 - 連線
 - Excel Mobile
 - 意見反應中樞
-- 檔案總管*
+- 檔案總管
 - 開始使用
 - 地圖
 - Microsoft Edge
 - Microsoft Power BI
+- Microsoft Teams
+- Microsoft Whiteboard
 - OneDrive
 - 相片
 - PowerPoint Mobile
-- 設定*
-- 商務用 Skype*
+- 設定
 - 市集
-- 白板*
+- 提示
 - Word Mobile
-
-*標示星號 (&ast;) 的是 Surface Hub 獨有的應用程式*
 
 *這可能會影響下列組織原則：* <br> 請使用 Windows 10 企業版的指導方針來判斷 Surface Hub 上預設應用程式的功能和網路需求。
 
@@ -106,11 +106,11 @@ Surface Hub 上預先安裝的 UWP應用程式：
 
 Surface Hub 會實作這些 Windows 10 安全性功能：
 - [UEFI 安全開機](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview)
-- [包含 Device Guard 的使用者模式程式碼完整性 (UMCI)](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+- [Windows Defender 應用程式控制和虛擬式程式碼完整性保護](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
 - [使用 AppLocker 的應用程式限制原則](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)
 - [BitLocker 磁碟機加密](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview)
 - [信賴平台模組 (TPM)](https://technet.microsoft.com/itpro/windows/keep-secure/trusted-platform-module-overview)
-- [Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
+- [Microsoft Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
 - 用於存取設定應用程式的[使用者帳戶控制 (UAC)](https://technet.microsoft.com/itpro/windows/keep-secure/user-account-control-overview)
 
 這些 Surface Hub 功能可提供額外的安全性：
@@ -121,6 +121,8 @@ Surface Hub 會實作這些 Windows 10 安全性功能：
 - 已停用下載先進隨插及用驅動程式的功能
 
 *這可能會影響下列組織原則：* <br> 在針對 Surface Hub 執行您的安全性評估時，請考量這些功能。
+
+若要深入瞭解，請參閱 [Surface Hub 安全性概觀](surface-hub-security.md)
 
 ## <a name="management"></a>管理
 
@@ -136,7 +138,7 @@ Surface Hub 不支援 Windows 10 企業版中的管理功能，例如 Microsoft 
 
 ### <a name="remote-management-and-monitoring"></a>遠端管理及監視工具
 
-Surface Hub 支援透過行動裝置管理 (MDM) 解決方案 ，例如 Microsoft [Intune](https://docs.microsoft.com/intune/) 和透過 [Azure 監視器監控](https://azure.microsoft.com/services/monitor/)。 
+Surface Hub 支援透過行動裝置管理與 MDM (管理) [Microsoft Intune](https://docs.microsoft.com/intune/) 和透過 Azure [Monitor 監控等解決方案進行遠端系統管理](https://azure.microsoft.com/services/monitor/)。 
 
 *這可能會影響下列組織原則：* <br> Surface Hub 不支援安裝大部分傳統電腦管理及監視工具所需的 Win32 代理程式，例如 System Center Operations Manager。
 
