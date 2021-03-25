@@ -48,7 +48,7 @@
 ### [在 Surface Hub 上安裝及設定新的 Microsoft Edge](surface-hub-install-chromium-edge.md)        
 ### [使用 Microsoft Intune 管理 Surface Hub 2S](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S 設定的本機管理](local-management-surface-hub-settings.md)
-### [管理裝置帳戶密碼變換](surface-hub-2s-manage-passwords.md)
+### [管理裝置帳戶密碼變換](password-management-for-surface-hub-device-accounts.md)
 ### [管理 Windows Update](manage-windows-updates-for-surface-hub.md)
 ### [現有無線網路或區域網路上的 Miracast](miracast-over-infrastructure.md)
 ### [儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)
