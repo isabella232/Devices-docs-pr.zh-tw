@@ -44,7 +44,7 @@
 ### [Surface Hub 2 上適用於 Windows 10 專業版和企業版的重要附加元件](surface-hub-2-essential-add-ons.md)
 ### [安裝 Windows 10 團隊版 2020 更新](surface-hub-2020-update.md)  
 ### [已知問題 - Windows 10 團隊版 2020 更新](surface-hub-2020-team-update-known-issues.md)
-### [在 Surface Hub 2S 上設定非全域系統管理員帳戶](surface-hub-2s-nonglobal-admin.md)
+### [在 Surface Hub 上設定非全域系統管理員帳戶](surface-hub-2s-nonglobal-admin.md)
 ### [在 Surface Hub 上安裝及設定新的 Microsoft Edge](surface-hub-install-chromium-edge.md)        
 ### [使用 Microsoft Intune 管理 Surface Hub 2S](surface-hub-2s-manage-intune.md)
 ### [Surface Hub 2S 設定的本機管理](local-management-surface-hub-settings.md)
