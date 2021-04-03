@@ -1,6 +1,6 @@
 ---
-title: Surface Hub (v1) 的 PowerShell
-description: 此頁面包含適用于原始 Surface Hub (v1) 的 PowerShell 腳本
+title: 'PowerShell for Surface Hub (v1) '
+description: '此頁面包含適用于原始 Surface Hub (v1) '
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -14,17 +14,17 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
-ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
+ms.openlocfilehash: bf130c2707de4507a76f0c0d6f711af3082a7647
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "11317977"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474750"
 ---
-# Surface Hub (v1) 的 PowerShell
+# <a name="powershell-for-surface-hub-v1"></a>PowerShell for Surface Hub (v1) 
 
 > [!NOTE]
- >此頁面包含適用于原始 Surface Hub (v1) 的 PowerShell 腳本。 如需 Surface Hub 2 的最新帳戶建立腳本，請參閱 [建立 Surface hub 2 的裝置帳戶](surface-hub-2s-account.md)。
+ >此頁面包含適用于原始 Surface Hub (v1) 。 有關 Surface Hub 2S 的最新帳戶建立腳本，請參閱 [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)。
 
 -   [適用於 Surface Hub 系統管理員的 PowerShell 指令碼](#scripts-for-admins)
     -   [建立內部部署帳戶](#create-on-premises-ps-scripts)
@@ -38,9 +38,9 @@ ms.locfileid: "11317977"
     -   [接受外部會議邀請](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > 另請參閱 [Exchange Online PowerShell V2 中的新式驗證與無人參與腳本](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
+ > 另請參閱[Exchange Online PowerShell V2 中的新式驗證](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)和無參與腳本
 
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 若要順利執行這些 PowerShell 指令碼，您必須安裝下列必要條件：
 
@@ -48,7 +48,7 @@ ms.locfileid: "11317977"
 - [Windows PowerShell 的 Microsoft Azure Active Directory 模組 (64 位元版本)](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
 - [商務用 Skype Online 的 Windows PowerShell 模組](https://www.microsoft.com/download/details.aspx?id=39366)
 
-## <a href="" id="scripts-for-admins"></a>適用於 Surface Hub 系統管理員的 PowerShell 指令碼
+## <a name="powershell-scripts-for-surface-hub-administrators"></a><a href="" id="scripts-for-admins"></a>適用於 Surface Hub 系統管理員的 PowerShell 指令碼
 
 指令碼可以執行哪些動作？
 
@@ -64,15 +64,15 @@ ms.locfileid: "11317977"
 > [!NOTE]
 > 無論您是否正在建立新的帳戶或修改已經存在的帳戶，驗證指令碼都將驗證您的裝置帳戶是否已正確設定。 您應一律先執行驗證指令碼，然後再將裝置帳戶新增到 Surface Hub。
 
-## 執行指令碼
+## <a name="running-the-scripts"></a>執行指令碼
 
 帳戶建立指令碼將執行下列動作：
 
--   要求管理員認證。
--   在您的網域/租使用者中建立裝置帳戶。
--   建立或指派 Surface Hub 相容性 ActiveSync 原則至裝置帳戶 (s) 。
+-   要求系統管理員認證。
+-   在網域/租使用者中建立裝置帳戶。
+-   建立或指派 Surface Hub 相容的 ActiveSync 策略至裝置帳戶 () 。
 -   在 Exchange 和商務用 Skype 中為建立的帳戶設定各種屬性。
--   將授權和許可權指派給已建立的帳戶 (s) 。
+-   將授權和許可權指派給已建立 (帳戶) 。
 
 以下是指令碼所設定的屬性：
 
@@ -183,15 +183,14 @@ ms.locfileid: "11317977"
 </tbody>
 </table>
 
-## 帳戶建立指令碼
+## <a name="account-creation-scripts"></a>帳戶建立指令碼
 
 這些指令碼將會為您建立裝置帳戶。 您可以使用[帳戶驗證指令碼](#acct-verification-ps-scripts)，來確定它們可正確執行。
 
 帳戶建立指令碼不能修改已經存在的帳戶，但可用來協助您了解需要執行哪些 Cmdlet，才能正確設定現有的帳戶。
 
-### <a href="" id="create-on-premises-ps-scripts"></a>建立內部部署帳戶
+### <a name="create-an-on-premises-account"></a><a href="" id="create-on-premises-ps-scripts"></a>建立內部部署帳戶
 
-利用[內部部署](on-premises-deployment-surface-hub-device-accounts.md)中所述的方式來建立帳戶。
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -549,9 +548,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a>使用 Office 365 建立裝置帳戶
+### <a name="create-a-device-account-using-office-365"></a><a href="" id="create-os356-ps-scripts"></a>使用 Office 365 建立裝置帳戶
 
-如在 [使用 Office 365 建立裝置帳戶](create-a-device-account-using-office-365.md)中所述，建立帳戶。
+建立帳戶，如使用 [Office 365 建立裝置帳戶中所述](create-and-test-a-device-account-surface-hub.md)。
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -994,9 +993,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a>帳戶驗證指令碼
+## <a name="account-verification-script"></a><a href="" id="acct-verification-ps-scripts"></a>帳戶驗證指令碼
 
-此腳本會驗證先前在 Surface Hub 和 Surface Hub 2 上建立的裝置帳戶，無論使用哪一個方法來建立它。 這個指令碼基本上已通過/失敗。 如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。 例如，您可能會看到：
+此腳本會驗證 Surface Hub 和 Surface Hub 2S 上先前建立之裝置帳戶，無論使用哪一種方法建立帳戶。 這個指令碼基本上已通過/失敗。 如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。 例如，您可能會看到：
 
 ```console
 15 tests executed
@@ -1445,7 +1444,7 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a>啟用商務用 Skype
+## <a name="enable-skype-for-business"></a><a href="" id="enable-sfb-ps-scripts"></a>啟用商務用 Skype
 
 這個指令碼將會在裝置帳戶上啟用商務用 Skype。 只有先前在帳戶建立期間並未啟用商務用 Skype 時，才能使用它。
 
@@ -1605,9 +1604,9 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## 實用的 Cmdlet
+## <a name="useful-cmdlets"></a>實用的 Cmdlet
 
-### <a href="" id="create-compatible-as-policy"></a>建立與 Surface Hub 相容的 ActiveSync 原則
+### <a name="creating-a-surface-hub-compatible-activesync-policy"></a><a href="" id="create-compatible-as-policy"></a>建立與 Surface Hub 相容的 ActiveSync 原則
 
 如果 Surface Hub 會使用 Exchange 服務，就必須將利用相容 ActiveSync 原則所設定的裝置帳戶佈建在裝置上。 這個原則具有下列需求：
 
@@ -1645,7 +1644,7 @@ Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### 允許適用於 ActiveSync 的裝置識別碼
+### <a name="allowing-device-ids-for-activesync"></a>允許適用於 ActiveSync 的裝置識別碼
 
 若要允許帳戶 `$strRoomUpn`，請執行下列命令：
 
@@ -1661,7 +1660,7 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 
 這會擷取已佈建帳戶之每個裝置的裝置資訊，包括 `DeviceId` 屬性。
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a>自動接受和拒絕會議邀請
+### <a name="auto-accepting-and-declining-meeting-requests"></a><a href="" id="auto-accept-meetings-cmdlet"></a>自動接受和拒絕會議邀請
 
 若要使裝置帳戶根據其可用性自動接受或拒絕會議邀請，**AutomateProcessing** 屬性必須設定為 **AutoAccept**。 此為建議設定，可防止會議重疊。
 
@@ -1669,12 +1668,12 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a>接受外部會議邀請
+### <a name="accepting-external-meeting-requests"></a><a href="" id="accept-ext-meetings-cmdlet"></a>接受外部會議邀請
 
 如果裝置帳戶會接受外部會議邀請 (來自不同租用戶/網域之帳戶的會議邀請)，就必須設定裝置帳戶以允許處理外部會議要求。 一旦設定之後，裝置帳戶將會自動接受或拒絕來自外部帳戶以及本機帳戶的會議邀請。
 
 > [!Note]
-> 如果 **AutomateProcessing** 屬性未設為 **AutoAccept**，則設定此選項將不會有任何效果。
+> 如果 **自動化處理屬性** 未設定為 **AutoAccept，** 則設定此設定將無效。
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true

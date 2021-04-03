@@ -10,70 +10,53 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/06/2018
+ms.date: 04/01/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 20ec9b3a81ad511bcb7880de6b53025fbac0a561
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 685359f1371a1bef8bd216223a98b934c997a1d8
+ms.sourcegitcommit: 879e80200aea26f6705c887fa392db5db35b99ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831897"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "11475087"
 ---
-# 建立和測試裝置帳戶 (Surface Hub)
+# <a name="create-and-test-a-device-account-surface-hub"></a>建立和測試裝置帳戶 (Surface Hub)
 
+建立 Surface Hub 裝置帳戶 (也稱為資源帳戶/會議室信箱) 可讓 Surface Hub 接收、核准或拒絕會議要求並加入會議。
 
-本主題介紹如何建立和測試 Microsoft Surface Hub 用來與 Microsoft Exchange 和 Skype 通訊的裝置帳戶。
+在 Surface Hub 上配置裝置帳戶後，人員可以將此帳戶新增到會議邀請，其方式與邀請會議室的方式相同。 
 
-**「裝置帳戶」** 是 Surface Hub 用來執行下列動作的 Exchange 資源帳戶：
+您可以在 OOBE 的開箱即用體驗期間設定 ([裝置) 帳戶](first-run-program-surface-hub.md)。 如有必要，您也可以稍後在設定****  >  **Surface Hub 帳戶中**  >  **變更。**
 
--   顯示會議行事曆
--   加入小組或商務用 Skype 通話
--   傳送電子郵件 (例如以電子郵件寄送會議的白板內容)
+## <a name="configuration-overview"></a>設定概觀
 
-當裝置帳戶已佈建到 Surface Hub 之後，人員便可以利用和邀請會議室相同的方式，將此帳戶新增到會議邀請。 
-
-## 設定概觀
-
-下表說明建立裝置帳戶的主要步驟和設定決策。 
+下表說明建立裝置帳戶的主要步驟和設定決策。
  
 | 步驟 | 說明                     |  用途                             |
 |------|---------------------------------|--------------------------------------|
-| sr-1    | 建立已啟用登入功能的 Exchange 資源信箱 (Exchange 2013 或更新版本，或是 Exchange Online) | 此資源信箱允許裝置維護會議行事曆、接收會議要求，以及傳送郵件。 它必須已啟用登入功能以佈建到 Surface Hub。 |
-| pplx-2    | 設定信箱屬性 | 信箱必須設定為正確屬性，以在 Surface Hub 上提供最佳的會議體驗。 如需信箱屬性的詳細資訊，請參閱[信箱屬性](exchange-properties-for-surface-hub-device-accounts.md)。 |
-| 3    | 將相容的行動裝置信箱原則套用到信箱 | Surface Hub 是使用行動裝置管理 (MDM) 來管理，而不是透過行動裝置信箱原則。 為了相容性，裝置帳戶必須具有已將 **PasswordEnabled** 設定設為 False 的行動裝置信箱原則。 否則，Surface Hub 將無法同步處理郵件和行事曆資訊。 |
-| 4    | 為信箱啟用商務用 Skype (Lync Server 2013 或更新版本，或商務用 Skype Online) | 必須啟用商務用 Skype，才能使用各種不同的會議功能，例如，視訊通話、IM 和螢幕畫面分享。  |
-| 500    | (選擇性) 將 ActiveSync 裝置 ID 納入允許清單 | 您的組織可能有一個全域原則，以防止裝置帳戶同步處理郵件和行事曆資訊。 如果是，您必須允許您 Surface Hub 的 ActiveSync 裝置識別碼。 |
-| 6    | (選擇性) 停用密碼到期 | 為了簡化管理作業，您可以將裝置帳戶的密碼到期關閉，並允許 Surface Hub 自動循環裝置帳戶密碼。 如需密碼管理的詳細資訊，請參閱[密碼管理](password-management-for-surface-hub-device-accounts.md)。  |
+| 1    | 在 Exchange Online 或 Exchange Server 2016 (建立啟用登入的會議室信箱)  | 這種類型的信箱可讓裝置維護會議日曆、接收會議要求，以及傳送郵件。 您必須啟用登入，才能與 Surface Hub 一起使用。 |
+| 2    | 設定信箱屬性 | 信箱必須設定為正確屬性，以在 Surface Hub 上提供最佳的會議體驗。 如需信箱屬性的詳細資訊，請參閱[信箱屬性](exchange-properties-for-surface-hub-device-accounts.md)。 |
+| 3    | 請確保已啟用 EWS (Exchange Web Services) ，並停用 MFA (多重要素) 驗證 | Surface Hub 會使用 EWS 來同步處理其日曆。 如果您預設不允許環境中有 EWS，中心信箱必須明確啟用。 當 Surface Hub 在沒有使用者互動的情況下，在背景中登錄 Exchange 時，無法回應任何互動式提示，例如 MFA。 您建立之裝置帳戶必須排除在任何這類驗證需求之外。 否則，Surface Hub 將無法同步處理郵件和行事曆資訊。 |
+| 4    | 啟用 Teams 或商務用 Skype 帳戶 (商務用 Skype Server 2015 及更新)  | 商務用 Skype 或 Teams 必須啟用，以使用視像通話、IM 和螢幕分享等會議功能。 有關啟用 Teams 的授權詳細資訊，請參閱 [Teams 會議室授權和](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-licensing) [Teams 服務描述](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)。 |
+| 5    | (選擇性) 停用密碼到期 | 為了簡化管理作業，您可以將裝置帳戶的密碼到期關閉，並允許 Surface Hub 自動循環裝置帳戶密碼。 如需密碼管理的詳細資訊，請參閱[密碼管理](password-management-for-surface-hub-device-accounts.md)。  |
+| 6    |  (選擇性) 設定 Exchange 策略以允許 ActiveSync | 在某些內部部署 Exchange Server & Active Directory 部署中，ActiveSync 會用來同步處理裝置帳戶郵件和日曆資訊。 若要進一步設定相關政策，請參閱 [Surface Hub 帳戶的 ActiveSync 策略](apply-activesync-policies-for-surface-hub-device-accounts.md)。 |
 
-## 詳細設定步驟 
+> [!NOTE]  
+> Surface Hub 裝置帳戶不支援協力廠商聯合身分識別提供者 (Idp) 且必須透過 Active Directory 或 Azure Active Directory 進行驗證。
 
-建議您使用遠端 PowerShell 來設定裝置帳戶。 有可協助建立並驗證裝置帳戶的 PowerShell 指令碼可供使用。如需 PowerShell 指令碼和指示的詳細資訊，請參閱[附錄 A：PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)。 
+## <a name="detailed-configuration-steps"></a>詳細設定步驟 
 
-如需使用 PowerShell 佈建裝置帳戶的詳細步驟，請根據您的組織部署選擇表格中的選項。 
+我們建議您使用遠端 Windows PowerShell 設定 Surface Hub 裝置帳戶。 Microsoft 提供 [SkypeRoomProvisioningScript.ps1， ](https://go.microsoft.com/fwlink/?linkid=870105)此腳本可協助建立新資源帳戶，或驗證您現有的資源帳戶，以便協助您將這些帳戶轉換為相容的 Surface Hub 裝置帳戶。 如果您願意，您可以從下表選擇一個選項，然後根據您的組織部署遵循詳細的 PowerShell 步驟。
 
-| 組織部署             |  說明                  |
+| 組織部署             |  說明                  |        Surface Hub 設定期間使用的格式
 |---------------------------------|--------------------------------------|
-| [線上部署 (Office 365)](online-deployment-surface-hub-device-accounts.md) | 您組織的環境完全部署在 Office 365 上。 |
-| [內部部署 (單一樹系)](on-premises-deployment-surface-hub-device-accounts.md) | 您的組織擁有其所控制的伺服器，並在單一樹系環境將它用來裝載 Active Directory、Exchange 及商務用 Skype (或 Lync)。 |
-| [內部部署 (多重樹系)](on-premises-deployment-surface-hub-multi-forest.md) | 您的組織擁有其所控制的伺服器，並在多重樹系環境將它用來裝載 Active Directory、Exchange 及商務用 Skype (或 Lync)。 |
-| [混合式部署](hybrid-deployment-surface-hub-device-accounts.md) | 您的組織擁有混合的服務，其中部分是透過內部部署裝載，部分是透過 Office 365 線上裝載。 |
-| [線上或混合式部署，使用 Skype 混合語音環境](skype-hybrid-voice.md) | 您的組織在雲端中有商務用 Skype 主集區與 Exchange 伺服器，並使用透過公用交換電話網路 (PSTN) 連線的商務用 Skype 2015 或 Cloud Connector 版的內部部署集區。 |
+| [Microsoft 365 (Office 365) ](https://docs.microsoft.com/microsoftteams/rooms/with-office-365) |貴組織的環境完全部署在 Microsoft 365 或 Office 365 上。 | username@domain.com |
+| [Exchange 內部部署 (Exchange 內部部署) ](https://docs.microsoft.com/microsoftteams/rooms/with-exchange-on-premises) | 貴組織有各種服務，其中 Exchange Server 託管于內部部署和 Microsoft Teams 線上。 | username@domain.com [Exchange](https://docs.microsoft.com/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication) 中啟用混合式新式驗證時，否則使用 DOMAIN\username |
+| [Exchange Online (混合式部署) ](https://docs.microsoft.com/microsoftteams/rooms/with-exchange-online) | 貴組織有各種服務，其中商務用 Skype Server 託管于內部部署和 Exchange Online。 | username@domain.com [在](https://docs.microsoft.com/microsoft-365/enterprise/configure-skype-for-business-for-hybrid-modern-authentication) SfB 中啟用混合式新式驗證時，否則使用 DOMAIN\username |
+| [內部部署 (單一樹系)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015) | 貴組織有它控制的伺服器，其中 Active Directory、Exchange 和商務用 Skype Server 是託管在單一林環境中。  | DOMAIN\username |
+| [內部部署 (多重樹系)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments) | 貴組織有它所控制的伺服器，Active Directory、Exchange 和商務用 Skype Server 都託管在多林環境中。 | ACCOUNTFOREST\username |
 
 
-如果您想要使用圖形化的使用者介面 (UI)，一部分的步驟可以不使用 PowerShell，而改為使用 UI 來完成。 如需詳細資訊，請參閱[使用 UI 建立裝置帳戶](create-a-device-account-using-office-365.md)。
+## <a name="account-verification-and-testing"></a>帳戶驗證與測試
 
-## 帳戶驗證與測試
-
-有兩種可用方法，您可以用來驗證和測試 Surface Hub 裝置帳戶：[帳戶驗證指令碼](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts)和 [Surface Hub 硬體診斷應用程式](https://www.microsoft.com/store/apps/9nblggh51f2g)。 帳戶驗證指令碼將會從桌面使用 PowerShell 來驗證先前建立的裝置帳戶。 Surface Hub 硬體診斷應用程式已安裝在 Surface Hub 上，並且會提供有關登入及通訊失敗的詳細意見反應。 兩者都是要測試新建立裝置帳戶的實用工具，您應該用來確保最佳的帳戶可用性。
-
- 
-
- 
-
- 
-
-
-
-
-
+您可以使用兩種方法來驗證和測試 Surface Hub 裝置 [ 帳戶：SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105) 和 [Surface Hub 硬體診斷應用程式](https://www.microsoft.com/store/apps/9nblggh51f2g)。 帳戶配置腳本可以從您的電腦使用 PowerShell 驗證先前建立的設備帳戶。 Surface Hub 硬體診斷應用程式已安裝在 Surface Hub 上，並且會提供有關登入及通訊失敗的詳細意見反應。 兩者都是要測試新建立裝置帳戶的實用工具，您應該用來確保最佳的帳戶可用性。
