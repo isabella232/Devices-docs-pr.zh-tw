@@ -1,6 +1,6 @@
 ---
-title: Surface Hub (v1) 的 PowerShell
-description: 此頁面包含適用于原始 Surface Hub (v1) 的 PowerShell 腳本
+title: 'PowerShell for Surface Hub (v1) '
+description: '此頁面包含適用于原始 Surface Hub (v1) '
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -14,67 +14,67 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
-ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
+ms.openlocfilehash: bf130c2707de4507a76f0c0d6f711af3082a7647
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "11317977"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474750"
 ---
-# <span data-ttu-id="019f2-104">Surface Hub (v1) 的 PowerShell</span><span class="sxs-lookup"><span data-stu-id="019f2-104">PowerShell for Surface Hub (v1)</span></span>
+# <a name="powershell-for-surface-hub-v1"></a><span data-ttu-id="4461a-104">PowerShell for Surface Hub (v1) </span><span class="sxs-lookup"><span data-stu-id="4461a-104">PowerShell for Surface Hub (v1)</span></span>
 
 > [!NOTE]
- ><span data-ttu-id="019f2-105">此頁面包含適用于原始 Surface Hub (v1) 的 PowerShell 腳本。</span><span class="sxs-lookup"><span data-stu-id="019f2-105">This page includes PowerShell scripts intended for the original Surface Hub (v1).</span></span> <span data-ttu-id="019f2-106">如需 Surface Hub 2 的最新帳戶建立腳本，請參閱 [建立 Surface hub 2 的裝置帳戶](surface-hub-2s-account.md)。</span><span class="sxs-lookup"><span data-stu-id="019f2-106">For the latest account creation scripts for Surface Hub 2S, see [Create Surface Hub 2S device account](surface-hub-2s-account.md).</span></span>
+ ><span data-ttu-id="4461a-105">此頁面包含適用于原始 Surface Hub (v1) 。</span><span class="sxs-lookup"><span data-stu-id="4461a-105">This page includes PowerShell scripts intended for the original Surface Hub (v1).</span></span> <span data-ttu-id="4461a-106">有關 Surface Hub 2S 的最新帳戶建立腳本，請參閱 [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)。</span><span class="sxs-lookup"><span data-stu-id="4461a-106">For the latest account creation scripts for Surface Hub 2S, see [Create and test a device account](create-and-test-a-device-account-surface-hub.md).</span></span>
 
--   [<span data-ttu-id="019f2-107">適用於 Surface Hub 系統管理員的 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="019f2-107">PowerShell scripts for Surface Hub admins</span></span>](#scripts-for-admins)
-    -   [<span data-ttu-id="019f2-108">建立內部部署帳戶</span><span class="sxs-lookup"><span data-stu-id="019f2-108">Create an on-premises account</span></span>](#create-on-premises-ps-scripts)
-    -   [<span data-ttu-id="019f2-109">使用 Office 365 建立裝置帳戶</span><span class="sxs-lookup"><span data-stu-id="019f2-109">Create a device account using Office 365</span></span>](#create-os356-ps-scripts)
-    -   [<span data-ttu-id="019f2-110">帳戶驗證指令碼</span><span class="sxs-lookup"><span data-stu-id="019f2-110">Account verification script</span></span>](#acct-verification-ps-scripts)
-    -   [<span data-ttu-id="019f2-111">啟用商務用 Skype (EnableSfb.ps1)</span><span class="sxs-lookup"><span data-stu-id="019f2-111">Enable Skype for Business (EnableSfb.ps1)</span></span>](#enable-sfb-ps-scripts)
--   [<span data-ttu-id="019f2-112">實用的 Cmdlet</span><span class="sxs-lookup"><span data-stu-id="019f2-112">Useful cmdlets</span></span>](#useful-cmdlets)
-    -   [<span data-ttu-id="019f2-113">建立與 Surface Hub 相容的 Exchange ActiveSync 原則</span><span class="sxs-lookup"><span data-stu-id="019f2-113">Creating a Surface Hub-compatible Exchange ActiveSync policy</span></span>](#create-compatible-as-policy)
-    -   [<span data-ttu-id="019f2-114">允許適用於 ActiveSync 的裝置識別碼</span><span class="sxs-lookup"><span data-stu-id="019f2-114">Allowing device IDs for ActiveSync</span></span>](#allowing-device-ids-for-activesync)
-    -   [<span data-ttu-id="019f2-115">自動接受和拒絕會議邀請</span><span class="sxs-lookup"><span data-stu-id="019f2-115">Auto-accepting and declining meeting requests</span></span>](#auto-accept-meetings-cmdlet)
-    -   [<span data-ttu-id="019f2-116">接受外部會議邀請</span><span class="sxs-lookup"><span data-stu-id="019f2-116">Accepting external meeting requests</span></span>](#accept-ext-meetings-cmdlet)
+-   [<span data-ttu-id="4461a-107">適用於 Surface Hub 系統管理員的 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="4461a-107">PowerShell scripts for Surface Hub admins</span></span>](#scripts-for-admins)
+    -   [<span data-ttu-id="4461a-108">建立內部部署帳戶</span><span class="sxs-lookup"><span data-stu-id="4461a-108">Create an on-premises account</span></span>](#create-on-premises-ps-scripts)
+    -   [<span data-ttu-id="4461a-109">使用 Office 365 建立裝置帳戶</span><span class="sxs-lookup"><span data-stu-id="4461a-109">Create a device account using Office 365</span></span>](#create-os356-ps-scripts)
+    -   [<span data-ttu-id="4461a-110">帳戶驗證指令碼</span><span class="sxs-lookup"><span data-stu-id="4461a-110">Account verification script</span></span>](#acct-verification-ps-scripts)
+    -   [<span data-ttu-id="4461a-111">啟用商務用 Skype (EnableSfb.ps1)</span><span class="sxs-lookup"><span data-stu-id="4461a-111">Enable Skype for Business (EnableSfb.ps1)</span></span>](#enable-sfb-ps-scripts)
+-   [<span data-ttu-id="4461a-112">實用的 Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4461a-112">Useful cmdlets</span></span>](#useful-cmdlets)
+    -   [<span data-ttu-id="4461a-113">建立與 Surface Hub 相容的 Exchange ActiveSync 原則</span><span class="sxs-lookup"><span data-stu-id="4461a-113">Creating a Surface Hub-compatible Exchange ActiveSync policy</span></span>](#create-compatible-as-policy)
+    -   [<span data-ttu-id="4461a-114">允許適用於 ActiveSync 的裝置識別碼</span><span class="sxs-lookup"><span data-stu-id="4461a-114">Allowing device IDs for ActiveSync</span></span>](#allowing-device-ids-for-activesync)
+    -   [<span data-ttu-id="4461a-115">自動接受和拒絕會議邀請</span><span class="sxs-lookup"><span data-stu-id="4461a-115">Auto-accepting and declining meeting requests</span></span>](#auto-accept-meetings-cmdlet)
+    -   [<span data-ttu-id="4461a-116">接受外部會議邀請</span><span class="sxs-lookup"><span data-stu-id="4461a-116">Accepting external meeting requests</span></span>](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > <span data-ttu-id="019f2-117">另請參閱 [Exchange Online PowerShell V2 中的新式驗證與無人參與腳本](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span><span class="sxs-lookup"><span data-stu-id="019f2-117">See also [Modern Auth and Unattended Scripts in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span></span>
+ > <span data-ttu-id="4461a-117">另請參閱[Exchange Online PowerShell V2 中的新式驗證](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)和無參與腳本</span><span class="sxs-lookup"><span data-stu-id="4461a-117">See also [Modern Auth and Unattended Scripts in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span></span>
 
-## <span data-ttu-id="019f2-118">必要條件</span><span class="sxs-lookup"><span data-stu-id="019f2-118">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4461a-118">必要條件</span><span class="sxs-lookup"><span data-stu-id="4461a-118">Prerequisites</span></span>
 
-<span data-ttu-id="019f2-119">若要順利執行這些 PowerShell 指令碼，您必須安裝下列必要條件：</span><span class="sxs-lookup"><span data-stu-id="019f2-119">To successfully execute these PowerShell scripts, you will need to install the following prerequisites:</span></span>
+<span data-ttu-id="4461a-119">若要順利執行這些 PowerShell 指令碼，您必須安裝下列必要條件：</span><span class="sxs-lookup"><span data-stu-id="4461a-119">To successfully execute these PowerShell scripts, you will need to install the following prerequisites:</span></span>
 
-- [<span data-ttu-id="019f2-120">適用於 IT 專業人員的 Microsoft Online Services 登入小幫手 RTW</span><span class="sxs-lookup"><span data-stu-id="019f2-120">Microsoft Online Services Sign-in Assistant for IT Professionals RTW</span></span>](https://www.microsoft.com/download/details.aspx?id=41950)
-- [<span data-ttu-id="019f2-121">Windows PowerShell 的 Microsoft Azure Active Directory 模組 (64 位元版本)</span><span class="sxs-lookup"><span data-stu-id="019f2-121">Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)</span></span>](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
-- [<span data-ttu-id="019f2-122">商務用 Skype Online 的 Windows PowerShell 模組</span><span class="sxs-lookup"><span data-stu-id="019f2-122">Windows PowerShell Module for Skype for Business Online</span></span>](https://www.microsoft.com/download/details.aspx?id=39366)
+- [<span data-ttu-id="4461a-120">適用於 IT 專業人員的 Microsoft Online Services 登入小幫手 RTW</span><span class="sxs-lookup"><span data-stu-id="4461a-120">Microsoft Online Services Sign-in Assistant for IT Professionals RTW</span></span>](https://www.microsoft.com/download/details.aspx?id=41950)
+- [<span data-ttu-id="4461a-121">Windows PowerShell 的 Microsoft Azure Active Directory 模組 (64 位元版本)</span><span class="sxs-lookup"><span data-stu-id="4461a-121">Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)</span></span>](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
+- [<span data-ttu-id="4461a-122">商務用 Skype Online 的 Windows PowerShell 模組</span><span class="sxs-lookup"><span data-stu-id="4461a-122">Windows PowerShell Module for Skype for Business Online</span></span>](https://www.microsoft.com/download/details.aspx?id=39366)
 
-## <a href="" id="scripts-for-admins"></a><span data-ttu-id="019f2-123">適用於 Surface Hub 系統管理員的 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="019f2-123">PowerShell scripts for Surface Hub administrators</span></span>
+## <a name="powershell-scripts-for-surface-hub-administrators"></a><a href="" id="scripts-for-admins"></a><span data-ttu-id="4461a-123">適用於 Surface Hub 系統管理員的 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="4461a-123">PowerShell scripts for Surface Hub administrators</span></span>
 
-<span data-ttu-id="019f2-124">指令碼可以執行哪些動作？</span><span class="sxs-lookup"><span data-stu-id="019f2-124">What do the scripts do?</span></span>
+<span data-ttu-id="4461a-124">指令碼可以執行哪些動作？</span><span class="sxs-lookup"><span data-stu-id="4461a-124">What do the scripts do?</span></span>
 
--   <span data-ttu-id="019f2-125">建立裝置帳戶，使用純單一樹系的內部部署 (僅限 Microsoft Exchange 和 Skype 2013 及更新版本) 或線上 (Microsoft Office 365) 來進行設定，其均已針對您的 Surface Hub 正確設定。</span><span class="sxs-lookup"><span data-stu-id="019f2-125">Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.</span></span>
--   <span data-ttu-id="019f2-126">針對任何設定 (內部部署或線上) 驗證現有的裝置帳戶，以確定它們可與 Surface Hub 相容。</span><span class="sxs-lookup"><span data-stu-id="019f2-126">Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.</span></span>
--   <span data-ttu-id="019f2-127">為任何想要自行建立裝置帳戶或驗證指令碼的使用者，提供基本範本。</span><span class="sxs-lookup"><span data-stu-id="019f2-127">Provide a base template for anyone wanting to create their own device account creation or validation scripts.</span></span>
+-   <span data-ttu-id="4461a-125">建立裝置帳戶，使用純單一樹系的內部部署 (僅限 Microsoft Exchange 和 Skype 2013 及更新版本) 或線上 (Microsoft Office 365) 來進行設定，其均已針對您的 Surface Hub 正確設定。</span><span class="sxs-lookup"><span data-stu-id="4461a-125">Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.</span></span>
+-   <span data-ttu-id="4461a-126">針對任何設定 (內部部署或線上) 驗證現有的裝置帳戶，以確定它們可與 Surface Hub 相容。</span><span class="sxs-lookup"><span data-stu-id="4461a-126">Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.</span></span>
+-   <span data-ttu-id="4461a-127">為任何想要自行建立裝置帳戶或驗證指令碼的使用者，提供基本範本。</span><span class="sxs-lookup"><span data-stu-id="4461a-127">Provide a base template for anyone wanting to create their own device account creation or validation scripts.</span></span>
 
-<span data-ttu-id="019f2-128">您需要具備哪些項目，才能執行指令碼？</span><span class="sxs-lookup"><span data-stu-id="019f2-128">What do you need in order to run the scripts?</span></span>
+<span data-ttu-id="4461a-128">您需要具備哪些項目，才能執行指令碼？</span><span class="sxs-lookup"><span data-stu-id="4461a-128">What do you need in order to run the scripts?</span></span>
 
--   <span data-ttu-id="019f2-129">對於組織的網域或租用戶、Exchange Server 及商務用 Skype 伺服器的遠端 PowerShell 存取權。</span><span class="sxs-lookup"><span data-stu-id="019f2-129">Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
--   <span data-ttu-id="019f2-130">適用於組織的網域或租用戶、Exchange Server 及商務用 Skype 伺服器的系統管理認證。</span><span class="sxs-lookup"><span data-stu-id="019f2-130">Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+-   <span data-ttu-id="4461a-129">對於組織的網域或租用戶、Exchange Server 及商務用 Skype 伺服器的遠端 PowerShell 存取權。</span><span class="sxs-lookup"><span data-stu-id="4461a-129">Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+-   <span data-ttu-id="4461a-130">適用於組織的網域或租用戶、Exchange Server 及商務用 Skype 伺服器的系統管理認證。</span><span class="sxs-lookup"><span data-stu-id="4461a-130">Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="019f2-131">無論您是否正在建立新的帳戶或修改已經存在的帳戶，驗證指令碼都將驗證您的裝置帳戶是否已正確設定。</span><span class="sxs-lookup"><span data-stu-id="019f2-131">Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly.</span></span> <span data-ttu-id="019f2-132">您應一律先執行驗證指令碼，然後再將裝置帳戶新增到 Surface Hub。</span><span class="sxs-lookup"><span data-stu-id="019f2-132">You should always run the validation script before adding a device account to Surface Hub.</span></span>
+> <span data-ttu-id="4461a-131">無論您是否正在建立新的帳戶或修改已經存在的帳戶，驗證指令碼都將驗證您的裝置帳戶是否已正確設定。</span><span class="sxs-lookup"><span data-stu-id="4461a-131">Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly.</span></span> <span data-ttu-id="4461a-132">您應一律先執行驗證指令碼，然後再將裝置帳戶新增到 Surface Hub。</span><span class="sxs-lookup"><span data-stu-id="4461a-132">You should always run the validation script before adding a device account to Surface Hub.</span></span>
 
-## <span data-ttu-id="019f2-133">執行指令碼</span><span class="sxs-lookup"><span data-stu-id="019f2-133">Running the scripts</span></span>
+## <a name="running-the-scripts"></a><span data-ttu-id="4461a-133">執行指令碼</span><span class="sxs-lookup"><span data-stu-id="4461a-133">Running the scripts</span></span>
 
-<span data-ttu-id="019f2-134">帳戶建立指令碼將執行下列動作：</span><span class="sxs-lookup"><span data-stu-id="019f2-134">The account creation scripts will:</span></span>
+<span data-ttu-id="4461a-134">帳戶建立指令碼將執行下列動作：</span><span class="sxs-lookup"><span data-stu-id="4461a-134">The account creation scripts will:</span></span>
 
--   <span data-ttu-id="019f2-135">要求管理員認證。</span><span class="sxs-lookup"><span data-stu-id="019f2-135">Ask for administrator credentials.</span></span>
--   <span data-ttu-id="019f2-136">在您的網域/租使用者中建立裝置帳戶。</span><span class="sxs-lookup"><span data-stu-id="019f2-136">Create device accounts in your domain/tenant.</span></span>
--   <span data-ttu-id="019f2-137">建立或指派 Surface Hub 相容性 ActiveSync 原則至裝置帳戶 (s) 。</span><span class="sxs-lookup"><span data-stu-id="019f2-137">Create or assign a Surface Hub-compatible ActiveSync policy to the device account(s).</span></span>
--   <span data-ttu-id="019f2-138">在 Exchange 和商務用 Skype 中為建立的帳戶設定各種屬性。</span><span class="sxs-lookup"><span data-stu-id="019f2-138">Set various attributes for the created account(s) in Exchange and Skype for Business.</span></span>
--   <span data-ttu-id="019f2-139">將授權和許可權指派給已建立的帳戶 (s) 。</span><span class="sxs-lookup"><span data-stu-id="019f2-139">Assign licenses and permissions to the created account(s).</span></span>
+-   <span data-ttu-id="4461a-135">要求系統管理員認證。</span><span class="sxs-lookup"><span data-stu-id="4461a-135">Ask for administrator credentials.</span></span>
+-   <span data-ttu-id="4461a-136">在網域/租使用者中建立裝置帳戶。</span><span class="sxs-lookup"><span data-stu-id="4461a-136">Create device accounts in your domain/tenant.</span></span>
+-   <span data-ttu-id="4461a-137">建立或指派 Surface Hub 相容的 ActiveSync 策略至裝置帳戶 () 。</span><span class="sxs-lookup"><span data-stu-id="4461a-137">Create or assign a Surface Hub-compatible ActiveSync policy to the device account(s).</span></span>
+-   <span data-ttu-id="4461a-138">在 Exchange 和商務用 Skype 中為建立的帳戶設定各種屬性。</span><span class="sxs-lookup"><span data-stu-id="4461a-138">Set various attributes for the created account(s) in Exchange and Skype for Business.</span></span>
+-   <span data-ttu-id="4461a-139">將授權和許可權指派給已建立 (帳戶) 。</span><span class="sxs-lookup"><span data-stu-id="4461a-139">Assign licenses and permissions to the created account(s).</span></span>
 
-<span data-ttu-id="019f2-140">以下是指令碼所設定的屬性：</span><span class="sxs-lookup"><span data-stu-id="019f2-140">These are the attributes that are set by the scripts:</span></span>
+<span data-ttu-id="4461a-140">以下是指令碼所設定的屬性：</span><span class="sxs-lookup"><span data-stu-id="4461a-140">These are the attributes that are set by the scripts:</span></span>
 
 <table>
 <colgroup>
@@ -84,114 +84,113 @@ ms.locfileid: "11317977"
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="019f2-141">Cmdlet</span><span class="sxs-lookup"><span data-stu-id="019f2-141">Cmdlet</span></span></th>
-<th align="left"><span data-ttu-id="019f2-142">屬性</span><span class="sxs-lookup"><span data-stu-id="019f2-142">Attribute</span></span></th>
-<th align="left"><span data-ttu-id="019f2-143">值</span><span class="sxs-lookup"><span data-stu-id="019f2-143">Value</span></span></th>
+<th align="left"><span data-ttu-id="4461a-141">Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4461a-141">Cmdlet</span></span></th>
+<th align="left"><span data-ttu-id="4461a-142">屬性</span><span class="sxs-lookup"><span data-stu-id="4461a-142">Attribute</span></span></th>
+<th align="left"><span data-ttu-id="4461a-143">值</span><span class="sxs-lookup"><span data-stu-id="4461a-143">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="019f2-144">Set-Mailbox</span><span class="sxs-lookup"><span data-stu-id="019f2-144">Set-Mailbox</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-145">RoomMailboxPassword</span><span class="sxs-lookup"><span data-stu-id="019f2-145">RoomMailboxPassword</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-146">使用者提供</span><span class="sxs-lookup"><span data-stu-id="019f2-146">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-144">Set-Mailbox</span><span class="sxs-lookup"><span data-stu-id="4461a-144">Set-Mailbox</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-145">RoomMailboxPassword</span><span class="sxs-lookup"><span data-stu-id="4461a-145">RoomMailboxPassword</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-146">使用者提供</span><span class="sxs-lookup"><span data-stu-id="4461a-146">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-147">EnableRoomMailboxAccount</span><span class="sxs-lookup"><span data-stu-id="019f2-147">EnableRoomMailboxAccount</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-148">True</span><span class="sxs-lookup"><span data-stu-id="019f2-148">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-147">EnableRoomMailboxAccount</span><span class="sxs-lookup"><span data-stu-id="4461a-147">EnableRoomMailboxAccount</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-148">True</span><span class="sxs-lookup"><span data-stu-id="4461a-148">True</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-149">Type</span><span class="sxs-lookup"><span data-stu-id="019f2-149">Type</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-150">會議室</span><span class="sxs-lookup"><span data-stu-id="019f2-150">Room</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-149">Type</span><span class="sxs-lookup"><span data-stu-id="4461a-149">Type</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-150">會議室</span><span class="sxs-lookup"><span data-stu-id="4461a-150">Room</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="019f2-151">Set-CalendarProcessing</span><span class="sxs-lookup"><span data-stu-id="019f2-151">Set-CalendarProcessing</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-152">AutomateProcessing</span><span class="sxs-lookup"><span data-stu-id="019f2-152">AutomateProcessing</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-153">AutoAccept</span><span class="sxs-lookup"><span data-stu-id="019f2-153">AutoAccept</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-151">Set-CalendarProcessing</span><span class="sxs-lookup"><span data-stu-id="4461a-151">Set-CalendarProcessing</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-152">AutomateProcessing</span><span class="sxs-lookup"><span data-stu-id="4461a-152">AutomateProcessing</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-153">AutoAccept</span><span class="sxs-lookup"><span data-stu-id="4461a-153">AutoAccept</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-154">RemovePrivateProperty</span><span class="sxs-lookup"><span data-stu-id="019f2-154">RemovePrivateProperty</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-155">False</span><span class="sxs-lookup"><span data-stu-id="019f2-155">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-154">RemovePrivateProperty</span><span class="sxs-lookup"><span data-stu-id="4461a-154">RemovePrivateProperty</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-155">False</span><span class="sxs-lookup"><span data-stu-id="4461a-155">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-156">DeleteSubject</span><span class="sxs-lookup"><span data-stu-id="019f2-156">DeleteSubject</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-157">False</span><span class="sxs-lookup"><span data-stu-id="019f2-157">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-156">DeleteSubject</span><span class="sxs-lookup"><span data-stu-id="4461a-156">DeleteSubject</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-157">False</span><span class="sxs-lookup"><span data-stu-id="4461a-157">False</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-158">DeleteComments</span><span class="sxs-lookup"><span data-stu-id="019f2-158">DeleteComments</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-159">False</span><span class="sxs-lookup"><span data-stu-id="019f2-159">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-158">DeleteComments</span><span class="sxs-lookup"><span data-stu-id="4461a-158">DeleteComments</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-159">False</span><span class="sxs-lookup"><span data-stu-id="4461a-159">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-160">AddOrganizerToSubject</span><span class="sxs-lookup"><span data-stu-id="019f2-160">AddOrganizerToSubject</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-161">False</span><span class="sxs-lookup"><span data-stu-id="019f2-161">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-160">AddOrganizerToSubject</span><span class="sxs-lookup"><span data-stu-id="4461a-160">AddOrganizerToSubject</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-161">False</span><span class="sxs-lookup"><span data-stu-id="4461a-161">False</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-162">AddAdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="019f2-162">AddAdditionalResponse</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-163">True</span><span class="sxs-lookup"><span data-stu-id="019f2-163">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-162">AddAdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="4461a-162">AddAdditionalResponse</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-163">True</span><span class="sxs-lookup"><span data-stu-id="4461a-163">True</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-164">AdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="019f2-164">AdditionalResponse</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-165">&quot;這是 Surface Hub 會議室！&quot;</span><span class="sxs-lookup"><span data-stu-id="019f2-165">&quot;This is a Surface Hub room!&quot;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-164">AdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="4461a-164">AdditionalResponse</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-165">&quot;這是 Surface Hub 會議室！&quot;</span><span class="sxs-lookup"><span data-stu-id="4461a-165">&quot;This is a Surface Hub room!&quot;</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="019f2-166">New-MobileDeviceMailboxPolicy</span><span class="sxs-lookup"><span data-stu-id="019f2-166">New-MobileDeviceMailboxPolicy</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-167">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="019f2-167">PasswordEnabled</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-168">False</span><span class="sxs-lookup"><span data-stu-id="019f2-168">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-166">New-MobileDeviceMailboxPolicy</span><span class="sxs-lookup"><span data-stu-id="4461a-166">New-MobileDeviceMailboxPolicy</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-167">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="4461a-167">PasswordEnabled</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-168">False</span><span class="sxs-lookup"><span data-stu-id="4461a-168">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-169">AllowNonProvisionableDevices</span><span class="sxs-lookup"><span data-stu-id="019f2-169">AllowNonProvisionableDevices</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-170">True</span><span class="sxs-lookup"><span data-stu-id="019f2-170">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-169">AllowNonProvisionableDevices</span><span class="sxs-lookup"><span data-stu-id="4461a-169">AllowNonProvisionableDevices</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-170">True</span><span class="sxs-lookup"><span data-stu-id="4461a-170">True</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="019f2-171">Enable-CSMeetingRoom</span><span class="sxs-lookup"><span data-stu-id="019f2-171">Enable-CSMeetingRoom</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-172">RegistrarPool</span><span class="sxs-lookup"><span data-stu-id="019f2-172">RegistrarPool</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-173">使用者提供</span><span class="sxs-lookup"><span data-stu-id="019f2-173">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-171">Enable-CSMeetingRoom</span><span class="sxs-lookup"><span data-stu-id="4461a-171">Enable-CSMeetingRoom</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-172">RegistrarPool</span><span class="sxs-lookup"><span data-stu-id="4461a-172">RegistrarPool</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-173">使用者提供</span><span class="sxs-lookup"><span data-stu-id="4461a-173">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="019f2-174">SipAddress</span><span class="sxs-lookup"><span data-stu-id="019f2-174">SipAddress</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-175">設定為裝置帳戶的使用者主體名稱 (UPN)</span><span class="sxs-lookup"><span data-stu-id="019f2-175">Set to the User Principal Name (UPN) of the device account</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-174">SipAddress</span><span class="sxs-lookup"><span data-stu-id="4461a-174">SipAddress</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-175">設定為裝置帳戶的使用者主體名稱 (UPN)</span><span class="sxs-lookup"><span data-stu-id="4461a-175">Set to the User Principal Name (UPN) of the device account</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="019f2-176">Set-MsolUserLicense (僅限 O365)</span><span class="sxs-lookup"><span data-stu-id="019f2-176">Set-MsolUserLicense (O365 only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-177">AddLicenses</span><span class="sxs-lookup"><span data-stu-id="019f2-177">AddLicenses</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-178">使用者提供</span><span class="sxs-lookup"><span data-stu-id="019f2-178">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-176">Set-MsolUserLicense (僅限 O365)</span><span class="sxs-lookup"><span data-stu-id="4461a-176">Set-MsolUserLicense (O365 only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-177">AddLicenses</span><span class="sxs-lookup"><span data-stu-id="4461a-177">AddLicenses</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-178">使用者提供</span><span class="sxs-lookup"><span data-stu-id="4461a-178">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="019f2-179">Set-MsolUser (僅限 O365)</span><span class="sxs-lookup"><span data-stu-id="019f2-179">Set-MsolUser (O365 only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-180">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="019f2-180">PasswordNeverExpires</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-181">True</span><span class="sxs-lookup"><span data-stu-id="019f2-181">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-179">Set-MsolUser (僅限 O365)</span><span class="sxs-lookup"><span data-stu-id="4461a-179">Set-MsolUser (O365 only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-180">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="4461a-180">PasswordNeverExpires</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-181">True</span><span class="sxs-lookup"><span data-stu-id="4461a-181">True</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="019f2-182">Set-AdUser (僅限內部部署)</span><span class="sxs-lookup"><span data-stu-id="019f2-182">Set-AdUser (On-prem only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-183">Enabled</span><span class="sxs-lookup"><span data-stu-id="019f2-183">Enabled</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-184">True</span><span class="sxs-lookup"><span data-stu-id="019f2-184">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-182">Set-AdUser (僅限內部部署)</span><span class="sxs-lookup"><span data-stu-id="4461a-182">Set-AdUser (On-prem only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-183">Enabled</span><span class="sxs-lookup"><span data-stu-id="4461a-183">Enabled</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-184">True</span><span class="sxs-lookup"><span data-stu-id="4461a-184">True</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="019f2-185">Set-AdUser (僅限內部部署)</span><span class="sxs-lookup"><span data-stu-id="019f2-185">Set-AdUser (On-prem only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-186">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="019f2-186">PasswordNeverExpires</span></span></p></td>
-<td align="left"><p><span data-ttu-id="019f2-187">True</span><span class="sxs-lookup"><span data-stu-id="019f2-187">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-185">Set-AdUser (僅限內部部署)</span><span class="sxs-lookup"><span data-stu-id="4461a-185">Set-AdUser (On-prem only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-186">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="4461a-186">PasswordNeverExpires</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4461a-187">True</span><span class="sxs-lookup"><span data-stu-id="4461a-187">True</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span data-ttu-id="019f2-188">帳戶建立指令碼</span><span class="sxs-lookup"><span data-stu-id="019f2-188">Account creation scripts</span></span>
+## <a name="account-creation-scripts"></a><span data-ttu-id="4461a-188">帳戶建立指令碼</span><span class="sxs-lookup"><span data-stu-id="4461a-188">Account creation scripts</span></span>
 
-<span data-ttu-id="019f2-189">這些指令碼將會為您建立裝置帳戶。</span><span class="sxs-lookup"><span data-stu-id="019f2-189">These scripts will create a device account for you.</span></span> <span data-ttu-id="019f2-190">您可以使用[帳戶驗證指令碼](#acct-verification-ps-scripts)，來確定它們可正確執行。</span><span class="sxs-lookup"><span data-stu-id="019f2-190">You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.</span></span>
+<span data-ttu-id="4461a-189">這些指令碼將會為您建立裝置帳戶。</span><span class="sxs-lookup"><span data-stu-id="4461a-189">These scripts will create a device account for you.</span></span> <span data-ttu-id="4461a-190">您可以使用[帳戶驗證指令碼](#acct-verification-ps-scripts)，來確定它們可正確執行。</span><span class="sxs-lookup"><span data-stu-id="4461a-190">You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.</span></span>
 
-<span data-ttu-id="019f2-191">帳戶建立指令碼不能修改已經存在的帳戶，但可用來協助您了解需要執行哪些 Cmdlet，才能正確設定現有的帳戶。</span><span class="sxs-lookup"><span data-stu-id="019f2-191">The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.</span></span>
+<span data-ttu-id="4461a-191">帳戶建立指令碼不能修改已經存在的帳戶，但可用來協助您了解需要執行哪些 Cmdlet，才能正確設定現有的帳戶。</span><span class="sxs-lookup"><span data-stu-id="4461a-191">The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.</span></span>
 
-### <a href="" id="create-on-premises-ps-scripts"></a><span data-ttu-id="019f2-192">建立內部部署帳戶</span><span class="sxs-lookup"><span data-stu-id="019f2-192">Create an on-premises account</span></span>
+### <a name="create-an-on-premises-account"></a><a href="" id="create-on-premises-ps-scripts"></a><span data-ttu-id="4461a-192">建立內部部署帳戶</span><span class="sxs-lookup"><span data-stu-id="4461a-192">Create an on-premises account</span></span>
 
-<span data-ttu-id="019f2-193">利用[內部部署](on-premises-deployment-surface-hub-device-accounts.md)中所述的方式來建立帳戶。</span><span class="sxs-lookup"><span data-stu-id="019f2-193">Creates an account as described in [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md).</span></span>
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -549,9 +548,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a><span data-ttu-id="019f2-194">使用 Office 365 建立裝置帳戶</span><span class="sxs-lookup"><span data-stu-id="019f2-194">Create a device account using Office 365</span></span>
+### <a name="create-a-device-account-using-office-365"></a><a href="" id="create-os356-ps-scripts"></a><span data-ttu-id="4461a-193">使用 Office 365 建立裝置帳戶</span><span class="sxs-lookup"><span data-stu-id="4461a-193">Create a device account using Office 365</span></span>
 
-<span data-ttu-id="019f2-195">如在 [使用 Office 365 建立裝置帳戶](create-a-device-account-using-office-365.md)中所述，建立帳戶。</span><span class="sxs-lookup"><span data-stu-id="019f2-195">Creates an account as described in [Create a device account using Office 365](create-a-device-account-using-office-365.md).</span></span>
+<span data-ttu-id="4461a-194">建立帳戶，如使用 [Office 365 建立裝置帳戶中所述](create-and-test-a-device-account-surface-hub.md)。</span><span class="sxs-lookup"><span data-stu-id="4461a-194">Creates an account as described in [Create a device account using Office 365](create-and-test-a-device-account-surface-hub.md).</span></span>
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -994,9 +993,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a><span data-ttu-id="019f2-196">帳戶驗證指令碼</span><span class="sxs-lookup"><span data-stu-id="019f2-196">Account verification script</span></span>
+## <a name="account-verification-script"></a><a href="" id="acct-verification-ps-scripts"></a><span data-ttu-id="4461a-195">帳戶驗證指令碼</span><span class="sxs-lookup"><span data-stu-id="4461a-195">Account verification script</span></span>
 
-<span data-ttu-id="019f2-197">此腳本會驗證先前在 Surface Hub 和 Surface Hub 2 上建立的裝置帳戶，無論使用哪一個方法來建立它。</span><span class="sxs-lookup"><span data-stu-id="019f2-197">This script validates the previously-created device account on Surface Hub and Surface Hub 2S, no matter which method was used to create it.</span></span> <span data-ttu-id="019f2-198">這個指令碼基本上已通過/失敗。</span><span class="sxs-lookup"><span data-stu-id="019f2-198">This script is basically pass/fail.</span></span> <span data-ttu-id="019f2-199">如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。</span><span class="sxs-lookup"><span data-stu-id="019f2-199">If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report.</span></span> <span data-ttu-id="019f2-200">例如，您可能會看到：</span><span class="sxs-lookup"><span data-stu-id="019f2-200">For example, you might see:</span></span>
+<span data-ttu-id="4461a-196">此腳本會驗證 Surface Hub 和 Surface Hub 2S 上先前建立之裝置帳戶，無論使用哪一種方法建立帳戶。</span><span class="sxs-lookup"><span data-stu-id="4461a-196">This script validates the previously-created device account on Surface Hub and Surface Hub 2S, no matter which method was used to create it.</span></span> <span data-ttu-id="4461a-197">這個指令碼基本上已通過/失敗。</span><span class="sxs-lookup"><span data-stu-id="4461a-197">This script is basically pass/fail.</span></span> <span data-ttu-id="4461a-198">如果出現了某一個測試錯誤，其會顯示詳細的錯誤訊息，但若通過所有測試，最終結果將會是一份摘要報告。</span><span class="sxs-lookup"><span data-stu-id="4461a-198">If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report.</span></span> <span data-ttu-id="4461a-199">例如，您可能會看到：</span><span class="sxs-lookup"><span data-stu-id="4461a-199">For example, you might see:</span></span>
 
 ```console
 15 tests executed
@@ -1005,7 +1004,7 @@ else
 15 passed
 ```
 
-<span data-ttu-id="019f2-201">系統將不會顯示特定設定的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="019f2-201">Details of specific settings will not be shown.</span></span>
+<span data-ttu-id="4461a-200">系統將不會顯示特定設定的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="4461a-200">Details of specific settings will not be shown.</span></span>
 
 ```PowerShell
 # SHAccountValidate.ps1
@@ -1445,9 +1444,9 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a><span data-ttu-id="019f2-202">啟用商務用 Skype</span><span class="sxs-lookup"><span data-stu-id="019f2-202">Enable Skype for Business</span></span>
+## <a name="enable-skype-for-business"></a><a href="" id="enable-sfb-ps-scripts"></a><span data-ttu-id="4461a-201">啟用商務用 Skype</span><span class="sxs-lookup"><span data-stu-id="4461a-201">Enable Skype for Business</span></span>
 
-<span data-ttu-id="019f2-203">這個指令碼將會在裝置帳戶上啟用商務用 Skype。</span><span class="sxs-lookup"><span data-stu-id="019f2-203">This script will enable Skype for Business on a device account.</span></span> <span data-ttu-id="019f2-204">只有先前在帳戶建立期間並未啟用商務用 Skype 時，才能使用它。</span><span class="sxs-lookup"><span data-stu-id="019f2-204">Use it only if Skype for Business wasn't previously enabled during account creation.</span></span>
+<span data-ttu-id="4461a-202">這個指令碼將會在裝置帳戶上啟用商務用 Skype。</span><span class="sxs-lookup"><span data-stu-id="4461a-202">This script will enable Skype for Business on a device account.</span></span> <span data-ttu-id="4461a-203">只有先前在帳戶建立期間並未啟用商務用 Skype 時，才能使用它。</span><span class="sxs-lookup"><span data-stu-id="4461a-203">Use it only if Skype for Business wasn't previously enabled during account creation.</span></span>
 
 ```PowerShell
 ## This script performs only the Enable for Skype for Business step on an account. It should only be run if this step failed in SHAccountCreate and the other steps have been completed ##
@@ -1605,31 +1604,31 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## <span data-ttu-id="019f2-205">實用的 Cmdlet</span><span class="sxs-lookup"><span data-stu-id="019f2-205">Useful cmdlets</span></span>
+## <a name="useful-cmdlets"></a><span data-ttu-id="4461a-204">實用的 Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4461a-204">Useful cmdlets</span></span>
 
-### <a href="" id="create-compatible-as-policy"></a><span data-ttu-id="019f2-206">建立與 Surface Hub 相容的 ActiveSync 原則</span><span class="sxs-lookup"><span data-stu-id="019f2-206">Creating a Surface Hub-compatible ActiveSync policy</span></span>
+### <a name="creating-a-surface-hub-compatible-activesync-policy"></a><a href="" id="create-compatible-as-policy"></a><span data-ttu-id="4461a-205">建立與 Surface Hub 相容的 ActiveSync 原則</span><span class="sxs-lookup"><span data-stu-id="4461a-205">Creating a Surface Hub-compatible ActiveSync policy</span></span>
 
-<span data-ttu-id="019f2-207">如果 Surface Hub 會使用 Exchange 服務，就必須將利用相容 ActiveSync 原則所設定的裝置帳戶佈建在裝置上。</span><span class="sxs-lookup"><span data-stu-id="019f2-207">For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device.</span></span> <span data-ttu-id="019f2-208">這個原則具有下列需求：</span><span class="sxs-lookup"><span data-stu-id="019f2-208">This policy has the following requirements:</span></span>
+<span data-ttu-id="4461a-206">如果 Surface Hub 會使用 Exchange 服務，就必須將利用相容 ActiveSync 原則所設定的裝置帳戶佈建在裝置上。</span><span class="sxs-lookup"><span data-stu-id="4461a-206">For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device.</span></span> <span data-ttu-id="4461a-207">這個原則具有下列需求：</span><span class="sxs-lookup"><span data-stu-id="4461a-207">This policy has the following requirements:</span></span>
 
 ``` syntax
 PasswordEnabled == 0
 ```
 
-<span data-ttu-id="019f2-209">在下列 Cmdlet 中，`$strPolicy` 是 ActiveSync 原則的名稱，而 `$strRoomUpn` 是您想要套用原則的裝置帳戶的 UPN。</span><span class="sxs-lookup"><span data-stu-id="019f2-209">In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and `$strRoomUpn` is the UPN of the device account you want to apply the policy to.</span></span>
+<span data-ttu-id="4461a-208">在下列 Cmdlet 中，`$strPolicy` 是 ActiveSync 原則的名稱，而 `$strRoomUpn` 是您想要套用原則的裝置帳戶的 UPN。</span><span class="sxs-lookup"><span data-stu-id="4461a-208">In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and `$strRoomUpn` is the UPN of the device account you want to apply the policy to.</span></span>
 
-<span data-ttu-id="019f2-210">請注意，若要執行 Cmdlet，您需要設定遠端的 PowerShell 工作階段，而且：</span><span class="sxs-lookup"><span data-stu-id="019f2-210">Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:</span></span>
+<span data-ttu-id="4461a-209">請注意，若要執行 Cmdlet，您需要設定遠端的 PowerShell 工作階段，而且：</span><span class="sxs-lookup"><span data-stu-id="4461a-209">Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:</span></span>
 
--   <span data-ttu-id="019f2-211">您的系統管理員帳戶必須啟用遠端 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="019f2-211">Your admin account must be remote-PowerShell-enabled.</span></span> <span data-ttu-id="019f2-212">這讓系統管理員能夠使用指令碼所需的 PowerShell Cmdlet</span><span class="sxs-lookup"><span data-stu-id="019f2-212">This allows the admin to use the PowerShell cmdlets that are needed by the script.</span></span> <span data-ttu-id="019f2-213">(您可以使用 `set-user $admin -RemotePowerShellEnabled $true` 來設定此權限)。</span><span class="sxs-lookup"><span data-stu-id="019f2-213">(This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)</span></span>
--   <span data-ttu-id="019f2-214">如果您打算執行建立指令碼，您的系統管理員帳戶就必須具備「重設密碼」角色。</span><span class="sxs-lookup"><span data-stu-id="019f2-214">Your admin account must have the "Reset Password" role if you plan to run the creation scripts.</span></span> <span data-ttu-id="019f2-215">這讓系統管理員能夠變更指令碼所需的帳戶密碼。</span><span class="sxs-lookup"><span data-stu-id="019f2-215">This allows the admin to change the password of the account, which is needed for the script.</span></span> <span data-ttu-id="019f2-216">您可以使用 Exchange 系統管理中心來啟用 \[重設密碼\] 角色。</span><span class="sxs-lookup"><span data-stu-id="019f2-216">The Reset Password Role can be enabled using the Exchange Admin Center.</span></span>
+-   <span data-ttu-id="4461a-210">您的系統管理員帳戶必須啟用遠端 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="4461a-210">Your admin account must be remote-PowerShell-enabled.</span></span> <span data-ttu-id="4461a-211">這讓系統管理員能夠使用指令碼所需的 PowerShell Cmdlet</span><span class="sxs-lookup"><span data-stu-id="4461a-211">This allows the admin to use the PowerShell cmdlets that are needed by the script.</span></span> <span data-ttu-id="4461a-212">(您可以使用 `set-user $admin -RemotePowerShellEnabled $true` 來設定此權限)。</span><span class="sxs-lookup"><span data-stu-id="4461a-212">(This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)</span></span>
+-   <span data-ttu-id="4461a-213">如果您打算執行建立指令碼，您的系統管理員帳戶就必須具備「重設密碼」角色。</span><span class="sxs-lookup"><span data-stu-id="4461a-213">Your admin account must have the "Reset Password" role if you plan to run the creation scripts.</span></span> <span data-ttu-id="4461a-214">這讓系統管理員能夠變更指令碼所需的帳戶密碼。</span><span class="sxs-lookup"><span data-stu-id="4461a-214">This allows the admin to change the password of the account, which is needed for the script.</span></span> <span data-ttu-id="4461a-215">您可以使用 Exchange 系統管理中心來啟用 \[重設密碼\] 角色。</span><span class="sxs-lookup"><span data-stu-id="4461a-215">The Reset Password Role can be enabled using the Exchange Admin Center.</span></span>
 
-<span data-ttu-id="019f2-217">建立原則。</span><span class="sxs-lookup"><span data-stu-id="019f2-217">Create the policy.</span></span>
+<span data-ttu-id="4461a-216">建立原則。</span><span class="sxs-lookup"><span data-stu-id="4461a-216">Create the policy.</span></span>
 
 ```PowerShell
 # Create new policy with PasswordEnabled == false
 New-MobileDeviceMailboxPolicy -Name $strPolicy -PasswordEnabled $false –AllowNonProvisionableDevices $true
 ```
 
-<span data-ttu-id="019f2-218">若要套用原則，信箱就不能是會議室類型，因此，必須先將它轉換為使用者。</span><span class="sxs-lookup"><span data-stu-id="019f2-218">To apply the policy, the mailbox cannot be a room type, so it has to be converted into a user first.</span></span>
+<span data-ttu-id="4461a-217">若要套用原則，信箱就不能是會議室類型，因此，必須先將它轉換為使用者。</span><span class="sxs-lookup"><span data-stu-id="4461a-217">To apply the policy, the mailbox cannot be a room type, so it has to be converted into a user first.</span></span>
 
 ```PowerShell
 # Convert user to regular type
@@ -1638,43 +1637,43 @@ Set-Mailbox $strRoomUpn -Type Regular
 Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 ```
 
-<span data-ttu-id="019f2-219">現在只需將裝置帳戶轉換回會議室類型即可。</span><span class="sxs-lookup"><span data-stu-id="019f2-219">Now the device account just needs to be converted back into a room type.</span></span>
+<span data-ttu-id="4461a-218">現在只需將裝置帳戶轉換回會議室類型即可。</span><span class="sxs-lookup"><span data-stu-id="4461a-218">Now the device account just needs to be converted back into a room type.</span></span>
 
 ```PowerShell
 # Convert back to room mailbox
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <span data-ttu-id="019f2-220">允許適用於 ActiveSync 的裝置識別碼</span><span class="sxs-lookup"><span data-stu-id="019f2-220">Allowing device IDs for ActiveSync</span></span>
+### <a name="allowing-device-ids-for-activesync"></a><span data-ttu-id="4461a-219">允許適用於 ActiveSync 的裝置識別碼</span><span class="sxs-lookup"><span data-stu-id="4461a-219">Allowing device IDs for ActiveSync</span></span>
 
-<span data-ttu-id="019f2-221">若要允許帳戶 `$strRoomUpn`，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="019f2-221">To allow an account `$strRoomUpn`, run the following command:</span></span>
+<span data-ttu-id="4461a-220">若要允許帳戶 `$strRoomUpn`，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="4461a-220">To allow an account `$strRoomUpn`, run the following command:</span></span>
 
 ```PowerShell
 Set-CASMailbox –Identity $strRoomUpn –ActiveSyncAllowedDeviceIDs “<ID>”
 ```
 
-<span data-ttu-id="019f2-222">若要尋找裝置識別碼，請執行：</span><span class="sxs-lookup"><span data-stu-id="019f2-222">To find a device's ID, run:</span></span>
+<span data-ttu-id="4461a-221">若要尋找裝置識別碼，請執行：</span><span class="sxs-lookup"><span data-stu-id="4461a-221">To find a device's ID, run:</span></span>
 
 ```PowerShell
 Get-ActiveSyncDevice -Mailbox $strRoomUpn
 ```
 
-<span data-ttu-id="019f2-223">這會擷取已佈建帳戶之每個裝置的裝置資訊，包括 `DeviceId` 屬性。</span><span class="sxs-lookup"><span data-stu-id="019f2-223">This retrieves device information for every device that the account has been provisioned on, Including the `DeviceId` property.</span></span>
+<span data-ttu-id="4461a-222">這會擷取已佈建帳戶之每個裝置的裝置資訊，包括 `DeviceId` 屬性。</span><span class="sxs-lookup"><span data-stu-id="4461a-222">This retrieves device information for every device that the account has been provisioned on, Including the `DeviceId` property.</span></span>
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a><span data-ttu-id="019f2-224">自動接受和拒絕會議邀請</span><span class="sxs-lookup"><span data-stu-id="019f2-224">Auto-accepting and declining meeting requests</span></span>
+### <a name="auto-accepting-and-declining-meeting-requests"></a><a href="" id="auto-accept-meetings-cmdlet"></a><span data-ttu-id="4461a-223">自動接受和拒絕會議邀請</span><span class="sxs-lookup"><span data-stu-id="4461a-223">Auto-accepting and declining meeting requests</span></span>
 
-<span data-ttu-id="019f2-225">若要使裝置帳戶根據其可用性自動接受或拒絕會議邀請，**AutomateProcessing** 屬性必須設定為 **AutoAccept**。</span><span class="sxs-lookup"><span data-stu-id="019f2-225">For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**.</span></span> <span data-ttu-id="019f2-226">此為建議設定，可防止會議重疊。</span><span class="sxs-lookup"><span data-stu-id="019f2-226">This is recommended as to prevent overlapping meetings.</span></span>
+<span data-ttu-id="4461a-224">若要使裝置帳戶根據其可用性自動接受或拒絕會議邀請，**AutomateProcessing** 屬性必須設定為 **AutoAccept**。</span><span class="sxs-lookup"><span data-stu-id="4461a-224">For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**.</span></span> <span data-ttu-id="4461a-225">此為建議設定，可防止會議重疊。</span><span class="sxs-lookup"><span data-stu-id="4461a-225">This is recommended as to prevent overlapping meetings.</span></span>
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a><span data-ttu-id="019f2-227">接受外部會議邀請</span><span class="sxs-lookup"><span data-stu-id="019f2-227">Accepting external meeting requests</span></span>
+### <a name="accepting-external-meeting-requests"></a><a href="" id="accept-ext-meetings-cmdlet"></a><span data-ttu-id="4461a-226">接受外部會議邀請</span><span class="sxs-lookup"><span data-stu-id="4461a-226">Accepting external meeting requests</span></span>
 
-<span data-ttu-id="019f2-228">如果裝置帳戶會接受外部會議邀請 (來自不同租用戶/網域之帳戶的會議邀請)，就必須設定裝置帳戶以允許處理外部會議要求。</span><span class="sxs-lookup"><span data-stu-id="019f2-228">For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests.</span></span> <span data-ttu-id="019f2-229">一旦設定之後，裝置帳戶將會自動接受或拒絕來自外部帳戶以及本機帳戶的會議邀請。</span><span class="sxs-lookup"><span data-stu-id="019f2-229">Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.</span></span>
+<span data-ttu-id="4461a-227">如果裝置帳戶會接受外部會議邀請 (來自不同租用戶/網域之帳戶的會議邀請)，就必須設定裝置帳戶以允許處理外部會議要求。</span><span class="sxs-lookup"><span data-stu-id="4461a-227">For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests.</span></span> <span data-ttu-id="4461a-228">一旦設定之後，裝置帳戶將會自動接受或拒絕來自外部帳戶以及本機帳戶的會議邀請。</span><span class="sxs-lookup"><span data-stu-id="4461a-228">Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.</span></span>
 
 > [!Note]
-> <span data-ttu-id="019f2-230">如果 **AutomateProcessing** 屬性未設為 **AutoAccept**，則設定此選項將不會有任何效果。</span><span class="sxs-lookup"><span data-stu-id="019f2-230">If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.</span></span>
+> <span data-ttu-id="4461a-229">如果 **自動化處理屬性** 未設定為 **AutoAccept，** 則設定此設定將無效。</span><span class="sxs-lookup"><span data-stu-id="4461a-229">If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.</span></span>
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
