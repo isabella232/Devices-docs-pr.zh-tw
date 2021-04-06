@@ -30,10 +30,10 @@
 ### [第一次安裝 Surface Hub 2S](surface-hub-2s-setup.md)
 ### [將裝置連接至 Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Surface Hub 2S 部署檢查清單](surface-hub-2s-deploy-checklist.md)
-### [建立 Surface Hub 2S 裝置帳戶](surface-hub-2s-account.md)
+### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
 ### [建立 Surface Hub 2S 的佈建套件](surface-hub-2s-deploy.md)
 ### [使用 Intune 將應用程式部署到 Surface Hub 2S](surface-hub-2s-deploy-apps-intune.md)
-### [使用 PowerShell 建立 Surface Hub 2S 內部部署帳戶](surface-hub-2s-onprem-powershell.md)
+### [使用 PowerShell 建立 Surface Hub 2S 內部部署帳戶](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [Surface Hub Teams 應用程式](hub-teams-app.md)
 ### [Surface Hub 2S 的 Teams 認證配件](surface-hub-2s-certifications.md)
 
@@ -45,7 +45,7 @@
 ### [已知問題 - Windows 10 團隊版 2020 更新](surface-hub-2020-team-update-known-issues.md)
 ### [在 Surface Hub 上設定非全域系統管理員帳戶](surface-hub-2s-nonglobal-admin.md)
 ### [在 Surface Hub 上安裝及設定新的 Microsoft Edge](surface-hub-install-chromium-edge.md)        
-### [使用 Microsoft Intune 管理 Surface Hub 2S](surface-hub-2s-manage-intune.md)
+### [使用 MDM 提供者管理 Surface Hub](manage-settings-with-mdm-for-surface-hub.md)
 ### [Surface Hub 2S 設定的本機管理](local-management-surface-hub-settings.md)
 ### [管理裝置帳戶密碼變換](password-management-for-surface-hub-device-accounts.md)
 ### [管理 Windows Update](manage-windows-updates-for-surface-hub.md)
@@ -84,12 +84,10 @@
 
 ## 部署
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
-#### [線上部署](online-deployment-surface-hub-device-accounts.md)
-#### [內部部署 (單一樹系)](on-premises-deployment-surface-hub-device-accounts.md)
-#### [內部部署 (多重樹系)](on-premises-deployment-surface-hub-multi-forest.md)
+#### [線上部署](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [內部部署 (單一樹系)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [內部部署 (多重樹系)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
 #### [混合式部署](hybrid-deployment-surface-hub-device-accounts.md)
-#### [線上或混合式部署，使用 Skype 混合語音環境](skype-hybrid-voice.md)
-#### [使用 UI 建立裝置帳戶](create-a-device-account-using-office-365.md)
 #### [Microsoft Exchange 屬性](exchange-properties-for-surface-hub-device-accounts.md)
 #### [將 ActiveSync 原則套用到裝置帳戶](apply-activesync-policies-for-surface-hub-device-accounts.md)
 #### [密碼管理](password-management-for-surface-hub-device-accounts.md)
