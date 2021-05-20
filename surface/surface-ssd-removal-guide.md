@@ -1,14 +1,14 @@
 ---
 title: 相容 Surface 裝置中的 SSD 移除
-description: 本文適用于合格的 IT 技術人員，說明在 Surface 膝上型電腦3、Surface Pro X 和 Surface 膝上型電腦版中移除及取代 SSDs 的建議最佳做法。
+description: 本文適用于合格的 IT 技術人員，說明在 Surface Laptop 4、Surface Laptop 3、Surface Pro 7+、Surface Pro X 和 Surface Laptop Go 中移除和取代 SSD 的建議最佳做法。
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: mccoybot
-ms.author: v-todmc
+ms.author: brrecord
 ms.topic: article
-ms.date: 01/13/2021
+ms.date: 04/13/2021
 ms.reviewer: ''
 manager: laurawi
 ms.audience: itpro
@@ -18,111 +18,113 @@ appliesto:
 - Surface Pro X
 - Surface Laptop Go
 - Surface Laptop 3
+- Surface Laptop 4
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 51ef676e7379f0898d6b601bb08c96002c9e6ace
-ms.sourcegitcommit: d4e2a29aa21a911ee55642cd66b4337b89eebdd8
+ms.openlocfilehash: 7ba66981c021f1f0a08ebf33aab0a73481111a4d
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11270628"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576903"
 ---
-# <span data-ttu-id="00520-103">從相容的 Surface 裝置移除 SSD 的最佳做法</span><span class="sxs-lookup"><span data-stu-id="00520-103">Best practices for SSD removal from compatible Surface devices</span></span>
+# <a name="best-practices-for-ssd-removal-from-compatible-surface-devices"></a><span data-ttu-id="32bfc-103">從相容的 Surface 裝置移除 SSD 的最佳作法</span><span class="sxs-lookup"><span data-stu-id="32bfc-103">Best practices for SSD removal from compatible Surface devices</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="00520-104">本文僅供企業組織中合格的 IT 技術人員使用。</span><span class="sxs-lookup"><span data-stu-id="00520-104">This article is intended for use by qualified IT technicians in an enterprise organization only.</span></span> <span data-ttu-id="00520-105">它描述由合格的 IT 技術人員在下列相容 Surface 裝置中移除及取代 SSDs 的建議最佳做法：</span><span class="sxs-lookup"><span data-stu-id="00520-105">It describes the recommended best practices for use by qualified IT technicians in the removal and replacement of SSDs in the following compatible Surface devices:</span></span> 
+> <span data-ttu-id="32bfc-104">本文僅供企業組織中合格的 IT 技術人員使用。</span><span class="sxs-lookup"><span data-stu-id="32bfc-104">This article is intended for use by qualified IT technicians in an enterprise organization only.</span></span> <span data-ttu-id="32bfc-105">本文說明合格 IT 技術人員在移除及取代下列相容 Surface 裝置中的 SSD 時所建議的最佳作法：</span><span class="sxs-lookup"><span data-stu-id="32bfc-105">It describes the recommended best practices for use by qualified IT technicians in the removal and replacement of SSDs in the following compatible Surface devices:</span></span> 
 
-- <span data-ttu-id="00520-106">Surface Pro 7 +</span><span class="sxs-lookup"><span data-stu-id="00520-106">Surface Pro 7+</span></span>
-- <span data-ttu-id="00520-107">Surface Pro X</span><span class="sxs-lookup"><span data-stu-id="00520-107">Surface Pro X</span></span>
-- <span data-ttu-id="00520-108">Surface 膝上型電腦前往</span><span class="sxs-lookup"><span data-stu-id="00520-108">Surface Laptop Go</span></span>
-- <span data-ttu-id="00520-109">Surface 膝上型電腦3</span><span class="sxs-lookup"><span data-stu-id="00520-109">Surface Laptop 3</span></span>
+- <span data-ttu-id="32bfc-106">Surface Pro 7+</span><span class="sxs-lookup"><span data-stu-id="32bfc-106">Surface Pro 7+</span></span>
+- <span data-ttu-id="32bfc-107">Surface Pro X</span><span class="sxs-lookup"><span data-stu-id="32bfc-107">Surface Pro X</span></span>
+- <span data-ttu-id="32bfc-108">Surface Laptop去</span><span class="sxs-lookup"><span data-stu-id="32bfc-108">Surface Laptop Go</span></span>
+- <span data-ttu-id="32bfc-109">Surface Laptop 3</span><span class="sxs-lookup"><span data-stu-id="32bfc-109">Surface Laptop 3</span></span>
+- <span data-ttu-id="32bfc-110">Surface Laptop 4</span><span class="sxs-lookup"><span data-stu-id="32bfc-110">Surface Laptop 4</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="00520-110">開啟裝置和取代裝置元件可能會帶來電擊、裝置損壞、火災及個人傷亡風險，以及其他危害。</span><span class="sxs-lookup"><span data-stu-id="00520-110">Opening devices and replacing device components can present electric shock, device damage, fire, and personal injury risks, and other hazards.</span></span>  <span data-ttu-id="00520-111">當您執行這類活動時，請務必謹慎使用。</span><span class="sxs-lookup"><span data-stu-id="00520-111">Always use caution when you undertake such activities.</span></span> <span data-ttu-id="00520-112">遵循 [企業 RSSD 移除指南](https://www.microsoft.com/download/100440)中所識別的安全預防措施和程式。</span><span class="sxs-lookup"><span data-stu-id="00520-112">Follow the safety precautions and procedures that are identified in the [rSSD Removal Guide for Enterprise](https://www.microsoft.com/download/100440).</span></span> <span data-ttu-id="00520-113">如果您無法遵循「在企業版 rSSD 移除指南」中所指定的安全預防措施及程式，我們建議您取得專業協助。</span><span class="sxs-lookup"><span data-stu-id="00520-113">We recommend that you get professional assistance if you cannot follow the safety precautions and procedures that are specified in the "rSSD Removal Guide for Enterprise."</span></span>
+> <span data-ttu-id="32bfc-111">開啟裝置及取代裝置元件時，可能會造成觸電、裝置損壞、起火和個人傷亡風險，以及其他危險。</span><span class="sxs-lookup"><span data-stu-id="32bfc-111">Opening devices and replacing device components can present electric shock, device damage, fire, and personal injury risks, and other hazards.</span></span>  <span data-ttu-id="32bfc-112">進行這類活動時，務必小心。</span><span class="sxs-lookup"><span data-stu-id="32bfc-112">Always use caution when you undertake such activities.</span></span> <span data-ttu-id="32bfc-113">請遵循[rSSD](https://www.microsoft.com/download/100440)移除指南所識別的安全注意事項Enterprise。</span><span class="sxs-lookup"><span data-stu-id="32bfc-113">Follow the safety precautions and procedures that are identified in the [rSSD Removal Guide for Enterprise](https://www.microsoft.com/download/100440).</span></span> <span data-ttu-id="32bfc-114">如果您無法遵循「rSSD 移除指南」中指定的安全注意事項和程式，建議您獲得專業協助Enterprise。</span><span class="sxs-lookup"><span data-stu-id="32bfc-114">We recommend that you get professional assistance if you cannot follow the safety precautions and procedures that are specified in the "rSSD Removal Guide for Enterprise."</span></span>
 
-## <span data-ttu-id="00520-114">必要條件</span><span class="sxs-lookup"><span data-stu-id="00520-114">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="32bfc-115">必要條件</span><span class="sxs-lookup"><span data-stu-id="32bfc-115">Prerequisites</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="00520-115">本文假設您瞭解「適用于企業的 rSSD 移除指南」中所述的一般安全預防措施及安全原則與程式。</span><span class="sxs-lookup"><span data-stu-id="00520-115">This article assumes that you understand the General Safety Precautions and Safety policies and procedures that are described in the "rSSD Removal Guide for Enterprise."</span></span>
+> <span data-ttu-id="32bfc-116">本文假設您瞭解「rSSD 移除指南」所述的一般安全注意事項及安全Enterprise。</span><span class="sxs-lookup"><span data-stu-id="32bfc-116">This article assumes that you understand the General Safety Precautions and Safety policies and procedures that are described in the "rSSD Removal Guide for Enterprise."</span></span>
 
-## <span data-ttu-id="00520-116">準備進行 SSD 移除</span><span class="sxs-lookup"><span data-stu-id="00520-116">Prepare for SSD removal</span></span> 
+## <a name="prepare-for-ssd-removal"></a><span data-ttu-id="32bfc-117">準備移除 SSD</span><span class="sxs-lookup"><span data-stu-id="32bfc-117">Prepare for SSD removal</span></span> 
 
-### <span data-ttu-id="00520-117">安裝最新的更新</span><span class="sxs-lookup"><span data-stu-id="00520-117">Install the latest updates</span></span> 
+### <a name="install-the-latest-updates"></a><span data-ttu-id="32bfc-118">安裝最新更新</span><span class="sxs-lookup"><span data-stu-id="32bfc-118">Install the latest updates</span></span> 
 
-<span data-ttu-id="00520-118">在開始之前，請確定您的 Windows 版本已安裝最新的更新：</span><span class="sxs-lookup"><span data-stu-id="00520-118">Before you begin, make sure that your version of Windows has the latest updates installed:</span></span>
+<span data-ttu-id="32bfc-119">開始之前，請確定您的 Windows已安裝最新的更新：</span><span class="sxs-lookup"><span data-stu-id="32bfc-119">Before you begin, make sure that your version of Windows has the latest updates installed:</span></span>
 
-1.  <span data-ttu-id="00520-119">移至 [**啟動**  >  **設定**  >  **更新 & 安全性**]，然後選取 [**檢查更新**]。</span><span class="sxs-lookup"><span data-stu-id="00520-119">Go to **Start** > **Settings** > **Update & Security**, and select **Check for updates**.</span></span>
-2. <span data-ttu-id="00520-120">安裝所有可用的更新。</span><span class="sxs-lookup"><span data-stu-id="00520-120">Install all available updates.</span></span>
-3. <span data-ttu-id="00520-121">確認任何存取裝置所需的密碼。</span><span class="sxs-lookup"><span data-stu-id="00520-121">Verify any passwords that are necessary to access the device.</span></span>  
+1.  <span data-ttu-id="32bfc-120">請前往\*\*\*\* 開始  >  **設定**  >  **更新&安全性**，然後選取**檢查更新**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-120">Go to **Start** > **Settings** > **Update & Security**, and select **Check for updates**.</span></span>
+2. <span data-ttu-id="32bfc-121">安裝所有可用的更新。</span><span class="sxs-lookup"><span data-stu-id="32bfc-121">Install all available updates.</span></span>
+3. <span data-ttu-id="32bfc-122">驗證存取裝置所需的任何密碼。</span><span class="sxs-lookup"><span data-stu-id="32bfc-122">Verify any passwords that are necessary to access the device.</span></span>  
  
-## <span data-ttu-id="00520-122">[管理 BitLocker]</span><span class="sxs-lookup"><span data-stu-id="00520-122">Manage BitLocker</span></span> 
+## <a name="manage-bitlocker"></a><span data-ttu-id="32bfc-123">[管理 BitLocker]</span><span class="sxs-lookup"><span data-stu-id="32bfc-123">Manage BitLocker</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="00520-123">本節包含對硬碟啟用 BitLocker 加密的組織的建議。</span><span class="sxs-lookup"><span data-stu-id="00520-123">This section includes recommendations for organizations that have enabled BitLocker encryption for hard disks.</span></span> <span data-ttu-id="00520-124">如需詳細資訊，請參閱  [BitLocker 恢復指南](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)。</span><span class="sxs-lookup"><span data-stu-id="00520-124">For more information, see  [BitLocker Recovery Guide](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan).</span></span> 
+> <span data-ttu-id="32bfc-124">本節包含已啟用硬碟加密BitLocker組織的建議。</span><span class="sxs-lookup"><span data-stu-id="32bfc-124">This section includes recommendations for organizations that have enabled BitLocker encryption for hard disks.</span></span> <span data-ttu-id="32bfc-125">詳細資訊，請參閱修復BitLocker[指南](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)。</span><span class="sxs-lookup"><span data-stu-id="32bfc-125">For more information, see  [BitLocker Recovery Guide](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan).</span></span> 
 
-### <span data-ttu-id="00520-125">如果在 SSD 移除與取代期間停用 BitLocker 加密</span><span class="sxs-lookup"><span data-stu-id="00520-125">If BitLocker encryption is disabled during SSD removal and replacement</span></span>
+### <a name="if-bitlocker-encryption-is-disabled-during-ssd-removal-and-replacement"></a><span data-ttu-id="32bfc-126">如果在BitLocker和更換 SSD 期間停用加密功能</span><span class="sxs-lookup"><span data-stu-id="32bfc-126">If BitLocker encryption is disabled during SSD removal and replacement</span></span>
 
-<span data-ttu-id="00520-126">如果可在 SSD 移除與取代之前解除加密裝置，請遵循下列步驟關閉 BitLocker：</span><span class="sxs-lookup"><span data-stu-id="00520-126">If the device can be unencrypted before SSD removal and replacement, follow these steps to turn off BitLocker:</span></span>
+<span data-ttu-id="32bfc-127">如果裝置在移除和更換 SSD 之前可以取消加密，請按照下列步驟關閉BitLocker：</span><span class="sxs-lookup"><span data-stu-id="32bfc-127">If the device can be unencrypted before SSD removal and replacement, follow these steps to turn off BitLocker:</span></span>
 
-1.  <span data-ttu-id="00520-127">在 [ **設定**] 中，輸入 **BitLocker** ，然後選取 [ **管理 bitlocker**]。</span><span class="sxs-lookup"><span data-stu-id="00520-127">In **Settings**, type **BitLocker** and then select **Manage BitLocker**.</span></span> 
-2.  <span data-ttu-id="00520-128">選取 [ **關閉 BitLocker**]。</span><span class="sxs-lookup"><span data-stu-id="00520-128">Select **Turn Off BitLocker**.</span></span> 
-3.  <span data-ttu-id="00520-129">關閉裝置電源。</span><span class="sxs-lookup"><span data-stu-id="00520-129">Power down the device.</span></span> 
+1.  <span data-ttu-id="32bfc-128">在**設定\*\*\*\*中，輸入**BitLocker，然後選取**管理 BitLocker。**</span><span class="sxs-lookup"><span data-stu-id="32bfc-128">In **Settings**, type **BitLocker** and then select **Manage BitLocker**.</span></span> 
+2.  <span data-ttu-id="32bfc-129">選取**關閉 BitLocker。**</span><span class="sxs-lookup"><span data-stu-id="32bfc-129">Select **Turn Off BitLocker**.</span></span> 
+3.  <span data-ttu-id="32bfc-130">關閉裝置電源。</span><span class="sxs-lookup"><span data-stu-id="32bfc-130">Power down the device.</span></span> 
 
-### <span data-ttu-id="00520-130">如果在 SSD 移除與取代期間啟用 BitLocker 加密</span><span class="sxs-lookup"><span data-stu-id="00520-130">If BitLocker encryption is enabled during SSD removal and replacement</span></span>
+### <a name="if-bitlocker-encryption-is-enabled-during-ssd-removal-and-replacement"></a><span data-ttu-id="32bfc-131">如果在BITLOCKER和更換期間啟用加密功能</span><span class="sxs-lookup"><span data-stu-id="32bfc-131">If BitLocker encryption is enabled during SSD removal and replacement</span></span>
 
-<span data-ttu-id="00520-131">如果在 SSD 移除和取代之前，裝置經過加密，請遵循下列步驟來產生 BitLocker 復原金鑰，並將它儲存至 USB 儲存空間：</span><span class="sxs-lookup"><span data-stu-id="00520-131">If the device is encrypted before SSD removal and replacement, follow these steps to generate a BitLocker recovery key and save it to USB storage:</span></span>
+<span data-ttu-id="32bfc-132">如果裝置在移除和更換 SSD 之前經過加密，請按照下列步驟產生BitLocker金鑰，並將其儲存到 USB 儲存空間：</span><span class="sxs-lookup"><span data-stu-id="32bfc-132">If the device is encrypted before SSD removal and replacement, follow these steps to generate a BitLocker recovery key and save it to USB storage:</span></span>
 
-1.  <span data-ttu-id="00520-132">在 [ **設定**] 中，輸入 **BitLocker**。</span><span class="sxs-lookup"><span data-stu-id="00520-132">In **Settings**, type **BitLocker**.</span></span>
-2. <span data-ttu-id="00520-133">選取 [**管理 bitlocker**  > **產生 bitlocker 復原金鑰**]。</span><span class="sxs-lookup"><span data-stu-id="00520-133">Select **Manage BitLocker** >**Generate BitLocker Recovery Key**.</span></span>
-2.  <span data-ttu-id="00520-134">插入 USB 磁片磁碟機。</span><span class="sxs-lookup"><span data-stu-id="00520-134">Insert a USB drive.</span></span> 
-4.  <span data-ttu-id="00520-135">將修復金鑰儲存至 USB 儲存空間。</span><span class="sxs-lookup"><span data-stu-id="00520-135">Save the recovery key to USB storage.</span></span>  
-5.  <span data-ttu-id="00520-136">移除 USB 磁片磁碟機。</span><span class="sxs-lookup"><span data-stu-id="00520-136">Remove the USB drive.</span></span>  
-6.  <span data-ttu-id="00520-137">關閉裝置電源。</span><span class="sxs-lookup"><span data-stu-id="00520-137">Power down the device.</span></span> 
+1.  <span data-ttu-id="32bfc-133">在**設定\*\*\*\*中，輸入**BitLocker。</span><span class="sxs-lookup"><span data-stu-id="32bfc-133">In **Settings**, type **BitLocker**.</span></span>
+2. <span data-ttu-id="32bfc-134">選取**管理 BitLocker**  > **產生BitLocker金鑰**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-134">Select **Manage BitLocker** >**Generate BitLocker Recovery Key**.</span></span>
+2.  <span data-ttu-id="32bfc-135">插入 USB 磁碟機。</span><span class="sxs-lookup"><span data-stu-id="32bfc-135">Insert a USB drive.</span></span> 
+4.  <span data-ttu-id="32bfc-136">將修復金鑰儲存到 USB 儲存空間。</span><span class="sxs-lookup"><span data-stu-id="32bfc-136">Save the recovery key to USB storage.</span></span>  
+5.  <span data-ttu-id="32bfc-137">移除 USB 磁碟機。</span><span class="sxs-lookup"><span data-stu-id="32bfc-137">Remove the USB drive.</span></span>  
+6.  <span data-ttu-id="32bfc-138">關閉裝置電源。</span><span class="sxs-lookup"><span data-stu-id="32bfc-138">Power down the device.</span></span> 
 
-## <span data-ttu-id="00520-138">移除並取代 SSD</span><span class="sxs-lookup"><span data-stu-id="00520-138">Remove and replace SSD</span></span> 
+## <a name="remove-and-replace-ssd"></a><span data-ttu-id="32bfc-139">移除及取代 SSD</span><span class="sxs-lookup"><span data-stu-id="32bfc-139">Remove and replace SSD</span></span> 
 
-1.  <span data-ttu-id="00520-139">使用適用于 [企業的 RSSD 移除指南](https://www.microsoft.com/download/100440)中所包含的裝置指示，移除 SSD。</span><span class="sxs-lookup"><span data-stu-id="00520-139">Remove the SSD by using the appropriate instructions for your device included in [rSSD Removal Guide for Enterprise](https://www.microsoft.com/download/100440).</span></span> 
-2.  <span data-ttu-id="00520-140">將原始的 SSD 放入新的裝置，並將新裝置連接至有線網際網路連線。</span><span class="sxs-lookup"><span data-stu-id="00520-140">Put the original SSD into a new device and connect the new device to a wired internet connection.</span></span>
-3.  <span data-ttu-id="00520-141">開啟新裝置的電源。</span><span class="sxs-lookup"><span data-stu-id="00520-141">Power on the new device.</span></span> <span data-ttu-id="00520-142">在啟動期間，裝置可能會進行固件更新。</span><span class="sxs-lookup"><span data-stu-id="00520-142">The device may go through a firmware update during startup.</span></span>  
+1.  <span data-ttu-id="32bfc-140">使用[rSSD](https://www.microsoft.com/download/100440)移除指南中適用于您裝置的適當指示來移除ENTERPRISE。</span><span class="sxs-lookup"><span data-stu-id="32bfc-140">Remove the SSD by using the appropriate instructions for your device included in [rSSD Removal Guide for Enterprise](https://www.microsoft.com/download/100440).</span></span> 
+2.  <span data-ttu-id="32bfc-141">將原始的 SSD 放入新裝置，然後將新裝置連接到有線網際網路連接。</span><span class="sxs-lookup"><span data-stu-id="32bfc-141">Put the original SSD into a new device and connect the new device to a wired internet connection.</span></span>
+3.  <span data-ttu-id="32bfc-142">在新裝置上電源。</span><span class="sxs-lookup"><span data-stu-id="32bfc-142">Power on the new device.</span></span> <span data-ttu-id="32bfc-143">裝置在啟動期間可能會經歷一次固件更新。</span><span class="sxs-lookup"><span data-stu-id="32bfc-143">The device may go through a firmware update during startup.</span></span>  
  
-## <span data-ttu-id="00520-143">在 SSD 移除和取代後</span><span class="sxs-lookup"><span data-stu-id="00520-143">After SSD removal and replacement</span></span>
+## <a name="after-ssd-removal-and-replacement"></a><span data-ttu-id="32bfc-144">在移除和取代 SSD 之後</span><span class="sxs-lookup"><span data-stu-id="32bfc-144">After SSD removal and replacement</span></span>
 
-### <span data-ttu-id="00520-144">管理未加密的 SSDs</span><span class="sxs-lookup"><span data-stu-id="00520-144">Manage unencrypted SSDs</span></span> 
+### <a name="manage-unencrypted-ssds"></a><span data-ttu-id="32bfc-145">管理未加密的 SSD</span><span class="sxs-lookup"><span data-stu-id="32bfc-145">Manage unencrypted SSDs</span></span> 
 
-<span data-ttu-id="00520-145">如果 SSD 在傳輸期間未加密，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="00520-145">If the SSD is unencrypted during the transfer, follow these steps:</span></span> 
+<span data-ttu-id="32bfc-146">如果在傳輸期間未加密 SSD，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="32bfc-146">If the SSD is unencrypted during the transfer, follow these steps:</span></span> 
 
-1.  <span data-ttu-id="00520-146">移至 [登**入選項**]  >  (左側的 [金鑰] 圖示所代表的**密碼**) 。</span><span class="sxs-lookup"><span data-stu-id="00520-146">Go to **Sign-In Options** > **Password** (represented by the key icon on the left side).</span></span>  
-2.  <span data-ttu-id="00520-147">輸入密碼，並登入 [待處理的雙因素驗證] (（如果適用的話）) 。</span><span class="sxs-lookup"><span data-stu-id="00520-147">Enter the password and sign in pending completion of two-factor authentication (if applicable).</span></span>
-3.  <span data-ttu-id="00520-148">當您完全登入後，請移至 [**開始**  >  **帳戶**  >  **登出**]。</span><span class="sxs-lookup"><span data-stu-id="00520-148">After you are fully signed in, go to **Start** > **Account** > **Sign out**.</span></span>  
-4.  <span data-ttu-id="00520-149">使用密碼重新登入，並在系統提示時設定 Windows Hello 和 PIN。</span><span class="sxs-lookup"><span data-stu-id="00520-149">Sign back in by using the password and set up Windows Hello and a PIN when you are prompted.</span></span> 
-    - <span data-ttu-id="00520-150">如果裝置已在 BitLocker 停用，以協助 SSD 移除及取代，且您想要在更換之後啟用 bitlocker，請移至**bitlocker**  >  **管理 bitlocker**[  >  **繼續 bitlocker**]。</span><span class="sxs-lookup"><span data-stu-id="00520-150">If the device was BitLocker-disabled to facilitate SSD removal and replacement, and you want to enable BitLocker after the replacement, go to **BitLocker** > **Manage BitLocker** > **Resume BitLocker**.</span></span>  
-6.  <span data-ttu-id="00520-151">執行適用于商務 () SDT 的 [Microsoft Surface 診斷工具](surface-diagnostic-toolkit-for-business-intro.md) 組，以驗證完整的裝置功能。</span><span class="sxs-lookup"><span data-stu-id="00520-151">Run the [Microsoft Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md) (SDT) to verify full device functionality.</span></span>  
-7.  <span data-ttu-id="00520-152">流覽至 [**設定**啟用] 以檢查 Windows 啟用  >  \*\* \*\*。</span><span class="sxs-lookup"><span data-stu-id="00520-152">Check for Windows activation by navigating to **Settings** > **Activation**.</span></span>  <span data-ttu-id="00520-153">如果您看到任何錯誤訊息，請選取 [ **疑難排解**]。</span><span class="sxs-lookup"><span data-stu-id="00520-153">If you see any error messages, select **Troubleshoot**.</span></span> 
-8.  <span data-ttu-id="00520-154">開啟**office 應用程式**，然後**流覽至 [** 檔案  >  **帳戶**]，然後檢查是否有任何錯誤訊息，以檢查 office 帳戶。</span><span class="sxs-lookup"><span data-stu-id="00520-154">Check the Office account by opening the **Office App**, navigate to **File** > **Account** and then check for any error messages.</span></span>  
+1.  <span data-ttu-id="32bfc-147">請**前往左側按鍵** (以代表的登錄選項密碼  >  \*\* \*\*) 。</span><span class="sxs-lookup"><span data-stu-id="32bfc-147">Go to **Sign-In Options** > **Password** (represented by the key icon on the left side).</span></span>  
+2.  <span data-ttu-id="32bfc-148">輸入密碼並完成雙因素驗證並 (如果適用) 。</span><span class="sxs-lookup"><span data-stu-id="32bfc-148">Enter the password and sign in pending completion of two-factor authentication (if applicable).</span></span>
+3.  <span data-ttu-id="32bfc-149">完成登錄後，請前往**開始**  >  **帳戶**  >  **登出**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-149">After you are fully signed in, go to **Start** > **Account** > **Sign out**.</span></span>  
+4.  <span data-ttu-id="32bfc-150">使用密碼重新登錄，並設定Windows時輸入 Hello 和 PIN。</span><span class="sxs-lookup"><span data-stu-id="32bfc-150">Sign back in by using the password and set up Windows Hello and a PIN when you are prompted.</span></span> 
+    - <span data-ttu-id="32bfc-151">如果裝置已停用BitLocker以利於 SSD 移除和更換，而您想要在更換之後啟用 BitLocker，請前往 BitLocker 管理 BitLocker\*\* \*\*  >  \*\*\*\*  >  **繼續**BitLocker。</span><span class="sxs-lookup"><span data-stu-id="32bfc-151">If the device was BitLocker-disabled to facilitate SSD removal and replacement, and you want to enable BitLocker after the replacement, go to **BitLocker** > **Manage BitLocker** > **Resume BitLocker**.</span></span>  
+6.  <span data-ttu-id="32bfc-152">執行 [商務用 Microsoft Surface 診斷工具 (](surface-diagnostic-toolkit-for-business-intro.md) SDT) 驗證完整的裝置功能。</span><span class="sxs-lookup"><span data-stu-id="32bfc-152">Run the [Microsoft Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md) (SDT) to verify full device functionality.</span></span>  
+7.  <span data-ttu-id="32bfc-153">流覽至 Windows 啟用 以**檢查設定**  >  **啟用**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-153">Check for Windows activation by navigating to **Settings** > **Activation**.</span></span>  <span data-ttu-id="32bfc-154">如果您看到任何錯誤訊息，請選取 疑 **難解答**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-154">If you see any error messages, select **Troubleshoot**.</span></span> 
+8.  <span data-ttu-id="32bfc-155">開啟 Office App，流覽至**檔案**Office帳戶，然後\*\*\*\*  >  \*\*\*\* 檢查是否有錯誤訊息，以檢查帳戶。</span><span class="sxs-lookup"><span data-stu-id="32bfc-155">Check the Office account by opening the **Office App**, navigate to **File** > **Account** and then check for any error messages.</span></span>  
 
-### <span data-ttu-id="00520-155">管理加密 SSDs</span><span class="sxs-lookup"><span data-stu-id="00520-155">Managing encrypted SSDs</span></span> 
+### <a name="managing-encrypted-ssds"></a><span data-ttu-id="32bfc-156">管理加密的 SSD</span><span class="sxs-lookup"><span data-stu-id="32bfc-156">Managing encrypted SSDs</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="00520-156">您必須有第二個裝置，才能讀取儲存在 USB 磁片磁碟機上的 BitLocker 復原金鑰。</span><span class="sxs-lookup"><span data-stu-id="00520-156">You will have to have a second device to read the BitLocker Recovery key that was saved on the USB drive.</span></span> 
+> <span data-ttu-id="32bfc-157">您必須有第二個裝置，BitLocker USB 磁碟機上儲存的修復金鑰。</span><span class="sxs-lookup"><span data-stu-id="32bfc-157">You will have to have a second device to read the BitLocker Recovery key that was saved on the USB drive.</span></span> 
 
-<span data-ttu-id="00520-157">如果 SSD 在傳輸期間經過加密，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="00520-157">If the SSD is encrypted during the transfer, follow these steps:</span></span>
+<span data-ttu-id="32bfc-158">如果在傳輸期間將 SSD 加密，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="32bfc-158">If the SSD is encrypted during the transfer, follow these steps:</span></span>
 
-1.  <span data-ttu-id="00520-158">將內含 BitLocker 復原金鑰的 USB 磁片磁碟機插入第二個裝置。</span><span class="sxs-lookup"><span data-stu-id="00520-158">Insert the USB drive that contains the BitLocker recovery key into the second device.</span></span> 
-2.  <span data-ttu-id="00520-159">開啟內含 Bitlocker 復原金鑰的 .txt 檔案。</span><span class="sxs-lookup"><span data-stu-id="00520-159">Open the .txt file that contains the Bitlocker recovery key.</span></span> 
-3.  <span data-ttu-id="00520-160">在包含原始 SSD 的新裝置上手動輸入 BitLocker 復原金鑰。</span><span class="sxs-lookup"><span data-stu-id="00520-160">Manually enter the BitLocker recovery key on the new device that contains the original SSD.</span></span>  
-4.  <span data-ttu-id="00520-161">成功輸入 BitLocker 復原金鑰之後，請移至 [登**入選項**]  >  (左邊的 [金鑰] 圖示所代表的**密碼**) 。</span><span class="sxs-lookup"><span data-stu-id="00520-161">After you have successfully entered the BitLocker recovery key, go to **Sign-In Options** > **Password** (represented by the key icon on the left side).</span></span>  
-5.  <span data-ttu-id="00520-162">如果適用) 的話，請輸入密碼並登入，以待執行的雙因素驗證 (完成。</span><span class="sxs-lookup"><span data-stu-id="00520-162">Enter the password and sign in, pending completion of two-factor authentication (if applicable).</span></span>
-6.  <span data-ttu-id="00520-163">當您完全登入後，請移至 [**開始**  >  **帳戶**  >  **登出**]。</span><span class="sxs-lookup"><span data-stu-id="00520-163">After you are fully signed in, go to **Start** > **Account** > **Sign out**.</span></span>  
-7.  <span data-ttu-id="00520-164">使用密碼重新登入，然後設定 Windows Hello 並新增 PIN。</span><span class="sxs-lookup"><span data-stu-id="00520-164">Sign back in by using the password, and then set up Windows Hello and add a PIN.</span></span> 
-8.  <span data-ttu-id="00520-165">如果裝置是 BitLocker 停用的，可協助 SSD 移除及取代，而且如果您想要在更換後啟用 bitlocker，請移至 [**設定**  >  **bitlocker**  >  **管理 bitlocker**  >  **繼續 bitlocker**]。</span><span class="sxs-lookup"><span data-stu-id="00520-165">If the device was BitLocker-disabled to facilitate SSD removal and replacement, and if you want to enable BitLocker after the replacement, go to **Settings** > **BitLocker** > **Manage BitLocker** > **Resume BitLocker**.</span></span>  
-9.  <span data-ttu-id="00520-166">執行 **[SDT](surface-diagnostic-toolkit-for-business-intro.md)** 以驗證完整的裝置功能。</span><span class="sxs-lookup"><span data-stu-id="00520-166">Run **[SDT](surface-diagnostic-toolkit-for-business-intro.md)** to verify full device functionality.</span></span>  
-10. <span data-ttu-id="00520-167">若要查看 Windows 啟用，請選取 [**設定**  >  **啟用**]。</span><span class="sxs-lookup"><span data-stu-id="00520-167">To check Windows activation, select **Settings** > **Activation**.</span></span>  <span data-ttu-id="00520-168">如果您看到任何錯誤訊息，請選取 [ **疑難排解**]。</span><span class="sxs-lookup"><span data-stu-id="00520-168">If you see any error messages, select **Troubleshoot**.</span></span>
-11. <span data-ttu-id="00520-169">若要檢查 office 帳戶的狀態，請開啟**office 應用程式**，然後**移至 [** 檔案帳戶]，  >  \*\*\*\* 檢查是否有任何錯誤訊息。</span><span class="sxs-lookup"><span data-stu-id="00520-169">To check the status of the Office account, open the **Office App**, then go to **File** > **Account** to check for any error messages.</span></span>
+1.  <span data-ttu-id="32bfc-159">將包含修復金鑰BitLocker USB 磁碟機插入第二個裝置。</span><span class="sxs-lookup"><span data-stu-id="32bfc-159">Insert the USB drive that contains the BitLocker recovery key into the second device.</span></span> 
+2.  <span data-ttu-id="32bfc-160">開啟.txt Bitlocker 修復金鑰的檔案。</span><span class="sxs-lookup"><span data-stu-id="32bfc-160">Open the .txt file that contains the Bitlocker recovery key.</span></span> 
+3.  <span data-ttu-id="32bfc-161">在包含原始BITLOCKER的新裝置上，手動輸入修復金鑰。</span><span class="sxs-lookup"><span data-stu-id="32bfc-161">Manually enter the BitLocker recovery key on the new device that contains the original SSD.</span></span>  
+4.  <span data-ttu-id="32bfc-162">成功輸入修復金鑰BitLocker，請前往左側按鍵圖示 (的登錄選項\*\*\*\* 密碼  >  \*\* \*\*) 。</span><span class="sxs-lookup"><span data-stu-id="32bfc-162">After you have successfully entered the BitLocker recovery key, go to **Sign-In Options** > **Password** (represented by the key icon on the left side).</span></span>  
+5.  <span data-ttu-id="32bfc-163">在雙因素驗證完成之前，輸入密碼並 (並) 。</span><span class="sxs-lookup"><span data-stu-id="32bfc-163">Enter the password and sign in, pending completion of two-factor authentication (if applicable).</span></span>
+6.  <span data-ttu-id="32bfc-164">完成登錄後，請前往**開始**  >  **帳戶**  >  **登出**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-164">After you are fully signed in, go to **Start** > **Account** > **Sign out**.</span></span>  
+7.  <span data-ttu-id="32bfc-165">使用密碼重新登錄，然後設定 Windows Hello 並新增 PIN。</span><span class="sxs-lookup"><span data-stu-id="32bfc-165">Sign back in by using the password, and then set up Windows Hello and add a PIN.</span></span> 
+8.  <span data-ttu-id="32bfc-166">如果裝置已停用BitLocker以利於 SSD 移除和更換，而且如果您想要在更換之後啟用 BitLocker，請前往 設定**BitLocker**管理 BitLocker  >  \*\*\*\*  >  \*\*\*\*  >  **繼續**BitLocker。</span><span class="sxs-lookup"><span data-stu-id="32bfc-166">If the device was BitLocker-disabled to facilitate SSD removal and replacement, and if you want to enable BitLocker after the replacement, go to **Settings** > **BitLocker** > **Manage BitLocker** > **Resume BitLocker**.</span></span>  
+9.  <span data-ttu-id="32bfc-167">執行 **[SDT](surface-diagnostic-toolkit-for-business-intro.md)** 以驗證完整的裝置功能。</span><span class="sxs-lookup"><span data-stu-id="32bfc-167">Run **[SDT](surface-diagnostic-toolkit-for-business-intro.md)** to verify full device functionality.</span></span>  
+10. <span data-ttu-id="32bfc-168">若要檢查Windows，請選取 設定\*\*\*\*  >  **啟用**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-168">To check Windows activation, select **Settings** > **Activation**.</span></span>  <span data-ttu-id="32bfc-169">如果您看到任何錯誤訊息，請選取 疑 **難解答**。</span><span class="sxs-lookup"><span data-stu-id="32bfc-169">If you see any error messages, select **Troubleshoot**.</span></span>
+11. <span data-ttu-id="32bfc-170">若要檢查帳戶Office，請開啟 Office **App，** 然後前往檔案帳戶檢查\*\*\*\*  >  \*\*\*\* 是否有錯誤訊息。</span><span class="sxs-lookup"><span data-stu-id="32bfc-170">To check the status of the Office account, open the **Office App**, then go to **File** > **Account** to check for any error messages.</span></span>
 
-## <span data-ttu-id="00520-170">深入了解</span><span class="sxs-lookup"><span data-stu-id="00520-170">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="32bfc-171">深入了解</span><span class="sxs-lookup"><span data-stu-id="32bfc-171">Learn more</span></span>
 
-- [<span data-ttu-id="00520-171">企業版的 rSSD 移除指南</span><span class="sxs-lookup"><span data-stu-id="00520-171">rSSD Removal Guide for Enterprise</span></span>](https://www.microsoft.com/download/100440)
-- [<span data-ttu-id="00520-172">BitLocker 修復指南</span><span class="sxs-lookup"><span data-stu-id="00520-172">BitLocker Recovery Guide</span></span>](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
+- [<span data-ttu-id="32bfc-172">rSSD 移除指南Enterprise</span><span class="sxs-lookup"><span data-stu-id="32bfc-172">rSSD Removal Guide for Enterprise</span></span>](https://www.microsoft.com/download/100440)
+- [<span data-ttu-id="32bfc-173">BitLocker 修復指南</span><span class="sxs-lookup"><span data-stu-id="32bfc-173">BitLocker Recovery Guide</span></span>](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
 
-<span data-ttu-id="00520-173">仍需要協助？</span><span class="sxs-lookup"><span data-stu-id="00520-173">Still need help?</span></span> <span data-ttu-id="00520-174">移至 [Microsoft 社區](https://answers.microsoft.com/)。</span><span class="sxs-lookup"><span data-stu-id="00520-174">Go to [Microsoft Community](https://answers.microsoft.com/).</span></span>
+<span data-ttu-id="32bfc-174">仍需要協助？</span><span class="sxs-lookup"><span data-stu-id="32bfc-174">Still need help?</span></span> <span data-ttu-id="32bfc-175">前往[Microsoft Community。](https://answers.microsoft.com/)</span><span class="sxs-lookup"><span data-stu-id="32bfc-175">Go to [Microsoft Community](https://answers.microsoft.com/).</span></span>

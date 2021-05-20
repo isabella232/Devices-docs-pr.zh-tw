@@ -1,6 +1,6 @@
 ---
-title: 自訂 Surface Hub 2S 的掛牆架
-description: 瞭解如何執行 Surface Hub 秒的自訂安裝。
+title: 自訂 2S Surface Hub 50 英吋的牆面安裝
+description: 瞭解如何執行 2S Surface Hub 50 英吋的自訂安裝。
 keywords: 使用逗號分隔值
 ms.prod: surface-hub
 ms.sitesec: library
@@ -9,83 +9,91 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 04/16/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 3b96fa53f9ccc9b3577549c98d9299a8dfb149a2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f21ed5d667dac89b3903b59811131bf27435ceb1
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831590"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576963"
 ---
-# <span data-ttu-id="2429d-104">自訂 Surface Hub 2S 的掛牆架</span><span class="sxs-lookup"><span data-stu-id="2429d-104">Customize wall mount of Surface Hub 2S</span></span>
+# <a name="customize-wall-mount-of-surface-hub-2s-50"></a><span data-ttu-id="da30e-104">自訂 2S 50 Surface Hub牆安裝"</span><span class="sxs-lookup"><span data-stu-id="da30e-104">Customize wall mount of Surface Hub 2S 50"</span></span>
 
-<span data-ttu-id="2429d-105">如果您使用的是未經認證的安裝解決方案，您可以使用「可隨時使用的零售硬體」裝載 Surface Hub 2 秒。</span><span class="sxs-lookup"><span data-stu-id="2429d-105">If you’re not using certified mounting solutions, you can mount Surface Hub 2S using readily available retail hardware.</span></span>
+<span data-ttu-id="da30e-105">本文提供實際安裝 2S 50 Microsoft Surface Hub指南。</span><span class="sxs-lookup"><span data-stu-id="da30e-105">This article provides guidance for physically installing the Microsoft Surface Hub 2S 50."</span></span> <span data-ttu-id="da30e-106">有關安裝 85" 的資訊，請參閱安裝並安裝[Surface Hub 2S 85」。](surface-hub-2s-85-install-mount.md)</span><span class="sxs-lookup"><span data-stu-id="da30e-106">For information about installing the 85" see [Install and mount Surface Hub 2S 85"](surface-hub-2s-85-install-mount.md).</span></span>
 
-## <span data-ttu-id="2429d-106">設定牆安裝量值</span><span class="sxs-lookup"><span data-stu-id="2429d-106">Set wall mount measurements</span></span>
+<span data-ttu-id="da30e-107">如果沒有使用經過認證的安裝解決方案，您可以使用現成的零售硬體Surface Hub 2S 50"安裝。</span><span class="sxs-lookup"><span data-stu-id="da30e-107">If not using certified mounting solutions, you can mount Surface Hub 2S 50" using readily available retail hardware.</span></span>
 
-<span data-ttu-id="2429d-107">Surface Hub 2 的建議安裝度量單位：</span><span class="sxs-lookup"><span data-stu-id="2429d-107">Surface Hub 2S recommended mounting measurements:</span></span>
+## <a name="set-wall-mount-measurements"></a><span data-ttu-id="da30e-108">設定牆面安裝量值</span><span class="sxs-lookup"><span data-stu-id="da30e-108">Set wall mount measurements</span></span>
 
-|**<span data-ttu-id="2429d-108">項目</span><span class="sxs-lookup"><span data-stu-id="2429d-108">Item</span></span>**|**<span data-ttu-id="2429d-109">描述</span><span class="sxs-lookup"><span data-stu-id="2429d-109">Description</span></span>**|**<span data-ttu-id="2429d-110">附註</span><span class="sxs-lookup"><span data-stu-id="2429d-110">Notes</span></span>**|
+<span data-ttu-id="da30e-109">Surface Hub 2S 50" 建議安裝測量：</span><span class="sxs-lookup"><span data-stu-id="da30e-109">Surface Hub 2S 50" recommended mounting measurements:</span></span>
+
+| <span data-ttu-id="da30e-110">項目</span><span class="sxs-lookup"><span data-stu-id="da30e-110">Item</span></span> | <span data-ttu-id="da30e-111">描述</span><span class="sxs-lookup"><span data-stu-id="da30e-111">Description</span></span> | <span data-ttu-id="da30e-112">附註</span><span class="sxs-lookup"><span data-stu-id="da30e-112">Notes</span></span> |
 |:------ |:------------- |:------- |
-|**<span data-ttu-id="2429d-111">Surface Hub 2 秒的高度</span><span class="sxs-lookup"><span data-stu-id="2429d-111">Height from bottom of Surface Hub 2S</span></span>**| <span data-ttu-id="2429d-112">1026.5 mm （40.41 "）</span><span class="sxs-lookup"><span data-stu-id="2429d-112">1026.5 mm (40.41”)</span></span> | <span data-ttu-id="2429d-113">建議執行</span><span class="sxs-lookup"><span data-stu-id="2429d-113">Recommended</span></span> |
-|**<span data-ttu-id="2429d-114">Surface Hub 2 秒的高度</span><span class="sxs-lookup"><span data-stu-id="2429d-114">Height from top of Surface Hub 2S</span></span>**| <span data-ttu-id="2429d-115">1767.2 mm （69.57 "）</span><span class="sxs-lookup"><span data-stu-id="2429d-115">1767.2 mm (69.57”)</span></span> | <span data-ttu-id="2429d-116">建議執行</span><span class="sxs-lookup"><span data-stu-id="2429d-116">Recommended</span></span> |
-|**<span data-ttu-id="2429d-117">裝載中心的高度</span><span class="sxs-lookup"><span data-stu-id="2429d-117">Height from center of mount</span></span>**| <span data-ttu-id="2429d-118">1397 mm （55 "）</span><span class="sxs-lookup"><span data-stu-id="2429d-118">1397 mm (55”)</span></span> | <span data-ttu-id="2429d-119">建議執行</span><span class="sxs-lookup"><span data-stu-id="2429d-119">Recommended</span></span> |
+|**<span data-ttu-id="da30e-113">2S 50 Surface Hub底的高度</span><span class="sxs-lookup"><span data-stu-id="da30e-113">Height from bottom of Surface Hub 2S 50"</span></span>**| <span data-ttu-id="da30e-114">1026.5 mm (40.41") </span><span class="sxs-lookup"><span data-stu-id="da30e-114">1026.5 mm (40.41”)</span></span> | <span data-ttu-id="da30e-115">建議執行</span><span class="sxs-lookup"><span data-stu-id="da30e-115">Recommended</span></span> |
+|**<span data-ttu-id="da30e-116">2S 50 Surface Hub頂端的高度</span><span class="sxs-lookup"><span data-stu-id="da30e-116">Height from top of Surface Hub 2S 50"</span></span>**| <span data-ttu-id="da30e-117">1767.2 mm (69.57") </span><span class="sxs-lookup"><span data-stu-id="da30e-117">1767.2 mm (69.57”)</span></span> | <span data-ttu-id="da30e-118">建議執行</span><span class="sxs-lookup"><span data-stu-id="da30e-118">Recommended</span></span> |
+|**<span data-ttu-id="da30e-119">從安裝中心的高度</span><span class="sxs-lookup"><span data-stu-id="da30e-119">Height from center of mount</span></span>**| <span data-ttu-id="da30e-120">1397 mm (55") </span><span class="sxs-lookup"><span data-stu-id="da30e-120">1397 mm (55”)</span></span> | <span data-ttu-id="da30e-121">建議執行</span><span class="sxs-lookup"><span data-stu-id="da30e-121">Recommended</span></span> |
 
-1. <span data-ttu-id="2429d-120">從 floor 階層測量 1026.5 mm （40.41 "），以設定建議的最小高度。</span><span class="sxs-lookup"><span data-stu-id="2429d-120">Measure 1026.5 mm (40.41”) from the floor level to set the recommended minimum height.</span></span>
-2. <span data-ttu-id="2429d-121">從樓層階層測量 1767.2 mm （69.57 "），以設定建議的最高值。</span><span class="sxs-lookup"><span data-stu-id="2429d-121">Measure 1767.2 mm (69.57”) from the floor level to set the recommended top height.</span></span>
+1. <span data-ttu-id="da30e-122">從樓面測量 1026.5 (40.41") ，以設定建議的最小高度。</span><span class="sxs-lookup"><span data-stu-id="da30e-122">Measure 1026.5 mm (40.41”) from the floor level to set the recommended minimum height.</span></span>
 
-![\* Surface Hub 2-前部掛載前視圖 \*](images/sh2-wall-front.png) <br>
+2. <span data-ttu-id="da30e-123">從樓面測量 1767.2 mm (69.57") ，以設定建議的頂端高度。</span><span class="sxs-lookup"><span data-stu-id="da30e-123">Measure 1767.2 mm (69.57”) from the floor level to set the recommended top height.</span></span>
 
-3. <span data-ttu-id="2429d-123">從地面層級測量 1397 mm （55 "） mm，以設定建議的中心高度。</span><span class="sxs-lookup"><span data-stu-id="2429d-123">Measure 1397 mm (55”) mm from the floor level to set the recommended center height.</span></span>
+    ![Surface Hub 2S 50" 牆面安裝前視圖](images/sh2-wall-front.png)
 
-![\* Surface Hub 2/2 牆安裝端視圖 \*](images/sh2-wall-side.png) <br>
+3. <span data-ttu-id="da30e-125&quot;>從樓面測量 1397 mm (55") mm 以設定建議的中心高度。</span><span class="sxs-lookup"><span data-stu-id="da30e-125">Measure 1397 mm (55”) mm from the floor level to set the recommended center height.</span></span>
 
-## <span data-ttu-id="2429d-125">無障礙安裝</span><span class="sxs-lookup"><span data-stu-id="2429d-125">Obstruction free mounting</span></span>
+    ![Surface Hub 2S 50" 牆面安裝側視圖](images/sh2-wall-side.png)
 
-<span data-ttu-id="2429d-126">除了裝置側面的可見埠之外，某些整合元件必須保持無障礙，才能正常運作。</span><span class="sxs-lookup"><span data-stu-id="2429d-126">In addition to the visible ports on the sides of the device, certain integrated components must remain free of obstruction in order to function correctly.</span></span> <span data-ttu-id="2429d-127">其中包括藍牙、Wi-fi、使用量和麥克風感應器，以及熱量冷卻通風孔。</span><span class="sxs-lookup"><span data-stu-id="2429d-127">These include the Bluetooth, Wi-Fi, occupancy, and mic sensors as well thermal cooling vents.</span></span>
-<span data-ttu-id="2429d-128">保留區域</span><span class="sxs-lookup"><span data-stu-id="2429d-128">Keep out zones</span></span>
 
-|**<span data-ttu-id="2429d-129">項目</span><span class="sxs-lookup"><span data-stu-id="2429d-129">Item</span></span>**|**<span data-ttu-id="2429d-130">描述</span><span class="sxs-lookup"><span data-stu-id="2429d-130">Description</span></span>**|**<span data-ttu-id="2429d-131">附註</span><span class="sxs-lookup"><span data-stu-id="2429d-131">Notes</span></span>**|
+## <a name="obstruction-free-mounting"></a><span data-ttu-id="da30e-127">無障礙安裝</span><span class="sxs-lookup"><span data-stu-id="da30e-127">Obstruction free mounting</span></span>
+
+<span data-ttu-id="da30e-128">除了裝置兩側的可見埠之外，某些整合元件必須保持無干擾，才能正確運作。</span><span class="sxs-lookup"><span data-stu-id="da30e-128">In addition to the visible ports on the sides of the device, certain integrated components must remain free of obstruction in order to function correctly.</span></span> <span data-ttu-id="da30e-129">這些包括藍牙、Wi-Fi、佔用和麥克風感應器，以及熱力冷卻出風口。</span><span class="sxs-lookup"><span data-stu-id="da30e-129">These include the Bluetooth, Wi-Fi, occupancy, and mic sensors as well thermal cooling vents.</span></span>
+<span data-ttu-id="da30e-130">保留區域</span><span class="sxs-lookup"><span data-stu-id="da30e-130">Keep out zones</span></span>
+
+| <span data-ttu-id="da30e-131">項目</span><span class="sxs-lookup"><span data-stu-id="da30e-131">Item</span></span> | <span data-ttu-id="da30e-132">描述</span><span class="sxs-lookup"><span data-stu-id="da30e-132">Description</span></span> | <span data-ttu-id="da30e-133">附註</span><span class="sxs-lookup"><span data-stu-id="da30e-133">Notes</span></span> |
 |:---- |:----------- |:----- |
-|**<span data-ttu-id="2429d-132">Access</span><span class="sxs-lookup"><span data-stu-id="2429d-132">Access</span></span>**| <span data-ttu-id="2429d-133">確保不能存取輸入輸出連接埠、計算盒式磁帶、藍牙無線電、藍牙感應器、Wi-fi 無線電、Wi-fi 感應器、佔用感應器。</span><span class="sxs-lookup"><span data-stu-id="2429d-133">Ensure unimpeded access to input/output ports, the compute cartridge, Bluetooth radio, Bluetooth sensor, Wi-Fi radio, Wi-Fi sensor, occupancy sensor.</span></span> | <span data-ttu-id="2429d-134">請參閱圖1。</span><span class="sxs-lookup"><span data-stu-id="2429d-134">See Figure 1.</span></span> |
-|**<span data-ttu-id="2429d-135">空中流量</span><span class="sxs-lookup"><span data-stu-id="2429d-135">Air flow</span></span>**| <span data-ttu-id="2429d-136">避免封鎖進氣和排氣風通風管區域。</span><span class="sxs-lookup"><span data-stu-id="2429d-136">Avoid blocking inlet and outlet air vent zones.</span></span> | <span data-ttu-id="2429d-137">請參閱圖2</span><span class="sxs-lookup"><span data-stu-id="2429d-137">See Figure 2</span></span>  |
-|**<span data-ttu-id="2429d-138">音效</span><span class="sxs-lookup"><span data-stu-id="2429d-138">Audio</span></span>**| <span data-ttu-id="2429d-139">避免在 Surface Hub 2 的背面封鎖音訊出口區。</span><span class="sxs-lookup"><span data-stu-id="2429d-139">Avoid blocking audio exit zone on rear of Surface Hub 2S.</span></span> | <span data-ttu-id="2429d-140">請參閱圖2。</span><span class="sxs-lookup"><span data-stu-id="2429d-140">See Figure 2.</span></span> |
+|**<span data-ttu-id="da30e-134">Access</span><span class="sxs-lookup"><span data-stu-id="da30e-134">Access</span></span>**| <span data-ttu-id="da30e-135">確保不受阻礙地存取輸入輸出連接埠、計算盒、藍牙、藍牙感應器、Wi-Fi、Wi-Fi感應器、Wi-Fi感應器。</span><span class="sxs-lookup"><span data-stu-id="da30e-135">Ensure unimpeded access to input/output ports, the compute cartridge, Bluetooth radio, Bluetooth sensor, Wi-Fi radio, Wi-Fi sensor, occupancy sensor.</span></span> | <span data-ttu-id="da30e-136">請參閱圖 1。</span><span class="sxs-lookup"><span data-stu-id="da30e-136">See Figure 1.</span></span> |
+|**<span data-ttu-id="da30e-137">Air Flow</span><span class="sxs-lookup"><span data-stu-id="da30e-137">Air flow</span></span>**| <span data-ttu-id="da30e-138">避免封鎖入口和出風口區域。</span><span class="sxs-lookup"><span data-stu-id="da30e-138">Avoid blocking inlet and outlet air vent zones.</span></span> | <span data-ttu-id="da30e-139">請參閱圖 2</span><span class="sxs-lookup"><span data-stu-id="da30e-139">See Figure 2</span></span>  |
+|**<span data-ttu-id="da30e-140">音效</span><span class="sxs-lookup"><span data-stu-id="da30e-140">Audio</span></span>**| <span data-ttu-id="da30e-141">避免封鎖 2S 50 Surface Hub後方的音訊出口區域。</span><span class="sxs-lookup"><span data-stu-id="da30e-141">Avoid blocking audio exit zone on rear of Surface Hub 2S 50".</span></span> | <span data-ttu-id="da30e-142">請參閱圖 2。</span><span class="sxs-lookup"><span data-stu-id="da30e-142">See Figure 2.</span></span> |
 
-![\* 圖1。](images/sh2-keepout-zones.png) <br>
-***<span data-ttu-id="2429d-143">圖 1。</span><span class="sxs-lookup"><span data-stu-id="2429d-143">Figure 1.</span></span> <span data-ttu-id="2429d-144">針對 Surface Hub 的2個元件保留區域</span><span class="sxs-lookup"><span data-stu-id="2429d-144">Keep out zones for Surface Hub 2S components</span></span>***
+![圖 1。](images/sh2-keepout-zones.png) <br><span data-ttu-id="da30e-145">
+*\*_圖 1.針對 2S 50" 元件Surface Hub區域_*_</span><span class="sxs-lookup"><span data-stu-id="da30e-145">
+*\*_Figure 1. Keep out zones for Surface Hub 2S 50" components_*_</span></span>
 
-![\* 圖2。](images/sh2-thermal-audio.png) <br>
-***<span data-ttu-id="2429d-147">圖 2.</span><span class="sxs-lookup"><span data-stu-id="2429d-147">Figure 2.</span></span> <span data-ttu-id="2429d-148">避免封鎖熱量入口/輸出口和音訊出口區域。</span><span class="sxs-lookup"><span data-stu-id="2429d-148">Avoid blocking thermal inlet/outlet and audio exit zones.</span></span><br>***
+![圖 2.](images/sh2-thermal-audio.png) <br>
+_*_<span data-ttu-id="da30e-148">圖 2.</span><span class="sxs-lookup"><span data-stu-id="da30e-148">Figure 2.</span></span> <span data-ttu-id="da30e-149">避免封鎖熱力入口/出口和音訊出口區域。</span><span class="sxs-lookup"><span data-stu-id="da30e-149">Avoid blocking thermal inlet/outlet and audio exit zones.</span></span>_*_
 
-<span data-ttu-id="2429d-149">含有 i/o 埠的可移除的計算盒須保持不動任何類型的障礙物或障礙。</span><span class="sxs-lookup"><span data-stu-id="2429d-149">The removable compute cartridge containing the I/O ports must remain free of any obstructions or impediments of any kind.</span></span>
+<span data-ttu-id="da30e-150">包含 I/O 埠的可移除計算盒必須保持無任何障礙或障礙。</span><span class="sxs-lookup"><span data-stu-id="da30e-150">The removable compute cartridge containing the I/O ports must remain free of any obstructions or impediments of any kind.</span></span>
 
-![\* 圖 3. 在 Surface Hub 2 的下方，查看計算盒式磁帶。](images/sh2-ports.png) <br>
-***<span data-ttu-id="2429d-151">圖 3. 在 Surface Hub 2 的下方，查看計算盒式磁帶。</span><span class="sxs-lookup"><span data-stu-id="2429d-151">Figure 3.View of compute cartridge on the underside of Surface Hub 2s.</span></span>***
+![圖 3.查看 2S 50 Surface Hub下側的計算卡匣。](images/sh2-ports.png) <br>
+_*_<span data-ttu-id="da30e-152">圖 3.查看 2S 50 Surface Hub下側的計算卡匣。</span><span class="sxs-lookup"><span data-stu-id="da30e-152">Figure 3.View of compute cartridge on the underside of Surface Hub 2S 50".</span></span>_*_
 
-![\* 圖4。](images/sh2-cartridge.png) <br>
-***<span data-ttu-id="2429d-154">圖 4.</span><span class="sxs-lookup"><span data-stu-id="2429d-154">Figure 4.</span></span> <span data-ttu-id="2429d-155">無法移除計算盒式磁帶</span><span class="sxs-lookup"><span data-stu-id="2429d-155">Unimpeded removal of compute cartridge</span></span>***
+![<span data-ttu-id="da30e-153">圖 4.</span><span class="sxs-lookup"><span data-stu-id="da30e-153">Figure 4.</span></span> <span data-ttu-id="da30e-154">無阻礙地移除計算卡匣</span><span class="sxs-lookup"><span data-stu-id="da30e-154">Unimpeded removal of compute cartridge</span></span> ](images/sh2-cartridge.png) <br>
+_*_<span data-ttu-id="da30e-155">圖 4.</span><span class="sxs-lookup"><span data-stu-id="da30e-155">Figure 4.</span></span> <span data-ttu-id="da30e-156">無阻礙地移除計算卡匣</span><span class="sxs-lookup"><span data-stu-id="da30e-156">Unimpeded removal of compute cartridge</span></span>_*_
 
-## <span data-ttu-id="2429d-156">選取安裝系統</span><span class="sxs-lookup"><span data-stu-id="2429d-156">Selecting a mounting system</span></span>
+## <a name="selecting-a-mounting-system"></a><span data-ttu-id="da30e-157">選取安裝系統</span><span class="sxs-lookup"><span data-stu-id="da30e-157">Selecting a mounting system</span></span>
 
-<span data-ttu-id="2429d-157">Surface Hub 2 是使用 350 mm x 350 mm 安裝架構，它可滿足您在 VESA 平面顯示器安裝介面標準中所列的大部分（但非全部）準則。</span><span class="sxs-lookup"><span data-stu-id="2429d-157">Surface Hub 2S uses a 350 mm x 350 mm mounting framework that meets most — but not all — of the criteria listed in the VESA Flat Display Mounting Interface Standard.</span></span> <span data-ttu-id="2429d-158">您可以使用各種現成的顯示括弧來安裝 Surface Hub 2，以適應精確的 VESA 規格，如下所示。</span><span class="sxs-lookup"><span data-stu-id="2429d-158">You can install Surface Hub 2S using any of various off-the-shelf display brackets designed to accommodate displays that diverge from exact VESA specifications, as shown below.</span></span>
+<span data-ttu-id="da30e-158">Surface Hub 2S 50" 使用 350 mm x 350 mm 安裝架構，符合 VESA 平板顯示器安裝介面標準中列出的大多數準則 ，但並非全部。</span><span class="sxs-lookup"><span data-stu-id="da30e-158">Surface Hub 2S 50" uses a 350 mm x 350 mm mounting framework that meets most — but not all — of the criteria listed in the VESA Flat Display Mounting Interface Standard.</span></span> <span data-ttu-id="da30e-159">您可以使用各種Surface Hub型顯示括弧來安裝 2S 50"，其設計可配合與 VESA 規格不同的顯示器，如下所示。</span><span class="sxs-lookup"><span data-stu-id="da30e-159">You can install Surface Hub 2S 50" using any of various off-the-shelf display brackets designed to accommodate displays that diverge from exact VESA specifications, as shown below.</span></span>
 
-<span data-ttu-id="2429d-159">在 Surface Hub 2 秒的背面，您會發現四個 M6 x 1.0 螺紋孔（直徑上的 565 mm）的正方形模式。</span><span class="sxs-lookup"><span data-stu-id="2429d-159">On the back of Surface Hub 2S, you’ll find a square pattern of four M6 x 1.0 threaded holes centered on the circular bump (565 mm in diameter).</span></span> <span data-ttu-id="2429d-160">使用四個 M6 x 1.0-12 mm （長公制）來附加您的安裝。</span><span class="sxs-lookup"><span data-stu-id="2429d-160">Attach your mount using four M6 x 1.0–12 mm-long metric bolts.</span></span> <span data-ttu-id="2429d-161">或者，視喜好設定而定，您可以使用較長的螺栓，最多可達 20 mm。</span><span class="sxs-lookup"><span data-stu-id="2429d-161">Or, depending on preference, you can use longer bolts up to a maximum of 20 mm.</span></span>
-<span data-ttu-id="2429d-162">安裝系統的重要考慮</span><span class="sxs-lookup"><span data-stu-id="2429d-162">Important considerations for mounting systems</span></span>
+<span data-ttu-id="da30e-160">在 Surface Hub 2S 50"的背面，您可以找到四個 M6 x 1.0 線狀孔的方形圖樣，其中央位於圓形凸凸 (565 mm 的) 。</span><span class="sxs-lookup"><span data-stu-id="da30e-160">On the back of Surface Hub 2S 50", you’ll find a square pattern of four M6 x 1.0 threaded holes centered on the circular bump (565 mm in diameter).</span></span> <span data-ttu-id="da30e-161">使用四個 M6 x 1.0–12 mm 長公制螺栓來附加您的安裝。</span><span class="sxs-lookup"><span data-stu-id="da30e-161">Attach your mount using four M6 x 1.0–12 mm-long metric bolts.</span></span> <span data-ttu-id="da30e-162">或者，根據喜好設定，您可以使用最長 20 mm 的長螺栓。</span><span class="sxs-lookup"><span data-stu-id="da30e-162">Or, depending on preference, you can use longer bolts up to a maximum of 20 mm.</span></span>
+<span data-ttu-id="da30e-163">安裝系統的重要考慮</span><span class="sxs-lookup"><span data-stu-id="da30e-163">Important considerations for mounting systems</span></span>
 
-|**<span data-ttu-id="2429d-163">項目</span><span class="sxs-lookup"><span data-stu-id="2429d-163">Item</span></span>**|**<span data-ttu-id="2429d-164">描述</span><span class="sxs-lookup"><span data-stu-id="2429d-164">Description</span></span>**|**<span data-ttu-id="2429d-165">附註</span><span class="sxs-lookup"><span data-stu-id="2429d-165">Notes</span></span>**|
+| <span data-ttu-id="da30e-164">項目</span><span class="sxs-lookup"><span data-stu-id="da30e-164">Item</span></span> | <span data-ttu-id="da30e-165">描述</span><span class="sxs-lookup"><span data-stu-id="da30e-165">Description</span></span> | <span data-ttu-id="da30e-166">附註</span><span class="sxs-lookup"><span data-stu-id="da30e-166">Notes</span></span> |
 |:------ |:------------- |:------- |
-|**<span data-ttu-id="2429d-166">安全性</span><span class="sxs-lookup"><span data-stu-id="2429d-166">Strength</span></span>**| <span data-ttu-id="2429d-167">只選擇可安全支援至少28公斤（62磅）裝置的安裝。</span><span class="sxs-lookup"><span data-stu-id="2429d-167">Only choose mounts that can safely support devices of at least 28 kg (62 lbs.).</span></span> | <span data-ttu-id="2429d-168">必要</span><span class="sxs-lookup"><span data-stu-id="2429d-168">Required</span></span> |
-|**<span data-ttu-id="2429d-169">Stiffness</span><span class="sxs-lookup"><span data-stu-id="2429d-169">Stiffness</span></span>**| <span data-ttu-id="2429d-170">避免靈活的顯示器可減少互動式筆和觸控使用體驗的安裝。</span><span class="sxs-lookup"><span data-stu-id="2429d-170">Avoid flexible display mounts that can diminish the interactive pen and touch use experience.</span></span> <span data-ttu-id="2429d-171">大多數的電視安裝都不是設計來支援觸控顯示器。</span><span class="sxs-lookup"><span data-stu-id="2429d-171">Most TV mounts are not designed to support touch displays.</span></span> | <span data-ttu-id="2429d-172">建議執行</span><span class="sxs-lookup"><span data-stu-id="2429d-172">Recommended</span></span> |
-|**<span data-ttu-id="2429d-173">深度</span><span class="sxs-lookup"><span data-stu-id="2429d-173">Depth</span></span>**| <span data-ttu-id="2429d-174">讓裝置緊密地安裝在牆中，尤其是在 corridors 以及房間內的傳播路徑中。</span><span class="sxs-lookup"><span data-stu-id="2429d-174">Keep the device mounted tightly to the wall especially in corridors and along circulation paths within rooms.</span></span>| <span data-ttu-id="2429d-175">建議執行</span><span class="sxs-lookup"><span data-stu-id="2429d-175">Recommended</span></span> |
-|**<span data-ttu-id="2429d-176">豐富</span><span class="sxs-lookup"><span data-stu-id="2429d-176">Versatility</span></span>**| <span data-ttu-id="2429d-177">確保您的安裝方案在現有的橫向模式和任何可能的直向模式（受未來可用性的制約）中，都保持隱藏。</span><span class="sxs-lookup"><span data-stu-id="2429d-177">Ensure your mounting solution remains hidden from view in both the existing landscape mode and any  potential portrait mode (subject to future availability).</span></span> | <span data-ttu-id="2429d-178">建議執行</span><span class="sxs-lookup"><span data-stu-id="2429d-178">Recommended</span></span> |
+|<span data-ttu-id="da30e-167">_*強度*\*</span><span class="sxs-lookup"><span data-stu-id="da30e-167">_*Strength*\*</span></span>| <span data-ttu-id="da30e-168">僅選擇可安全支援至少 28 千克或 62 磅 (的安裝) 。</span><span class="sxs-lookup"><span data-stu-id="da30e-168">Only choose mounts that can safely support devices of at least 28 kg (62 lbs.).</span></span> | <span data-ttu-id="da30e-169">必要</span><span class="sxs-lookup"><span data-stu-id="da30e-169">Required</span></span> |
+|**<span data-ttu-id="da30e-170">剛度</span><span class="sxs-lookup"><span data-stu-id="da30e-170">Stiffness</span></span>**| <span data-ttu-id="da30e-171">避免彈性的顯示器安裝可能會減少互動式觸控筆的使用體驗。</span><span class="sxs-lookup"><span data-stu-id="da30e-171">Avoid flexible display mounts that can diminish the interactive pen and touch use experience.</span></span> <span data-ttu-id="da30e-172">大部分的電視安裝並非專為支援觸控顯示器所設計。</span><span class="sxs-lookup"><span data-stu-id="da30e-172">Most TV mounts are not designed to support touch displays.</span></span> | <span data-ttu-id="da30e-173">建議執行</span><span class="sxs-lookup"><span data-stu-id="da30e-173">Recommended</span></span> |
+|**<span data-ttu-id="da30e-174">深度</span><span class="sxs-lookup"><span data-stu-id="da30e-174">Depth</span></span>**| <span data-ttu-id="da30e-175">將裝置固定在牆面，尤其是在走廊和會議室內的迴圈路徑上。</span><span class="sxs-lookup"><span data-stu-id="da30e-175">Keep the device mounted tightly to the wall especially in corridors and along circulation paths within rooms.</span></span>| <span data-ttu-id="da30e-176">建議執行</span><span class="sxs-lookup"><span data-stu-id="da30e-176">Recommended</span></span> |
+|**<span data-ttu-id="da30e-177">通用性</span><span class="sxs-lookup"><span data-stu-id="da30e-177">Versatility</span></span>**| <span data-ttu-id="da30e-178">確保您的安裝解決方案在現有的橫向模式和任何可能的直向模式中保持隱藏， (視日後的可用性) 。</span><span class="sxs-lookup"><span data-stu-id="da30e-178">Ensure your mounting solution remains hidden from view in both the existing landscape mode and any  potential portrait mode (subject to future availability).</span></span> | <span data-ttu-id="da30e-179">建議執行</span><span class="sxs-lookup"><span data-stu-id="da30e-179">Recommended</span></span> |
 
-![\* 圖5。](images/sh2-mount-config.png) <br>
-***<span data-ttu-id="2429d-181">圖 5.</span><span class="sxs-lookup"><span data-stu-id="2429d-181">Figure 5.</span></span> <span data-ttu-id="2429d-182">Surface Hub 2 安裝配置</span><span class="sxs-lookup"><span data-stu-id="2429d-182">Surface Hub 2S mounting configuration</span></span>***
+![圖 5.](images/sh2-mount-config.png) <br><span data-ttu-id="da30e-182">
+*\*_圖 5.Surface Hub 2S 50" 安裝組組_*_</span><span class="sxs-lookup"><span data-stu-id="da30e-182">
+*\*_Figure 5. Surface Hub 2S 50" mounting configuration_*_</span></span>
 
-## <span data-ttu-id="2429d-183">與 Surface Hub 2 秒相容的掛載方法</span><span class="sxs-lookup"><span data-stu-id="2429d-183">Mounting methods compatible with Surface Hub 2S</span></span>
 
-<span data-ttu-id="2429d-184">Surface Hub 秒數與可讓您以10-70 度角從垂直平面來放置它的安裝程式相容。</span><span class="sxs-lookup"><span data-stu-id="2429d-184">Surface Hub 2S is compatible with mounts that allow you to place it at angles of 10-70 degrees from the vertical plane.</span></span> <span data-ttu-id="2429d-185">鐵路安裝通常有多個孔和一組槽，能在各種顯示器間實現相容性。</span><span class="sxs-lookup"><span data-stu-id="2429d-185">Rail mounts typically have multiple holes and a set of slots, enabling compatibility across a wide range of displays.</span></span> <span data-ttu-id="2429d-186">連接至牆的導軌和兩個附加至顯示器的安裝，可讓您安全地將 Surface Hub 秒安裝到牆上。</span><span class="sxs-lookup"><span data-stu-id="2429d-186">A rail attached to the wall and two mounts attached to the display enable you to securely install Surface Hub 2S to a wall.</span></span> <span data-ttu-id="2429d-187">針對相容性來評估導軌裝載，請確定它們符合舊版的通用性需求。</span><span class="sxs-lookup"><span data-stu-id="2429d-187">When evaluating rail mounts for compatibility, ensure they meet versatility requirements listed earlier.</span></span>
+## <a name="mounting-methods-compatible-with-surface-hub-2s-50"></a><span data-ttu-id="da30e-183">與 2S 50 Surface Hub安裝方法相容</span><span class="sxs-lookup"><span data-stu-id="da30e-183">Mounting methods compatible with Surface Hub 2S 50"</span></span>
 
-![\* 圖6。](images/h2gen-railmount.png)<br>
-***<span data-ttu-id="2429d-190">圖 6.</span><span class="sxs-lookup"><span data-stu-id="2429d-190">Figure 6.</span></span> <span data-ttu-id="2429d-191">Surface Hub 2 秒導軌安裝</span><span class="sxs-lookup"><span data-stu-id="2429d-191">Surface Hub 2S rail mounts</span></span>***
+<span data-ttu-id="da30e-184">Surface Hub 2S 50" 與支座相容，讓您從垂直平面的角度放置 10-70 度。</span><span class="sxs-lookup"><span data-stu-id="da30e-184">Surface Hub 2S 50" is compatible with mounts that allow you to place it at angles of 10-70 degrees from the vertical plane.</span></span> <span data-ttu-id="da30e-185">滑軌座通常有多個孔和一組插槽，可相容各種顯示器。</span><span class="sxs-lookup"><span data-stu-id="da30e-185">Rail mounts typically have multiple holes and a set of slots, enabling compatibility across a wide range of displays.</span></span> <span data-ttu-id="da30e-186">連接牆面的滑軌和兩個連接到顯示器的安裝座，可安全地將 2S 50"Surface Hub 2S 50" 安裝至牆面。</span><span class="sxs-lookup"><span data-stu-id="da30e-186">A rail attached to the wall and two mounts attached to the display enable you to securely install Surface Hub 2S 50" to a wall.</span></span> <span data-ttu-id="da30e-187">評估滑軌安裝是否相容時，請確保它們符合先前所列的通用性需求。</span><span class="sxs-lookup"><span data-stu-id="da30e-187">When evaluating rail mounts for compatibility, ensure they meet versatility requirements listed earlier.</span></span>
+
+![圖 6.](images/h2gen-railmount.png)<br>
+<span data-ttu-id="da30e-190">_\*_圖 6。Surface Hub 2S 50" 滑杆安裝_\*\*</span><span class="sxs-lookup"><span data-stu-id="da30e-190">_*_Figure 6. Surface Hub 2S 50" rail mounts_*\*</span></span>
+
