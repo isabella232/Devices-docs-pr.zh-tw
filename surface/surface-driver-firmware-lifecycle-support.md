@@ -1,6 +1,6 @@
 ---
 title: Windows 版裝置的 Surface 驅動程式與韌體生命週期
-description: 本文提供詳細的生命週期資訊，以協助規劃及管理硬體和軟體部署。
+description: 本文提供詳細的生命週期資訊，協助規劃及管理硬體和軟體部署。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -8,74 +8,74 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 11/12/2020
+ms.date: 04/13/2021
 ms.reviewer: phorton
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: aec3645d64487ef2709de6098c7f2ae0b99660d8
-ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
+ms.openlocfilehash: 57d6e11fbeaf84423e14a621a8c7bddbaca71301
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271110"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576493"
 ---
-# Windows 版裝置的 Surface 驅動程式與韌體生命週期
+# <a name="surface-driver-and-firmware-lifecycle-for-windows-based-devices"></a>Windows 版裝置的 Surface 驅動程式與韌體生命週期
  
-為了回應客戶針對更詳細的生命週期資訊的要求，以協助規劃及管理硬體和軟體部署，Surface 提供了有關我們的驅動程式和固件更新的其他指導方針。
+針對客戶要求提供更詳細的生命週期資訊，協助規劃及管理硬體和軟體部署，Surface 正在提供有關驅動程式和固件更新的其他指引。
  
-此週期原則包含適用于 Windows 的 Surface 裝置的驅動程式和固件版本。 生命週期會在第一次放開裝置時開始，並在處理常式日期結束時，當表面停止發佈驅動程式和固件更新時結束。 下列各節定義週期原則與服務日期的結束。
+此生命週期政策涵蓋適用于基於 Surface Windows的驅動程式和固件版本。 當裝置第一次發行時，生命週期即開始，且當 Surface 在服務終止日期停止發佈驅動程式和固件更新時結束。 下列各節定義生命週期策略和終止維護日期。
 
-## 表面驅動程式與固件支援週期
+## <a name="surface-driver-and-firmware-support-lifecycle"></a>Surface 驅動程式和固件支援週期
  
-表面驅動程式和固件週期由兩個部分組成：裝置的驅動程式和固件支援週期，以及在該期間內提供給 OS 版本的支援。
+Surface Driver 和固件週期由兩部分組成：裝置驅動程式和固件支援期間，以及該期間針對作業系統版本所提供的支援。
 
-- **裝置支援期間。** 裝置支援期間定義 Surface 將支援裝置的驅動程式和固件更新期間。 裝置支援期間會在裝置發行時開始。 在第一次發行裝置後，Surface 裝置將會收到至少4年的驅動程式和固件更新。 在支援期間長於4年的情況下，系統會在上次服務的日期之前發佈更新結束的服務日期。
+- **裝置支援期間。** 裝置支援期間會定義 Surface 支援裝置驅動程式和固件更新的期間。 裝置支援期間從裝置發行時開始。 Surface 裝置會從裝置第一次發行起至少 4 年收到驅動程式和固件更新。 如果支援持續時間超過 4 年，將在上次維修日期之前發佈更新的終止服務日期。
 
-- **作業系統版本支援。** OS 版本支援定義在裝置支援期間內，Surface 支援的作業系統版本。 在前30個月發行的 Windows 作業系統版本中，Surface 裝置將會收到驅動程式和固件更新。 Surface 不支援低於裝置版本支援之 OS 版本的 Windows 作業系統版本。 如需 Surface 裝置支援的最低作業系統版本，請參閱 [surface 支援的作業系統。](https://support.microsoft.com/help/2858199/surface-supported-operating-systems)  
+- **OS 版本支援。** OS 版本支援會定義 Surface 在裝置支援期間支援的作業系統版本。 Surface 裝置會收到前 30 Windows中發佈的作業系統版本的驅動程式和固件更新。 Surface 不支援Windows版本早于裝置版本支援的作業系統版本。 有關 Surface 裝置的最低支援作業系統版本，請參閱 [Surface 支援的作業系統。](https://support.microsoft.com/help/2858199/surface-supported-operating-systems)  
 
  
-在服務日期結束後，裝置支援週期結束後，裝置會依照  [Microsoft 週期原則支援頁面](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)上的說明，繼續接收 windows 作業系統功能和安全性更新。
- 
-
-## Surface 驅動程式與固件服務日期
-
-下表列出每個 Surface 裝置的發行日期和結束日期，以及已定義的驅動程式與固件週期原則：
+一旦裝置支援期間在服務結束日期結束時結束，裝置會繼續收到 Windows OS 功能和安全性更新，依照 microsoft 週期政策支援頁面上所述的 Windows 生命週期[政策。](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)
  
 
- 裝置                             | 發行日期 | 服務日期結束 |
+## <a name="surface-driver-and-firmware-servicing-dates"></a>Surface 驅動程式和固件維護日期
+
+下表列出具有已定義驅動程式和固件生命週期方針之每個 Surface 裝置的版本日期及終止維護日期：
+ 
+
+ 裝置                             | 發行日期 | 服務結束日期 |
 | ---------------------------------- | ------------ | --------------------- |
-| Surface RT <sup> 1</sup>             | 2012年10月26日   | 2017年4月11日             |
-| Surface Pro <sup> 1</sup>            | 2013年2月9日     | 2017年4月11日             |
-| Surface 2 <sup> 1</sup>              | 2013年10月22日   | 2018 年 4 月 10 日             |
-| Surface Pro 2 <sup> 1</sup>          | 2013年10月22日   | 2018 年 4 月 10 日             |
-| Surface Pro 3                      | 2014年6月20日    | 2021年11月13日            |
-| Surface 3                          | 2015年5月5日     | 2021年11月13日            |
-| Surface Book                       | 2015年10月26日   | 2021年11月13日            |
-| Surface Pro 4                      | 2015年10月26日   | 2021年11月13日            |
-| 含效能基礎的 Surface Book | 2016年11月10日   | 2021年11月13日            |
-| Surface Studio (第 1 代)           | 2016年12月15日   | 2021年11月13日            |
-| Surface Laptop (第 1 代)           | 2017年6月14日    | 2021年11月13日            |
-| Surface Pro (第 5 代)              | 2017年6月15日    | 2021年11月13日            |
-| Surface Book 2                     | 2017年11月17日   | 2021年11月17日            |
-| Surface Pro LTE (模型 1807)        | 2017年12月1日    | 2024年1月15日             |
-| Surface Go                         | 2018年8月2日     | 2022年8月2日              |
-| Surface Studio 2                   | 2018年10月2日    | 2024年10月2日             |
-| Surface Laptop 2                   | 2018年10月16日   | 2022年10月16日            |
-| Surface Pro 6                      | 2018年10月16日   | 2022年10月16日            |
-| 配備 LTE Advanced 的 Surface Go       | 2018年11月20日   | 2022年11月20日            |
-| Surface 膝上型電腦3                   | 2019年10月22日   | 2023年10月22日            |
-| Surface Pro 7                      | 2019年10月22日   | 2023年10月22日            |
-| Surface Pro X                      | 2019年11月5日    | 2024年10月13日             |
-| 表面移2                       | 2020年5月6日     | 2024年5月6日              |
-| Surface Book 3                     | 2020年5月26日    | 2024年5月26日             |
-| Surface 膝上型電腦前往                  | 2020年10月13日   | 2024年10月13日            |
-| Surface Pro 7 +                     | 2021年1月15日 | 2025年1月15日 |
-
+| Surface RT <sup> 1</sup>             | 2012 年 10 月 26 日   | 2017 年 4 月 11 日             |
+| <sup>Surface Pro1</sup>            | 2013 年 2 月 9 日     | 2017 年 4 月 11 日             |
+| Surface 2 <sup> 1</sup>              | 2013 年 10 月 22 日   | 2018 年 4 月 10 日             |
+| Surface Pro 2 <sup> 1</sup>          | 2013 年 10 月 22 日   | 2018 年 4 月 10 日             |
+| Surface Pro 3                      | 2014 年 6 月 20 日    | 2021 年 11 月 13 日            |
+| Surface 3                          | 2015 年 5 月 5 日     | 2021 年 11 月 13 日            |
+| Surface Book                       | 2015 年 10 月 26 日   | 2021 年 11 月 13 日            |
+| Surface Pro 4                      | 2015 年 10 月 26 日   | 2021 年 11 月 13 日            |
+| Surface Book使用 Performance Base | 2016 年 11 月 10 日   | 2021 年 11 月 13 日            |
+| Surface Studio (第 1 代)           | 2016 年 12 月 15 日   | 2021 年 11 月 13 日            |
+| Surface Laptop (第 1 代)           | 2017 年 6 月 14 日    | 2021 年 11 月 13 日            |
+| Surface Pro (第 5 代)              | 2017 年 6 月 15 日    | 2021 年 11 月 13 日            |
+| Surface Book 2                     | 2017 年 11 月 17 日   | 2021 年 11 月 17 日            |
+| Surface ProLTE (1807)        | 2017 年 12 月 1 日    | 2024 年 1 月 15 日             |
+| Surface Go                         | 2018 年 8 月 2 日     | 2022 年 8 月 2 日              |
+| Surface Studio 2                   | 2018 年 10 月 2 日    | 2024 年 10 月 2 日             |
+| Surface Laptop 2                   | 2018 年 10 月 16 日   | 2022 年 10 月 16 日            |
+| Surface Pro 6                      | 2018 年 10 月 16 日   | 2022 年 10 月 16 日            |
+| 配備 LTE Advanced 的 Surface Go       | 2018 年 11 月 20 日   | 2022 年 11 月 20 日            |
+| Surface Laptop 3                   | 2019 年 10 月 22 日   | 2023 年 10 月 22 日            |
+| Surface Pro 7                      | 2019 年 10 月 22 日   | 2023 年 10 月 22 日            |
+| Surface Pro X                      | 2019 年 11 月 5 日    | 2024 年 10 月 13 日             |
+| Surface Go 2                       | 2020 年 5 月 6 日     | 2024 年 5 月 6 日              |
+| Surface Book 3                     | 2020 年 5 月 26 日    | 2024 年 5 月 26 日             |
+| Surface Laptop去                  | 2020 年 10 月 13 日   | 2024 年 10 月 13 日            |
+| Surface Pro 7+                     | 2021 年 1 月 15 日 | 2025 年 1 月 15 日 |
+| Surface Laptop 4                   | 2021 年 4 月 15 日   | 2025 年 4 月 15 日 |
  
- **1.** *指出已宣告結束固件/驅動程式服務支援日期的裝置。*
+ **1.** 表示先前宣告的固件/驅動程式維護支援日期 *結束的裝置。*
  
-## 深入了解
+## <a name="learn-more"></a>深入了解
 
-如需 LTSC 支援的其他資訊，請參閱 [與 Windows 10 Long-Term 服務通道 (LTSC 的 Surface 裝置相容性) ](surface-device-compatibility-with-windows-10-ltsc.md)
+有關 LTSC 支援的其他資訊，請參閱 Surface 裝置與[LTSC Windows 10 Long-Term維護通道 (相容性) ](surface-device-compatibility-with-windows-10-ltsc.md)
 
-如需硬體保修及客戶支援的其他相關資訊，請參閱 [Surface 質保和支援方案](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)。
+有關硬體保固與客戶支援的其他資訊，請參閱 [Surface 保固與支援計畫](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)。
