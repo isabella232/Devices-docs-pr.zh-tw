@@ -11,12 +11,12 @@ ms.date: 03/03/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: b78c6fff81642700a554655ea02aa437a025fc72
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 29d6cce102576b394d8f3fcf648c4e015fbbf730
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387413"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11577093"
 ---
 # <a name="remote-surface-hub-management"></a>遠端 Surface Hub 管理
 
@@ -25,5 +25,5 @@ ms.locfileid: "11387413"
 |主題 | 說明|
 | ------ | --------------- |
 | [使用 MDM 提供者管理設定]( https://technet.microsoft.com/itpro/surface-hub/manage-settings-with-mdm-for-surface-hub) | Surface Hub 提供企業管理解決方案，協助 IT 系統管理員使用行動裝置管理 (MDM) 解決方案來管理裝置上的原則和商務應用程式。|
-| [監視 Surface Hub](monitor-surface-hub.md) | Surface Hub 裝置監控功能會透過 Azure 監視器啟用。|
-| [Windows 更新](manage-windows-updates-for-surface-hub.md) | 您可以藉由設定維護期間、延遲更新或使用 WSUS，在 Surface Hub 上管理 Windows 更新。|
+| [監視 Surface Hub](monitor-surface-hub.md) | 透過 Azure 監視器Surface Hub裝置監控。|
+| [Windows 更新](manage-windows-updates-for-surface-hub.md) | 您可以設定維護Windows、Surface Hub更新，或是使用 Windows 商務用更新 (WUfB) 。|

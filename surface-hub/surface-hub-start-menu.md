@@ -10,20 +10,20 @@ ms.date: 08/15/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: c5b6a083d543649eab899d2fea36327d08f8bc29
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cf9649b8d1f747722064793fbbde70116bc7f424
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831253"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576843"
 ---
-# 設定 Surface Hub 的 [開始] 功能表
+# <a name="configure-surface-hub-start-menu"></a>設定 Surface Hub 的 [開始] 功能表
 
 [Windows 10 的 2018 年 1 月 17 日更新](https://support.microsoft.com/help/4057144) (組建 15063.877) 可在 Surface Hub 裝置上啟用自訂的 [開始] 功能表。 您可以使用行動裝置管理 (MDM) 來套用自訂的 [開始] 功能表配置。
 
 當您將自訂的 [開始] 功能表配置套用至 Surface Hub 時，使用者無法從開始畫面釘選、取消釘選，或解除安裝應用程式。 
 
-## 如何將自訂的 [開始] 功能表套用至 Surface Hub
+## <a name="how-to-apply-a-customized-start-menu-to-surface-hub"></a>如何將自訂的 [開始] 功能表套用至 Surface Hub
 
 自訂的 [開始] 功能表是在開始畫面配置 XML 檔案中定義。 您有兩個建立開始畫面配置 XML 檔案的選項：
 
@@ -41,19 +41,23 @@ ms.locfileid: "10831253"
 您在開始畫面配置 XML 中定義 [開始] 功能表之後，[建立 MDM 原則以套用配置。](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
 
 <span id="differences" />
-## Surface Hub 與電腦 [開始] 功能表之間的差異
+
+## <a name="differences-between-surface-hub-and-desktop-start-menu"></a>Surface Hub 與電腦 [開始] 功能表之間的差異
 
 Surface Hub 與 Windows 10 電腦的 [開始] 功能表自訂之間有一些主要差異：
 
-- 您無法使用**DesktopApplicationTile** （ https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) 在您的開始版面配置 XML 中，因為 Surface Hub 不支援 Windows 桌面應用程式（Win32）。
+- 您無法**在開始**版面配置 XML 中 (桌面應用程式，因為系統不支援 Windows 桌面應用程式 (Win32) https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) Win32 Surface Hub。
 - 您無法使用開始畫面配置 XML 來設定 Surface Hub 的工作列或歡迎畫面。  
+- 開始版面配置策略應該只指派給裝置，而不是使用者。
+- 在策略中使用的 OMA-URI 設定為 `./Device/Vendor/MSFT/Policy/Config/Start/StartLayout`
 - Surface Hub 最多支援 6 欄 (6 個 1x1 磚)，但即使 Surface Hub 只會將磚顯示在第 0-5 欄 (而非第 6 和 7 欄)，您還是**必須**定義 `GroupCellWidth=8`。
 - Surface Hub 最多支援 6 列 (6 個 1 x 1 磚)
 - `SecondaryTile`，這會用於連結，並在 Microsoft Edge 中開啟連結。
 
 
 <span id="default" />
-## 範例：預設 Surface Hub 開始畫面配置
+
+## <a name="example-default-surface-hub-start-layout"></a>範例：預設 Surface Hub 開始畫面配置
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -110,9 +114,10 @@ Surface Hub 與 Windows 10 電腦的 [開始] 功能表自訂之間有一些主�
 ```
 
 <span id="edge" />
-## 範例：包含 Microsoft Edge 連結的開始畫面配置
 
-此範例顯示網站的連結和 .pdf 檔案的連結。 Microsoft Edge 的次要磚使用 150 x 150 圖元圖示。
+## <a name="example-start-layout-that-includes-a-microsoft-edge-link"></a>範例：包含 Microsoft Edge 連結的開始畫面配置
+
+此範例顯示網站的連結和 .pdf 檔案的連結。 次要磚Microsoft Edge 150 x 150 圖元圖示。
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -186,4 +191,4 @@ Surface Hub 與 Windows 10 電腦的 [開始] 功能表自訂之間有一些主�
 ```
 
 >[!NOTE]
->預設值 `ForegroundText` 為 light; 除非您將值變更為深色，否則您不需要包含 `ForegroundText` 在 XML 中。
+>預設值為淺;除非您將值變更為深色，否則不需要在 XML 中 `ForegroundText` `ForegroundText` 納入。

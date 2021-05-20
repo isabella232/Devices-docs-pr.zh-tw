@@ -1,7 +1,7 @@
 ---
 title: Surface 系統 SKU 參考
-description: 請參閱所有 Surface 裝置的系統模型和系統 SKU 名稱參考。
-keywords: uefi、設定、固件、安全、semm、Autopilot
+description: 請參閱所有 Surface 裝置之系統模型和系統 SKU 名稱的參照。
+keywords: uefi， configure， firmware， secure， semm， Autopilot
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -9,80 +9,86 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 01/27/2021
+ms.date: 04/19/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 0fe13750e7e8c8188b52726c114a6b3668434d39
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.openlocfilehash: bf3fb926c5e66f5f02f921f1c0d4fbe5f016f02d
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304826"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11577043"
 ---
-# Surface 系統 SKU 參考
+# <a name="surface-system-sku-reference"></a>Surface 系統 SKU 參考
 
-此檔提供一個參照，可用於各種 IT 工作，例如使用 Windows Autopilot 註冊 Surface 裝置，或使用 PowerShell 或 WMI 驗證特定裝置的電腦狀態。
+本檔提供可用於各種 IT 工作之參考，例如使用 Windows Autopilot 註冊 Surface 裝置，或使用 PowerShell 或 WMI 驗證特定裝置的機器狀態。
 
-系統模型和系統 SKU 是儲存在系統管理 BIOS 中的變數，在 Surface 裝置的 UEFI 層中 (SMBIOS) 表格中。 每當您需要區分具有相同系統模型名稱（例如 Surface Pro 和 Surface Pro）與 LTE Advanced 的裝置時，請使用系統 SKU 名稱。
+系統模型和 System SKU 是儲存在 Surface 裝置 UEFI 圖層中的系統管理BIOS (SMBIOS) 資料表中的變數。 當您需要區分具有相同系統模型名稱的裝置時，請使用 System SKU 名稱，例如使用 LTE Advanced Surface Pro Surface Pro裝置。
 
-| 裝置   | 系統模型 | 系統 SKU       |
+| 裝置   | 系統模型 | System SKU       |
 | ---------- | ----------- | -------------- |
 | Surface 3 WiFI                                               | Surface 3        | Surface_3                        |
-| &T 上的 Surface 3 LTE                                           | Surface 3        | Surface_3_US1                    |
+| Surface 3 LTE AT&T                                           | Surface 3        | Surface_3_US1                    |
 | Surface 3 LTE Verizon                                        | Surface 3        | Surface_3_US2                    |
-| 北美洲的 Surface 3 LTE                                  | Surface 3        | Surface_3_NAG                    |
-| 北美洲與 Y 之間的 Surface 3 LTE （在日本）移動 | Surface 3        | Surface_3_ROW                    |
+| Surface 3 LTE 北美                                  | Surface 3        | Surface_3_NAG                    |
+| Surface 3 LTE 北美以外，Y！mobile 在日本 | Surface 3        | Surface_3_ROW                    |
 | Surface Pro                                                  | Surface Pro      | Surface_Pro_1796                 |
 | 配備 LTE Advanced 的 Surface Pro                                | Surface Pro      | Surface_Pro_1807                 |
-| Surface Book 2 13 "                                        | Surface Book 2   | Surface_Book_1832                |
-| Surface Book 2 15 "                                        | Surface Book 2   | Surface_Book_1793                |
-| Surface Book 3 13 "                                        | Surface Book 3   | Surface_Book_3_1900                |
-| Surface Book 3 15 "                                        | Surface Book 3   | Surface_Book_3_1899
-| 表面 [移至商業版] | 系統移至 | Surface_Go_1825_Commercial |
+| Surface Book 2 13"                                        | Surface Book 2   | Surface_Book_1832                |
+| Surface Book 2 15"                                        | Surface Book 2   | Surface_Book_1793                |
+| Surface Book 3 13"                                        | Surface Book 3   | Surface_Book_3_1900                |
+| Surface Book 3 15"                                        | Surface Book 3   | Surface_Book_3_1899
+| Surface Go LTE 商業 | System Go | Surface_Go_1825_Commercial |
 | Surface Go 消費者                                          | Surface Go       | Surface_Go_1824_Consumer         |
-| Surface 商業                                        | Surface Go       | Surface_Go_1824_Commercial       |
-| 表面移2                                                 | 表面移2     | Surface_Go_2_1927                |
+| Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
+| Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
 | Surface Pro 6 消費者                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
 | Surface Pro 6 商業版                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
 | Surface 膝上型電腦                                               | Surface 膝上型電腦   | Surface_Laptop                   |
-| Surface 膝上型電腦2消費者                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
-| Surface 膝上型電腦2商業版                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
-| Surface Pro 7 +                                               | Surface Pro 7 + | Surface_Pro_7 + _1960|
-| Surface Pro 7 + LTE                                           | Surface Pro 7 + | Surface_Pro_7 + _with_LTE_Advanced_1961|
+| Surface Laptop 2 消費者                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
+| Surface Laptop 2 商業                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
+| Surface Pro 7+                                               | Surface Pro 7+ | Surface_Pro_7+_1960|
+| Surface Pro 7+ LTE                                           | Surface Pro 7+ | Surface_Pro_7+_with_LTE_Advanced_1961|
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
 | Surface Pro X                 | Surface Pro X    | Surface_Pro_X_1876         |
-| Surface Pro X 與 SQ2 處理器                | Surface Pro X    | Surface_Pro_X_H_1876        |
-| Surface 膝上型電腦 3 13 "英特爾 | Surface 膝上型電腦3 | Surface_Laptop_3_1867：1868 |
-| Surface 膝上型電腦 3 15 "英特爾 | Surface 膝上型電腦3 | Surface_Laptop_3_1872      |
-| Surface 膝上型電腦 3 15 "AMD   | Surface 膝上型電腦3 | Surface_Laptop_3_1873      | 
-| Surface 膝上型電腦前往  | Surface 膝上型電腦前往 | Surface_Laptop_Go_1943      | 
+| Surface ProX 與 SQ2 處理器                | Surface Pro X    | Surface_Pro_X_H_1876        |
+| Surface Laptop 3 13" Intel | Surface Laptop 3 | Surface_Laptop_3_1867：1868 |
+| Surface Laptop 3 15" Intel | Surface Laptop 3 | Surface_Laptop_3_1872      |
+| Surface Laptop 3 15"   | Surface Laptop 3 | Surface_Laptop_3_1873      | 
+| Surface Laptop去  | Surface Laptop去 | Surface_Laptop_Go_1943      | 
+| Surface Laptop 4 13" Intel | Surface Laptop 4 | Surface_Laptop_4_1950：1951 |
+| Surface Laptop 4 15" Intel | Surface Laptop 4 | Surface_Laptop_4_1978：1979     |
+| Surface Laptop 4 15" 的AMD   | Surface Laptop 4 | Surface_Laptop_4_1952：1953     | 
+| Surface Laptop 4 13"   | Surface Laptop 4 | Surface_Laptop_4_1958：1959    | 
+| Surface Hub 2S 50"  | Surface Hub 2S | Surface Hub 2S   | 
+| Surface Hub 2S 85"  | Surface Hub 2S | Surface Hub 2S 85   | 
 
-## 範例 
+## <a name="examples"></a>範例 
 
-**使用 PowerShell 來檢索 SKU**  
-使用下列 PowerShell 命令來提取系統 SKU 資訊：
+**使用 PowerShell 來取回 SKU**  
+使用下列 PowerShell 命令來提取 System SKU 資訊：
 
  ``` powershell  
 gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU 
 ```
 
-**使用系統資訊來檢索 SKU**  
-您也可以在 [ **系統資訊**] 中找到裝置的系統 SKU 和系統模型。 若要這樣做，請執行下列步驟：
+**使用 系統資訊**  
+您也可以在 系統資訊 中找到裝置的系統 SKU**和系統系統資訊。** 若要這樣做，請執行下列步驟：
 
-1. 選取 [ **開始**]，然後在搜尋方塊中輸入 [ **MSInfo32** ]。  
-1. 選取 [ **系統資訊**]。
+1. 選取**開始**，然後在搜尋方塊中輸入**MSInfo32。**  
+1. 選取**系統資訊**。
 
-**在任務序列中使用 SKU WMI 條件**  
-您可以在 Microsoft 部署工具組中使用系統 SKU 資訊 (MDT) 或 Microsoft 端點建構管理員，做為任務序列 WMI 條件的一部分。
+**在工作順序 WMI 條件中使用 SKU**  
+您可以將 Microsoft 部署工具組中的系統 SKU 資訊 (MDT) 或 Microsoft Endpoint Configuration Manager做為工作順序 WMI 條件的一部分。
 
  ``` powershell  
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
  ``` 
 
-## 深入了解
+## <a name="learn-more"></a>深入了解
 
-- [WMI 參考](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [WMI 參照](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
 - [適用於 Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)

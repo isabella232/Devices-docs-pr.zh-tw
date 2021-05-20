@@ -1,6 +1,6 @@
 ---
-title: 自訂 Surface Hub 2S 的掛牆架
-description: 瞭解如何執行 Surface Hub 秒的自訂安裝。
+title: 自訂 2S Surface Hub 50 英吋的牆面安裝
+description: 瞭解如何執行 2S Surface Hub 50 英吋的自訂安裝。
 keywords: 使用逗號分隔值
 ms.prod: surface-hub
 ms.sitesec: library
@@ -9,83 +9,89 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 04/16/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 3b96fa53f9ccc9b3577549c98d9299a8dfb149a2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f21ed5d667dac89b3903b59811131bf27435ceb1
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831590"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576963"
 ---
-# 自訂 Surface Hub 2S 的掛牆架
+# <a name="customize-wall-mount-of-surface-hub-2s-50"></a>自訂 2S 50 Surface Hub牆安裝"
 
-如果您使用的是未經認證的安裝解決方案，您可以使用「可隨時使用的零售硬體」裝載 Surface Hub 2 秒。
+本文提供實際安裝 2S 50 Microsoft Surface Hub指南。 有關安裝 85" 的資訊，請參閱安裝並安裝[Surface Hub 2S 85」。](surface-hub-2s-85-install-mount.md)
 
-## 設定牆安裝量值
+如果沒有使用經過認證的安裝解決方案，您可以使用現成的零售硬體Surface Hub 2S 50"安裝。
 
-Surface Hub 2 的建議安裝度量單位：
+## <a name="set-wall-mount-measurements"></a>設定牆面安裝量值
 
-|**項目**|**描述**|**附註**|
+Surface Hub 2S 50" 建議安裝測量：
+
+| 項目 | 描述 | 附註 |
 |:------ |:------------- |:------- |
-|**Surface Hub 2 秒的高度**| 1026.5 mm （40.41 "） | 建議執行 |
-|**Surface Hub 2 秒的高度**| 1767.2 mm （69.57 "） | 建議執行 |
-|**裝載中心的高度**| 1397 mm （55 "） | 建議執行 |
+|**2S 50 Surface Hub底的高度**| 1026.5 mm (40.41")  | 建議執行 |
+|**2S 50 Surface Hub頂端的高度**| 1767.2 mm (69.57")  | 建議執行 |
+|**從安裝中心的高度**| 1397 mm (55")  | 建議執行 |
 
-1. 從 floor 階層測量 1026.5 mm （40.41 "），以設定建議的最小高度。
-2. 從樓層階層測量 1767.2 mm （69.57 "），以設定建議的最高值。
+1. 從樓面測量 1026.5 (40.41") ，以設定建議的最小高度。
 
-![* Surface Hub 2-前部掛載前視圖 *](images/sh2-wall-front.png) <br>
+2. 從樓面測量 1767.2 mm (69.57") ，以設定建議的頂端高度。
 
-3. 從地面層級測量 1397 mm （55 "） mm，以設定建議的中心高度。
+    ![Surface Hub 2S 50" 牆面安裝前視圖](images/sh2-wall-front.png)
 
-![* Surface Hub 2/2 牆安裝端視圖 *](images/sh2-wall-side.png) <br>
+3. 從樓面測量 1397 mm (55") mm 以設定建議的中心高度。
 
-## 無障礙安裝
+    ![Surface Hub 2S 50" 牆面安裝側視圖](images/sh2-wall-side.png)
 
-除了裝置側面的可見埠之外，某些整合元件必須保持無障礙，才能正常運作。 其中包括藍牙、Wi-fi、使用量和麥克風感應器，以及熱量冷卻通風孔。
+
+## <a name="obstruction-free-mounting"></a>無障礙安裝
+
+除了裝置兩側的可見埠之外，某些整合元件必須保持無干擾，才能正確運作。 這些包括藍牙、Wi-Fi、佔用和麥克風感應器，以及熱力冷卻出風口。
 保留區域
 
-|**項目**|**描述**|**附註**|
+| 項目 | 描述 | 附註 |
 |:---- |:----------- |:----- |
-|**Access**| 確保不能存取輸入輸出連接埠、計算盒式磁帶、藍牙無線電、藍牙感應器、Wi-fi 無線電、Wi-fi 感應器、佔用感應器。 | 請參閱圖1。 |
-|**空中流量**| 避免封鎖進氣和排氣風通風管區域。 | 請參閱圖2  |
-|**音效**| 避免在 Surface Hub 2 的背面封鎖音訊出口區。 | 請參閱圖2。 |
+|**Access**| 確保不受阻礙地存取輸入輸出連接埠、計算盒、藍牙、藍牙感應器、Wi-Fi、Wi-Fi感應器、Wi-Fi感應器。 | 請參閱圖 1。 |
+|**Air Flow**| 避免封鎖入口和出風口區域。 | 請參閱圖 2  |
+|**音效**| 避免封鎖 2S 50 Surface Hub後方的音訊出口區域。 | 請參閱圖 2。 |
 
-![* 圖1。 針對 Surface Hub 的2個元件保留區域 *](images/sh2-keepout-zones.png) <br>
-***圖 1。 針對 Surface Hub 的2個元件保留區域***
+![圖 1。 針對 2S Surface Hub 元件保留區域](images/sh2-keepout-zones.png) <br>
+**_圖 1.針對 2S 50" 元件Surface Hub區域_*_
 
-![* 圖2。 避免封鎖熱量入口/輸出口和音訊退出區域 *](images/sh2-thermal-audio.png) <br>
-***圖 2. 避免封鎖熱量入口/輸出口和音訊出口區域。<br>***
+![圖 2. 避免封鎖導熱入口/出口和音訊出口區域](images/sh2-thermal-audio.png) <br>
+_*_圖 2. 避免封鎖熱力入口/出口和音訊出口區域。_*_
 
-含有 i/o 埠的可移除的計算盒須保持不動任何類型的障礙物或障礙。
+包含 I/O 埠的可移除計算盒必須保持無任何障礙或障礙。
 
-![* 圖 3. 在 Surface Hub 2 的下方，查看計算盒式磁帶。](images/sh2-ports.png) <br>
-***圖 3. 在 Surface Hub 2 的下方，查看計算盒式磁帶。***
+![圖 3.查看 2S 50 Surface Hub下側的計算卡匣。](images/sh2-ports.png) <br>
+_*_圖 3.查看 2S 50 Surface Hub下側的計算卡匣。_*_
 
-![* 圖4。 無法移除計算盒式磁帶 *](images/sh2-cartridge.png) <br>
-***圖 4. 無法移除計算盒式磁帶***
+![圖 4. 無阻礙地移除計算卡匣 ](images/sh2-cartridge.png) <br>
+_*_圖 4. 無阻礙地移除計算卡匣_*_
 
-## 選取安裝系統
+## <a name="selecting-a-mounting-system"></a>選取安裝系統
 
-Surface Hub 2 是使用 350 mm x 350 mm 安裝架構，它可滿足您在 VESA 平面顯示器安裝介面標準中所列的大部分（但非全部）準則。 您可以使用各種現成的顯示括弧來安裝 Surface Hub 2，以適應精確的 VESA 規格，如下所示。
+Surface Hub 2S 50" 使用 350 mm x 350 mm 安裝架構，符合 VESA 平板顯示器安裝介面標準中列出的大多數準則 ，但並非全部。 您可以使用各種Surface Hub型顯示括弧來安裝 2S 50"，其設計可配合與 VESA 規格不同的顯示器，如下所示。
 
-在 Surface Hub 2 秒的背面，您會發現四個 M6 x 1.0 螺紋孔（直徑上的 565 mm）的正方形模式。 使用四個 M6 x 1.0-12 mm （長公制）來附加您的安裝。 或者，視喜好設定而定，您可以使用較長的螺栓，最多可達 20 mm。
+在 Surface Hub 2S 50"的背面，您可以找到四個 M6 x 1.0 線狀孔的方形圖樣，其中央位於圓形凸凸 (565 mm 的) 。 使用四個 M6 x 1.0–12 mm 長公制螺栓來附加您的安裝。 或者，根據喜好設定，您可以使用最長 20 mm 的長螺栓。
 安裝系統的重要考慮
 
-|**項目**|**描述**|**附註**|
+| 項目 | 描述 | 附註 |
 |:------ |:------------- |:------- |
-|**安全性**| 只選擇可安全支援至少28公斤（62磅）裝置的安裝。 | 必要 |
-|**Stiffness**| 避免靈活的顯示器可減少互動式筆和觸控使用體驗的安裝。 大多數的電視安裝都不是設計來支援觸控顯示器。 | 建議執行 |
-|**深度**| 讓裝置緊密地安裝在牆中，尤其是在 corridors 以及房間內的傳播路徑中。| 建議執行 |
-|**豐富**| 確保您的安裝方案在現有的橫向模式和任何可能的直向模式（受未來可用性的制約）中，都保持隱藏。 | 建議執行 |
+|_*強度**| 僅選擇可安全支援至少 28 千克或 62 磅 (的安裝) 。 | 必要 |
+|**剛度**| 避免彈性的顯示器安裝可能會減少互動式觸控筆的使用體驗。 大部分的電視安裝並非專為支援觸控顯示器所設計。 | 建議執行 |
+|**深度**| 將裝置固定在牆面，尤其是在走廊和會議室內的迴圈路徑上。| 建議執行 |
+|**通用性**| 確保您的安裝解決方案在現有的橫向模式和任何可能的直向模式中保持隱藏， (視日後的可用性) 。 | 建議執行 |
 
-![* 圖5。 Surface Hub 2 安裝 configuration *](images/sh2-mount-config.png) <br>
-***圖 5. Surface Hub 2 安裝配置***
+![圖 5. Surface Hub 2S 50" 安裝組](images/sh2-mount-config.png) <br>
+**_圖 5.Surface Hub 2S 50" 安裝組組_*_
 
-## 與 Surface Hub 2 秒相容的掛載方法
 
-Surface Hub 秒數與可讓您以10-70 度角從垂直平面來放置它的安裝程式相容。 鐵路安裝通常有多個孔和一組槽，能在各種顯示器間實現相容性。 連接至牆的導軌和兩個附加至顯示器的安裝，可讓您安全地將 Surface Hub 秒安裝到牆上。 針對相容性來評估導軌裝載，請確定它們符合舊版的通用性需求。
+## <a name="mounting-methods-compatible-with-surface-hub-2s-50"></a>與 2S 50 Surface Hub安裝方法相容
 
-![* 圖6。 鐵路裝 *](images/h2gen-railmount.png)<br>
-***圖 6. Surface Hub 2 秒導軌安裝***
+Surface Hub 2S 50" 與支座相容，讓您從垂直平面的角度放置 10-70 度。 滑軌座通常有多個孔和一組插槽，可相容各種顯示器。 連接牆面的滑軌和兩個連接到顯示器的安裝座，可安全地將 2S 50"Surface Hub 2S 50" 安裝至牆面。 評估滑軌安裝是否相容時，請確保它們符合先前所列的通用性需求。
+
+![圖 6. 滑軌安裝](images/h2gen-railmount.png)<br>
+_*_圖 6。Surface Hub 2S 50" 滑杆安裝_**
+
