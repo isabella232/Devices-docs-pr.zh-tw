@@ -14,10 +14,10 @@
 ### [Surface Hub 2S 場地整備指南](surface-hub-2s-site-readiness-guide.md) 
 #### [Surface Hub 2S 的場地規劃](surface-hub-2s-site-planning.md)
 #### [Surface Hub 2S 快速入門](surface-hub-2s-quick-start.md)
-#### [安裝及裝載 Surface Hub 2S](surface-hub-2s-install-mount.md)
+#### [安裝及裝載 Surface Hub 2S 50"](surface-hub-2s-install-mount.md)
 #### [正在移動及處理 Surface Hub 2S 85"](hub-move.md)
 #### [安裝及裝載 Surface Hub 2S 85"](surface-hub-2s-85-install-mount.md)
-#### [自訂 Surface Hub 2S 的掛牆架](surface-hub-2s-custom-install.md)
+#### [自訂 Surface Hub 2S 50" 的掛牆架](surface-hub-2s-custom-install.md)
 #### [設定工作表](setup-worksheet-surface-hub.md)
 #### [Surface Hub 2S 連接埠和數字鍵台概觀](surface-hub-2s-port-keypad-overview.md)
 #### [將裝置連接至 Surface Hub 2S](surface-hub-2s-connect.md)
@@ -28,8 +28,7 @@
 ### [Surface Hub 2S 採用與訓練](surface-hub-2s-adoption-kit.md)
 ### [Surface Hub 2S 採用影片](surface-hub-2s-adoption-videos.md)
 ### [第一次安裝 Surface Hub 2S](surface-hub-2s-setup.md)
-### [將裝置連接至 Surface Hub 2S](surface-hub-2s-connect.md)
-### [Surface Hub 2S 部署檢查清單](surface-hub-2s-deploy-checklist.md)
+### [將裝置連線至 Surface Hub 2S](surface-hub-2s-connect.md)
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
 ### [建立 Surface Hub 2S 的佈建套件](surface-hub-2s-deploy.md)
 ### [使用 Intune 將應用程式部署到 Surface Hub 2S](surface-hub-2s-deploy-apps-intune.md)
@@ -85,8 +84,10 @@
 ## 部署
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
 #### [線上部署](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+
 #### [內部部署 (單一樹系)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
-#### [內部部署 (多重樹系)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
+
+#### [內部部署 (多重樹系)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
 #### [混合式部署](hybrid-deployment-surface-hub-device-accounts.md)
 #### [Microsoft Exchange 屬性](exchange-properties-for-surface-hub-device-accounts.md)
 #### [將 ActiveSync 原則套用到裝置帳戶](apply-activesync-policies-for-surface-hub-device-accounts.md)
@@ -135,7 +136,7 @@
 ### [Surface Hub 的最佳支援解決方案](support-solutions-surface-hub.md)
 ### [對 Microsoft Surface Hub 進行疑難排解](troubleshoot-surface-hub.md)
 ### [Surface Hub 更新歷程記錄](surface-hub-update-history.md)
-### [Microsoft Surface Hub 已知問題及其他相關資訊](known-issues-and-additional-info-about-surface-hub.md)
+### [已知問題：Windows 10 團隊版 OS](surface-hub-2020-team-update-known-issues.md)
 ### [如何在 Surface Hub 上使用適用於 BitLocker 的雲端復原](use-cloud-recovery-for-bitlocker-on-surfacehub.md)
 ### [使用 Surface Hub 硬體診斷工具來測試裝置帳戶](use-surface-hub-diagnostic-test-device-account.md)
 ### [疑難排解 Surface Hub 上的 Miracast](miracast-troubleshooting.md)
