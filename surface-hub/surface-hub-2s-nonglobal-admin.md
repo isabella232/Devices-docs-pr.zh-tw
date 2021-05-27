@@ -14,12 +14,12 @@ ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 03359a7d8ea028a8094c064c1fcb82cc9a53fe6a
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: cdb6dbdb49b34857f7b30feebb39f7a5c36e883c
+ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576763"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "11585954"
 ---
 # <a name="configure-non-global-admin-accounts-on-surface-hub"></a>在 Surface Hub 上設定非全域系統管理員帳戶
 
@@ -47,7 +47,7 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
 
      ![為中樞系統管理員建立安全性群組](images/sh-create-sec-group.png)
 
-3. 開啟群組 **，選取成員**，然後選擇新增成員，**** 以在 Surface Hub 中輸入要指定為非全域系統管理員的系統管理員Surface Hub。 若要深入瞭解在 Intune 中建立群組，請參閱新增  [群組以組織使用者和裝置](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
+3. 開啟群組 **，選取成員**，然後選擇新增成員，**** 以在 Surface Hub 中輸入要指定為非全域系統管理員的系統管理員Surface Hub。 若要深入瞭解在 Intune 中建立群組，請參閱新增  [群組以組織使用者和裝置](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-security-group-for-surface-hub-devices"></a>為裝置建立Surface Hub組
 
@@ -57,8 +57,8 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
 
 ## <a name="obtain-azure-ad-group-sid-using-powershell"></a>使用 PowerShell 取得 Azure AD 群組 SID
 
-1. 使用提升的帳戶許可權啟動 PowerShell (**以** 系統管理員) ，並確保您的系統已配置為執行 PowerShell 腳本。 若要深入瞭解，請參閱關於 [執行策略](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
-2. [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+1. 使用提升的帳戶許可權啟動 PowerShell (**以** 系統管理員) ，並確保您的系統已配置為執行 PowerShell 腳本。 若要深入瞭解，請參閱關於 [執行策略](/powershell/module/microsoft.powershell.core/about/about_execution_policies?)。 
+2. [安裝 Azure PowerShell 模組](/powershell/azure/install-az-ps)。
 3. 請登錄您的 Azure AD 租使用者。
 
     ```powershell
@@ -87,7 +87,7 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
     Write-Host "Your Azure Ad Group SID is" -ForegroundColor Yellow $Result
     ```
     
-7. 將物件識別碼貼到 PowerShell 命令小命令中，按 **Enter，** 然後將 **Azure AD 群組 SID** 複製到文字編輯器中。 
+7. 將物件識別碼貼到 PowerShell 命令列，按 **Enter，** 然後將 **Azure AD 群組 SID** 複製到文字編輯器中。 
 
 ## <a name="create-xml-file-containing-azure-ad-group-sid"></a>建立包含 Azure AD 群組 SID 的 XML 檔案
 
@@ -105,6 +105,9 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
       > 請勿從 XML 檔案移除預設的系統管理員成員。
 
 2. 將預留位置 SID (S-1-12-1) 取代為 Azure **AD 群組 SID，** 然後將檔案儲存為 XML;例如 **，aad-local-admin.xml。** 
+
+      > [!NOTE]
+      > 雖然應該透過其 SID 指定群組，但如果您想要直接新增 Azure 使用者，可以透過以此格式指定使用者主體名稱 (UPN) 新增： `<member name = "AzureAD\user@contoso.com" />`
 
 ## <a name="create-custom-configuration-profile"></a>建立自訂群組組設定檔
 
@@ -125,7 +128,7 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
 8. 按一下 **[選取群組以包含**及[](#create-security-group-for-surface-hub-devices)選擇您先前在 (Surface Hub**中**) 。 按 **\[下一步\]**。
 9. 在適用規則下，依需要新增規則。 否則，請選取 **下一** 步，然後選取 **建立**。
 
-若要深入瞭解使用 OMA-URI 字串的自訂設定設定檔，[請參閱在 Intune Windows 10裝置使用自訂設定](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)。
+若要深入瞭解使用 OMA-URI 字串的自訂群組Windows 10設定檔，請參閱在[Intune 中為Windows 10使用自訂設定](/mem/intune/configuration/custom-settings-windows-10)。
 
 
 ## <a name="non-global-admins-managing-surface-hub"></a>管理帳戶的非全域系統管理員Surface Hub
