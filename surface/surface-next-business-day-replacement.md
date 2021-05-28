@@ -3,7 +3,7 @@ title: 下一個工作日換貨資訊與涵蓋範圍
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/18/2021
+ms.date: 05/23/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -14,12 +14,12 @@ appliesto:
 - Surface Hub
 ms.reviewer: irenewhite
 description: 下一個工作日換貨資訊與涵蓋範圍。
-ms.openlocfilehash: 387286698a1f82066bf1631682e2ceb749c0a6ab
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
+ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577083"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "11585924"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>下一個工作日換貨資訊與涵蓋範圍
 
@@ -46,6 +46,7 @@ ms.locfileid: "11577083"
 - [芬蘭](#finland)
 - [法國](#france)
 - [德國](#germany)
+- [香港](#hong-kong)
 - [愛爾蘭](#ireland)
 - [義大利](#italy)
 - [日本](#japan)
@@ -81,6 +82,7 @@ ms.locfileid: "11577083"
 #### <a name="czech-republic"></a>捷克共和國
 
 - 截止時間：12 點 0 分 CET (UTC+1)
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/9/2/6/926014cb-38b2-4270-b841-d3dc56f6e341/NBD%20Coverage%20-%20Czech%20Republic%20Post%20Codes%20042821.xlsx)
 
 #### <a name="denmark"></a>丹麥 
 
@@ -95,10 +97,16 @@ ms.locfileid: "11577083"
 #### <a name="france"></a>法國
 
 - 截止時間：12 點 0 分 CET (UTC+1)
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/7/b/0/7b0fa1bb-4c75-474a-83be-6d55e0fa719f/NBD%20Coverage%20-%20France%20Postal%20Codes%20042821.xlsx)
 
 #### <a name="germany"></a>德國
 
 - 截止時間：12 點 0 分 CET (UTC+1)
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/d/4/f/d4f6c11f-ada2-4400-b502-2e722644427b/NBD%20Coverage%20-%20Germany%20Post%20Codes%20042821.xlsx)
+
+#### <a name="hong-kong"></a>香港
+
+- 截止時間：16 點 0 分 HKT (UTC+8) 
 
 #### <a name="ireland"></a>愛爾蘭
 
@@ -113,40 +121,7 @@ ms.locfileid: "11577083"
 #### <a name="japan"></a>日本
 
 - 截止時間：15 點 30 分 JST (UTC+9)
-- [下一個工作天涵蓋範圍](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
-
-**日本可用的區域** 
-
-- 青森縣
-- 岩手縣
-- 宮城縣
-- 秋田縣
-- 山形縣
-- 福島縣
-- 茨城縣
-- 埼玉縣
-- 千葉縣
-- 東京
-- 神奈川縣
-- 新潟縣
-- 富山縣
-- 石川縣
-- 福井縣
-- 山梨縣
-- 長野縣
-- 岐阜縣
-- 靜岡縣
-- 愛知縣
-- 三重縣
-- 滋賀縣
-- 京都
-- 大阪
-- 兵庫縣
-- 奈良縣
-- 和歌山縣
-- 鳥取縣
-- 廣島縣
-- 山口縣
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/c/7/8/c781a035-19f7-4563-9dd9-e8c5f3713342/NBD%20Coverage%20-%20Japan%20Post%20Codes%20060121.xlsx)
 
 #### <a name="norway"></a>挪威
 
@@ -156,7 +131,8 @@ ms.locfileid: "11577083"
 #### <a name="poland"></a>波蘭
 
 - 截止時間：12 點 0 分 CET (UTC+1)
-
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/f/e/8/fe8b9b43-5f72-4cf1-971d-78dd46f8ea1c/NBD%20Coverage%20-%20Poland%20Post%20Codes%20042821.xlsx
+)
 
 #### <a name="portugal"></a>葡萄牙
 
@@ -185,6 +161,7 @@ ms.locfileid: "11577083"
 #### <a name="the-netherlands"></a>荷蘭
 
 - 截止時間：12 點 0 分 CET (UTC+1)
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
 
 #### <a name="united-states"></a>美國 
 
