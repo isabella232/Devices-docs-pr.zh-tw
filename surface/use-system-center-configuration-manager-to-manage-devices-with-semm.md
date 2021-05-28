@@ -30,7 +30,7 @@ ms.locfileid: "11145614"
 > [!Note]
 > <span data-ttu-id="a6785-112">雖然本文所述的程式可能適用于舊版的 Endpoint Configuration Manager 或其他協力廠商管理解決方案，但只有端點設定管理員的目前分支支援使用 Microsoft Surface UEFI 管理員和 PowerShell 的 SEMM 管理。</span><span class="sxs-lookup"><span data-stu-id="a6785-112">Although the process described in this article may work with earlier versions of Endpoint Configuration Manager or with other third-party management solutions, management of SEMM with Microsoft Surface UEFI Manager and PowerShell is supported only with the Current Branch of Endpoint Configuration Manager.</span></span>
 
-#### <span data-ttu-id="a6785-113">必要條件</span><span class="sxs-lookup"><span data-stu-id="a6785-113">Prerequisites</span></span>
+#### <a name="prerequisites"></a><span data-ttu-id="a6785-113">必要條件</span><span class="sxs-lookup"><span data-stu-id="a6785-113">Prerequisites</span></span>
 
 <span data-ttu-id="a6785-114">開始本文所述的程式之前，請先熟悉下列技術與工具：</span><span class="sxs-lookup"><span data-stu-id="a6785-114">Before you begin the process outlined in this article, familiarize yourself with the following technologies and tools:</span></span>
 
@@ -53,7 +53,7 @@ ms.locfileid: "11145614"
 
 <span data-ttu-id="a6785-128">在用戶端 Surface 裝置上安裝 Microsoft Surface UEFI 管理員之後，就會使用 PowerShell 腳本來部署和管理 SEMM。</span><span class="sxs-lookup"><span data-stu-id="a6785-128">After Microsoft Surface UEFI Manager is installed on the client Surface device, SEMM is deployed and managed with PowerShell scripts.</span></span> <span data-ttu-id="a6785-129">您可以從下載中心下載 [SEMM 管理腳本](https://www.microsoft.com/download/details.aspx?id=46703) 的範例。</span><span class="sxs-lookup"><span data-stu-id="a6785-129">You can download samples of the [SEMM management scripts](https://www.microsoft.com/download/details.aspx?id=46703) from the Download Center.</span></span>
 
-## <span data-ttu-id="a6785-130">部署 Microsoft Surface UEFI 管理員</span><span class="sxs-lookup"><span data-stu-id="a6785-130">Deploy Microsoft Surface UEFI Manager</span></span>
+## <a name="deploy-microsoft-surface-uefi-manager"></a><span data-ttu-id="a6785-130">部署 Microsoft Surface UEFI 管理員</span><span class="sxs-lookup"><span data-stu-id="a6785-130">Deploy Microsoft Surface UEFI Manager</span></span>
 
 <span data-ttu-id="a6785-131">部署 Microsoft Surface UEFI 管理員是一個典型的應用程式部署。</span><span class="sxs-lookup"><span data-stu-id="a6785-131">Deployment of Microsoft Surface UEFI Manager is a typical application deployment.</span></span> <span data-ttu-id="a6785-132">Microsoft Surface UEFI 管理員安裝程式檔案是標準的 Windows 安裝程式檔案，您可以使用 [標準安靜選項](https://msdn.microsoft.com/library/windows/desktop/aa367988)進行安裝。</span><span class="sxs-lookup"><span data-stu-id="a6785-132">The Microsoft Surface UEFI Manager installer file is a standard Windows Installer file that you can install with the [standard quiet option](https://msdn.microsoft.com/library/windows/desktop/aa367988).</span></span>
 
@@ -93,7 +93,7 @@ ms.locfileid: "11145614"
 
 <span data-ttu-id="a6785-165">如果您不想要在不是使用 SEMM 管理的裝置上安裝 Microsoft Surface UEFI 管理器元件，您可以將 Microsoft Surface UEFI 管理員設定為 SEMM Configuration Manager 腳本的相依性。</span><span class="sxs-lookup"><span data-stu-id="a6785-165">If you do not want to install the Microsoft Surface UEFI Manager assemblies on devices that will not be managed with SEMM, you can configure Microsoft Surface UEFI Manager as a dependency of the SEMM Configuration Manager scripts.</span></span> <span data-ttu-id="a6785-166">此案例將在本文稍後的 [ [部署 SEMM Configuration Manager 腳本](#deploy-semm-configuration-manager-scripts) ] 區段中講述。</span><span class="sxs-lookup"><span data-stu-id="a6785-166">This scenario is covered in the [Deploy SEMM Configuration Manager Scripts](#deploy-semm-configuration-manager-scripts) section later in this article.</span></span>
 
-## <span data-ttu-id="a6785-167">建立或修改 SEMM Configuration Manager 腳本</span><span class="sxs-lookup"><span data-stu-id="a6785-167">Create or modify the SEMM Configuration Manager scripts</span></span>
+## <a name="create-or-modify-the-semm-configuration-manager-scripts"></a><span data-ttu-id="a6785-167">建立或修改 SEMM Configuration Manager 腳本</span><span class="sxs-lookup"><span data-stu-id="a6785-167">Create or modify the SEMM Configuration Manager scripts</span></span>
 
 <span data-ttu-id="a6785-168">在裝置上安裝所需的元件之後，在 SEMM 中註冊裝置並設定 Surface UEFI 的程式是使用 PowerShell 腳本完成，並以 Configuration Manager 的形式部署為腳本應用程式。</span><span class="sxs-lookup"><span data-stu-id="a6785-168">After the required assemblies have been installed on the devices, the process of enrolling the devices in SEMM and configuring Surface UEFI is done with PowerShell scripts and deployed as a script application with Configuration Manager.</span></span> <span data-ttu-id="a6785-169">您可以修改這些腳本，以符合貴組織與環境的需求。</span><span class="sxs-lookup"><span data-stu-id="a6785-169">These scripts can be modified to fit the needs of your organization and environment.</span></span> <span data-ttu-id="a6785-170">例如，您可以針對不同部門或角色中的受管理 Surface 裝置建立多個設定。</span><span class="sxs-lookup"><span data-stu-id="a6785-170">For example, you can create multiple configurations for managed Surface devices in different departments or roles.</span></span> <span data-ttu-id="a6785-171">您可以從本文開頭的 [ [先決條件](#prerequisites) ] 區段中的連結，下載 SEMM 與 Configuration Manager 腳本的範例。</span><span class="sxs-lookup"><span data-stu-id="a6785-171">You can download samples of the scripts for SEMM and Configuration Manager from the link in the [Prerequisites](#prerequisites) section at the beginning of this article.</span></span>
 
@@ -107,7 +107,7 @@ ms.locfileid: "11145614"
 > [!NOTE]
 > <span data-ttu-id="a6785-178">SEMM Configuration Manager 腳本和匯出的 SEMM 憑證檔案 ( .pfx) 應該放在與其他檔案不在同一個資料夾中，才能新增至 Configuration Manager。</span><span class="sxs-lookup"><span data-stu-id="a6785-178">The SEMM Configuration Manager scripts and the exported SEMM certificate file (.pfx) should be placed in the same folder with no other files before they are added to Configuration Manager.</span></span>
 
-### <span data-ttu-id="a6785-179">指定憑證及套件名稱</span><span class="sxs-lookup"><span data-stu-id="a6785-179">Specify certificate and package names</span></span>
+### <a name="specify-certificate-and-package-names"></a><span data-ttu-id="a6785-179">指定憑證及套件名稱</span><span class="sxs-lookup"><span data-stu-id="a6785-179">Specify certificate and package names</span></span>
 
 <span data-ttu-id="a6785-180">您需要修改的腳本第一個區域是指定及載入 SEMM 憑證的部分，也會指出 SurfaceUEFIManager 版本，以及 SEMM configuration 套件的名稱，以及 SEMM 重設套件。</span><span class="sxs-lookup"><span data-stu-id="a6785-180">The first region of the script that you need to modify is the portion that specifies and loads the SEMM certificate, and also indicates SurfaceUEFIManager version, and the names for the SEMM configuration package and SEMM reset package.</span></span> <span data-ttu-id="a6785-181">認證名稱和 SurfaceUEFIManager 版本是在 ConfigureSEMM.ps1 腳本中的第56至73行上指定。</span><span class="sxs-lookup"><span data-stu-id="a6785-181">The certificate name and SurfaceUEFIManager version are specified on lines 56 through 73 in the ConfigureSEMM.ps1 script.</span></span>
 
@@ -163,7 +163,7 @@ ms.locfileid: "11145614"
 > [!NOTE]
 > <span data-ttu-id="a6785-199">您也必須在 ResetSEMM.ps1 腳本的此區段中輸入 SEMM 憑證名稱和密碼，才能讓 Configuration Manager 從裝置中移除 SEMM 與卸載動作。</span><span class="sxs-lookup"><span data-stu-id="a6785-199">The SEMM certificate name and password must also be entered in this section of the ResetSEMM.ps1 script to enable Configuration Manager to remove SEMM from the device with the uninstall action.</span></span>
 
-### <span data-ttu-id="a6785-200">設定許可權</span><span class="sxs-lookup"><span data-stu-id="a6785-200">Configure permissions</span></span>
+### <a name="configure-permissions"></a><span data-ttu-id="a6785-200">設定許可權</span><span class="sxs-lookup"><span data-stu-id="a6785-200">Configure permissions</span></span>
 
 <span data-ttu-id="a6785-201">您將在其中指定 Surface UEFI 配置的腳本第一個區域是 [ **設定許可權** ] 區域。</span><span class="sxs-lookup"><span data-stu-id="a6785-201">The first region of the script where you will specify the configuration for Surface UEFI is the **Configure Permissions** region.</span></span> <span data-ttu-id="a6785-202">這個區域會從範例腳本中的第210列開始，並以批註 **# 設定許可權** ，並繼續到第247列。</span><span class="sxs-lookup"><span data-stu-id="a6785-202">This region begins at line 210 in the sample script with the comment **# Configure Permissions** and continues to line 247.</span></span> <span data-ttu-id="a6785-203">下列程式碼片段首先將許可權設定為所有 Surface UEFI 設定，以便僅供 SEMM 修改，然後新增明確許可權，以允許本機使用者修改 Surface UEFI 密碼、TPM 以及前臺和後置相機。</span><span class="sxs-lookup"><span data-stu-id="a6785-203">The following code fragment first sets permissions to all Surface UEFI settings so that they may be modified by SEMM only, then adds explicit permissions to allow the local user to modify the Surface UEFI password, TPM, and front and rear cameras.</span></span>
 
@@ -215,7 +215,7 @@ ms.locfileid: "11145614"
 
 <span data-ttu-id="a6785-207">您可以在本文的 [ [設定名稱和識別碼](#settings-names-and-ids) ] 區段中，找到有關 Surface UEFI 可用之設定名稱和識別碼的資訊。</span><span class="sxs-lookup"><span data-stu-id="a6785-207">You can find information about the available settings names and IDs for Surface UEFI in the [Settings Names and IDs](#settings-names-and-ids) section of this article.</span></span>
 
-### <span data-ttu-id="a6785-208">進行設定</span><span class="sxs-lookup"><span data-stu-id="a6785-208">Configure settings</span></span>
+### <a name="configure-settings"></a><span data-ttu-id="a6785-208">進行設定</span><span class="sxs-lookup"><span data-stu-id="a6785-208">Configure settings</span></span>
 
 <span data-ttu-id="a6785-209">您將在其中指定 Surface UEFI 配置的腳本第二個區域是 ConfigureSEMM.ps1 腳本的 [設定 **設定** ] 區域，它會設定是否已啟用或停用每個設定。</span><span class="sxs-lookup"><span data-stu-id="a6785-209">The second region of the script where you will specify the configuration for Surface UEFI is the **Configure Settings** region of the ConfigureSEMM.ps1 script, which configures whether each setting is enabled or disabled.</span></span> <span data-ttu-id="a6785-210">範例腳本包含將所有設定設為預設值的指示。</span><span class="sxs-lookup"><span data-stu-id="a6785-210">The sample script includes instructions to set all settings to their default values.</span></span> <span data-ttu-id="a6785-211">然後，腳本會提供針對 PXE 啟動停用 IPv6 的明確指示，並讓 Surface UEFI 管理員密碼保持不變。</span><span class="sxs-lookup"><span data-stu-id="a6785-211">The script then provides explicit instructions to disable IPv6 for PXE Boot and to leave the Surface UEFI Administrator password unchanged.</span></span> <span data-ttu-id="a6785-212">您可以在範例腳本中，從第291至 line 335 的 **# 設定設定** 批註開始，找到這個區域。</span><span class="sxs-lookup"><span data-stu-id="a6785-212">You can find this region beginning with the **# Configure Settings** comment at line 291 through line 335 in the sample script.</span></span> <span data-ttu-id="a6785-213">區域如下所示。</span><span class="sxs-lookup"><span data-stu-id="a6785-213">The region appears as follows.</span></span>
 
@@ -273,7 +273,7 @@ ms.locfileid: "11145614"
 
 <span data-ttu-id="a6785-218">您可以在本文稍後的 [ [設定名稱和識別碼](#settings-names-and-ids) ] 區段中，找到有關 Surface UEFI 可用設定名稱和識別碼的資訊。</span><span class="sxs-lookup"><span data-stu-id="a6785-218">You can find information about the available settings names and IDs for Surface UEFI in the [Settings Names and IDs](#settings-names-and-ids) section later in this article.</span></span>
 
-### <span data-ttu-id="a6785-219">[設定] 登錄機碼</span><span class="sxs-lookup"><span data-stu-id="a6785-219">Settings registry key</span></span>
+### <a name="settings-registry-key"></a><span data-ttu-id="a6785-219">[設定] 登錄機碼</span><span class="sxs-lookup"><span data-stu-id="a6785-219">Settings registry key</span></span>
 
 <span data-ttu-id="a6785-220">若要識別 Configuration Manager 的已註冊系統，ConfigureSEMM.ps1 腳本會寫入登錄機碼，以用於識別已註冊的系統（即已使用 SEMM 設定腳本安裝）。</span><span class="sxs-lookup"><span data-stu-id="a6785-220">To identify enrolled systems for Configuration Manager, the ConfigureSEMM.ps1 script writes registry keys that can be used to identify enrolled systems as having been installed with the SEMM configuration script.</span></span> <span data-ttu-id="a6785-221">您可以在下列位置找到這些金鑰。</span><span class="sxs-lookup"><span data-stu-id="a6785-221">These keys can be found at the following location.</span></span>
 
@@ -382,14 +382,14 @@ ms.locfileid: "11145614"
 477 }
 ```
 
-### <span data-ttu-id="a6785-223">設定名稱和識別碼</span><span class="sxs-lookup"><span data-stu-id="a6785-223">Settings names and IDs</span></span>
+### <a name="settings-names-and-ids"></a><span data-ttu-id="a6785-223">設定名稱和識別碼</span><span class="sxs-lookup"><span data-stu-id="a6785-223">Settings names and IDs</span></span>
 
 <span data-ttu-id="a6785-224">若要設定 Surface uefi 設定或 Surface UEFI 設定的許可權，您必須透過其設定名稱或設定識別碼來參照每一個設定。</span><span class="sxs-lookup"><span data-stu-id="a6785-224">To configure Surface UEFI settings or permissions for Surface UEFI settings, you must refer to each setting by either its setting name or setting ID.</span></span> <span data-ttu-id="a6785-225">針對 Surface UEFI 的每個新更新，可能會新增新設定。</span><span class="sxs-lookup"><span data-stu-id="a6785-225">With each new update for Surface UEFI, new settings may be added.</span></span> <span data-ttu-id="a6785-226">若要取得 Surface 裝置上可用設定的完整清單，以及設定名稱和設定識別碼，就是在[IT 下載的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703)中使用 ShowSettingsOptions.ps1 腳本 SEMM_Powershell.zip</span><span class="sxs-lookup"><span data-stu-id="a6785-226">The best way to get a complete list of the settings available on a Surface device, along with the settings name and settings IDs, is to use the ShowSettingsOptions.ps1 script from SEMM_Powershell.zip in [Surface Tools for IT Downloads](https://www.microsoft.com/download/details.aspx?id=46703)</span></span> 
 
 <span data-ttu-id="a6785-227">執行 ShowSettingsOptions.ps1 的電腦必須安裝 Microsoft Surface UEFI 管理員，但腳本不需要 Surface 裝置。</span><span class="sxs-lookup"><span data-stu-id="a6785-227">The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.</span></span>
 
 
-## <span data-ttu-id="a6785-228">部署 SEMM Configuration Manager 腳本</span><span class="sxs-lookup"><span data-stu-id="a6785-228">Deploy SEMM Configuration Manager scripts</span></span>
+## <a name="deploy-semm-configuration-manager-scripts"></a><span data-ttu-id="a6785-228">部署 SEMM Configuration Manager 腳本</span><span class="sxs-lookup"><span data-stu-id="a6785-228">Deploy SEMM Configuration Manager scripts</span></span>
 
 <span data-ttu-id="a6785-229">準備好要在用戶端裝置上設定及啟用 SEMM 的腳本之後，下一步就是在 Configuration Manager 中將這些腳本新增為應用程式。</span><span class="sxs-lookup"><span data-stu-id="a6785-229">After your scripts are prepared to configure and enable SEMM on the client device, the next step is to add these scripts as an application in Configuration Manager.</span></span> <span data-ttu-id="a6785-230">在您開啟 Configuration Manager 前，請確定下列檔案位於不含其他檔案的共用資料夾中：</span><span class="sxs-lookup"><span data-stu-id="a6785-230">Before you open Configuration Manager, ensure that the following files are in a shared folder that does not include other files:</span></span>
 

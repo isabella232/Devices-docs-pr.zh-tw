@@ -23,11 +23,11 @@ ms.locfileid: "10897071"
 ---
 # <span data-ttu-id="9a5b9-104">在 Configuration Manager 中管理 Surface 驅動程式更新</span><span class="sxs-lookup"><span data-stu-id="9a5b9-104">Manage Surface driver updates in Configuration Manager</span></span>
 
-## <span data-ttu-id="9a5b9-105">摘要</span><span class="sxs-lookup"><span data-stu-id="9a5b9-105">Summary</span></span>
+## <a name="summary"></a><span data-ttu-id="9a5b9-105">摘要</span><span class="sxs-lookup"><span data-stu-id="9a5b9-105">Summary</span></span>
 
 <span data-ttu-id="9a5b9-106">從[Microsoft System Center Configuration Manager 版本 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates)開始，您可以直接透過 Configuration Manager 用戶端同步處理和部署 Microsoft Surface 固件及驅動程式更新。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-106">Starting in [Microsoft System Center Configuration Manager version 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), you can synchronize and deploy Microsoft Surface firmware and driver updates directly through the Configuration Manager client.</span></span> <span data-ttu-id="9a5b9-107">此程式類似于部署定期更新。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-107">The process resembles deploying regular updates.</span></span> <span data-ttu-id="9a5b9-108">不過，需要進行一些其他設定，才能讓 Surface 驅動程式更新到您的目錄中。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-108">However, some additional configurations are required to get the Surface driver updates into your catalog.</span></span>
 
-## <span data-ttu-id="9a5b9-109">必要條件</span><span class="sxs-lookup"><span data-stu-id="9a5b9-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9a5b9-109">必要條件</span><span class="sxs-lookup"><span data-stu-id="9a5b9-109">Prerequisites</span></span>
 
 <span data-ttu-id="9a5b9-110">若要管理 Surface driver 更新，必須符合下列先決條件：</span><span class="sxs-lookup"><span data-stu-id="9a5b9-110">To manage Surface driver updates, the following prerequisites must be met:</span></span>
 
@@ -37,7 +37,7 @@ ms.locfileid: "10897071"
 > [!NOTE]
 > <span data-ttu-id="9a5b9-114">如果您的環境不符合先決條件，請參閱 [[常見問題](#frequently-asked-questions-faq)] 區段中的[替代方法](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1)，以部署 Surface 驅動程式和固件更新。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-114">If your environment doesn’t meet the prerequisites, refer to the [alternative methods](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) to deploy Surface driver and firmware updates in the [FAQ](#frequently-asked-questions-faq) section.</span></span>
 
-## <span data-ttu-id="9a5b9-115">有用的記錄檔</span><span class="sxs-lookup"><span data-stu-id="9a5b9-115">Useful log files</span></span>
+## <a name="useful-log-files"></a><span data-ttu-id="9a5b9-115">有用的記錄檔</span><span class="sxs-lookup"><span data-stu-id="9a5b9-115">Useful log files</span></span>
 
 <span data-ttu-id="9a5b9-116">當您管理 Surface driver 更新時，下列記錄特別有用。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-116">The following logs are especially useful when you manage Surface driver updates.</span></span>
 
@@ -49,7 +49,7 @@ ms.locfileid: "10897071"
 <span data-ttu-id="9a5b9-123">這些記錄位於管理 SUP 的網站伺服器或 SUP 本身（如果直接安裝在網站伺服器上的話）。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-123">These logs are located on the site server that manages the SUP, or on the SUP itself if it's installed directly on a site server.</span></span>
 <span data-ttu-id="9a5b9-124">如需 Configuration Manager 記錄的完整清單，請參閱[System Center Configuration Manager 中的記錄](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files)檔案。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-124">For a complete list of Configuration Manager logs, see [Log files in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).</span></span>
 
-## <span data-ttu-id="9a5b9-125">啟用 Surface driver 更新管理</span><span class="sxs-lookup"><span data-stu-id="9a5b9-125">Enabling Surface driver updates management</span></span>
+## <a name="enabling-surface-driver-updates-management"></a><span data-ttu-id="9a5b9-125">啟用 Surface driver 更新管理</span><span class="sxs-lookup"><span data-stu-id="9a5b9-125">Enabling Surface driver updates management</span></span>
 
 <span data-ttu-id="9a5b9-126">若要在 Configuration Manager 中啟用 Surface driver 更新管理，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="9a5b9-126">To enable Surface driver updates management in Configuration Manager, follow these steps:</span></span>
 
@@ -83,7 +83,7 @@ ms.locfileid: "10897071"
    > [!NOTE]
    > <span data-ttu-id="9a5b9-148">大部分的表面驅動程式都屬於多個 Windows 10 產品群組。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-148">Most Surface drivers belong to multiple Windows 10 product groups.</span></span> <span data-ttu-id="9a5b9-149">您可能不需要選取此處所列的所有產品。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-149">You may not have to select all the products that are listed here.</span></span> <span data-ttu-id="9a5b9-150">為了協助您減少填入更新目錄的產品數，我們建議您只選取環境所需的產品進行同步處理。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-150">To help reduce the number of products that populate your Update Catalog, we recommend that you select only the products that are required by your environment for synchronization.</span></span>
 
-## <span data-ttu-id="9a5b9-151">驗證配置</span><span class="sxs-lookup"><span data-stu-id="9a5b9-151">Verifying the configuration</span></span>
+## <a name="verifying-the-configuration"></a><span data-ttu-id="9a5b9-151">驗證配置</span><span class="sxs-lookup"><span data-stu-id="9a5b9-151">Verifying the configuration</span></span>
 
 <span data-ttu-id="9a5b9-152">若要確認 SUP 設定正確無誤，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="9a5b9-152">To verify that the SUP is configured correctly, follow these steps:</span></span>
 
@@ -123,7 +123,7 @@ ms.locfileid: "10897071"
 
    ![所有軟體更新搜尋結果](images/manage-surface-driver-updates-4.png)
 
-## <span data-ttu-id="9a5b9-163">手動同步處理</span><span class="sxs-lookup"><span data-stu-id="9a5b9-163">Manual synchronization</span></span>
+## <a name="manual-synchronization"></a><span data-ttu-id="9a5b9-163">手動同步處理</span><span class="sxs-lookup"><span data-stu-id="9a5b9-163">Manual synchronization</span></span>
 
 <span data-ttu-id="9a5b9-164">如果您不想等到下一個同步處理，請依照下列步驟開始同步處理：</span><span class="sxs-lookup"><span data-stu-id="9a5b9-164">If you don't want to wait until the next synchronization, follow these steps to start a synchronization:</span></span>
 
@@ -150,13 +150,13 @@ ms.locfileid: "10897071"
    Synchronizing update 74102899-0a49-48cf-97e6-05bde18a27ff - Microsoft driver update for Surface UEFI
    ```
 
-## <span data-ttu-id="9a5b9-169">部署 Surface 固件與驅動程式更新</span><span class="sxs-lookup"><span data-stu-id="9a5b9-169">Deploying Surface firmware and driver updates</span></span>
+## <a name="deploying-surface-firmware-and-driver-updates"></a><span data-ttu-id="9a5b9-169">部署 Surface 固件與驅動程式更新</span><span class="sxs-lookup"><span data-stu-id="9a5b9-169">Deploying Surface firmware and driver updates</span></span>
 
 <span data-ttu-id="9a5b9-170">您可以與部署其他更新一樣，部署 Surface 固件與驅動程式更新。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-170">You can deploy Surface firmware and driver updates in the same manner as you deploy other updates.</span></span>
 
 <span data-ttu-id="9a5b9-171">如需有關部署的詳細資訊，請參閱[System Center 2012 Configuration Manager – Part7：軟體更新（部署）](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/)。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-171">For more information about deployment, see [System Center 2012 Configuration Manager–Part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).</span></span>
 
-## <span data-ttu-id="9a5b9-172">常見問題 (FAQ)</span><span class="sxs-lookup"><span data-stu-id="9a5b9-172">Frequently asked questions (FAQ)</span></span>
+## <a name="frequently-asked-questions-faq"></a><span data-ttu-id="9a5b9-172">常見問題 (FAQ)</span><span class="sxs-lookup"><span data-stu-id="9a5b9-172">Frequently asked questions (FAQ)</span></span>
 
 **<span data-ttu-id="9a5b9-173">按照本文所述的步驟操作後，我的表面驅動程式仍不會同步處理。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-173">After I follow the steps in this article, my Surface drivers are still not synchronized.</span></span> <span data-ttu-id="9a5b9-174">為什麼？</span><span class="sxs-lookup"><span data-stu-id="9a5b9-174">Why?</span></span>**
 
@@ -176,7 +176,7 @@ ms.locfileid: "10897071"
 
 <span data-ttu-id="9a5b9-193">如需有關如何透過替代通道部署 Surface 驅動程式和固件更新的相關資訊，請參閱[管理 Surface 驅動程式和固件更新](manage-surface-driver-and-firmware-updates.md)。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-193">For information about how to deploy Surface driver and firmware updates through alternative channels, see [Manage Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).</span></span> <span data-ttu-id="9a5b9-194">如果您想要下載 .msi 或 .exe 檔案，然後透過傳統軟體部署通道進行部署，請參閱[使用 Configuration Manager 讓 Surface 固件保持更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)。</span><span class="sxs-lookup"><span data-stu-id="9a5b9-194">If you want to download the .msi or .exe file, and then deploy through traditional software deployment channels, see [Keeping Surface Firmware Updated with Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).</span></span>
 
-## <span data-ttu-id="9a5b9-195">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9a5b9-195">Additional Information</span></span>
+## <a name="additional-information"></a><span data-ttu-id="9a5b9-195">其他資訊</span><span class="sxs-lookup"><span data-stu-id="9a5b9-195">Additional Information</span></span>
 
 <span data-ttu-id="9a5b9-196">如需有關 Surface 驅動程式和固件更新的詳細資訊，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="9a5b9-196">For more information about Surface driver and firmware updates, see the following articles:</span></span>
 

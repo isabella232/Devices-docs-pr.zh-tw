@@ -26,7 +26,7 @@ ms.locfileid: "10831336"
 
 <span data-ttu-id="b25c3-106">將會議室控制系統與您的 Surface Hub 搭配使用，包括將會議室控制硬體連接到 Surface Hub (通常是透過 Surface Hub 底部的 RJ11 序列埠來連接)。</span><span class="sxs-lookup"><span data-stu-id="b25c3-106">Using a room control system with your Surface Hub involves connecting room control hardware to the Surface Hub, usually through the RJ11 serial port on the bottom of the Surface Hub.</span></span>
 
-## <span data-ttu-id="b25c3-107">終端機設定</span><span class="sxs-lookup"><span data-stu-id="b25c3-107">Terminal settings</span></span>
+## <a name="terminal-settings"></a><span data-ttu-id="b25c3-107">終端機設定</span><span class="sxs-lookup"><span data-stu-id="b25c3-107">Terminal settings</span></span>
 
 <span data-ttu-id="b25c3-108">若要連接到會議室控制系統的控制台，您不需要在 Surface Hub 上設定任何終端機設定。</span><span class="sxs-lookup"><span data-stu-id="b25c3-108">To connect to a room control system control panel, you don't need to configure any terminal settings on the Surface Hub.</span></span> <span data-ttu-id="b25c3-109">如果您想要將電腦或膝上型電腦連接到 Surface Hub 並從 Surface Hub 傳送序列命令，您可以使用終端機模擬器程式 (例如 Tera Term 或 PuTTY)。</span><span class="sxs-lookup"><span data-stu-id="b25c3-109">If you want to connect a PC or laptop to your Surface Hub and send serial commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY.</span></span> 
 
@@ -40,7 +40,7 @@ ms.locfileid: "10831336"
 | <span data-ttu-id="b25c3-122">換行字元</span><span class="sxs-lookup"><span data-stu-id="b25c3-122">Line feed</span></span> | <span data-ttu-id="b25c3-123">每個歸位字元</span><span class="sxs-lookup"><span data-stu-id="b25c3-123">every carriage return</span></span> |
  
 
-## <span data-ttu-id="b25c3-124">線路圖</span><span class="sxs-lookup"><span data-stu-id="b25c3-124">Wiring diagram</span></span>
+## <a name="wiring-diagram"></a><span data-ttu-id="b25c3-124">線路圖</span><span class="sxs-lookup"><span data-stu-id="b25c3-124">Wiring diagram</span></span>
 
 <span data-ttu-id="b25c3-125">您可以使用標準的 RJ-11 (6P6C) 連接器，將 Surface Hub 序列埠連接到會議室控制系統。</span><span class="sxs-lookup"><span data-stu-id="b25c3-125">You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system.</span></span> <span data-ttu-id="b25c3-126">這是建議的方法。</span><span class="sxs-lookup"><span data-stu-id="b25c3-126">This is the recommended method.</span></span> <span data-ttu-id="b25c3-127">您也可以使用 4 導線的 RJ-11 纜線，但我們不建議使用這個方法。</span><span class="sxs-lookup"><span data-stu-id="b25c3-127">You can also use an RJ-11 4-conductor cable, but we do not recommend this method.</span></span>
 
@@ -48,7 +48,7 @@ ms.locfileid: "10831336"
 
 ![顯示路線圖的影像。](images/room-control-wiring-diagram.png)
 
-## <span data-ttu-id="b25c3-130">命令集</span><span class="sxs-lookup"><span data-stu-id="b25c3-130">Command sets</span></span>
+## <a name="command-sets"></a><span data-ttu-id="b25c3-130">命令集</span><span class="sxs-lookup"><span data-stu-id="b25c3-130">Command sets</span></span>
 
 <span data-ttu-id="b25c3-131">會議室控制系統會針對命令使用常見的會議室案例。</span><span class="sxs-lookup"><span data-stu-id="b25c3-131">Room control systems use common meeting-room scenarios for commands.</span></span> <span data-ttu-id="b25c3-132">命令源自會議室控制系統，並透過序列式連線來與 Surface Hub 通訊。</span><span class="sxs-lookup"><span data-stu-id="b25c3-132">Commands originate from the room control system, and are communicated over a serial connection to a Surface Hub.</span></span> <span data-ttu-id="b25c3-133">命令是以 ASCII 為基礎，而且 Surface Hub 將會在發生狀態變更時進行確認。</span><span class="sxs-lookup"><span data-stu-id="b25c3-133">Commands are ASCII based, and the Surface Hub will acknowledge when state changes occur.</span></span>
 
@@ -62,7 +62,7 @@ ms.locfileid: "10831336"
 | <span data-ttu-id="b25c3-142">?</span><span class="sxs-lookup"><span data-stu-id="b25c3-142">?</span></span> | <span data-ttu-id="b25c3-143">查詢目前的值</span><span class="sxs-lookup"><span data-stu-id="b25c3-143">Queries for a current value</span></span> |
  
 
-## <span data-ttu-id="b25c3-144">電源</span><span class="sxs-lookup"><span data-stu-id="b25c3-144">Power</span></span>
+## <a name="power"></a><span data-ttu-id="b25c3-144">電源</span><span class="sxs-lookup"><span data-stu-id="b25c3-144">Power</span></span>
 
 <span data-ttu-id="b25c3-145">Surface Hub 可以處於下列其中一個電源狀態。</span><span class="sxs-lookup"><span data-stu-id="b25c3-145">Surface Hub can be in one of these power states.</span></span>
 
@@ -91,7 +91,7 @@ ms.locfileid: "10831336"
 
 
 
-## <span data-ttu-id="b25c3-187">亮度</span><span class="sxs-lookup"><span data-stu-id="b25c3-187">Brightness</span></span>
+## <a name="brightness"></a><span data-ttu-id="b25c3-187">亮度</span><span class="sxs-lookup"><span data-stu-id="b25c3-187">Brightness</span></span>
 
 <span data-ttu-id="b25c3-188">目前的亮度等級是介於 0 到 100 的範圍。</span><span class="sxs-lookup"><span data-stu-id="b25c3-188">The current brightness level is a range from 0 to 100.</span></span>
 
@@ -102,7 +102,7 @@ ms.locfileid: "10831336"
 | <span data-ttu-id="b25c3-193">Brightness+</span><span class="sxs-lookup"><span data-stu-id="b25c3-193">Brightness+</span></span> | <span data-ttu-id="b25c3-194">系統管理控制器 (SMC) 會傳送增加亮度命令。</span><span class="sxs-lookup"><span data-stu-id="b25c3-194">System management controller (SMC) sends the brightness up command.</span></span></br></br><span data-ttu-id="b25c3-195">會議室控制系統上的電腦服務會通知 SMC 新的亮度等級。</span><span class="sxs-lookup"><span data-stu-id="b25c3-195">PC service on the room control system notifies SMC of new brightness level.</span></span> |  <span data-ttu-id="b25c3-196">Brightness = 51</span><span class="sxs-lookup"><span data-stu-id="b25c3-196">Brightness = 51</span></span> |
 | <span data-ttu-id="b25c3-197">Brightness-</span><span class="sxs-lookup"><span data-stu-id="b25c3-197">Brightness-</span></span> |  <span data-ttu-id="b25c3-198">SMC 會傳送降低亮度命令。</span><span class="sxs-lookup"><span data-stu-id="b25c3-198">SMC sends the brightness down command.</span></span></br></br><span data-ttu-id="b25c3-199">電腦服務會通知 SMC 新的亮度等級。</span><span class="sxs-lookup"><span data-stu-id="b25c3-199">PC service notifies SMC of new brightness level.</span></span> | <span data-ttu-id="b25c3-200">Brightness = 50</span><span class="sxs-lookup"><span data-stu-id="b25c3-200">Brightness = 50</span></span> |
 
-## <span data-ttu-id="b25c3-201">音量</span><span class="sxs-lookup"><span data-stu-id="b25c3-201">Volume</span></span>
+## <a name="volume"></a><span data-ttu-id="b25c3-201">音量</span><span class="sxs-lookup"><span data-stu-id="b25c3-201">Volume</span></span>
 
 <span data-ttu-id="b25c3-202">目前的音量等級是介於 0 到 100 的範圍。</span><span class="sxs-lookup"><span data-stu-id="b25c3-202">The current volume level is a range from 0 to 100.</span></span>
 
@@ -119,7 +119,7 @@ ms.locfileid: "10831336"
 
  
 
-## <span data-ttu-id="b25c3-217">音訊靜音</span><span class="sxs-lookup"><span data-stu-id="b25c3-217">Mute for audio</span></span>
+## <a name="mute-for-audio"></a><span data-ttu-id="b25c3-217">音訊靜音</span><span class="sxs-lookup"><span data-stu-id="b25c3-217">Mute for audio</span></span>
 
 <span data-ttu-id="b25c3-218">可將音訊設為靜音。</span><span class="sxs-lookup"><span data-stu-id="b25c3-218">Audio can be muted.</span></span>
 
@@ -130,7 +130,7 @@ ms.locfileid: "10831336"
 
  
 
-## <span data-ttu-id="b25c3-226">視訊來源</span><span class="sxs-lookup"><span data-stu-id="b25c3-226">Video source</span></span>
+## <a name="video-source"></a><span data-ttu-id="b25c3-226">視訊來源</span><span class="sxs-lookup"><span data-stu-id="b25c3-226">Video source</span></span>
 
 <span data-ttu-id="b25c3-227">可以使用數個顯示來源。</span><span class="sxs-lookup"><span data-stu-id="b25c3-227">Several display sources can be used.</span></span>
 
@@ -153,7 +153,7 @@ ms.locfileid: "10831336"
 | <span data-ttu-id="b25c3-250">Source-</span><span class="sxs-lookup"><span data-stu-id="b25c3-250">Source-</span></span> | <span data-ttu-id="b25c3-251">SMC 會循環至上一個作用中的輸入來源。</span><span class="sxs-lookup"><span data-stu-id="b25c3-251">SMC cycles to the previous active input source.</span></span></br></br><span data-ttu-id="b25c3-252">電腦服務會通知 SMC 目前的輸入來源。</span><span class="sxs-lookup"><span data-stu-id="b25c3-252">PC service notifies SMC of the current input source.</span></span> |  <span data-ttu-id="b25c3-253">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="b25c3-253">Source=&lt;#&gt;</span></span> |
 | <span data-ttu-id="b25c3-254">Source?</span><span class="sxs-lookup"><span data-stu-id="b25c3-254">Source?</span></span> |  <span data-ttu-id="b25c3-255">SMC 會查詢電腦服務以取得作用中的輸入來源。</span><span class="sxs-lookup"><span data-stu-id="b25c3-255">SMC queries PC service for the active input source.</span></span></br></br><span data-ttu-id="b25c3-256">電腦服務會通知 SMC 目前的輸入來源。</span><span class="sxs-lookup"><span data-stu-id="b25c3-256">PC service notifies SMC of the current in;put source.</span></span> | <span data-ttu-id="b25c3-257">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="b25c3-257">Source=&lt;#&gt;</span></span> |
 
-## <span data-ttu-id="b25c3-258">錯誤</span><span class="sxs-lookup"><span data-stu-id="b25c3-258">Errors</span></span>
+## <a name="errors"></a><span data-ttu-id="b25c3-258">錯誤</span><span class="sxs-lookup"><span data-stu-id="b25c3-258">Errors</span></span>
 
 <span data-ttu-id="b25c3-259">錯誤會以此表格中的格式傳回。</span><span class="sxs-lookup"><span data-stu-id="b25c3-259">Errors are returned following the format in this table.</span></span>
 
@@ -167,7 +167,7 @@ ms.locfileid: "10831336"
 
  
 
-## <span data-ttu-id="b25c3-274">相關主題</span><span class="sxs-lookup"><span data-stu-id="b25c3-274">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="b25c3-274">相關主題</span><span class="sxs-lookup"><span data-stu-id="b25c3-274">Related topics</span></span>
 
 
 [<span data-ttu-id="b25c3-275">管理 Microsoft Surface Hub</span><span class="sxs-lookup"><span data-stu-id="b25c3-275">Manage Microsoft Surface Hub</span></span>](manage-surface-hub.md)
