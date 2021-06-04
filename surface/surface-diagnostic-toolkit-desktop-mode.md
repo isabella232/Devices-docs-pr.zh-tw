@@ -102,7 +102,7 @@ SDT 可跨應用程式、驅動程式、硬體及作業系統問題提供廣泛�
 
 根據記錄，SDT 會針對軟體及固件的問題產生報告，您可以將這些問題儲存至預先推薦的位置。
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 - [使用命令執行商務用 Surface 診斷工具組](surface-diagnostic-toolkit-command-line.md)
 

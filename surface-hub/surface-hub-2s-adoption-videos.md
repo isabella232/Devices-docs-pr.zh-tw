@@ -21,7 +21,7 @@ ms.locfileid: "10831610"
 
 此頁面包含 Surface Hub 秒的綜合訓練，可根據需求提供。
 
-## 第1章-訓練概覽
+##  <a name="chapter-1---training-overview"></a>第1章-訓練概覽
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Jud] 
 
@@ -33,7 +33,7 @@ ms.locfileid: "10831610"
 - 訓練服務概覽
 - 訓練最佳做法
 
-## 第2章-Surface Hub 快速入門
+##  <a name="chapter-2---getting-started-with-surface-hub"></a>第2章-Surface Hub 快速入門
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejt] 
 
@@ -44,7 +44,7 @@ ms.locfileid: "10831610"
 - Surface Hub 快速入門
 - 收集期望值
 
-## 第3章-導覽 Surface Hub
+##  <a name="chapter-3---navigating-surface-hub"></a>第3章-導覽 Surface Hub
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFW] 
 
@@ -56,7 +56,7 @@ ms.locfileid: "10831610"
 - 團隊/Skype
 - 結束會話
 
-## 第4章-Whiteboarding 與共同作業
+##  <a name="chapter-4---whiteboarding-and-collaboration"></a>第4章-Whiteboarding 與共同作業
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4v] 
 
@@ -68,7 +68,7 @@ ms.locfileid: "10831610"
 - 共用白板
 - 匯出白板 
  
-## 第5章-探索 Surface Hub app
+##  <a name="chapter-5---exploring-surface-hub-apps"></a>第5章-探索 Surface Hub app
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejz] 
 
@@ -78,7 +78,7 @@ ms.locfileid: "10831610"
 - Microsoft Excel
 - Microsoft Edge
 
-## 第6章-高級 app 與 Office 365
+##  <a name="chapter-6---advanced-apps-and-office-365"></a>第6章-高級 app 與 Office 365
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46EjA] 
 
@@ -90,7 +90,7 @@ ms.locfileid: "10831610"
 - OneDrive
 - 共同撰寫檔
 
-## 第7章-連接裝置
+##  <a name="chapter-7---connecting-devices"></a>第7章-連接裝置
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4w] 
 
@@ -101,7 +101,7 @@ ms.locfileid: "10831610"
 - 商務線 app 工作流程
 - 針對 Miracast 和有線連線進行疑難排解    
  
-## 第8章-商務用 Skype 會議
+##  <a name="chapter-8---skype-for-business-meetings"></a>第8章-商務用 Skype 會議
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4x] 
 
@@ -112,7 +112,7 @@ ms.locfileid: "10831610"
 - 管理商務用 Skype 會議
 - 展示內容
     
-## 第9章-Microsoft 團隊會議
+##  <a name="chapter-9---microsoft-teams-meetings"></a>第9章-Microsoft 團隊會議
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFZ] 
 
@@ -125,7 +125,7 @@ ms.locfileid: "10831610"
 - 展示內容
 - 總結
 
-## 第10章-基本疑難排解
+##  <a name="chapter-10---basic-troubleshooting"></a>第10章-基本疑難排解
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46z65] 
 

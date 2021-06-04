@@ -24,7 +24,7 @@ ms.locfileid: "10916014"
 - 移動和儲存的建議 
 - 解包與安裝的相關指南連結 
 
-## 網站準備規劃
+##  <a name="site-readiness-planning"></a>網站準備規劃
 
 房間必須足夠大，才能提供良好的觀賞角度，但足夠小，以讓麥克風從房間中的人員挑選清楚的信號。 大部分大約22英尺 (七米) 長的房間將提供良好的會議體驗。 在會議區域中，裝載 Surface Hub 的位置：
 
@@ -35,7 +35,7 @@ ms.locfileid: "10916014"
 - 麥克風不會受到干擾來源（例如風扇或通風口）的影響。
 您可以在[55 「Microsoft Surface hub 技術資訊](surface-hub-technical-55.md)」或[84」 microsoft surface hub 技術資訊](surface-hub-technical-84.md)區段中找到更多詳細資料。  如需清潔、護理及安全資訊，請參閱安裝指南與使用者指南 https://www.microsoft.com/surface/support/surface-hub 。
 
-### 硬體考慮
+###  <a name="hardware-considerations"></a>硬體考慮
 
 Surface Hub 會送達：
 - 兩個 Microsoft Surface Hub 畫筆
@@ -54,7 +54,7 @@ Microsoft Surface Hub 有內部電腦，不需要外部電腦系統。
 
 如需電源建議，請參閱[55 「Microsoft Surface hub 技術資訊](surface-hub-technical-55.md)或[84」 microsoft surface hub 技術資訊](surface-hub-technical-84.md)。 如需電源線安全警告，請參閱安裝指南，網址為 https://www.microsoft.com/surface/support/surface-hub 。
 
-### 資料和其他連線
+###  <a name="data-and-other-connections"></a>資料和其他連線
 
 若要使用 Surface Hub，您必須具備有效的乙太網路埠和標準電源插座。 此外，您可能還需要：
 
@@ -66,7 +66,7 @@ Microsoft Surface Hub 有內部電腦，不需要外部電腦系統。
     - 影片埠 (DisplayPort、HDMI、VGA 等等。 )  
 
 
-## 當 Surface Hub 到達時
+##  <a name="when-surface-hub-arrives"></a>當 Surface Hub 到達時
 
 Surface Hub 很大且很厚，所以讓我們知道它何時送達以及安全地處理它的用途。 如需封裝粗細及其他規格的詳細資料，請參閱[55 「Microsoft Surface hub 技術資訊](surface-hub-technical-55.md)或[84」 microsoft surface hub 技術資訊](surface-hub-technical-84.md)。
 
@@ -76,22 +76,22 @@ Surface Hub 很大且很厚，所以讓我們知道它何時送達以及安全�
 - 檢查是否需要使用工會勞動來卸載或移動 Surface Hub 的當地勞動同盟規則。   
 - 請勿讓 Surface Hub 留在熱或 humid 環境中。 與任何電腦或顯示器設備一樣，熱源和濕度可能會損壞 Surface Hub。 建議的儲存溫度是32°F 至95°F，其相對濕度低於70%。 
 
-### 移動 Surface Hub
+###  <a name="moving-surface-hub"></a>移動 Surface Hub
 
 在您移動 Surface Hub 前，請確定所有 doorways、門限、hallways 和電梯都足夠大以適合它。 如需 Surface Hub 在其發售容器中的大小和寬度的詳細資訊，請參閱[55 「Microsoft Surface hub 技術資訊](surface-hub-technical-55.md)或[84」 microsoft surface hub 技術資訊](surface-hub-technical-84.md)。
 
-### 解包 Surface 中樞
+###  <a name="unpacking-surface-hub"></a>解包 Surface 中樞
 
 如需解包資訊，請參閱隨附容器中的解包指南。 您可以在開啟裝運容器之前開啟解包指示。  您也可以在以下位置找到這些指示：https://www.microsoft.com/surface/support/surface-hub
 
 >[!IMPORTANT]
 >保留並儲存所有 Surface Hub 運輸材料，包括托盒、集裝箱及螺絲，以免您需要將 Surface Hub 傳送到新位置或傳送它以進行修復。 針對 84 "Surface Hub，請保留抬起控點。 
 
-### 抬起 Surface Hub
+###  <a name="lifting-surface-hub"></a>抬起 Surface Hub
 
 55 "Surface Hub 需要兩個人員才能安全地抬起及裝入。 84 "Surface Hub 需要四個人員才能安全地抬起及裝入。 那些協助必須能夠將70磅提升為 waist 的高度。 如需有關抬起 Surface Hub 的詳細資料，請參閱解包及安裝指南。 您可以在此找到 https://www.microsoft.com/surface/support/surface-hub 。
 
-## 安裝和設定
+##  <a name="mounting-and-setup"></a>安裝和設定
 
 如需詳細指示，請參閱您的安裝指南 https://www.microsoft.com/surface/support/surface-hub 。 
 
@@ -106,7 +106,7 @@ Surface Hub 很大且很厚，所以讓我們知道它何時送達以及安全�
 - [Surface Hub 裝載並代表資料工作表](https://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf)
 - [Surface Hub 支架和牆安裝規格](https://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf)
 
-## 連接體驗
+##  <a name="the-connect-experience"></a>連接體驗
 
 [連線] 可讓人員將膝上型電腦、平板電腦或手機投影至 Surface Hub 螢幕。 [連線] 可允許無線或有線連線類型。
 
@@ -138,6 +138,6 @@ Surface Hub 很大且很厚，所以讓我們知道它何時送達以及安全�
 
 
 
-## 請參閱
+##  <a name="see-also"></a>請參閱
 
 [觀賞影片 (請在快顯媒體播放器中開啟)](https://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  

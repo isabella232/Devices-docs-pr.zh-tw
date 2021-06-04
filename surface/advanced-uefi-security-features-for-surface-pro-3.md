@@ -27,14 +27,14 @@ ms.locfileid: "11163182"
 
 為了處理 Surface 裝置的安全性控制細節，v3.11.760.0 UEFI 更新提供額外的安全性選項，讓您能夠停用特定硬體裝置或防止從特定裝置啟動。 在裝置上安裝 UEFI 更新之後，您可以手動設定，或執行指令碼來自動設定。
 
-## 手動安裝 UEFI 更新
+##  <a name="manually-install-the-uefi-update"></a>手動安裝 UEFI 更新
 
 
 您必須先安裝 v3.11.760.0 UEFI 更新，才能設定 Surface 裝置的進階安全性功能。 如果您是從 Windows Update 接收更新，則系統已經自動安裝此更新。 如需如何使用 Windows Update 設定 Windows 自動更新的相關詳細資訊，請參閱[如何設定及使用 Windows 的自動更新](https://support.microsoft.com/kb/306525)。
 
 若要在 Surface Pro 3 上更新 UEFI，您能以 Surface Pro 3 韌體和驅動程式套件之一部分的方式下載並安裝 Surface UEFI 更新。 這些韌體和驅動程式套件可從 Microsoft 下載中心上的 [Surface Pro 3 頁面](https://www.microsoft.com/download/details.aspx?id=38826)取得。 您可以在[下載 Surface 裝置的最新韌體和驅動程式](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)找到韌體和驅動程式套件的詳細資訊。 韌體和驅動程式套件將以獨立的 Windows Installer (.msi) 和封存 (.zip) 格式提供。 若要深入了解上述兩種格式，以及如何使用它們來更新驅動程式，請參閱[管理 Surface 的驅動程式和韌體更新](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates)。
 
-## 手動設定額外的安全性設定
+##  <a name="manually-configure-additional-security-settings"></a>手動設定額外的安全性設定
 
 
 >[!NOTE]
@@ -56,7 +56,7 @@ ms.locfileid: "11163182"
 
  
 
-## 自動化其他安全性設定
+##  <a name="automate-additional-security-settings"></a>自動化其他安全性設定
 
 
 身為具備系統管理員權限的 IT 專業人員，您可以利用能在 Microsoft 下載中心取得的 [Surface Pro 3 韌體工具 (476 KB)](https://go.microsoft.com/fwlink/p/?LinkID=618038)，來自動化設定 UEFI 設定。 這些工具會安裝可從任何自訂的應用程式或指令碼呼叫的 .NET 組件。

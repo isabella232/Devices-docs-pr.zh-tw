@@ -29,7 +29,7 @@ ms.locfileid: "10831276"
 
 如需 SEMM 的詳細資訊，請參閱[Microsoft Surface Enterprise 管理模式](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)。
 
-## 從 SEMM 取消註冊 Surface 裝置與 Surface UEFI 重設套件
+##  <a name="unenroll-a-surface-device-from-semm-with-a-surface-uefi-reset-package"></a>從 SEMM 取消註冊 Surface 裝置與 Surface UEFI 重設套件
 
 Surface UEFI 重設套件是您用來從 SEMM 取消註冊 Surface 裝置的主要方法。 就像 Surface UEFI 設定套件一樣，reset 套件是在裝置上配置 SEMM 的 Windows Installer （.msi）檔案。 與設定套件不同的是，重設套件會將 Surface 裝置上的 Surface UEFI 設定重設為預設設定、移除 SEMM 憑證，以及將裝置從 SEMM 取消註冊。
 
@@ -74,7 +74,7 @@ Surface UEFI 重設套件是您用來從 SEMM 取消註冊 Surface 裝置的主�
 
 *圖 5. [程式和功能] 中的 [Microsoft Surface Configuration 套件] 專案出現的狀態表示裝置已註冊 SEMM*
 
-## 從 SEMM 取消註冊 Surface 裝置與恢復要求
+##  <a name="unenroll-a-surface-device-from-semm-with-a-recovery-request"></a>從 SEMM 取消註冊 Surface 裝置與恢復要求
 
 在某些情況下，Surface UEFI 重設套件可能不是將 Surface 裝置從 SEMM 取消註冊的可行選項（例如，Windows 無法使用的位置）。 在這些案例中，您可以使用從 Surface UEFI 中產生的復原要求，取消註冊裝置。 即使在您沒有 Surface UEFI 密碼的裝置上，也可以啟動復原要求處理常式。
 

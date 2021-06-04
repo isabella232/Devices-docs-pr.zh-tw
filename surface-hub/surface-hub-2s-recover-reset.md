@@ -24,7 +24,7 @@ ms.locfileid: "11342973"
 
 若要開始，請以系統管理員認證來登錄 Surface Hub 2S、開啟 **設定應用程式、** 選取更新 **&安全性**， **然後選取復原**。
 
-## 重設裝置
+##  <a name="reset-device"></a>重設裝置
 
    > [!IMPORTANT]
    > 在重設裝置之前，請確認您擁有 BitLocker 金鑰，因為稍後會提示您。 若要深入瞭解，請參閱儲存 [BitLocker 金鑰](save-bitlocker-key-surface-hub.md)。
@@ -44,11 +44,11 @@ ms.locfileid: "11342973"
    > ![*Surface Hub 2S 的重設及復原*](images/sh2-reset.png)
    <br/>*圖 1。 Surface Hub 2S 的重設及復原* 
 
-## 使用 USB 修復磁碟機復原 Surface Hub 2S
+##  <a name="recover-surface-hub-2s-by-using-a-usb-recovery-drive"></a>使用 USB 修復磁碟機復原 Surface Hub 2S
 
 Surface Hub 2S 的新功能，現在您可以使用修復映射重新安裝裝置。
 
-### 從 USB 磁碟機進行復原
+###  <a name="recovery-from-a-usb-drive"></a>從 USB 磁碟機進行復原
 
 使用 Surface Hub 2S，您可以使用修復映射重新安裝裝置。 這樣一來，如果您遺失 BitLocker 金鑰，或如果您不再擁有設定應用程式的系統管理員認證，您可以將裝置重新安裝到出廠設定。
 
@@ -90,6 +90,6 @@ Surface Hub 2S 的新功能，現在您可以使用修復映射重新安裝裝�
 
 第一次設定畫面出現時，請移除 USB 磁碟機。
 
-## 連絡客戶支援
+##  <a name="contact-support"></a>連絡客戶支援
 
 如果您有任何問題或需要協助，您可以 [建立支援要求](https://support.microsoft.com/supportforbusiness/productselection)。

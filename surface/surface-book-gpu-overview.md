@@ -21,7 +21,7 @@ ms.locfileid: "10831195"
 ---
 # Surface Book 3 GPU 技術概述
 
-## 簡介
+##  <a name="introduction"></a>簡介
 
 表面書籍3是功能最強大的 Surface 膝上型電腦，可將完整新式的計算和圖形功能整合成其著名的可分離形式。  由四核 Gen 英特爾®核心™ i7 和 NVIDIA® Quadro RTX™3000圖形處理單元（GPU）在15寸模型上，Surface Book 3 會提供多種配置供消費者、創造性專業人員、架構師、工程師及資料科學家使用。 本文說明在 Surface Book 3 的13英寸及15寸模型之間的 GPU 配置之間的主要差異。
 
@@ -29,30 +29,30 @@ ms.locfileid: "10831195"
 
 在鍵盤基底內建，額外的 NVIDIA GPU 提供了先進的圖形轉譯功能，且有兩種主要的設定： GeForce®® GTX 為消費者或創造性專業人員提供的 1650/1660 Ti，以及針對需要先進圖形或深入學習功能之其他商務專業人員的 Quadro RTX 3000。 本文也說明如何透過指定哪些 app 應該使用整合 iGPU 與離散 NVIDIA GPU，來優化 Gpu 的 app 利用率。
 
-## Surface Book 3 Gpu
+##  <a name="surface-book-3-gpus"></a>Surface Book 3 Gpu
 
 本節說明在 Surface Book 3 模型之間的整合和離散 Gpu。 如需所有模型的配置詳細資料，請參閱[附錄 A： Surface Book 3 sku](#)。
 
-### 英特爾虹彩™加上圖形
+###  <a name="intel-iris™-plus-graphics"></a>英特爾虹彩™加上圖形
 
 所有 Surface Book 3 模型所含的整合 GPU （iGPU）結合了較寬的圖形引擎和重新設計的記憶體控制器（支援 LPDDR4X）。 在大部分 Surface Book 3 模型上安裝為次要 GPU，英特爾虹彩加上圖形函數是核心 i5、13.5 寸模型中的單數 GPU。 雖然在 Surface Book 3 行中 nominally 進入層級裝置，但它提供高級圖形功能，讓消費者、hobbyists 和線上製作者執行最新的生產力軟體（例如 Adobe 創意雲端），或在1080p 中欣賞遊戲標題。  
 
-### NVIDIA GeForce GTX 1650
+###  <a name="nvidia-geforce-gtx-1650"></a>NVIDIA GeForce GTX 1650
 
 NVIDIA GeForce GTX 1650 （含最大的 Q 設計）可提供核心流式處理多處理器的主要升級，以更有效率地處理新式遊戲的複雜圖形。 其浮點數和整數運算的並存執行會提高現代遊戲的計算繁重工作負載的效能。 新的整合記憶體架構，其前置任務的快取都可在複雜的新式遊戲中取得較佳的效能。 新的陰影改良功能改善效能、增強影像品質，並提供新的幾何複雜性層次。
 
-### NVIDIA GeForce GTX 1660 Ti
+###  <a name="nvidia-geforce-gtx-1660-ti"></a>NVIDIA GeForce GTX 1660 Ti
 
 與 GeForce GTX 1650 相比，速度較快的 GeForce GTX 1660 Ti 提供了 Surface Book 3 的其他效能改善，包括新的和升級的 NVIDIA 編碼器，讓消費者、玩家、live streamers 和創造性的專業人員都能更好。
 
 您有 6 GB 的 GDDR6 圖形記憶體，配有 NVIDIA GeForce GTX 1660 TI 的 Surface Book 3 模型，在執行最新式的標題或 livestreaming 時，就能提供最佳的商業生產力軟體和流行的遊戲速度。 有了選用的 2 TB SSD （僅適用于美國），15英寸模型（含 GeForce GTX 1660 Ti）可提供任何 Surface Book 3 裝置的最大儲存空間。
 
-### NVIDIA Quadro RTX 3000
+###  <a name="nvidia-quadro-rtx-3000"></a>NVIDIA Quadro RTX 3000
 
 NVIDIA Quadro RTX 3000 可為專業使用者提供幾項重要功能： ray 追蹤轉譯與 AI 加速，以及高級圖形與計算效能。 30 RT 核、240 tensor 核心，以及 6 GB 的 GDDR6 圖形記憶體可支援多種高級工作負載，包括工作中工作流程、3D 內容建立、高級影片編輯、專業廣播和多個 app 工作流程。 企業級硬體和軟體支援整合部署工具，以最大化正常運作時間並最小化 IT 支援需求。 針對世界上最先進的軟體認證，Quadro 驅動程式已針對專業應用程式進行優化，且經過調整、測試和驗證，以提供應用程式認證、企業級穩定性、可靠性、可用性，以及支援延伸產品的可用性。
  
 
-## 在 Surface Book 3 中比較 Gpu
+##  <a name="comparing-gpus-across-surface-book-3"></a>在 Surface Book 3 中比較 Gpu
 
 NVIDIA Gpu 可為使用者提供出色的遊戲、即時資料流及內容建立效能。 GeForce GTX 產品非常適合玩家和內容製作者。 Quadro RTX 產品以專業使用者為目標，在遊戲和內容建立時提供出色的效能，同時也新增下列功能：
 
@@ -100,7 +100,7 @@ NVIDIA Gpu 可為使用者提供出色的遊戲、即時資料流及內容建立
  1. *建議執行*
  2.  *支援*
 
-## 在 Surface Book 3 上優化電源和效能
+##  <a name="optimizing-power-and-performance-on-surface-book-3"></a>在 Surface Book 3 上優化電源和效能
 
 Windows 10 包含具有效能滑杆的節電模式，可讓您最大化 app 效能（以向右滑動），或保持電池使用時間（向左滑動）。 Surface Book 3 實現此功能 algorithmically，以優化下列元件的功率和效能：
 
@@ -113,15 +113,15 @@ Windows 10 包含具有效能滑杆的節電模式，可讓您最大化 app 效�
 
 使用預設設定是作為膝上型電腦或在平板電腦或畫室式模式中分離時的最佳效能。 您可以選取工作列最右邊的電池圖示來存取節電模式。
 
-### 遊戲模式
+###  <a name="game-mode"></a>遊戲模式
 
 Surface Book 3 包含新的遊戲模式，可在啟動時自動選取 [最佳效能] 設定。
 
-### 安全分離
+###  <a name="safe-detach"></a>安全分離
 
 在 Surface Book 3 中新增新功能，可讓您在 app 使用 GPU 時中斷連線。 對於支援的應用程式（例如*Warcraft*），您的工作會移至 iGPU。
 
-### 修改 app 設定，以永遠使用特定的 GPU
+###  <a name="modifying-app-settings-to-always-use-a-specific-gpu"></a>修改 app 設定，以永遠使用特定的 GPU
 
 您可以在節能，但仍支援內建的英特爾圖形及功能更強大的獨立 NVIDIA GPU，並將 GPU 與特定 app 建立關聯。 根據預設，Windows 10 會自動選擇適當的 GPU，並將要求較高的 app 指派給離散的 NVIDIA GPU。 在大部分的情況下，不需要手動調整這些設定。 不過，如果您在使用圖形化苛刻的 app 時，經常會從鍵盤基底分離並重新附加顯示器，您通常需要在分離前先關閉 app。 若要啟用應用程式的連續使用，而不需要在每次拆下或重新附加顯示器時都關閉該 app，您可以將它指派給整合式 GPU，但不會降低圖形效能。  
 
@@ -141,7 +141,7 @@ Surface Book 3 包含新的遊戲模式，可在啟動時自動選取 [最佳效
 3. 若要確認每個應用程式所使用的是哪些 GPU，請開啟 [**工作管理員]，** 選取 [**效能]，** 然後查看 [ **gpu 引擎**] 欄。
 
 
-## 附錄 A： Surface Book 3 Sku
+##  <a name="appendix-a:-surface-book-3-skus"></a>附錄 A： Surface Book 3 Sku
 
 | **顯示器**   | **處理者**                     | **GPU**                                                                                              | **RAM**    | **儲存體** |
 | ------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------- | ----------- |
@@ -159,12 +159,12 @@ Surface Book 3 包含新的遊戲模式，可在啟動時自動選取 [最佳效
 > [!NOTE]
 > 2TB SSD 僅適用于美國： Surface Book 3 15 "與 NVIDIA GTX 1660Ti
 
-## 摘要
+##  <a name="summary"></a>摘要
 
 針對效能建立，Surface Book 3 包含不同的 GPU 設定，以符合特定的工作負載和使用需求。 整合式英特爾虹彩圖形 GPU 在進入層級核心 i5 裝置上是唯一的 GPU，另一種是所有其他模型上的次要 GPU。 GeForce GTX 1650 的主要升級核心流式處理多處理器，以更有效率地執行複雜的圖形。 GeForce GTX 1660 Ti 的快速協助工具提供 Surface Book 3，讓客戶、玩家、live streamers 及創造性專業人員更能充分發揮效能。 Quadro RTX 3000 可為專業版使用者解除許多重要的功能： ray 追蹤轉譯與 AI 加速，以及高級圖形與計算效能。
 
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [Surface Book 3 Quadro RTX 3000 技術概述](surface-book-quadro.md)
 - [商務用 Surface](https://www.microsoft.com/surface/business)

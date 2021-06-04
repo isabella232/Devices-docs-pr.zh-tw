@@ -44,14 +44,14 @@ ms.locfileid: "10831561"
 
  
 
-## 案例 1：使用 MDT 2013 執行 OOBE 時的無線網路功能
+##  <a name="scenario-1:-wireless-networking-in-oobe-with-mdt-2013"></a>案例 1：使用 MDT 2013 執行 OOBE 時的無線網路功能
 
 
 當 OOBE 執行期間有無線網路介面卡存在時，會顯示 \[加入無線網路\] 頁面，並提示使用者連線至無線網路。**** 部署技術 (包含 MDT 2013) 不會自動隱藏此頁面，因此即使已將部署設定為完全自動化仍會顯示此頁面。
 
 為了確保自動部署不會因為此頁面而停止，必須在回應檔案 **HideWirelessSetupInOOBE** 中設定額外的設定來隱藏此頁面。 您可以在[自動 Windows 設定參考](https://technet.microsoft.com/library/ff716213.aspx)中找到關於 **HideWirelessSetupInOOBE** 設定的其他資訊。
 
-## 案例 2：在 OOBE 中配對 Surface 手寫筆
+##  <a name="scenario-2:-surface-pen-pairing-in-oobe"></a>案例 2：在 OOBE 中配對 Surface 手寫筆
 
 
 當您首次將 Surface Pro 3、Surface Pro 4、Surface Book 或 Surface Studio 從套件中取出並啟動時，原廠映像的初次執行體驗會包含一個提示，要求您將隨附的 Surface 手寫筆與裝置配對。 只有裝置出廠時隨附的原廠映象會提供此提示，其他用於部署的映像則不會，例如從「大量授權服務中心」下載的 Windows 企業版安裝媒體。 因為在此體驗之外配對藍牙 Surface 手寫筆需要進入「控制台」或「電腦設定」並手動配對藍牙裝置，因此您可能想要讓使用者或技術人員使用此提示來進行配對作業。

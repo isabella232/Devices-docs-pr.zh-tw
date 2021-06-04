@@ -24,7 +24,7 @@ ms.locfileid: "10832102"
 
 您可以在 &#91;設定&#93; 中變更裝置帳戶，如果尚未佈建任何帳戶，即可新增一個，或是變更已經佈建之帳戶的任何屬性。
 
-## 詳細資訊
+##  <a name="details"></a>詳細資訊
 
 
 <table>
@@ -72,7 +72,7 @@ ms.locfileid: "10832102"
 
  
 
-## 發生什麼事？
+##  <a name="what-happened"></a>發生什麼事？
 
 
 UPN 與密碼是用來驗證 AD 或 Azure AD 中的帳戶。 如果驗證失敗，您可能需要提供網域和使用者名稱。
@@ -81,7 +81,7 @@ UPN 與密碼是用來驗證 AD 或 Azure AD 中的帳戶。 如果驗證失敗�
 
 如果裝置找不到與登入認證相關聯的伺服器，就需要提供 Exchange 伺服器位址。 Microsoft Surface Hub 將使用 Exchange Server 來與 ActiveSync 通訊，其會在裝置上啟用數個重要功能。
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)

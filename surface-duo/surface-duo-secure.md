@@ -34,7 +34,7 @@ Surface 雙核在每一層中都有以較緊密的硬體、固件和軟體內建
 - **Microsoft Defender ATP。** Windows 10 版企業的防毒軟體和惡意程式碼保護軟體現已可供從 Intune 管理的 Android 裝置使用。 若要深入瞭解，請參閱 [Android 版 Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android)。 
 
 
-## 行動裝置管理安全性
+##  <a name="mobile-device-management-security"></a>行動裝置管理安全性
 
 在公司環境中使用企業行動裝置管理 (EMM) 方案來保護 Surface 雙核，提供一致的一組保護工具、技術和最佳做法，您可以根據您的組織和規範需求進行量身定制。 多種管理 Api 為 IT 部門提供工具，協助防止資料洩露，並在各種情況下強制執行合規性。 多重設定檔支援和裝置管理選項可讓公司和個人資料保持安全，協助保證公司資料的安全。
 
@@ -43,13 +43,13 @@ MDM 安全性是以一組不斷擴大的配置技術為基礎，可讓使用者�
 例如，您可能想要加強裝置驗證，方法是要求使用者輸入6位數的字母數位 pin 以及雙因素驗證。  您可能會想要限制使用者可以註冊的裝置，以協助確保您遵守授許可權制，或避免將存取權授予「已越獄」手機或其他不受支援的裝置類型。
 Intune 和其他 Emm 為組織提供根據其需求管理裝置的靈活性。
 
-## App 保護原則
+##  <a name="app-protection-policies"></a>App 保護原則
 
 App 保護原則 (應用程式) 是一些規則，可確保組織的資料在受管理的應用程式中保持安全或包含。 原則可以是當使用者嘗試存取或移動「企業」資料，或當使用者位於應用程式內時，禁止或監視的一組動作時所強制執行的規則。 受管理的 app 是已套用 app 保護原則且可由 Intune 管理的 app。
 
 App 保護原則可讓您在應用程式中管理及保護貴組織的資料。 許多生產力應用程式（例如 Microsoft Office 應用程式）都可以由 Intune MAM 來管理。 請參閱可供公用使用的 [Microsoft Intune 受保護 app](https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps) 正式清單。
 
-## 管理 Surface 雙核的安全性考慮
+##  <a name="security-considerations-for-managing-surface-duo"></a>管理 Surface 雙核的安全性考慮
 
 行動裝置管理解決方案中提供的原則設定數量增加，讓組織能夠調整保護層級，以符合其特定需求。 為了協助組織為 Surface 雙核 (或任何其他 Android 裝置的安全性設定設定優先順序) ，Intune 已引進其 [Android 企業安全性配置架構](https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework) ，這些架構分為幾個不同的配置案例，提供工作設定檔和完全管理案例的指導方針。
  

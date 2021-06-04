@@ -61,7 +61,7 @@ EDID 偏好時間，有線連接 |  1920 x 1080，60Hz 垂直刷新
 > - [本機管理 Surface Hub 設定](local-management-surface-hub-settings.md)
 > - [SurfaceHub CSP-Windows 用戶端管理](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
-## 取代電腦連接 
+##  <a name="replacement-pc-connections"></a>取代電腦連接 
 
 連接器和位置 | Label | 說明
 --- | --- | ---
@@ -72,7 +72,7 @@ USB 類型 B、下 i/o | ![](images/usb.png) | 提供 USB 連線，以取代電�
 USB 類型 B、下 i/o | ![](images/usb.png) | 提供集成中樞的 USB 連線。
 
 
-## 有線連接連接
+##  <a name="wired-connect-connections"></a>有線連接連接
 
 連接器和位置 | Label | 說明
 --- | --- | ---
@@ -82,7 +82,7 @@ VGA、下 i/o | ![](images/vga.png) | 提供有線連線電腦的 VGA 輸入。
 3.5 mm，底部 i/o | ![](images/35mm.png) | 提供類比音訊輸入。
 USB 類型 B、下 i/o | ![](images/usb.png) | 提供 USB 連線以取得視頻攝取 touchback。
 
-## 其他連接
+##  <a name="additional-connections"></a>其他連接
 
 連接器和位置 | Label | 說明
 --- | --- | ---
@@ -100,7 +100,7 @@ RJ11、下 i/o | ![](images/rj11.png) | 連接到會議室控制系統。
 
 
 
-## 埠與間隙的圖表
+##  <a name="diagrams-of-ports-and-clearances"></a>埠與間隙的圖表
 
 ***84 [Surface Hub] 的上方視圖***
 

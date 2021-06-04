@@ -31,11 +31,11 @@ ms.locfileid: "11114631"
 
 雖然企業級軟體分發方案會繼續發展，但集中管理更新的商業基本原理仍會保持不變：維持 Surface 裝置的安全性，並使用最新的作業系統及功能改善來保持更新。 這對於維持穩定的生產環境至關重要，並確保不會封鎖使用者的生產力。 本文概述針對大型組織完成這些目標所建議的工具與程式。
 
-## 在商業環境中的中央更新管理
+##  <a name="central-update-management-in-commercial-environments"></a>在商業環境中的中央更新管理
 
 Microsoft 有精簡的工具可用於管理裝置，包括驅動程式和固件更新--融入名為 [Microsoft 端點管理員](https://devicemanagement.microsoft.com/) 系統管理中心且從 [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/#home)存取的單一整合體驗。
 
-### 使用 Configuration Manager 和 Intune 管理更新
+###  <a name="manage-updates-with-configuration-manager-and-intune"></a>使用 Configuration Manager 和 Intune 管理更新
 
 Microsoft 端點 Configuration Manager 可讓您與 Configuration Manager 用戶端同步處理及部署 Surface 固件及驅動程式更新。 與 Microsoft Intune 整合可讓您在同一個位置查看所有受管理、共同管理和合作夥伴管理的裝置。 這是大型組織管理 Surface 更新的建議方案。
 
@@ -45,7 +45,7 @@ Microsoft 端點 Configuration Manager 可讓您與 Configuration Manager 用戶
 - [使用 Configuration Manager 部署應用程式](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications)
 - [端點建構管理員檔](https://docs.microsoft.com/configmgr/)
 
-### 使用 Microsoft 部署工具組管理更新
+###  <a name="manage-updates-with-microsoft-deployment-toolkit"></a>使用 Microsoft 部署工具組管理更新
 
 [端點設定管理員] 中包含 Microsoft 部署工具組 (MDT) 。 它包含您可能會想要使用的選用部署工具（視您的環境而定）。 其中包括 Windows 評估與部署套件 (Windows ADK) 、Windows 系統影像管理員 (Windows SIM) 、部署影像服務與管理 (DISM) ，以及使用者狀態遷移工具 (USMT) 。 您可以從 [ [Microsoft 部署工具](https://www.microsoft.com/download/details.aspx?id=54259)] 的 [下載] 頁面下載最新版本的 MDT。
 
@@ -63,26 +63,26 @@ Microsoft 端點 Configuration Manager 可讓您與 Configuration Manager 用戶
 
 端點設定管理員和 MDT 都在部署程式期間使用 Windows 預先安裝環境 (WindowsPE) 。 WindowsPE 僅支援一組有限的基本驅動程式，例如網路介面卡和儲存控制器的驅動程式。 不屬於 WindowsPE 的 Windows 元件驅動程式可能會產生錯誤。 最佳做法是，將部署程式設定為在 WindowsPE 階段只使用所需的驅動程式，就能避免這類錯誤。
 
-### Endpoint Configuration Manager
+###  <a name="endpoint-configuration-manager"></a>Endpoint Configuration Manager
 
 從端點設定管理員開始，您可以使用 Configuration Manager 用戶端來同步處理及部署 Microsoft Surface 固件與驅動程式更新。 如需其他資訊，請參閱 KB 4098906， [如何在 Configuration Manager 中管理表面驅動程式更新](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)。
 
-## 支援的裝置
+##  <a name="supported-devices"></a>支援的裝置
 
 您可以在 Surface Pro 2 和更新版本的裝置上使用可下載的 .msi 檔案，除了在) ARM 上執行 Windows 10 的 Surface Pro X 外 (。
 
-## 使用 DFCI 管理固件
+##  <a name="managing-firmware-with-dfci"></a>使用 DFCI 管理固件
 
 透過將裝置固件配置介面 (DFCI) 內置在 Intune 中的設定檔 (現已在 [公用預覽版](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)) 中提供，Surface UEFI 管理會將現代管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零觸控配，消除 BIOS 密碼，提供 (的安全性設定，包括啟動選項和內建的週邊) ，以及未來的高級安全性案例奠定基礎。 如需詳細資訊，請參閱下列文章：
 
 - [Surface UEFI 設定的 Intune 管理](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
 - [Ignite 2019：宣佈從 Intune 遠端系統管理 SURFACE UEFI 設定](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)。
 
-## 更新部署程式的最佳做法
+##  <a name="best-practices-for-update-deployment-processes"></a>更新部署程式的最佳做法
 
 若要維持穩定的環境，我們強烈建議您使用最新版本的 Windows 10 維護同位。  如需最佳做法建議，請參閱 [建立適用于 Windows 10 更新的部署環](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)。
 
-## 可下載的 Surface 更新套件
+##  <a name="downloadable-surface-update-packages"></a>可下載的 Surface 更新套件
 
 Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surface 裝置所需的所有必要累計驅動程式和固件更新。 更新套件可能包含以下部分或所有元件：
 
@@ -96,7 +96,7 @@ Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surfa
 - 管理引擎 (我) 
 - 整合的可延伸韌體介面 (UEFI) 
 
-### 下載 .msi 檔案
+###  <a name="downloading-.msi-files"></a>下載 .msi 檔案
 
 1. 在 Microsoft 下載中心，流覽以 [下載 Surface 的驅動程式和固件](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware) 。
 2. 選取與 Surface 模型和 Windows 版本相符的 .msi 檔案名。 .Msi 檔案名包括安裝驅動程式和固件所需的最低 Windows 組建編號。 例如，請參閱下圖。 若要更新具有 Windows 10 組建18362的 Surface Book 2，請選擇 [ **SurfaceBook2_Win10_18362_19.101.13994.msi]。** 針對 Windows 10 版組建16299的 Surface Book 2，請選擇 [ **SurfaceBook2_Win10_16299_1803509_3.msi**]。
@@ -105,7 +105,7 @@ Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surfa
 
     *圖 1。 下載 Surface 更新*
 
-### 您的 Surface. msi 命名慣例
+###  <a name="surface-.msi-naming-convention"></a>您的 Surface. msi 命名慣例
 
 自2019年8月起，.msi 檔案使用下列命名慣例：
 
@@ -126,7 +126,7 @@ Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surfa
   - **月份的分鐘數：** 44195
 - **版本：** 0 (第一次發行此版本) 
 
-### 傳統 Surface. msi 命名慣例
+###  <a name="legacy-surface-.msi-naming-convention"></a>傳統 Surface. msi 命名慣例
 
 舊版 .msi 檔案 (在) 2019 年8月之前建立的檔案，但已使用相同的整體命名公式，但使用不同的方法來衍生版本號碼。
 
@@ -145,7 +145,7 @@ Windows 10 的特定版本有個別的 .msi 檔案，每個檔案都包含 Surfa
   - **產品版本號碼：** 07 (surface pro 6 正式是第七版 Surface pro) 
 - **版本：** 0 (第一次發行此版本) 
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [下載 Surface 的驅動程式和固件](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware)
 - [如何在 Configuration Manager 中管理 Surface driver 更新](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)

@@ -20,7 +20,7 @@ ms.locfileid: "10831458"
 ---
 # Surface Hub 2S 快速入門
 
-## 解包 Surface 中樞的秒
+##  <a name="unpack-surface-hub-2s"></a>解包 Surface 中樞的秒
 
 1. 使用方塊每側的控點，將其移至您要設定的位置。
 2. 開啟之前，請先移除前面及背面的剪輯（4），然後使用控點將其放在方塊上。
@@ -29,7 +29,7 @@ ms.locfileid: "10831458"
 
 如需有關[取消裝箱及設定](https://youtu.be/fCrxdNXvru4)的詳細資訊，請參閱這段影片。
 
-## 安裝並調整畫筆
+##  <a name="install-and-adjust-pen"></a>安裝並調整畫筆
 
 1. 將 Surface Hub 2 手寫筆連接到裝置的喜好側邊。
 
@@ -39,11 +39,11 @@ ms.locfileid: "10831458"
 
 ![* 調整滑杆以變更筆壓力 *](images/sh2-pen-pressure.png) <br>
 
-## 安裝攝影機
+##  <a name="install-camera"></a>安裝攝影機
 
 從相機中移除透鏡 cling，然後將它附加到 Surface Hub 2 的最上方的 USB 埠。
 
-## 啟動 Surface Hub 2 秒
+##  <a name="start-surface-hub-2s"></a>啟動 Surface Hub 2 秒
 
 1. 將電源線插入裝置背面，然後將它插入電源插座。 透過安裝方案上的任何電纜導軌來執行纜線，並移除螢幕 clang。
 2. 若要開始，請按右下角的 [電源] 按鈕。

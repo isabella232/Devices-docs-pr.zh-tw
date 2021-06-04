@@ -40,7 +40,7 @@ ms.locfileid: "11271060"
 >[!NOTE]
 >只有 Windows 10 支援 Microsoft Surface UEFI 配置器。
 
-## 建立 Surface UEFI 配置套件
+##  <a name="create-a-surface-uefi-configuration-package"></a>建立 Surface UEFI 配置套件
 
 Surface UEFI 配置套件會執行將 Surface UEFI 設定的新設定套用到 SEMM 中 SEMM 的 Surface 裝置，以及在中註冊 Surface 裝置的角色。 建立配置套件時，您必須具備與 SEMM 搭配使用的簽署憑證，以保護每個 Surface 裝置上的 UEFI 設定。 如需有關 SEMM 憑證需求的詳細資訊，請參閱 [Microsoft Surface Enterprise 管理模式](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)。
 
@@ -100,7 +100,7 @@ Surface UEFI 配置套件會執行將 Surface UEFI 設定的新設定套用到 S
 >[!NOTE]
 >建立 Surface UEFI 配置套件時，會在桌面上建立記錄檔案，並提供 [設定套件設定] 和 [選項] 的詳細資料。
 
-## 在 SEMM 中註冊 Surface 裝置
+##  <a name="enroll-a-surface-device-in-semm"></a>在 SEMM 中註冊 Surface 裝置
 在執行 Surface UEFI 設定套件時，會在 Surface 裝置的固件儲存區中暫存 SEMM 憑證和 Surface UEFI 配置檔案。 當 Surface 裝置重新開機時，Surface UEFI 會處理這些檔案，並開始應用 Surface UEFI 設定或在 SEMM 中註冊 Surface 裝置的程式，如圖7所示。
 
 ![SEMM 處理常式以取得 Surface UEFI 或登記的配置](images/surface-semm-enroll-fig7.png "SEMM process for configuration of Surface UEFI or enrollment")
@@ -143,7 +143,7 @@ Surface UEFI 配置套件會執行將 Surface UEFI 設定的新設定套用到 S
 *圖 11. Surface UEFI 企業版管理頁面*
 
 
-## 使用 SEMM 設定 Surface UEFI 設定
+##  <a name="configure-surface-uefi-settings-with-semm"></a>使用 SEMM 設定 Surface UEFI 設定
 
 在 SEMM 中註冊裝置之後，您可以執行使用相同 SEMM 憑證簽署的 Surface UEFI 配置套件，以套用新的 Surface UEFI 設定。 在下次啟動裝置時，系統會自動套用這些設定，而不需要使用者進行任何互動。 您可以使用應用程式部署解決方案（例如 Microsoft 端點設定管理員），將 Surface UEFI 配置套件部署到 Surface 裝置，以變更或管理 Surface UEFI 中的設定。
 

@@ -26,13 +26,13 @@ Microsoft Surface Hub 是一種多合一的生產力裝置，可讓團隊更輕�
 
 本文章的預期物件是，也就是想要在公司環境中使用最佳安全性設定來部署 Surface Hub 的 IT 和網路系統管理員。
 
-## 概觀
+##  <a name="overview"></a>概觀
 
 Surface Hub 的安全性廣泛地在 Wi-fi Direct/Miracast 以及相關聯的802.11、Wi-fi 保護存取（WPA2）及無線保護設定（WPS）標準上。 因為裝置只支援 WPS （而不是 WPA2 預共用金鑰 [PSK] 或 WPA2 Enterprise），所以通常會簡化與802.11 加密相關的問題。
 
 Surface Hub 與 Miracast 接收器的欄位在 par 上運作。 因此，它容易受到與所有以 WPS 為基礎的無線網路裝置類似的入侵集合。 但內建其他預防措施的是 WPS Surface Hub 實現。 此外，它的內部架構可協助防止已將 Wi-fi Direct/Miracast 層的攻擊者移到其他攻擊表面，以及已連線的商業網路。
 
-## Wi-Fi Direct 背景
+##  <a name="wi-fi-direct-background"></a>Wi-Fi Direct 背景
 
 Miracast 是 wi-fi [顯示標準] 的一部分，它受 Wi-fi Direct 通訊協定支援。 現代行動裝置的畫面分享以及共同作業功能支援這些標準。
 
@@ -46,7 +46,7 @@ Wi-fi Direct 的安全性是由 WPA2 在 WPS 標準下提供的。 裝置的驗�
 
 Wi-fi Direct 群組會透過協商通訊協定來決定*群組擁有*者（GO），這會模仿已建立的 wi-fi Direct 群組的「工作站」或「存取點」功能。 Wi-fi Direct GO 提供驗證（透過「內部註冊機構」），並協助上游網路連線。 針對 Surface Hub，不會發生這種轉協商。 網路只會以「自治」模式運作，而 Surface Hub 則永遠是群組擁有者。 最後，Surface Hub 本身不會以用戶端的身分加入其他 Wi-fi Direct 網路。
 
-## Surface Hub 如何解決 Wi-fi 直接漏洞
+##  <a name="how-surface-hub-addresses-wi-fi-direct-vulnerabilities"></a>Surface Hub 如何解決 Wi-fi 直接漏洞
 
 **Wi-fi Direct 邀請、廣播和探索流程中的漏洞與攻擊：** Wi-fi Direct/Miracast 攻擊可能會以群組建立、對等搜尋、裝置廣播或邀請程式中的弱點為目標。
 
@@ -106,7 +106,7 @@ Wi-fi Direct 群組會透過協商通訊協定來決定*群組擁有*者（GO）
 | --- | --- |
 | 攻擊者可透過電子欺騙或仿製目標網路的無線名稱或「SSID」來誘讓使用者連接到虛假的惡意網路。 透過支援無人驗證的自動加入 Miracast，攻擊者可以捕獲所需的顯示資料，或在連線裝置上啟動網路攻擊。 | 在無法加入欺騙 Surface Hub 的情況下，此漏洞會以兩種方式部分緩解。 首先，任何可能的攻擊必須要在實際的 Wi-Fi 範圍內。 其次，此攻擊只能在第一次連線期間進行。 後續連線會使用永久性 Wi-fi Direct 群組，而且在未來的中樞使用期間，Windows 將會記住並優先處理這個先前的連接。 （注意：不考慮在此報告中假冒 MAC 位址、Wi-fi 通道及 SSID，可能會造成不一致的 Wi-fi 行為。）總的來說，對於缺少企業版 WPA2 通訊協定的任何802.11 無線網路（例如 EAP-TLS 或 EAP-PWD，不支援哪些 Wi-fi），這個缺點是一個基本問題。 |
 
-## Surface Hub 強化指導方針
+##  <a name="surface-hub-hardening-guidelines"></a>Surface Hub 強化指導方針
 
 Surface Hub 可協助共同作業，並讓使用者快速並有效率地開始或加入會議。 Surface Hub 的預設 Wi-fi Direct 設定已針對此案例進行優化。
 
@@ -118,7 +118,7 @@ Surface Hub 可協助共同作業，並讓使用者快速並有效率地開始�
 - [安裝定期系統更新](manage-windows-updates-for-surface-hub.md) 
 - 更新 Miracast 設定以停用自動認可模式
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [Wi-Fi Direct 規格](http://www.wi-fi.org/discover-wi-fi/wi-fi-direct)
 - [無線保護設定 (WPS) 規格](http://www.wi-fi.org/discover-wi-fi/wi-fi-protected-setup)

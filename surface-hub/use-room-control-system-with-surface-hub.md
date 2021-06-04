@@ -167,7 +167,7 @@ Surface Hub 可以處於下列其中一個電源狀態。
 
  
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)

@@ -24,12 +24,12 @@ ms.locfileid: "10831313"
 
 Microsoft Surface Hub 為您的公司網路和網際網路的網路連線提供兩個選項：無線及有線。 雖然兩者都提供網路存取權，但我們建議您使用有線連線。
 
-## 修改、新增或檢閱網路連線
+##  <a name="modifying,-adding,-or-reviewing-a-network-connection"></a>修改、新增或檢閱網路連線
 
 
 如果無法使用有線網路連線，Surface Hub 可以使用無線網路進行網際網路存取。 已適當連線和設定的 Wi-Fi 存取點必須可供使用且位於 Surface Hub 的範圍內。
 
-### 選擇無線存取點
+###  <a name="choose-a-wireless-access-point"></a>選擇無線存取點
 
 1.  在 Surface Hub 上，開啟 **[設定]** 並輸入您的系統管理員認證。
 2.  按一下 **[網路和網際網路]**。 在 **[Wi-Fi]** 下方，選擇存取點。 如果您想要讓 Surface Hub 自動連線到這個存取點，可按一下 **[自動連線]** 。 按一下 **[連線]**。
@@ -40,7 +40,7 @@ Microsoft Surface Hub 為您的公司網路和網際網路的網路連線提供�
 
     ![顯示安全性金鑰和連線到安全 Wi-Fi 密碼提示的影像。](images/networkmgtwireless-02.png)
 
-### 檢閱無線設定
+###  <a name="review-wireless-settings"></a>檢閱無線設定
 
 1.  在 Surface Hub 上，開啟 **[設定]** 並輸入您的系統管理員認證。
 2.  依序按一下 **[網路和網際網路]**、**[Wi-Fi]**，然後按一下 **[進階選項]**。
@@ -48,7 +48,7 @@ Microsoft Surface Hub 為您的公司網路和網際網路的網路連線提供�
 
     ![顯示已連線 Wi-Fi 內容的影像。](images/networkmgtwireless-04.png)
 
-### 檢閱有線設定
+###  <a name="review-wired-settings"></a>檢閱有線設定
 
 1.  在 Surface Hub 上，開啟 **[設定]** 並輸入您的系統管理員認證。
 2.  依序按一下 **[系統]**、**[網路和網際網路]**，然後按一下 [乙太網路] 下方的網路。
@@ -59,7 +59,7 @@ Microsoft Surface Hub 為您的公司網路和網際網路的網路連線提供�
 
     ![顯示乙太網路連線內容的影像。](images/networkmgtwired-02.png)
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)

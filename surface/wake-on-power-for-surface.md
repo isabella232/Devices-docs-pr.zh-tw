@@ -48,14 +48,14 @@ ms.locfileid: "11271557"
 - Surface Pro X 
 
 
-## 概述與先決條件
+##  <a name="overview-and-prerequisites"></a>概述與先決條件
 
 Surface UEFI 設定檔可讓您將個別的 UEFI 設定儲存在 Windows 安裝程式的 .msi 套件中，以發佈至目標裝置。 
 
 > [!NOTE]
 > 本文假設您知道如何使用 SEMM。 如需詳細資訊，請參閱 [ (SEMM) 檔的 Surface Enterprise 管理模式 ](surface-enterprise-management-mode.md) 。
 
-## 啟用喚醒功能
+##  <a name="to-enable-wake-on-power"></a>啟用喚醒功能
 
 1.  下載最新版本的 [SURFACE UEFI 配置](https://www.microsoft.com/download/confirmation.aspx?id=46703)器。
 2.  以系統管理員身分登入您的 Surface 裝置，然後開啟 [ **SURFACE UEFI 配置**單元]，選取 [ **surface 裝置**]，然後選取 **[下一步]**。
@@ -76,7 +76,7 @@ Surface UEFI 設定檔可讓您將個別的 UEFI 設定儲存在 Windows 安裝�
     > 如果這是您第一次將設定提供給您的裝置，系統會提示您同時提供憑證指紋的最後兩個字元。 
 9.  儲存 .msi 套件。 
 
-## 套用 MSI 套件 
+##  <a name="apply-the-msi-package"></a>套用 MSI 套件 
 
 您可以使用軟體發佈工具（例如 Microsoft 端點設定管理員），將 MSI 套件套用到整個網路的裝置。 此套裝程式含在您的本機電腦上安裝套件的步驟。 
 
@@ -96,7 +96,7 @@ Surface UEFI 設定檔可讓您將個別的 UEFI 設定儲存在 Windows 安裝�
 
 [電源開啟] 現已設定。 若要測試設定，請關閉您的裝置，中斷電源連接，然後重新連接電源。 裝置應該會自動啟動。 
 
-## 參考
+##  <a name="references"></a>參考
 
 如需詳細資訊，請參閱下列文章。 
 

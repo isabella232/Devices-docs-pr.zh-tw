@@ -34,7 +34,7 @@ ms.locfileid: "10831713"
 
 您可以從 Microsoft 下載中心下載單一的 zip 壓縮檔，其中的 MSI 安裝檔適用於 PEAP、EAP-FAST 或 Cisco LEAP。 若要下載此檔案，請移至 Microsoft 下載中心的[適用於 IT 專業人員的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703)頁面，按一下**下載**，然後選取 **Cisco EAP-Supplicant Installer.zip** 檔案。
 
-## 使用 MDT 部署 PEAP、EAP-FAST 或 Cisco LEAP
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-mdt"></a>使用 MDT 部署 PEAP、EAP-FAST 或 Cisco LEAP
 
 
 如果您的組織中已經針對 Surface 裝置執行 Windows 部署，您就可以快速且輕鬆地將各通訊協定的安裝檔加入部署共用，並於部署期間設定自動安裝。 您甚至可以設定工作順序，使用相同程序來更新先前部署的 Surface 裝置以支援這些通訊協定。
@@ -83,7 +83,7 @@ ms.locfileid: "10831713"
 
 6.  針對各個所需的通訊協定重複步驟 2 至步驟 5。
 
-## 使用 Configuration Manager 部署 PEAP、EAP-FAST 或 Cisco LEAP
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-configuration-manager"></a>使用 Configuration Manager 部署 PEAP、EAP-FAST 或 Cisco LEAP
 
 
 對於使用 Configuration Manager 管理 Surface 裝置的組織而言，部署 PEAP、EAP-FAST 或 Cisco LEAP 甚至更為容易。 只要將每個 MSI 檔案以應用程式的方式從 Software Library 匯入，並對 Surface 裝置集合設定部署即可。

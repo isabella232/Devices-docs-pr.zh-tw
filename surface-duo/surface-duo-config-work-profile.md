@@ -27,7 +27,7 @@ ms.locfileid: "11326139"
 
 針對 BYOD 部署，工作設定檔會針對工作 app 與資料提供獨立的空間，讓組織完全控制其資料、應用程式及安全性原則，而不會防止員工將其裝置用於個人 app 和資料。
 
-### 設定 Android 企業版工作設定檔
+###  <a name="set-up-android-enterprise-work-profile"></a>設定 Android 企業版工作設定檔
 
 使用工作設定檔管理使用者擁有的 Android 裝置上的公司資料和應用程式。 根據預設，會啟用個人擁有的工作設定檔裝置，且不需要進一步的管理員設定。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "11326139"
      ![選取 [繼續] 以完成設定](images/duo-wp-8.png)<br><br>
      ![完成設定](images/duo-wp-9.png)<br><br>
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [設定 Android 企業作業設定檔的登記](https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll)
 

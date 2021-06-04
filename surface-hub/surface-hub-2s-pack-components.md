@@ -25,7 +25,7 @@ ms.locfileid: "10831481"
 >[!IMPORTANT]  
 >打包您的裝置以進行運送時，請確定您使用的是您的替換裝置的封裝。  
 
-## 如何封裝 Surface Hub 2-2 50 "
+##  <a name="how-to-pack-your-surface-hub-2s-50"></a>如何封裝 Surface Hub 2-2 50 "
 
 您可以使用下列步驟，將 Surface Hub 2-2 50」封裝在運送中。
 
@@ -45,7 +45,7 @@ ms.locfileid: "10831481"
 | **11.** | 關閉四個剪貼畫。                                                                                            | ![關閉四個剪貼畫。](images/surface-hub-2s-repack-13.png)|
 
 
-## 如何取代和封裝 Surface Hub 2 的計算盒式墨水匣
+##  <a name="how-to-replace-and-pack-your-surface-hub-2s-compute-cartridge"></a>如何取代和封裝 Surface Hub 2 的計算盒式墨水匣
 
 使用下列步驟來移除 Surface Hub 2 的計算盒式磁帶、將其打包以供運送，以及安裝新的計算盒式磁帶。<br>
     ![計算盒式磁帶的影像。](images/surface-hub-2s-replace-cartridge-1.png)
@@ -62,7 +62,7 @@ ms.locfileid: "10831481"
 | **8.**| 將替換計算盒式磁帶投影片放入裝置中。                                                                                          | ![將替換計算盒式磁帶投影片放入裝置中。](images/surface-hub-2s-replace-cartridge-9.png) |
 | **9.**| 固定鎖螺絲並將封蓋滑動到適當位置                                                                                         | ![固定鎖螺絲，然後將封蓋滑動到適當位置。](images/surface-hub-2s-replace-cartridge-10.png) |
 
-## 如何取代 Surface Hub 2 秒攝影機
+##  <a name="how-to-replace-your-surface-hub-2s-camera"></a>如何取代 Surface Hub 2 秒攝影機
 
 您可以使用下列步驟移除 Surface Hub 2 秒攝像頭，然後安裝新的相機。
 

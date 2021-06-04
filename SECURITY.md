@@ -8,13 +8,13 @@ ms.locfileid: "10831255"
 ---
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.5 BLOCK -->
 
-## 安全性
+##  <a name="security"></a>安全性
 
 Microsoft 會嚴肅地採取軟體產品與服務的安全性，包括透過我們的 GitHub 組織（包括[Microsoft](https://github.com/Microsoft)、 [Azure](https://github.com/Azure)、 [DotNet](https://github.com/dotnet)、 [AspNet](https://github.com/aspnet)、 [Xamarin](https://github.com/xamarin)和[我們的 github 組織](https://opensource.microsoft.com/)）管理的所有來來源程式代碼儲存庫。
 
 如果您認為您在任何 Microsoft 擁有的儲存庫中發現一個符合[microsoft 對安全性漏洞定義](https://docs.microsoft.com/en-us/previous-versions/tn-archive/cc751383(v=technet.10))的安全性漏洞，請按照下文所述向我們報告。
 
-## 報告安全性問題
+##  <a name="reporting-security-issues"></a>報告安全性問題
 
 **請不要透過公用 GitHub 問題來報告安全性漏洞。**
 
@@ -38,11 +38,11 @@ Microsoft 會嚴肅地採取軟體產品與服務的安全性，包括透過我�
 
 如果您要報告錯誤 bounty，則更完整的報表可能會提供較高的 bounty 獎。 請流覽我們的[Microsoft 錯誤 Bounty 程式](https://microsoft.com/msrc/bounty)頁面，以取得更多關於使用中程式的詳細資料。
 
-## 喜好語言
+##  <a name="preferred-languages"></a>喜好語言
 
 我們想要將所有通訊設為英文。
 
-## 原則
+##  <a name="policy"></a>原則
 
 Microsoft 遵循[協同漏洞披露](https://www.microsoft.com/en-us/msrc/cvd)的原則。
 

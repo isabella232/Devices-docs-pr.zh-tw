@@ -24,11 +24,11 @@ ms.locfileid: "11271377"
 
 為了與全天的電池使用時間保持連線，Surface 裝置會實施無線連線設定，以平衡效能和電源保留。 在最苛刻的行動案例之外，使用者可以維持足夠的無線連線，而不需修改預設的網路介面卡或相關設定。 此頁面重點說明行動案例中使用最新 Surface 裝置（包括 Surface Pro 7 +、Surface 膝上型電腦 Go、Surface Go 2、surface Pro X、Surface mobile 3、Surface Book 3 和 Surface Pro 7）的重要無線連線考慮。
 
-## 必要條件
+##  <a name="prerequisites"></a>必要條件
 
 本檔假設您已成功部署支援 802.11 n (Wi-fi 4) 或更新版本的無線網路，以符合主要設備廠商的最佳做法建議。
 
-## 針對最佳漫遊功能設定存取點
+##  <a name="configuring-access-points-for-optimal-roaming-capabilities"></a>針對最佳漫遊功能設定存取點
 
 如果您管理的無線網路通常是許多不同類型的用戶端裝置，建議您在 WLAN 中 (Ap) 的存取點上啟用特定通訊協定，如 [使用 802.11 k、802.11 v 和 802.11 r 的快速漫遊](https://docs.microsoft.com/windows-hardware/drivers/network/fast-roaming-with-802-11k--802-11v--and-802-11r)中所述。 Surface 裝置可以利用下列無線通訊協定：
 
@@ -37,18 +37,18 @@ ms.locfileid: "11271377"
 
 特定 Surface 裝置也可以使用 802.11 v 「BSS 轉換管理幀」，這項功能很像 802.11 k，提供附近的候選人 Ap 資訊。 這些包括 Surface Pro 7 +、表面移、表面移至2、Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3。 
 
-## 管理使用者設定
+##  <a name="managing-user-settings"></a>管理使用者設定
 
 您可以透過在所有存取點都支援 802.11 r 和 802.11 k 的精心設計網路，來實現最佳的漫遊功能。 確保您的網路正確設定為提供最佳的無線體驗，是建議的方法，而不是嘗試管理個別裝置上的使用者設定。 
 
-### 建議的使用者設定和最佳做法
+###  <a name="recommended-user-settings-and-best-practices"></a>建議的使用者設定和最佳做法
 
 在某些情況下，修改內建在 Surface 裝置中的高級網路介面卡設定，就能協助更可靠的連線。 請記住，由於存取點問題、網路設計缺陷或環境網站問題，無法連線至無線資源是很常見的。
 
 > [!NOTE]
 > 您保留 Surface Pro 或 Surface Go 的方式也會影響信號強度。 如果您遇到頻寬遺失的情況，請確認您不是顯示 Wi-Fi 無線電接收器所在的顯示器頂端。 雖然按住顯示器頂端不會封鎖無線信號，但它可以觸發裝置驅動程式，以啟動減少連線性的變更。
 
-### 保留雙頻寬功能的預設自動設定
+###  <a name="keep-default-auto-setting-for-dual-bandwidth-capability"></a>保留雙頻寬功能的預設自動設定
 
 在大部分的 Surface 裝置上，您可以設定用戶端網路介面卡設定，以便只透過5千兆赫 (GHz) 連線至無線 Ap，只需連接 2.4 GHz，或讓作業系統選擇最佳選項 (預設的 [自動設定]) 。
 
@@ -69,7 +69,7 @@ ms.locfileid: "11271377"
 
 您也可以視需要切換區段設定以符合您的環境。 例如，生活在具有多個 Wi-Fi 熱點的高密度公寓建築物中（無論消費者裝置都透過 2.4 GHz 廣播），都有可能帶來益處，只是將其 Surface 裝置設定為僅以 5 GHz 連線，然後在需要時回復到 Auto。
 
-### 含英特爾配接器的 Surface 裝置上的漫遊加強設定 
+###  <a name="roaming-aggressiveness-settings-on-surface-devices-with-intel-adapters"></a>含英特爾配接器的 Surface 裝置上的漫遊加強設定 
 
 使用者可能會想要選取一個信號強度閾值，當信號下降時，系統會提示裝置搜尋新的存取點 (漫遊的入侵) 。 根據預設，含英特爾配接器的 Surface 裝置會嘗試漫遊到新的存取點（如果信號強度低於 [ **中** ] (72% 信號強度) 。 另請注意，組織可以在多個網路存取點上實現專門建立的無線通訊協定，以協助漫遊擁塞的網路環境，如本頁面先前所述。 
 
@@ -86,7 +86,7 @@ ms.locfileid: "11271377"
 
 ![* 漫遊加強設定-英特爾 *](images/wifi-roaming-int.png) <br>
 
-### 表面移至 surface Pro X 上的漫遊加強設定
+###  <a name="roaming-aggressiveness-settings-on-surface-go-and-surface-pro-x"></a>表面移至 surface Pro X 上的漫遊加強設定
 
 使用 Surface Go 的前線工作者可能想要選取信號強度閾值，當信號強度下降 (漫遊加強) 時，就會提示裝置搜尋新的存取點。 根據預設，Surface 裝置會嘗試漫遊到新的存取點（如果信號強度低於 [ **中** ] (50% 信號強度) 。 請注意，每當您增加漫遊加強，就能加速電池計量消耗。
 
@@ -102,6 +102,6 @@ ms.locfileid: "11271377"
 ![* 漫遊加強設定-QualComm *](images/wifi-roaming.png) <br>
 
 
-## 總結
+##  <a name="conclusion"></a>總結
 
 Surface 裝置的設計使用預設設定來實現最佳無線連線平衡，且需要保留電池使用時間。 為 Surface 裝置啟用可靠連接的最有效方法，是透過設計良好的網路，支援 802.11 r 和 802.11 k。 使用者可以調整網路介面卡設定或漫遊加強，但應只針對特定的環境因素作出回應，並在沒有明顯的改進時還原為預設狀態。

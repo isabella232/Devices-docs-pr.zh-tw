@@ -21,13 +21,13 @@ ms.locfileid: "10831311"
 
 [Surface 資產標記] 是命令列介面（CLI）公用程式，可讓您查看、指派及修改 Surface 裝置的指派資產標記值。 它適用于 Surface Pro 3 和所有較新的 Surface 裝置。
 
-## 系統需求
+##  <a name="system-requirements"></a>系統需求
 
 - Surface Pro 3 或更新版本
 
 - UEFI 固件版本3.9.150.0 或更新版本
 
-## 使用 Surface 資產標記 
+##  <a name="using-surface-asset-tag-"></a>使用 Surface 資產標記 
 
 執行表面資產標記：
 
@@ -40,7 +40,7 @@ ms.locfileid: "10831311"
 
 3.  重新開機表面。
 
-### 資產圖章工具命令   
+###  <a name="asset-tag-tool-commands"></a>資產圖章工具命令   
 在下列範例中，AssetTag.exe 會儲存在本機電腦上的目錄中（C:\assets）。 
 
 若要取得建議的資產標記，請執行 AssetTag-g。
@@ -70,7 +70,7 @@ C:\assets\AssetTag.exe -s testassettag12
 >資產標記值必須包含1到36個字元。 有效的字元包括 A-z、a-z、0-9、句點（.）及連字號（-）。
 
 
-## 管理資產標記
+##  <a name="managing-asset-tags"></a>管理資產標記
 
 您可以在 [裝置資訊] 下的 [UEFI 設定] （[**控制台] > > [高級 > 啟動**] 中，[立即重新開機]），查看現有資產標記。
 
@@ -91,7 +91,7 @@ C:\assets\AssetTag.exe -s testassettag12
 C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
   ```
   
-### 使用 PowerShell
+###  <a name="using-powershell"></a>使用 PowerShell
 
 您可以使用下列腳本來取得建議值並解釋任何錯誤。
 

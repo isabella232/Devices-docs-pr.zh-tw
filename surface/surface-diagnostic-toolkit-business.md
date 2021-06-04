@@ -42,7 +42,7 @@ ms.locfileid: "11271577"
 桌面模式 |  協助使用者在其 Surface 裝置上執行 SDT，以針對問題進行疑難排解。<br>建立要在一或多個 Surface 裝置上部署的自訂套件，讓使用者可以選取要收集及分析的特定記錄。 | SDT 可發佈的 MSI 套件：<br>商務用 Microsoft Surface 安裝工具<br>[適用於 IT 的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703) | [在桌面圖案中使用表面診斷工具箱](surface-diagnostic-toolkit-desktop-mode.md)
 命令列 |  使用標準工具（例如 Configuration Manager），直接在沒有使用者互動的情況下遠端疑難排解 Surface 裝置。 它包含下列命令：<br>`-DataCollector` 收集所有記錄檔<br>`-bpa` 使用最佳做法分析程式來執行健康情況分析。<br>`-windowsupdate` 針對缺少的固件或驅動程式更新檢查 Windows 更新。<br>`-warranty` 檢查保修資訊。 <br><br>| SDT 主控台 app：<br>Microsoft Surface Diagnostics 應用程式主控台<br>[適用於 IT 的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703) | [使用命令執行表面診斷工具箱](surface-diagnostic-toolkit-command-line.md)
 
-## 支援的裝置 
+##  <a name="supported-devices"></a>支援的裝置 
 
 在 Surface 3 和更新版本的裝置上支援 SDT for Business，包括：
 
@@ -165,7 +165,7 @@ ms.locfileid: "11271577"
 - [在桌面模式中使用商務用 Surface 診斷工具組](surface-diagnostic-toolkit-desktop-mode.md)
 - [使用命令的 [表面診斷工具] 進行商務用](surface-diagnostic-toolkit-command-line.md)
 
-## 變更與更新
+##  <a name="changes-and-updates"></a>變更與更新
 
 ### 版本2.131.139。0
 

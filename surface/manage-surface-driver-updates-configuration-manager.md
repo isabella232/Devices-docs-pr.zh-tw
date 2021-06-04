@@ -23,11 +23,11 @@ ms.locfileid: "10897071"
 ---
 # 在 Configuration Manager 中管理 Surface 驅動程式更新
 
-## 摘要
+##  <a name="summary"></a>摘要
 
 從[Microsoft System Center Configuration Manager 版本 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates)開始，您可以直接透過 Configuration Manager 用戶端同步處理和部署 Microsoft Surface 固件及驅動程式更新。 此程式類似于部署定期更新。 不過，需要進行一些其他設定，才能讓 Surface 驅動程式更新到您的目錄中。
 
-## 必要條件
+##  <a name="prerequisites"></a>必要條件
 
 若要管理 Surface driver 更新，必須符合下列先決條件：
 
@@ -176,7 +176,7 @@ ms.locfileid: "10897071"
 
 如需有關如何透過替代通道部署 Surface 驅動程式和固件更新的相關資訊，請參閱[管理 Surface 驅動程式和固件更新](manage-surface-driver-and-firmware-updates.md)。 如果您想要下載 .msi 或 .exe 檔案，然後透過傳統軟體部署通道進行部署，請參閱[使用 Configuration Manager 讓 Surface 固件保持更新](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager)。
 
-## 其他資訊
+##  <a name="more-information"></a>其他資訊
 
 如需有關 Surface 驅動程式和固件更新的詳細資訊，請參閱下列文章：
 

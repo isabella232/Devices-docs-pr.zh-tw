@@ -27,7 +27,7 @@ ms.locfileid: "11326280"
 
 Android 版裝置的 Surface 週期涵蓋 Surface 雙核的 Android 版本和安全性更新。 生命週期會在第一次放開裝置時開始，並在表面停止發佈更新時結束。
 
-## Surface Android 裝置支援 
+##  <a name="surface-android-device-support"></a>Surface Android 裝置支援 
 
 在) 2020 年9月10日的發行日期 (，Surface Android 裝置將會收到 Android 版和安全更新，至少3年。 在支援期間超過3年的情況下，將會在上次計畫的服務日期到期前18個月發行更新結束的服務日期。 
 

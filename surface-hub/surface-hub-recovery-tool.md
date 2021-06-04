@@ -30,9 +30,9 @@ ms.locfileid: "11339364"
 
 如果工具無法重新映射您的硬碟，請聯絡 [Surface Hub 支援](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)人員。
 
-## 必要條件
+##  <a name="prerequisites"></a>必要條件
 
-### Mandatory
+###  <a name="mandatory"></a>Mandatory
 
 - 主機電腦是 64 位版本的 Windows 10，版本 1607 或更新版本。
 - 網路與網際網路存取
@@ -41,7 +41,7 @@ ms.locfileid: "11339364"
 - 主機電腦上 10 GB 的可用磁碟空間
 - SSD 會與 Surface Hub 或支援人員提供的 SSD 一起提供，做為替代產品。 不支援 Microsoft 未提供的 SSD。
 
-### 建議執行
+###  <a name="recommended"></a>建議執行
 
 - 高速網際網路連接
 - 開啟 USB 3.0 埠
@@ -51,7 +51,7 @@ ms.locfileid: "11339364"
     - Rosew RCUC16001
     - Ugreen 20231
 
-## 下載 Surface Hub 修復工具
+##  <a name="download-surface-hub-recovery-tool"></a>下載 Surface Hub 修復工具
 
 Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/details.aspx?id=52210)的 Surface Hub 工具下載，檔案名為**SurfaceHub_Recovery_v2.7.139.0.msi。**
 
@@ -65,7 +65,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 
 在主機電腦上安裝 Surface Hub 修復工具。
 
-## 執行 Surface Hub 修復工具
+##  <a name="run-surface-hub-recovery-tool"></a>執行 Surface Hub 修復工具
 
 1. 在主 PC 上，選取 **開始按鈕、** 捲動左側的字母清單，然後選取修復工具快速鍵。
 
@@ -102,7 +102,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 
 
 
-## 疑難排解和常見問題
+##  <a name="troubleshooting-and-common-problems"></a>疑難排解和常見問題
 
 問題 | 附註
 --- | ---
@@ -113,10 +113,10 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 
 如果工具無法重新映射您的硬碟，請聯絡 [Surface Hub 支援](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)人員。
 
-## 版本歷程記錄
+##  <a name="version-history"></a>版本歷程記錄
 
 
-### 版本 2.7.139.0
+###  <a name="version-v2.7.139.0"></a>版本 2.7.139.0
 
 *發行日期：2021 年 2 月 11 日*<br>
 此版本的 Surface Hub 修復工具新增下列支援：
@@ -124,7 +124,7 @@ Surface Hub 修復工具可從適用于[IT](https://www.microsoft.com/download/d
 - 安全性更新
 
 
-### 版本 2.0.139.0
+###  <a name="version-v2.0.139.0"></a>版本 2.0.139.0
 
 > [!IMPORTANT]
 > 此版本已無法運作。 請下載上列的目前版本。 

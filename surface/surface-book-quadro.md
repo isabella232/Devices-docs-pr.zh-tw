@@ -27,7 +27,7 @@ NVIDIA® Quadro RTX™ 3000 GPU 的 Surface Book 3，專為需要即時轉譯、
 - **人工智慧** -使用 GPU 加速 AI 的 240 Tensor 核心版，移除重複、繁瑣的工作及計算密集型作業。
 - **先進的圖形和計算技術** 在您的最高效能中使用非凡的速度和互動，並以 1920 CUDA 核心及 6GB GDDR6 記憶體來計算工作負載。
 
-## 企業成績方案
+##  <a name="enterprise-grade-solution"></a>企業成績方案
 
 針對商業客戶而言，Quadro RTX 3000 提供了一種完全專業的方案，可結合加速的 ray 追蹤和深入的學習功能，以及整合的企業層級管理和支援方案。 Quadro 驅動程式是透過領先的 Isv 來測試和認證，100以提供額外的品質保證，以驗證穩定性、可靠性和效能。
  
@@ -36,7 +36,7 @@ Quadro 包含專為 Quadro RTX 3000 遠端系統管理 Surface Book 3 裝置的�
 NVIDIA 開發及維護 Quadro 最佳驅動程式，讓企業 (ODE) 經過調整、測試和驗證，以提供企業級穩定性、可靠性、可用性，以及支援延伸產品的可用性。 每個驅動程式版本都涉及超過2000名使用專業應用程式測試套件與測試案例，以及 WHQL 認證的測試人員數。 系統會持續監視安全威脅，併發行定期安全更新，以防範新探索到的漏洞。 此外，透過 Windows Update 發行之前，Quadro 驅動程式也會透過 Surface 工程進行額外的測試層。
  
 
-## 專為計算密集型工作負載所打造
+##  <a name="built-for-compute-intensive-workloads"></a>專為計算密集型工作負載所打造
 
 Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦的最佳圖形效能，讓高級專業人員能隨時隨地進行工作。
  
@@ -89,7 +89,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | NVIDIA Optimus                                             | 是             |
 
  
-## & app 加速的 ISV 測試
+##  <a name="isv-testing-&-app-acceleration"></a>& app 加速的 ISV 測試
 
 如表格3所示，Surface Book 3 （含 Quadro RTX 3000）是由主要的 Isv 進行測試和核准，並能在專業應用程式之間提供極快的加速。 SPECview perf 13 基準測試結果比較 Surface Book 3 15-英寸與 nvidia Quadro RTX 3000，以及使用 NVIDIA GeForce GTX 1060 裝置的 Surface Book 2 15-寸。
 
@@ -125,7 +125,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 
 
 
-## Sku
+##  <a name="skus"></a>Sku
 
 **表 4. 使用 Quadro RTX 3000 Sku 的 Surface Book 3**
 
@@ -134,7 +134,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 | 15英寸 | 四核 10 Gen 雙核 i7-1065G7 | 英特爾虹彩™加上圖形<br>NVIDIA Quadro RTX 3000。 最大-Q 設計與 6GB GDDR6 圖形記憶體 | 32 LPDDR4x | 512 GB      |
 | 15英寸 | 四核 10 Gen 雙核 i7-1065G7 | 英特爾虹彩™加上圖形<br>NVIDIA Quadro RTX 3000。 最大-Q 設計與 6GB GDDR6 圖形記憶體 | 32 LPDDR4x | 1 TB        |
 
-## 摘要
+##  <a name="summary"></a>摘要
 
 Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦的最佳圖形效能，提供架構師、工程師、開發人員和資料科學家，以及它們所需的工具，可隨時隨地有效地運作：
  
@@ -142,7 +142,7 @@ Surface Book 3 （含 Quadro RTX 3000）可提供任何 Surface 膝上型電腦�
 - 行動裝置規格中的桌面年級效能。
 - 針對任務關鍵型專案的企業級功能、可靠性和支援。
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [Surface Book 3 GPU 技術概觀](surface-book-GPU-overview.md)
 - [商務用 Surface](https://www.microsoft.com/surface/business)

@@ -30,7 +30,7 @@ ms.locfileid: "11145614"
 > [!Note]
 > 雖然本文所述的程式可能適用于舊版的 Endpoint Configuration Manager 或其他協力廠商管理解決方案，但只有端點設定管理員的目前分支支援使用 Microsoft Surface UEFI 管理員和 PowerShell 的 SEMM 管理。
 
-#### 必要條件
+####  <a name="prerequisites"></a>必要條件
 
 開始本文所述的程式之前，請先熟悉下列技術與工具：
 

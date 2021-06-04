@@ -35,7 +35,7 @@ ms.locfileid: "10831958"
 3.  如果您使用的是本機系統管理員帳戶來管理裝置，您可以移至 [**設定**] 應用程式，然後流覽到 [**更新 & 安全性**復原] 來儲存 BitLocker 金鑰 &gt; ** **。 插入 USB 磁碟機，然後選取選項來儲存 BitLocker 金鑰。 金鑰將會儲存到 USB 磁碟機上的文字檔。
 
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)
 

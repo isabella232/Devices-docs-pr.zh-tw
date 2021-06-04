@@ -28,7 +28,7 @@ ms.locfileid: "11271537"
 ---
 # Surface 支援
 
-### 在您與我們聯繫前：  
+###  <a name="before-you-contact-us"></a>在您與我們聯繫前：  
 
 針對商務 (SDT) 執行 [表面診斷工具](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) 組。 SDT 可讓 IT 系統管理員快速調查、疑難排解及解決與 Surface 裝置的硬體、軟體及固件問題。 除了取得裝置健康情況深入資訊以及解決問題的指示之外，您還可以執行診斷測試和軟體修復範圍。 
 
@@ -52,7 +52,7 @@ Microsoft Premier 客戶： [在服務中樞上提交您的服務要求](https:/
 
 ## [商店支援](#tab/instore)
 
-## 中國、印度
+##  <a name="china,-india"></a>中國、印度
 
 在 Surface Walk-In 中心建立約會，以協助解決您的問題：
 

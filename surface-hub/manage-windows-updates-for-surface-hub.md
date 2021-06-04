@@ -123,12 +123,12 @@ Surface Hub 會依照這些指導方針套用更新：
 若要使用 MDM 變更維護視窗，請在[SurfaceHub 配置服務提供者](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx)中設定**MaintenanceHoursSimple**節點。 如需更多詳細資料，請參閱[使用 MDM 提供者管理設定](manage-settings-with-mdm-for-surface-hub.md)。
 
 
-## 詳細資訊
+##  <a name="details"></a>詳細資訊
 
 - [博客文章：使用 Intune 進行 Surface Hub (的服務、正式及管理更新（當然就是）！ ) ](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)
 

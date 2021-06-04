@@ -20,11 +20,11 @@ ms.locfileid: "10831437"
 ---
 # Surface Hub 2 網站規劃
 
-## 簡介
+##  <a name="introduction"></a>簡介
 
 針對團隊共同作業，Surface Hub 的2秒可以轉變您的工作方式，不僅在會議室，還能轉換您想要使用的任何地方。 Surface Hub 2 的其中一個最大優點是，在搭配 Steelcase 漫遊行動裝置支架與行動裝置電池搭配使用時，可以將它從一個空間移動到另一個位置。 提供拔出、不間斷的團隊合作功能，Surface Hub 的2秒可以整合到幾乎所有的工作區。
 
-## 會議室考慮
+##  <a name="room-considerations"></a>會議室考慮
 
 在較小的會議室和 huddle 空間中，Surface Hub 秒數提供4K 相機、麥克風陣列、crystal clear 喇叭，以及卓越的 4K + 解析度顯示器。 在較大的空間中優化使用者體驗，讓更多人更遠離顯示器，可能需要使用額外的相機、麥克風或房間系統方案（例如 Microsoft 團隊會議室）等週邊設備。
 
@@ -43,6 +43,6 @@ ms.locfileid: "10831437"
 
 如需詳細的聊天室規劃指示及 Microsoft 團隊聊天室的詳細資訊，請參閱[規劃 Microsoft 團隊會議室。](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
 
-## 管理 Surface Hub 2 秒位置
+##  <a name="managing-surface-hub-2s-location"></a>管理 Surface Hub 2 秒位置
 
 如果您打算在行動裝置支架上使用 Surface Hub 2，您可能會想探索可啟用定位服務的協力廠商解決方案。 例如，活躍的 RFID 系統可在整個複雜的 office 或工業空間中提供即時追蹤。 如需詳細資訊，請參閱您的 A/V 提供者或其他協力廠商專業知識以取得指導方針。

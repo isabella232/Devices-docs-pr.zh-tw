@@ -25,7 +25,7 @@ ms.locfileid: "11327327"
 >[!NOTE]
 >若要使用命令執行 SDT，您必須已登錄系統管理員帳戶，或是在 Surface 裝置上是系統管理員群組成員的帳戶。
 
-## 執行 SDT 應用程式主機
+##  <a name="running-sdt-app-console"></a>執行 SDT 應用程式主機
 
 從適用于 IT 的 Surface Tools 下載頁面 [下載並安裝 SDT 應用程式主機](https://www.microsoft.com/download/details.aspx?id=46703)。 您可以使用 Windows 命令提示 (cmd.exe) 或 Windows PowerShell 執行以下操作： 
 
@@ -49,7 +49,7 @@ ms.locfileid: "11327327"
 >[!NOTE]
 >若要在目標裝置上遠端執行 SDT 應用程式主控台，您可以使用 Microsoft 端點群組原則管理員等群組原則管理工具。 或者，您可以建立一個 .zip 檔案，其中包含主控台應用程式及適當的主控台命令，並且根據貴組織的軟體發佈程式進行部署。 
 
-## 執行最佳做法分析程式 
+##  <a name="running-best-practice-analyzer"></a>執行最佳做法分析程式 
 
 您可以在 BitLocker、Secure Boot 和信任的平臺模組 (TPM) 等重要元件上執行 BPA 測試，然後將結果輸出至可共用檔案。 此工具會產生一系列表格，包含色彩編碼的標題和條件描述項，以及有關如何解決此問題的指引。 
 
@@ -57,7 +57,7 @@ ms.locfileid: "11327327"
 - 橘色表示元件未在最佳狀況下執行， (優化) 。
 - 紅色表示元件狀態異常。 
 
-### BPA 結果輸出範例
+###  <a name="sample-bpa-results-output"></a>BPA 結果輸出範例
 
 <table>
 <tr><th colspan="2"><font color="00ff00">BitLocker</font></th></tr>

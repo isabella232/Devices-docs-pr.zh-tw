@@ -29,7 +29,7 @@ Passwordless 登入可簡化您的應用程式、會議及檔案的存取權。 
 - [啟用 passwordless 安全金鑰登入](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
 
-## 使用 Microsoft 驗證器應用程式設定登入
+##  <a name="configure-sign-in-using-microsoft-authenticator-app"></a>使用 Microsoft 驗證器應用程式設定登入
 
 **注意：** 從 Windows 10 Team 2020 更新開始，使用者可以在 Azure AD 中使用其慣用的電子郵件別名，以及其使用者主體名稱（UPN），以使用 Microsoft 驗證器登入。 例如，使用者可以使用其慣用的別名（John.Doe@contoso.com）或其 UPN （jdoe@contoso.com）登入。
  
@@ -43,7 +43,7 @@ Microsoft 驗證器 app 可協助您使用行動裝置登入 Surface Hub。 若�
 3. 從您的行動裝置上的 Microsoft 驗證器 app，[開啟並使用手機](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-sign-in#turn-on-and-use-phone-sign-in-for-your-work-or-school-account)或學校帳戶的電話登入。
 
  
-## 使用 FIDO2 安全性金鑰設定登入
+##  <a name="configure-sign-in-using-fido2-security-keys"></a>使用 FIDO2 安全性金鑰設定登入
 
 > [!NOTE]
 >  在 Surface Hub 上使用 FIDO2 安全參數 Passwordless 登入需要 Windows 10 Team 2020 更新。
@@ -53,7 +53,7 @@ Microsoft 驗證器 app 可協助您使用行動裝置登入 Surface Hub。 若�
  
 您也可以使用貴組織提供的 FIDO2 安全金鑰登入 Surface Hub。 
 
-### 若要使用安全金鑰來設定登入：
+###  <a name="to-configure-sign-in-using-a-security-key"></a>若要使用安全金鑰來設定登入：
 
 
 1. 在您的電腦上，移至您的 [https://myprofile.microsoft.com/](https://myprofile.microsoft.com/) 頁面並登入您的公司或學校帳戶。
@@ -65,7 +65,7 @@ Microsoft 驗證器 app 可協助您使用行動裝置登入 Surface Hub。 若�
 7. 在 [**安全性金鑰**] 頁面上，為您的安全性金鑰命名，然後選取 **[下一步]**。
 8. 選取 [**完成**] 以完成程式。
 
-## 登入 Surface Hub
+##  <a name="sign-in-to-surface-hub"></a>登入 Surface Hub
 
 一旦您設定 passwordless 登入之後，您就可以使用它，讓您更輕鬆地在 Surface Hub 上存取您的應用程式、會議和檔案：
 
@@ -75,7 +75,7 @@ Microsoft 驗證器 app 可協助您使用行動裝置登入 Surface Hub。 若�
 - 登入 Surface Hub 之後，您就可以使用其他應用程式，而不需再次登入，直到您選取 [**結束會話**]。 選取 [**結束會話**] 會從裝置中刪除您的認證、檔案和個人資料。 如需詳細資訊，請參閱[結束會話](finishing-your-surface-hub-meeting.md)。
 
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [Azure Active Directory 的 Passwordless 驗證選項](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
 - [使用 Microsoft 驗證器應用程式的 Passwordless 登入](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)

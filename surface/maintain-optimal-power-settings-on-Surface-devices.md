@@ -128,7 +128,7 @@ Surface 提供簡化的 UI，以符合最佳做法電源設定建議。 一般�
 | 檢查 app 使用方式 | 您的應用程式 | 關閉應用程式。|
 | 檢查您的電源線是否有任何損壞。| 您的電源線 | 如果電源線磨損或損毀，請將它取代。|
 
-## 深入了解 
+##  <a name="learn-more"></a>深入了解 
 
 - [新式待機](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 

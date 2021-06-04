@@ -26,7 +26,7 @@ ms.locfileid: "10831954"
 
 在您第一次開啟 Microsoft Surface Hub 之前，請確定您已完成[針對 Surface Hub 準備您的環境](prepare-your-environment-for-surface-hub.md)一節結尾處的檢查清單，而且擁有[設定工作表](setup-worksheet-surface-hub.md)中列出的資訊。 當您開啟電源時，裝置將逐步引導您執行一系列設定畫面。 如果您尚未正確設定環境，或者沒有所需的資訊，就必須在確定設定是正確的之後執行額外的動作。
 
-## 本節內容
+##  <a name="in-this-section"></a>本節內容
 
 
 <table>

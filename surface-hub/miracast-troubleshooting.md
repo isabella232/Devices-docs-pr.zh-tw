@@ -84,6 +84,6 @@ Windows 防火牆可以封鎖 Miracast 流量。 最簡單的測試是停用防�
 
 如果環境中有多個 Wi-Fi 網路或存取點，有些通道切換是無法避免的。 這可藉由確保所有 Wi-fi 驅動程式維持在最新狀態而獲得解決。
 
-## 連絡客戶支援
+##  <a name="contact-support"></a>連絡客戶支援
 
 如果您有任何疑問或需要協助，您可以[建立支援要求](https://support.microsoft.com/supportforbusiness/productselection)。

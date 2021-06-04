@@ -44,7 +44,7 @@ Windows 10 ARM 電腦可協助您隨時隨地繼續運作。 以下是一些主�
 - **無法安裝某些協力廠商防毒軟體**。 您無法在 Windows 10 ARM 的電腦上安裝某些協力廠商的防毒軟體。 不過，Windows 安全性將協助您保護 Windows 10 裝置支援的存留期。
 - **Windows 傳真及掃描**功能無法使用。 此功能無法在 Windows 10 ARM 電腦上使用。
 
-## App 保證
+##  <a name="app-assure"></a>App 保證
 
 Microsoft 致力於確保客戶在 ARM64 裝置上（例如 Surface Pro X）上的 Windows 10 具有良好的相容性體驗。我們已拓展應用程式，讓工程師能透過提供疑難排解並提供應用程式 remediations，來支援遇到應用程式相容性問題的客戶，無需額外費用。 您可以在 ARM64 上以 Windows 10 為目標，為您的 LOB、ISV 及 Microsoft 第一方 EDU 客戶供應商業及客戶的服務。 
 

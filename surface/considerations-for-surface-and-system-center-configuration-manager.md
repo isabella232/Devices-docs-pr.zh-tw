@@ -31,14 +31,14 @@ ms.locfileid: "10831307"
 > [!NOTE]
 > 若要管理 Surface 裝置，建議您使用 Microsoft 端點 Configuration Manager 的目前分支。
 
-## 更新 Surface 裝置驅動程式和固件
+##  <a name="updating-surface-device-drivers-and-firmware"></a>更新 Surface 裝置驅動程式和固件
 
 對於透過 Windows Update 接收更新的裝置，表面元件的驅動程式（甚至是固件更新）會自動套用為 Windows 更新程式的一部分。 針對有受管理更新的裝置（例如那些透過 Windows Server Update Services （WSUS）或 Configuration Manager 更新的裝置），請參閱[管理 Surface 驅動程式和固件更新](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/)。
 
 > [!NOTE]
 > Surface 裝置驅動程式和固件已使用 SHA-256 簽署，這不是 Windows Server 2008 R2 本身所支援的。 在 Windows Server 2008 R2 上執行 Configuration Manager 環境時，有一個因應措施。 如需詳細資訊，請參閱[無法將驅動程式匯入 Microsoft 端點建構管理員（KB3025419）](https://support.microsoft.com/kb/3025419)。
 
-## Surface 乙太網卡與 Configuration Manager 部署
+##  <a name="surface-ethernet-adapters-and-configuration-manager-deployment"></a>Surface 乙太網卡與 Configuration Manager 部署
 
 Configuration Manager 在部署期間用來識別裝置的預設機制是媒體存取控制（MAC）位址。 因為 MAC 位址是與乙太網路控制器相關聯，所以在多個裝置之間共用的乙太網路介面卡會使 Configuration Manager 僅將每個裝置識別為單一裝置。 這可能會導致 Windows Configuration Manager 部署無法套用至預期的裝置。
 
@@ -54,17 +54,17 @@ Configuration Manager 在部署期間用來識別裝置的預設機制是媒體�
 
 在 Windows 10 版1511（包括 Windows 10 RTM 和 Windows 8.1）之前的 Windows 版本中，您可能仍需要安裝 Surface 乙太網路介面卡驅動程式，並將該驅動程式包含在 WinPE 啟動媒體中。 在 Windows 10 中包含該驅動程式後，就不能再從 Microsoft 下載中心下載該驅動程式。 若要下載 Surface 乙太網路介面卡驅動程式，請從詢問核心小組博客的[Surface 乙太網路驅動程式](https://blogs.technet.microsoft.com/askcore/2016/08/18/surface-ethernet-drivers/)博客文章中所述，從 Microsoft 更新目錄下載它。
 
-## 使用 Configuration Manager 部署 Surface 應用程式
+##  <a name="deploy-surface-app-with-configuration-manager"></a>使用 Configuration Manager 部署 Surface 應用程式
 
 在 Microsoft Store for Business 發行中，Surface app 已不再以驅動程式和固件下載的形式提供。 想要將 Surface 應用程式部署到受管理的 Surface 裝置或在部署期間使用建構管理員的組織，必須透過商務用 Microsoft Store 取得 Surface app，然後再使用 PowerShell 部署 Surface 應用程式。 您可以在 TechNet 文件庫中，找到部署 Surface 應用程式的 PowerShell 命令、下載 Surface 應用程式的指示，以及 microsoft store for [business 文章中](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business)的 microsoft Store for business 中的必要架構。
 
-## 將預留媒體與 Surface 用戶端搭配使用
+##  <a name="use-prestaged-media-with-surface-clients"></a>將預留媒體與 Surface 用戶端搭配使用
 
 如果您的組織使用預置媒體，在部署之前將部署資源預先載入到電腦上，則 Surface 裝置的性質是 UEFI 裝置，可能需要您採取其他步驟。 具體來說，原生 UEFI 環境需要您在系統的啟動磁片上建立多個分區。 如果您與[預留媒體的相關檔](https://technet.microsoft.com/library/79465d90-4831-4872-96c2-2062d80f5583?f=255&MSPPError=-2147217396#BKMK_CreatePrestagedMedia)一起追蹤，則指示僅提供單一分區啟動磁片，因此在套用至 Surface 裝置時將會失敗。
 
 將預置媒體套用至 UEFI 裝置（例如 Surface 裝置）的指示，可以在 Microsoft 端點 Configuration Manager 博客文章中的 [[如何在多分區磁片上套用任務順序預留媒體] 或 [Uefi 電腦] 中](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2014/04/02/how-to-apply-task-sequence-prestaged-media-on-multi-partitioned-disks-for-bios-or-uefi-pcs-in-system-center-configuration-manager/)找到。
 
-## 授權與 OEM 啟用3.0 的衝突
+##  <a name="licensing-conflicts-with-oem-activation-3.0"></a>授權與 OEM 啟用3.0 的衝突
 
 Surface 裝置會預先安裝已授權的 Windows 版本。 例如，Surface Pro 4 是預先預先安裝了 Windows 10 專業版。 此預先安裝的 Windows 版本的授權金鑰是內嵌在裝置的固件中，OEM 啟用3.0 （OA 3.0）。 當您在配備 OA 3.0 金鑰的裝置上執行 Windows 安裝媒體時，Windows 安裝程式會自動讀取授權金鑰，並使用它來安裝及啟用 Windows。 在大部分的情況下，這會簡化 Windows 的重新安裝，因為使用者不需要尋找或輸入授權金鑰。
 
@@ -72,13 +72,13 @@ Surface 裝置會預先安裝已授權的 Windows 版本。 例如，Surface Pro
 
 不過，如果組織想要使用與固件內嵌金鑰相容的 Windows 版本，可能會發生問題。 例如，想要在最初隨附 Windows 10 家用版的 Surface 3 裝置上安裝 Windows 10 專業版的組織可能會在安裝期間自動讀取家用版金鑰而非專業版時遇到困難。 若要避免這種衝突，您可以使用 Ei 或 Pid.txt 檔案，明確指示 Windows 安裝程式提示輸入產品金鑰，或者您可以在部署工作序列中輸入特定產品金鑰。 如需詳細資訊，請參閱[Windows 安裝程式版本配置和產品識別碼](https://technet.microsoft.com/library/hh824952.aspx)檔案。 如果您沒有特定金鑰，您可以使用 Windows 的預設產品金鑰，您可以在裝置合作夥伴中心的[自訂和部署 Windows 10 作業系統](https://dpcenter.microsoft.com/en/Windows/Build/cp-Windows-10-build)中找到此功能。
 
-## 在部署期間套用資產標記
+##  <a name="apply-an-asset-tag-during-deployment"></a>在部署期間套用資產標記
 
 Surface Studio、Surface Book、Surface Pro 4、Surface Pro 3 和 Surface 3 裝置都支援在 UEFI 中使用資產標記的應用程式。 即使作業系統失敗，也可以使用此資產標記來識別 UEFI 的裝置，也可以從作業系統中查詢。 若要深入瞭解 Surface 資產標記函式，請參閱[Surface Pro 3 博客文章的資產圖章工具](https://blogs.technet.microsoft.com/askcore/2014/10/20/asset-tag-tool-for-surface-pro-3/)。
 
 若要在 Configuration Manager 部署工作序列期間使用[Surface 資產標記 CLI 公用程式](https://www.microsoft.com/download/details.aspx?id=44076)套用資產標記，請使用在[Configuration manager 任務序列文章中設定 surface 資產標記](https://blogs.technet.microsoft.com/jchalfant/set-surface-pro-3-asset-tag-during-a-configuration-manager-task-sequence/)中的腳本和指示。
 
-## 設定推播按鈕重設
+##  <a name="configure-push-button-reset"></a>設定推播按鈕重設
 
 當您將 Windows 部署到 Surface 裝置時，系統會預設設定 Windows 的按鈕重設功能，以將系統還原回尚未設定環境的狀態。 使用 reset 函數時，系統會捨棄任何已安裝的應用程式和設定。 雖然在某些情況下，將系統還原為不含應用程式和設定的狀態是有益的，但在專業環境中，這會有效地將系統呈現給最終使用者使用。
 

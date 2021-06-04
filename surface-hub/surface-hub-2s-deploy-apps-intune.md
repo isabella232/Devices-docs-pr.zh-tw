@@ -22,7 +22,7 @@ ms.locfileid: "10831570"
 
 您可以安裝其他 app 來符合您團隊或組織的需求。
 
-## 開發人員指導方針
+##  <a name="developer-guidelines"></a>開發人員指導方針
 
 - Surface Hub 僅能執行[通用 Windows 平台 (UWP) 應用程式](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp)。 使用 [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) 建立的應用程式將無法在 Surface Hub 上執行。
 - 應用程式必須以[通用裝置系列](https://msdn.microsoft.com/library/windows/apps/dn894631)或 Windows 小組裝置系列為目標。
@@ -31,7 +31,7 @@ ms.locfileid: "10831570"
 - 在開發並提交應用程式至 Microsoft Store 時，請設定裝置系列可用性與組織授權選項，以確保 app 可在 Surface Hub 上執行。
 - 您需要系統管理員認證，才能在 Surface Hub 上安裝應用程式。 為在會議室和其他共用空間中使用而設計，Surface Hub 可防止一般使用者存取 Microsoft Store 來下載及安裝應用程式。
 
-## 部署指導方針
+##  <a name="deployment-guidelines"></a>部署指導方針
 
 您可以使用 Intune 將通用 Windows 平臺（UWP） app 部署至 Surface Hub 2-2，緩動 app 部署到裝置。
 

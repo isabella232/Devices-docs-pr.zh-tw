@@ -185,7 +185,7 @@ Surface dock 固件由兩個元件組成：
 
 此版本（包含在 Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI 中）會更新背景中的固件。 
 
-#### 更新的登錄機碼值
+####  <a name="update"></a>更新的登錄機碼值
 
 - Component10CurrentFwVersion 更新到 **4ac3970**。
 - Component20CurrentFwVersion 更新到 **4a1d570**。

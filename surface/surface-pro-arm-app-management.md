@@ -21,7 +21,7 @@ ms.locfileid: "11271357"
 ---
 # 部署、管理及維護 Surface Pro X
 
-## 簡介
+##  <a name="introduction"></a>簡介
 
 Surface Pro X 專為滿足高效能商業需求而打造，結合了該等級中空前強大的處理器 Microsoft SQ1 以及 Microsoft SQ1 ARM 晶片組，從而開創了全新的局面。
 
@@ -29,7 +29,7 @@ Surface Pro X 由 3GHz CPU 與 2.1 teraflop GPU 提供支援，讓您享有完�
 
 Surface Pro X 是專為現代化雲端式環境所設計，最適合與 Microsoft 365、Intune 和 Windows Autopilot 搭配使用。 本文將對具體內容多所著墨，並概述部署、管理及維護 Surface Pro X 的重要考量。
 
-## 部署 Surface Pro X
+##  <a name="deploying-surface-pro-x"></a>部署 Surface Pro X
 
 為獲得最佳體驗，請使用 Windows Autopilot 在 Microsoft 雲端解決方案提供者的協助下部署 Surface Pro X，或是使用 Autopilot 部署設定檔和相關功能進行自我佈建。 如需詳細資訊，請參閱：
 
@@ -40,33 +40,33 @@ Autopilot 部署有幾個優點：允許您使用針對全自動部署所簡化�
 
 已經使用現代化管理、安全性及生產力解決方案的組織具備得天獨厚的優勢，可以利用 Surface Pro X 中特有的效能功能。使用現代化企業營運應用程式、Microsoft Store (UWP) 應用程式或遠端桌面解決方案的客戶也將受益匪淺。
 
-## 映像式部署考量
+##  <a name="image-based-deployment-considerations"></a>映像式部署考量
 
 Microsoft Deployment Toolkit (MDT) 和 Microsoft Endpoint Configuration Manager (舊稱 System Center Configuration Manager) 目前不支援 Surface Pro X 進行作業系統部署。 在持續評估轉換至現代部署解決方案適當時機的期間，仰賴映像式部署的客戶不妨考慮 Surface Pro 7+。 
 
-## 管理 Surface Pro X 裝置
+##  <a name="managing-surface-pro-x-devices"></a>管理 Surface Pro X 裝置
 
-### Intune
+###  <a name="intune"></a>Intune
 
 Intune 是 Microsoft Enterprise Mobility + Security 的元件，可與 Azure Active Directory 整合以進行身分識別和存取控制，並可提供對已註冊 Surface Pro X 裝置的細微管理。 Intune 行動裝置管理 (MDM) 原則與舊版內部部署工具 (例如 Windows 群組原則) 相比，具有許多優勢。 這包括更快速的裝置登入時間，以及更加簡化得可以完全從雲端管理裝置的原則資料目錄。 例如，您可以使用 eSIM 設定檔管理 LTE 以設定行動數據方案，並將啟動碼部署至多個裝置。<br> 
 
 如需有關使用 Intune 的詳細資訊，請參閱 [Intune 文件](https://docs.microsoft.com/intune/)。
 
-### 共同管理
+###  <a name="co-management"></a>共同管理
 
 使用 Autopilot 進行部署後，您可以將 Surface Pro X 裝置加入 Azure AD 或 Active Directory (混合式 Azure AD Join)，這樣就能在其中使用 Intune 來管理裝置，或是使用 Endpoint Configuration Manager (將會安裝 32 位元 x86 ConfigMgr 用戶端) 來共同管理這些裝置。
 
-### 協力廠商 MDM 解決方案
+###  <a name="third-party-mdm-solutions"></a>協力廠商 MDM 解決方案
 
 您或許可以使用協力廠商 MDM 工具來管理 Surface Pro X 裝置。 如需詳細資訊，請連絡 MDM 提供者。
 
-### 防毒軟體
+###  <a name="antivirus-software"></a>防毒軟體
 
 Windows Defender 會在 Windows 10 裝置的支援期間協助保護 ARM 型電腦上的 Windows 10。 
 
 部分協力廠商防毒軟體無法安裝在使用 ARM 型處理器執行的 Windows 10 電腦。 仍持續與協力廠商防毒軟體提供者進行合作，處理防毒應用程式在 ARM 型電腦上的整備工作。 請連絡防毒軟體提供者，以了解他們的應用程式何時會推出。
 
-## 維護 Surface Pro X
+##  <a name="servicing-surface-pro-x"></a>維護 Surface Pro X
 
 Surface Pro X 會附帶 Windows 10 版本 2004，且支援 Windows 10 版本 1903 和更新的版本。 由於是 ARM 型裝置，此產品在維持最新驅動程式和韌體方面有特定需求。 
 
@@ -75,17 +75,17 @@ Surface Pro X 已設計成使用 Windows Update 來為家庭使用者和小型�
 1. 移至 **\[開始\]** > **\[設定\] > \[更新與安全性\] > \[Windows Update\]** > **\[進階選項\]**。
 2. 在 **\[擇更新安裝方式\]** 下方選取 **\[自動 (建議選項)\]**。
 
-### 對商業客戶的建議
+###  <a name="recommendations-for-commercial-customers"></a>對商業客戶的建議
 
 - 使用 Windows Update 或商務用 Windows Update 來維護最新的驅動程式和韌體。 如需詳細資訊，請參閱[使用商務用 Windows Update 來部署更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)。
 - 如需有關在 Surface 裝置上部署和管理更新的詳細資訊，請參閱[管理和部署 Surface 驅動程式與韌體更新](manage-surface-driver-and-firmware-updates.md)。
 - 請注意，Windows Server Update Services (WSUS) 不支援傳遞驅動程式和韌體至 Surface Pro X 的功能。
 
-## 在 Surface Pro X 上執行應用程式
+##  <a name="running-apps-on-surface-pro-x"></a>在 Surface Pro X 上執行應用程式
 
 除了少數例外，大部分應用程式都會在 ARM 型 Windows 10 電腦上執行。
 
-### 支援的應用程式
+###  <a name="supported-apps"></a>支援的應用程式
 
 - 大部分 x86 Win32 應用程式會在 Surface Pro X 上執行。
 - 原生 ARM64 和 Microsoft Store UWP 應用程式在最佳化電池使用時間的同時，利用 ARM 型處理器的完整原生速度提供絕佳使用者體驗。
@@ -94,7 +94,7 @@ Surface Pro X 已設計成使用 Windows Update 來為家庭使用者和小型�
 > [!NOTE]
 > 使用預覽版中透過 Windows 測試人員計畫即將推出的 64 位元模擬，您就能在 Surface Pro X 上執行 64 位元 (x64) 應用程式。
 
-### FastTrack 應用程式 Assure 
+###  <a name="fasttrack-app-assure"></a>FastTrack 應用程式 Assure 
 
 The App Assure 計劃可供商業客戶用於 ARM 上針對 Windows 10 的 LOB、ISV 和 Microsoft 第一方應用程。 如果商業客戶在 ARM 上使用 Windows 10 發生應用程式相容性問題，Microsoft 會提供開發人員資源，以便在不額外付費的情況下，進行疑難排解和協助修復應用程式。 若要深入瞭解，請瀏覽 [aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) (英文)。
 
@@ -103,29 +103,29 @@ The App Assure 計劃可供商業客戶用於 ARM 上針對 Windows 10 的 LOB�
 - [Windows 10 ARM 型電腦支援常見問題集](https://support.microsoft.com/help/4521606)
 - [ARM 上的 Windows 10 文件](https://docs.microsoft.com/windows/arm)
 
-## 虛擬桌面 (VDI)
+##  <a name="virtual-desktops-(vdi)"></a>虛擬桌面 (VDI)
 
 Windows 虛擬桌面可讓您在任何運算裝置或平台上，從任何位置存取 Windows 桌面、應用程式和資料 若要深入了解，請參閱 [Windows 虛擬桌面網站](https://aka.ms/wvd)。 
 
-## 使用 Surface Pro X 進行瀏覽
+##  <a name="browsing-with-surface-pro-x"></a>使用 Surface Pro X 進行瀏覽
 
 在 Surface Pro X 上執行的熱門瀏覽器：
 
 - 內建 Edge、Firefox、Chrome 和 Internet Explorer 都可在 Surface Pro X 上執行。
 - 以 Chromium 為基礎的內建 Firefox 和 Microsoft Edge 以原生方式執行，因此效能在使用 ARM 型處理器的 Windows 10 電腦上有所提升。
 
-## 安裝和使用 Microsoft Office
+##  <a name="installing-and-using-microsoft-office"></a>安裝和使用 Microsoft Office
 
 - 在使用 ARM 型處理器的 Windows 10 電腦上使用 Office 365 可獲得最佳體驗。
 - Office 365「隨選即用」會安裝 Outlook、Word、Excel 和 PowerPoint，並已經過最佳化，可在使用 ARM 型處理器的 Windows 10 電腦上執行。
 - Microsoft Teams 在 Surface Pro X 上的執行效能絕佳。
 - 對於 Office 的「永久版本」(例如 Office 2019)，請安裝 32 位元版本。
 
-## VPN
+##  <a name="vpn"></a>VPN
 
 若要確認特定協力廠商 VPN 是否支援使用 ARM 型處理器的 Windows 10 電腦，請連絡 VPN 提供者。
 
-## 重點摘要
+##  <a name="feature-summary"></a>重點摘要
 
 下表顯示 Surface Pro X 在配合 ARM 上的 Windows 10 使用時，可用的特選關鍵功能。
 
@@ -176,20 +176,20 @@ Windows 虛擬桌面可讓您在任何運算裝置或平台上，從任何位置
 
 
 
-## 常見問題集
+##  <a name="faq"></a>常見問題集
 
-### 是否可以使用 MDT 或 Endpoint Configuration Manager 來部署 Surface Pro X？
+###  <a name="can-i-deploy-surface-pro-x-with-mdt-or-endpoint-configuration-manager"></a>是否可以使用 MDT 或 Endpoint Configuration Manager 來部署 Surface Pro X？
 
 Microsoft Deployment Toolkit (MDT) 和 Microsoft Endpoint Configuration Manager 目前不支援 Surface Pro X 進行作業系統部署。 仰賴映像式部署的客戶在持續評估轉換至雲端適當時機的期間，應考慮使用 Surface Pro 7+。
 
-### 如何部署 Surface Pro X？
+###  <a name="how-can-i-deploy-surface-pro-x"></a>如何部署 Surface Pro X？
 
 使用 Windows Autopilot 來部署 Surface Pro X。
 
-### 可以使用 BMR 嗎？
+###  <a name="is-a-bmr-available"></a>可以使用 BMR 嗎？
 
 是，請參閱 [下載 Surface 的復原影像](https://support.microsoft.com/surfacerecoveryimage).。
 
-### 是否必須有 Intune 才能管理 Surface Pro X？
+###  <a name="is-intune-required-to-manage-surface-pro-x"></a>是否必須有 Intune 才能管理 Surface Pro X？
 
 建議使用 Intune，但並非必要。 使用 Autopilot 進行部署後，您可以將 Surface Pro X 裝置加入 Azure AD 或 Active Directory (混合式 Azure AD Join)，這樣就能在其中使用 Intune 來管理裝置，或是使用 Endpoint Configuration Manager (將會安裝 32 位元 x86 ConfigMgr 用戶端) 來共同管理這些裝置。

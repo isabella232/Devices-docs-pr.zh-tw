@@ -23,7 +23,7 @@ ms.locfileid: "10831402"
 
 瞭解如何部署 ARM 與 Intel 的 Surface 裝置。
 
-## 部署 ARM 裝置
+##  <a name="deploying-arm-based-devices"></a>部署 ARM 裝置
 
 | 主題 | 描述 |
 | --- | --- |
@@ -32,7 +32,7 @@ ms.locfileid: "10831402"
 | [Windows 10 ARM 電腦應用程式相容性](surface-pro-arm-app-performance.md) | 查看 Surface Pro X 的 app 相容性指導方針。 |
 
 
-## 部署以 Intel 為基礎的裝置 
+##  <a name="deploying-intel-based-devices"></a>部署以 Intel 為基礎的裝置 
 
 | 主題 | 描述 |
 | --- | --- |
@@ -45,7 +45,7 @@ ms.locfileid: "10831402"
 | [Surface 部署加速器](microsoft-surface-deployment-accelerator.md)| 請參閱 Microsoft Surface 部署加速器如何為組織提供快速且簡單的部署機制，以重新鏡像 Surface 裝置。 |
 [電池限制設定](battery-limit.md) | 瞭解如何使用電池計量限制，該設定會變更 Surface 裝置電池充電的方式，並延長其壽命。
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 [Surface IT 專業人員部落格](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

@@ -20,7 +20,7 @@ ms.locfileid: "10831353"
 
 在符合地區政府法規的規範中，歐洲、日本和以色列的所有 5 GHz 無線裝置都不支援 NII-3 頻帶。 在 Surface Hub 中，與 U NII （3）關聯的通道是149到165。 這包括這些通道上的 Miracast 連線。 因此，在歐洲、日本和以色列使用的 Surface Hub 不能在 Miracast 連線中使用通道149到165。
 
-## 其他資訊
+##  <a name="more-information"></a>其他資訊
 
 如需詳細資訊，請參閱維琪百科上的[NII](https://en.wikipedia.org/wiki/U-NII)主題。
 

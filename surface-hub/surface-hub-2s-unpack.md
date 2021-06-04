@@ -20,7 +20,7 @@ ms.locfileid: "10831766"
 ---
 # 解包 Surface 中樞的秒
 
-## 解包 Surface Hub 秒
+##  <a name="unpacking-the-surface-hub-2s"></a>解包 Surface Hub 秒
 
 在您從方塊中移除 Surface Hub 2 之前，請確定您已裝配了您的裝載方案，且有可協助您的人員。
 
@@ -33,7 +33,7 @@ ms.locfileid: "10831766"
 7. 將已安裝的硬體與裝入中的槽對齊，讓它牢牢地固定在原位。
 8. 遵循安裝方案隨附的任何進一步指示。
 
-## 安裝手寫筆和相機
+##  <a name="install-pen-and-camera"></a>安裝手寫筆和相機
 
 1. 解包 Surface Hub 2 筆，並將它連接到裝置的喜好位置。
 2. 從相機中移除透鏡 cling，然後將它附加到 Surface Hub 2 的最上方的 USB 埠。

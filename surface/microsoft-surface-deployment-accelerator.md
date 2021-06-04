@@ -32,7 +32,7 @@ Microsoft Surface 部署加速器 (SDA) 使用免費的 Microsoft 部署工具�
 
 產生的影像會緊密符合裸機復原 (BMR) 影像的設定，沒有任何預先安裝的應用程式（例如 Microsoft Office 或 Surface UWP 應用程式）。
 
-## 需求
+##  <a name="requirements"></a>需求
 
 1. USB 拇指磁片磁碟機大小至少 16 GB。 USB 磁片磁碟機將會設定格式。
 2. Windows 10 專業版或 Windows 10 企業版的 .iso 檔案。 媒體建立工具可用於下載 Windows 10 並建立 .iso 檔案。 如需詳細資訊，請參閱 [下載 Windows 10](https://www.microsoft.com/software-download/windows10)。
@@ -40,7 +40,7 @@ Microsoft Surface 部署加速器 (SDA) 使用免費的 Microsoft 部署工具�
 
 如需詳細的需求清單，請參閱讀我檔案的 [ [先決條件](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) ] 區段。
 
-## 如何執行 SDA
+##  <a name="how-to-run-the-sda"></a>如何執行 SDA
 
 **若要執行 SDA：**
 
@@ -75,7 +75,7 @@ Microsoft Surface 部署加速器 (SDA) 使用免費的 Microsoft 部署工具�
 > [!IMPORTANT]
 > 從 USB 磁片磁碟機啟動後，就會立即開始安裝 Windows 10。 在插入 USB 並重新啟動之前，請確定您的裝置已準備好。 
 
-## 相關連結
+##  <a name="related-links"></a>相關連結
 
  - [在 GitHub 上發佈的開啟來源映射部署工具](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
  - [下載並安裝 Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)

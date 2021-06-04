@@ -41,13 +41,13 @@ ms.locfileid: "11304836"
 
  
 
-## 提交支援要求
+##  <a name="submit-support-requests"></a>提交支援要求
 
   [![Get Autopilot 註冊支援 Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 - [Windows Autopilot 與 Surface 裝置](windows-autopilot-and-surface-devices.md)
 - [使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)

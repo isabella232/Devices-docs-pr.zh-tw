@@ -38,7 +38,7 @@ ms.locfileid: "10831630"
 
 - 在目標裝置上安裝 surfacebrightnesscontrol.msi，表面亮度控制將會立即開始運作。
 
-## 配置 Surface 亮度控制項
+##  <a name="configuring-surface-brightness-control"></a>配置 Surface 亮度控制項
 
 您可以透過 Windows Registry 調整預設值。 如需有關使用 Windows 登錄的詳細資訊，請參閱[註冊檔](https://docs.microsoft.com/windows/desktop/sysinfo/registry)。
 
@@ -60,18 +60,18 @@ ms.locfileid: "10831630"
 | 閒置逾時| 預設值：30秒 <br>選項：任何數位值  <br>資料類型： Integer  <br> 類型： REG_DWORD | 此設定可讓您管理裝置變暗前的非活動期。 如果您未設定此設定，非活動超時為30秒。|
 | 已啟用遙測 | 預設值：01 <br>選項：01，00 <br> 類型： REG_BINARY  | 此設定可讓您管理 app 使用方式資訊的共用，以改善軟體並提供更佳的使用者體驗。 若要停用遙測，請將值設定為00。 如果您未設定此設定，則會依照[Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)與 microsoft 共用遙測資訊。 |
 
-## 變更與更新
+##  <a name="changes-and-updates"></a>變更與更新
 
-### 版本1.16.137<br>
+###  <a name="version-1.16.137"></a>版本1.16.137<br>
 *發行日期：2019年10月22日*<br>
 這個版本的 Surface 亮度控制項會新增支援：針對 x86 重新編譯，新增 Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3的支援。 
 
-### 版本1.12.239。0
+###  <a name="version-1.12.239.0"></a>版本1.12.239。0
 *發行日期：2019年4月26日*<br>
 此版本的 Surface 亮度控制項可為下列專案新增支援：
 - 觸控延遲修正程式。
 
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 - [電池限制設定](battery-limit.md)

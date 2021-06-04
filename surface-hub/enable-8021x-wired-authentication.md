@@ -25,7 +25,7 @@ ms.locfileid: "10831853"
 
 主要要進行得設定是 **LanProfile** 原則。 取決於所選取的驗證方法，可能需要其他原則，可能是 **EapUserData** 原則或透過 MDM 原則新增使用者或電腦憑證 (例如 [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) 用於使用者/裝置憑證，或 [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) 用於裝置憑證)。 
 
-## LanProfile 原則項目
+##  <a name="lanprofile-policy-element"></a>LanProfile 原則項目
 
 若要設定 Surface Hub 來使用其中一個支援的 802.1x 驗證方法，請使用下列 OMA-URI。 
 
@@ -49,7 +49,7 @@ Profile File Name: .\Ethernet.xml
 1 profile(s) were exported successfully.
 ```
 
-## EapUserData 原則項目
+##  <a name="eapuserdata-policy-element"></a>EapUserData 原則項目
 
 如果您選取的驗證方法需要使用者名稱和密碼，而不是憑證，您可以使用 **EapUserData** 項目來指定裝置認證以用來向網路進行驗證。 
 
@@ -61,7 +61,7 @@ Profile File Name: .\Ethernet.xml
 
 
 
-## 新增憑證
+##  <a name="adding-certificates"></a>新增憑證
 
 如果您選取的驗證方法是以憑證為基礎，您將需要[建立置備套件](provisioning-packages-for-surface-hub.md)、[使用 MDM](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)，或從 [設定] （[**設定**  >  **更新與安全性**憑證]）匯入憑證，  >  **Certificates**以將這些憑證部署到適當的憑證存放區中的 Surface Hub 裝置。 新增憑證時，每個 PFX 都只能包含一個憑證 (PFX 無法有多個憑證)。
 

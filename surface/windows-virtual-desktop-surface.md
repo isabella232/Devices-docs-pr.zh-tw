@@ -21,19 +21,19 @@ ms.locfileid: "11271527"
 ---
 # Surface 上的 Windows 虛擬桌面
 
-## 簡介
+##  <a name="introduction"></a>簡介
 
 Windows 虛擬桌面在 Surface 裝置上可讓您在 Surface 裝置上執行虛擬桌面基礎結構 (VDI) 在週邊、手寫筆、筆跡及生物特徵驗證跨越物理與虛擬環境的情況下，將本機桌面體驗與虛擬桌面之間的線路模糊。 代表計算的演變中的另一個里程碑，在 Surface 1 上的 Windows 虛擬桌面電腦 <a href="#1"><sup> </sup></a> 結合 Azure 雲端中的 Microsoft 365 虛擬化，包括先進的安全性保護、企業級的管理，以及 Windows 10 的改良生產力工具（surface）。  在 Azure 中，這種綜合形式因素和虛擬桌面基礎結構可提供大量的客戶價值，包括使用者體驗、便攜性、安全性、業務連續性及新式管理。
 
-### Windows 虛擬桌面
+###  <a name="windows-virtual-desktop"></a>Windows 虛擬桌面
 
 Windows 虛擬桌面 (WVD) 是在 Azure 雲端執行的綜合桌面和應用程式虛擬化服務。 這是唯一的虛擬桌面基礎結構，提供簡化的管理、多個會話 Windows 10、Office 365 專業增強版的優化，以及支援遠端桌面服務 (RDS) 環境。 使用 WVD，您可以在 Azure 上快速部署及縮放 Windows 桌面和應用程式，並取得內建的安全性與合規性功能。
 
-### Windows 虛擬桌面合作夥伴整合
+###  <a name="windows-virtual-desktop-partner-integrations"></a>Windows 虛擬桌面合作夥伴整合
 
 如需 Windows 虛擬桌面版核准合作夥伴提供者與獨立軟體廠商的清單，請參閱 [Windows 虛擬桌面合作夥伴](https://docs.microsoft.com/azure/virtual-desktop/partners)整合。 有些合作夥伴也會提供虛擬桌面作為服務 (DaaS) 。 DaaS 能讓您不需要維護您自己的虛擬機器 (Vm，只要提供完整管理的全包式桌面和虛擬化服務即可) 。 在世界各地將自訂的桌面提供給使用者，讓公司能夠快速調整以隨時在需要的雲端桌上型電腦上調整。
  
-## Microsoft Surface 裝置
+##  <a name="microsoft-surface-devices"></a>Microsoft Surface 裝置
 
 Surface 工程具有長時間的新的創新標準，因為它不需要觸控、語音、筆跡或 Surface 撥號，就能想像與裝置互動的更自然方式。 而且使用 Windows 10 專業版的 [晶片到雲端365整合] 和 Windows 10 專業版的安全性與可管理性，Surface 以所要的方式提供連線的硬體、軟體、應用程式和服務。 雖然您可以從 Windows 裝置執行 WVD dating 回到 Windows 7，但是 Microsoft Surface 裝置提供獨特的優點，包括支援：
 
@@ -41,11 +41,11 @@ Surface 工程具有長時間的新的創新標準，因為它不需要觸控、
 - **持續性、隨選即用時的工作案例** -使用離線和裝置存取，以獲得更有效率的體驗。
 - **Windows 10 新式裝置安全性與可管理性** -在任何地方都能靈活地提供生產力。
 
-## 靈活的外形規格與特優的使用者體驗
+##  <a name="flexible-form-factors-and-premium-user-experience"></a>靈活的外形規格與特優的使用者體驗
 
 Microsoft Surface for Business 系列包含多種不同的外形規格，包括傳統的膝上型電腦、一體式電腦，以及兩個內1個裝置。 表面裝置會讓人們喜愛自己的愛，讓他們能根據自己的需求來處理其使用條款。
 
-### 現代虛擬桌面端點
+###  <a name="the-modern-virtual-desktop-endpoint"></a>現代虛擬桌面端點
 
 表面二合1裝置，包括表面效果 [2](https://www.microsoft.com/p/surface-go-2) (10.5 ") ， [surface pro 7 +](https://www.microsoft.com/surface/business/surface-pro-7-plus) (12" ) 及 [surface pro X](https://www.microsoft.com/p/surface-pro-x/) (13 ") ，為使用者提供最佳的雲端桌面端點，以實現可攜性、多功能性、電源及全天電池的最佳平衡。 若要將 Surface Pro 7 移至 dock 和多台顯示器，請從「平板電腦模式」的網站工程師移至平板電腦模式，將 Surface Pro 7 連接至固定工作場所的多功能。
 
@@ -61,15 +61,15 @@ Microsoft Surface for Business 系列包含多種不同的外形規格，包括�
 - 支援多種週邊週邊，例如標準印表機、3D 印表機、相機、信用卡讀取器、條碼掃描器及許多其他外設。 專為 Surface 合作夥伴設計的大型系統，提供授權與認證 Surface 附屬配件。
 - 各種裝置重新導向支援。
 
-### 裝置重新導向支援
+###  <a name="device-redirection-support"></a>裝置重新導向支援
 
 上面所列的以表面為中心的生產力體驗，在 Windows 虛擬桌面環境中，您可以利用裝置重新導向功能與 Windows 10 更具吸引力。 Surface 提供各種裝置重新導向支援，特別是在與 OEM 瘦用戶端和固定終端、Android、iOS/macOS 以及 Web 的存取權相比。 Windows [收件匣] (MSTSC) 及 Windows 桌面 (MSRDC) 用戶端提供大部分的裝置重新導向功能，包括輸入重新導向 (鍵盤、滑鼠、手寫筆和觸控) 、埠重新導向 (串列與 USB) 及其他重定向 (相機、剪貼簿、印表機、掃描器、智慧卡和喇叭) 。 如需裝置重新導向支援的詳細比較，請參閱裝置重新導向 [檔](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare#redirection-support)。
 
-### 熟悉的桌面體驗
+###  <a name="familiar-desktop-experience"></a>熟悉的桌面體驗
 
 不只是在 Surface 裝置上執行 Windows 桌面用戶端，就能讓使用者使用一組廣泛的裝置重新導向功能，直接從 [開始] 功能表或搜尋列，讓所有人都能以熟悉的方式啟動 app。
 
-### 持續性、隨選時間和即時工作案例
+###  <a name="persistent,-on-demand-and-just-in-time-work-scenarios"></a>持續性、隨選時間和即時工作案例
 
 在 Surface 上的 Windows 虛擬桌面電腦可協助客戶在行業、員工角色和工作環境中滿足日益複雜的業務與安全需求。 這些地方包括：
 
@@ -80,13 +80,13 @@ Microsoft Surface for Business 系列包含多種不同的外形規格，包括�
 - 支援特殊的處理器密集型工作負載。
 - 在中斷期間維持作業的復原能力。
 
-### 表 1. Windows 虛擬桌面商務交談
+###  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>表 1. Windows 虛擬桌面商務交談
 
 | 安全性 & 法規                                | 彈性工作力                                                            | 工作角色                                                        | 特殊工作負載                                                            | 業務連續性                                  |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
 | -財務服務<br>-醫療保健<br>-政府 | -兼併 & 收購<br>-短期員工<br>-合同工 & 合作夥伴 | -BYOD & mobile<br>-客戶支援/服務<br>-分支辦公室 | -設計 & 工程<br>-支援繼承應用程式<br>-軟體發展人員 & 測試 | 隨選即用<br>-即時 (JIT) <br>-工時 @ 首頁 |
 
-### 離線和裝置存取，以獲得更有效率的體驗
+###  <a name="offline-and-on-device-access-for-more-productive-experiences"></a>離線和裝置存取，以獲得更有效率的體驗
 
 在傳統上，VDI 解決方案只能在端點連線至網際網路時運作。 但由於行動性、某個平面或電源) 中斷等問題而無法使用網際網路或電源時，會發生什麼情況 (？
  
@@ -96,7 +96,7 @@ Microsoft Surface for Business 系列包含多種不同的外形規格，包括�
  
 本機安裝傳統應用程式的替代方法，是使用最新版本的 Microsoft Edge，提供對累進式 Web 應用程式 (PWA) 的支援。 PWAs 只是在支援的平臺上逐漸增強到像是原生應用程式的網站。 PWA 的品質會結合其他功能（例如推播通知、背景資料重新整理、離線支援等）的最佳網頁與原生應用程式。
 
-### 虛擬 Gpu
+###  <a name="virtual-gpus"></a>虛擬 Gpu
 
 Gpu 適用于 AI 計算及圖形密集型工作負載，可協助客戶在高端遠端視覺效果、深入學習及預測分析等案例中燃料創新。  不過，對於需要遠端作業或在旅途中進行的專業人士而言，這並不是理想的，因為內部 GPU 動力的不同程度是與物理裝置相關聯，限制行動與靈活性。
  
@@ -104,7 +104,7 @@ Gpu 適用于 AI 計算及圖形密集型工作負載，可協助客戶在高端
  
 Azure N-系列可在 Surface 裝置上使用這些功能，讓您隨時隨地都能使用任何您想要的方式。  [深入瞭解 Azure N 系列與 GPU 優化的虛擬電腦大小。](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu)
 
-## Microsoft 365 和 Surface
+##  <a name="microsoft-365-and-surface"></a>Microsoft 365 和 Surface
 
 即便是在虛擬化的桌面環境中，Microsoft 365 和 Surface 都能提供員工喜愛的體驗、保護組織需求，以及團隊共同作業的彈性。 根據 Forrester 研究： <a href="#4"><sup> 4</sup></a>
 
@@ -112,7 +112,7 @@ Azure N-系列可在 Surface 裝置上使用這些功能，讓您隨時隨地都
 - 75% 同意 Microsoft 365-已驅動的 Surface 裝置可協助改善員工滿意度與留存度
 - 同意 Microsoft 365 的 Surface 裝置已協助改善員工滿意度與保留。
 
-### 安全性與管理
+###  <a name="security-and-management"></a>安全性與管理
 
 從晶片到雲端，Microsoft 365 和 Surface 會協助組織保持受保護且為最新狀態。
 透過 Microsoft 設計、建立及測試的 Surface 硬體和軟體，使用者可以確信它們的生產力，並由從晶片到雲端的主要技術來保護。  隨著遠端作業的使用者數量增加，保護公司資料和智慧財產權就變得比以往更為重要。 Windows 虛擬桌面版是圍繞不信任的安全性模型設計的，其中每個存取要求都經過強驗證，在原則限制內受到授權，並在准許存取前檢查過異常。
@@ -132,15 +132,15 @@ Azure N-系列可在 Surface 裝置上使用這些功能，讓您隨時隨地都
 - **舊版 windows 7 工作負載的橋接器** -適用于依賴舊版 windows OS 環境的方案案例，企業可以使用在 Azure 中執行的 Windows 7 的 VDI 實例。 這會在表面（例如表面）上啟用支援，而不需要依賴舊版 Windows 7 電腦，而不再接收最新的安全性更新。  除了這些「未來的校對」好處之外，當您已部署新式 Windows 10 硬體時，任何舊版工作的遷移都會大大簡化。
 - **零觸控部署** -Autopilot 是 Surface 裝置的建議新式管理部署選項。 Surface 上的 windows Autopilot 是 Windows 10 中的雲端部署技術。 您可以在 Surface 中使用 Windows Autopilot，在零觸程式中從盒式遠端部署和設定裝置。 Windows Autopilot 已註冊的裝置會在第一次啟動時透過一個名為「硬體雜湊」的唯一裝置簽名來識別網際網路。 它們是使用新式管理解決方案（例如 Azure Active Directory (Azure AD) 與行動裝置管理）自動進行註冊和設定。
 
-### Surface 裝置：將環境影響降至最低
+###  <a name="surface-devices:-minimizing-environmental-impacts"></a>Surface 裝置：將環境影響降至最低
 
 Surface 會執行生命週期評定來計算裝置在產品生命週期的主要階段所產生的環境影響，讓 Microsoft 能夠將這些影響降至最低。 每個 Surface 產品都有一個 ECO 設定檔，其中包含有關溫室氣體排放、主要能源消耗量與材質組合資料、封裝、回收及相關準則的詳細資料。 若要下載每個 Surface 裝置的設定檔，請參閱 Microsoft 下載中心的 [ECO 設定檔](https://www.microsoft.com/download/details.aspx?id=55974) 。
 
-## 摘要
+##  <a name="summary"></a>摘要
 
 在 Surface 上使用 Windows 虛擬桌面，可以為組織提供更大的彈性與復原能力，以滿足使用者、干係人及客戶的需求。 在 Surface 裝置上執行 Windows 虛擬桌面解決方案，提供與對舊版裝置繼續依賴性相關的獨特優點。  彈性形式的外觀，例如表面上2和 Surface Pro 7 + 連線至雲端 (或離線) ，讓使用者隨時都能使用生產力。 無論員工是在持續性、隨選或即時案例中運作，在 Surface 上的 Windows 虛擬桌面電腦都能利用多功能性來供應商業，以維持公眾健康情況緊急或其他無法預見事件的整個中斷。 使用 Windows 10 的內建的多層次安全性和新式管理，公司可以利用雲端服務的擴展生態系統來快速部署及縮放 Windows 桌面及 app。 簡單地說，在 Surface 上，Windows 虛擬桌面電腦會針對各種規模的組織和企業提供極大需求的技術。
 
-## 深入了解
+##  <a name="learn-more"></a>深入了解
 
 如需詳細資訊，請參閱下列資源：
 

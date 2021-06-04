@@ -27,7 +27,7 @@ ms.locfileid: "11326281"
 
 Surface Duo 支援適用于企業的 Microsoft Launcher，這是一種 Android 應用程式，可讓使用者個人化手機、保持井井有條，以及順暢地在行動裝置與電腦之間同步處理其日曆、工作、記事等內容。 事實上，Surface Duo 啟動器是雙螢幕自訂版本的 Microsoft Launcher，您可以調整以定義貴組織完全受管理的裝置上偏好的體驗，並允許使用者選擇一些選項，以在這些公司裝置上個人化自己的體驗。 例如，您可以選取要釘選到主畫面的應用程式、部署品牌背景圖片，或隱藏搜尋欄，同時允許使用者啟用搜尋欄 ，如果需要的話。
 
-## Microsoft Launcher 設定
+##  <a name="microsoft-launcher-settings"></a>Microsoft Launcher 設定
 
 Microsoft Launcher 包含下列設定以自訂使用者體驗：
 

@@ -31,7 +31,7 @@ Miracast 透過基礎結構提供數個優點：
 - 它會使用現有的連接，同時降低連線時間，並提供非常穩定的串流。
 
 
-## 運作方式
+##  <a name="how-it-works"></a>運作方式
 
 使用者會嘗試透過其 Wi-fi 配接器連線到 Miracast 接收器，就像先前的一樣。 當填入 Miracast 接收器清單時，Windows 10 會辨識有能力透過基礎結構支援連接的接受器。 當使用者選取 Miracast 接收器時，Windows 10 會嘗試透過標準 DNS，以及透過多點 DNS (mDNS) 解析裝置的主機名稱。 如過任一 DNS 均無法解析名稱時，Windows 10 會改為使用標準 Wi-Fi direct 連接建立 Miracast 工作階段。
 
@@ -41,7 +41,7 @@ Miracast 透過基礎結構提供數個優點：
 
 
 
-## 啟用 Miracast 透過基礎結構 
+##  <a name="enabling-miracast-over-infrastructure-"></a>啟用 Miracast 透過基礎結構 
 
 如果您的 Surface Hub 或其他 Windows 10 裝置已更新至 Windows 10 版本 1703，則您自動擁有此新功能。 若要在您的環境中充分利用它，您需要下列部署中的項目為真：
 
@@ -59,6 +59,6 @@ Miracast 透過基礎結構提供數個優點：
 
 在 ([SurfaceHub 設定服務提供者 (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp)) 中的 **InBoxApps/WirelessProjection/PinRequired** 設定並不需要用於 Miracast 透過基礎結構。 這是因為 Miracast 透過基礎結構只能在裝置連接到相同企業網路時運作。 這會移除 Miracast 先前遺漏的安全性限制。 我們建議您繼續使用此設定 (如果您之前曾經使用)，不然的話 Miracast 會改為使用一般的 Miracast (如果基礎結構連線未運作)。 
 
-## 常見問題集
+##  <a name="faq"></a>常見問題集
 **為什麼仍需要使用 Wi-fi 才能透過基礎結構使用 Miracast？**<br>
 識別 Miracast 接收器的探索要求只能透過 Wi-fi 配接器來進行。 當接收器已確定之後，Windows 10 就可以嘗試連線到網路。

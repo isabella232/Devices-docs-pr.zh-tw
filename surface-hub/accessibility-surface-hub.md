@@ -23,7 +23,7 @@ ms.locfileid: "10831634"
 Microsoft Surface Hub 和 Windows10 具有相同的協助工具選項。
 
 
-## 預設協助工具設定
+##  <a name="default-accessibility-settings"></a>預設協助工具設定
 
 協助工具設定的完整清單於 **\[設定\]** 應用程式中提供給 IT 系統管理員使用。 Surface Hub 的預設協助工具設定包括：
 
@@ -57,7 +57,7 @@ Microsoft Surface Hub 和 Windows10 具有相同的協助工具選項。
 - 滑鼠鍵
 
 
-## 在會議期間變更協助工具設定
+##  <a name="change-accessibility-settings-during-a-meeting"></a>在會議期間變更協助工具設定
 
 在會議期間，使用者可以用數種方式切換協助工具功能和應用程式：
 - [鍵盤快速鍵](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
@@ -66,7 +66,7 @@ Microsoft Surface Hub 和 Windows10 具有相同的協助工具選項。
 > ![顯示 Surface Hub 上快速控制項目中心的影像](images/sh-quick-action.png)
 
 
-## 相關主題
+##  <a name="related-topics"></a>相關主題
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)
 
