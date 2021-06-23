@@ -24,7 +24,6 @@
 
 ### [Surface 裝置與 Windows 10 長期維護分支的相容性](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Surface 裝置的長期維護分支](ltsb-for-surface.md)
-### [適用於 Surface 裝置的網路喚醒](wake-on-lan-for-surface-devices.md)
 ### [Surface 和 Endpoint Configuration Manager 考量](considerations-for-surface-and-system-center-configuration-manager.md)
 ### [透過商務用 Microsoft Store 部署 Surface 應用程式](deploy-surface-app-with-windows-store-for-business.md)
 ### [在 Surface 裝置上啟用 PEAP、EAP-FAST 和 Cisco LEAP](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
@@ -57,10 +56,13 @@
 ### [電池限制設定](battery-limit.md)
 ### [Surface 亮度控制](microsoft-surface-brightness-control.md)
 ### [Surface 資產標記](assettag.md)
+### [適用於 Surface 裝置的網路喚醒](wake-on-lan-for-surface-devices.md)
+### [使用 Surface Dock 2 的網路喚醒](wake-on-lan-surface-dock2.md)
 ### [適用於 Surface 裝置的電源喚醒](wake-on-power-for-surface.md)
 
 ## 安全
 
+### [Surface 安全性概觀](surface-security.md)
 ### [Surface UEFI 設定的 Intune 管理](surface-manage-dfci-guide.md)
 ### [管理 Surface UEFI 設定](manage-surface-uefi-settings.md)
 ### [Surface Pro 3 的進階 UEFI 安全性功能](advanced-uefi-security-features-for-surface-pro-3.md)
@@ -73,7 +75,6 @@
 ### [Surface DMA 保護](dma-protect.md)
 
 ## 疑難排解
-### [連絡 Surface 支援](contact-surface-support.md)
 ### [Surface 裝置的最佳支援解決方案](support-solutions-surface.md)
 ### [在相容 Surface 裝置中移除 SSD 的最佳做法](surface-ssd-removal-guide.md)
 ### [Surface IT 專業人員部落格](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro)
@@ -82,11 +83,13 @@
 #### [在桌面模式中使用商務用 Surface 診斷工具組](surface-diagnostic-toolkit-desktop-mode.md)
 #### [使用命令執行商務用 Surface 診斷工具組](surface-diagnostic-toolkit-command-line.md)
 ### [終端使用者說明](https://support.microsoft.com/products/surface-devices)
-### [Windows 版裝置的 Surface 驅動程式與韌體生命週期](surface-driver-firmware-lifecycle-support.md)
+### [Windows 型裝置的 Surface 驅動程式與韌體生命週期](surface-driver-firmware-lifecycle-support.md)
+### [連絡 Surface 支援服務](contact-surface-support.md)
 
-## 保固與保護方案
+## 保固和服務 
 ### [商務用 Surface 保固與保護方案](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [條款與條件](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
+### [Surface 自助保固與服務](self-serve-warranty-service.md)
 ### [下一個工作日換貨](surface-next-business-day-replacement.md)
 ### [檢查裝置保固狀態](https://mybusinessservice.surface.com/)
 ### [在服務中傳送 Surface 時保護資料](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
