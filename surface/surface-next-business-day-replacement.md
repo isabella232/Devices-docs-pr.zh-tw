@@ -3,7 +3,7 @@ title: 下一個工作日換貨資訊與涵蓋範圍
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/23/2021
+ms.date: 06/17/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -11,15 +11,14 @@ localization_priority: high
 ms.custom: references_regions
 appliesto:
 - Surface
-- Surface Hub
 ms.reviewer: irenewhite
 description: 下一個工作日換貨資訊與涵蓋範圍。
-ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: 4488d2f1cc8a3e6c240710d59f3465d05abae12b
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585924"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613842"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>下一個工作日換貨資訊與涵蓋範圍
 
@@ -58,6 +57,7 @@ ms.locfileid: "11585924"
 - [瑞典](#sweden)
 - [瑞士](#switzerland)
 - [荷蘭](#the-netherlands)
+- [英國](#united-kingdom)
 - [美國](#united-states)
 
 
@@ -107,6 +107,7 @@ ms.locfileid: "11585924"
 #### <a name="hong-kong"></a>香港
 
 - 截止時間：16 點 0 分 HKT (UTC+8) 
+- NBD 的涵蓋範圍適用於香港特別行政區的所有郵遞區號。
 
 #### <a name="ireland"></a>愛爾蘭
 
@@ -142,11 +143,12 @@ ms.locfileid: "11585924"
 #### <a name="singapore"></a>新加坡
 
 - 截止時間：13 點 0 分 SGT (UTC+8)
+- NBD 的涵蓋範圍適用於此國家/地區的所有郵遞區號。
 
 #### <a name="spain"></a>西班牙
 
 - 截止時間：12 點 0 分 CET (UTC+1)
-- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coveragef-%20Spain%20Post%20Codes%20030321.xlsx)
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage-%20Spain%20Post%20Codes%20030321.xlsx)
 
 #### <a name="sweden"></a>瑞典
 
@@ -162,6 +164,10 @@ ms.locfileid: "11585924"
 
 - 截止時間：12 點 0 分 CET (UTC+1)
 - [下一個工作天涵蓋範圍](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
+
+### <a name="united-kingdom"></a>英國
+
+- 截止時間：12 點 0 分 CET (UTC+1)
 
 #### <a name="united-states"></a>美國 
 
