@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f1790da48425b645d7e25342cfd4c1b0cde44661
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: b03b1a60ebc75e6af37c979082bf7c4a2eca4937
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576733"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643839"
 ---
 # <a name="surface-hub-update-history"></a>Surface Hub 更新歷程記錄
 
@@ -22,7 +22,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 大部分Windows更新著重于改善您的功能和安全性，以持續持續 24/7。
 
-我們聽到的一件事是，您想要進一步瞭解我們的更新Windows 10內容，因此我們會在此頁面上提供更多詳細資訊。 在下列清單中，會Windows特定Surface Hub的最新更新。 更新是累加的，因此Windows最新的可用更新 (即使未在) 清單中，您也會受益于任何先前更新的改良功能。 Microsoft Store應用程式會透過Microsoft Store (系統管理員管理Surface Hub更新) 。 應用程式更新的詳細資訊會以每個應用程式為基礎提供。
+我們聽到您意見的一件事是，您想要進一步瞭解我們的更新Windows 10內容，因此我們會在此頁面上提供更多詳細資訊。 在下列清單中，會Windows特定Surface Hub的最新更新。 更新是累加的，因此Windows最新的可用更新 (即使未在) 清單中，您也會從任何先前更新的改良中獲益。 Microsoft Store應用程式會透過Microsoft Store (系統管理員管理Surface Hub更新) 。 應用程式更新的詳細資訊會以每個應用程式為基礎提供。
 
 隨著新更新的發佈，我們會重新更新此頁面，因此請留意最新資訊。 感謝您協助我們瞭解每一個更新，並取得更好的效果！
 
@@ -31,9 +31,22 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 團隊版 2020 年 (20H2) 
 
 <details>
+<summary>2021 年 6 月 10 日 - Surface Hub 2S 更新</summary>
+
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
+
+* Surface UEFI 更新 - 694.3751.768.0
+  * 解決重大安全性弱點並改善系統穩定性。
+* Surface ME 固件更新 - 11.8.86.3877
+  * 解決重大安全性弱點並改善系統穩定性。
+* Intel (R) 管理引擎介面驅動程式 - 2102.100.0.1044
+  * 解決重大安全性弱點並改善系統穩定性。
+</details>
+
+<details>
 <summary>2021 年 4 月 13 日 - 根據 KB5001330* (OS Build 19042.928) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新](https://support.microsoft.com/help/4581839/windows-10-update-history)，包括：
+此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4581839/windows-10-update-history)包括：
 
 * 解決部分裝置只Surface Hub每月安裝安全性更新Windows，而非所有累積更新Windows的問題。
 
@@ -43,20 +56,20 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2021 年 3 月 13 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Intel (R) 藍牙驅動程式 - 22.30.0.4
-  * 解決安全性更新，並改善系統穩定性。
+  * 改善系統安全性與穩定性。
 * Intel (R) 圖形驅動程式 - 27.20.100.8682
-  * 解決安全性更新，並改善系統穩定性。
+  * 改善系統安全性與穩定性。
 * Intel (R) Wi-Fi驅動程式 - 22.30.0.11
-  * 解決安全性更新，並改善系統穩定性。
+  * 改善系統安全性與穩定性。
 </details>
 
 <details>
 <summary>2021 年 2 月 2 日 - 根據 KB4598291* (OS Build 19042.789) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新](https://support.microsoft.com/help/4581839/windows-10-update-history)，包括：
+此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4581839/windows-10-update-history)包括：
 
 * 修正當裝置帳戶的 UPN 不等於其 SMTP 時Exchange日曆同步處理功能。
 * 新增系統管理員在日曆同步處理期間停用新式驗證Exchange。
@@ -64,13 +77,13 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 解決當使用Windows要求驗證的 Proxy 時，更新和市Windows更新檢查永遠不會完成的問題。
 * 改善有線使用連線 App 的可靠性。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。 *[KB4598291](https://support.microsoft.com/help/4598291)
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。 *[KB4598291](https://support.microsoft.com/help/4598291)
 </details>
 
 <details>
 <summary>2021 年 1 月 15 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface SMC 固件更新 - 3.93.139.0
 * Surface UEFI 更新 - 694.3473.768.0
@@ -79,7 +92,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2020 年 12 月 11 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface SMC 固件更新 - 3.92.139.0
 * Surface UEFI 更新 - 694.3447.768.0
@@ -88,10 +101,10 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2020 年 11 月 30 日 - 根據 KB4586853* (OS Build 19042.662) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新](https://support.microsoft.com/help/4581839/windows-10-update-history)，包括：
+此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4581839/windows-10-update-history)包括：
 
 * 更新至隱私權設定頁面，以提供其他選項。
-* 修正此問題，以確保結束會話清理完全移除所有與 Edge Chromium。
+* 修正此問題，可確保結束會話清理完全移除所有與 Edge Chromium。
 * 解決已啟動的會議未顯示在歡迎/開始畫面上的問題。
 * 解決非美國地區設置雲端修復的問題。
 * 商務用 Skype
@@ -100,13 +113,13 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 提高註冊測試人員計畫Windows的可靠性。
 * 改善小組Windows的可靠性。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。 *[KB4586853](https://support.microsoft.com/help/4586853)
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。 *[KB4586853](https://support.microsoft.com/help/4586853)
 </details>
 
 <details>
 <summary>2020 年 11 月 24 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface SMC 固件更新 - 3.91.139.0
   * 改善已連接的待命可靠性。
@@ -119,7 +132,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2020 年 10 月 27 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface System 匯總器固件更新 - 4.14.139.0
 * Surface UEFI 更新 - 694.3386.768.0
@@ -128,9 +141,9 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>Windows 10 團隊版 2020 Surface Hub更新 - OS 版本 19042.572 (的一般發行) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 Surface Hub更新歷程記錄中尚未概述的 Windows 10 重要更新[](https://support.microsoft.com/help/4581839/windows-10-update-history)，會記錄在 「Windows 10 團隊版[2020](https://docs.microsoft.com/surface-hub/surface-hub-2020-update-whats-new)Update 的新增功能」頁面上。
+此更新包含Surface Hub品質改進和安全性修正。 Surface Hub更新歷程記錄中尚未概述的 Windows 10 重要更新[](https://support.microsoft.com/help/4581839/windows-10-update-history)，會記錄在 「Windows 10 團隊版[2020](/surface-hub/surface-hub-2020-update-whats-new)Update 的新增功能」頁面上。
 
-請參閱 「安裝[2020](https://docs.microsoft.com/surface-hub/surface-hub-2020-update)Windows 10 團隊版更新」頁面，以進一步瞭解地區、發佈方式及裝置類型的更新可用性。
+請參閱 「安裝[2020](/surface-hub/surface-hub-2020-update)Windows 10 團隊版更新」頁面，以進一步瞭解地區、發佈方式及裝置類型的更新可用性。
 </details>
 
 ## <a name="windows-10-team-creators-update-1703"></a>Windows 10 團隊版Creators Update (1703) 
@@ -138,7 +151,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2020 年 9 月 1 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface SMC 固件更新 - 1.177.139.0
   * 改善欄位修復案例。
@@ -151,7 +164,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2020 年 5 月 4 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface USB 音訊磁碟機 - 15.3.6.0
   * 改善方向音訊效果。
@@ -168,7 +181,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2020 年 2 月 28 日 - Surface Hub 2S 更新</summary>
 
-此更新是 2S Surface Hub所特有的，並提供以下所述的驅動程式和固件更新：
+此更新適用于 2S Surface Hub，並提供以下所述的驅動程式和固件更新：
 
 * Surface 整合驅動程式 - 13.46.139.0 
   * 改善顯示亮度案例。
@@ -185,10 +198,10 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4018124/windows-10-update-history)包括：
 
-* 解決中心 2S 在通話期間無法讓其他參與者聽到商務用 Skype的問題。
-* 改善某些阿拉伯文、希伯來文和其他 RTL 語言使用案例的可靠性Surface Hub。
+* 解決在通話期間，其他參與者無法聽到中樞 2S 商務用 Skype的問題。
+* 改善某些阿拉伯文、希伯來文和其他 RTL 語言使用案例的可靠性，Surface Hub。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4537765](https://support.microsoft.com/help/4537765)
 </details>
 
@@ -199,7 +212,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 * 解決 2S 的記錄集合Microsoft Surface Hub問題。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4534296](https://support.microsoft.com/help/4534296)
 </details>
 
@@ -215,7 +228,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
  * 已修正流覽Microsoft Edge網站時發生之問題。
  * 已修正商務用 Skype全螢幕模式進行展示時發生的問題。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
@@ -227,7 +240,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
  * 確保中樞 2S 上的 「視像外」預設為「重複」模式。
  * 改善某些阿拉伯文語言使用案例的可靠性Surface Hub。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4503289](https://support.microsoft.com/help/4503289)
  </details>
 
@@ -241,7 +254,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 改善 Hub 2S 上硬體診斷 App 可靠性的修正程式。 
 * 修正以改善中樞 2S 上第一次執行設定體驗的一致性。 
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
@@ -255,7 +268,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 新增 TLS 1.2 商務用 Skype。
 * 解決當伺服器已停用 TLS 1.0 Skype TLS 1.1 時Skype用戶端的 SIP 連接失敗。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4499162](https://support.microsoft.com/help/4499162)
 </details>
 
@@ -266,7 +279,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 * 解決部分已連接到該裝置之 USB 裝置之視Surface Hub。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4493436](https://support.microsoft.com/help/4493436)
 </details>
 
@@ -277,7 +290,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 * 解決某些使用者無法Signing-In「我的會議和檔案」的問題。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KBKB4467699](https://support.microsoft.com/help/KB4467699)
 </details>
 
@@ -287,13 +300,13 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4018124/windows-10-update-history)包括：
 
 * 商務用 Skype修正程式： 
-  * 解決商務用 Skype從睡眠狀態繼續時的連接問題
+  * 解決商務用 Skype從睡眠狀態繼續時發生連接問題
   * 解決商務用 Skype連接到網際網路時的網路連接問題
   * 解決商務用 Skype搜尋目錄中的使用者時發生當機的問題
 * 解決中心在企業 Proxy 環境中錯誤報表「無網際網路連接」的問題。
 * 已執行一項功能，讓客戶能夠使用新的 Whiteboard 體驗。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4462939](https://support.microsoft.com/help/4462939)
 </details>
 
@@ -307,7 +320,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 可讓系統管理員停用中樞的立即訊息和電子郵件服務
 * 適用于應用程式的其他錯誤修正Surface Hub 商務用 Skype可靠性改進
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4343889](https://support.microsoft.com/help/4343889)
 </details>
 
@@ -318,7 +331,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 * 支援 EMEA GDPR 需求的遙測變更
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4284830](https://support.microsoft.com/help/KB4284830)
 </details>
 
@@ -336,7 +349,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 將 Miracast 149 到 165 Surface Hub指定給通道 149 時，可解決此問題
   * 由於地區政府法規，149 到 165 頻道在歐洲、日本或以色列仍然無法使用
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4093117](https://support.microsoft.com/help/4093117)
 </details>
 
@@ -348,7 +361,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 已解決 MDM 設定未正確使用的問題
 * 改良的清理程式
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4077528](https://support.microsoft.com/help/4077528)
 </details>
 
@@ -360,7 +373,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 新增透過 MDM 管理開始功能表磚版面配置的功能
 * 修正密碼旋轉配置的 MDM 錯誤
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4057144](https://support.microsoft.com/help/4057144)
 </details>
 
@@ -372,7 +385,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 解決通話期間相機視訊 (或閃爍) 或商務用 Skype閃爍
 * 解決通知中心 SSD 識別碼問題
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4053580](https://support.microsoft.com/help/4053580)
 </details>
 
@@ -390,7 +403,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 減少並更徹底保護裝置傳送的遙測，降低頻寬使用量。
 * 啟用一項功能，讓使用者在會議結束後提供意見回饋給 Microsoft。
 
-請參閱[管理Surface Hub指南](https://docs.microsoft.com/surface-hub/)，以啟用/停用裝置功能和服務。
+請參閱[管理Surface Hub指南](/surface-hub/)，以啟用/停用裝置功能和服務。
 *[KB4048954](https://support.microsoft.com/help/4048954)
 </details>
 
@@ -429,8 +442,8 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 * 商務用 Skype 
   * 解決商務用 Skype Sign-In問題，需要重試或系統重新開機。
-  * 解決商務用 Skype未正確顯示會議時間的問題。
-  * 改善可靠性Surface Hub 商務用 Skype修正。
+  * 解決商務用 Skype無法正確顯示會議時間的問題。
+  * 改善可靠性Surface Hub 商務用 Skype修正程式。
 
 *[KB4032188](https://support.microsoft.com/help/4032188)
 </details>
@@ -452,7 +465,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 此更新包含Surface Hub品質改進和安全性修正。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4018124/windows-10-update-history)包括：
 
 * 一般
-  * 已解決手寫筆的手寫筆拖放問題
+  * 已解決手寫筆的手寫筆刪除問題
   * 已解決導致延長「清理」會議時間的問題
 
 *[KB4022725](https://support.microsoft.com/help/4022725)
@@ -492,13 +505,13 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 
 * 不斷演進大型螢幕體驗 
   * 改良歡迎與開始中的會議導車
-  * 直接從開始功能表加入會議並結束會話
+  * 直接從會議加入會議並結束[開始] 功能表
   * App 可在會話期間使用更多螢幕
   * 簡化Skype控制項
   * 改良提供意見回饋的機制
 * 存取我的個人內容*
   * 歡迎或開始的個人單一登入
-  * 直接從開始功能表加入會議並結束會話
+  * 直接從會議加入會議並結束[開始] 功能表
   * 直接從開始商務用 OneDrive存取個人檔案
   * 預先填好出席者登錄
   * 使用「Authenticator」應用程式簡化驗證流程**
@@ -509,9 +522,9 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
   * 改良的 Proxy 認證支援
   * 新增和/Skype QoS (服務品質) 支援
   * 新增了在裝置中設定預設設定
-  * 改良的 MDM 支援Surface Hub[設定](https://docs.microsoft.com/surface-hub/remote-surface-hub-management)
+  * 改良的 MDM 支援Surface Hub[設定](/surface-hub/remote-surface-hub-management)
 * 改良安全性 
-  * 新增了將 USB 磁片磁碟機限制為BitLocker功能
+  * 新增了僅將 USB 磁片磁碟機限制為 BitLocker 的能力
   * 新增透過 MDM 停用 USB 埠的功能
   * 新增在超時時停用「繼續會話」功能的功能
   * 新增有線 802.1x 支援
@@ -540,7 +553,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 一般
   * 檔案檔案管理器的安全性修正程式，以防止流覽至受限制的檔案位置
 * 商務用 Skype
-  * 修正在遠端桌面螢幕共用期間解決延遲的問題
+  * 修正遠端桌面螢幕共用期間延遲的問題
 
 *[KB4013429](https://support.microsoft.com/help/4013429)
 </details>
@@ -599,7 +612,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 * 商務用 Skype
   * 加入會議時提升的績效，包括使用聯盟帳戶加入會議時的問題
   * 視 (視 (VBSS) 現在可在 商務用 Skype 上Surface Hub
-  * 已解決閒置 5 分鐘後的中斷中斷問題
+  * 5 分鐘閒置時間問題後已解決中斷連接的問題
   * 已Skype中心對中樞畫面共用失敗的問題
   * 改善影片Skype，包括：
     * 與多位視音訊簡報者開會時視音訊遺失
@@ -625,9 +638,9 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
   * Windows Defender已在設定中新增 UI
   * 改良 UX 觸控以開始
   * 支援超過 1080p 的無線投影，Miracast支援的裝置上
-  * 已解決啟動時「沒有網際網路連接」和「約會可能已過期」錯誤通知狀態
+  * 已解決「沒有網際網路連接」和「約會可能已過期」的誤通知狀態
   * 改善螢幕小鍵盤的可靠性
-  * 使用 Surface Hub Windows 映像&組& ICD (ICD) 建立 Surface Hub 部署套件的其他支援，以及改良的 Surface Hub 監控解決方案 (OMS) 
+  * 使用 Surface Hub Windows 映像&組& ICD (ICD) 建立 Surface Hub 部署套件的其他支援，以及改良的 Surface Hub 監控解決方案 ， (OMS) 
 
 *[KB3194496](https://support.microsoft.com/help/3194496)
 </details>
@@ -648,7 +661,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 此更新包括品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub (中尚未包含之Windows 10[變更](https://support.microsoft.com/help/4018124/windows-10-update-history)) 包括：
 
 * 修正導致系統Windows的問題
-* 已修正導致重複 Edge 當機的問題
+* 修正導致重複 Edge 當機的問題
 * 已修正導致關機前服務當機的問題
 * 已修正會話後無法正確移除某些應用程式資料的問題
 * 更新 Broadcom NFC 驅動程式以改善 NFC 性能
@@ -667,9 +680,9 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2016 年 6 月 14 日 - 根據 KB3163018* (OS Build 10586.420) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新](https://support.microsoft.com/help/4018124/windows-10-update-history)，包括：
+此更新包含Surface Hub品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4018124/windows-10-update-history)包括：
 
-* 限制發行。 請參閱 2016 年 7 月 12 日 - [KB3172985](https://support.microsoft.com/en-us/help/3172985) (OS 版本 10586.494) 特定套件Surface Hub詳細資料
+* 限制發行。 請參閱 2016 年 7 月 12 日 - [KB3172985](https://support.microsoft.com/en-us/help/3172985) (OS 版本 10586.494) 特定套件詳細資料Surface Hub。
 
 *[KB3163018](https://support.microsoft.com/help/3163018)
 </details>
@@ -677,7 +690,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2016 年 5 月 10 日 - 根據 KB3156421* (OS Build 10586.318) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新](https://support.microsoft.com/help/4018124/windows-10-update-history)，包括：
+此更新包含Surface Hub品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4018124/windows-10-update-history)包括：
 
 * 已修正無法安裝特定市 (OneDrive) App 的問題
 * 已修正導致觸控輸入在應用程式中停止回應的問題
@@ -688,7 +701,7 @@ Windows 10設計成服務，這表示它會自動透過定期軟體更新變得�
 <details>
 <summary>2016 年 4 月 12 日 - 根據 KB3147458* (OS Build 10586.218) </summary>
 
-此更新包含Surface Hub品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新](https://support.microsoft.com/help/4018124/windows-10-update-history)，包括：
+此更新包含Surface Hub品質改進和安全性修正。 此更新中未推出新的作業系統功能。 更新歷程記錄Surface Hub尚未概述的Windows 10[更新，](https://support.microsoft.com/help/4018124/windows-10-update-history)包括：
 
 * 已修正在會話之間無法正確重設音量的問題
 
