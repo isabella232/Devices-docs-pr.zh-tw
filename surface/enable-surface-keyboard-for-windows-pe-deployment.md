@@ -19,16 +19,16 @@ appliesto:
 - Surface Laptop 2
 - Surface Laptop 3
 - Surface Laptop 4
-ms.openlocfilehash: c02837b0cfda72c6f2a447b99ff4c94a027bb29c
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 1ee3376a24d3e83cc66c8a220a1f7afa195840d0
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613862"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676717"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>如何在 MDT 部署期間Surface Laptop鍵盤
 
-本文說明使用 Microsoft Deployment Toolkit (MDT) 。 您也可以將這項資訊用於其他部署方法。 在大部分類型的 Surface 裝置上，鍵盤應在 Lite Touch 安裝期間使用 (LTI) 。 不過，Surface Laptop一些額外的驅動程式才能啟用鍵盤。 針對 Surface Laptop (第 1 代) 和 Surface Laptop 2 個裝置，您必須準備資料夾結構和選取設定檔，讓您指定鍵盤驅動程式，以在 LTI 的 Windows 預先安裝環境 (Windows PE) 階段使用。 有關此資料夾結構的資訊，請參閱使用[MDT 部署Windows 10圖像：步驟 5：準備驅動程式存放庫](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository)。
+本文說明使用 Microsoft Deployment Toolkit (MDT) 。 您也可以將這項資訊用於其他部署方法。 在大部分類型的 Surface 裝置上，鍵盤應在 Lite Touch 安裝期間 (LTI) 。 不過，Surface Laptop一些額外的驅動程式才能啟用鍵盤。 針對 Surface Laptop (第 1 代) 和 Surface Laptop 2 個裝置，您必須準備資料夾結構和選取設定檔，讓您指定鍵盤驅動程式，以在 LTI 的 Windows 預先安裝環境 (Windows PE) 階段使用。 有關此資料夾結構的資訊，請參閱使用[MDT 部署Windows 10圖像：步驟 5：準備驅動程式存放庫](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository)。
 
 > [!TIP]
 > 在同一個 Windows PE 啟動實例中使用 Surface Laptop 2 和 Surface Laptop 3 的鍵盤驅動程式時，如果鍵盤或觸控板在 WINDOWS 中無法工作，您可能需要手動重設Windows：
@@ -41,7 +41,7 @@ ms.locfileid: "11613862"
 ## <a name="add-keyboard-drivers-to-the-selection-profile"></a>新增鍵盤驅動程式至選取設定檔
 
 1. 從適當的Surface Laptop .msi下載最新的檔案：
-    - [Surface Laptop (驅動程式和) 第一代](https://www.microsoft.com/download/details.aspx?id=55489)
+    - [Surface Laptop (第一代驅動程式) 和固件](https://www.microsoft.com/download/details.aspx?id=55489)
     - [Surface Laptop 2 個驅動程式和固件](https://www.microsoft.com/download/details.aspx?id=57515)
     - [Surface Laptop 3 與 Intel 處理器驅動程式和固件](https://www.microsoft.com/download/details.aspx?id=100429)
     - [Surface Laptop 4 與 Intel 處理器驅動程式和固件](https://www.microsoft.com/download/102924)
@@ -57,7 +57,7 @@ ms.locfileid: "11613862"
 5. 請遵循導入驅動程式精靈中的指示，將驅動程式資料夾導入 WindowsPEX64 資料夾。
 
  > [!NOTE]
- > 檢查已下載.msi套件，以判斷格式和目錄結構。  目錄結構會從 SurfacePlatformInstaller (.msi 檔案) 或 SurfaceUpdate (.msi 檔案) 視 .msi 檔案發行時間開始。
+ > 檢查已下載.msi套件，以判斷格式和目錄結構。  目錄結構會從 SurfacePlatforminstaller (.msi 檔案) 或 SurfaceUpdate (.msi 檔案) 視 .msi 檔案發行時間開始。
 
 ## <a name="import-drivers-for-surface-devices"></a>導入 Surface 裝置驅動程式
 
@@ -72,7 +72,7 @@ ms.locfileid: "11613862"
 | Surface Laptop (第一代)               | SurfacePlatformInstaller\Drivers\System\GPIO<br>SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver<br>SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver<br>SurfacePlatformInstaller\Drivers\System\PreciseTouch                                                                                                                                                                                                                                                                                                                                         | 針對以.msi SurfaceUpdate"開頭的較新檔案，請使用：<br>SurfaceUpdate\SerialIOGPIO<br>SurfaceUpdate\SurfaceHidMiniDriver<br>SurfaceUpdate\SurfaceSerialHubDriver<br>SurfaceUpdate\Itouch                                                                                                                                                                                                                                                |
 
   > [!TIP]
-  > 檢查已下載.msi套件，以決定格式和目錄結構。  目錄結構會從 SurfacePlatformInstaller (.msi 檔案) 或 SurfaceUpdate (.msi 檔案) 視 .msi 發行時間開始。
+  > 檢查已下載.msi套件，以判斷格式和目錄結構。  目錄結構會從 SurfacePlatforminstaller (.msi 檔案) 或 SurfaceUpdate (.msi 檔案) 視 .msi 發行時間開始。
 
 ## <a name="verify-imported-drivers--configure-windows-pe-properties"></a>驗證已輸入的驅動程式&設定WINDOWS PE 屬性
 
@@ -91,8 +91,8 @@ ms.locfileid: "11613862"
 4. 使用選取設定檔或**DriverGroup001**變數，Surface Laptop其餘的驅動程式。
     - 針對 Surface Laptop (第 1 代) ，**模型會**Surface Laptop。 其餘的 Surface Laptop驅動程式應該位於 \MDT 部署共用\開箱驅動程式\Windows10\X64\Surface Laptop 資料夾中，如下圖所示。
     - 對於 Surface Laptop 2，模型為 Surface Laptop **2。** 其餘的Surface Laptop應該位於 \MDT 部署共用\開箱驅動程式\Windows10\X64\Surface Laptop資料夾中。
-    - 對於Surface Laptop 3 處理器的 3，型號為 Surface Laptop 3。 其餘的Surface Laptop位於 \MDT 部署共用\開箱即用驅動程式\Windows10\X64\Surface Laptop資料夾中。
+    - 對於Surface Laptop 3 處理器的 3，模型為 Surface Laptop 3。 其餘的 Surface Laptop驅動程式位於 \MDT 部署共用\開箱即用驅動程式\Windows10\X64\Surface Laptop 3 資料夾中。
 
     ![顯示部署工作Surface Laptop (中第一代) 驅動程式的Surface Laptop圖像](./images/surface-laptop-keyboard-5.png)
 
-將 MDT 部署共用設定為使用新的選取設定檔和相關設定之後，請繼續部署程式，如使用 MDT 部署 Windows 10 影像中所述：步驟[6：建立部署工作順序](/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence)。
+將 MDT 部署共用設定為使用新的選取設定檔和相關設定之後，請繼續部署程式，如使用 MDT 部署 Windows 10 影像中所述：步驟[6：建立部署工作順序](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence)。

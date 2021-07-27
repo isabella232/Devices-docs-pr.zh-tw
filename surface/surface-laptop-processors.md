@@ -12,14 +12,14 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 50c7c9109d98448f10afcf3105974c8bee9515af
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 52b988315951132284c7016752a6817dadbf74c6
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577447"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676617"
 ---
-# <a name="surface-laptop-4-processors-tech-overview"></a>Surface Laptop 4 個處理器技術概觀
+# <a name="surface-laptop-4-processors-tech-overview"></a>Surface Laptop 4 處理器技術概觀
 
 Surface Laptop 4 是專為商業客戶提供豐富的裝置選項，協助決策者更符合裝置採購目標與日益特定的角色需求。 與 3 Surface Laptop比較：
 
@@ -31,7 +31,7 @@ SKU 的選擇取決於客戶優先順序：
 - 如果多執行緒應用程式表現和較長的電池使用時間是重中之重，Surface Laptop 4 個使用AMD Ryzen Surface Edition 處理器的處理器是不錯的選擇。
 - 如果更快速的單線程處理效果比較重要，以及提高記憶體和儲存空間的選項，Surface Laptop 4 代 Intel 第 11 代核心處理器是不錯的選擇。
 
-若要深入瞭解，請參閱[商務Surface Laptop 4。](https://www.microsoft.com/surface/business/surface-laptop-4)
+若要深入瞭解，[請參閱Surface Laptop 4 商務版。](https://www.microsoft.com/surface/business/surface-laptop-4)
 
 ## <a name="processor-tech-specs"></a>處理器技術規格
 
@@ -85,7 +85,7 @@ SKU 的選擇取決於客戶優先順序：
 | 預設 TDP / TDP    | 15W               | 15W               |
 | 最大溫度            | 105C              | 105 C             |
 
-有關第 4 版中的SURFACE LAPTOP處理器的一般資訊，請參閱[AMD Ryzen](https://www.amd.com/processors/ryzen)
+有關第 4 版中的SURFACE LAPTOP處理器的一般資訊，請參閱 MICROSOFT Surface Laptop [4 由AMD Ryzen Mobile 處理器提供。](https://www.amd.com/processors/ryzen-surface-edition)
 
 ## <a name="surface-laptop-4-skus"></a>Surface Laptop 4 個 SKUs
 
@@ -104,4 +104,4 @@ SKU 的選擇取決於客戶優先順序：
 
 ## <a name="learn-more"></a>深入了解
 
-- [Surface Laptop 4 for Business](https://www.microsoft.com/surface/business/surface-laptop-4)
+- [商務用 Surface Laptop 4](https://www.microsoft.com/surface/business/surface-laptop-4)

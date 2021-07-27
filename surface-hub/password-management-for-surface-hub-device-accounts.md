@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
-ms.openlocfilehash: 215736527121306c712932f57a5a3a853fb3bb20
-ms.sourcegitcommit: 366eedceb9f859f5e87ba032b161f248360cb895
+ms.openlocfilehash: ab2726577201157ed9a7ff4d265e826c063cf477
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "11445579"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676607"
 ---
 # <a name="password-management-surface-hub"></a>密碼管理 (Surface Hub)
 
@@ -36,9 +36,9 @@ ms.locfileid: "11445579"
 
 ## <a name="allow-the-surface-hub-to-automatically-rotate-the-device-accounts-password"></a>允許 Surface Hub 自動循環使用裝置帳戶的密碼
 
-Surface Hub 可以自動變更裝置帳戶的密碼，而不需要您手動更新密碼。 您可以在設定 Surface Hub**** 帳戶中  >  ****  >  **啟用此功能**。 如果您開啟密碼旋轉，Surface Hub 會嘗試在維護期間每 7 天變更密碼。 密碼在會議期間不會變更。 如果自上次密碼旋轉以來已過了 7 天，但 Surface Hub 已關閉，它會嘗試在開啟時立即變更密碼，或每隔 10 分鐘變更密碼，直到成功。
+使用者Surface Hub自動變更裝置帳戶的密碼，而不需要您手動更新密碼。 您可以在帳戶的**設定Surface Hub**  >  ****  >  **啟用此功能**。 如果您開啟密碼旋轉，系統Surface Hub維護期間每 7 天嘗試變更密碼一次。 密碼在會議期間不會變更。 如果自上次密碼旋轉以來已過了 7 天，但 Surface Hub 已關閉，它會嘗試在開啟時立即變更密碼，或每隔 10 分鐘變更密碼，直到成功。
 
 自動產生的密碼包含 15-32 個字元，包括大寫和小寫字母、數位和特殊字元的組合。 請注意，當裝置帳戶的密碼變更時，系統不會顯示新的密碼。 如果您需要登錄帳戶，或再次提供密碼 (例如，如果您想要變更 Surface Hub) 上的裝置帳戶設定，則需要使用 Active Directory 或 Microsoft 365 系統管理入口網站重設密碼。
 
 > [!IMPORTANT]
-> 將裝置帳戶新增到 Surface Hub 時所使用的格式會影響必須使用哪個裝置[](prepare-your-environment-for-surface-hub.md)關聯選項，才能讓密碼旋轉工作。 如果以網域 **\使用者名稱格式** 新增帳戶，在初始設定期間將 Hub 與內部部署 Active Directory 關聯。 如果以格式新增帳戶，在初始設定期間，將 `username@domain.com` Hub 與 Azure Active Directory 關聯。 否則，密碼循環使用將無法運作。
+> 在[初始設定](prepare-your-environment-for-surface-hub.md)密碼期間選取的裝置關聯Surface Hub會影響哪些裝置帳戶格式可以與密碼旋轉一起使用。 附屬於內部部署 Active Directory 的中樞只能旋轉以網域 **\使用者** 名稱格式輸入的裝置帳戶密碼。 附屬於 Azure Active Directory 的中樞只能旋轉以格式輸入的裝置帳戶密碼，但只有在帳戶為雲端，或 AAD 網域已針對雲端驗證和密碼回寫進行配置時，才能旋轉 `username@domain.com` 。 [](/azure/active-directory/hybrid/choose-ad-authn#cloud-authentication) [](/azure/active-directory/authentication/concept-sspr-writeback)

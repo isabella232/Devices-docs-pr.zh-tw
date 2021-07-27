@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 021d30e782bc50e0c89fad6478c8e784234c768d
-  ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+  ms.openlocfilehash: 9367329bcaa7c42a31cc8de5ffcee2e65f4c8437
+  ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "11613922"
+  ms.lasthandoff: 07/24/2021
+  ms.locfileid: "11676507"
 landingContent:
 - title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 使用 Surface 的遠端工作解決方案
+      url: https://www.microsoft.com/surface/business/remote-work-solutions
     - text: Surface Laptop 4 + 商務用
       url: https://www.microsoft.com/surface/business/surface-laptop-4
     - text: 商務用 Surface Pro 7+
@@ -50,7 +52,7 @@ landingContent:
       url: https://youtu.be/WQ-wg8fRzN0
     - text: Surface Pro遠端Windows ARM 上的 X 和
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Microsoft 的Endpoint Protection雲端新式解決方案
+    - text: Surface Security – Microsoft 的Endpoint Protection至雲端新式解決方案
       url: https://youtu.be/uadAecDbqf4
 - title: 部署 Surface 裝置
   linkLists:
@@ -80,7 +82,7 @@ landingContent:
       url: surface-diagnostic-toolkit-business.md
     - text: 熱門支援解決方案
       url: support-solutions-surface.md
-    - text: Windows 版裝置的 Surface 驅動程式與韌體生命週期
+    - text: Windows 型裝置的 Surface 驅動程式與韌體生命週期
       url: surface-driver-firmware-lifecycle-support.md
 - title: 探索安全性指導
   linkLists:
@@ -102,6 +104,14 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: 電池限制設定
       url: battery-limit.md
+- title: Surface ROI
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: 使用 Microsoft Surface 提高 ROI
+      url: forrester-tei-study.md
+    - text: Microsoft Surface 教育版對整體經濟的影響
+      url: forrester-tei-edu-study.md
 - title: 參與 Surface 社群
   linkLists:
   - linkListType: learn
@@ -116,7 +126,7 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: 連絡 Surface 支援
+    - text: 連絡 Surface 支援服務
       url: contact-surface-support.md
     - text: 商務用 Surface 保固與保護方案
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support

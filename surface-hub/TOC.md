@@ -31,7 +31,7 @@
 ### [將裝置連線至 Surface Hub 2S](surface-hub-2s-connect.md)
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
 ### [建立 Surface Hub 的佈建套件](provisioning-packages-for-surface-hub.md)
-### [使用 Intune 將應用程式部署到 Surface Hub 2S](surface-hub-2s-deploy-apps-intune.md)
+### [在 Microsoft Surface Hub 上安裝應用程式](install-apps-on-surface-hub.md)
 ### [使用 PowerShell 建立 Surface Hub 2S 內部部署帳戶](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [Surface Hub Teams 應用程式](hub-teams-app.md)
 ### [Surface Hub 2S 的 Teams 認證配件](surface-hub-2s-certifications.md)

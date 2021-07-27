@@ -14,12 +14,12 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 4/16/2021
-ms.openlocfilehash: c7a882859339ff3d7feeb685c62672bc57c301ec
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 339a6a3ab76f36004f2399b333d48487c9d6e31d
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576523"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676673"
 ---
 # <a name="deploy-surface-app-with-microsoft-store-for-business-and-education"></a>使用教育商務用 Microsoft Store部署 Surface 應用程式
 
@@ -47,17 +47,7 @@ ms.locfileid: "11576523"
 - Surface Pro 3
 
 
-Surface 應用程式是輕Microsoft Store應用程式，可控制許多 Surface 特定設定和選項，包括： 
-
-* 啟用或停用 Surface 裝置上的 Windows 鍵 
-
-* 調整 Surface 手寫筆的敏感度 
-
-* 自訂 Surface 手寫筆按鈕動作 
-
-* 啟用或停用 Surface 音訊增強功能 
-
-* 快速存取裝置的支援檔和資訊
+Surface 應用程式是Microsoft Store應用程式，提供許多 Surface 特定設定和選項的控制權，可快速存取裝置資訊，包括序號、Surface 模型名稱、UEFI 版本和相關驅動程式。  
 
 使用更新Windows通常會收到 Surface App，做為自動更新的一部分。 但如果您的組織正在準備部署至 Surface 裝置的圖像，您可能會想要將 Surface 應用程式 (之前稱為 Surface Hub) 納入您的影像和部署程式，而不是要求每個個別裝置的使用者從 Microsoft Store 或您的 商務用 Microsoft Store 下載並安裝應用程式。 
 
@@ -66,7 +56,7 @@ Surface 應用程式是輕Microsoft Store應用程式，可控制許多 Surface 
 
 ## <a name="surface-app-overview"></a>Surface 應用程式概觀
 
-Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P)。 使用者可以從 Microsoft Store 下載並安裝它，但如果您的組織改為使用 商務用 Microsoft Store，您必須將其新加到商店的庫存中，並可能將應用程式納入 Windows 部署程式。 本文將討論這些程式。 如要進一商務用 Microsoft Store，請參閱[商務用 Microsoft Store](https://docs.microsoft.com/microsoft-store/)技術中心Windows> 
+Surface 應用程式可從 Microsoft Store[免費下載。](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P) 使用者可以從 Microsoft Store 下載並安裝它，但如果您的組織改為使用 商務用 Microsoft Store，您必須將其新增到市面的庫存，並可能將應用程式納入 Windows 部署程式。 本文將討論這些程式。 如想進一商務用 Microsoft Store，[請參閱](/microsoft-store/)商務用 Microsoft Store。 
 
 ## <a name="add-surface-app-to-a-microsoft-store-for-business-account"></a>將 Surface 應用程式新商務用 Microsoft Store帳戶 
 
@@ -74,21 +64,19 @@ Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.c
 
 1. 如果您尚未這麼做，請建立商務用 Microsoft Store[帳戶](https://www.microsoft.com/business-store)。 
 
-2. 登入入口網站。 
+2. 請登錄入口網站。 
 
-3. 啟用離線授權：按一下 **[管理>** 商店設定，然後選取 [向在市中購物的使用者顯示離線授權應用程式」 **核取方塊，** 如圖 1 所示。 有關應用程式授權商務用 Microsoft Store，請參閱應用程式與教育商務用 Microsoft Store[應用程式](https://docs.microsoft.com/microsoft-store/)。
+3. 啟用離線授權：按一下****[管理設定，然後選取 [向在市中購物的使用者顯示離線授權應用程式」 核取方塊，如圖  >  ** **1 所示。 **** 有關應用程式授權商務用 Microsoft Store，請參閱應用程式與教育商務用 Microsoft Store[應用程式](/microsoft-store/)。
 
    > [!div class="mx-imgBorder"]
    > ![顯示離線授權應用程式核取方塊](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *圖 1。 啟用應用程式以離線使用*
 
-4. 請遵循下列程式商務用 Microsoft Store Surface App 新增到您的帳戶：
+4. 將 Surface 應用程式新商務用 Microsoft Store帳戶：
 
-    * 按一下 [ **商店>** 功能表。
+    * 搜尋市面上 **的應用程式** 
     
-    * 在搜尋方塊中，輸入 **Surface App**，然後按一下搜尋圖示。
-    
-    * 在搜尋結果中顯示 Surface 應用程式之後，按一下應用程式的圖示。
+    * 在搜尋結果中顯示 Surface App 之後，按一下應用程式的圖示。
     
     * 系統會顯示一個選項， (線上或離線) ，如圖**** 2 所示。 ****
     
@@ -111,7 +99,7 @@ Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.c
 
 1. 在 登入 商務用 Microsoft Store 帳戶 https://businessstore.microsoft.com 。
 
-2. 按一下 **[管理->應用程式&軟體**。 系統會顯示您公司所有應用程式的清單，包括您于本文的新增 Surface 應用程式中新增到 商務用 Microsoft Store[帳戶區](#add-surface-app-to-a-microsoft-store-for-business-account)段的 Surface 應用程式。
+2. 按一下 **[管理->應用程式&軟體**。 系統會顯示您公司所有應用程式的清單，包括您于本文的新增 Surface 應用程式中新增到 商務用 Microsoft Store[帳戶區](#add-surface-app-to-a-microsoft-store-for-business-account)段的 Surface App。
 
 3. 在 **[動作**> 下，按一下 [ (**...**) 省略號，然後按一下****[下載以離線使用 Surface 應用程式。
 
@@ -123,7 +111,7 @@ Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.c
     
 5. 按一下 **[下載**。 AppxBundle 套件將會下載。 請確定您記下下載檔案的路徑，因為本文稍後會需要該路徑。
 
-6. 按一下 [**編碼授權或****未編碼授權選項**。 使用編碼授權選項與管理工具 ，例如 Microsoft Endpoint Configuration Manager，或使用Windows設計工具來建立資源配置套件。 當您使用部署影像維護與管理 (DISM) 或部署解決方案時，請選取未編碼授權選項，包括 Microsoft 部署工具組 (MDT) 。
+6. 按一下 [**編碼授權或****未編碼授權選項**。 使用編碼授權選項與管理工具 ，例如 Microsoft Endpoint Configuration Manager，或使用Windows設計工具來建立資源配置套件。 當您使用部署影像維護和管理 (DISM) 或部署解決方案時，請選取未編碼授權選項，包括 Microsoft 部署工具組 (MDT) 。
 
 7. 按一下 **[** 產生來產生並下載應用程式授權。 請確定您記下授權檔案的路徑，因為本文稍後會需要該路徑。
 
@@ -193,7 +181,7 @@ Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.c
 
 1. 使用本文 [前面所述的程式](#download-surface-app-from-a-microsoft-store-for-business-account)，下載 Surface App AppxBundle 和授權檔案。 
 
-2. 使用 MDT Deployment Workbench 中的新應用程式精靈，將下載的檔案以新的應用程式與 **來源檔案一併輸入**。
+2. 使用 MDT Deployment Workbench 中的新應用程式精靈，將下載的檔案以新的應用程式與來源 **檔案一併輸入**。
 
 3. 在新增應用程式**精靈**的命令詳細資料頁面上，指定預設的**工作**目錄，而命令則指定**** AppxBundle 的檔案名，如下所示：
 
@@ -209,7 +197,7 @@ Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.c
 
 1. 使用本文前面所述的程式，下載框架檔案。 將每個框架儲存在個別資料夾中。
 
-2. 使用 MDT Deployment Workbench 中的新應用程式精靈，將下載的檔案以新的應用程式與 **來源檔案一併輸入**。
+2. 使用 MDT Deployment Workbench 中的新應用程式精靈，將下載的檔案以新的應用程式與來源 **檔案一併輸入**。
 
 3. 在命令**詳細資料**頁面上，輸入您于命令欄位中下載的每個應用程式的檔案名，以及預設的**** 工作目錄。
 
@@ -227,6 +215,6 @@ Surface 應用程式可從 Microsoft Store[免費下載](https://www.microsoft.c
 
 2. 在部署的 [State Restore]**** (狀態還原) 區段中新增新的 [Install Application]**** (安裝應用程式) 工作。
 
-3. 選取 **安裝單一應用程式，** 然後指定 **Surface App** **為要安裝的應用程式**。
+3. 選取 **安裝單一應用程式，** 並指定 **Surface App** **為要安裝的應用程式**。
 
-有關將應用程式納入您的部署Windows，請參閱使用 Microsoft 部署工具Windows 10[部署應用程式](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)。
+有關在部署中加入應用程式Windows，請參閱使用[MDT](/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt)準備部署。
