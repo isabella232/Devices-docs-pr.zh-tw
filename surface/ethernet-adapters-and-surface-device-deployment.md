@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: eacb7bd6b1f2f62b97b02cc871f8980e65ba7c8a
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 0eb0eb1e1d73852a2131c5aa5d6a7731ce78d54f
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676547"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721253"
 ---
 # <a name="ethernet-adapters-and-surface-deployment"></a>乙太網路卡與 Surface 部署
 
@@ -40,6 +40,7 @@ Surface 裝置的網路部署可能會對系統管理員造成一些特殊的挑
 - Surface USB-C 到乙太網路和 USB 3.0 介面卡
 - Surface USB 3.0 到 Gigabit 乙太網路介面卡
 - Surface 擴充座
+- Surface Dock 2
 - Surface 3 擴充座
 - Surface Pro 3 擴充座
 - 適用於 Surface Pro 和 Surface Pro 2 的擴充座

@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: e72abd2fbd3289989d64f23bbc06fa72d3c5b1d2
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: f704541a2d862550250794308df6201c38b09e15
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676646"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721263"
 ---
 # <a name="customize-the-oobe-for-surface-deployments"></a>自訂 Surface 部署的 OOBE
 
@@ -44,7 +44,7 @@ ms.locfileid: "11676646"
 
 當 OOBE 執行期間有無線網路介面卡存在時，會顯示 \[加入無線網路\] 頁面，並提示使用者連線至無線網路。**** 部署技術 (包含 MDT 2013) 不會自動隱藏此頁面，因此即使已將部署設定為完全自動化仍會顯示此頁面。
 
-為了確保自動部署不會因為此頁面而停止，必須在回應檔案 **HideWirelessSetupInOOBE** 中設定額外的設定來隱藏此頁面。 您可以在[自動 Windows 設定參考](/previous-versions/windows/it-pro/windows-8.1-and-8/ff716213(v=win.10))中找到關於 **HideWirelessSetupInOOBE** 設定的其他資訊。
+為了確保自動部署不會因為此頁面而停止，必須在回應檔案 **HideWirelessSetupInOOBE** 中設定額外的設定來隱藏此頁面。 您可以在[自動 Windows 設定參考](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-hidewirelesssetupinoobe)中找到關於 **HideWirelessSetupInOOBE** 設定的其他資訊。
 
 ## <a name="scenario-2-surface-pen-pairing-in-oobe"></a>案例 2：在 OOBE 中配對 Surface 手寫筆
 

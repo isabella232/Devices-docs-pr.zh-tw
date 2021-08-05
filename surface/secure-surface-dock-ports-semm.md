@@ -1,6 +1,6 @@
 ---
-title: '使用 Surface Enterprise 管理模式的安全 Surface Dock 2 埠 (SEMM) '
-description: 這份檔在連線至相容的 Surface 裝置（包括 Surface Book 3、Surface 膝上型電腦3和 Surface Pro 7）時，提供設定 Surface Dock 2 的 UEFI 埠設定的指導方針。
+title: '使用 Surface Enterprise管理模式保護 Surface Dock 2 埠 (SEMM) '
+description: 本檔提供在連接至相容的 Surface 裝置時設定 Surface Dock 2 的 UEFI 埠設定，包括 Surface Book 3、Surface Laptop 3 和 Surface Pro 7。
 ms.assetid: 2808a8be-e2d4-4cb6-bd53-9d10c0d3e1d6
 ms.reviewer: ''
 manager: laurawi
@@ -12,162 +12,162 @@ ms.pagetype: surfacehub
 author: v-miegge
 ms.author: jesko
 ms.topic: article
-ms.date: 06/08/2020
+ms.date: 08/02/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 641d023b59426582130dcfb7e0d86c6f3af456e8
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 9a98eb9bab9b0be7f225dedf00ee6cfe7944b05e
+ms.sourcegitcommit: 657d0d73a51f0dd35ad60740ed523164a55d2e04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114691"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11720927"
 ---
-# 使用 Surface Enterprise 管理模式的安全 Surface Dock 2 埠 (SEMM) 
+# <a name="secure-surface-dock-2-ports-with-surface-enterprise-management-mode-semm"></a>使用 Surface Enterprise管理模式保護 Surface Dock 2 埠 (SEMM) 
 
-##  <a name="introduction"></a>簡介
+## <a name="introduction"></a>簡介
 
- (SEMM) 的 Surface Enterprise 管理模式可讓 IT 管理員在 Windows 安裝程式配置套件 ( 中設定 UEFI 設定，以保護及管理 Surface Dock 2 埠。在企業環境中，) 將 MSI 檔案部署至相容的 Surface 裝置。
+Surface Enterprise 管理模式 (SEMM) 可讓 IT 系統管理員在 Windows Installer 設定套件 (.msi 檔案) 部署至整個公司環境相容的 Surface 裝置中設定 UEFI 設定，以保護和管理 Surface Dock 2 埠。
 
-###  <a name="supported-devices"></a>支援的裝置
+### <a name="supported-devices"></a>支援的裝置
 
-使用 SEMM 的管理 Surface Dock 2 可供連接至 Surface Book 3、Surface 膝上型電腦3、Surface 膝上型電腦前往、Surface Pro 7 及 Surface Pro X。這些相容的 Surface 裝置通常稱為 **主機裝置**。 根據主機裝置是否 **經過驗證** 或未 **驗證**，將套件套用到主機裝置。 設定的設定會駐留在主機裝置上的 UEFI 層中，讓您（IT 系統管理員）管理 Surface Dock 2，就像相機中的任何其他內建外設一樣。
+使用 SEMM 管理 Surface Dock 2 適用于連接到 Surface Book 3、Surface Laptop 4、Surface Laptop 3、Surface Laptop Go、Surface Pro 7+、Surface Pro 7 和 Surface Pro X 的固定座。這些相容的 Surface 裝置通常稱為**主機裝置**。 套件會根據主機裝置是否經過驗證或未經驗證，套用至**** 主機**裝置**。 設定設定會位於主機裝置上的 UEFI 圖層中，以便您管理 Surface Dock 2，就像任何其他內建的外接裝置 ，例如相機一樣。
 
 >[!NOTE]
->只有當 Dock 連接至下列其中一個相容的裝置時，才能管理 Surface Dock 2 埠： Surface Book 3、Surface 膝上型電腦3和 Surface Pro 7。 任何沒有收到 UEFI 驗證原則設定的裝置，本身就是未獲驗證的裝置。
+>只有當 Dock 連接到下列其中一個相容裝置時，您才能管理 Surface Dock 2 埠：Surface Book 3、Surface Laptop 4、Surface Laptop 3、Surface Pro 7+和 Surface Pro 7。 任何未收到 UEFI 驗證策略設定的裝置，其本身都是未經驗證的裝置。
 
-###  <a name="scenarios"></a>案例
+### <a name="scenarios"></a>案例
 
-針對登入公司主機裝置的授權人員，限制 Surface Dock 2，提供另一個層級的資料保護。 鎖定 Surface Dock 2 的功能對於高度安全的環境中的特定客戶而言是非常重要的，他們想要在固定性的安全通訊協定中保持遵守，同時又能提供 Dock 的功能和生產力好處。 我們預計在開啟的辦公室和共用空間中使用的 SEMM，特別適合出於安全考慮而想要鎖定 USB 埠的客戶。 如需視頻示範，請查看 [Surface Dock 2 的 SEMM](https://youtu.be/VLV19ISvq_s)。
+將 Surface Dock 2 限制為已簽署公司主機裝置的授權人員，可提供另一層資料保護。 這種鎖定 Surface Dock 2 的能力對於在高度安全的環境中想要擴展座功能與生產力優勢，同時維持嚴格安全性通訊協定合規性的特定客戶來說至關重要。 我們預期與 Surface Dock 2 一起使用的 SEMM 在開放式辦公室和共用空間中會特別實用，尤其是針對因安全性考慮想要鎖定 USB 埠的客戶。 如要觀看影片示範，請查看[Surface Dock 2 的 SEMM。](https://youtu.be/VLV19ISvq_s)
 
-##  <a name="configuring-and-deploying-uefi-settings-for-surface-dock-2"></a>設定及部署 Surface Dock 2 的 UEFI 設定
+## <a name="configuring-and-deploying-uefi-settings-for-surface-dock-2"></a>設定及部署 Surface Dock 2 的 UEFI 設定
 
-本節提供下列工作的逐步指導方針：
+本節提供下列工作逐步指南：
 
-1. 安裝 [**SURFACE UEFI 配置**](https://www.microsoft.com/download/details.aspx?id=46703)器。
-1. 建立或取得公開金鑰憑證。
-1. 建立。MSI 配置套件。
+1. 從適用于 IT 的[Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703)安裝 Surface **UEFI Configurator** 。
+1. 建立或取得公用金鑰憑證。
+1. 建立.msi套件。
    1. 新增您的憑證。
-   1. 輸入 Surface Dock 2 裝置的16位數 RN 號碼。
+   1. 輸入 Surface Dock 2 裝置 16 位數的 RN 號碼。
    1. 設定 UEFI 設定。
-1. 建立配置套件，並將其套用至目標 Surface 裝置 (Surface Book 3、Surface 膝上型電腦3或 Surface Pro 7。 ) 
+1. 在 7. (Surface Book 3、Surface Laptop 3 或 Surface Pro 7.) 中建立並套用組Surface Pro套件) 
 
 >[!NOTE]
->** (RN) 的亂數字**是唯一的16位十六進位代碼識別碼，在工廠提供，並在 dock 的下方以小型類型列印。 RN 不同于大多數的序列值，因為它無法以電子方式讀取。 這可確保擁有權的證據，主要是透過在實際存取裝置時讀取 RN 來建立。 您也可以在購買交易期間取得 RN，並將其記錄在 Microsoft 庫存系統中。
+>隨機 **數 (RN) ** 是一個唯一的 16 位數十六進位代碼識別碼，在出廠時提供，且以小型類型列印于固定座的背面。 RN 與大多數的序列值不同，因為無法以電子方式讀取。 這可確保在實際存取裝置時，主要只要讀取 RN，才能建立擁有證明。 RN 也可能在購買交易期間取得，並記錄在 Microsoft 庫存系統中。
 
-###  <a name="install-semm-and-surface-uefi-configurator"></a>安裝 SEMM 和 Surface UEFI 配置器
+### <a name="install-semm-and-surface-uefi-configurator"></a>安裝 SEMM 和 Surface UEFI 配置器
 
-透過執行 **SurfaceUEFI_Configurator_v2.71.139.0.msi**來安裝 SEMM。 這是獨立的安裝程式，包含您建立並散佈 Surface Dock 2 的設定套件所需的一切。
+若要安裝 SEMM，請 **SurfaceUEFI_Configurator_v2.83.139.0.msi。** 這是獨立安裝程式，包含建立及發佈 Surface Dock 2 組組套件所需的一切。
 
-- 從[表面工具](https://www.microsoft.com/en-us/download/details.aspx?id=46703)下載**SURFACE UEFI 配置**檔。
+- 從適用于 IT 的[Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703)下載 Surface **UEFI Configurator** 。
 
-##  <a name="create-public-key-certificates"></a>建立公開金鑰憑證
+## <a name="create-public-key-certificates"></a>建立公用金鑰憑證
 
-本節提供建立週邊用來管理 Surface Dock 2 埠所需的憑證的規範。
+本節提供建立管理 Surface Dock 2 埠所需的憑證的規格。
 
-###  <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>必要條件
 
-本文假設您是從協力廠商提供者取得憑證，或您已經有 PKI 認證服務的專業知識，並知道如何建立您自己的憑證。  您應該熟悉並遵循建立憑證的一般建議，如 [ [Surface Enterprise 管理] 模式 (SEMM) ](https://docs.microsoft.com/surface/surface-enterprise-management-mode) 檔中所述，但有一個例外狀況。 此頁面上所述的憑證需要在 **Dock 憑證授權單位**的到期期限為30年，且 **主機驗證憑證**為20年。
+本文假設您從協力廠商提供者取得憑證，或您已有 PKI 憑證服務專業知識，並知道如何建立自己的證書。  您應該熟悉並遵循 Surface Enterprise 管理模式[ (SEMM](surface-enterprise-management-mode.md)) 中所述的建立憑證的一般建議，但只有一個例外。 在此頁面上所記錄之憑證的到期期限為 Dock **證書**頒發機構為 30 年，主機驗證憑證為 20 **年**。
 
-如需詳細資訊，請參閱 [憑證服務架構](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture) 檔，並在 microsoft 新聞中查看 [windows server 2019](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)中適當的章節，或是從 Microsoft 按下取得的 [Windows Server 2008 PKI 與證書安全性](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788) 。
+詳細資訊，請參閱憑證服務[](/windows/win32/seccrypto/certificate-services-architecture)架構檔，並參閱 Microsoft Press 提供的[Windows Server 2019 Inside Out](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)或 Windows [Server 2008 PKI](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788)和憑證安全性中的適當章節。
 
-###  <a name="root-and-host-certificate-requirements"></a>根目錄與主機憑證需求
+### <a name="root-and-host-certificate-requirements"></a>根憑證和主機憑證需求
 
-在建立設定套件之前，您必須準備公用金鑰憑證，以驗證 Surface Dock 2 的擁有權，並在裝置週期期間協助擁有任何後續變更。 主機和置備憑證需要輸入 EKU Id，否則稱為「 **用戶端驗證」增強型金鑰用法 (EKU) 物件識別碼 (oid) **。
+在建立組組套件之前，您需要準備能驗證 Surface Dock 2 擁有權，並有助於在裝置生命週期期間變更擁有權的任何公用金鑰憑證。 主機和布備憑證需要輸入 EKU 識別碼，也稱為用戶端驗證增強型金鑰使用量 (EKU) 物件識別碼 ** (OIDs **) 。
 
-[資料表 1] 和 [資料表 2] 中列出所需的 EKU 值。
+所需的 EKU 值會列在資料表 1 和表格 2 中。
 
-####  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>表 1. 根目錄與 Dock 證書需求
+#### <a name="table-1-root-and-dock-certificate-requirements"></a>表 1. 根憑證和 Dock 憑證需求
 
-|憑證|演算法|說明|到期|EKU OID|
+|憑證|演算法|描述|到期|EKU OID|
 |---|---|---|---|---|
-|根憑證授權單位|ECDSA_P384|-具有384位質數橢圓曲線數位簽章演算法 (ECDSA) 的根憑證<br>-SHA 256 金鑰用法：<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>-CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30年|無
-|Dock 憑證授權單位|ECC P256 曲線|具有256位橢圓曲線密碼的主機憑證 (ECC) <br>-SHA 256 金鑰用法：<br>CERT_KEY_CERT_SIGN_KEY_USAGE<br>-路徑長度限制 = 0|20年|1.3.6.1.4.1.311.76.9.21.2<br>1.3.6.1.4.1.311.76.9.21.3|
+|根憑證授權單位|ECDSA_P384|- 具有 384 位主要省略號曲線數位簽章演算法的根憑證 (ECDSA) <br>- SHA 256 金鑰使用量：<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>- CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30 年|不適用
+|Dock 憑證授權單位|ECC P256 曲線|- 具有 256 位省略號曲線加密法的主機憑證 (ECC) <br>- SHA 256 金鑰使用量：<br>CERT_KEY_CERT_SIGN_KEY_USAGE<br>- 路徑長度限制式 = 0|20 年|1.3.6.1.4.1.311.76.9.21.2<br>1.3.6.1.4.1.311.76.9.21.3|
 
    >[!NOTE]
-   >Dock CA 必須匯出為. p7b 檔案。
+   >Dock CA 必須匯出為 .p7b 檔案。
 
-###  <a name="provisioning-administration-certificate-requirements"></a>提供管理憑證需求
+### <a name="provisioning-administration-certificate-requirements"></a>資源配置系統管理憑證需求
 
-每個主機裝置都必須擁有 [doc] CA 和兩個憑證，如資料表2所示。
+每個主機裝置都必須有檔 CA 和兩個憑證，如表 2 所示。
 
-#### 表 2. 提供管理憑證需求
+#### <a name="table-2-provisioning-administration-certificate-requirements"></a>表 2. 資源配置系統管理憑證需求
 
-|憑證|演算法|說明|EKU OID|
+|憑證|演算法|描述|EKU OID|
 |---|---|---|---|
-|主機驗證憑證|ECC P256<br>SHA 256|證明主機裝置的身分識別。|1.3.6.1.4.1.311.76.9.21.2|
-|提供管理憑證|ECC P256<br>SHA256|可讓您更換目前安裝在 dock 上的 CA，以變更 dock 擁有權和/或原則設定。|1.3.6.1.4.1.311.76.9.21.3<br>1.3.6.1.4.1.311.76.9.21.4|
+|主機驗證憑證|ECC P256<br>SHA 256|證明主機裝置身分識別。|1.3.6.1.4.1.311.76.9.21.2|
+|資源建構管理憑證|ECC P256<br>SHA256|可讓您取代目前安裝在固定座上的 CA，以變更 Dock 擁有權和/或策略設定。|1.3.6.1.4.1.311.76.9.21.3<br>1.3.6.1.4.1.311.76.9.21.4|
 
    >[!NOTE]
-   >主機驗證與預配憑證必須匯出為 .pfx 檔案。
+   >主機驗證和置備憑證必須匯出為 .pfx 檔案。
 
-###  <a name="create-configuration-package"></a>建立配置套件
+### <a name="create-configuration-package"></a>建立組組套件
 
-取得或建立憑證之後，您就可以開始建立將套用至目標 Surface 裝置的 MSI 配置套件。
+當您取得或建立憑證時，就可以建立要套用至目標 Surface .msi的組.msi組組套件。
 
-1. 執行 Surface **UEFI 配置**器。
+1. 執行 Surface **UEFI Configurator**。
 
    ![執行 Surface UEFI 配置器](images/secure-surface-dock-ports-semm-1.png)
 
-1. 選取 [ **介面固定**]。
+1. 選取 **Surface Dock**。
 
-   ![選取介面停靠](images/secure-surface-dock-ports-semm-2.png)
+   ![選取 Surface Dock](images/secure-surface-dock-ports-semm-2.png)
 
-1. 在 [憑證] 頁面上，輸入適當的 **憑證**。
+1. 在憑證 **頁面上**  輸入適當的憑證。 可從適用于 IT 的 [Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703) ** ：下載 **SEMM_PowerShell.zip， ** 並參閱 **CreateSurfaceDock2Certificates.ps1。 執行示範腳本 **SurfaceDock2_WmiInstanceProvider，** 請確定您安裝此程式。
 
    ![輸入適當的憑證](images/secure-surface-dock-ports-semm-3.png)
 
-1. 在清單中新增適當的固定 RNs。
+1. 在清單中新增適當的 dock RNs。
 
-   >[!NOTE]
-   >為多個 Surface Dock 2 裝置建立配置套件時，不是手動輸入每個 RN，而是使用包含 RNs 清單的 .csv 檔案。
+   >[!TIP]
+   >當您為多個 Surface Dock 2 裝置建立組組套件時，您可以使用包含 RNs 清單的 .csv 檔案，而不是手動輸入每個 RN。
 
-1. 指定 USB 資料、乙太網路和音訊埠的原則設定。 UEFI 配置器可讓您為經過驗證的使用者設定策略設定， (驗證原則) 與未經驗證的使用者 (未驗證的原則) 。 下圖顯示針對經過驗證的使用者開啟埠存取，並針對未授權的使用者關閉該功能。
+1. 指定 USB 資料、乙太網路和音訊埠的策略設定。 UEFI 設定器可讓您設定已驗證使用者 (已驗證) 和未經驗證的使用者 (未驗證) 。 下圖顯示已驗證使用者的埠存取已開啟，且未驗證的使用者已關閉。
 
-   ![選擇您要啟動或停用的元件。](images/secure-surface-dock-ports-semm-4.png)
+   ![選擇您想要啟用或停用的元件。](images/secure-surface-dock-ports-semm-4.png)
 
-   - 已驗證使用者參照已安裝適當證書的 Surface 裝置，如中所述。您已套用至目標裝置的 MSI 配置套件。 它適用于登入裝置的任何由使用者驗證的使用者。 
-   - 未驗證的使用者會參照任何其他裝置。
-   - 選取 [ **重設** ]，建立特殊的「重設」套件，該套件將移除任何先前已接受的固定配置套件。
+   - 已驗證的使用者是指已安裝適當憑證的 Surface Device，.msi套用至目標裝置之組.msi套件中所配置。 它適用于任何已驗證使用者，並登錄裝置的使用者。
+   - 未經驗證的使用者是指任何其他裝置。
+   - 選取 **「重** 設」以建立特殊的「重設」套件，以移除 Dock 先前接受的任何設定套件。
 
-1. 選取 [ **建立** ] 以建立指定的套件。
+1. 選取 **建立** 以建立指定的套件。
 
-###  <a name="apply-the-configuration-package-to-a-surface-dock-2"></a>將 configuration 套件套用至 Surface Dock 2
+### <a name="apply-the-configuration-package-to-a-surface-dock-2"></a>將組組套件套用至 Surface Dock 2
 
-1. 讓 Surface UEFI 設定檔產生的 MSI 檔案，並將它安裝在 Surface 主機裝置上。 相容的主機裝置為 Surface Book 3、Surface 膝上型3或 Surface Pro 7。
-1. 將主機裝置連接至 Surface Dock 2。 當您連線時，就會套用 dock UEFI 原則設定。
+1. 請.msi Surface UEFI Configurator 產生的檔案，並安裝在 Surface 主機裝置上。 相容的主機裝置Surface Book 3、Surface Laptop 3 或 Surface Pro 7。
+1. 連線主機裝置至 Surface Dock 2。 當您連接固定座 UEFI 原則設定時，會採用。
 
-##  <a name="verify-managed-state-using-the-surface-app"></a>使用 Surface App 驗證受管理的狀態
+## <a name="verify-managed-state-using-the-surface-app"></a>使用 Surface App 驗證受管理狀態
 
-一旦您套用了設定套件，您就可以直接從 Surface App 驗證 dock 的產生原則狀態（依預設在所有 Surface 裝置上安裝）。 如果表面 App 不存在於裝置上，您可以從 Microsoft 網上商店下載並安裝。
+套用組態套件之後，您可以直接從 Surface App 快速驗證固定程式的結果原則狀態，此程式預設會安裝在所有 Surface 裝置上。 如果裝置上沒有 Surface App，您可以從裝置下載並安裝Microsoft Store。
 
-###  <a name="test-scenario"></a>測試案例
+### <a name="test-scenario"></a>測試案例
 
-目標：將原則設定設定為僅允許經過驗證的使用者存取埠。
+目標：設定策略設定，只允許經過驗證的使用者進行埠存取。
 
-1. 針對經過驗證的使用者開啟所有埠，然後將其關閉以進行未授權的使用者。
+1. 開啟已驗證使用者的所有埠，並針對未經驗證的使用者關閉這些埠。
 
-   ![為經過驗證的使用者啟用埠](images/secure-surface-dock-ports-semm-4.png)
+   ![為已驗證的使用者啟用埠](images/secure-surface-dock-ports-semm-4.png)
 
-1. 將 [設定套件] 套用到您的目標裝置，然後連接 Surface Dock 2。
+1. 將組組套件套用至目標裝置，然後連接 Surface Dock 2。
 
-1. 開啟 [ **surface] App** ，然後選取 [ **表面停靠** ] 來查看 surface dock 的結果原則狀態。 如果已套用原則設定，Surface App 就會指出埠可供使用。
+1. 開啟 **Surface App，** 然後選取 **Surface Dock** 來查看 Surface Dock 的結果策略狀態。 如果已應用原則設定，Surface App 會指出埠可供使用。
 
-   ![Surface app 顯示所有埠都可供經過驗證的使用者使用](images/secure-surface-dock-ports-semm-5.png)
+   ![Surface App 顯示所有埠都可供經過驗證的使用者使用](images/secure-surface-dock-ports-semm-5.png)
 
-1. 現在，您必須驗證原則設定是否已成功關閉所有埠（未經授權的使用者）。 將表面停靠2連接至未受管理的裝置，亦即，在您所建立之設定套件的管理範圍之外的任何 Surface 裝置。
+1. 現在您需要確認策略設定已成功關閉未驗證使用者的所有埠。 連線Surface Dock 2 至未管理裝置，即您建立之組組套件管理範圍外的任何 Surface 裝置。
 
-1. 開啟 [ **surface] App** ，然後選取 [ **介面固定**]。 產生的原則狀態將會指出埠已關閉。
+1. 開啟 **Surface App，** 然後選取 **Surface Dock**。 結果的策略狀態會指出埠已關閉。
 
-   ![顯示未授權使用者的埠關閉的 Surface 應用程式 ](images/secure-surface-dock-ports-semm-6.png)
+   ![Surface App 顯示未驗證使用者的埠已關閉 ](images/secure-surface-dock-ports-semm-6.png)
 
->[!NOTE]
->如果您想要保留裝置的擁有權，但允許所有使用者都能使用 [完全存取]，您可以建立新的套件，讓所有人都能開啟。 如果您想要完全移除裝置的限制及擁有權， (讓它處於未受管理的) ，請選取 [在 Surface UEFI 設定檔中 **重設** ]，以建立要套用至目標裝置的套件。
+>[!TIP]
+>如果您想要保留裝置的擁有權，但允許所有使用者完全存取，您可以製作一個新的套件，並開啟所有專案。 如果您想要完全移除裝置的限制和擁有權 (將其取消管理) ，請選取 Surface UEFI 設定器中的重設以**** 建立套件以套用至目標裝置。
 
-！. 您已在目標主機裝置上成功管理 Surface Dock 2 埠。
+祝賀。 您已成功管理目標主機裝置上的 Surface Dock 2 埠。
 
-##  <a name="learn-more"></a>深入了解
+## <a name="learn-more"></a>深入了解
 
-- [ (SEMM) 檔的 Surface Enterprise 管理模式](https://docs.microsoft.com/surface/surface-enterprise-management-mode)
-- [憑證服務架構](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture)
-- [Windows Server 2019 內](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)
-- [Windows Server 2008 PKI 與證書安全性](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788)
+- [SURFACE Enterprise管理模式 (SEMM) 檔](surface-enterprise-management-mode.md)
+- [憑證服務架構](/windows/win32/seccrypto/certificate-services-architecture)
+- [WindowsServer 2019 從內到外](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)
+- [WindowsServer 2008 PKI 和憑證安全性](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788)

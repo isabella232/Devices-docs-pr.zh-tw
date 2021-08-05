@@ -13,18 +13,18 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 3cb8af88e0aab78d5c1aa7f30c983d1da81216c0
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: e887a449fb00b76c14de5b8ede51a1ba91a6b4c4
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708744"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721243"
 ---
 # <a name="enable-peap-eap-fast-and-cisco-leap-on-surface-devices"></a>在 Surface 裝置上啟用 PEAP、EAP-FAST 和 Cisco LEAP
 
 了解如何讓 Surface 裝置支援 PEAP、EAP-FAST 和 Cisco LEAP 通訊協定。
 
-如果您的企業中使用 PEAP、EAP-FAST 或 Cisco LEAP，您可能已經知道 Surface 裝置並不支援這三種無線驗證通訊協定。 有些使用者可能在嘗試連線到無線網路時發現，有些則可能是在無法存取網路內部資源 (例如檔案共用和內部網站) 時發現。 如需詳細資訊，請參閱[可延伸的驗證通訊協定](/previous-versions/windows/it-pro/windows-xp/bb457039(v=technet.10)?)。
+如果您的企業中使用 PEAP、EAP-FAST 或 Cisco LEAP，您可能已經知道 Surface 裝置並不支援這三種無線驗證通訊協定。 有些使用者可能在嘗試連線到無線網路時發現，有些則可能是在無法存取網路內部資源 (例如檔案共用和內部網站) 時發現。 如需詳細資訊，請參閱[可延伸的驗證通訊協定](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)。
 
 您可以從 USB 或檔案共用執行小型的 MSI 套件來新增對各通訊協定的支援。 針對想要在 Surface 裝置上啟用 EAP 支援的組織，MSI 套件格式支援許多管理和部署工具的部署，例如 Microsoft 部署工具組 (MDT) Microsoft Endpoint Configuration Manager。
 

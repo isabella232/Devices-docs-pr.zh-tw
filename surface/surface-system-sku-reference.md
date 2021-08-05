@@ -9,17 +9,17 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 04/19/2021
+ms.date: 08/02/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: bf3fb926c5e66f5f02f921f1c0d4fbe5f016f02d
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 71ded9892e9dde8de1976a89214ea946e1bd1da4
+ms.sourcegitcommit: 657d0d73a51f0dd35ad60740ed523164a55d2e04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577043"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11720917"
 ---
 # <a name="surface-system-sku-reference"></a>Surface 系統 SKU 參考
 
@@ -40,7 +40,7 @@ ms.locfileid: "11577043"
 | Surface Book 2 15"                                        | Surface Book 2   | Surface_Book_1793                |
 | Surface Book 3 13"                                        | Surface Book 3   | Surface_Book_3_1900                |
 | Surface Book 3 15"                                        | Surface Book 3   | Surface_Book_3_1899
-| Surface Go LTE 商業 | System Go | Surface_Go_1825_Commercial |
+| Surface Go LTE 商業 | Surface Go | Surface_Go_1825_Commercial |
 | Surface Go 消費者                                          | Surface Go       | Surface_Go_1824_Consumer         |
 | Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
 | Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
@@ -56,16 +56,19 @@ ms.locfileid: "11577043"
 | Surface ProX 與 SQ2 處理器                | Surface Pro X    | Surface_Pro_X_H_1876        |
 | Surface Laptop 3 13" Intel | Surface Laptop 3 | Surface_Laptop_3_1867：1868 |
 | Surface Laptop 3 15" Intel | Surface Laptop 3 | Surface_Laptop_3_1872      |
-| Surface Laptop 3 15"   | Surface Laptop 3 | Surface_Laptop_3_1873      | 
-| Surface Laptop去  | Surface Laptop去 | Surface_Laptop_Go_1943      | 
+| Surface Laptop 3 15"   | Surface Laptop 3 | Surface_Laptop_3_1873      |
+| Surface Laptop去  | Surface Laptop去 | Surface_Laptop_Go_1943      |
 | Surface Laptop 4 13" Intel | Surface Laptop 4 | Surface_Laptop_4_1950：1951 |
 | Surface Laptop 4 15" Intel | Surface Laptop 4 | Surface_Laptop_4_1978：1979     |
-| Surface Laptop 4 15" 的AMD   | Surface Laptop 4 | Surface_Laptop_4_1952：1953     | 
-| Surface Laptop 4 13"   | Surface Laptop 4 | Surface_Laptop_4_1958：1959    | 
-| Surface Hub 2S 50"  | Surface Hub 2S | Surface Hub 2S   | 
-| Surface Hub 2S 85"  | Surface Hub 2S | Surface Hub 2S 85   | 
+| Surface Laptop 4 15" 的AMD   | Surface Laptop 4 | Surface_Laptop_4_1952：1953     |
+| Surface Laptop 4 13"   | Surface Laptop 4 | Surface_Laptop_4_1958：1959    |
+| Surface Hub 2S 50"  | Surface Hub 2S | Surface Hub 2S   |
+| Surface Hub 2S 85"  | Surface Hub 2S | Surface Hub 2S 85   |
+| Surface Studio | Surface Studio | Surface_Studio   |
+| Surface Studio 2 | Surface Studio 2 | Surface_Studio_2_1707_Commercial   |
+|
 
-## <a name="examples"></a>範例 
+## <a name="examples"></a>範例
 
 **使用 PowerShell 來取回 SKU**  
 使用下列 PowerShell 命令來提取 System SKU 資訊：
@@ -75,7 +78,7 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **使用 系統資訊**  
-您也可以在 系統資訊 中找到裝置的系統 SKU**和系統系統資訊。** 若要這樣做，請執行下列步驟：
+您也可以在 系統資訊 中找到裝置的系統 SKU 和**系統系統資訊。** 若要這樣做，請執行下列步驟：
 
 1. 選取**開始**，然後在搜尋方塊中輸入**MSInfo32。**  
 1. 選取**系統資訊**。
@@ -86,9 +89,9 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
  ``` powershell  
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
- ``` 
+ ```
 
 ## <a name="learn-more"></a>深入了解
 
-- [WMI 參照](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [WMI 參照](/windows/win32/wmisdk/wmi-reference)
 - [適用於 Windows Autopilot 的 Surface 註冊支援](surface-autopilot-registration-support.md)
