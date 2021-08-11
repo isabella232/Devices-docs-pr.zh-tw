@@ -12,12 +12,12 @@ ms.date: 1/15/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 83b3db2e9fa3da253c16d208b752bd7b6e6be771
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: f0fed17dade345bf3f7dc9619eab7981dcb30cb0
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676417"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721273"
 ---
 # <a name="deploying-managing--servicing-surface-pro-x"></a>部署、管理及維護 Surface Pro X
 
@@ -36,7 +36,7 @@ Surface Pro X 是專為現代化雲端式環境所設計，最適合與 Microsof
 - [Windows Autopilot 與 Surface 裝置](windows-autopilot-and-surface-devices.md)
 - [Windows Autopilot 概觀](/windows/deployment/windows-autopilot/windows-autopilot)
 
-Autopilot 部署有幾個優點：允許您使用針對全自動部署所簡化的原廠佈建作業系統，將預先安裝的 Office Pro Plus 納入其中。
+Autopilot 部署有幾個優點：允許您使用針對全自動部署所簡化的原廠佈建作業系統，將預先安裝的 Microsoft 365 Apps 企業版 (也稱為 Office Pro Plus) 納入其中。
 
 已經使用現代化管理、安全性及生產力解決方案的組織具備得天獨厚的優勢，可以利用 Surface Pro X 中特有的效能功能。使用現代化企業營運應用程式、Microsoft Store (UWP) 應用程式或遠端桌面解決方案的客戶也將受益匪淺。
 
