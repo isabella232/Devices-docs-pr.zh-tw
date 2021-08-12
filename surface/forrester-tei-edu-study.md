@@ -25,7 +25,7 @@ ms.locfileid: "11099877"
 
 Microsoft 委託 Forrester Consulting 進行整體經濟影響&trade; (TEI) 研究，並檢視部署 Surface 的 K-12 學校的潛在投資報酬率 (ROI)。 本研究的目的是為讀者提供一個架構，以評估 Surface 對其組織的潛在財務影響。 採用 Surface 做為機構的首選裝置，可以提高學生的學習成績、協助過勞的 IT 部門、釋放教師的時間，並降低裝置的總擁有成本 (TCO)。
 
-[![T[教育用 Microsoft Surface 產生的整體經濟影響](./images/download-report.png)](./media/forrester-tei-microsoft-surface-for-education.pdf)
+[![T教育用 Microsoft Surface 產生的整體經濟影響](./images/download-report.png)](./media/forrester-tei-microsoft-surface-for-education.pdf)
 
 
 
