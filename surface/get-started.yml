@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 9367329bcaa7c42a31cc8de5ffcee2e65f4c8437
-  ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+  ms.openlocfilehash: 88674469b94de346a6a3a2b427f4cff034a3d405
+  ms.sourcegitcommit: 2776af08eb63c0a23950c476256e5019f83effd8
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/24/2021
-  ms.locfileid: "11676507"
+  ms.lasthandoff: 08/17/2021
+  ms.locfileid: "11902672"
 landingContent:
 - title: Surface 裝置
   linkLists:
@@ -42,7 +42,7 @@ landingContent:
       url: surface-laptop-processors.md
     - text: Surface Headphones 2+ 技術概觀
       url: surface-headphones.md
-    - text: Surface 上的 Windows 虛擬桌面
+    - text: Surface 上的 Azure 虛擬桌面
       url: windows-virtual-desktop-surface.md
 - title: Microsoft Ignite
   linkLists:
@@ -52,7 +52,7 @@ landingContent:
       url: https://youtu.be/WQ-wg8fRzN0
     - text: Surface Pro遠端Windows ARM 上的 X 和
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Microsoft 的Endpoint Protection至雲端新式解決方案
+    - text: Surface Security – Microsoft 的Endpoint Protection至雲端新式電腦
       url: https://youtu.be/uadAecDbqf4
 - title: 部署 Surface 裝置
   linkLists:
@@ -82,7 +82,7 @@ landingContent:
       url: surface-diagnostic-toolkit-business.md
     - text: 熱門支援解決方案
       url: support-solutions-surface.md
-    - text: Windows 型裝置的 Surface 驅動程式與韌體生命週期
+    - text: 適用於 Windows 型裝置的 Surface 驅動程式與韌體生命週期
       url: surface-driver-firmware-lifecycle-support.md
 - title: 探索安全性指導
   linkLists:
