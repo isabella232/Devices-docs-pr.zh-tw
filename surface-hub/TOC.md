@@ -27,7 +27,7 @@
 ## 部署
 ### [Surface Hub 2S 採用與訓練](surface-hub-2s-adoption-kit.md)
 ### [Surface Hub 2S 採用影片](surface-hub-2s-adoption-videos.md)
-### [第一次安裝 Surface Hub 2S](surface-hub-2s-setup.md)
+### [第一次安裝 Surface Hub 2S](first-run-program-surface-hub.md)
 ### [將裝置連線至 Surface Hub 2S](surface-hub-2s-connect.md)
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
 ### [建立 Surface Hub 的佈建套件](provisioning-packages-for-surface-hub.md)
