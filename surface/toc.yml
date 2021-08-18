@@ -10,7 +10,7 @@
           items:
             - name: Surface 安全性概觀
               href: surface-security.md
-            - name: Surface 上的 Windows 虛擬桌面
+            - name: Surface 上的 Azure 虛擬桌面
               href: windows-virtual-desktop-surface.md
             - name: Surface Laptop 4 處理器技術概觀
               href: surface-laptop-processors.md
