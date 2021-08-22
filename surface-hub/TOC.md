@@ -32,7 +32,9 @@
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
 ### [建立 Surface Hub 的佈建套件](provisioning-packages-for-surface-hub.md)
 ### [在 Microsoft Surface Hub 上安裝應用程式](install-apps-on-surface-hub.md)
-### [使用 PowerShell 建立 Surface Hub 2S 內部部署帳戶](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+### [使用 PowerShell 建立 Surface Hub 2S 內部部署帳戶](/microsoftteams/rooms/with-skype-for-business-server-2015)
+### [Surface Hub 上的 Microsoft Teams 會議室](surface-hub-teams-rooms.md)
+### [在 Surface Hub 上設定適用於 Microsoft Teams 會議室的網路和服務品質](surface-hub-teams-rooms-networking.md)
 ### [Surface Hub Teams 應用程式](hub-teams-app.md)
 ### [Surface Hub 2S 的 Teams 認證配件](surface-hub-2s-certifications.md)
 
@@ -83,11 +85,11 @@
 
 ## 部署
 ### [建立和測試裝置帳戶](create-and-test-a-device-account-surface-hub.md)
-#### [線上部署](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [線上部署](/microsoftteams/rooms/with-office-365)
 
-#### [內部部署 (單一樹系)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [內部部署 (單一樹系)](/microsoftteams/rooms/with-skype-for-business-server-2015)
 
-#### [內部部署 (多重樹系)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
+#### [內部部署 (多重樹系)](/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
 #### [混合式部署](hybrid-deployment-surface-hub-device-accounts.md)
 #### [Microsoft Exchange 屬性](exchange-properties-for-surface-hub-device-accounts.md)
 #### [將 ActiveSync 原則套用到裝置帳戶](apply-activesync-policies-for-surface-hub-device-accounts.md)
