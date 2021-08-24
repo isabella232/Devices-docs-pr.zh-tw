@@ -1,6 +1,6 @@
 ---
 title: 在 Surface Hub 上設定非全域系統管理員帳戶
-description: 本文將說明如何設定非全域系統管理員帳戶來管理 Surface Hub Surface Hub 2S。
+description: 本文將說明如何設定非全域系統管理員帳戶來管理 Surface Hub 2S Surface Hub帳戶。
 keywords: Surface Hub，Surface Hub v1，Surface Hub 2S
 ms.prod: surface-hub
 ms.sitesec: library
@@ -14,12 +14,12 @@ ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 11170f6c202faef7aa3dddcb8aa8c6fa84bea80f
-ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
+ms.openlocfilehash: a941879d43909a44c18a492d6c4f607cbafbe707
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "11643859"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911368"
 ---
 # <a name="configure-non-global-admin-accounts-on-surface-hub"></a>在 Surface Hub 上設定非全域系統管理員帳戶
 
@@ -32,7 +32,7 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
 1. 在 Microsoft Intune中，建立一個安全性群組，其中包含指定管理Surface Hub。
 2. 使用 PowerShell 取得 Azure AD 群組 SID。
 3. 建立包含 Azure AD 群組 SID 的 XML 檔案。
-4. 建立一個安全性群組，Surface Hub非全域系統管理員安全性組所管理之所有裝置。
+4. 建立一個安全性群組，Surface Hub非全域系統管理員安全性群組所管理之所有裝置。
 5. 建立自訂的組組設定檔，以包含您裝置Surface Hub組。 
 
 
@@ -43,17 +43,17 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
 ### <a name="create-security-group-for-admin-accounts"></a>為系統管理員帳戶建立安全性群組
 
 1. 透過系統管理中心[Microsoft 端點管理員](https://go.microsoft.com/fwlink/?linkid=2109431)Intune，選取組>群組類型****，然後選取  >  **** 安全性 **。** 
-2. 輸入組名 ，例如，Surface Hub**管理員**，然後選取建立 **。** 
+2. 輸入群組名稱 ，例如，Surface Hub**管理員**名稱，然後選取建立 **。** 
 
-     ![為中樞系統管理員建立安全性群組](images/sh-create-sec-group.png)
+     ![為中樞系統管理員建立安全性群組。](images/sh-create-sec-group.png)
 
 3. 開啟群組 **，選取成員**，然後選擇新增成員，**** 以在 Surface Hub 中輸入要指定為非全域系統管理員的系統管理員Surface Hub。 若要深入瞭解在 Intune 中建立群組，請參閱新增  [群組以組織使用者和裝置](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-security-group-for-surface-hub-devices"></a>為裝置建立Surface Hub組
 
-1. 重複上一個程式，為 Hub 裝置建立另一個安全性群組;例如，Surface Hub**裝置**。 
+1. 重複上一個程式，為中樞裝置建立另一個安全性群組;例如，Surface Hub**裝置**。 
 
-     ![為中樞裝置建立安全性群組](images/sh-create-sec-group-devices.png) 
+     ![建立中樞裝置的安全性群組。](images/sh-create-sec-group-devices.png) 
 
 ## <a name="obtain-azure-ad-group-sid-using-powershell"></a>使用 PowerShell 取得 Azure AD 群組 SID
 
@@ -77,7 +77,7 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
 
 5. 在 Intune 中，選取您先前建立群組並複製物件識別碼，如下圖所示。 
 
-     ![複製安全性群組的物件識別碼](images/sh-objectid.png)
+     ![複製安全性群組的物件識別碼。](images/sh-objectid.png)
 
 6. 執行下列命令小命令以取得安全性群組的 SID：
 
@@ -104,10 +104,10 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
       > [!IMPORTANT]
       > 您可能需要為系統管理員 [帳戶使用當地語系化名稱](https://social.technet.microsoft.com/wiki/contents/articles/13813.localized-names-for-administrator-account-in-windows.aspx)。 請勿從 XML 檔案移除預設的系統管理員成員。
 
-2. 將預留位置 SID (S-1-12-1) 取代為 Azure **AD 群組 SID，** 然後將檔案儲存為 XML;例如 **，aad-local-admin.xml。** 
+2. 將預留位置 SID (S-1-12-1) 取代為**Azure AD 群組 SID，** 然後將檔案儲存為 XML;例如 **，aad-local-admin.xml。** 
 
       > [!NOTE]
-      > 雖然應該透過其 SID 指定群組，但如果您想要直接新增 Azure 使用者，可以透過以此格式指定使用者主體名稱 (UPN) 新增： `<member name = "AzureAD\user@contoso.com" />`
+      > 雖然應該透過其 SID 指定群組，但如果您想要直接新增 Azure 使用者，可以透過以此格式指定其使用者主體名稱 (UPN) 新增： `<member name = "AzureAD\user@contoso.com" />`
 
 ## <a name="create-custom-configuration-profile"></a>建立自訂群組組設定檔
 
@@ -122,18 +122,18 @@ Windows 10 團隊版 2020 Update 新增了針對在已加入 Azure AD 網域的 
     ```
 6. 在資料類型下，選取 **字串 XML** 並流覽以開啟您于上一個步驟中建立之 XML 檔案。 
 
-     ![上傳本地系統管理員 xml 設定檔](images/sh-local-admin-config.png)
+     ![上傳本地系統管理員 xml 設定檔。](images/sh-local-admin-config.png)
 
 7. 按一下 [儲存]****。
 8. 按一下 **[選取群組以包含**及[](#create-security-group-for-surface-hub-devices)選擇您先前在 (Surface Hub**中**) 。 按 **\[下一步\]**。
 9. 在適用規則下，依需要新增規則。 否則，請選取 **下一** 步，然後選取 **建立**。
 
-若要深入瞭解使用 OMA-URI 字串的自訂群組Windows 10設定檔，請參閱在[Intune 中為Windows 10使用自訂設定](/mem/intune/configuration/custom-settings-windows-10)。
+若要深入瞭解使用 OMA-URI 字串的自訂群組Windows 10設定檔，請參閱在[Intune 中為Windows 10裝置使用自訂設定](/mem/intune/configuration/custom-settings-windows-10)。
 
 
 ## <a name="non-global-admins-managing-surface-hub"></a>管理帳戶的非全域系統管理員Surface Hub
 
-現在 **，Surface Hub系統管理員**安全性群組的成員就可以在 設定 上Surface Hub並管理設定。
+現在 **，Surface Hub系統管理員**安全性群組的成員就可以在 設定 上Surface Hub應用程式並管理設定。
 
 > [!IMPORTANT]
 > 全域系統管理員對應用程式的預設設定會 (，除非他們也是這個新安全性群組) 。

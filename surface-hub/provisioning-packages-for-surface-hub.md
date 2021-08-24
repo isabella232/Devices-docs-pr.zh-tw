@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: bb5c08454d6c148c5e07b80ee0b4452e5b768a87
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 9f0f63cb44c54b6350bc478e4fc15455ba94e85f
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676707"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911818"
 ---
 # <a name="create-provisioning-packages-for-surface-hub"></a>建立 Surface Hub 的佈建套件
 
-資源調配套件可讓您自動化重要功能的部署，協助在貴組織的所有 Surface Hub 中提供一致的體驗。  在Windows上 (WCD) ，您可以完成下列工作：
+部署套件可讓您自動化重要功能的部署，協助在貴組織的所有 Surface Hub 中提供一致的體驗。  在Windows上 (WCD) ，您可以完成下列工作：
 
 - 註冊 Active Directory 或 Azure Active Directory
 - 建立裝置系統管理員帳戶
@@ -38,26 +38,26 @@ ms.locfileid: "11676707"
 1. 在另外一部Windows 10電腦上安裝Windows[設計](https://www.microsoft.com/store/apps/9nblggh4tx22)工具Microsoft Store。
 1. 選取[**設定Surface Hub**](#use-surface-hub-provisioning-wizard)裝置，以使用精靈設定一般設定。 或者， [選取進位設定](#use-advanced-provisioning) 來查看和設定所有可能的設定。
 1. 建立部署套件，並將其儲存到 USB 磁碟機。
-1. 在首次執行設定Surface Hub或透過應用程式將套件部署到您的設定應用程式。 若要深入瞭解，請參閱為 Windows 10[建立Windows 10。](/windows/configuration/provisioning-packages/provisioning-create-package)
+1. 在第一次執行設定Surface Hub或透過應用程式將套件部署到您的設定應用程式。 若要深入瞭解，請參閱為 Windows 10[建立Windows 10。](/windows/configuration/provisioning-packages/provisioning-create-package)
 
-## <a name="use-surface-hub-provisioning-wizard"></a>使用 Surface Hub配置精靈
+## <a name="use-surface-hub-provisioning-wizard"></a>使用Surface Hub精靈
 
 1. 開啟 Windows設計工具，然後選取 Surface Hub**裝置**。<br>
-    ![使用 Surface Hub 佈建精靈](images/sh-prov-start.png)
+    ![使用Surface Hub精靈。](images/sh-prov-start.png)
     
 2. 為專案命名，然後選取下 **一步**。
 
 ### <a name="add-certificates"></a>新增憑證
 
 > [!div class="mx-imgBorder"]
-> ![新增憑證](images/sh-prov-cert.png)
+> ![新增憑證。](images/sh-prov-cert.png)
 
 若要將裝置與憑證一起配置，請選取 **新增憑證**。 輸入憑證的名稱，然後流覽以選取要使用的憑證。  若要使用進一級的置備選項，請參閱將憑證 [新增到您的套件下方的一節](#add-a-certificate-to-your-package)。
 
 ### <a name="configure-proxy-settings"></a>設定 Proxy 設定
 
 > [!div class="mx-imgBorder"]
-> ![設定 Proxy 設定](images/sh-prov-proxy.png)
+> ![設定 Proxy 設定。](images/sh-prov-proxy.png)
 
 1. 將 Proxy 設定切換為 **\[是\]** 或 **\[否\]**。 根據預設，Surface Hub自動偵測 Proxy 設定。 不過，如果您的基礎結構過去需要使用 Proxy 伺服器，但已變更為不需要 Proxy 伺服器，您可以選取 **\[是\]** 和 **\[自動偵測設定\]**，使用佈建套件將 Surface Hub 裝置還原回預設設定。
 2. 如果您切換 **為是**，您可以選取以自動偵測 Proxy 設定，或輸入下列其中一項手動設定：
@@ -72,12 +72,12 @@ ms.locfileid: "11676707"
 ### <a name="set-up-device-admins"></a>設定裝置系統管理員
 
  > [!div class="mx-imgBorder"]
- > ![加入 Active Directory、Azure AD 或建立本地系統管理員帳戶](images/sh2-wcd.png)
+ > ![加入 Active Directory、Azure AD 或建立本地系統管理員帳戶。](images/sh2-wcd.png)
 
 您可以在 Active Directory 中註冊裝置，並指定安全性群組使用「設定」應用程式、註冊 Azure Active Directory 以允許全域系統管理員使用「設定」應用程式，或在裝置上建立本機系統管理員。
 
-1. 若要在 Active Directory 中註冊裝置，請輸入最低權限使用者帳戶的認證以將裝置加入網域，並指定該安全性群組在 Surface Hub 上擁有系統管理員認證。 如果將套件套用至Surface Hub重設的網域帳戶，則只要該網域帳戶是一開始設定Surface Hub帳戶。 否則，必須在佈建套件中使用不同的網域帳戶。
-2. 使用組Windows設計工具來設定大量 Azure AD 註冊之前，[請規劃您的 Azure AD 加入實現](/azure/active-directory/devices/azureadjoin-plan)。 您 Azure AD 租用戶中的 **\[每位使用者的裝置數目上限\]** 設定決定您在精靈中使用的大量權杖可使用多少次。
+1. 若要在 Active Directory 中註冊裝置，請輸入最低權限使用者帳戶的認證以將裝置加入網域，並指定該安全性群組在 Surface Hub 上擁有系統管理員認證。 如果將套件套用至Surface Hub重設的網域帳戶，您只要是一開始設定密碼的同一個帳戶，就可以Surface Hub帳戶。 否則，必須在佈建套件中使用不同的網域帳戶。
+2. 使用組Windows設計工具設定大量 Azure AD 註冊之前，[請規劃您的 Azure AD 加入實現](/azure/active-directory/devices/azureadjoin-plan)。 您 Azure AD 租用戶中的 **\[每位使用者的裝置數目上限\]** 設定決定您在精靈中使用的大量權杖可使用多少次。
 3. 若要在 Azure AD 中註冊裝置，請選取該選項，並為您將使用精靈取得的大量權杖輸入易記的名稱。 設定權杖的到期日 (上限為自您取得權杖起的 30 天)。 選取 **取得大量權杖**。 在 **\[Let's get you signed in\]** (讓我們將您登入) 視窗中，輸入具有權限將裝置加入 Azure AD 的帳戶，然後輸入密碼。 選取**接受**以Windows組組設計工具的必要許可權。
 4. 若要建立本機系統管理員帳戶，請選取該選項，並輸入使用者名稱與密碼。
 
@@ -87,7 +87,7 @@ ms.locfileid: "11676707"
 ### <a name="enroll-in-third-party-mdm-provider"></a>註冊協力廠商 MDM 提供者
 
 > [!div class="mx-imgBorder"]
-> ![註冊協力廠商行動裝置管理](images/sh-prov-mdm.png)
+> ![註冊協力廠商行動裝置管理。](images/sh-prov-mdm.png)
 
 如果您使用協力廠商行動裝置管理 (MDM) 提供者，您可以使用本節註冊Surface Hub。 若要註冊[Intune，](/mem/intune/enrollment/quickstart-setup-auto-enrollment)請如上一節所述，先設定 Azure AD 加入，然後遵循下列 Intune 檔中的指示：為裝置Windows 10註冊。
 
@@ -100,7 +100,7 @@ ms.locfileid: "11676707"
 ### <a name="add-applications"></a>新增應用程式
 
 > [!div class="mx-imgBorder"]
-> ![新增應用程式](images/sh-prov-apps.png)
+> ![新增應用程式。](images/sh-prov-apps.png)
 
 您可以在佈建套件中安裝多個通用 Windows 平台 (UWP) 應用程式。 若要深入瞭解，請參閱將 [電腦與應用程式一起配置](/windows/configuration/provisioning-packages/provision-pcs-with-apps)。
 
@@ -109,11 +109,11 @@ ms.locfileid: "11676707"
 
 ### <a name="add-a-configuration-file"></a>新增組設定檔
 
-除了此設定套件之外，您還可以使用Surface Hub設定檔，更輕鬆地設定您的裝置。 Surface Hub組設定檔包含用於連接到 Exchange、Microsoft Teams 或 商務用 Skype 的裝置帳戶清單，以及無線投影的「好用名稱」。
+除了此設定套件之外，您還可以使用Surface Hub設定檔，更輕鬆地設定您的裝置。 Surface Hub組Surface Hub包含用於連接到 Exchange、Microsoft Teams 或 商務用 Skype 的裝置帳戶清單，以及無線投影的「好用名稱」。
 
-**若要建立Surface Hub設定檔：**
+**若要建立Surface Hub組設定檔：**
 
-1. 開啟 Microsoft Excel (或其他.csv編輯器) ，.csv名為_SurfaceHubConfiguration.csv。_
+1. 開啟 Microsoft Excel (或其他.csv編輯器) ，建立.csv名為SurfaceHubConfiguration.csv的_檔案_。
 
 2. 輸入此格式的裝置帳戶和好用名稱清單：
 
@@ -137,22 +137,22 @@ ms.locfileid: "11676707"
 
 ### <a name="complete-provisioning-wizard"></a>完成資源配置精靈
 
-如果您只需要設定一般設定，請**選取完成**  >  **建立**，然後跳到建立[套件一節](#build-your-package)。 或切換到進一步設定，繼續設定設定。
+如果您只需要設定一般設定，請**選取完成**  >  **建立**，並跳至建立[套件一節](#build-your-package)。 或切換到進一步設定，繼續設定設定。
 
 ## <a name="use-advanced-provisioning"></a>使用進位置備
 
 > [!TIP]
-> 使用精靈建立含有通用設定的套件，然後切換到進階編輯器以新增其他設定。<br><br> ![切換至進階編輯器](images/icd-simple-edit.png)
+> 使用精靈建立含有通用設定的套件，然後切換到進階編輯器以新增其他設定。<br><br> ![切換到進位編輯器。](images/icd-simple-edit.png)
 
-1. 如果繼續上一節，請選取**** 切換至進Windows編輯器，然後Windows**進****位置備**。
+1. 如果繼續上一節，請選取切換到進Windows**編輯器，否則**開啟**Windows設計工具**，然後選取進**位置備**。
 
-   ![使用進階佈建](images/sh-prov-adv.png)
+   ![使用進位置備。](images/sh-prov-adv.png)
 
 2. 為專案命名，然後選取下 **一步**。
 
 3. 選取**共同Windows 10 團隊版，****選取下**一步，**然後選取**完成 。
 
-   ![WCD 新專案](images/icd-new-project.png)
+   ![WCD 新專案。](images/icd-new-project.png)
 
 4. 在專案中的可用 **自訂項下**，選取 **共同小組設定**。
 
@@ -163,14 +163,14 @@ ms.locfileid: "11676707"
 您可以使用佈建套件來安裝憑證，讓裝置可向 Microsoft Exchange 驗證。
 
 > [!NOTE]
-> 佈建套件只能將憑證安裝到裝置 (本機電腦) 存放區，不能安裝到使用者存放區。 如果貴組織需要將憑證安裝至使用者存放區，請使用 Hub**設定**應用程式：更新****&  >  **憑證**  >  **的導入憑證**。
+> 佈建套件只能將憑證安裝到裝置 (本機電腦) 存放區，不能安裝到使用者存放區。 如果貴組織要求將憑證安裝至使用者市集，請使用 Hub**設定**App：更新&** **  >  **憑證**  >  **。**
 或者，您可以使用 MDM  [**策略**](manage-settings-with-mdm-for-surface-hub.md) 將憑證部署到裝置存放區或使用者存放區。
 
 > [!TIP]
 > **ClientCertificates**區段適用于具有私密金鑰的 .pfx 檔案;根 CA 的 .cer 檔案應放在**RootCertificates**區段，而針對**CACertificates**區段的中級 CA。
 
 1. 在**Windows設計**  >  **工具可用的自訂專案**中，請前往**Runtime settings**  >  **憑證**  >  **ClientCertificates**。
-2. 輸入 **CertificateName 卷** 標，然後 **選取新增**。
+2. 輸入 **CertificateName 卷** 標，然後 **選取**新增 。
 3. 輸入 **CertificatePassword**。
 4. 針對 **[CertificatePath]**，瀏覽並選取要使用的憑證。
 5. 將 **[ExportCertificate]** 設定為 **[False]**。
@@ -196,11 +196,11 @@ ms.locfileid: "11676707"
 
 1. 建立應用程式授權的複本，然後將它重新命名為使用 **.ms-windows-store-license** 副檔名。 例如，將"example.xml"重新命名為"example.ms-windows-store-license"。
 
-2. 在 Windows設計工具中，前往****[可用的自訂設定執行時間  >  **設定**通用  >  **應用程式Install**  >  **DeviceCoNtextAppLicense>。**
+2. 在 [Windows設計工具中，前往 **[可用的**自訂設定執行時間  >  **設定**通用  >  **AppInstall**  >  **DeviceCoNtextAppLicense>**。
 
 3. 輸入**LicenseProductId，****然後選取**新增 。 為了保持一致性，請使用應用程式授權中的應用程式授權識別碼。 使用文字編輯器開啟授權檔案。 接著，在 **授權標記** 中，使用 **LicenseID 屬性中的** 值。
 
-4. 選取新的 **[LicenseProductId]** 節點。 針對**LicenseInstall，** 選取流覽以尋找並選取您重新命名 (example.ms-windows-store-license) 。 ****
+4. 選取新的 **[LicenseProductId]** 節點。 針對**LicenseInstall，** 選取流覽以尋找並選取您重新命名 (example.ms windows-store-license) 。 ****
 
 ### <a name="add-a-policy-to-your-package"></a>新增原則至套件
 
@@ -226,14 +226,14 @@ Surface Hub 支援[原則設定服務提供者](/windows/client-management/mdm/p
 
 當您建置佈建套件時，您可能會在專案檔案與佈建套件 (.ppkg) 檔案中包含機密資訊。 雖然您可以選擇加密 .ppkg 檔案，但專案檔案不會加密。  將專案檔案儲存在安全的位置，或刪除不再需要的專案檔案。
 
-1. 開啟**Windows設計**  >  **工具匯出**  >  **置備套件**。
+1. 開啟**Windows**  >  **設計工具匯出**  >  **置備套件**。
 
 2. 將**擁有者變更****為 IT 系統管理員**。  
 
 3. 設定 **[套件版本]** 的值，然後選取 **[下一步]**。
 
    > [!TIP]
-   > 將擁有者設定為 IT 系統管理員可確保套件設定維持適當的「優先順序屬性」，並維持在 Surface Hub 如果其他布建套件後來從其他來源套用，則仍然有效。
+   > 將擁有者設定為 IT 系統管理員可確保套件設定維持適當的「優先順序屬性」，Surface Hub如果其他布建套件後來從其他來源套用，則此設定仍然有效。
 
    > [!TIP]
    > 您可以修改現有的套件，並變更版本號碼以更新先前套用過的套件。
@@ -246,7 +246,7 @@ Surface Hub 支援[原則設定服務提供者](/windows/client-management/mdm/p
     > [!IMPORTANT]
     > 建議您在部署套件中包含信任的部署憑證。 當套件套用至裝置時，憑證會新加到系統存放區，讓後續的套件以無提示方式套用。
 
-5. 選取 **下一** 步以指定輸出位置。 Windows 設定設計工具預設會使用專案資料夾做為輸出位置。 或選取 **流覽** 以變更預設輸出位置。 選取 **[下一步]**。
+5. 選取 **下** 一步以指定輸出位置。 Windows 設定設計工具預設會使用專案資料夾做為輸出位置。 或選取 **流覽** 以變更預設輸出位置。 選取 **[下一步]**。
 
 6. 選取 **建立** 以開始建立套件。 專案資訊會顯示在建立頁面中。
 
@@ -260,7 +260,7 @@ Surface Hub 支援[原則設定服務提供者](/windows/client-management/mdm/p
 
 有兩種方法可以部署部署套件至Surface Hub：
 
-- [第一次執行安裝程式。](#apply-a-provisioning-package-during-first-run) 您可以套用設定套件來自訂多個選項，Wi-Fi設定、Proxy 設定、裝置帳戶詳細資料、Azure AD 聯Wi-Fi和相關設定。  
+- [第一次執行設定。](#apply-a-provisioning-package-during-first-run) 您可以套用設定套件來自訂多個選項，Wi-Fi設定、Proxy 設定、裝置帳戶詳細資料、Azure AD 連接和相關設定。  
 - [設定應用程式。](#apply-a-provisioning-package-using-settings-app) 第一次執行設定之後，您可以透過應用程式套用設定套件。 
 
 ### <a name="apply-a-provisioning-package-during-first-run"></a>在初次執行期間套用佈建套件
@@ -271,7 +271,7 @@ Surface Hub 支援[原則設定服務提供者](/windows/client-management/mdm/p
 
 3. 下一個畫面會要求您選取佈建來源。 選取 \[抽取式媒體\]**** 並點選 \[下一步\]****。
 
-4. 選取要套用 (*.ppkg) 套件，然後點選下一 **步**。 請注意，您在初次執行期間只能安裝一個套件。
+4. 選取您想要套用 (*.ppkg) 套件，然後點選下一 **步**。 請注意，您在初次執行期間只能安裝一個套件。
 
 5. 初次執行程式會向您顯示佈建套件將套用的變更摘要。 選取 **\[是，請將它新增\]**。
 
@@ -284,8 +284,8 @@ Surface Hub 支援[原則設定服務提供者](/windows/client-management/mdm/p
 ### <a name="apply-a-provisioning-package-using-settings-app"></a>使用應用程式套用設定套件
 
 1. 將包含 .ppkg 檔案的 USB 快閃磁碟機插入 Surface Hub。
-2. 從**Surface Hub開始設定**系統，並輸入系統管理認證。
-3. 瀏覽至 **\[Surface Hub\]** > **\[裝置管理\]**。 在**置備套件下**，選取新增**或移除資源調配套件**  >  **新增套件**。
+2. 從 Surface Hub，開始**設定**系統，並輸入系統管理認證時，系統提示。
+3. 瀏覽至 **\[Surface Hub\]** > **\[裝置管理\]**。 在**置備套件下**，選取**新增或移除資源調配套件**  >  **新增套件**。
 4. 選擇您的佈建套件，然後選取 **[新增]**。  出現提示時，請再次輸入您的系統管理員認證。
 5. 您會看到要申請之變更的摘要。 選取 **\[是，請將它新增\]**。
 

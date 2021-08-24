@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 05/17/2021
-ms.openlocfilehash: d96581cd67e9cd4171fbb745aed4e9b34e2f0627
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 292c20c9999d9f226f28daed87069c78b43fd4bf
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576623"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911188"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
@@ -41,11 +41,11 @@ ms.locfileid: "11576623"
 - Surface Studio (所有版本) 
 - Surface Pro 2 及更高版本
 - Surface 3
-- Windows 10 專業版 2 Enterprise上Surface Hub及
+- Windows 10 專業版 2 Enterprise上Surface Hub和
 
 某些 Microsoft Surface Data Eraser 可發揮作用的情況包括：
 
-- 準備要送修的 Surface 裝置。
+- 準備要送往維修的 Surface 裝置。
 - 將 Surface 裝置解除授權以移除。 從公司或組織使用。
 - 重新調整 Surface 裝置用途，以用於新的部門，或供新使用者使用。
 - 針對與敏感性資料一起使用的裝置執行重新映射時的標準作法。
@@ -57,7 +57,7 @@ ms.locfileid: "11576623"
 >因為執行 Microsoft Surface Data Eraser 需要能夠從 USB 開機，如果裝置未設定成可從 USB 開機，或裝置無法成功開機或 POST，則無法使用 Microsoft Surface Data Eraser。
 
 >[!NOTE]
->Surface Data Eraser Surface Studio 2 Surface Studio最多可能需要 6 分鐘，才能啟動到 WinPE，才能進行磁片清除。
+>Surface Data Eraser Surface Studio Surface Studio 2 可能需要最多 6 分鐘才能啟動到 WinPE，才能進行磁片清除。
 
 ## <a name="how-to-create-a-microsoft-surface-data-eraser-usb-stick"></a>如何建立 Microsoft Surface Data Eraser USB 磁碟機
 
@@ -77,20 +77,20 @@ ms.locfileid: "11576623"
 
 3. 按一下 **\[開始\]** 以確認您有大小至少為 4 GB 的 USB 磁碟機，如圖 1 所示。
 
-   ![啟動 Microsoft Surface Data Eraser 工具](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
+   ![啟動 Microsoft Surface 資料橡皮擦工具。](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
 
    *圖 1. 啟動 Microsoft Surface Data Eraser 工具*
-4. 從**架構選取頁面**選擇大部分 Surface 裝置或**ARM64** Surface Pro X，如圖**** 2 所示。 選取 **\[繼續\]**。
+4. 從**架構選取頁面**選擇大多數 Surface 裝置或**ARM64** Surface Pro X，如圖**** 2 所示。 選取 **\[繼續\]**。
 
-    ![架構選取範圍](images/dataeraser-arch.png "Architecture Selection")<br>
+    ![架構選取範圍。](images/dataeraser-arch.png "Architecture Selection")<br>
        *圖 2. 選取裝置架構*
 
-5. 從 [USB 拇指磁碟機選取範圍> 頁面選取您所選擇的**USB**磁碟機，如圖**** 3 所示，然後按一下 [開始進行以開始 USB 建立程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
+5. 從 [USB 拇指磁碟機選取範圍> 頁面選取您所選擇的**USB**磁碟機，如圖**** 3 所示，然後按一下 [開始以開始建立 USB 程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
 
    >[!TIP]
    >如果 \[開始\] 按鈕已停用，請檢查您的抽取式磁碟機總容量至少為 4 GB。
   
-   ![選擇 USB 磁碟機](images/dataeraser-usb-selection.png "USB thumb drive selection")
+   ![USB 拇指磁碟機選項。](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
    *圖 3. 選擇 USB 磁碟機*
 
@@ -98,7 +98,7 @@ ms.locfileid: "11576623"
 
 7. 顯示 **\[恭喜\]** 畫面之後，即可退出並移除 USB 磁碟機。 這個 USB 磁碟機現在可插入 Surface 裝置，從其開機並抹除該裝置上的所有檔案。 按一下 **[完成** 以完成 USB 建立程式，如圖 4 所示。
 
-   ![Surface Data Eraser USB 建立程序](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
+   ![Surface Data Eraser USB 建立程式。](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
 
    *圖 4. 完成 Microsoft Surface Data Eraser USB 建立程序*
 
@@ -122,7 +122,7 @@ ms.locfileid: "11576623"
 
 3. 當 Surface 裝置啟動時， **會顯示 SoftwareLicenseTerms** 文字檔，如圖 5 所示。
 
-   ![使用 Microsoft Surface Data Eraser USB 磁碟機開機](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
+   ![啟動 Microsoft Surface 資料橡皮擦 USB 棒。](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
    *圖 5. 使用 Microsoft Surface Data Eraser USB 磁碟機開機*
 
@@ -135,7 +135,7 @@ ms.locfileid: "11576623"
    >[!CAUTION]
    >Microsoft Surface Data Eraser 工具會以安全且無法復原方式刪除所有資料，包括將裝置開機所需的 Windows 作業系統檔案。 若要將已使用 Microsoft Surface Data Eraser 清除的 Surface 裝置開機，您必須重新安裝 Windows 作業系統。 若要移除 Surface 裝置的資料，而不移除 Windows 作業系統，您可以使用 **\[重設您的電腦\]** 功能。 不過，這無法防止以鑑證或資料修復功能復原您的資料。 請參閱 [Windows 10 中的復原選項](https://support.microsoft.com/help/12415/windows-10-recovery-options)以取得詳細資訊。
 
-   ![顯示將要清除的磁碟分割](images/sda-fig5-erase.png "Partition to be erased is displayed")
+   ![系統會顯示要清除的分區。](images/sda-fig5-erase.png "Partition to be erased is displayed")
   
    *圖 6. Microsoft Surface Data Eraser 中會顯示將要清除的磁碟分割*
 
@@ -173,9 +173,9 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 此版本的 Surface 資料橡皮擦包含錯誤修正程式，並新增以下支援： 
 
 - 架構重新設計，以減少使用新產品版本更新需求
-- 適用于新工具更新的通知
+- 新工具更新可用的通知
 - 遙測新增專案
-- Windows 10 專業版 2 Enterprise上Surface Hub及
+- Windows 10 專業版 2 Enterprise上Surface Hub和
 
 ### <a name="330139"></a>3.30.139
 
@@ -199,7 +199,7 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 
 *發行日期：2019 年 10 月 21 日*
 
-此版本的 Surface Data Eraser 已編譯為 x86，並新增下列裝置的支援：
+此版本的 Surface Data 橡皮擦已編譯為 x86，並新增下列裝置的支援：
 
 - Surface Pro 7、Surface Pro X 和 Surface Laptop 3
 

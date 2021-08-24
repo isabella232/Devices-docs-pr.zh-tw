@@ -10,12 +10,12 @@ ms.date: 08/28/2017
 ms.reviewer: ''
 manager: laurawi
 localizationpriority: medium
-ms.openlocfilehash: f8a2bf8ddb75ca6dd3ff89e16fe0d37e099be29d
-ms.sourcegitcommit: 85f5a2e67b34fe073ec588ed441ebee239ab0ac6
+ms.openlocfilehash: e07591a25958677fb6efd5411d75f8b8e1549fed
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400734"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912018"
 ---
 # <a name="sign-in-to-surface-hub-with-microsoft-authenticator"></a>使用 Microsoft Authenticator 登入 Surface Hub
 
@@ -31,9 +31,9 @@ ms.locfileid: "11400734"
 
 - [設定多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings)。 請確定已選取 **\[透過行動裝置應用程式通知\]**。 
 
-    ![多重要素驗證](images/mfa-options.png)
+    ![多重要素驗證選項。](images/mfa-options.png)
 
-- 在 Azure AD 服務上啟用內容託管，例如 Office、SharePoint 等。 
+- 在 Azure AD 服務上啟用內容託管，例如 Office、SharePoint等等。 
 
 - Surface Hub 必須執行 Windows 10，版本為 1703 或更新版本。
 
@@ -70,18 +70,18 @@ ms.locfileid: "11400734"
     >[!NOTE]
     >如果您不確定如何在 Surface Hub 上為會議排程，請參閱[在 Surface Hub 上為會議排程](https://support.microsoft.com/help/17325/surfacehub-schedulemeeting)。
 
-    ![Surface Hub 上登入選項的螢幕擷取畫面](images/sign-in.png)
+    ![螢幕擷取畫面，顯示 Surface Hub。](images/sign-in.png)
 
 2. 您會看到一份會議邀請人員名單。 選取您自己 (或想要登的入 – 請確定此人員在加入會議之前已完成所有裝置設定步驟)，然後選取 **\[繼續\]**。
 
-    ![會議出席者名單的螢幕擷取畫面](images/attendees.png)
+    ![會議出席者清單的螢幕擷取畫面。](images/attendees.png)
 
     您會在 Surface Hub 上看到程式碼。
 
-    ![核准登入的程式碼螢幕擷取畫面](images/approve-signin.png)
+    ![核准登錄程式碼的螢幕擷取畫面。](images/approve-signin.png)
 
 3. 若要核准登入，請開啟 Authenticator 應用程式，輸入顯示在 Surface Hub 上的四位數代碼，並選取 **\[核准\]**。 系統將會要求您輸入 PIN 碼，或使用指紋來完成登入。 
 
-    ![Microsoft Authenticator 中 [核准] 登入畫面的螢幕擷取畫面](images/approve-signin2.png)
+    ![螢幕擷取畫面 Microsoft Authenticator。。](images/approve-signin2.png)
 
 您現在可以透過 OneDrive 應用程式存取所有檔案。

@@ -12,16 +12,16 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 4308ce1ea8ff382dc15706e68d2d706d0fd33f5f
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 384d2d76274121236e76b1b5e45b30505e929c19
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576753"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911798"
 ---
 # <a name="manage-surface-hub-with-an-mdm-provider"></a>使用 MDM 提供者管理 Surface Hub
 
-Surface Hub可讓 IT 系統管理員使用行動裝置管理來管理設定與 (MDM) 提供者 ，例如Microsoft Intune。 Surface Hub內建的管理元件，可與管理伺服器通訊。 不需要在裝置上安裝其他用戶端。
+Surface Hub可讓 IT 系統管理員使用行動裝置管理來管理 MDM (和) ，例如Microsoft Intune。 Surface Hub內建的管理元件，可與管理伺服器通訊。 不需要在裝置上安裝其他用戶端。
 
 ## <a name="enrolling-surface-hub-into-mdm-management"></a>註冊 mdm Surface Hub MDM 管理 
 
@@ -29,14 +29,14 @@ Surface Hub可讓 IT 系統管理員使用行動裝置管理來管理設定與 (
 
 ### <a name="manual-enrollment"></a>手動註冊
 
-1. 開啟**設定應用程式**，然後以當地系統管理員的登錄。 選取**Surface Hub**  >  **管理，** 然後選取 **+裝置管理**。
+1. 開啟**設定應用程式**，然後以當地系統管理員的登錄。 選取**Surface Hub**  >  **裝置管理**，然後選取 **+裝置管理**。
 2. 系統會提示您使用帳戶進行登錄，以用於 MDM 提供者。 驗證之後，裝置會自動向 MDM 提供者註冊。
 
 > [!TIP]
-> 如果您使用的是 Intune 且伺服器位址未偵測到，請輸入**manage.microsoft.com。**
+> 如果您使用的是 Intune 且未偵測到伺服器位址，請輸入**manage.microsoft.com。**
    
 > [!NOTE]
-> MDM 註冊會使用提供給驗證的帳戶詳細資料。 帳戶必須具有註冊 Windows 裝置的許可權，以及 Intune 授權 (或協力廠商 MDM 提供者) 中所配置的同等註冊授權。
+> MDM 註冊會使用提供給驗證的帳戶詳細資料。 帳戶必須具有註冊 Windows 裝置的許可權，以及 Intune 授權 (或您協力廠商 MDM 提供者) 中所配置的同等註冊授權。
 
 ### <a name="auto-enrollment--azure-ad-affiliated"></a>自動註冊 - Azure AD 關聯
 
@@ -44,9 +44,9 @@ Surface Hub可讓 IT 系統管理員使用行動裝置管理來管理設定與 (
 
 ## <a name="manage-surface-hub-windows-10-team-settings-with-intune"></a>使用 intune Surface Hub Windows 10 團隊版管理您的設定
 
-Intune 和其他 MDM 提供者中策略設定管理的基礎組塊是 XML 型 Open Mobile Alliance-Device管理 (OMA-DM) 協定。 Windows 10許多可用的組組服務提供者 (CSP) 名稱 #D0 例如 AccountManagement CSP、DeviceStatus CSP、WiFi-CSP 等) 來實施 OMA-DM XML。 若要完整清單，請參閱在[Microsoft Surface Hub 中支援的MICROSOFT SURFACE HUB。](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
+Intune 和其他 MDM 提供者中策略設定管理的基礎組塊是 XML 型 Open Mobile Alliance-Device管理 (OMA-DM) 協定。 Windows 10許多可用的組組服務提供者 (CSP) 名稱 #D0 例如 AccountManagement CSP、DeviceStatus CSP、WiFi-CSP 等) 來實施 OMA-DM XML。 若要獲得完整的清單，請參閱在 Microsoft Surface Hub 中[支援的MICROSOFT SURFACE HUB。](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
 
-Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔中設定策略設定。 Intune 會使用 Surface Hub CSP 作為其內建設定檔 **#A0**裝置限制 (Windows 10 團隊版) #A1，讓您設定基本設定，例如防止 Surface Hub 在鄰近範圍內附近移動時「喚醒」。 若要管理 Intune 內建設定檔以外的中樞設定和功能，您必須使用自訂設定檔[，如下所示。](#create-custom-configuration-profile) 
+Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔中設定策略設定。 Intune 會使用 Surface Hub CSP 作為其內建設定檔 **#A0**裝置限制 (Windows 10 團隊版) #A1，讓您設定基本設定，例如防止 Surface Hub 在鄰近範圍內附近移動時「喚醒」。 若要管理 Intune 內建設定檔以外的中樞設定和功能，您必須使用自訂設定檔， [如下所示](#create-custom-configuration-profile)。 
 
 若要摘要說明，在 Intune 中設定及管理原則設定的選項包括： 
  
@@ -63,13 +63,13 @@ Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔
 2. 在**平臺**下，Windows 10**及稍後** >
 3. 在 ***配置檔案類型**下，** 選取**範本**，然後選取裝置**限制** (Windows 10 團隊版) 
 4. 選取 **建立**，新增名稱，然後選取下 **一步。**
-6. 現在，您可以流覽並選擇下列類別Surface Hub應用程式與體驗、Azure 操作深入資訊、維護、會話和無線投影。 下圖所示的範例指定 4 小時的維護視窗，以及螢幕、睡眠和會話繼續的 15 分鐘超時。
+6. 現在，您可以流覽並選擇下列類別Surface Hub裝置限制設定：應用程式與體驗、Azure 操作深入資訊、維護、會話和無線投影。 下圖所示的範例指定 4 小時的維護視窗，以及螢幕、睡眠和會話履歷表的 15 分鐘超時。
 
-     ![使用 intune Surface Hub限制設定檔設定](images/sh-device-restrictions.png)
+     ![使用 intune Surface Hub限制設定檔設定您的設定。](images/sh-device-restrictions.png)
 
-有關建立及管理設定檔詳細資訊，請參閱在 Microsoft Intune 中限制[裝置Microsoft Intune。](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-configure#create-the-profile)
+有關建立及管理設定檔詳細資訊，請參閱在 Microsoft Intune 中限制裝置[Microsoft Intune。](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-configure#create-the-profile)
  
-若要進一Surface Hub功能和設定，請參閱Surface Hub Windows 10 團隊版[裝置](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10-teams)限制Microsoft Intune
+若要進一Surface Hub功能和設定，請參閱Surface Hub Windows 10 團隊版[裝置限制Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10-teams)
  
 
 ## <a name="create-device-configuration-profile"></a>建立裝置組組設定檔
@@ -87,7 +87,7 @@ Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔
 
 ## <a name="create-custom-configuration-profile"></a>建立自訂群組組設定檔
 
-您可以使用 OMA URI[](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)建立自訂設定檔，從在 Microsoft Surface Hub 中支援的任何[CSP 建立自訂設定檔，以擴充管理Microsoft Surface Hub。](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport) CSP 中的每個設定都有對應的 OMA-URI，您可以使用 Intune 中的自訂設定設定檔來設定。 有關您支援之 CSP 的詳細資訊Surface Hub，您可以參照下列資源： 
+您可以使用 OMA URI[](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)建立自訂設定檔，從在 Microsoft Surface Hub 中支援[的任何 CSP 建立自訂設定檔，以擴充管理Microsoft Surface Hub。](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport) CSP 中的每個設定都有對應的 OMA-URI，您可以使用 Intune 中的自訂設定設定檔來設定。 有關您支援之 CSP 的詳細資訊Surface Hub，您可以參照下列資源： 
 
 - [設定服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
 - [Microsoft Surface Hub 支援的 CSPs 原則](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
@@ -97,7 +97,7 @@ Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔
 
 若要執行以 CSP 為基礎的策略設定，首先請產生 OMA URI，然後將它新增到 Intune 中的自訂設定設定檔。
 
-### <a name="generate-oma-uri-for-target-setting"></a>產生目標設定 OMA URI
+### <a name="generate-oma-uri-for-target-setting"></a>產生目標設定的 OMA URI
  
 若要產生任何設定的 OMA URI：
 
@@ -122,14 +122,14 @@ Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔
   
 ## <a name="manage-specific-surface-hub-features"></a>管理特定Surface Hub功能
 
-本節著重說明您可以透過 Intune 或其他 MDM 提供者管理的功能相關資訊。 這包括：
+本節會著重說明您可以透過 Intune 或其他 MDM 提供者管理的功能相關資訊。 這包括：
 
 - [QoS (服務品質) ](#quality-of-service-settings)
 - [Microsoft Teams商務用 Skype](#microsoft-teams-and-skype-for-business-settings)
 
 ### <a name="quality-of-service-settings"></a>服務品質設定
 
-若要確保裝置上的最佳視Surface Hub品質，請新增下列 QoS 設定至裝置。 
+若要在裝置上確保最佳的視Surface Hub音訊品質，請新增下列 QoS 設定至裝置。 
 
 | 名稱 | 說明 | OMA-URI | 類型 | 值 |
 |:------ |:------------- |:--------- |:------ |:------- |
@@ -137,7 +137,7 @@ Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔
 |**音效 DSCP**| 音訊連接埠標示 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | 整數 | 46 |
 |**影片連接埠**| 影片連接埠範圍 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | 字串  | 3480 |
 |**影片 DSCP**| 影片連接埠標示 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | 整數 | 34 |
-|**共用埠**| 共用埠範圍 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortMatchCondition | 字串  | 3481 |
+|**共用埠**| 共用埠範圍 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortmatchCondition | 字串  | 3481 |
 |**共用 DSCP**| 共用埠標記 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DSCPAction | 整數 | 18 |
 |**P2P 音效連接埠**| 音訊連接埠範圍 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | 字串  | 50000-50019 |
 |**P2P 音效 DSCP**| 音訊連接埠標示 | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | 整數 | 46 |
@@ -170,9 +170,9 @@ Microsoft Intune MDM 提供者使用 CSP 提供 UI，可讓您在組建設定檔
 
 #### <a name="changing-default-business-communications-platform"></a>變更預設商務通訊平臺
 
-Surface Hub上的預設商務通訊平臺會視您安裝 Windows 10 團隊版 2020 更新 (20H2 Windows 10 20H2) 。 如果您重新影像Surface Hub至 Windows 10 20H2，Microsoft Teams 會設為預設值，商務用 Skype 功能可在 (模式 1) 。 如果您從較舊版本升級中樞，商務用 Skype 會維持為預設值， (模式 0) 提供 Teams 功能，除非您已經將 Teams 做為預設值。 
+Surface Hub上的預設商務通訊平臺Windows 10 團隊版 2020 更新 (20H2 Windows 10 20H2) 。 如果您重新影像Surface Hub 20H2 Windows 10，Microsoft Teams 會設為預設值，商務用 Skype 模式 1 (提供) 。 如果您從較舊版本升級中樞，商務用 Skype 會維持為預設值，Teams (模式 0) 提供 Teams 功能，除非您已經將 Teams 做為預設。 
 
-若要變更預設安裝，請使用自訂設定檔，[方法如下Teams](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)應用程式模式：  
+若要變更預設安裝，請使用自訂設定檔，[方法如下Teams](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) App 模式：  
 
 - 模式 0－ 商務用 Skype 具 Microsoft Teams 功能，適於排定會議期程。
 - 模式 1－ Microsoft Teams 具商務用 Skype 功能,適於排定會議期程。

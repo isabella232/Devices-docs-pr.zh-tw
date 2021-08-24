@@ -1,6 +1,6 @@
 ---
-title: Surface 裝置的最佳做法電源設定
-description: 本主題提供維護最佳電源設定的最佳做法建議，並說明 Surface 如何簡化電源管理體驗。 本文適用于所有目前支援的 Surface 裝置，包括 Surface Pro 7 +、Surface Pro 7、Surface Pro X 及 Surface 膝上型電腦3。
+title: 適用於 Surface 裝置的最佳電源設定
+description: 本主題提供維護最佳電源設定的最佳作法建議，並說明 Surface 如何簡化電源管理體驗。 本文適用于目前支援的所有 Surface 裝置，包括 Surface Pro 7+、Surface Pro 7、Surface Pro X 和 Surface Laptop 3。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,129 +12,129 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 1/15/2021
-ms.openlocfilehash: 54aff228e8a72d413fc53bd14fe15d8ad7b15ab0
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: 23b94c865c43ad92b7ae6f047e980084760e4aed
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271397"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911748"
 ---
-# Surface 裝置的最佳做法電源設定
+# <a name="best-practice-power-settings-for-surface-devices"></a>適用於 Surface 裝置的最佳電源設定
 
-Surface 裝置的設計目的是充分利用行動裝置能源消耗中的最新進步，以提供跨工作負載優化的簡化體驗。 視您所執行的動作而定，Surface 會以動態方式來調整如何將電源流向個別的硬體元件，暫時將系統元件 S0ix 到處理背景工作（例如內送電子郵件或網路流量），在返回低功耗空閒狀態之前，請 () 。
+Surface 裝置是專為利用行動裝置能源消費的最新進展所設計，以提供跨工作負載優化的簡化體驗。 根據您執行的工作，Surface 會動態微調電源流向個別硬體元件的方式，暫時喚醒系統元件以處理背景工作 ，例如傳入的電子郵件或網路流量，然後再回到低電力空閒狀態 (S0ix) 。
 
-## IT 系統管理員建議摘要
+## <a name="summary-of-recommendations-for-it-administrators"></a>適用于 IT 系統管理員的建議摘要
 
-為了確保整個組織的 Surface 裝置能充分享受 Surface 電源優化功能的好處：
+為了確保整個組織的 Surface 裝置完全受益于 Surface 電源優化功能：
 
--  從 Windows Update 或 Surface 驅動程式和固件 MSI 安裝最新的驅動程式和固件。 這會建立平衡電源配置， (預設會) 電源設定檔，並設定最佳電源設定。  如需詳細資訊，請參閱 [管理和部署 Surface 驅動程式和固件更新](manage-surface-driver-and-firmware-updates.md)。
-- 避免建立自訂 power 個人檔案或調整 [預設 UI] 中不顯示的 [高級電源設定] (**系統**  >  **電源 & 睡眠**) 。
-- 如果您必須在整個網路中管理裝置的電源設定檔 (例如在高度管理的組織) 中，請使用 powercfg 命令工具，從 Surface 裝置的工廠影像匯出電源配置，然後將其匯入到 Surface 裝置的預配套件中。 
+-  從更新或 Surface 驅動程式和Windows MSI 安裝最新的驅動程式和固件。 這可建立平衡的電源 (，) 電源設定檔，並設定最佳電源設定。  詳細資訊，請參閱管理及部署 [Surface 驅動程式和固件更新](manage-surface-driver-and-firmware-updates.md)。
+- 避免建立自訂電源設定檔或調整預設 UI 中看不到的進 (**Power**&  >  **睡眠) 。**
+- 如果您必須管理整個網路 (例如高度管理組織) 中的裝置電源設定檔，請使用 powercfg 命令工具，從 Surface 裝置原廠映像匯出電源配置，然後將它匯入 Surface 裝置的部署套件。 
 
     >[!NOTE]
-    >您只能在相同類型的 Surface 裝置上匯出電源配置。  例如，您無法從 Surface 膝上型電腦匯出電源配置，並將其匯入 Surface Pro。  如需詳細資訊，請參閱 [設定電源設定](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings)。
+    >您只可以在相同類型的 Surface 裝置上匯出電源配置。  例如，您無法從系統匯出電源Surface Laptop，並匯Surface Pro。  若要詳細資訊，請參閱設定 [電源設定](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings)。
 
-- 從任何現有的電源管理原則設定中排除 Surface 裝置。 
+- 將 Surface 裝置排除在任何現有的電源管理策略設定中。 
 
-## 背景
+## <a name="background"></a>背景
 
-表面實現電源管理的方式與較舊的 OS 標準（透過一系列睡眠狀態逐漸減少及關閉電源）有顯著差異;例如，迴圈執行 S1、S2、S3 等。
+Surface 的電源管理方式與先前 OS 標準有顯著差異，因為較早的作業系統標準會透過一系列的睡眠狀態逐漸減少並關閉電源;例如，迴圈流覽 S1、S2、S3 等。
 
-相反地，Surface 是使用自訂的 power profile 來取代舊版睡眠及能源消耗功能與新式待機功能以及動態微調。 此自訂電源設定檔是透過 Surface 串列中樞驅動程式和系統聚合器模組 (SAM) 來實現。 SAM 晶片會充當 Surface 裝置電源原則擁有者，使用演算法來計算最佳電源需求。 它與 Windows power manager 搭配使用，只可用於指派或限制硬體元件正常運作所需的實際功率量。 本文適用于所有目前支援的 Surface 裝置，包括 Surface Pro 7 +、Surface 膝上型電腦前往、Surface Pro 7、Surface Pro X 和 Surface 膝上型電腦3。
+相反地，Surface 會以自訂電源設定檔來影像，以新式備用功能和動態微調取代舊版睡眠和耗能功能。 此自訂電源設定檔是透過 Surface Serial Hub Driver 和系統匯總器模組 (>) 。 當 Surface 裝置電源策略擁有者使用演算法來計算最佳電力需求時，該SAM 晶片會發揮功能。 它可與 power manager Windows一起使用，以只配置或節流硬體元件運作所需的確切電力量。 本文適用于目前支援的所有 Surface 裝置，包括 Surface Pro 7+、Surface Laptop Go、Surface Pro 7、Surface Pro X 和 Surface Laptop 3。
 
-## 在 Surface 中利用自訂電源設定檔
+## <a name="utilizing-the-custom-power-profile-in-surface"></a>在 Surface 中運用自訂電源設定檔
 
-如果您進入 surface 裝置上的 [電源] 選項，您會看到單一電源配置可供使用。 此為自訂電源設定檔。 而且，如果您移至 [高級電源設定]，就會看到一個較小的 [電源選項] 子集，與執行 Windows 10 的一般電腦相比。 與一般裝置不同，Surface 具有固件與自訂群組件，可用於管理這些電源選項。
+如果您進入 Surface 裝置上的電源選項，會看到有單一電源配置可供使用。 這是自訂電源設定檔。 如果您前往進位電源設定，與一般電腦相比，您看到的電源選項子集會Windows 10。 與一般裝置不同，Surface 具有可管理這些電源選項的固件和自訂群組件。
 
 
-## 新式待機
+## <a name="modern-standby"></a>新式備用
 
-Algorithmically 內嵌的自訂電源設定檔可針對智慧手機的一般即時/立即關閉功能維持低功耗，以啟用 Surface 的新式待機連接。 S0ix （也稱為最深的執行時間空閒平臺狀態） (DRIPS) ）是 Surface 裝置的預設電源模式。 新式待機有兩種模式：
+演算法內嵌的自訂電源設定檔可讓 Surface 保持低電源狀態，以立即關閉智慧型手機的典型功能，以啟用新式的備用連接。 S0ix 也稱為 Deepest Runtime 閒置平臺狀態 (點) ，是 Surface 裝置的預設電源模式。 新式待機有兩種模式：
 
-- **已連線的待機模式。** 傳送電子郵件、訊息及雲端同步處理資料的預設模式，已連接的待機會保持 Wi-Fi 開啟，並維持網路連線能力。
+- **已連接待命狀態。** 即時傳送電子郵件、訊息和雲端同步處理資料的預設模式，已連接Wi-Fi保持網路連接。
 
-- **已中斷連線。** 延長電池使用時間的選用模式，斷開的待機會提供相同的暫態體驗，並可關閉 Wi-fi、藍牙及相關的網路連線來省電。
+- **已中斷待命。** 可延長電池使用時間的選擇性模式，中斷連接的備用狀態可提供相同的立即開啟體驗，並關閉 Wi-Fi、藍牙和相關網路連接，以節省電力。
 
-若要深入瞭解新式待機，請參閱 [Microsoft 硬體開發人員中心](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)。
+若要深入瞭解新式備用，請參閱[Microsoft 硬體開發人員中心。](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
-## 表面如何簡化電源管理體驗 
+## <a name="how-surface-streamlines-the-power-management-experience"></a>Surface 如何簡化電源管理體驗 
 
-表面整合了下列功能，可協助使用者優化電源管理體驗：
+Surface 整合下列功能，可協助使用者優化電源管理體驗：
 
-- [單數電源配置](#singular-power-plan)
+- [單一電源配置](#singular-power-plan)
 
 - [簡化的電源設定使用者介面](#simplified-power-settings-user-interface)
 
-- [Windows 效能電源滑杆](#windows-performance-power-slider)
+- [Windows電源滑杆](#windows-performance-power-slider)
 
-### 單數電源配置
+### <a name="singular-power-plan"></a>單一電源配置
 
-Surface 專為簡化的電源管理體驗而設計，無需建立自訂電源配置或手動設定電源設定。 Microsoft 提供單一電源配置 (平衡) 取代標準 Windows 組建的多個電源配置，以精簡使用者體驗。
+Surface 專為簡化的電源管理體驗所設計，不需要建立自訂電源配置或手動設定電源設定。 Microsoft 提供單一電源配置 (平衡) ，以取代標準版和Windows方案，以簡化使用者體驗。
 
-### 簡化的電源設定使用者介面
+### <a name="simplified-power-settings-user-interface"></a>簡化的電源設定使用者介面
 
-Surface 提供簡化的 UI，以符合最佳做法電源設定建議。 一般來說，建議您只調整預設使用者介面中顯示的設定，避免設定 [高級電源設定] 或 [群組原則] 設定。 使用預設的螢幕和睡眠超時，同時避免最大的亮度層級，是使用者保持延長電池使用時間的最有效方式。
+Surface 提供符合最佳做法電源設定建議之簡化的 UI。 一般而言，建議只調整預設使用者介面中可見的設定，並避免設定進位電源設定或群組原則設定。 使用預設螢幕和睡眠超時，同時避免亮度等級上限是使用者維持延長電池使用時間最有效的方法。
 
-![圖 1。 簡化的 power & 睡眠設定](images/powerintrofig1.png)
+![圖 1。 簡化睡眠&電源設定。](images/powerintrofig1.png)
 
-圖 1。 已簡化電源和睡眠設定
+圖 1。 簡化的電源和睡眠設定
 
-### Windows 效能電源滑杆
+### <a name="windows-performance-power-slider"></a>Windows電源滑杆
 
-執行 Windows 10 組建1709及更新版本的 Surface 裝置包含一個電源滑杆，可讓您在需要時排定電池使用時間優先順序，或視需要使用的效能。 您可以按一下 [電池] 圖示，從工作列存取 [電源] 滑杆。 在電池使用時間 (省電模式) 或投影片向左滑動，以提高效能。
+執行內部Windows 10 1709 及更新版本之 Surface 裝置包含電源滑杆，讓您在需要時優先使用電池續航時間，或根據需求提升電池使用時間。 您可以按一下電池圖示，從工作列存取電源滑杆。 向左滑動以延長電池 (省電模式) 或向右滑動以提升電池使用速度。
 
-![圖 2. [電源] 滑杆](images/powerintrofig2a.png)
+![圖 2. Power 滑杆。](images/powerintrofig2a.png)
 
-圖 2. [電源] 滑杆
+圖 2. Power 滑杆
 
-[電源] 滑杆支援四種狀態，如下表所述：
+Power 滑杆會啟用下清單格所述的四種狀態：
 
 | 滑杆模式| 描述 |
 |---|---|
-| 省電模式| 當系統斷開與電源的連線時，可協助省電並延長電池使用時間。 當節電模式開啟時，部分 Windows 功能會停用、受到限制或行為不同。 畫面亮度也會減少。 只有在使用電池電源 (直流電) 時，才能使用節電模式。 若要深入瞭解，請參閱 [節電](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)模式。|
-| 建議執行 | 比舊版 Windows 的預設設定提供更長的電池使用時間。 |
-| 效能更佳 | 在電池使用時間上稍有優先表現，以預設滑杆模式運作。 |
-| 最佳效能 | 針對需要最佳效能與回應性的工作負載來提高效能，而不管電池功耗為何。|
+| 省電模式| 當系統與電源中斷連接時，有助於節省電力並延長電池使用時間。 當省電模式為啟用時，Windows功能會停用、節流或行為不同。 螢幕亮度也會降低。 只有在使用電池電力和 DC (，才能) 。 若要深入瞭解，請參閱[省電。](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)|
+| 建議執行 | 電池使用時間比先前版本的預設Windows。 |
+| 提升績效 | 稍微比電池使用時間更有利於使用，以預設滑杆模式運作。 |
+| 最佳效果 | 無論電池電力耗用程度如何，對需要最高表現與回應的工作負載，都比電力更符合電力需求。|
 
-[電源] 滑杆模式會直接控制下表中顯示的特定硬體元件。
+Power 滑杆模式會直接控制下表中顯示的特定硬體元件。
 
 | 元件 | 滑杆功能 |
 |---|---|
-| 英特爾快速移 (CPU 能源) 與能源效能喜好設定提示。 | 針對最佳效能和功率選取最佳的運作頻率和電壓。 能源效能喜好 (PERFEPP) 是針對 CPU 的全域電源效率提示。 |
-| 風扇速度 (RPM) | 如果適用的話，會調整變更的條件，例如，將風扇保持在節電式滑杆模式中。|
-| 處理器封裝電源限制 (PL1/PL2) 。| 需要 CPU 管理其頻率選項，以適應穩定狀態 (PL1) 與 turbo (PL2) 工作負載的平均功率限制。|
-| 處理器 turbo frequency (IA turbo 限制) 。 | 調整處理器與圖形效能，讓處理器內核執行的速度更快，或速度低於額定運作頻率。                                                |
+| Intel Speed Shift (CPU 能源註冊) 與能源績效喜好設定提示。 | 選取最佳的作業頻率和電力，以獲得最佳的績效和電力。 PERFEPP (PERFEPP) 是 CPU 的全域電源效率提示。 |
+| 扇形 (或RPM) | 如適用，可針對變更條件進行調整，例如讓風扇在省電滑杆模式中保持靜音。|
+| PL1/PL2 (的處理器套件) 。| 要求 CPU 管理其頻率選擇，以配合穩定狀態 (PL1 和) PL2 負載 (平均) 限制。|
+| 處理器的加速頻率限制 (IA 的加速) 。 | 調整處理器和圖形的顯示效果，讓處理器核心比已評分的操作頻率更快速或更慢地執行。                                                |
 
 >[!NOTE]
->無論是從 [控制台]/[電源選項]、[群組原則] 或 [相關方法] 進行設定，電源滑杆完全獨立于作業系統電源設定。
+>電源滑杆與作業系統電源設定完全無關，無論是從控制台/Power Options、群組原則或相關方法設定。
 
 若要深入瞭解，請參閱：
 
--   [自訂 Windows 效能電源滑杆](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
+-   [自訂Windows電源滑杆](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
--   [節電模式。](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
+-   [省電。](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
 
-## 延長電池使用時間的最佳做法
+## <a name="best-practices-for-extended-battery-life"></a>延長電池使用時間的最佳作法
 
 
 | 最佳做法 | 移至 | 後續步驟 |
 |---|---|---|                                                                                                                                    
-| 確定您的 Surface 裝置是最新的| Windows Update | 在工作列搜尋方塊中，輸入 [ **Windows Update** ]，然後選取 [ **檢查更新**]。 |
-| 針對您正在執行的工作，選擇最佳電源設定 | [電源] 滑杆 | 在工作列中，選取電池圖示，然後選擇 [ **最佳效能**]、[ **最佳電池使用**中] 或 [介於] 之間的某個位置。|
-| 在電量低時節省電池 | 省電模式 | 在工作列中，選取 [電池] 圖示，然後按一下 [ **電池設定**]。 選取 [ **如果我的電池不足，自動開啟節電** 模式]，然後將滑杆向右移動到較長的電池使用時間。 |
-| 設定最佳螢幕亮度 | 省電模式 | 在工作列中，選取電池圖示，然後按一下 [ **電池設定**]， **在節電模式中選取較低的螢幕亮度**。 |
-| 在未插入電源時省電 | 省電模式| 選取 **[開啟節電模式狀態，直到下次充電為止]**。|
-| 調查電源設定的問題。 | Power 疑難排解程式 | 在工作列的 [搜尋] 中，選取疑難排解，選取 [ **疑難排解**]，然後選取 [ **電源** ]，然後依照指示進行。|
-| 檢查 app 使用方式 | 您的應用程式 | 關閉應用程式。|
-| 檢查您的電源線是否有任何損壞。| 您的電源線 | 如果電源線磨損或損毀，請將它取代。|
+| 確保您的 Surface 裝置是最新版本| Windows Update | 在工作列搜尋方塊中，輸入**Windows，** 然後選取**檢查更新**。 |
+| 針對您執行的工作選擇最佳電源設定 | Power 滑杆 | 在工作列中，選取電池圖示， **然後選擇最佳效果**、最佳電池使用 **時間，或**介於兩者之間的某個位置。|
+| 在電力不足時節省電池 | 省電模式 | 在工作列中，選取電池圖示，然後按一下 [ **電池設定**> 。 如果我 **的電池落在** 下方，請選取自動開啟省電模式，然後將滑杆進一步向右移動，延長電池使用時間。 |
+| 設定最佳螢幕亮度 | 省電模式 | 在工作列中，選取電池圖示，然後按一下 [ **電池設定**>，選取 [降低螢幕亮度， **同時省電**時）。 |
+| 每當您未插入電源時，請節省電力 | 省電模式| 選取**開啟省電狀態，直到下次充電。**|
+| 調查電源設定的問題。 | Power 疑難排解員 | 在工作列搜尋疑難排解中 **，選取疑**難解答 ，然後選取 **Power，** 然後按照指示操作。|
+| 檢查應用程式使用量 | 您的應用程式 | 關閉應用程式。|
+| 檢查電源線是否有損壞。| 電源線 | 如果電源線已損毀或損毀，請取代電源線。|
 
-##  <a name="learn-more"></a>深入了解 
+## <a name="learn-more"></a>深入了解 
 
 - [新式待機](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
 <!-- -->
 
-- [自訂 Windows 效能電源滑杆](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
+- [自訂Windows電源滑杆](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
-- [節電模式](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
+- [省電模式](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
 - [管理和部署 Surface 驅動程式與韌體更新](manage-surface-driver-and-firmware-updates.md)

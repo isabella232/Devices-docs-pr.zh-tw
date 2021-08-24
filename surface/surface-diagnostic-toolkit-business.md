@@ -12,12 +12,12 @@ ms.date: 07/27/2021
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 13480c4b642ff64883c0ee69c73161a51f3f1e96
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: 50ea987273c5d9a10bd28e67358ee83e1d8bc295
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708804"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911828"
 ---
 # <a name="surface-diagnostic-toolkit-for-business"></a>商務用 Surface 診斷工具組
 
@@ -41,7 +41,7 @@ ms.locfileid: "11708804"
 模式 | 主要案例 | 下載 | 深入了解
 --- | --- | --- | ---
 桌面模式 | 協助使用者在 Surface 裝置上執行 SDT 以疑難排解問題。<br>建立自訂套件以部署在一或多個 Surface 裝置上，允許使用者選取要收集及分析的特定記錄。 | SDT 可分配的 MSI 套件：<br>商務用 Microsoft Surface 診斷工具套件安裝程式<br>[適用於 IT 的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703) | [在桌面圖案中使用 Surface 診斷工具套件](surface-diagnostic-toolkit-desktop-mode.md)
-命令列 | 使用標準工具 ，例如 Configuration Manager，直接針對 Surface 裝置進行遠端疑難排解，而不需要使用者互動。 它包含下列命令：<br>`-DataCollector` 收集所有記錄檔案<br>`-bpa` 使用最佳做法分析程式執行健康診斷。<br>`-windowsupdate` 檢查Windows更新是否遺失的固件或驅動程式更新。<br>`-warranty` 檢查保固資訊。 <br><br>| SDT 主機應用程式：<br>Microsoft Surface 診斷應用程式主控台<br>[適用於 IT 的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703) | [使用命令執行 Surface 診斷工具組](surface-diagnostic-toolkit-command-line.md)
+命令列 | 使用標準工具 ，例如 Configuration Manager，直接針對 Surface 裝置進行遠端疑難排解，而不需要使用者互動。 它包含下列命令：<br>`-DataCollector` 收集所有記錄檔案<br>`-bpa` 使用最佳做法分析程式執行健康診斷。<br>`-windowsupdate` 檢查Windows更新中缺少的固件或驅動程式更新。<br>`-warranty` 檢查保固資訊。 <br><br>| SDT 主機應用程式：<br>Microsoft Surface 診斷應用程式主控台<br>[適用於 IT 的 Surface 工具](https://www.microsoft.com/download/details.aspx?id=46703) | [使用命令執行 Surface 診斷工具組](surface-diagnostic-toolkit-command-line.md)
 
 ## <a name="supported-devices"></a>支援的裝置
 
@@ -61,25 +61,25 @@ ms.locfileid: "11708804"
 若要建立可發佈給貴組織中使用者的 SDT 套件：
 
 1. 使用系統管理員帳戶來登錄您的 Surface 裝置。
-2. 從適用于 IT Windows工具 (.msi) 下載 SDT 和[](https://www.microsoft.com/download/details.aspx?id=46703)安裝程式套件，然後複製到 Surface 裝置上偏好的位置 ，例如桌面。
+2. 從適用于 IT Windows的[Surface](https://www.microsoft.com/download/details.aspx?id=46703)工具 (.msi) 下載 SDT 和安裝程式套件，然後複製到 Surface 裝置上偏好的位置，例如桌面。
 3. SDT 設定精靈會出現，如圖 1 所示。 按 **\[下一步\]**。
 
     >[!NOTE]
-    >如果沒有顯示設定精靈，請確保您已在電腦上登錄系統管理員帳戶。
+    >如果沒有顯示設定精靈，請確保您已登錄您電腦的系統管理員帳戶。
 
-    ![歡迎使用 Surface 診斷工具套件設定精靈](images/sdt-1.png)
+    ![歡迎使用 Surface 診斷工具套件設定精靈。](images/sdt-1.png)
 
     *圖 1。 Surface 診斷工具套件設定精靈*
 
 4. 當 SDT 設定精靈出現時，按一下 **[下**一步，接受使用者授權合約 (EULA) 
 
 5. 在安裝選項畫面上，如果需要，變更預設安裝位置。
-6. 在設定類型下，選取進 **位**。
+6. 在設定類型下，選取進 **一步**。
 
     >[!NOTE]
     >標準選項允許使用者直接在 Surface 裝置上執行診斷工具，只要他們使用系統管理員帳戶已登錄其裝置。
 
-     ![安裝選項：進一步](images/sdt-install.png)
+     ![安裝選項：進一步。](images/sdt-install.png)
 
 7. 按一下 **[下** 一步，然後按一下 **[安裝**> 。
 
@@ -110,18 +110,18 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
 
 除了該.exe，SDT 會安裝 JSON 檔案和 admin.dll檔案 (modules\admin.dll) ，如圖 2 所示。
 
-![檔案檔案管理器中已安裝 SDT 檔案的清單](images/sdt-2.png)
+![檔案檔案管理器中已安裝的 SDT 檔案清單。](images/sdt-2.png)
 
 *圖 2. SDT 安裝的檔案*
 
 ## <a name="preparing-the-sdt-package-for-distribution"></a>準備 SDT 套件以發佈
 
-建立自訂套件可讓您將工具定位到特定的已知問題。
+建立自訂套件可讓您將工具定位至特定的已知問題。
 
-1. 按一下 **[開始>** 執行>，輸入 **Surface，** 然後按一下 **[商務用 Surface 診斷工具套件**>。
+1. 按一下 **[開始>** 執行程式，輸入 **Surface，** 然後按一下 **[商務用 Surface 診斷工具套件**>。
 2. 當工具開啟時，按一下 **[建立自訂套件**，如圖 3 所示。
 
-    ![建立自訂套件選項](images/sdt-3.png)
+    ![建立自訂套件選項。](images/sdt-3.png)
 
     *圖 3. 建立自訂套件*
 
@@ -130,9 +130,9 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
   建立套件時，您可以選取語言設定，或退出宣告傳送遙測資訊至 Microsoft。 根據預設，SDT 會傳送遙測給 Microsoft，用來根據 [Microsoft 隱私權聲明改善應用程式](https://privacy.microsoft.com/privacystatement)。 如果您想要拒絕，請在建立自訂套件時清除核取方塊，如下所示。 或者，在**** SDT 設定期間清除安裝**** 選項頁面上的傳送遙測至 Microsoft 核取方塊。
 
 >[!NOTE]
->這項設定不會影響執行需要網際網路連接的測試與修復時，自動儲存在 Microsoft 伺服器中的最小遙測資料，例如 Windows 更新和軟體修復，或使用應用程式工具列中的笑臉或快發按鈕提供意見回饋。
+>這項設定不會影響執行需要網際網路連接的測試與修復時，自動儲存在 Microsoft 伺服器中的最小遙測資料，例如 Windows 更新和軟體修復，或使用應用程式工具列中的笑臉或眉毛按鈕提供意見回饋。
 
-![選取語言和遙測設定](images/sdt-4.png)
+![選取語言和遙測設定。](images/sdt-4.png)
 
 *圖 4. 選取語言和遙測設定*
 
@@ -140,7 +140,7 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
 
 選取適合貴組織的選項。 具有多個使用者的大多陣列織通常會選取以透過 WSUS Windows Server Update Services (接收) ，如圖 5 所示。 如果使用本地Windows更新套件或 WSUS，請在適當時輸入路徑。
 
-![選取 Windows更新選項](images/sdt-5.png)
+![選取 Windows更新選項。](images/sdt-5.png)
 
 *圖 5. Windows更新選項*
 
@@ -148,7 +148,7 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
 
 這可讓您選取或移除執行軟體修復更新的選項。
 
-![選取軟體修復選項](images/sdt-6.png)
+![選取軟體修復選項。](images/sdt-6.png)
 
 *圖 6. 軟體修復選項*
 
@@ -156,7 +156,7 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
 
 您可以選取以跨應用程式、驅動程式、硬體和作業系統執行各種記錄。 按一下適當的區域，然後從可用記錄功能表中選取。 接著，您可以將套件儲存到軟體發佈點或使用者可以存取的對等位置。
 
-![選取記錄選項](images/sdt-7.png)
+![選取記錄選項。](images/sdt-7.png)
 
 *圖 7. 記錄選項和儲存套件*
 
@@ -220,7 +220,7 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
 *發行日期：2019 年 9 月 24 日*<br>
 此版本的商務用 Surface 診斷工具組新增下列支援：
 
-- 下載硬體報告的能力。
+- 下載硬體報表的能力。
 - 可以直接從工具與 Microsoft 支援服務聯繫。 <br>
 
 ### <a name="version-2411390"></a>版本 2.41.139.0
@@ -236,7 +236,7 @@ SDT 和 SDT 應用程式主控台都安裝在 `C:\Program Files\Microsoft\Surfac
 *發行日期：2019 年 4 月 26 日*<br>
 此版本的商務用 Surface 診斷工具組新增下列支援：
 
-- 進一步設定選項可透過安裝程式 UI 解除鎖定管理功能，而不需要命令列設定。
+- 進一步設定選項，可透過安裝程式 UI 解除鎖定管理功能，而不需要命令列設定。
 - 協助工具改良功能。
 - 記錄中包含的 Surface 亮度控制設定。
 - 報表產生器中的外部監視器相容性支援連結。

@@ -2,58 +2,58 @@
 title: Surface Hub SSD 取代
 ms.reviewer: ''
 manager: laurawi
-description: 瞭解如何取代 Surface Hub 中的固態磁片磁碟機。
+description: 瞭解如何在硬碟中取代Surface Hub。
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 17e6018478b608b34c47ce0acd602deb70035474
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 652a90e380d77eb35a3fc187ce2dc61bc8f5dd07
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831406"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911558"
 ---
-# Surface Hub SSD 取代
+# <a name="surface-hub-ssd-replacement"></a>Surface Hub SSD 取代
 
-您可能需要從 Surface Hub 移除固態磁片磁碟機（SSD），才能使用[Surface Hub 恢復工具](surface-hub-recovery-tool.md)將它重新鏡像，或因為您已傳送更換磁片磁碟機。 當作業系統無法啟動時，您會重新鏡像您的 SSD，例如從 Windows 更新失敗、BitLocker 問題、重設失敗或硬體失敗等。 
+您可能需要從 (移除固態硬碟) SSD Surface Hub，以便使用[Surface Hub](surface-hub-recovery-tool.md)修復工具重新建立映射，或因為已送出取代磁片磁碟機。 當作業系統無法再啟動時，例如更新失敗、BitLocker 問題、重設失敗Windows或硬體失敗，您就會重新建立您的 SSD 映射。 
 
 
 >[!WARNING]
->確認已在交流開關關閉 Surface Hub。
+>請確定Surface Hub開關上的電源已關閉。
 
-1. 在下方所示的位置，找到 Surface Hub 背面的 SSD 分段門。 此門可辨識，因為它沒有開啟的通風槽。
+1. 在下方說明的位置，找出背面的 SSD 隔間門，Surface Hub上方的部分。 門是可辨識的，因為它沒有開啟的換氣槽。
 
-    ![SSD 分段門](images/ssd-location.png)
+    ![SSD 隔間門。](images/ssd-location.png)
 
-    *Surface Hub 硬碟位置*
+    *Surface Hub硬碟位置*
 
-2. 在硬碟艙門上找出鎖定卡舌。 在 Surface Hub 55 上，[鎖定] 索引標籤會位於門的左側。 在 Surface Hub 84 上，它會位於右側，如圖例所示。
+2. 找出硬碟室門上的鎖定定位點。 在 Surface Hub 55 上，鎖定定位點會位於門的左側。 在 Surface Hub 84 上，它會位於右側，如圖例所示。
 
-    ![SSD 分段鎖定索引標籤](images/ssd-lock-tab.png)
+    ![SSD 隔間鎖定定位停駐點。](images/ssd-lock-tab.png)
 
-    *硬碟分段門上的鎖定索引標籤*
+    *硬碟隔間門上的鎖定鍵*
 
-3. 抬起開啟分欄門以存取硬碟。
+3. 解除開啟隔間門以存取硬碟。
 
-    ![提出](images/ssd-lift-door.png)
+    ![電梯。](images/ssd-lift-door.png)
 
-    *提起隔間門*
+    *提升隔間門*
 
-4. 找出在後蓋底下可能部分隱藏的 [拉入] 索引標籤。 拉至索引標籤，以從分欄中彈出硬碟。
+4. 找出後蓋下部分隱藏的拉式定位點。 拉上定位停駐點，將硬碟從隔間中彈出。
 
-    ![資料庫](images/ssd-pull-tab.png)
+    ![拉。](images/ssd-pull-tab.png)
 
-    *[抽取] 索引標籤*
+    *拉式定位停駐點*
 
-5. 將替換磁碟機滑入到位，直到您聽見它按一下為止。
+5. 將取代的磁碟機滑動到就地，直到您聽見它按一下。
 
-    ![磁片磁碟機中的投影片](images/ssd-click.png)
+    ![在磁碟機中滑動。](images/ssd-click.png)
     
-    *將換片磁片磁碟機放入位置*
+    *將取代的磁碟機滑動到就地*
 
-6. 關閉分欄門。
+6. 關閉隔間門。
 
-7. 將電源套用至 Surface Hub。
+7. 將電源Surface Hub。

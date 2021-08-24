@@ -1,6 +1,6 @@
 ---
-title: 透過 Microsoft Surface Enterprise 提供最大365的 ROI
-description: 此頁面提供 Microsoft 所委託之 Forrester 總經濟影響研究的可下載 PDF。
+title: 使用 Microsoft Surface 從 Microsoft 365 企業版最大化您的投資回報
+description: 此頁面提供 Microsoft 委託的 Forrester Total 經濟影響研究可下載 PDF。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -12,18 +12,18 @@ ms.date: 9/29/2020
 ms.reviewer: rarroyo
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: fd761629955301f40c8d9f295dc03abae596433b
-ms.sourcegitcommit: 7673e22df705c10b91a46bb6cc75a09debe7d856
+ms.openlocfilehash: 6bcaa4b6139523e4d362141af37f37a9db79dc55
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11099855"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911788"
 ---
-# 透過 Microsoft Surface Enterprise 提供最大365的 ROI
+# <a name="maximizing-your-roi-from-microsoft-365-enterprise-with-microsoft-surface"></a>使用 Microsoft Surface 從 Microsoft 365 企業版最大化您的投資回報
 
- 為了改善員工在整個組織中的體驗，公司正在想要以更靈活的硬體解決方案和雲端技術來取代舊版裝置技術，讓員工能在任何位置維持生產力、communicative 及安全。 Microsoft [Forrester 諮詢] 可進行總體經濟影響 (TEI) 研究來檢查可能的投資回報)  (在 Microsoft Surface 裝置上實施 Microsoft 365 企業，以瞭解 Microsoft Surface 如何擴充並補充 Microsoft 365 的商業效益。 這個研究的目的是為讀者提供架構，以評估 Microsoft 365 中的 Surface 裝置在其組織中可能產生的財務影響。
+ 為了改善整個組織的員工體驗，公司希望以更靈活的硬體解決方案和雲端技術取代舊版裝置技術，讓員工能維持生產力、溝通能力，並保護他們在任何位置的工作環境。 Microsoft 委託 Forrester Consulting 進行整體經濟影響 (TEI) 研究，以檢查 Microsoft Surface 裝置上的 Microsoft 365 企業版 企業可能實現的潛在投資收益 (ROI) ，並仔細研究 Microsoft Surface 如何增強及複合 Microsoft 365 的商業收益。 本研究的目的是提供讀者一個架構，評估由Microsoft 365 Surface 裝置對組織的潛在財務影響。
 
-[![M從 Microsoft 365 Enterprise 與 Microsoft Surface aximizing 您的 ROI(./images/download-report.png)](./media/forrester-tei-maximizing-your-roi-from-microsoft-365-enterprise-with-microsoft-surface-2020.pdf)
+[![M使用 Microsoft Surface 來Microsoft 365 企業版您的ROI。(./images/download-report.png)](./media/forrester-tei-maximizing-your-roi-from-microsoft-365-enterprise-with-microsoft-surface-2020.pdf)
 
 
 forrester-tei-maximizing-your-roi-from-microsoft-365-enterprise-with-microsoft-surface-2020.pdf

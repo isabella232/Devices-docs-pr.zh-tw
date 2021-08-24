@@ -11,19 +11,19 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 11dc83be7966e49d2ac8a5fb0d1e0642abf025d8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a2520897a0ada7dc0ba23472c2b0f809ccb232d1
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831634"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11910968"
 ---
-# 協助工具 (Surface Hub)
+# <a name="accessibility-surface-hub"></a>協助工具 (Surface Hub)
 
 Microsoft Surface Hub 和 Windows10 具有相同的協助工具選項。
 
 
-##  <a name="default-accessibility-settings"></a>預設協助工具設定
+## <a name="default-accessibility-settings"></a>預設協助工具設定
 
 協助工具設定的完整清單於 **\[設定\]** 應用程式中提供給 IT 系統管理員使用。 Surface Hub 的預設協助工具設定包括：
 
@@ -41,7 +41,7 @@ Microsoft Surface Hub 和 Windows10 具有相同的協助工具選項。
 1. 關閉歡迎畫面。
 2. 從狀態列使用 **\[快速控制項目\]**  >  **\[輕鬆存取\]**
 
-    ![[輕鬆存取] 磚的螢幕擷取畫面](images/ease-of-access.png)
+    ![輕鬆存取磚的螢幕擷取畫面。](images/ease-of-access.png)
     
 3. 開啟朗讀程式。
 4. 按一下 **\[工作切換器\]**。
@@ -57,16 +57,16 @@ Microsoft Surface Hub 和 Windows10 具有相同的協助工具選項。
 - 滑鼠鍵
 
 
-##  <a name="change-accessibility-settings-during-a-meeting"></a>在會議期間變更協助工具設定
+## <a name="change-accessibility-settings-during-a-meeting"></a>在會議期間變更協助工具設定
 
 在會議期間，使用者可以用數種方式切換協助工具功能和應用程式：
 - [鍵盤快速鍵](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
 - 從狀態列使用 **\[快速控制項目\]**  >  **\[輕鬆存取\]**
 
-> ![顯示 Surface Hub 上快速控制項目中心的影像](images/sh-quick-action.png)
+> ![顯示畫面上的快速控制中心Surface Hub。](images/sh-quick-action.png)
 
 
-##  <a name="related-topics"></a>相關主題
+## <a name="related-topics"></a>相關主題
 
 [管理 Microsoft Surface Hub](manage-surface-hub.md)
 

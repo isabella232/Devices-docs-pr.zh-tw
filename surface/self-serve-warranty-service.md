@@ -12,12 +12,12 @@ ms.date: 06/07/2021
 ms.reviewer: louannh
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a6021a58c85ac6ee4c039959dcde9bab632ea1bb
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 57801a7eb663d08a0af28c825c698318f8673d40
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11614060"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911988"
 ---
 # <a name="surface-self-serve-warranty-and-service"></a>Surface 自助保固與服務
 
@@ -35,7 +35,7 @@ Microsoft 365商務客戶可能有資格使用 Microsoft 365 系統管理 中心
 
 ## <a name="role-based-permissions"></a>角色型許可權
 
-Surface Self-Serve保固與服務Microsoft 365全域系統管理員可以指派角色給使用者，以授予不同的許可權，以建立及管理服務訂單。
+Surface Self-Serve保固與服務Microsoft 365全域系統管理員可指派角色給使用者，以授予不同的許可權，以建立及管理服務訂單。
 
 當新的Microsoft 365新使用者新加入 Beta 計畫時，下列系統管理員角色會獲得其他許可權：
 
@@ -53,7 +53,7 @@ Surface Self-Serve保固與服務Microsoft 365全域系統管理員可以指派�
 2. 前往支援****  >  **Surface 裝置維修，然後**選取**建立維修要求**。  (如果您沒看到這個修復選項，表示您沒有存取此頁面的許可權。) 
 
     > [!div class="mx-imgBorder"]
-    > ![開始自助維修要求](images/self-serve-fig1.png)
+    > ![開始自助維修要求。](images/self-serve-fig1.png)
 
 3. 您可以為一或多個裝置建立維修要求。 選取一**次提交 1**個裝置****，或選取提交多個裝置，.csv檔案上傳多個序列值，然後選取下一**步**。
 
@@ -61,7 +61,7 @@ Surface Self-Serve保固與服務Microsoft 365全域系統管理員可以指派�
     > **適用于多個裝置：**
     >
     > - 從系統管理中心頁面下載範例 CSV 範本，新增所需資訊，並將其儲存到您的本地磁片磁碟機。
-    > - 選取**Upload CSV**檔案做為大量專案，選取.csv儲存到您本地磁片磁碟機的檔案，然後選取開啟 **。**
+    > - 選取**Upload CSV**檔案進行大量專案，選取.csv儲存到您本地磁片磁碟機的檔案，然後選取開啟 **。**
     > - 您的裝置序號將會上傳。 選取 **下** 一步以繼續建立修復。
 
 4. 在 **出貨取代至**下，選取一個出貨位址。 或選取  **新增位址**。
@@ -72,33 +72,31 @@ Surface Self-Serve保固與服務Microsoft 365全域系統管理員可以指派�
     > - 表單會自動驗證位址資訊，如果當地郵政系統無法識別位址，可能會更正您進行變更。 電子郵件地址是用來傳送修復要求的通知和通訊。
 
     > [!div class="mx-imgBorder"]
-    > ![
-      新增地址
-    ](images/self-serve-fig2a.png)
+    > ![新增位址。](images/self-serve-fig2a.png)
 
 5. 在文字區塊中輸入裝置序號以新增裝置。 若要深入瞭解，請參閱 [裝置序號](https://support.microsoft.com/help/4036293/surface-find-the-serial-number-on-surface)。 如果序號有效，將會顯示影像和產品資訊，包括保固日期和型號。 如果 **資訊正確** ，請選取新增裝置。
 
     > [!div class="mx-imgBorder"]
-    > ![新增裝置](images/self-serve-fig2.png)
+    > ![新增裝置。](images/self-serve-fig2.png)
 
-6. 重複步驟 1-2，將多個 (最多 20) 要求。
+6. 重複步驟 1-2 新增多個 (最多 20 個) 要求。
 7. 從下拉式功能表中，選取最能描述問題的問題類型，然後選取下 **一步。**
 
     > [!div class="mx-imgBorder"]
-    > ![選取問題類別](images/self-serve-fig3.png)
+    > ![選取問題類別。](images/self-serve-fig3.png)
 
 8. 檢查您的訂單。 如果有任何不正確的資訊，請選擇 **返回** 以修正錯誤。
 9. 接受條件條款。
 10. 如果要求摘要正確，請選取 **提交您的要求**。
 
     > [!div class="mx-imgBorder"]
-    > ![提交自助維修要求](images/self-serve-fig4.png)
+    > ![提交自助維修要求。](images/self-serve-fig4.png)
 
 當首頁顯示時，您可以在摘要清單中查看您的服務要求，並收到確認電子郵件。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-### <a name="why-am-i-getting-error-code-400-generic-client-service-error-401-unauthorized-service-error-or-error-403-forbidden-service-error"></a>為什麼我收到錯誤碼 400「一般用戶端服務錯誤」、401「未經授權的服務錯誤」或錯誤 403「禁止服務錯誤」？
+### <a name="why-am-i-getting-error-code-400-generic-client-service-error-401-unauthorized-service-error-or-error-403-forbidden-service-error"></a>為什麼我收到錯誤碼 400「一般用戶端服務錯誤」、401「未經授權的服務錯誤」或錯誤 403「禁止的服務錯誤」？
 
 帳戶可能Microsoft 365問題，或使用者沒有存取內容的許可權。 請到您的全域系統管理員Microsoft 365以取得協助。
 
@@ -106,9 +104,9 @@ Surface Self-Serve保固與服務Microsoft 365全域系統管理員可以指派�
 
 Surface Self-Serve保固與服務 Beta 版目前的可用性有限。 只有在位址位於下列其中一個國家/地區時，才能提供優惠：
 
-奧地利、荷蘭、比利時、保加利亞、克羅埃西亞、賽普勒斯、捷克共和國、丹麥、愛沙尼亞、芬蘭、法國、德國、希臘、匈牙利、愛爾蘭、義大利、科威特、拉脫維亞、立陶宛、盧森堡、馬爾他、荷蘭、安達文、波蘭、葡萄牙、羅馬尼亞、斯洛伐克、斯洛維尼亞、南非、西班牙、瑞典及英國 (不含愛爾蘭) 。
+奧地利、荷蘭、比利時、保加利亞、克羅埃西亞、賽普勒斯、捷克共和國、丹麥、愛沙尼亞、芬蘭、法國、德國、希臘、匈牙利、愛爾蘭、義大利、科威特、拉脫維亞、立陶宛、盧森堡、馬爾他、荷蘭、波蘭、葡萄牙、羅馬尼亞、斯洛伐克、斯洛維尼亞、南非、西班牙、瑞典及英國 (除外) 。
 
-### <a name="where-can-i-see-orders-that-i-have-placed-through-the-microsoft-365-portal"></a>我可以在哪裡查看透過網站入口網站Microsoft 365訂單？
+### <a name="where-can-i-see-orders-that-i-have-placed-through-the-microsoft-365-portal"></a>我可以在哪裡查看透過網站入口網站所下Microsoft 365訂單？
 
 前往 Microsoft 365 系統管理中心[- 服務要求](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/support/devicerepairs)，然後使用您的 Microsoft 365 認證進行登錄。
 
@@ -116,7 +114,7 @@ Surface Self-Serve保固與服務 Beta 版目前的可用性有限。 只有在�
 
 ### <a name="why-am-i-unable-to-add-edit-or-delete-a-shipping-address"></a>為什麼我無法新增、編輯或刪除出貨位址？
 
-只有您的全域或帳單系統管理員才能新增、編輯或刪除出貨位址Microsoft 365。請聯繫他們以取得協助。  
+新增、編輯或刪除出貨位址的能力只能由您的全域或帳單系統管理員Microsoft 365完成。請聯繫他們以取得協助。  
 
 ### <a name="how-can-i-contact-microsoft-support-for-the-surface-self-serve-warranty-and-service-beta"></a>如何與 Microsoft 支援服務聯繫，以Self-Serve保固與服務 Beta 版？
 

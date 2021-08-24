@@ -13,12 +13,12 @@ ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
 ms.date: 04/13/2021
-ms.openlocfilehash: 1ba8da50472927ff106b7243d89c15995844b191
-ms.sourcegitcommit: 21fcd329a7b0c82c69e2a65c423d47c5b23b4e7f
+ms.openlocfilehash: 60ace1e2b9344faeb9f130a56686ffac4643fc37
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "11883020"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911318"
 ---
 # <a name="manage-surface-uefi-settings"></a>管理 Surface UEFI 設定
 
@@ -36,7 +36,7 @@ ms.locfileid: "11883020"
 
 ## <a name="support-for-cloud-based-management"></a>支援雲端管理
 
-有了裝置 (DFCI) 設定檔內建的 Microsoft Intune (現在可在公用預覽) 中使用，Surface UEFI 管理可將新式管理堆疊延伸到 UEFI 硬體層級。 DFCI 支援零接觸式設定、消除BIOS 密碼、提供安全性設定控制，包括開機選項和內建的周邊設備，以及為日後進一步的安全性案例打下基礎。 DFCI 目前適用于 Surface Pro 7+、Surface Laptop、Surface Book 3、Surface Laptop 3、Surface Pro 7 和 Surface Pro X。 詳情請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
+有了裝置 (組) Microsoft Intune (DFCI) 設定檔，現在可在公用預覽) 中使用，Surface UEFI 管理可將新式管理堆疊延伸至 UEFI 硬體層級。 DFCI 支援零接觸式設定、消除BIOS 密碼、提供安全性設定控制，包括開機選項和內建的周邊設備，以及為日後進一步的安全性案例打下基礎。 DFCI 目前適用于 Surface Pro 7+、Surface Laptop Go、Surface Book 3、Surface Laptop 3、Surface Pro 7 和 Surface Pro X。 詳情請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
 
 ## <a name="open-surface-uefi-menu"></a>開啟 Surface UEFI 功能表
 
@@ -50,7 +50,7 @@ ms.locfileid: "11883020"
 
 電腦資訊頁面包含 Surface 裝置的詳細資訊：
 
-- **模型**– 您的 Surface 裝置模型會顯示在這裡，例如第 2 或 Surface Book 7 Surface Pro顯示。 裝置的確切組態並不會顯示 (例如處理器、磁碟大小或記憶體大小)。
+- **模型**– 您的 Surface 裝置模型會顯示在這裡，例如 2 或 Surface Book 7 Surface Pro顯示。 裝置的確切組態並不會顯示 (例如處理器、磁碟大小或記憶體大小)。
 - **UUID** – 這個通用唯一識別碼是裝置特定的號碼，用來在部署或管理期間識別裝置。
 
 - **序號** – 此號碼是用來識別這個特定的 Surface 裝置，以進行資產標記和支援案例。
@@ -88,23 +88,23 @@ ms.locfileid: "11883020"
 
 - 數字：1-0
 
-- 特殊字元：！@#$%^&* () ？<>{} []-_=+|.，;：''
+- 特殊字元：！@#$%^&* () ？<>{} []-_=+|.;：''
 
 密碼必須至少為 6 個字元，並會區分大小寫。
 
-![新增密碼以保護 Surface UEFI 設定](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
+![新增密碼以保護 Surface UEFI 設定。](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
 
 *圖 3. 新增密碼以保護 Surface UEFI 設定*
 
 您也可以在 \[安全性\] 頁面上變更 Surface 裝置的安全開機設定。 安全開機技術能防止未經授權的啟動碼將您的 Surface 裝置開機，這將能針對 Bookit 和 Rootkit 類型的惡意程式碼感染提供保護。 您可以停用安全開機以允許 Surface 裝置使用第三方作業系統或可開機媒體進行開機。 您也可以設定安全啟動以使用協力廠商憑證，如圖 4 所示。 於 TechNet Library 深入了解[安全開機](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview)。
 
-![設定安全開機](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
+![設定安全啟動。](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
 
 *圖 4. 設定安全開機*
 
 視您的裝置不同，您也可以查看 TPM 是否已啟用或停用。 如果您沒看到啟用**TPM**設定，請在 Windows 中開啟 tpm.msc 以檢查狀態，如圖 5 所示。 TPM 是用來以 BitLocker 為您裝置的資料驗證加密。 若要深入瞭解，請參閱 [BitLocker 概觀](/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
-![TPM 主機](images/manage-surface-uefi-fig5-a.png "TPM console")
+![TPM 主機。](images/manage-surface-uefi-fig5-a.png "TPM console")
 
 *圖 5. TPM 主機*
 
@@ -126,7 +126,7 @@ ms.locfileid: "11883020"
 
 - 內建音訊 (擴音器和麥克風)
 
-每個裝置都列出一個滑杆按鈕，您可以移至啟用**** (或關閉) 或關閉**** () 位置，如圖 6 所示。
+每個裝置都列出一個滑杆按鈕，您可以移至啟用**** (的) 或關閉 (**** 已停用) 位置，如圖 6 所示。
 
 :::image type="content" alt-text="啟用及停用特定裝置。" source="images/manage-surface-uefi-fig5a.png":::
 
@@ -162,14 +162,14 @@ ms.locfileid: "11883020"
 
 *圖 8. 管理零觸控 UEFI 管理和其他功能的存取權*
 
-零觸控 UEFI 管理可讓您在 Intune 中使用稱為 DFCI (裝置設定檔，以遠端系統管理 UEFI) 設定。 如果您沒有設定此設定，使用 DFCI 管理合格裝置的能力會設定為 **Ready**。 若要防止 DFCI，請選取 **退出宣告**。
+零觸控 UEFI 管理可讓您在 Intune 中使用稱為 DFCI (的裝置設定檔，以遠端系統管理 UEFI) 。 如果您沒有設定此設定，則使用 DFCI 管理合格裝置的能力會設定為 **Ready**。 若要防止 DFCI，請選取 **退出宣告**。
 
 > [!NOTE]
 > UEFI 管理設定頁面及 DFCI 的使用目前適用于 Surface Pro 7+、Surface Laptop Go、Surface Book 3、Surface Laptop 4、Surface Laptop 3、Surface Pro 7 和 Surface Pro X。若要深入瞭解，請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
 
 ## <a name="uefi-menu-exit"></a>UEFI 功能表：離開
 
-使用離開**頁面上**的立即重新開機按鈕****，以退出 UEFI 設定，如圖 9 所示。
+使用離開**頁面上**的立即重新開機按鈕**** 來退出 UEFI 設定，如圖 9 所示。
 
 :::image type="content" alt-text="離開 Surface UEFI 並重新啟動裝置。" source="images/manage-surface-uefi-fig7.png":::
 
@@ -179,50 +179,50 @@ ms.locfileid: "11883020"
 
 當您使用 Windows Update 或手動安裝更新 Surface 裝置韌體時，更新不會立即套用到裝置，而是在下一個重新開機循環期間套用。 您可以在管理及部署 Surface 驅動程式和固件更新中，進一步瞭解 Surface 固件 [更新程式](manage-surface-driver-and-firmware-updates.md)。 畫面上會顯示韌體更新進度，進度列會以不同的色彩來表示每個元件的韌體。 每個元件的進度列會顯示在圖 9 到 18 中。
 
-![Surface UEFI 韌體更新與藍色進度列](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
+![Surface UEFI 的固件更新為藍色進度列。](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
 
 *圖 10. Surface UEFI 韌體更新會顯示藍色進度列*
 
-![系統內嵌控制器韌體與綠色進度列](images/manage-surface-uefi-fig9.png "System Embedded Controller firmware with green progress bar")
+![系統內嵌控制器的固件，具有綠色進度列。](images/manage-surface-uefi-fig9.png "System Embedded Controller firmware with green progress bar")
 
 *圖 11. 系統內嵌控制器韌體更新會顯示綠色進度列*
 
-![SAM 控制器韌體更新與橘色進度列](images/manage-surface-uefi-fig10.png "SAM Controller firmware update with orange progress bar")
+![以橘色進度列更新的SAM 控制器的固件更新。](images/manage-surface-uefi-fig10.png "SAM Controller firmware update with orange progress bar")
 
 *圖 12. SAM 控制器韌體更新會顯示橘色進度列*
 
-![Intel Management Engine 韌體與紅色進度列](images/manage-surface-uefi-fig11.png "Intel Management Engine firmware with red progress bar")
+![具有紅色進度條的 Intel Management Engine 固件。](images/manage-surface-uefi-fig11.png "Intel Management Engine firmware with red progress bar")
 
 *圖 13. Intel Management Engine 韌體更新會顯示紅色進度列*
 
-![Surface 觸控韌體與灰色進度列](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
+![具有灰色進度條的 Surface 觸控式固件。](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
 
 *圖 14. Surface 觸控韌體更新會顯示灰色進度列*
 
-![具有淺綠色進度條的 Surface KIP 固件](images/manage-surface-uefi-fig13.png "Surface touch firmware with light green progress bar")
+![具有淺綠色進度條的 Surface KIP 固件。](images/manage-surface-uefi-fig13.png "Surface touch firmware with light green progress bar")
 
 *圖 15. Surface KIP 固件更新會顯示淺綠色進度列*
 
-![具有粉紅色進度條的 Surface ISH 固件](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
+![具有粉紅色進度條的 Surface ISH 固件。](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
 
 *圖 16 Surface ISH 的固件更新會顯示淺粉紅色的進度列*
 
-![具有灰色進度列的 Surface 軌跡板固件](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
+![具有灰色進度列的 Surface 軌跡板固件。](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
 
-*圖 17. Surface Trackpad 的固件更新會顯示粉紅色的進度列*
+*圖 17. Surface 軌跡板的固件更新會顯示粉紅色的進度列*
 
-![具有淺灰色進度條的 Surface TCON 固件](images/manage-surface-uefi-fig16.png "Surface TCON firmware with light gray progress bar")
+![具有淺灰色進度條的 Surface TCON 固件。](images/manage-surface-uefi-fig16.png "Surface TCON firmware with light gray progress bar")
 
 *圖 18. Surface TCON 固件更新會顯示淺灰色進度列*
 
-![具有淺紫色進度條的 Surface TPM 固件](images/manage-surface-uefi-fig17.png "Surface TPM firmware with purple progress bar")
+![具有淺紫色進度條的 Surface TPM 固件。](images/manage-surface-uefi-fig17.png "Surface TPM firmware with purple progress bar")
 
 *圖 19. Surface TPM 的固件更新會顯示紫色的進度列*
 
 >[!NOTE]
 >系統會顯示另一則警告訊息，指出安全啟動已停用，如圖 19 所示。
 
-![表示安全開機已停用的 Surface 開機畫面](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
+![表示已停用安全啟動的 Surface 啟動畫面。](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
 
 *圖 20. 表示 Surface UEFI 設定中安全開機已停用的 Surface 開機畫面*
 

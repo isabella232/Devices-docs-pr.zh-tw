@@ -9,74 +9,74 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 7912f9d1bab2ba625995c56d6d7da4e6b2d3df37
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e220be7d4613fcb6a14180e482dc4f2c66a5ddc8
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10831342"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911028"
 ---
-# 摘要
+# <a name="summary"></a>摘要
 
-本文說明如何使用雲端復原函數（如果您在 Surface Hub 裝置上不會受到 BitLocker 的意外提示）。
+本文說明如何在 BitLocker 在裝置上意外提示您Surface Hub功能。
 
 > [!NOTE]
-> 只有在 BitLocker 復原金鑰無法使用時，才能按照這些步驟進行。
+> 只有在 BitLocker 修復金鑰無法接通，才應遵循這些步驟。
 
 > [!WARNING]
-> * 此恢復程式會刪除內部磁片磁碟機的內容。 如果處理常式失敗，內部磁片磁碟機就會無法使用。 如果發生這種情況，您必須向 Microsoft 記錄服務要求，以解決問題。
-> * 完成恢復程式後，裝置將會重設成出廠設定，並傳回它的 [不在畫面] 體驗狀態。
-> * 在恢復之後，Surface Hub 必須完全重新配置。
+> * 此修復程式會刪除內部磁碟機的內容。 如果程式失敗，內部磁碟機將會完全無法使用。 如果發生這種情況，您必須向 Microsoft 記錄服務要求，才能解決問題。
+> * 復原程式完成後，裝置會重設至出廠設定，並回到其開箱即用體驗狀態。
+> * 復原之後，Surface Hub必須完全重新配置。
 
 > [!IMPORTANT]
-> 這個程式需要開啟無法使用 proxy 或其他驗證方法的網際網路連線。
+> 此程式需要不使用 Proxy 或其他驗證方法的開放式網際網路連接。
 
-##  <a name="cloud-recovery-process"></a>雲端恢復程式
+## <a name="cloud-recovery-process"></a>雲端復原程式
 
-若要執行雲端恢復，請遵循下列步驟：
+若要執行雲端復原，請遵循下列步驟：
 
-1. 選取 [**按 Esc] 以取得更多復原選項**。
+1. 選取 **按 Esc 以尋找更多修復選項**。
 
-   ![[取消轉義] 的螢幕擷取畫面](images/01-escape.png)
+   ![Escape 的螢幕擷取畫面。](images/01-escape.png)
 
-1. 選取 [**略過這個磁片磁碟機**]。
+1. 選取 **跳過此磁碟機**。
 
-   ![略過此磁片磁碟機的螢幕擷取畫面](images/02-skip-this-drive.png)
+   ![跳過此磁碟機的螢幕擷取畫面。](images/02-skip-this-drive.png)
 
-1. 選取 **[從雲端復原**]。
+1. 選取 **從雲端復原**。
 
-   ![從雲端復原的螢幕擷取畫面](images/03-recover-from-cloud.png)
+   ![從雲端復原的螢幕擷取畫面。](images/03-recover-from-cloud.png)
 
-1. 選取 **[是]**。
+1. 選取 **是**。
 
-   ![[是] 的螢幕擷取畫面](images/04-yes.png)
+   ![是的螢幕擷取畫面。](images/04-yes.png)
 
-1. 選取 [**重新安裝**]。
+1. 選取 **重新安裝**。
 
-   ![重新安裝的螢幕擷取畫面](images/05a-reinstall.png)
+   ![重新安裝的螢幕擷取畫面。](images/05a-reinstall.png)
 
-   ![下載的螢幕擷取畫面](images/05b-downloading.png)
+   ![下載的螢幕擷取畫面。](images/05b-downloading.png)
 
-1. 雲端復原程式完成後，請使用**全新的體驗**來開始重新配置。
+1. 完成雲端復原程式之後，使用開箱即用體驗 **開始重新配置**。
 
-   ![[外框] 畫面的螢幕擷取畫面](images/06-out-of-box.png)
+   ![開箱即用螢幕擷取畫面。](images/06-out-of-box.png)
 
-##  <a name="something-went-wrong-error-message"></a>「發生錯誤」錯誤訊息
+## <a name="something-went-wrong-error-message"></a>「發生錯誤」錯誤訊息
 
-此錯誤通常是由在恢復下載期間發生的網路問題所造成。 發生這個問題時，請不要關閉中樞，因為您無法重新開機。 如果您收到此錯誤訊息，請返回「從雲端復原」步驟，然後重新啟動修復程式。
+此錯誤通常是在修復下載期間發生的網路問題所導致。 發生此問題時，請勿關閉 Hub，因為無法重新開機。 如果您收到此錯誤訊息，請回到「從雲端復原」步驟，然後重新開機復原程式。
 
-1. 選取 [**取消**]。
+1. 選取 **取消**。
 
-   ![[取消] 的螢幕擷取畫面](images/07-cancel.png)
+   ![取消的螢幕擷取畫面。](images/07-cancel.png)
 
-1. 選取 [**疑難排解**]。
+1. 選取 **疑難排解**。
 
-   ![疑難排解的螢幕擷取畫面](images/08-troubleshoot.png)
+   ![疑難排解的螢幕擷取畫面。](images/08-troubleshoot.png)
 
-1. 選取 **[從雲端復原**]。
+1. 選取 **從雲端復原**。
 
-   ![從雲端復原的螢幕擷取畫面](images/09-recover-from-cloud2.png)
+   ![從雲端復原的螢幕擷取畫面。](images/09-recover-from-cloud2.png)
 
-1. 如果出現 [**找不到有線網路**] 錯誤，請選取 [**取消**]，然後讓 Surface Hub 重新探查有線網路。
+1. 如果**找不到有線**網路發生錯誤，請選取 取消 **，然後**讓Surface Hub重新探索有線網路。
 
-   ![找不到有線網路的螢幕擷取畫面](images/10-cancel.png)
+   ![找不到有線網路的螢幕擷取畫面。](images/10-cancel.png)

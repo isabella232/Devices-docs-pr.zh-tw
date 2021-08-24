@@ -11,22 +11,22 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
-ms.openlocfilehash: 2d8d814d5e33a878fab066321a0d7800ae5104c0
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 6985d6a87e14df70d244457dfeddabd673bb2bdc
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832078"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911388"
 ---
-# 連接其他裝置並以 Surface Hub 顯示
+# <a name="connect-other-devices-and-display-with-surface-hub"></a>連接其他裝置並以 Surface Hub 顯示
 
 
 您可以將其他裝置連接到 Microsoft Surface Hub 來顯示內容。 本主題描述可透過有線連線方式使用的來賓模式、取代電腦模式及 Video Out 功能，並且會列出可使用[藍牙](#bluetooth-accessories)連線到 Surface Hub 的配件。
 
 >[!NOTE]
->Surface Hub 會使用您所選取的視頻輸入，直到建立新的連線為止，現有的連線中斷，或連線 App 已關閉。
+>Surface Hub使用您選取的視音訊輸入，直到建立新連接、中斷現有連接，或關閉 連線 App。
 
-## 我應該選擇哪一種方法？
+## <a name="which-method-should-i-choose"></a>我應該選擇哪一種方法？
 
 連線外部裝置和顯示器到 Surface Hub 時，有幾個可用的選項。 您使用的方法將需視您的情況和需求而定。 
 
@@ -37,15 +37,15 @@ ms.locfileid: "10832078"
 | 從外接的 Windows 10 電腦為 Surface Hub 提供顯示內容，關閉 Surface Hub 內嵌的電腦。 除了手寫筆和觸控功能之外，相機、麥克風、喇叭及其他周邊裝置，會傳送到外部電腦。 | [取代電腦模式](#replacement-pc-mode) |
 
 
-## 來賓模式
+## <a name="guest-mode"></a>來賓模式
 
 
-來賓模式使用有線的連線，讓使用者可以將他們裝置的內容顯示在 Surface Hub。 如果是 Windows 型的來源裝置，該裝置也可以提供 Touchback 與 Inkback。 Surface Hub 的內部電腦會從連接的裝置取得視訊和音訊並呈現在 Surface Hub 上。 如果 Surface Hub 遇到高頻寬數位內容保護（HDCP）信號，來源將會顯示為黑色影像。 若要在不違反 HDCP 需求的情況下顯示您的內容，請使用 Surface Hub 右側的數字鍵台，直接選擇外部來源。
+來賓模式使用有線的連線，讓使用者可以將他們裝置的內容顯示在 Surface Hub。 如果是 Windows 型的來源裝置，該裝置也可以提供 Touchback 與 Inkback。 Surface Hub 的內部電腦會從連接的裝置取得視訊和音訊並呈現在 Surface Hub 上。 如果您Surface Hub HDCP High-Bandwidth數位內容保護 (HDCP) ，來源會顯示為黑色影像。 若要在不違反 HDCP 需求的情況下顯示您的內容，請使用 Surface Hub 右側的數字鍵台，直接選擇外部來源。
 
 >[!NOTE]
 >連接 HDCP 來源時，請使用側邊鍵台變更輸入來源。
 
-### 連接埠
+### <a name="ports"></a>連接埠
 
 使用 Surface Hub 上的這些連接埠來使用來賓模式。
 
@@ -116,7 +116,7 @@ ms.locfileid: "10832078"
 
  
 
-### 連接埠位置
+### <a name="port-locations"></a>連接埠位置
 
 這些是 55 英吋及 84 英吋 Surface Hub 上可用於來賓模式的連接埠連線。
 
@@ -128,7 +128,7 @@ ms.locfileid: "10832078"
 
 84 英吋 Surface Hub 上的有線連接埠連線
 
-### 連接埠列舉
+### <a name="port-enumeration"></a>連接埠列舉
 
 當 Surface Hub 利用 USB 連接埠以有線連接方式連接到來賓電腦時，可以找到及設定幾個 USB 裝置。 這些是為 Touchback 和 Inkback 建立的周邊裝置。 周邊裝置可以在 \[裝置管理員\] 中檢視。 \[裝置管理員\] 顯示的某些裝置名稱會重複。
 
@@ -162,7 +162,7 @@ ms.locfileid: "10832078"
 
 -   USB 複合裝置
 
-### 來賓模式連線
+### <a name="guest-mode-connectivity"></a>來賓模式連線
 
 您選擇的視訊纜線將會決定可用的來源輸入。 Surface Hub 有 DisplayPort、HDMI 和 VGA 這三種視訊輸入選擇。 請參閱下表以了解可用的解析度。
 
@@ -243,20 +243,20 @@ ms.locfileid: "10832078"
 
 如果您使用來賓模式的電腦與 Touchback 和 Inkback 不相容，您將不需要 USB 纜線。
 
-## 取代電腦模式
+## <a name="replacement-pc-mode"></a>取代電腦模式
 
 
 在取代電腦模式中，會關閉 Surface Hub 的內嵌電腦，然後將外部電腦連線到 Surface Hub。 連接到取代電腦連接埠，就可以存取 Surface Hub 上的主要周邊設備，包括螢幕、手寫筆及觸控功能。 這表示您的 Surface Hub 不會受益於 Windows 小組體驗，但您將可以彈性地提供和管理自己的 Windows 電腦。
 
-### 軟體需求
+### <a name="software-requirements"></a>軟體需求
 
 您可以使用 64 位元版本的 Windows 10 家用版、Windows 10 專業版和 Windows 10 企業版，在取代電腦模式中執行 Surface Hub。 您可以從 Microsoft 下載中心下載 [Surface Hub 取代電腦驅動程式套件](https://www.microsoft.com/download/details.aspx?id=52210)。 建議您在打算當成取代電腦使用的任何電腦上安裝這些驅動程式。
 
-### 硬體需求
+### <a name="hardware-requirements"></a>硬體需求
 
 Surface Hub 可與一系列的硬體相容。 選擇確認相容的處理器與記憶體用於取代電腦，如此才會支援您將要使用的程式。 您的取代電腦硬體必須支援 64 位元版本的 Windows 10。
 
-### 圖形介面卡
+### <a name="graphics-adapter"></a>圖形介面卡
 
 在取代電腦模式中，Surface Hub 可支援任何能產生 DisplayPort 訊號的圖形介面卡。 使用符合 Surface Hub 的解析度和重新整理頻率的圖形介面卡，將可改善您的體驗。 例如，使用 120Hz 視訊訊號，可在 Surface Hub 上獲得最佳與建議的取代電腦體驗。
 
@@ -295,7 +295,7 @@ Surface Hub 可與一系列的硬體相容。 選擇確認相容的處理器與�
 
  
 
-### 連接埠
+### <a name="ports"></a>連接埠
 
 55 英吋 Surface Hub 上的取代電腦連接埠。
 
@@ -411,7 +411,7 @@ Surface Hub 可與一系列的硬體相容。 選擇確認相容的處理器與�
 
  
 
-### 取代電腦安裝指示
+### <a name="replacement-pc-setup-instructions"></a>取代電腦安裝指示
 
 **使用取代電腦模式**
 
@@ -445,24 +445,24 @@ Surface Hub 可與一系列的硬體相容。 選擇確認相容的處理器與�
 3.  使用電源纜線旁邊的電源開關來開啟 Surface Hub。
 
  
-## Video Out (視訊輸出)
+## <a name="video-out"></a>Video Out (視訊輸出)
  
 Surface Hub 包括一個 Video Out 連接埠，可用於將視覺內容從 Surface Hub 鏡像處理到另一部顯示器。
 
-### 連接埠
+### <a name="ports"></a>連接埠
 
 55 吋 Surface Hub 上的 Video Out 連接埠
 
-![視訊輸出連接埠圖例](images/video-out-55.png)
+![影片輸出埠的圖例。](images/video-out-55.png)
 
 84 吋 Surface Hub 上的 Video Out 連接埠
 
-![視訊輸出連接埠圖例](images/video-out-84.png)
+![影片輸出埠的圖例。](images/video-out-84.png)
 
 <table>
 <thead>
 <tr class="header">
-<th>說明</th>
+<th>描述</th>
 <th>類型</th>
 <th>介面</th>
 <th>功能</th>
@@ -481,12 +481,12 @@ Surface Hub 包括一個 Video Out 連接埠，可用於將視覺內容從 Surfa
 </tbody>
 </table>
 
-## 纜線
+## <a name="cables"></a>纜線
 
 55 吋和 84 吋 Surface Hub 裝置已通過使用認證的 DisplayPort 和 HDMI 纜線的測試。  廠商有在銷售可搭配 Surface Hub 使用的較長纜線，但是只有已通過測試實驗室認證的纜線，能確實搭配集線器使用。 舉例來說，經認證的 DisplayPort 纜線最長只到 3 公尺，但是仍有許多廠商銷售 3 倍長度的纜線。 如果需要長纜線，我們極力建議使用 HDMI。  HDMI 有許多具成本效益的長纜線方案，包括使用中繼器。 如果偵測到 HDMI 接收器，幾乎每個 DisplayPort 來源都會自動切換成 HDMI 訊號。
 
 
-## 藍牙配件
+## <a name="bluetooth-accessories"></a>藍牙配件
 
 使用藍牙，將下列配件連線到 Surface Hub︰
 
