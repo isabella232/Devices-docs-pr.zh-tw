@@ -10,12 +10,12 @@ ms.date: 08/15/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: cf9649b8d1f747722064793fbbde70116bc7f424
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: ff08b8ab6e59af77761fb365980af261c47030a9
+ms.sourcegitcommit: 09a47921ec2e565a92ba2baa61e181d218706ad9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576843"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11921822"
 ---
 # <a name="configure-surface-hub-start-menu"></a>設定 Surface Hub 的 [開始] 功能表
 
@@ -31,14 +31,14 @@ ms.locfileid: "11576843"
 
     - 或 -
 
-- 在電腦上設定想要的 [開始] 功能表 (僅釘選 Surface Hub 上提供的應用程式)，然後[匯出配置](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout#export-the-start-layout)。
+- 在電腦上設定想要的 [開始] 功能表 (僅釘選 Surface Hub 上提供的應用程式)，然後[匯出配置](/windows/configuration/customize-and-export-start-layout#export-the-start-layout)。
 
 >[!TIP]
 >若要新增有 Web 連結的磚到電腦的 [開始] 功能表，請移至 Microsoft Edge 中的連結、選取右上角的 `...`，然後選取 **\[將此頁面釘選到開始畫面\]**。 如需連結如何顯示在 XML 中的範例，請參閱[包含 Microsoft Edge 連結的 \[開始\] 配置](#edge)。
 
-若要編輯預設 XML 或匯出的配置，請熟悉一下[開始畫面配置 XML](https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop)。 有幾個[電腦與 Surface Hub 之間的開始畫面配置差異](#differences)
+若要編輯預設 XML 或匯出的配置，請熟悉一下[開始畫面配置 XML](/windows/configuration/start-layout-xml-desktop)。 有幾個[電腦與 Surface Hub 之間的開始畫面配置差異](#differences)
 
-您在開始畫面配置 XML 中定義 [開始] 功能表之後，[建立 MDM 原則以套用配置。](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
+您在開始畫面配置 XML 中定義 [開始] 功能表之後，[建立 MDM 原則以套用配置。](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
 
 <span id="differences" />
 
@@ -46,7 +46,7 @@ ms.locfileid: "11576843"
 
 Surface Hub 與 Windows 10 電腦的 [開始] 功能表自訂之間有一些主要差異：
 
-- 您無法**在開始**版面配置 XML 中 (桌面應用程式，因為系統不支援 Windows 桌面應用程式 (Win32) https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) Win32 Surface Hub。
+- 您無法在開始版面配置 XML 中使用**[DesktopApplication，](/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile)** 因為 Windows不支援 (Win32) 桌面應用程式Surface Hub。
 - 您無法使用開始畫面配置 XML 來設定 Surface Hub 的工作列或歡迎畫面。  
 - 開始版面配置策略應該只指派給裝置，而不是使用者。
 - 在策略中使用的 OMA-URI 設定為 `./Device/Vendor/MSFT/Policy/Config/Start/StartLayout`
@@ -66,8 +66,8 @@ Surface Hub 與 Windows 10 電腦的 [開始] 功能表自訂之間有一些主�
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="8" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
         <start:Group Name="" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-        <start:Tile
-            AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+        <start:DesktopApplicationTile
+            DesktopApplicationID="MSEdge"
             Size="2x2"
             Row="0"
             Column="0"/>
@@ -141,8 +141,8 @@ Surface Hub 與 Windows 10 電腦的 [開始] 功能表自訂之間有一些主�
               Size="2x2"
               Row="0"
               Column="4"/>
-    <start:Tile
-              AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+          <start:DesktopApplicationTile
+              DesktopApplicationID="MSEdge"
               Size="2x2"
               Row="2"
               Column="0"/>
