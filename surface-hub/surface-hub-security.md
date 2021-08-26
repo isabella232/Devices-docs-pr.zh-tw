@@ -11,24 +11,24 @@ audience: Admin
 ms.topic: article
 ms.date: 01/26/2021
 ms.localizationpriority: High
-ms.openlocfilehash: 446166618161fc54a77bab94b2d61ad85359a082
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
-ms.translationtype: MT
+ms.openlocfilehash: cd0112f805b60b16c7f32099d5f5e3fde3c821fb
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304846"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911378"
 ---
-# Surface Hub 安全性概述
+# <a name="surface-hub-security-overview"></a>Surface Hub 安全性概述
 
-Surface Hub 在執行 Windows 10 小組作業系統的自訂平臺固件中，提供與裝置類似的鎖定體驗。 產生的裝置採用傳統「單一使用」安全 kiosk，「只執行所需的」哲學，並為其提供新式工作。 Surface Hub 是建置以支援豐富的共同作業使用者體驗，受到保護以防禦不斷演變的安全性威脅。
+Surface Hub 提供鎖定的類設備體驗，具有執行 Windows 10 團隊版作業系統的自訂平台韌體。 產生的裝置採用傳統「單一使用」安全 kiosk，「只執行所需的」哲學，並為其提供新式工作。 Surface Hub 是建置以支援豐富的共同作業使用者體驗，受到保護以防禦不斷演變的安全性威脅。
 
 Surface Hub 內建在 Windows 10 上，提供企業級新式安全性，讓 IT 系統管理員能夠使用 BitLocker、信賴平台模組 2.0 (TPM) 強制執行資料保護，以及使用 Windows Defender (也稱為 Microsoft Defender) 的雲端技術安全性。
 
-##  <a name="defense-in-depth-security"></a>深入防禦安全性
+## <a name="defense-in-depth-security"></a>深入防禦安全性
 
-當 Surface Hub 開啟時，就會立即開始安全性通訊協定。 從韌體層級開始，Surface Hub 只會載入作業系統及其元件，以回應多重安全性檢查。 Surface Hub 採用稱為「深入防禦」的策略，其中涉及到分層獨立防護子元件，以便在部分失敗時保護整個系統。 這個產業實務經過實證，在抵禦子元件的潛在單邊入侵和弱點，有很高的效率。
+當 Surface Hub 開啟時，就會立即開始安全性通訊協定。 從韌體層級開始，Surface Hub 只會載入作業系統及其元件，以回應多重安全性檢查。 Surface Hub 採用稱為「深入防禦」的策略，其中涉及到分層獨立防護子元件，以便在部分失敗時保護整個系統。 這個產業實務已證明，在針對子元件中的潛在單邊入侵和弱點方面是非常有效。
 
-新式的整合可延伸韌體介面 (UEFI) 是由 Microsoft 靜態且安全地設定，以僅從內部儲存啟動已驗證的 Windows 10 小組作業系統。  執行前，系統會驗證 Surface Hub 上所執行每一行程式碼的簽章。 只有由 Microsoft 所簽署的應用程式 (屬於作業系統或是透過 Microsoft Store 安裝)，才能在 Surface Hub 上執行。 無法符合這些需求的程式碼或應用程式會遭到封鎖。
+Microsoft 會靜態且安全地設定新式整合可延伸韌體介面 (UEFI)，只從內部儲存體啟動經過驗證的 Windows 10 團隊版作業系統。  在 Surface Hub 上執行的每一行程式碼，在執行前都會驗證其簽章。 只有由 Microsoft 所簽署的應用程式 (屬於作業系統或是透過 Microsoft Store 安裝)，才能在 Surface Hub 上執行。 無法符合這些需求的程式碼或應用程式會遭到封鎖。
 
 Surface Hub 安全性系統包含下列項目：
 
@@ -36,17 +36,17 @@ Surface Hub 安全性系統包含下列項目：
 - **作業系統防護。** 防範執行非預期或惡意軟體或程式碼。
 - **使用者介面防護。** 提供對於使用者而言是安全的使用者介面，防止存取潛在有風險的活動，例如，從命令列執行可執行檔。
 
-###  <a name="boot-time-defenses"></a>開機時防護
+### <a name="boot-time-defenses"></a>開機時防護
 
-SoC 的安全處理器與其他核心不同。 當您第一次啟動 Surface Hub 時，只有安全處理器會啟動，然後才能載入其他任何項目。
+SoC 的安全處理器與其他核心不同。 當您第一次啟動 Surface Hub 時，僅有安全處理器會先啟動，然後才載入其他任何項目。
 
-![顯示安全處理器保護的 Hub 啟動程序啟動階段](images/hub-sec-1.png)
+![Hub 啟動開機階段顯示著安全處理器保護。](images/hub-sec-1.png)
 
-#### 安全開機
+#### <a name="secure-boot"></a>安全開機
 
 「安全開機」是用來驗證開機程序的元件，包括驅動程式和作業系統，根據有效和已知的簽章進行驗證。 在 Surface Hub 上，必須先驗證平台特定簽章，然後才可以載入授權的 Windows 團隊版作業系統。 這可協助防止隱藏在正常使用者體驗中，來自執行惡意程式碼的複製或修改過系統的攻擊。  如需詳細資訊，請參閱[安全開機概觀](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)。
 
-###  <a name="operating-system-defenses"></a>作業系統防護
+### <a name="operating-system-defenses"></a>作業系統防護
 
 當作業系統驗證為來自 Microsoft 且 Surface Hub 順利完成開機程序之後，裝置會仔細檢查可執行檔程式碼。 我們保護作業系統的方法涉及識別所有可執行檔的程式碼簽章，只允許將通過限制的程式碼載入執行階段。 此程式碼簽署方法可讓作業系統驗證作者，並且在程式碼於裝置上執行之前確認其未變更。
 
@@ -70,7 +70,7 @@ Surface Hub 在 Windows 應用程式控制 (先前稱為 Device Guard) 中，使
 
 - [Windows Defender 應用程式控制和虛擬式程式碼完整性保護](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 
-###  <a name="user-interface-defenses"></a>使用者介面防護
+### <a name="user-interface-defenses"></a>使用者介面防護
 
 雖然開機時防護和作業系統鎖定保護措施會提供基礎安全性，但使用者介面提供額外層，可進一步降低風險。 為了防止惡意程式碼透過驅動程式到達裝置，Surface Hub 不會下載隨插即用 (PnP) 裝置的進階驅動程式。 採用基本驅動程式的裝置，例如 USB 快閃磁碟機或認證 Surface Hub 周邊 (喇叭、麥克風、相機) 可正常運作，但是像印表機等進階系統則無法正常運作。
 
@@ -80,7 +80,7 @@ Surface Hub 在 Windows 應用程式控制 (先前稱為 Device Guard) 中，使
 
 - **[開始] 和 [所有應用程式]。** Surface Hub 的 [開始] 和 [所有應用程式] 元件不會將存取權公開至透過應用程式控制封鎖的命令提示字元、PowerShell，或其他 Windows 元件。 此外，通常可以在電腦上從 [搜尋] 方塊存取的 Windows 執行功能，針對 Surface Hub 關閉。
 
-##  <a name="security-enhancements-in-surface-hub-2s"></a>Surface Hub 2S 的安全性增強功能
+## <a name="security-enhancements-in-surface-hub-2s"></a>Surface Hub 2S 的安全性增強功能
 
 雖然 Surface Hub 和 Surface Hub 2S 都執行相同的作業系統軟體，但是部分 Surface Hub 2S 獨有的功能則提供額外的管理和安全性功能，可讓 IT 系統管理員執行下列工作：
 
@@ -88,7 +88,7 @@ Surface Hub 在 Windows 應用程式控制 (先前稱為 Device Guard) 中，使
 - 使用可開機 USB 復原 Hub
 - 使用密碼變換管理裝置帳戶
 
-###  <a name="manage-uefi-settings-with-semm"></a>使用 SEMM 管理 UEFI 設定
+### <a name="manage-uefi-settings-with-semm"></a>使用 SEMM 管理 UEFI 設定
 
 UEFI 是基本硬體平台元件與作業系統之間的介面。 在 Surface Hub 上，自訂 UEFI 實作可讓您以精細的方式控制這些設定，並防止任何非 Microsoft 實體變更裝置的 UEFI 設定，或開機至抽取式磁碟磁碟機來修改或變更作業系統。
 
@@ -96,9 +96,9 @@ UEFI 是基本硬體平台元件與作業系統之間的介面。 在 Surface Hu
 
 當透過 Microsoft Surface 企業管理模式 (SEMM) 進行管理時，IT 系統管理員可以在組織間的 Hub 裝置上部署 UEFI 設定。 這包括啟用或停用內建硬體元件、保護 UEFI 設定不受未經授權使用者變更，以及調整開機設定。
 
-![Surface Hub UEFI 設定](images/hub-sec-2.png)
+![Surface Hub UEFI 設定。](images/hub-sec-2.png)
 
-系統管理員可以使用可下載 [Microsoft Surface UEFI 設定程式](https://www.microsoft.com/download/details.aspx?id=46703)來實作 SEMM 和註冊 Surface Hub 2S 裝置。 如需詳細資訊，請參閱[使用 SEMM 和 UEFI 保護及管理 Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-secure-with-uefi-semm)。
+系統管理員可以使用可下載的 [Microsoft Surface UEFI 設定程式](https://www.microsoft.com/download/details.aspx?id=46703) 來實作 SEMM 和註冊的 Surface Hub 2S 裝置。 如需詳細資訊，請參閱[使用 SEMM 和 UEFI 保護及管理 Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-secure-with-uefi-semm)。
 使用憑證來加以保護，可保護設定不會受到未經授權的篡改或移除，SEMM 可管理下列元件：
 
 - 有線 LAN
@@ -116,15 +116,15 @@ UEFI 是基本硬體平台元件與作業系統之間的介面。 在 Surface Hu
     - 日期/時間
 
     
-###  <a name="recover-hub-with-bootable-usb"></a>使用可開機 USB 復原 Hub
+### <a name="recover-hub-with-bootable-usb"></a>使用可開機 USB 復原 Hub
 
 Surface Hub 2S 可讓系統管理員在不到 20 分鐘的時間內，使用復原映像將裝置重新安裝到原廠設定。 通常，只有在您的 Surface Hub 無法運作時，才需要這麼做。 如果您遺失 Bitlocker 金鑰或不再擁有 [設定] 應用程式的系統管理員認證，復原也相當實用。
 
-###  <a name="harden-device-account-with-password-rotation"></a>使用密碼變換管理裝置帳戶
+### <a name="harden-device-account-with-password-rotation"></a>使用密碼變換管理裝置帳戶
 
 Surface Hub 使用裝置帳戶 (又稱為「會議室帳戶」) 來驗證 Exchange、Microsoft Teams 及其他服務。 當您啟用密碼變換時，Hub 2S 每隔 7 天會自動產生新密碼，由大小寫字母、數字及特殊字元組合的 15-32 個字元組成。 由於沒有人知道密碼，因此裝置帳戶密碼變換可以有效降低相關風險，防止人為錯誤和潛在社交工程安全性攻擊。
 
-##  <a name="windows-10-enterprise-grade-security"></a>Windows 10 企業等級安全性
+## <a name="windows-10-enterprise-grade-security"></a>Windows 10 企業等級安全性
 
 除了本文件中所述的 Surface Hub 特定設定和功能，Surface Hub 還使用 Windows 10 的標準安全性功能。 這些地方包括：
 
@@ -133,7 +133,7 @@ Surface Hub 使用裝置帳戶 (又稱為「會議室帳戶」) 來驗證 Exchan
 - **隨插即用驅動程式。** 為了防止惡意程式碼透過驅動程式到達裝置，Surface Hub 不會下載 PnP 裝置的進階驅動程式。 這可讓運用基本驅動程式 (例如 USB 快閃磁碟機) 的裝置能夠正常運作，並封鎖更多進階系統 (例如印表機)。
 - **信賴平台模組 2.0。** Surface Hub 擁有業界標準的離散信賴平台模組 (dTPM)，可產生和儲存密碼編譯金鑰和雜湊。 dTPM 可保護用於開機階段驗證的金鑰、BitLocker 主要金鑰、無密碼登入金鑰等等。 dTPM 符合 [FIPS 140-2 層級 2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation) 憑證、美國政府電腦安全性性標準，且符合全世界使用[通用準則](https://docs.microsoft.com/windows/security/threat-protection/windows-platform-common-criteria)憑證的規範。
 
-##  <a name="wireless-security-for-surface-hub"></a>Surface Hub 的無線安全性
+## <a name="wireless-security-for-surface-hub"></a>Surface Hub 的無線安全性
 
 Surface Hub 使用 Wi-Fi Direct / Miracast 技術，並與 802.11、Wi-Fi 保護的存取 (WPA2) 以及無線保護設定 (WPS) 標準相關。 由於裝置僅支援 WPS (與 WPA2 預先共用金鑰 (PSK) 或 WPA2 Enterprise 相反)，通常與 802.11 加密相關的問題也因而被簡化。
 
@@ -143,7 +143,7 @@ Wi-Fi Direct 或 Wi-Fi「對等式網路」(P2P) 是由 Wi-Fi 聯盟為「臨機
 
 Wi-Fi Direct 的安全性是 WPA2 使用 WPS 標準所提供。 裝置可以使用數字辨識碼、實體或虛擬按鈕，或使用近距離無線通訊的超出範圍訊息，進行驗證。 Surface Hub 預設支援按鈕和 PIN 方法。 如需詳細資訊，請參閱 [Surface Hub 如何處理 Wi-Fi Direct 的安全性問題](https://docs.microsoft.com/surface-hub/surface-hub-wifi-direct)。
 
-##  <a name="learn-more"></a>深入了解
+## <a name="learn-more"></a>深入了解
 
 - [安全開機概觀](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)
 
