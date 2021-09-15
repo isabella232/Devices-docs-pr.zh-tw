@@ -13,12 +13,12 @@ appliesto:
 - Surface
 ms.reviewer: irenewhite
 description: 下一個工作日換貨資訊與涵蓋範圍。
-ms.openlocfilehash: 4488d2f1cc8a3e6c240710d59f3465d05abae12b
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 9f66e16730b070ab75f4b5646cbcf2cf95ba77bf
+ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613842"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "11939512"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>下一個工作日換貨資訊與涵蓋範圍
 
@@ -148,7 +148,7 @@ ms.locfileid: "11613842"
 #### <a name="spain"></a>西班牙
 
 - 截止時間：12 點 0 分 CET (UTC+1)
-- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage-%20Spain%20Post%20Codes%20030321.xlsx)
+- [下一個工作天涵蓋範圍](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage%20-%20Spain%20Post%20Codes%20030321.xlsx)
 
 #### <a name="sweden"></a>瑞典
 

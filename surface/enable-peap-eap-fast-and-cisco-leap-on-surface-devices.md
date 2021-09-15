@@ -13,12 +13,12 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: e887a449fb00b76c14de5b8ede51a1ba91a6b4c4
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
+ms.openlocfilehash: 39cd721606a44fed21c2a8cf59baaf806db47959
+ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721243"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "11939499"
 ---
 # <a name="enable-peap-eap-fast-and-cisco-leap-on-surface-devices"></a>在 Surface 裝置上啟用 PEAP、EAP-FAST 和 Cisco LEAP
 
@@ -84,4 +84,5 @@ ms.locfileid: "11721243"
 
 對於使用 Configuration Manager 管理 Surface 裝置的組織而言，部署 PEAP、EAP-FAST 或 Cisco LEAP 甚至更為容易。 只要將每個 MSI 檔案以應用程式的方式從 Software Library 匯入，並對 Surface 裝置集合設定部署即可。
 
-若要瞭解如何使用 Configuration Manager 部署應用程式，請參閱使用 Configuration Manager 建立及部署 [應用程式](/mem/configmgr/apps/get-started/create-and-deploy-an-application.md)。
+若要瞭解如何使用 Configuration Manager 部署應用程式，請參閱使用 Configuration Manager 建立及部署 [應用程式](/mem/configmgr/apps/get-started/create-and-deploy-an-application)。
+
