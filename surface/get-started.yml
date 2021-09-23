@@ -15,20 +15,20 @@ metadata:
   ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/22/2021
-  ms.locfileid: "12034332"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "12037137"
 landingContent:
 - title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Surface OS 選項
+    - text: Surface 作業系統選項
       url: surface-os-choice.md
-    - text: Surface Pro 8 for Business
+    - text: 商務用 Surface Pro 8
       url: https://www.microsoft.com/surface/business/surface-pro-8
     - text: 商務用 Surface Pro X
       url: https://www.microsoft.com/surface/business/surface-pro-x
-    - text: Surface Laptop商務用 Studio
+    - text: 商務用 Surface Laptop Studio
       url: https://www.microsoft.com/surface/business/surface-laptop-studio
     - text: 商務用 Surface Go 3
       url: https://www.microsoft.com/surface/business/surface-go-3

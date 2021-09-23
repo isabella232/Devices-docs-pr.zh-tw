@@ -1,5 +1,5 @@
 ---
-title: Surface OS 選項
+title: Surface 作業系統選項
 description: 本文將說明商業客戶如何使用 11 或 Windows 10購買Windows裝置。
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,7 +17,7 @@ ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/23/2021
-ms.locfileid: "12036974"
+ms.locfileid: "12037077"
 ---
 # <a name="os-choice-for-new-surface-devices"></a>適用于新 Surface 裝置的作業系統選擇
  
