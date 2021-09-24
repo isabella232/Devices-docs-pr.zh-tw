@@ -42,7 +42,7 @@ conceptualContent:
       links:
         - url: /surface-hub/surface-hub-2s-85-install-mount
           itemType: how-to-guide
-          text: 安裝及掛接 Surface Hub 2S 85 吋 (整備指南)
+          text: 安裝及裝載 Surface Hub 2S 85 吋 (整備指南)
         - url: /microsoftteams/rooms/surface-hub-manage-config
           itemType: concept
           text: 在 Surface Hub 上管理 Microsoft Teams 設定
