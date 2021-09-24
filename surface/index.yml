@@ -16,45 +16,45 @@ highlightedContent:
   items:
     - title: Surface 裝置文件
       itemType: learn
-      url: 'https://docs.microsoft.com/surface/get-started'
+      url: /surface/get-started
     - title: Surface Hub 文件
       itemType: learn
-      url: 'https://docs.microsoft.com/surface-hub/index'
+      url: /surface-hub/index
     - title: Surface Duo 文件
       itemType: learn
-      url: 'https://docs.microsoft.com/surface-duo/index'
+      url: /surface-duo/index
 conceptualContent:
   title: Surface 裝置
   summary: 尋找您 Microsoft Surface 裝置的資源。
   items:
     - title: Surface 概觀
       links:
-        - url: 'https://www.microsoft.com/surface/business/surface-laptop-4'
+        - url: 'https://www.microsoft.com/surface/business/surface-pro-8'
           itemType: concept
-          text: 商務用 Surface Laptop 4
-        - url: 'https://www.microsoft.com/surface/business/surface-pro-7-plus'
+          text: 商務用 Surface Pro 8
+        - url: 'https://www.microsoft.com/surface/business/surface-laptop-studio'
           itemType: concept
-          text: 商務用 Surface Pro 7+
+          text: 商務用 Surface Laptop Studio
         - url: 'https://www.microsoft.com/surface/business'
           itemType: concept
           text: 探索所有 Surface 系列產品
     - title: Surface Hub 概觀
       links:
-        - url: 'https://docs.microsoft.com/surface-hub/surface-hub-2s-85-install-mount'
+        - url: /surface-hub/surface-hub-2s-85-install-mount
           itemType: how-to-guide
-          text: 安裝及裝載 Surface Hub 2 85 吋 (整備指南)
-        - url: 'https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new'
+          text: 安裝及掛接 Surface Hub 2S 85 吋 (整備指南)
+        - url: /microsoftteams/rooms/surface-hub-manage-config
           itemType: concept
-          text: Surface Hub 2S 的新增功能
-        - url: 'https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs'
+          text: 在 Surface Hub 上管理 Microsoft Teams 設定
+        - url: /surface-hub/surface-hub-2s-techspecs
           itemType: concept
           text: Surface Hub 2S 技術規格
     - title: Surface Duo 概觀
       links:
-        - url: 'https://docs.microsoft.com/surface-duo/surface-duo-manage'
+        - url: /surface-duo/surface-duo-manage
           itemType: concept
           text: Surface Duo 管理概觀
-        - url: 'https://docs.microsoft.com/surface-duo/surface-duo-secure'
+        - url: /surface-duo/surface-duo-secure
           itemType: concept
           text: Surface Duo 安全性概觀
         - url: 'https://www.microsoft.com/surface/business/surface-duo'
@@ -90,10 +90,10 @@ conceptualContent:
           text: 連絡 Surface Hub 支援
     - title: Surface Duo 說明
       links:
-        - url: 'https://docs.microsoft.com/en-us/surface-duo/contact-surface-duo-support'
+        - url: /surface-duo/contact-surface-duo-support
           itemType: learn
           text: 連絡 Surface Duo 支援
-        - url: 'https://docs.microsoft.com/en-us/dual-screen/android/get-duo-sdk?tabs=windows'
+        - url: /dual-screen/android/get-duo-sdk?tabs=windows
           itemType: learn
           text: 取得 Surface Duo SDK
         - url: 'https://www.microsoft.com/download/details.aspx?id=100847'
