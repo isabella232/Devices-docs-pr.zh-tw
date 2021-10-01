@@ -12,24 +12,24 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 14b4b5ee72ac92618a2906894840a51dd2229d42
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: e36e01ec9387779ba4b920e21bf51f1f210cbdde
+ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911158"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "12057670"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Surface Dock 2 的新增功能
 
-Surface Dock 2 是下一代的 Surface Dock，可讓使用者連接外部監視器和多個周邊裝置，以從 Surface 裝置取得完全現代化的桌面體驗。 Surface Dock 2 是專為在辦公室、彈性工作區或家中盡可能提高效率所打造，擁有七個埠，包括兩個前置 USB-C 埠，以及 15 瓦的手機和配件快速充電電源。 
+Surface Dock 2 是下一代的 Surface Dock，可讓使用者連接外部監視器和多個外接裝置，以從 Surface 裝置獲得完全現代化的桌面體驗。 Surface Dock 2 是專為在辦公室、彈性工作區或家中最大化效率所打造，擁有七個埠，包括兩個前置 USB-C 埠，以及 15 瓦的手機和配件快速充電電源。 
 
 ### <a name="full-device-management-support"></a>完整的裝置管理支援
 
-Surface Dock 2 是專為簡化 IT 管理所設計，讓系統管理員能夠使用更新或集中Windows內部軟體發佈工具來自動化固件更新。
+Surface Dock 2 是專為簡化 IT 管理所設計，讓系統管理員能夠使用內部軟體發佈工具Windows更新或集中更新來自動化更新。
 
 - Surface Enterprise管理模式 (SEMM) 可讓 IT 系統管理員保護 Surface Dock 2 上的埠。 詳細資訊，請參閱使用[Surface Enterprise 管理模式保護 Surface Dock 2 埠](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)。
--  Windows管理儀器 (WMI) 支援可讓 IT 系統管理員遠端監控和管理 Surface Dock 2 裝置上的最新固件、策略狀態和關聯資料。 詳細資訊，請參閱使用[WMI 管理 Surface Dock 2。](surface-dock2-wmi.md)
-- 使用軟體發佈工具集中處理您本地網路上更新。 [下載 Surface Dock 2 的固件和驅動程式](https://www.microsoft.com/en-us/download/details.aspx?id=101317)。
+-  Windows管理工具 (WMI) 支援可讓 IT 系統管理員遠端監控及管理 Surface Dock 2 裝置上的最新固件、策略狀態和關聯資料。 詳細資訊，請參閱使用[WMI 管理 Surface Dock 2。](surface-dock2-wmi.md)
+- 使用軟體發佈工具集中您的本地網路上更新。 [下載 Surface Dock 2 的固件和驅動程式](https://www.microsoft.com/en-us/download/details.aspx?id=101317)。
 
 ## <a name="general-system-requirements"></a>一般系統需求
 
@@ -99,7 +99,7 @@ Surface Dock 2 是專為簡化 IT 管理所設計，讓系統管理員能夠使�
 | ----------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------- |
 | 流覽連結                            | 是                                                         | 是                                                                                                 | 否               |
 | USB-A                               | 2 個正面 USB 3.1 第 1 代<br>2 個背面 USB 3.1 第 1 代 | 2 個背面 USB 3.2 Gen 2 (7.5W 電源)                                                             | 1 個 USB 3.1 第 2 代  |
-| 迷你顯示埠                   | 2 個後向 (D1.2)                                        | 無                                                                                                | 無             |
+| 迷你顯示埠                   | 2 個後向 (DP1.2)                                        | 無                                                                                                | 無             |
 | USB-C                               | 無                                                        | 2 正面 USB 3.2 第 2 代<br> (15W 電源) <br>2 個背面 USB 3.2 Gen 2 (DP1.4a) <br> (7.5W 電源)  | 1 個 USB 3.2 第 2 代  |
 | 3.5 mm 音訊輸入/輸出                 | 是                                                         | 是                                                                                                 | 是              |
 | 乙太網路                            | 是，1 GB                                              | 是 1 GB                                                                                       | 是，1 GB   |
@@ -121,7 +121,7 @@ Surface Dock 2 是專為簡化 IT 管理所設計，讓系統管理員能夠使�
 
 
 
-1. *裝置必須透過 Surface Enterprise 管理模式 (SEMM) 或裝置固件控制介面 (DFCI) 在 LAN 上喚醒，以從休眠或 Power-Off 狀態喚醒。 Surface Pro 7+、Surface Pro 7、Surface Laptop 4、Surface Laptop 3、Surface Pro X、Surface Book 3 和 Surface Go 2 支援從休眠或 Power-Off 喚醒。  部分功能所需的軟體授權。 另行購買。*
+1. *裝置必須透過 Surface Enterprise 管理模式 (SEMM) 或裝置固件控制介面 (DFCI) 在 LAN 上喚醒，以從休眠或 Power-Off 狀態喚醒。 Surface Laptop Studio、Surface Pro 8、Surface Pro 7+、Surface Pro 7、Surface Laptop 4、Surface Laptop 3、Surface Pro X、Surface Book 3、Surface Go 3 和 Surface Go 2 支援從休眠或 Power-Off 喚醒。  部分功能所需的軟體授權。 另行購買。*
 
 2. *部分功能所需的軟體授權。 另行購買。*
 
@@ -130,11 +130,11 @@ Surface Dock 2 是專為簡化 IT 管理所設計，讓系統管理員能夠使�
 Surface 已透過更新Windows精簡管理功能，讓 IT 系統管理員能夠運用下列企業級功能：
 
 - **無摩擦更新**。 使用 Windows 更新或Microsoft Endpoint Configuration Manager，以 (- SCCM System Center Configuration Manager或其他 MSI 部署工具，以無提示) 自動更新您的 dock。 
-- **從網路喚醒**。 管理及存取公司裝置，而不需要視使用者而保持裝置電源。 即使固定式裝置進入睡眠、休眠或關閉模式，您的小組還是可以使用端點 Configuration Manager 或其他企業管理工具，從網路喚醒以用於服務和管理。
-- **集中式 IT 控制項**。 開啟和關閉埠，控制誰可以連接到 Surface Dock 2。 限制哪些主機裝置可以與 Surface Dock 2 一起使用。 限制單一使用者對固定座的存取權，或設定固定位置，以便只有小組或整個公司的特定使用者才能存取。
+- **從網路喚醒**。 管理及存取公司裝置，而不需要視使用者而維持裝置電源。 即使固定裝置進入睡眠、休眠或關閉模式，您的小組還是可以使用端點 Configuration Manager 或其他企業管理工具，從網路喚醒以用於服務和管理。
+- **集中式 IT 控制項**。 開啟和關閉埠，控制誰可以連接到 Surface Dock 2。 限制哪些主機裝置可以與 Surface Dock 2 一起使用。 限制單一使用者對固定座的存取權，或設定固定位置，以便只有小組或整個公司中的特定使用者才能存取。
 
 ## <a name="next-steps"></a>後續步驟
 
-- [使用 Surface Enterprise 管理模式保護 Surface Dock 2 埠](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
+- [使用 Surface Enterprise管理模式保護 Surface Dock 2 埠](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
 - [Surface 企業管理模式](surface-enterprise-management-mode.md)
 - [適用於 Surface 裝置的最佳電源設定](maintain-optimal-power-settings-on-Surface-devices.md)
