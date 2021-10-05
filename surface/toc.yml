@@ -14,12 +14,16 @@
               href: windows-virtual-desktop-surface.md
             - name: Surface Laptop 4 處理器技術概觀
               href: surface-laptop-processors.md
-            - name: Surface Book 3 GPU 技術概觀
+            - name: Surface Headphones 2+ 技術概觀
+              href: surface-headphones.md
+        - name: Surface 專業圖形
+          items:
+            - name: Surface Laptop Studio 圖形概觀
+              href: surface-laptop-studio-graphics.md
+            - name: Surface Book 3 技術概觀
               href: surface-book-GPU-overview.md
             - name: Surface Book 3 Quadro RTX 3000 技術概觀
               href: surface-book-quadro.md
-            - name: Surface Headphones 2+ 技術概觀
-              href: surface-headphones.md
         - name: 訂購 Surface 裝置
           items:
             - name: Surface 作業系統選項
