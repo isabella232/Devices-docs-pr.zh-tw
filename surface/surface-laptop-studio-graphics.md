@@ -1,5 +1,5 @@
 ---
-title: Surface LaptopStudio 圖形概觀
+title: Surface Laptop Studio 圖形概觀
 description: 本文著重說明 Surface Lapto Studio 中的 US。
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,18 +12,18 @@ ms.date: 10/04/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 80221d49f10f1a2fdc57723d1b6122333e1b192a
-ms.sourcegitcommit: 247e97d3ed856fa9814e95db7e04e5d4054f6bb5
+ms.openlocfilehash: d5c7690cd90427bb7a9a6b2b452e527aa1b608dd
+ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/05/2021
-ms.locfileid: "12067719"
+ms.locfileid: "12068444"
 ---
-# <a name="surface-laptop-studio-graphics-overview"></a>Surface LaptopStudio 圖形概觀
+# <a name="surface-laptop-studio-graphics-overview"></a>Surface Laptop Studio 圖形概觀
 
-Surface LaptopStudio 將完全現代化的計算和圖形功能整合成全新的多功能表單要素。 由四核第 11 代 Intel® Core™ i7 和 NVIDIA® RTX™ A2000 或 NVIDIA® GeForce RTX™ 3050 Ti 所主導，Surface Laptop Studio 提供架構、工程師、資料專家和創意專業人員的計算能力，以發揮最佳工作。
+Surface LaptopStudio 將完全現代化的計算和圖形功能整合成全新的多功能表單要素。 由四核第 11 代 Intel® Core™ i7 和 NVIDIA® RTX™ A2000 或 NVIDIA® GeForce RTX ™ 3050 Ti 所帶領，Surface Laptop Studio 提供架構、工程師、資料專家和創意專業人員的計算能力，以發揮最佳工作。
  
-在 Studio 模型中，Surface Laptop GPU 組式是一個顯著的差異。 核心 i5 裝置外的所有裝置都採用離散 NVIDIA RTX GPU，支援硬體加速光線追蹤、AI 和影片。 設計也會針對行動表單因素優化能源使用效率。 NVIDIA GPU 的型號是 NVIDIA Studio 產品計畫的一部分，受益于熱門創意 App 中的 RTX 加速、可靠的 NVIDIA Studio 驅動程式，以及存取獨家 NVIDIA 應用程式 ，例如畫布或廣播。 光線追蹤是一項計算密集技術，可模擬光的物理行為，以在電腦產生的場景中達到更大的真實感。 它同時用於遊戲和 3D 呈現。 NVIDIA RTX 也提供深度學習超 (DLSS) ，這是可提升框架速率的 AI 技術。
+在 Studio 模型中，Surface Laptop GPU 組式是一個顯著的差異。 核心 i5 裝置外的所有裝置都採用離散 NVIDIA RTX GPU，支援硬體加速光線追蹤、AI 和影片。 設計也會針對行動表單因素優化能源使用效率。 NVIDIA GPU 的型號是 NVIDIA Studio 產品計畫的一部分，受益于熱門創意 App 中的 RTX 加速、可靠的 NVIDIA Studio 驅動程式，以及存取獨家 NVIDIA 應用程式 ，例如畫布或廣播。 光線追蹤是一項計算密集技術，可模擬光的物理行為，以在電腦產生的場景中達到更大的真實感。 它同時用於遊戲和 3D 呈現。 NVIDIA RTX 也提供深度學習超 (DLSS) ，這是一種可提升框架速率的 AI 技術。
  
 這些進點陣圖形呈現功能提供兩種主要配置：適用于消費者或創意專業人員的 NVIDIA GeForce RTX 3050 Ti Laptop GPU，以及適用于架構設計師、工程師、創意專業人員和其他需要進一步圖形功能之商務專業人員的 NVIDIA RTX A2000 Laptop GPU。
  
@@ -54,7 +54,7 @@ GeForce RTX 3050 Ti 啟用：
 - 由於 RtX 和 DLSS 在 Blender 或 Autodesk、Maya 等應用程式中的加速處理® 3D 呈現。 
 - 由於 DLSS 以及 NVIDIA 反射的超低延遲，使用 RTX 圖形和高性能的下一代遊戲。
 
-## <a name="nvidia-rtx-a2000-laptop-gpu"></a>NVIDIA RTX A2000 膝上型電腦 GPU
+### <a name="nvidia-rtx-a2000-laptop-gpu"></a>NVIDIA RTX A2000 膝上型電腦 GPU
 
 NVIDIA RTX A2000 提供專業圖形呈現和 AI 功能，適用于嚴苛的專業工作流程，包括製造與產品設計、媒體和娛樂模型、動畫及呈現、架構、工程及建築設計。
  
@@ -87,7 +87,7 @@ NVIDIA RTX A2000 建立在 GeForce RTX 3050 Ti 功能上，具有下列其他功
 | Nvidia 解碼器                              | 第 5 代                               | 第 5 代                     |
 | 張量效果                          | 42.4 TFLOPS，尖峰                     | 49.5 TFLOPS，尖峰           |
 | 單一精確度浮點績效 | 5.3 TFLOPS，尖峰                      | 6.2 TFLOPS，波峰            |
-| PCIe 一代                             | 已 (4 個第 3 代)                    | 已 (4 個第 3 代)          |
+| PCIe 一代                             | 4 (第 3 代)                    | 4 (第 3 代)          |
 | 著色器模型                                | 7.0                                   | 7.0                         |
 | Vulkan RT                                   | 1.2                                   | 1.2                         |
 | OpenCL                                      | 3.0                                   | 3.0                         |
