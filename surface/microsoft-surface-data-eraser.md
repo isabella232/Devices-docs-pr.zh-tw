@@ -1,6 +1,6 @@
 ---
 title: Microsoft Surface Data Eraser (Surface)
-description: 了解 Microsoft Surface Data Eraser 工具能如何協助您安全地抹除 Surface 裝置上的資料。
+description: Microsoft Surface 資料橡皮擦工具可讓您安全地抹除 Surface 裝置的資料。
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
 ms.reviewer: hachidan
 manager: laurawi
@@ -14,25 +14,26 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/17/2021
-ms.openlocfilehash: 292c20c9999d9f226f28daed87069c78b43fd4bf
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 10/06/2021
+ms.openlocfilehash: e97bc719fb93b0a0b74c7ca51b68cbc59efa9f4a
+ms.sourcegitcommit: fe54b2bab8b205302438426b86c0aa8269ff82ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911188"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "12081203"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
 了解 Microsoft Surface Data Eraser 工具能如何協助您安全地抹除 Surface 裝置上的資料。
 
-[Microsoft Surface Data Eraser](https://www.microsoft.com/download/details.aspx?id=46703) 是可以從 USB 磁碟機開機的工具，讓您能夠安全抹除相容 Surface 裝置上的所有資料。 Microsoft Surface Data Eraser USB 磁碟機僅須具備從 USB 開機的能力。 使用提供的精靈 (Microsoft Surface Data Eraser Wrapper) 輕鬆就能建立 USB 隨身碟，且有易於使用的簡易圖形介面，不需要命令列。 如需深入了解資料抹除功能及 Microsoft 在 Surface 維修過程中所使用的做法，請參閱[將您的 Surface 寄回維修時保護您的資料](https://www.microsoft.com/surface/support/security-sign-in-and-accounts/data-wiping-policy)。
+[Microsoft Surface Data Eraser](https://www.microsoft.com/download/details.aspx?id=46703) 是可以從 USB 磁碟機開機的工具，讓您能夠安全抹除相容 Surface 裝置上的所有資料。 Microsoft Surface Data Eraser USB 磁碟機僅須具備從 USB 開機的能力。 如需深入了解資料抹除功能及 Microsoft 在 Surface 維修過程中所使用的做法，請參閱[將您的 Surface 寄回維修時保護您的資料](https://www.microsoft.com/surface/support/security-sign-in-and-accounts/data-wiping-policy)。
 
 >[!IMPORTANT]
 >Microsoft Surface Data Eraser 會依據 [NIST 特殊發佈 800-88 修訂版 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf) 中的授權，使用 NVM Express (NVMe) 格式命令來清除資料。
 
 相容的 Surface 裝置包括：
 
+- Surface Laptop演播室
 - Surface Book (所有版本) 
 - Surface Go (所有版本) 
 - Surface ProX (所有版本) 
@@ -41,72 +42,58 @@ ms.locfileid: "11911188"
 - Surface Studio (所有版本) 
 - Surface Pro 2 及更高版本
 - Surface 3
-- Windows 10 專業版 2 Enterprise上Surface Hub和
+- Windows 10 專業版 2 Enterprise 上Surface Hub及
 
 某些 Microsoft Surface Data Eraser 可發揮作用的情況包括：
 
-- 準備要送往維修的 Surface 裝置。
-- 將 Surface 裝置解除授權以移除。 從公司或組織使用。
-- 重新調整 Surface 裝置用途，以用於新的部門，或供新使用者使用。
-- 針對與敏感性資料一起使用的裝置執行重新映射時的標準作法。
-
->[!NOTE]
->第三方裝置、執行 Windows RT 的 Surface 裝置 (包括 Surface 和 Surface 2)，以及 Surface Pro，皆與 Microsoft Surface Data Eraser 不相容。
-
->[!NOTE]
->因為執行 Microsoft Surface Data Eraser 需要能夠從 USB 開機，如果裝置未設定成可從 USB 開機，或裝置無法成功開機或 POST，則無法使用 Microsoft Surface Data Eraser。
-
->[!NOTE]
->Surface Data Eraser Surface Studio Surface Studio 2 可能需要最多 6 分鐘才能啟動到 WinPE，才能進行磁片清除。
+- 準備要送修的 Surface 裝置。
+- 將 Surface 裝置從公司或組織使用中解除授權。
+- 為新使用者重新使用 Surface 裝置。
+- 重新映射包含機密資料的裝置。
 
 ## <a name="how-to-create-a-microsoft-surface-data-eraser-usb-stick"></a>如何建立 Microsoft Surface Data Eraser USB 磁碟機
 
-若要建立 Microsoft Surface Data Eraser USB 磁碟機，請先使用本文章開頭提供的連結從 Microsoft 下載中心安裝 Microsoft Surface Data Eraser 安裝工具。 您不需要 Surface 裝置來建立 *USB* 磁碟機。 下載安裝檔到電腦之後，請按照下列步驟安裝 Microsoft Surface Data Eraser 建立工具：
-
-1. 執行DataEraserSetup.msi下載的安裝 [檔案](https://www.microsoft.com/download/details.aspx?id=46703)。
-
-2. 選取接受授權條款的核取方塊，然後按一下 **\[安裝\]**。
-
-3. 按一下 **\[完成\]** 來關閉 Microsoft Surface Data Eraser 設定視窗。
-
 安裝建立工具之後，按照下列步驟建立 Microsoft Surface Data Eraser USB 磁碟機。 在您開始這些步驟之前，請確定您已連接 4 GB 或更大的 USB 3.0 磁碟機到電腦。
 
-1. 從開始目錄或開始畫面啟動 Microsoft Surface Data Eraser。
+1. 執行DataEraserSetup.msi從 Microsoft 下載中心下載的 [安裝檔案](https://www.microsoft.com/download/details.aspx?id=46703)。
 
-2. 按一下 **\[建立\]** 來開始 Microsoft Surface Data Eraser USB 的建立程序。
+2. 選取 **建立** 以開始 Microsoft Surface Data Eraser USB 建立程式，如圖 1 所示。
 
-3. 按一下 **\[開始\]** 以確認您有大小至少為 4 GB 的 USB 磁碟機，如圖 1 所示。
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig1-build.png" alt-text="圖 1。 開始使用 Microsoft Surface 資料橡皮擦工具":::<br>
+  *圖 1。 開始使用 Microsoft Surface 資料橡皮擦工具*
 
-   ![啟動 Microsoft Surface 資料橡皮擦工具。](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
+3. 選取 **繼續** 確認您的 USB 磁碟機至少已連接 4 GB，如圖 2 所示。
+   
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig2-continue.png" alt-text="圖 2. 確認已連接至少 4 GB 的 USB 磁碟機":::<br>
+   *圖 2. 確認已連接至少 4 GB 的 USB 磁碟機*
 
-   *圖 1. 啟動 Microsoft Surface Data Eraser 工具*
-4. 從**架構選取頁面**選擇大多數 Surface 裝置或**ARM64** Surface Pro X，如圖**** 2 所示。 選取 **\[繼續\]**。
+4. 僅**針對 2021** (裝置選擇 x64) 或更新的裝置，從結構選取頁面選擇適用于 2020 及較舊版本的**x64**或 Surface Pro X 的**ARM64，** 如圖 3 所示。 **** 選取 **\[繼續\]**。
 
-    ![架構選取範圍。](images/dataeraser-arch.png "Architecture Selection")<br>
-       *圖 2. 選取裝置架構*
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig3-select.png" alt-text="圖 3. 選取裝置架構":::
 
-5. 從 [USB 拇指磁碟機選取範圍> 頁面選取您所選擇的**USB**磁碟機，如圖**** 3 所示，然後按一下 [開始以開始建立 USB 程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
+5. 從 USB Thumb Drive 選取頁面選取您所選擇的**USB**磁碟機，如圖 4**** 所示，然後選取開始建立 USB 程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
 
-   >[!TIP]
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig4-start.png" alt-text="圖 4. USB 大拇指磁碟機>":::<br>
+   *圖 4. 選擇 USB 磁碟機*
+
+  >[!TIP]
    >如果 \[開始\] 按鈕已停用，請檢查您的抽取式磁碟機總容量至少為 4 GB。
-  
-   ![USB 拇指磁碟機選項。](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
-   *圖 3. 選擇 USB 磁碟機*
+6. 建立程序完成之後，則 USB 磁碟機已經格式化且所有二進位檔都已經複製到其中。 選取 **成功**。
 
-6. 建立程序完成之後，則 USB 磁碟機已經格式化且所有二進位檔都已經複製到其中。 按一下 **\[成功\]**。
+7. 顯示 **\[恭喜\]** 畫面之後，即可退出並移除 USB 磁碟機。 這個 USB 磁碟機現在可插入 Surface 裝置，從其開機並抹除該裝置上的所有檔案。 選取 **完成** 以完成 USB 建立程式，如圖 5 所示。
 
-7. 顯示 **\[恭喜\]** 畫面之後，即可退出並移除 USB 磁碟機。 這個 USB 磁碟機現在可插入 Surface 裝置，從其開機並抹除該裝置上的所有檔案。 按一下 **[完成** 以完成 USB 建立程式，如圖 4 所示。
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig5-complete.png" alt-text="完成 Microsoft Surface 資料橡皮擦工具":::<br>
+   *圖 5. 完成 Microsoft Surface Data Eraser USB 建立程序*
 
-   ![Surface Data Eraser USB 建立程式。](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
-
-   *圖 4. 完成 Microsoft Surface Data Eraser USB 建立程序*
-
-8. 按一下 **\[X\]** 來關閉 Microsoft Surface Data Eraser。
+8. 選取 **X** 以關閉 Microsoft Surface 資料橡皮擦。
 
 ## <a name="how-to-use-a-microsoft-surface-data-eraser-usb-stick"></a>如何使用 Microsoft Surface Data Eraser USB 磁碟機
 
 建立 Microsoft Surface Data Eraser USB 磁碟機之後，您可以遵循下列程序將支援的 Surface 裝置從該 USB 磁碟機開機：
+
+>[!NOTE]
+>Surface Data Eraser Surface Studio 2 Surface Studio最多可能需要 6 分鐘，才能啟動到 WinPE，才能進行磁片清除。
 
 1. 將可開機的 Microsoft Surface Data Eraser USB 磁碟機插入支援的 Surface 裝置。
 
@@ -120,7 +107,7 @@ ms.locfileid: "11911188"
    >[!TIP]
    >如果您的裝置無法使用這些步驟開機至 USB，您可能需要開啟 Surface UEFI 中的 **\[Enable Alternate Boot Sequence\] (啟用替代開機順序)** 選項。 您可以在[管理 Surface UEFI 設定](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings)中深入了解Surface UEFI 開機設定。
 
-3. 當 Surface 裝置啟動時， **會顯示 SoftwareLicenseTerms** 文字檔，如圖 5 所示。
+3. Surface 裝置啟動時， **會顯示 SoftwareLicenseTerms** 文字檔，如圖 5 所示。
 
    ![啟動 Microsoft Surface 資料橡皮擦 USB 棒。](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
@@ -141,7 +128,7 @@ ms.locfileid: "11911188"
 
 7. 如果您在步驟 6 按下 **\[Y\]**，因為資料清除程序之破壞性，系統會顯示額外的對話方塊以確認您的選擇。
 
-8. 按一下 **\[Yes\]** 按鈕以繼續清除 Surface 裝置上的資料。
+8. 選取 **是** 以繼續清除 Surface 裝置上的資料。
 
    >[!TIP]
    >在 Surface Data Eraser USB 磁碟機上執行 Surface Data Eraser 時，**SurfaceDataEraserLogs** 資料夾中會產生記錄檔。
@@ -149,6 +136,14 @@ ms.locfileid: "11911188"
 ## <a name="changes-and-updates"></a>變更與更新
 
 Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新版本所提供之變更的詳細資訊，請參閱下列各項：
+
+### <a name="3421390"></a>3.42.139.0
+
+*發行日期：2021 年 10 月 5 日*
+
+此版本的 Surface Data 橡皮擦包括：
+
+- 2021 的個別選項，以及較新裝置的支援，Surface Laptop Studio、Surface Pro 8 和 Surface Go 3。
 
 ### <a name="3391390"></a>3.39.139.0
 
@@ -170,12 +165,12 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 
 *發行日期：2020 年 9 月 9 日*
 
-此版本的 Surface 資料橡皮擦包含錯誤修正程式，並新增以下支援： 
+此版本的 Surface 資料橡皮擦包含錯誤修正程式，並新增以下支援：
 
 - 架構重新設計，以減少使用新產品版本更新需求
-- 新工具更新可用的通知
+- 適用于新工具更新的通知
 - 遙測新增專案
-- Windows 10 專業版 2 Enterprise上Surface Hub和
+- Windows 10 專業版 2 Enterprise 上Surface Hub及
 
 ### <a name="330139"></a>3.30.139
 
