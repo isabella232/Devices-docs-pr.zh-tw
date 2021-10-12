@@ -13,12 +13,12 @@ ms.topic: article
 ms.date: 07/16/2021
 ms.localizationpriority: medium
 audience: ITPro
-ms.openlocfilehash: a8c11406c7786e379999ff32f482815d6b180b24
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 3c4869f8aadbd849a608b5a35bf0e76ff3e78508
+ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676657"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "12089325"
 ---
 # <a name="install-apps-on-your-microsoft-surface-hub"></a>在 Microsoft Surface Hub 上安裝應用程式
 
@@ -26,11 +26,11 @@ ms.locfileid: "11676657"
 
 ## <a name="supported-app-guidelines"></a>支援的 App 指導方針
 
-- Surface Hub 僅能執行[通用 Windows 平台 (UWP) 應用程式](/windows/uwp/get-started/universal-application-platform-guide)。 使用[MSIX 封裝](/windows/msix/packaging-tool/tool-overview)工具建立的應用程式不會在 Surface Hub。
+- Surface Hub 僅能執行[通用 Windows 平台 (UWP) 應用程式](/windows/uwp/get-started/universal-application-platform-guide)。 使用[MSIX 封裝工具建立的應用程式](/windows/msix/packaging-tool/tool-overview)不會在 Surface Hub。
 - 應用程式必須以[通用裝置系列](/windows/uwp/get-started/universal-application-platform-guide)或 Windows 小組裝置系列為目標。
 - Surface Hub[僅支援](/microsoft-store/distribute-offline-apps)來自 商務用 Microsoft Store 的[離線授權商務用 Microsoft Store。](https://businessstore.microsoft.com/store/private-store)
 - 根據預設，應用程式必須經過市集簽署才能安裝。 在測試和開發期間，您也可以選擇將裝置切換到開發人員模式來執行開發人員簽署的 UWP app。
-- 將應用程式提交給應用程式Microsoft Store，開發人員必須設定裝置家庭可用性和組織授權選項，以確保應用程式可在 Surface Hub 上執行。
+- 將應用程式提交給應用程式Microsoft Store，開發人員必須設定裝置家庭可用性和組織授權選項，以確保應用程式可在 Surface Hub。
 - 您需要系統管理員認證，才能在 Surface Hub 上安裝應用程式。 由於裝置是針對在共用空間 (例如會議室) 中使用所設計，因此人員無法存取 Microsoft 網上商店來下載和安裝應用程式。
 
 ## <a name="deploy-released-apps"></a>部署已發佈的應用程式
@@ -73,11 +73,11 @@ ms.locfileid: "11676657"
 - 「已編碼的」** 授權檔案 (如果您要使用 MDM 發佈應用程式)
 - 任何必要的相依性檔案
 
-如需詳細資訊，請參閱[下載離線授權應用程式](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app)。
+如需詳細資訊，請參閱[下載離線授權應用程式](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)。
 
 ### <a name="install-offline-licensed-apps-via-provisioning-package"></a>透過部署套件安裝離線授權的應用程式
 
-您可以使用佈建套件，在少數 Surface Hub 上手動安裝從商務用 Store 下載的離線授權應用程式。 使用 Windows 映像處理與設定設計工具 (ICD) 建立佈建套件，其中包含應用程式套件與您從商務用 Store 下載的「未編碼」** 授權檔案。 如需詳細資訊，請參閱[建立佈建套件](provisioning-packages-for-certificates-surface-hub.md)。
+您可以使用佈建套件，在少數 Surface Hub 上手動安裝從商務用 Store 下載的離線授權應用程式。 使用 Windows 映像處理與設定設計工具 (ICD) 建立佈建套件，其中包含應用程式套件與您從商務用 Store 下載的「未編碼」** 授權檔案。 詳細資訊，請參閱為 Surface Hub[建立Surface Hub。](provisioning-packages-for-certificates-surface-hub.md)
 
 ### <a name="supported-mdm-provider"></a>支援的 MDM 提供者
 
@@ -90,7 +90,7 @@ ms.locfileid: "11676657"
 | 協力廠商 MDM 提供者    | 檢查以確認您的 MDM 提供者支援部署離線授權應用程式套件。 |
 
 > [!NOTE]
-> 若要使用應用程式遠端部署離線Microsoft Intune，請參閱從 商務用 Microsoft Store 管理[VPP 應用程式](/mem/intune/apps/windows-store-for-business)。 Surface Hub應用程式部署僅支援指派給裝置群組並使用裝置授權類型的離線應用程式。
+> 若要使用遠端部署離線應用程式Microsoft Intune，請參閱從 商務用 Microsoft Store 管理[VPP 應用程式](/mem/intune/apps/windows-store-for-business)。 Surface Hub應用程式部署僅支援指派給裝置群組並使用裝置授權類型的離線應用程式。
 
 ## <a name="develop-and-test-apps"></a>開發和測試應用程式
 
@@ -118,7 +118,7 @@ ms.locfileid: "11676657"
 
 #### <a name="create-provisioning-package"></a>建立部署套件
 
-使用 Visual Studio 為您的 UWP應用程式建立應用程式套件，並使用測試憑證簽署。 然後使用 Windows 映像處理與設定設計工具 (ICD) 建立包含應用程式套件的佈建套件。 如需詳細資訊，請參閱[建立佈建套件](provisioning-packages-for-certificates-surface-hub.md)。
+使用 Visual Studio 為您的 UWP應用程式建立應用程式套件，並使用測試憑證簽署。 然後使用 Windows 映像處理與設定設計工具 (ICD) 建立包含應用程式套件的佈建套件。 詳細資訊，請參閱為 Surface Hub[建立Surface Hub。](provisioning-packages-for-certificates-surface-hub.md)
 
 ## <a name="submit-apps-to-the-microsoft-store"></a>將應用程式提交至 Microsoft 網上商店
 
@@ -159,7 +159,7 @@ ms.locfileid: "11676657"
 
 ## <a name="summary"></a>摘要
 
-根據您開發應用程式、在少數裝置上評估應用程式，或將應用程式廣泛部署到您的組織Surface Hub在應用程式上安裝應用程式的方法有一些不同。 下表摘要說明所支援的方法：
+視您是否要開發應用程式、在少數裝置上評估應用程式，或將應用程式廣泛部署至您的組織Surface Hub在應用程式上安裝應用程式的方法有一些不同。 下表摘要說明所支援的方法：
 
 | 安裝方法             | 開發應用程式 | 在少數裝置上 <br> 評估應用程式 | 將應用程式廣泛部署 <br> 到組織中 |
 | -------------------------- | --------------- | ------------------------------------- | ---------------------- |
