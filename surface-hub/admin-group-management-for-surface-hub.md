@@ -15,18 +15,16 @@ ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: e82392745785f08212a112d023c40aea70f14220
-ms.sourcegitcommit: 3810c4310e9f5b5b9ad7b4584eaede2789ccd946
+ms.openlocfilehash: 4d634a4045327cb826e519c7e5097d946991f5d0
+ms.sourcegitcommit: d9c413f1c50908a81e5489aca2c6023eab573148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "11902852"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "12093030"
 ---
 # <a name="admin-group-management-for-surface-hub"></a>系統管理群組管理Surface Hub
 
-
 在個別裝置上使用 [設定] 應用程式，可各自設定其上的 Surface Hub。 為防止未經授權的使用者變更設定，\[設定\] 應用程式要求您必須提供系統管理員認證才能開啟應用程式。
-
 
 ## <a name="admin-group-management"></a>系統管理員群組管理
 
@@ -34,9 +32,8 @@ ms.locfileid: "11902852"
 
 - [建立本機系統管理員帳戶](#create-a-local-admin-account)
 - [網域將裝置加入 Active Directory](#domain-join-the-device-to-active-directory)
-- [Azure AD 加入裝置](#azure-ad-join-the-device)
-- [在 Azure AD 加入的裝置上設定非全域系統管理員帳戶 (Surface Hub 2S) ](#configure-non-global-admin-accounts-on-azure-ad-joined-devices)
-
+- [Azure AD裝置](#azure-ad-join-the-device)
+- [在已加入 2S Azure AD裝置上設定 (Surface Hub全域系統管理員) ](#configure-non-global-admin-accounts-on-azure-ad-joined-devices)
 
 ### <a name="create-a-local-admin-account"></a>建立本機系統管理員帳戶
 
@@ -49,7 +46,9 @@ ms.locfileid: "11902852"
 您可以將 Surface Hub 加入您的 AD 網域，以允許來自指定安全性群組的使用者進行設定。 在初次執行時，請選擇使用 [Active Directory Domain Services](first-run-program-surface-hub.md#active-directory-domain-services)。 您將需要提供能夠加入您選擇之網域的認證，以及現有安全性群組的名稱。 所有屬於該安全性群組成員的使用者都可以輸入他們的認證，並將 \[設定\] 解除鎖定。
 
 #### <a name="what-happens-when-you-domain-join-your-surface-hub"></a>當您將 Surface Hub 加入網域時會發生什麼事？
+
 Surface Hub 會透過加入網域來：
+
 - 將系統管理員權限授與 AD 中指定安全性群組的成員。
 - 透過將裝置的 BitLocker 修復金鑰儲存在 AD 中的電腦物件底下來備份它。 請參閱[儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)來取得詳細資料。
 - 透過網域控制站同步處理系統時鐘以進行加密通訊
@@ -59,27 +58,29 @@ Surface Hub不支援從網域控制站申請群組原則或憑證。
 > [!NOTE]
 > 如果您的 Surface Hub 失去網域的信任 (例如，如果您在 Surface Hub 加入網域之後，將它從網域移除)，您將無法在裝置中進行驗證並開啟 \[設定\]。 如果您決定移除 Surface Hub 與您網域的信任關係，請先[重設裝置](device-reset-surface-hub.md)。
 
+### <a name="azure-ad-join-the-device"></a>Azure AD裝置
 
-### <a name="azure-ad-join-the-device"></a>Azure AD 加入裝置
-
-您可以Azure Active Directory (Azure AD) 加入 Surface Hub，以允許 Azure AD 租使用者中的 IT 專業人員設定設定。 在初次執行時，請選擇使用 [Microsoft Azure Active Directory](first-run-program-surface-hub.md#microsoft-azure-active-directory)。 您需要提供能夠加入您選擇之 Azure AD 租用戶的認證。 成功加入 Azure AD 之後，適當的人員將會在裝置上獲得系統管理員權限。
+您可以Azure Active Directory (Azure AD) 加入Surface Hub，以允許來自您租使用者Azure AD IT 專業人員設定設定。 在初次執行時，請選擇使用 [Microsoft Azure Active Directory](first-run-program-surface-hub.md#microsoft-azure-active-directory)。 您需要提供能夠加入您選擇之 Azure AD 租用戶的認證。 成功加入 Azure AD 之後，適當的人員將會在裝置上獲得系統管理員權限。
 
 根據預設，所有的**全域系統管理員**都會在加入 Azure AD 的 Surface Hub 上獲得系統管理員權限。 透過 **Azure AD Premium** 或 **Enterprise Mobility Suite (EMS)**，您將可以新增額外的系統管理員：
-1.  在 [Azure 傳統入口網站](https://manage.windowsazure.com/)中，按一下 **Active Directory**，然後按一下您組織目錄的名稱。
-2.  在 **\[設定\]** 頁面上，於 **\[裝置\]**  >  **\[加入 Azure AD 之裝置的其他系統管理員\]** 底下，按一下 **\[已選取\]**。
-3.  按一下 **\[新增\]**，然後選取您想要在 Surface Hub 和其他加入 Azure AD 的裝置上新增為系統管理員的使用者。
-4.  當您完成之後，請按一下核取記號以儲存變更。
+
+1. 在 [Azure 傳統入口網站](https://portal.azure.com/)中，按一下 **Active Directory**，然後按一下您組織目錄的名稱。
+2. 在 **\[設定\]** 頁面上，於 **\[裝置\]**  >  **\[加入 Azure AD 之裝置的其他系統管理員\]** 底下，按一下 **\[已選取\]**。
+3. 按一下 **\[新增\]**，然後選取您想要在 Surface Hub 和其他加入 Azure AD 的裝置上新增為系統管理員的使用者。
+4. 當您完成之後，請按一下核取記號以儲存變更。
 
 #### <a name="what-happens-when-you-azure-ad-join-your-surface-hub"></a>當您將 Surface Hub 加入 Azure AD 時會發生什麼事？
+
 Surface Hub 會透過加入 Azure AD 來：
+
 - 將系統管理員權限授與 Azure AD 租用戶中適當的使用者。
 - 透過將裝置的 BitLocker 修復金鑰儲存在用來將裝置加入 Azure AD 的帳戶底下來備份它。 請參閱[儲存您的 BitLocker 金鑰](save-bitlocker-key-surface-hub.md)來取得詳細資料。
 
 #### <a name="automatic-enrollment-via-azure-active-directory-join"></a>透過加入Azure Active Directory註冊
 
-Surface Hub現在支援加入裝置以自動註冊 Intune Azure Active Directory。 
+Surface Hub現在支援加入裝置以自動註冊 Intune Azure Active Directory。
 
-若要詳細資訊，請參閱[啟用自動Windows 10註冊。](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+詳細資訊，請參閱啟用[自動Windows 10功能](/intune/windows-enroll#enable-windows-10-automatic-enrollment)。
 
 #### <a name="which-should-i-choose"></a>我應該選擇哪一個？
 
@@ -92,7 +93,6 @@ Surface Hub現在支援加入裝置以自動註冊 Intune Azure Active Directory
 | Azure Active Directory (Azure AD) 加入裝置 | 您的組織使用 Azure AD Basic   | 僅限全域系統管理員 |
 | &nbsp;                                            | 您的組織使用 Azure AD Premium 或 Enterprise Mobility Suite (EMS) | 全域系統管理員及額外的系統管理員 |
 
+### <a name="configure-non-global-admin-accounts-on-azure-ad-joined-devices"></a>在已加入的裝置Azure AD全域系統管理員帳戶
 
-### <a name="configure-non-global-admin-accounts-on-azure-ad-joined-devices"></a>在 Azure AD 加入的裝置上設定非全域系統管理員帳戶
-
-針對 Surface Hub v1 和 Surface Hub 2S 裝置加入 Azure AD，Windows 10 團隊版 2020 Update 可讓您將系統管理許可權限制為 Surface Hub 上的 設定 應用程式管理。 這可讓您只將系統管理員許可權範圍Surface Hub，並防止可能不需要的系統管理員存取整個 Azure AD 網域。 若要深入瞭解，請參閱在 Surface Hub[上設定非全域Surface Hub。](surface-hub-2s-nonglobal-admin.md)
+針對 Surface Hub v1 和 Surface Hub 2S 裝置加入 Azure AD，Windows 10 團隊版 2020 Update 可讓您將系統管理許可權限制為 設定 app Surface Hub。 這可讓您只將系統管理員許可權範圍Surface Hub，並防止可能不需要的系統管理員存取整個Azure AD網域。 若要深入瞭解，請參閱在 Surface Hub[上設定非全域Surface Hub。](surface-hub-2s-nonglobal-admin.md)
