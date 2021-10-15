@@ -11,20 +11,20 @@ ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 57fd7ea11e19902d2a94c1be998052739875afaf
-ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
+ms.openlocfilehash: 3bc5d7e26d565ca26ec23eefaee406c47eac395e
+ms.sourcegitcommit: 2493c83b1b3cb28b0836926cd406d4b28cd6abfa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "12089295"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "12094456"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>作業系統基本資訊 (Surface Hub)
 
 Surface Hub 作業系統 Windows 10 團隊版是以 Windows 10 企業版為基礎，針對企業管理、安全性及其他功能提供豐富支援。 但是，它們之間有重要差異。 企業版是針對電腦設計，Windows 10 團隊版則是針對大型螢幕和會議室從頭開始設計。 當您評估 Surface Hub 的安全性和管理需求時，最好是將它視為新的作業系統。 本文的設計是為協助凸顯 Surface Hub 上的 Windows 10 團隊版和 Windows 10 企業版的主要差異，以及這些差異對您的組織有哪些意義。
 
-從 2020 年 9 月開始，客戶可以選擇在 2S Windows 10 專業版 Enterprise移Surface Hub移。 若要深入了解，請參閱下列主題：
+從 2020 年 9 月開始，客戶可選擇在 2S Windows 10 專業版 Enterprise移Surface Hub移。 若要深入了解，請參閱下列主題：
 
-- [于 2 日宣佈Windows 10 專業版 Enterprise Surface Hub可用](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
+- [于 2 Windows 10 專業版 Enterprise 宣佈Surface Hub可用](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
 
 - [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
 
@@ -119,7 +119,7 @@ Surface Hub 會實作這些 Windows 10 安全性功能：
 - [Windows Defender 應用程式控制和虛擬式程式碼完整性保護](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [使用 AppLocker 的應用程式限制原則](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 - [BitLocker 磁碟機加密](/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [信任的平臺模組 (TPM) ] (/security/information-protection/tpm/trusted-platform-module-overview
+- [信賴平台模組 (TPM)](/security/information-protection/tpm/trusted-platform-module-overview)
 - [Microsoft Defender 防毒軟體 Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 - 用於存取設定應用程式的[使用者帳戶控制 (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview)
 
@@ -151,7 +151,7 @@ Surface Hub 不支援 Windows 10 企業版中的管理功能，例如 Microsoft 
 
 ### <a name="remote-management-and-monitoring"></a>遠端管理及監視工具
 
-Surface Hub透過行動裝置管理與 MDM (管理) 管理，例如透過[Azure Monitor](/azure/azure-monitor/)Microsoft Intune監控[](/mem/intune/)。 
+Surface Hub透過行動裝置管理與 MDM (管理) 管理，例如透過[Azure Monitor](/azure/azure-monitor/) [](/mem/intune/) Microsoft Intune監控。 
 
 *這可能會影響下列組織原則：* 
 
@@ -181,7 +181,7 @@ Surface Hub 主要使用網域加入和 Azure AD 加入來提供由目錄支援�
 
 *這可能會影響下列組織原則：* 
 
-- 當系統加入網域時，Surface Hub群組原則設定。 與網域成員資格相關的原則設定不適用於Surface Hub。
+- 加入網域時，不會Surface Hub群組原則設定。 與網域成員資格相關的原則設定不適用於Surface Hub。
 
 ### <a name="accessing-domain-resources"></a>評估網域資源
 
