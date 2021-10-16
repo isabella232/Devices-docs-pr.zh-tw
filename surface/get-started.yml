@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 60a0956cf83b466587197ca401dc41b95952be03
-  ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
+  ms.openlocfilehash: 1d46bea76ffb0641aeee1c51f88dcbb1ff2d56bf
+  ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "12037137"
+  ms.lasthandoff: 10/16/2021
+  ms.locfileid: "12096441"
 landingContent:
 - title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 哪些 Surface 裝置可以升級至 Windows 11？
+      url: https://support.microsoft.com/surface/which-surface-devices-can-be-upgraded-to-windows-11-76c3c125-82e0-4d1e-9550-12ed09f9058e
     - text: Surface 作業系統選項
       url: surface-os-choice.md
     - text: 商務用 Surface Pro 8
@@ -40,10 +42,10 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Laptop 4 處理器技術概觀
+    - text: Surface Laptop Studio 圖形概觀
+      url: surface-laptop-studio-graphics.md
+    - text: Surface Laptop 4 個處理器概觀
       url: surface-laptop-processors.md
-    - text: Surface Headphones 2+ 技術概觀
-      url: surface-headphones.md
     - text: Surface 上的 Azure 虛擬桌面
       url: windows-virtual-desktop-surface.md
     - text: Surface 的遠端工作解決方案
@@ -56,7 +58,7 @@ landingContent:
       url: https://youtu.be/WQ-wg8fRzN0
     - text: Surface Pro遠端Windows ARM 上的 X 和
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Microsoft 的Endpoint Protection至雲端新式電腦
+    - text: Surface Security – Microsoft 的Endpoint Protection雲端新式解決方案
       url: https://youtu.be/uadAecDbqf4
 - title: 部署 Surface 裝置
   linkLists:
@@ -88,6 +90,8 @@ landingContent:
       url: support-solutions-surface.md
     - text: 適用於 Windows 型裝置的 Surface 驅動程式與韌體生命週期
       url: surface-driver-firmware-lifecycle-support.md
+    - text: Surface 支援的作業系統
+      url: https://support.microsoft.com/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1
 - title: 探索安全性指導
   linkLists:
   - linkListType: how-to-guide

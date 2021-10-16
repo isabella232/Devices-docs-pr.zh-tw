@@ -8,6 +8,8 @@
       items:
         - name: 技術概觀
           items:
+            - name: Surface 作業系統選項
+              href: surface-os-choice.md
             - name: Surface 安全性概觀
               href: surface-security.md
             - name: Surface 上的 Azure 虛擬桌面
