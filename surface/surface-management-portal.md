@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/28/2021
+ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: bba49151973423d269dfdcf8eb5039ed5e39787f
-ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
+ms.openlocfilehash: f3fcc6ddcda0cf8016e1ba9383da2b5be511c0f1
+ms.sourcegitcommit: 714a56ede92eb6b16878aef8fdf94f9d2bda7204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12154169"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "12154375"
 ---
 # <a name="surface-management-portal-overview"></a>Surface Management Portal 概觀
 
@@ -31,9 +31,11 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 
 當您的 Surface 裝置註冊雲端管理，且使用者第一次登入時，這些 Surface 裝置的資訊會自動進入 Surface 管理入口網站，為您提供適用于 Surface 特定裝置系統管理員活動的單一窗格。
 
+另請參閱： [下列已知](#known-issues) 問題。 
+
 ## <a name="get-started"></a>開始使用
 
-請登錄至 Microsoft 端點管理員，按一下 [**所有服務**，然後按一下**Surface Management Portal**。
+請Microsoft 端點管理員，按一下 [所有**服務**，然後按一下 Surface Management **Portal**。
 
 :::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="啟動 Surface 管理入口網站":::
 
@@ -41,7 +43,7 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 
 選取 **監視器** 以顯示所有 Surface 裝置的資訊，包括：
 
-- 裝置不符合規範，這表示使用者無法存取需要登入Azure AD的資訊。
+- 裝置不符合規範，這表示使用者無法存取需要登入Azure AD資訊。
 - 未註冊的裝置。
 - 磁片上可用儲存空間極低的裝置，這是潛在使用者體驗問題的主要指示器。
 - 需要更新的裝置。
@@ -70,6 +72,10 @@ Surface 管理入口網站提供支援活動的完整可見度，以及每個要
 ## <a name="try-for-free"></a>免費試用
 
 Surface 管理入口網站適用于透過 Intune Microsoft 端點管理員註冊 Surface 裝置的客戶。 如果您是 Intune 的新使用者，請流覽快速入門來立即設定您的 Intune 租使用者[：免費試用 Microsoft Intune。](/mem/intune/fundamentals/free-trial-sign-up)
+
+## <a name="known-issues"></a>已知問題
+
+- 入口網站可能無法正確載入少數租使用者。 Surface 工程正在積極調查此問題。 *2021 年 11 月 2 日。*
 
 ## <a name="learn-more"></a>深入了解
 
