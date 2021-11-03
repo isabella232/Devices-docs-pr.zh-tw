@@ -12,16 +12,16 @@ ms.date: 10/04/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: d5c7690cd90427bb7a9a6b2b452e527aa1b608dd
-ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
+ms.openlocfilehash: 65734833bf396bbc163bff163b70ba3e226fc95a
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "12068444"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12153958"
 ---
 # <a name="surface-laptop-studio-graphics-overview"></a>Surface Laptop Studio 圖形概觀
 
-Surface LaptopStudio 將完全現代化的計算和圖形功能整合成全新的多功能表單要素。 由四核第 11 代 Intel® Core™ i7 和 NVIDIA® RTX™ A2000 或 NVIDIA® GeForce RTX ™ 3050 Ti 所帶領，Surface Laptop Studio 提供架構、工程師、資料專家和創意專業人員的計算能力，以發揮最佳工作。
+Surface LaptopStudio 將完全現代化的計算和圖形功能整合成全新的多功能表單要素。 由四核第 11 代 Intel® Core™ i7 和 NVIDIA® RTX™ A2000 或 NVIDIA ® GeForce RTX ™ 3050 Ti 所帶領，Surface Laptop Studio 提供架構、工程師、資料專家和創意專業人員的計算能力，以發揮最佳工作。
  
 在 Studio 模型中，Surface Laptop GPU 組式是一個顯著的差異。 核心 i5 裝置外的所有裝置都採用離散 NVIDIA RTX GPU，支援硬體加速光線追蹤、AI 和影片。 設計也會針對行動表單因素優化能源使用效率。 NVIDIA GPU 的型號是 NVIDIA Studio 產品計畫的一部分，受益于熱門創意 App 中的 RTX 加速、可靠的 NVIDIA Studio 驅動程式，以及存取獨家 NVIDIA 應用程式 ，例如畫布或廣播。 光線追蹤是一項計算密集技術，可模擬光的物理行為，以在電腦產生的場景中達到更大的真實感。 它同時用於遊戲和 3D 呈現。 NVIDIA RTX 也提供深度學習超 (DLSS) ，這是一種可提升框架速率的 AI 技術。
  
@@ -33,15 +33,15 @@ Surface LaptopStudio 將完全現代化的計算和圖形功能整合成全新�
 
 ### <a name="intel-iris-xe-graphics"></a>Intel Iris™ Xe 圖形
 
-整合式 GPU (iGPU) Surface Laptop Studio 是在大多數型號上安裝的次要 GPU，Intel Iris™ Xe 圖形功能是核心 i5 模型中的單一 GPU。 它支援更豐富的遊戲體驗，並提升設計師和創作者的速度。 Intel Iris Xe 具有進一步的圖形功能和 AI 增強體驗，可讓消費者、愛好者和線上創作者執行最新的生產力軟體 ，例如 Adobe Creative Cloud，或在 1080p 中享受遊戲標題。 此外，它也會將支援的顯示數量從 3 增加為總計 4。 這可讓客戶在內部顯示器旁邊使用最多三個外部顯示器，或一次使用四個外部顯示器 ，適用于整合式 GPU 和離散式 GPU 模型。[[1]](#references)
+整合式 GPU (iGPU) Surface Laptop Studio 是在大多數型號上安裝的次要 GPU，Intel Iris™ Xe Graphics 功能是 Core i5 模型中的單一 GPU。 它支援更豐富的遊戲體驗，並提升設計師和創作者的速度。 Intel Iris Xe 具有進一步的圖形功能和 AI 增強體驗，可讓消費者、愛好者和線上創作者執行最新的生產力軟體 ，例如 Adobe Creative Cloud，或在 1080p 中享受遊戲標題。 此外，它也會將支援的顯示數量從三個增加為四個。 現在，您可以在內部顯示器旁邊使用最多三個外部顯示器，或一次使用四個外部顯示器 ，適用于整合式 GPU 和離散式 GPU 模型。[[1]](#references)
 
 ### <a name="comparing-discrete-gpus"></a>比較離散式 US
 
 NVIDIA GeForce RTX 30 系列和 RTX 專業 GPU 除了許多其他創意工作之外，也提供遊戲、3D 呈現、視像編輯、圖形設計及 AI 加速工作流程的大幅加速。 這要感謝最新的 NVIDIA Ampere 架構：
 
-- 第 2 代 RT Cores 和 DLSS，在最佳呈現器中提供高達 2 倍的提升效果，包括混合器週期、混色 V-Ray 和 Autodesk Arnold
+- 第 2 代 RT Cores 和 DLSS，提供最多 2 倍的頂級呈現器，包括混合式迴圈、混色 V-Ray 和 Autodesk Arnold 的提升效果。
 - 加速 AI 功能的第三代 Tensor Cores。 Tensor Cores 也提供 AI 至圖形的功能，例如 DLSS、AI 解說功能，以及針對選取應用程式增強的編輯功能。
-- 最佳影片編碼器 (NVENC) ，以及光線追蹤動作模糊的新硬體加速，這是生產呈現中常用的技術，現在可提升多達 5 倍
+- 最佳影片編碼器 (NVENC) 和光線追蹤動作模糊的新硬體加速功能 ，這是生產呈現中常用的技術，現在可提升多達 5 倍。
 
 ### <a name="nvidia-geforce-rtx-3050-ti-laptop-gpu"></a>NVIDIA GeForce RTX 3050 Ti Laptop GPU
 
@@ -49,10 +49,10 @@ GeForce RTX 3050 Ti Laptop GPU 是一款適合遊戲玩家和內容創作者的 
  
 GeForce RTX 3050 Ti 啟用：
 
-- 由於專用的硬體編碼器、增強的 AI 功能，以及 Adobe Premiere、DaVinci Resolve 或 OBS 等 App 中的應用程式加速® Pro影片編輯和即時流加速。
+- 由於專用的硬體編碼器、增強的 AI 功能，以及 Adobe Premiere、DaVinci Resolve 或 OBS 等 App 中的應用程式加速® Pro影片編輯和即時流處理加速。
 - 圖形設計與攝影，在 Adobe Lightroom 或 Photoshop 等 App 中提供 AI 加速功能。
 - 由於 RtX 和 DLSS 在 Blender 或 Autodesk、Maya 等應用程式中的加速處理® 3D 呈現。 
-- 由於 DLSS 以及 NVIDIA 反射的超低延遲，使用 RTX 圖形和高性能的下一代遊戲。
+- 由於 DLSS 和 NVIDIA 反射的超低延遲，使用 RTX 圖形和高性能的下一代遊戲。
 
 ### <a name="nvidia-rtx-a2000-laptop-gpu"></a>NVIDIA RTX A2000 膝上型電腦 GPU
 
@@ -97,5 +97,5 @@ NVIDIA RTX A2000 建立在 GeForce RTX 3050 Ti 功能上，具有下列其他功
  
 ### <a name="references"></a>參考
 
-1. 受限於顯示連接的限制。 USB-C 上的 DisplayPort 1.4a 允許 4K 顯示，最多顯示下列組式：120Hz 時顯示 1x 4K;60Hz 時 2x 4K;60Hz 時 1x 4K + 30Hz 時 2x 4K;30Hz 時 4x 4K。 超過兩個顯示器的顯示配置需要支援 Daisy 連結或顯示配接器，並且支援多個顯示器。
+1. 受限於顯示連接的限制。 USB-C 上的 DisplayPort 1.4a 允許 4K 顯示，最多顯示下列組式：120Hz 時顯示 1x 4K;60Hz 時 2x 4K;60Hz 時 1x 4K + 30Hz 時 2x 4K;30Hz 時 4x 4K。 超過兩個顯示器的顯示配置需要支援 Daisy 鏈式或顯示介面卡，並且支援多個顯示器。
 

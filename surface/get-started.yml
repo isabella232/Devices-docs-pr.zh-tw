@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 1d46bea76ffb0641aeee1c51f88dcbb1ff2d56bf
-  ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
+  ms.openlocfilehash: fc17b15599fa158a7413c7cf281eb8713b2f46c1
+  ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/16/2021
-  ms.locfileid: "12096441"
+  ms.lasthandoff: 11/02/2021
+  ms.locfileid: "12153948"
 landingContent:
 - title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface 管理入口網站
+      url: surface-management-portal.md
     - text: 哪些 Surface 裝置可以升級至 Windows 11？
       url: https://support.microsoft.com/surface/which-surface-devices-can-be-upgraded-to-windows-11-76c3c125-82e0-4d1e-9550-12ed09f9058e
     - text: Surface 作業系統選項
@@ -38,7 +40,7 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: 探索所有 Surface 系列產品
       url: https://www.microsoft.com/surface/business
-- title: 入門
+- title: 開始使用
   linkLists:
   - linkListType: get-started
     links:
@@ -48,7 +50,7 @@ landingContent:
       url: surface-laptop-processors.md
     - text: Surface 上的 Azure 虛擬桌面
       url: windows-virtual-desktop-surface.md
-    - text: Surface 的遠端工作解決方案
+    - text: 使用 Surface 的遠端工作解決方案
       url: https://www.microsoft.com/surface/business/remote-work-solutions
 - title: Microsoft Ignite
   linkLists:
