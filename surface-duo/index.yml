@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: medium
-  ms.openlocfilehash: b3e289a93c564e59aa459d5dd452bb104dacef60
-  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
+  ms.openlocfilehash: 43f731d482251e4e23e4b3b93a65c687bd5d3553
+  ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "11328167"
+  ms.lasthandoff: 11/02/2021
+  ms.locfileid: "12153908"
 landingContent:
 - title: 新功能
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 商務用 Surface Duo 2
+      url: https://www.microsoft.com/surface/business/surface-duo-2
     - text: 適用於 Surface Duo 的 Fluent UI 架構
       url: https://devblogs.microsoft.com/surface-duo/fluent-ui-android-dual-screen
     - text: 將 Android 企業版專用裝置註冊為 Azure AD 共用裝置模式

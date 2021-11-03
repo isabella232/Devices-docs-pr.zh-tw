@@ -56,6 +56,12 @@
           href: surface-system-sku-reference.md
     - name: 部署與管理
       items:
+        - name: Surface 管理入口網站
+          items:
+            - name: Surface 管理入口網站概觀
+              href: surface-management-portal.md
+            - name: 什麼是 Surface 管理入口網站?
+              href: /mem/intune/fundamentals/surface-management-portal
         - name: Windows Autopilot
           items:
             - name: Windows Autopilot 與 Surface 裝置
@@ -94,7 +100,7 @@
               items:
                 - name: 在桌面模式中使用商務用 Surface 診斷工具組
                   href: surface-diagnostic-toolkit-desktop-mode.md
-                - name: 使用命令執行商務用 Surface 診斷工具組
+                - name: 使用商務用 Surface 診斷工具組執行命令列應用程式主控台
                   href: surface-diagnostic-toolkit-command-line.md
             - name: Surface Data Eraser
               href: microsoft-surface-data-eraser.md
@@ -172,6 +178,8 @@
           href: contact-surface-support.md
     - name: 保固與服務
       items:
+        - name: 適用於 Windows 型裝置的 Surface 驅動程式與韌體生命週期
+          href: surface-driver-firmware-lifecycle-support.md
         - name: 商務用 Surface 保固與保護方案
           href: 'https://www.microsoft.com/surface/business/warranty-service-offerings-and-support'
         - name: 條款與條件
