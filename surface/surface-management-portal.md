@@ -12,14 +12,14 @@ ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: f3fcc6ddcda0cf8016e1ba9383da2b5be511c0f1
-ms.sourcegitcommit: 714a56ede92eb6b16878aef8fdf94f9d2bda7204
+ms.openlocfilehash: a131e663aadbd10be039cff777001383178f7fc1
+ms.sourcegitcommit: 16889d72b0af81dfe79267c41574c3774e81f178
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "12154375"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155171"
 ---
-# <a name="surface-management-portal-overview"></a>Surface Management Portal 概觀
+# <a name="surface-management-portal-overview"></a>Surface 管理入口網站概觀
 
 全新 Surface Microsoft 端點管理員入口網站內建，提供集中式解決方案，可大規模自助、管理及監控 Surface 裝置。
 
@@ -35,15 +35,15 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 
 ## <a name="get-started"></a>開始使用
 
-請Microsoft 端點管理員，按一下 [所有**服務**，然後按一下 Surface Management **Portal**。
+請登錄至 Microsoft 端點管理員，按一下 [**所有服務**，然後按一下**Surface Management Portal**。
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="啟動 Surface 管理入口網站":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="啟動 Surface 管理入口網站":::
 
 ## <a name="monitor-surface-devices"></a>監控 Surface 裝置
 
 選取 **監視器** 以顯示所有 Surface 裝置的資訊，包括：
 
-- 裝置不符合規範，這表示使用者無法存取需要登入Azure AD資訊。
+- 裝置不符合規範，這表示使用者無法存取需要登入Azure AD的資訊。
 - 未註冊的裝置。
 - 磁片上可用儲存空間極低的裝置，這是潛在使用者體驗問題的主要指示器。
 - 需要更新的裝置。
@@ -52,7 +52,7 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 
 選取 **查看報表** 以查看每個深入資訊類別的詳細資訊，提供您可以自訂和匯出的診斷資訊。
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="取得 Surface 裝置深入資訊及查看報告":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="取得 Surface 裝置深入資訊及查看報告":::
 
 ## <a name="device-warranty-and-coverage"></a>裝置保固與保固
 
@@ -67,7 +67,7 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 
 Surface 管理入口網站提供支援活動的完整可見度，以及每個要求的狀態。
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-support.png" alt-text="取得支援活動相關資訊，以及每個要求的狀態。":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-support.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-support.png" alt-text="取得支援活動相關資訊，以及每個要求的狀態。":::
 
 ## <a name="try-for-free"></a>免費試用
 
@@ -75,7 +75,7 @@ Surface 管理入口網站適用于透過 Intune Microsoft 端點管理員註冊
 
 ## <a name="known-issues"></a>已知問題
 
-- 入口網站可能無法正確載入少數租使用者。 Surface 工程正在積極調查此問題。 *2021 年 11 月 2 日。*
+- 已解決：已修正少數租使用者無法正確載入入口網站的問題。  (2021 年 11 月 3 日) 。
 
 ## <a name="learn-more"></a>深入了解
 
