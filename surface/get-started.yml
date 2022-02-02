@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: fc17b15599fa158a7413c7cf281eb8713b2f46c1
-  ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
+  ms.openlocfilehash: 1c94a581e3f5cbf91687f7833d6ee405aedf87c0
+  ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/02/2021
-  ms.locfileid: "12153948"
+  ms.lasthandoff: 02/02/2022
+  ms.locfileid: "12338126"
 landingContent:
 - title: Surface 裝置
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 概觀Surface Laptop SE簡介
+      url: surface-laptop-se-overview.md
     - text: Surface 管理入口網站
       url: surface-management-portal.md
     - text: 哪些 Surface 裝置可以升級至 Windows 11？
@@ -36,8 +38,6 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-laptop-studio
     - text: 商務用 Surface Go 3
       url: https://www.microsoft.com/surface/business/surface-go-3
-    - text: Surface Laptop商務用
-      url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: 探索所有 Surface 系列產品
       url: https://www.microsoft.com/surface/business
 - title: 開始使用
@@ -50,7 +50,7 @@ landingContent:
       url: surface-laptop-processors.md
     - text: Surface 上的 Azure 虛擬桌面
       url: windows-virtual-desktop-surface.md
-    - text: 使用 Surface 的遠端工作解決方案
+    - text: Surface 的遠端工作解決方案
       url: https://www.microsoft.com/surface/business/remote-work-solutions
 - title: Microsoft Ignite
   linkLists:
@@ -70,7 +70,7 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: 適用於 Windows Autopilot 的 Surface 註冊支援
       url: surface-autopilot-registration-support.md
-    - text: Surface 部署快速鍵工具
+    - text: Surface 部署加速器
       url: microsoft-surface-deployment-accelerator.md
 - title: 管理 Surface 裝置
   linkLists:

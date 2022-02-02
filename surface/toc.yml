@@ -8,6 +8,8 @@
       items:
         - name: 技術概觀
           items:
+            - name: Surface Laptop SE 概觀
+              href: surface-laptop-se-overview.md
             - name: Surface 作業系統選項
               href: surface-os-choice.md
             - name: Surface 安全性概觀
@@ -22,6 +24,8 @@
           items:
             - name: Surface Laptop Studio 圖形概觀
               href: surface-laptop-studio-graphics.md
+            - name: Surface Laptop Studio ISV 測試/認證應用程式
+              href: surface-laptop-studio-isv-certification.md
             - name: Surface Book 3 技術概觀
               href: surface-book-GPU-overview.md
             - name: Surface Book 3 Quadro RTX 3000 技術概觀
@@ -44,7 +48,9 @@
               href: 'https://www.microsoft.com/surface/business/surface-laptop-go'
             - name: 商務用 Surface Studio 2
               href: 'https://www.microsoft.com/surface/business/surface-studio-2'
-    - name: 方案
+            - name: 教育版 Surface Laptop SE
+              href: 'https://www.microsoft.com/surface/business/surface-laptop-se'
+    - name: 規劃
       items:
         - name: Surface 裝置與 Windows 10 長期維護分支的相容性
           href: surface-device-compatibility-with-windows-10-ltsc.md
@@ -56,6 +62,8 @@
           href: surface-system-sku-reference.md
     - name: 部署與管理
       items:
+        - name: Surface 支援的作業系統
+          href: 'https://support.microsoft.com/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1'
         - name: Surface 管理入口網站
           items:
             - name: Surface 管理入口網站概觀
@@ -74,7 +82,7 @@
           items:
             - name: Surface 部署加速器
               href: microsoft-surface-deployment-accelerator.md
-            - name: 使用 MDT 將 Windows 10 部署到 Surface 裝置
+            - name: 使用 MDT 準備 Surface 部署
               href: deploy-windows-10-to-surface-devices-with-mdt.md
             - name: 進行 MDT 部署時啟用 Surface Laptop 鍵盤
               href: enable-surface-keyboard-for-windows-pe-deployment.md
@@ -150,7 +158,9 @@
               href: wake-on-power-for-surface.md
         - name: 最佳做法
           items:
-            - name: 最佳化 Surface 裝置的 Wi-Fi 連線能力
+            - name: 最佳化 Surface 裝置上的視訊會議
+              href: optimize-video-conferencing-on-surface.md
+            - name: 最佳化 Surface 裝置上的 Wi-Fi 連線能力
               href: surface-wireless-connect.md
             - name: 適用於 Surface 裝置的最佳電源設定
               href: maintain-optimal-power-settings-on-Surface-devices.md
@@ -166,6 +176,10 @@
               href: surface-pro-arm-app-management.md
             - name: Surface Pro X 應用程式相容性
               href: surface-pro-arm-app-performance.md
+        - name: 配件
+          items:
+            - name: Surface Slim Pen 2 觸覺技術開發筆記
+              href: surface-slim-pen2-haptics-dev-notes.md
     - name: 疑難排解
       items:
         - name: Surface 裝置的最佳支援解決方案

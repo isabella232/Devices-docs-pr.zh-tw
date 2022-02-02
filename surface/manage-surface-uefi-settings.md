@@ -12,13 +12,13 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 04/13/2021
-ms.openlocfilehash: e21febfcbcbf139aea832c51e354759c0a49f896
-ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
+ms.date: 01/18/2022
+ms.openlocfilehash: 94e39a67ef80e4e95db3441778af915d2e535bab
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "11939534"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338160"
 ---
 # <a name="manage-surface-uefi-settings"></a>管理 Surface UEFI 設定
 
@@ -28,15 +28,20 @@ ms.locfileid: "11939534"
 
 下列支援 UEFI 管理：
 
-- Surface Pro 4，Surface Pro (第 5 代) ，Surface Pro 6，Surface Pro 7，Surface Pro 7+，Surface Pro X
-- Surface Laptop (第 1 代) ，Surface Laptop 2，Surface Laptop 3，Surface Laptop，Surface Laptop 4
+- Surface Pro 4、Surface Pro (第 5 代) 、Surface Pro 6、Surface Pro 7、Surface Pro 7+ (商業 SKUs 僅) 、Surface Pro 8 (商業 SKUS 僅) 、Surface Pro X
+- Surface Laptop (第 1 代) 、Surface Laptop 2、Surface Laptop 3 (Intel 處理器僅提供) 、Surface Laptop Go、Surface Laptop 4 (商務 SKus) ，Surface Laptop SE
 - Surface Studio (第 1 代) ，Surface Studio 2
-- Surface Book，Surface Book 2，Surface Book 3
-- Surface Go， Surface Go 2[ <sup> 1 </sup> ](#references)
+- Surface Book (代) 
+- Surface Laptop Studio (只供應商業 SKUs) 
+- Surface Go、Surface Go [21 <sup> </sup> ](#references)、Surface Go 3 (商務 SKUs) 
+
+>[!TIP]
+> 商業 SKUs (或 Surface 商務版) Windows 10 專業版/Enterprise 或 Windows 11 專業版/Enterprise;消費者 SKUs Windows 10/Windows 11 家用版。 若要深入瞭解，請參閱 [查看系統資訊](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00)。 
+
 
 ## <a name="support-for-cloud-based-management"></a>支援雲端管理
 
-有了裝置 (DFCI) 設定檔內建的 Microsoft Intune (現在可在公用預覽) 中使用，Surface UEFI 管理可將新式管理堆疊延伸至 UEFI 硬體層級。 DFCI 支援零接觸式設定、消除BIOS 密碼、提供安全性設定控制，包括開機選項和內建的周邊設備，以及為日後進一步的安全性案例打下基礎。 DFCI 目前適用于 Surface Pro 7+、Surface Laptop、Surface Book 3、Surface Laptop 3、Surface Pro 7 和 Surface Pro X。 詳情請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
+有了裝置 (DFCI) 設定檔內建的 Microsoft Intune (現在可在公用預覽) 中使用，Surface UEFI 管理可將新式管理堆疊延伸至 UEFI 硬體層級。 DFCI 支援零接觸式設定、消除BIOS 密碼、提供安全性設定控制，包括開機選項和內建的周邊設備，以及為日後進一步的安全性案例打下基礎。 DFCI 目前適用于 Surface Laptop SE、Surface Laptop Studio、Surface Pro 8、Surface Go 3、Surface Laptop 4、Surface Laptop Go、Surface Book 3、Surface Laptop 3、Surface Pro 7+、Surface Pro 7 和 Surface Pro X。  詳情請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
 
 ## <a name="open-surface-uefi-menu"></a>開啟 Surface UEFI 功能表
 
@@ -44,7 +49,7 @@ ms.locfileid: "11939534"
 
 1. 關閉 Surface 並等候約 10 秒，確定已關閉。
 2. 按住放大 **音量** 按鈕，並同步選取並放開 **Power 按鈕。**
-3. 當 Microsoft 或 Surface 標誌出現在您的螢幕上時，請**** 繼續按住放大按鈕，直到 UEFI 畫面出現。
+3. 當 Microsoft 或 Surface 標誌出現在您的螢幕上時，請繼續按住放大按鈕****，直到 UEFI 畫面出現。
 
 ## <a name="uefi-pc-information-page"></a>UEFI 電腦資訊頁面
 
@@ -88,9 +93,9 @@ ms.locfileid: "11939534"
 
 - 數字：1-0
 
-- 特殊字元：！@#$%^&* () ？<>{} []-_=+|.;：''
+- 特殊字元：！@#$%^&* () ？<>{} []-_=+|.，;：''
 
-密碼必須至少為 6 個字元，並會區分大小寫。
+密碼必須至少為六個字元且區分大小寫。
 
 ![新增密碼以保護 Surface UEFI 設定。](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
 
@@ -102,7 +107,7 @@ ms.locfileid: "11939534"
 
 *圖 4. 設定安全開機*
 
-視您的裝置不同，您也可以查看 TPM 是否已啟用或停用。 如果您沒看到啟用**TPM**設定，請在 Windows 開啟 tpm.msc 以檢查狀態，如圖 5 所示。 TPM 是用來以 BitLocker 為您裝置的資料驗證加密。 若要深入瞭解，請參閱 [BitLocker 概觀](/windows/security/information-protection/bitlocker/bitlocker-overview)。
+視您的裝置不同，您也可以查看 TPM 是否已啟用或停用。 如果您沒看到啟用**TPM**設定，請在 Windows 中開啟 tpm.msc 以檢查狀態，如圖 5 所示。 TPM 是用來以 BitLocker 為您裝置的資料驗證加密。 若要深入瞭解，請參閱 [BitLocker 概觀](/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
 ![TPM 主機。](images/manage-surface-uefi-fig5-a.png "TPM console")
 
@@ -126,7 +131,7 @@ ms.locfileid: "11939534"
 
 - 內建音訊 (擴音器和麥克風)
 
-每個裝置都列有滑杆按鈕，您可以移至啟用**** (的) 或關閉 (**** 已停用) 位置，如圖 6 所示。
+每個裝置都列出一個滑杆按鈕，您可以移至啟用**** 的 (或) 關閉 (已停用) 位置****，如圖 6 所示。
 
 :::image type="content" alt-text="啟用及停用特定裝置。" source="images/manage-surface-uefi-fig5a.png":::
 
@@ -134,7 +139,7 @@ ms.locfileid: "11939534"
 
 ## <a name="uefi-menu-boot-configuration"></a>UEFI 功能表：啟動組式
 
-啟動組組頁面可讓您變更啟動裝置的順序，以及啟用或停用下列裝置啟動：
+啟動組配置頁面可讓您變更啟動裝置的順序，以及啟用或停用下列裝置啟動：
 
 - Windows 開機管理程式
 
@@ -156,20 +161,20 @@ ms.locfileid: "11939534"
 
 ## <a name="uefi-menu-management"></a>UEFI 功能表：管理
 
-管理頁面可讓您管理零觸控 UEFI 管理和其他功能在合格裝置上的使用，包括 Surface Pro 7、Surface Pro X 和 Surface Laptop 3。  
+管理頁面可讓您管理零觸控 UEFI 管理和其他功能在合格裝置上的使用，包括 Surface Pro 8、Surface Go 3、Surface Laptop Studio、Surface Pro 7+、Surface Pro 7、Surface Pro X、Surface Laptop 4，Surface Laptop 3、Surface Laptop SE和 Surface Book 3。 
 
 :::image type="content" alt-text="管理零觸控 UEFI 管理和其他功能的存取權。" source="images/manage-surface-uefi-fig7a.png":::
 
 *圖 8. 管理零觸控 UEFI 管理和其他功能的存取權*
 
-零觸控 UEFI 管理可讓您在 Intune 中使用稱為 DFCI (裝置設定檔來遠端系統管理 UEFI) 。 如果您沒有設定此設定，使用 DFCI 管理合格裝置的能力會設定為 **Ready**。 若要防止 DFCI，請選取 **退出宣告**。
+零觸控 UEFI 管理可讓您在 Intune 中使用稱為 DFCI (裝置設定檔，以遠端系統管理 UEFI) 。 如果您沒有設定此設定，則使用 DFCI 管理合格裝置的能力會設定**為 Ready。** 若要防止 DFCI，請選取 **退出宣告**。
 
 > [!NOTE]
-> UEFI 管理設定頁面及 DFCI 的使用目前適用于 Surface Pro 7+、Surface Laptop Go、Surface Book 3、Surface Laptop 4、Surface Laptop 3、Surface Pro 7 和 Surface Pro X。若要深入瞭解，請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
+> UEFI 管理設定頁面及 DFCI 的使用目前適用于 Surface Laptop SE、Surface Laptop Studio、Surface Pro 8、Surface Go 3、Surface Laptop 4、Surface Laptop Go，Surface Book 3、Surface Laptop 3、Surface Pro 7+、Surface Pro 7 和 Surface Pro X。 若要深入瞭解，請參閱[Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
 
 ## <a name="uefi-menu-exit"></a>UEFI 功能表：離開
 
-使用離開**頁面上**的立即重新開機按鈕****，以退出 UEFI 設定，如圖 9 所示。
+使用**離開頁面上**的立即重新開機按鈕**** 來退出 UEFI 設定，如圖 9 所示。
 
 :::image type="content" alt-text="離開 Surface UEFI 並重新啟動裝置。" source="images/manage-surface-uefi-fig7.png":::
 
@@ -177,7 +182,7 @@ ms.locfileid: "11939534"
 
 ## <a name="surface-uefi-boot-screens"></a>Surface UEFI 開機畫面
 
-當您使用 Windows Update 或手動安裝更新 Surface 裝置韌體時，更新不會立即套用到裝置，而是在下一個重新開機循環期間套用。 您可以在管理及部署 Surface 驅動程式和固件更新中，進一步瞭解 Surface 固件 [更新程式](manage-surface-driver-and-firmware-updates.md)。 畫面上會顯示韌體更新進度，進度列會以不同的色彩來表示每個元件的韌體。 每個元件的進度列會顯示在圖 9 到 18 中。
+當您使用 Windows Update 或手動安裝更新 Surface 裝置韌體時，更新不會立即套用到裝置，而是在下一個重新開機循環期間套用。 您可以在管理及部署 Surface 驅動程式和固件更新中，進一步瞭解 [Surface 固件更新程式](manage-surface-driver-and-firmware-updates.md)。 畫面上會顯示韌體更新進度，進度列會以不同的色彩來表示每個元件的韌體。 每個元件的進度列會顯示在圖 9 到 18 中。
 
 ![Surface UEFI 的固件更新為藍色進度列。](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
 
@@ -195,7 +200,7 @@ ms.locfileid: "11939534"
 
 *圖 13. Intel Management Engine 韌體更新會顯示紅色進度列*
 
-![具有灰色進度列的 Surface Touch 固件。](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
+![具有灰色進度條的 Surface 觸控式固件。](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
 
 *圖 14. Surface 觸控韌體更新會顯示灰色進度列*
 
@@ -209,7 +214,7 @@ ms.locfileid: "11939534"
 
 ![具有灰色進度列的 Surface 軌跡板固件。](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
 
-*圖 17. Surface Trackpad 的固件更新會顯示粉紅色的進度列*
+*圖 17. Surface 軌跡板的固件更新會顯示粉紅色的進度列*
 
 ![具有淺灰色進度條的 Surface TCON 固件。](images/manage-surface-uefi-fig16.png "Surface TCON firmware with light gray progress bar")
 
@@ -228,7 +233,7 @@ ms.locfileid: "11939534"
 
 ## <a name="references"></a>參考
 
-1. Surface Go 和 Surface Go 2 使用協力廠商 UEFI，且不支援 DFCI。
+1. Surface Go 和 Surface Go 2 使用協力廠商 UEFI，且不支援 DFCI。 DFCI 目前適用于 Surface Laptop SE、Surface Laptop Studio、Surface Pro 8、Surface Go 3、Surface Laptop 4、Surface Laptop Go、Surface Book 3、Surface Laptop 3，Surface Pro 7+，Surface Pro 7，Surface Pro X。
 
 ## <a name="related-topics"></a>相關主題
 
