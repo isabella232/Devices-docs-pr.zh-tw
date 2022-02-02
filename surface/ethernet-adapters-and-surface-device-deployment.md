@@ -14,16 +14,16 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: 0eb0eb1e1d73852a2131c5aa5d6a7731ce78d54f
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
+ms.openlocfilehash: 39c51b311a1c1329d0f1f54b787e975d42be0737
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721253"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338212"
 ---
 # <a name="ethernet-adapters-and-surface-deployment"></a>乙太網路卡與 Surface 部署
 
-本文提供最新 Surface 裝置的網路部署指南，包括 Surface Pro 3 及更新版本。
+本文提供執行最新 Surface 裝置的網路部署指南，包括 Surface Pro 3 及更新版本。
 
 Surface 裝置的網路部署可能會對系統管理員造成一些特殊的挑戰。 因為缺少原生的有線乙太網路卡，系統管理員必須透過卸除式乙太網路卡來提供連線。
 
@@ -31,7 +31,7 @@ Surface 裝置的網路部署可能會對系統管理員造成一些特殊的挑
 
 您必須使用有線網路介面卡，才可以解決如何開機到部署環境，或您的部署解決方案要如何辨識裝置的問題。
 
-選擇乙太網路卡的主要考量，是該網路卡會如何從網路將您的 Surface 裝置開機。 如果您是使用 Windows 部署服務 (WDS) 預先暫存用戶端，或者如果您使用的是 Microsoft Endpoint Configuration Manager，您可能也會想要考慮可移除的乙太網路介面卡是否專屬於特定的 Surface 裝置，或在多個裝置之間共用。 有關共用介面卡的潛在衝突詳細資訊，請參閱本文稍後使用[](#manage-mac-addresses)可移除的乙太網路介面卡管理 MAC 位址。
+選擇乙太網路卡的主要考量，是該網路卡會如何從網路將您的 Surface 裝置開機。 如果您是使用 Windows 部署服務 (WDS) 預先暫存用戶端，或者如果您使用的是 Microsoft Endpoint Configuration Manager，您可能也會想要考慮可移除的乙太網路介面卡是否專屬於特定的 Surface 裝置，或在多個裝置之間共用。 有關共用配接器的潛在衝突詳細資訊，請參閱本文稍後使用可移除[](#manage-mac-addresses)的乙太網路介面卡管理 MAC 位址。
 
 只有使用乙太網路卡或 Microsoft 的擴充座時，才支援從網路開機 (PXE 開機)。 若要從網路開機，乙太網路卡或擴充座中的晶片必須能在 Surface 裝置的韌體中被偵測並設定為開機裝置。 Microsoft 乙太網路卡 (例如 Surface 乙太網路卡和 [Surface 擴充座](https://www.microsoft.com/surface/accessories/surface-dock)) 是使用與 Surface 韌體相容的晶片。
 
@@ -39,6 +39,7 @@ Surface 裝置的網路部署可能會對系統管理員造成一些特殊的挑
 
 - Surface USB-C 到乙太網路和 USB 3.0 介面卡
 - Surface USB 3.0 到 Gigabit 乙太網路介面卡
+- Surface USB-C 旅遊樞紐
 - Surface 擴充座
 - Surface Dock 2
 - Surface 3 擴充座
@@ -82,4 +83,4 @@ Surface 裝置的網路部署可能會對系統管理員造成一些特殊的挑
 
 當使用 WDS 部署時，只有在部署伺服器設為僅回應已知的前置階段用戶端時，才會使用 MAC 位址識別電腦。 當預先設置用戶端時，系統管理員會在 Active Directory 中建立電腦帳戶，並根據 MAC 位址或系統 UUID 定義該電腦。 若要避免共用乙太網路卡造成識別衝突，您應該使用[系統 UUID 來定義前置階段用戶端](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc742034(v=ws.11))。 或者，您可以設定 WDS 來回應不需要由 MAC 位址或系統 UUID 定義的未知用戶端，方法是選取 \[Windows 部署伺服器屬性\] 中 [\[PXE 回應\] 索引標籤](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732360(v=ws.11))上的 \[回應所有用戶端電腦 (已知及未知)\] 選項。************
 
-使用 Configuration Manager 共用乙太網路卡的衝突可能性會更高。 WDS 只有在設定為使用 MAC 位址來定義個別系統時才會這麼做，而 Configuration Manager 則無論是執行部署到新電腦或未知電腦，皆會使用 MAC 位址來定義個別的系統。 這會導致裝置設定錯誤，或甚至導致無法透過共用乙太網路卡部署多個系統。 針對此情況，有幾個可能的解決方案在如何使用同一個外部乙太網路介面卡用於多個 [SCCM OSD](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm/ba-p/257374)中，這是核心基礎結構和安全性部落格的部落格文章。
+使用 Configuration Manager 共用乙太網路卡的衝突可能性會更高。 WDS 只有在設定為使用 MAC 位址來定義個別系統時才會這麼做，而 Configuration Manager 則無論是執行部署到新電腦或未知電腦，皆會使用 MAC 位址來定義個別的系統。 這會導致裝置設定錯誤，或甚至導致無法透過共用乙太網路卡部署多個系統。 針對此情況，有幾個可能的解決方案在如何使用同一個外部乙太網路介面卡 [用於多個 SCCM OSD](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm/ba-p/257374)中，這是 Core 基礎結構和安全性部落格的部落格文章。

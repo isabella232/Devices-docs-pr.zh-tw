@@ -1,5 +1,5 @@
 ---
-title: 'Surface (設定) '
+title: 'Surface (電池限制) '
 description: 電池限制是 UEFI 設定，可變更 Surface 裝置電池的充電狀態，並延長電池的使用時間。
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 manager: laurawi
 audience: itpro
 ms.date: 1/15/2021
-ms.openlocfilehash: 52e43a1ac14f89f5671b6fad8fc2e1ef49480470
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: 9cf623a9a4b9d1a8d292cfa0cff25d2e57318db7
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911838"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338326"
 ---
 # <a name="battery-limit-setting"></a>電池限制設定
 
@@ -30,23 +30,33 @@ ms.locfileid: "11911838"
 
 ## <a name="supported-devices"></a>支援的裝置
 
-電池限制 UEFI 設定內建于最新的 Surface 裝置中，Surface Pro 7+、Surface Pro 7 和 Surface Laptop 3。 較早的裝置需要[Surface UEFI](manage-surface-driver-and-firmware-updates.md)Windows更新，透過更新或 Surface 支援網站的 MSI 驅動程式和[固件套件提供](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface)。 針對 [每個支援](https://support.microsoft.com/help/4464941) 裝置所需的特定 Surface UEFI 版本，針對必須插入很長一段時間的 Surface 裝置，檢查啟用「電池限制」。
+根據預設，Surface 裝置內建的電池限制 UEFI 設定包括： 
+
+- Surface Pro 7 及更高版本
+- Surface Laptop 3 及更高版本
+- Surface Book 3
+- Surface Laptop Studio
+- Surface Laptop Go
+- Surface Studio 2
+- Surface Laptop SE
+
+ 較早的裝置需要[Surface UEFI](manage-surface-driver-and-firmware-updates.md) Windows更新，或透過 Surface 支援網站的 MSI 驅動程式和[固件套件。](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface) 針對 [每個支援](https://support.microsoft.com/help/4464941) 裝置所需的特定 Surface UEFI 版本，針對必須插入很長一段時間的 Surface 裝置，檢查啟用「電池限制」。
 
 ## <a name="enabling-battery-limit-in-surface-uefi-surface-pro-4-and-later"></a>在 Surface UEFI 中啟用電池 (Surface Pro 4及) 
 
-Surface UEFI 電池限制設定可以在開啟裝置時啟動至 Surface UEFI (**Power +Vol Up** 來設定) 。 選擇 **啟動組**式，然後在進步 **選項**下，將 **啟用電池限制模式切換** 為 **開啟**。  
+Surface UEFI 電池限制設定可以在開啟裝置時啟動至 Surface UEFI (**Power +Vol Up** 來) 。 選擇 **啟動組**式，然後在進步 **選項**下，將 **啟用電池限制模式切換** 為 **開啟**。  
 
 ![電池限制進位選項。](images/enable-bl.png)
 
-## <a name="enabling-battery-limit-on-surface-go-and-surface-go-2"></a>啟用 Surface Go 和 Surface Go 2 上的電池限制
+## <a name="enabling-battery-limit-on-surface-go-all-generations"></a>在 Surface Go 上啟用電池 (所有代) 
 
-Surface 電池限制設定可以在開啟裝置時啟動至 Surface UEFI (**Power +Vol Up** 來) 。 選擇 **啟動設定**，然後在 Kiosk **模式**下，將滑杆移到右側，將電池限制設定為 **啟用**。  
+Surface 電池限制設定可設定為開啟裝置時， (**到** Surface UEFI) 。 選擇 **啟動設定**，然後在 Kiosk **模式**下，將滑杆移到右側，將電池限制設定為 **啟用**。  
 
 ![Surface Go 中的 Kiosk 模式電池限制。](images/go-batterylimit.png)
 
 ## <a name="enabling-battery-limit-in-surface-uefi-surface-pro-3"></a>在 Surface UEFI 中啟用電池 (Surface Pro 3) 
 
-Surface UEFI 電池限制設定可以在開啟裝置時啟動至 Surface UEFI (**Power +Vol Up** 來設定) 。 選擇 **Kiosk 模式**，選取 **電池限制**，然後選擇 **啟用**。
+Surface UEFI 電池限制設定可以在開啟裝置時啟動至 Surface UEFI (**Power +Vol Up** 來) 。 選擇**Kiosk 模式**，選取**電池限制**，**然後選擇啟用。**
 
 ![進位選項的螢幕擷取畫面。](images/enable-bl-sp3.png)
 
@@ -62,7 +72,7 @@ Surface UEFI 電池限制也可透過下列方法進行組組：
 
 ### <a name="using-microsoft-surface-uefi-configurator"></a>使用 Microsoft Surface UEFI Configurator
 
-若要設定電池限制模式，請設定**** SEMM 設定**** 中進 (Surface Pro 4及) 。
+若要設定電池限制模式，請設定**** SEMM 中進**設定設定頁面上**的 Kiosk Overrides 設定 (Surface Pro 4及) 。
 
 ![進位設定螢幕擷取畫面。](images/semm-bl.png)
 

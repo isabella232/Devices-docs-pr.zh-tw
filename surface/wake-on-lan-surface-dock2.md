@@ -13,13 +13,13 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 7/30/2021
-ms.openlocfilehash: 84a87342891dac2e4c0b0490458941c82fa0d018
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 11/30/2021
+ms.openlocfilehash: 09982dff2e44ffc2ebe9b890588e5a62a3259cf5
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911608"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338486"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>使用 Surface Dock 2 的網路喚醒
 
@@ -27,41 +27,43 @@ ms.locfileid: "11911608"
 
 ## <a name="requirements"></a>需求
 
-裝置必須與 Surface Dock 2 建立有線連接，並持續與 AC Power 保持連接。
+裝置必須擁有 Surface Dock 2 的有線連接，並持續與 AC Power 保持連接。
 
 > [!div class="mx-imgBorder"]
 > ![Surface Dock 2。](images/surface-dock2-angled.png)
 
 > [!NOTE]
-> 喚醒連接至 Surface Dock 2 的裝置不需要使用 Surface Enterprise 管理模式 (SEMM) 或啟用任何 UEFI 策略設定。
+> 喚醒連接到 Surface Dock 2 的裝置不需要使用 Surface Enterprise 管理模式 (SEMM) 或啟用任何 UEFI 策略設定。
  
 ## <a name="supported-surface-devices"></a>支援的 Surface 裝置
 
 - Surface Laptop 4 (Intel 處理器) 
 - Surface Laptop 4 個 (處理器) 
 - Surface Laptop 3 (Intel 處理器) 
+- Surface Pro 8
 - Surface Pro 7+
 - Surface Pro 7
 - Surface Pro X
-- Surface Go 2
-- Surface Laptop去
+- Surface Go (代) 
+- Surface Laptop Go
 - Surface Book 3
+- Surface Laptop Studio
 
 Surface Dock 2 為下列電源狀態中的裝置提供 WOL 支援：
 
 - 連線待命
 - S4 電源 (休眠) 
-- 關閉 (S5 「柔關閉」電源) 
+- 關閉 (S5 的電源狀態) 
 
 若要深入瞭解電源狀態，請參閱 [系統電源狀態](/windows/win32/power/system-power-states)。
 
 ## <a name="how-it-works"></a>運作方式
 
-不使用時，Surface 裝置會進入空閒、低電源狀態，稱為新式備用或已連接備用。 或者，根據裝置上設定 (電源) ，裝置 (S5) 進入休眠狀態或關機。 IT 系統管理員可以使用喚醒要求 (魔術封包) 遠端觸發裝置) 其中包含目標 Surface 裝置之媒體存取控制 (MAC) 位址。 許多管理解決方案 ，Microsoft Endpoint Configuration Manager協力廠商應用程式Microsoft Store提供 WOL 的內建支援。
+不使用時，Surface 裝置會進入空閒、低電源狀態，稱為新式備用或已連接備用。 或者，裝置在 S4 (中) ，或 (S5) 電源狀態，根據裝置上設定電源設定。 IT 系統管理員可以使用喚醒要求 (魔術封包) 遠端觸發裝置，其中包含目標 Surface 裝置之媒體存取控制 (MAC) 位址。 許多管理解決方案 ，Microsoft Endpoint Configuration Manager協力廠商應用程式Microsoft Store提供 WOL 的內建支援。
 
 若要在沒有 Surface Dock 2 的裝置上啟用 WOL，請參閱：
 
-- [在 SURFACE 裝置上的 LAN 喚醒](wake-on-lan-for-surface-devices.md)
+- [在 Surface 裝置上的 LAN 喚醒](wake-on-lan-for-surface-devices.md)
 
 ## <a name="learn-more"></a>深入了解
 

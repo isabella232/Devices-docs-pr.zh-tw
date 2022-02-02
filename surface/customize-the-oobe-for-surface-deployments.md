@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f704541a2d862550250794308df6201c38b09e15
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
+ms.openlocfilehash: f460577c6c0d87586d80e183dfeaf2796b8a3bbe
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721263"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338296"
 ---
 # <a name="customize-the-oobe-for-surface-deployments"></a>自訂 Surface 部署的 OOBE
 
@@ -38,7 +38,7 @@ ms.locfileid: "11721263"
 本文提供部署時可能需要額外步驟之案例的摘要。 其中也提供確保任何新部署的 Surface 能達到預期之體驗的必要資訊。 本文的適用對象為熟悉部署程序及回應檔案和[建立 Windows 10 參照映像](https://technet.microsoft.com/itpro/windows/deploy/create-a-windows-10-reference-image)等概念的系統管理員。
 
 >[!NOTE]
->雖然 OOBE 階段的設定仍在執行為自動化部署解決方案的一部分，例如 Microsoft 部署工具組[ (MDT) ](/mem/configmgr/mdt)或 Microsoft Endpoint Configuration Manager 作業系統部署 ([OSD) ，](/mem/configmgr/osd/)但系統是由部署精靈和工作順序所提供的設定自動執行。
+>雖然設定 OOBE 階段仍然是作為自動化部署解決方案的一部分執行，例如[Microsoft 部署工具組 (MDT) ](/mem/configmgr/mdt)或 Microsoft Endpoint Configuration Manager 作業系統部署[ (OSD) ](/mem/configmgr/osd/)，但系統是由部署精靈和工作順序所提供的設定自動執行。
 
 ## <a name="scenario-1-wireless-networking-in-oobe-with-mdt-2013"></a>案例 1：使用 MDT 2013 執行 OOBE 時的無線網路功能
 
@@ -48,7 +48,7 @@ ms.locfileid: "11721263"
 
 ## <a name="scenario-2-surface-pen-pairing-in-oobe"></a>案例 2：在 OOBE 中配對 Surface 手寫筆
 
-當您首次將 Surface Pro 3、Surface Pro 4、Surface Book 或 Surface Studio 從套件中取出並啟動時，原廠映像的初次執行體驗會包含一個提示，要求您將隨附的 Surface 手寫筆與裝置配對。 只有裝置出廠時隨附的原廠映象會提供此提示，其他用於部署的映像則不會，例如從「大量授權服務中心」下載的 Windows 企業版安裝媒體。 因為在此體驗之外配對藍牙 Surface 手寫筆需要進入「控制台」或「電腦設定」並手動配對藍牙裝置，因此您可能想要讓使用者或技術人員使用此提示來進行配對作業。
+當您第一次使用 Surface 裝置並啟動它時，出廠影像的第一次執行體驗會包含提示，要求您將包含的 Surface 觸控筆配對至裝置。 只有裝置出廠時隨附的原廠映象會提供此提示，其他用於部署的映像則不會，例如從「大量授權服務中心」下載的 Windows 企業版安裝媒體。 因為在此體驗之外配對藍牙 Surface 手寫筆需要進入「控制台」或「電腦設定」並手動配對藍牙裝置，因此您可能想要讓使用者或技術人員使用此提示來進行配對作業。
 
 若要在 OOBE 中提供原廠 Surface 手寫筆配對體驗，您必須從原廠 Surface 映像複製四個檔案到參考映像。 您可以在擷取參考映像之前，將這些檔案複製到參考環境，或者您可於稍後使用「部署映像服務與管理」(DISM) 掛接映像時再將它們加入。 四個必要的檔案是︰
 
@@ -57,7 +57,7 @@ ms.locfileid: "11721263"
 - %windir%\\system32\\oobe\\info\\default\\1033\\PenError\_en-US.png
 - %windir%\\system32\\oobe\\info\\default\\1033\\PenSuccess\_en-US.png
 
->[!NOTE]
->您應該從與要部署的 Surface 裝置相同型號的原廠映像複製這些檔案。 例如，您應該使用 Surface Pro 7 中的檔案來部署到 Surface Pro 7，而使用 Surface Book 2 的檔案來部署 Surface Book 2，但您不應該使用 Surface Pro 7 中的檔案來部署 Surface Book 或 Surface Pro 6。
+>[!TIP]
+>您應該從與要部署的 Surface 裝置相同型號的原廠映像複製這些檔案。 例如，您應該使用 Surface Pro 8 的檔案來部署到 Surface Pro 8，而使用 Surface Book 3 的檔案來部署 Surface Book 3，但您不應該使用 Surface Pro 8 中的檔案來部署 Surface Book 3 或Surface Pro 7。
 
 [部署 Surface Pro 3 手寫筆和 OneNote 的祕訣](https://blogs.technet.microsoft.com/askcore/2014/07/15/deploying-surface-pro-3-pen-and-onenote-tips/)中有提供將這些必要檔案加入映像的逐步說明。 這篇部落格文章也包含確保已安裝 Surface 手寫筆快速筆記體驗 (使用者只要按一下就能將筆記傳送至 OneNote) 之必要更新的祕訣。
