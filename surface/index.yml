@@ -29,12 +29,12 @@ conceptualContent:
   items:
     - title: Surface 概觀
       links:
+        - url: /surface/surface-laptop-se-overview
+          itemType: concept
+          text: Surface Laptop SE 教育版
         - url: 'https://www.microsoft.com/surface/business/surface-pro-8'
           itemType: concept
           text: 商務用 Surface Pro 8
-        - url: 'https://www.microsoft.com/surface/business/surface-laptop-studio'
-          itemType: concept
-          text: 商務用 Surface Laptop Studio
         - url: 'https://www.microsoft.com/surface/business'
           itemType: concept
           text: 探索所有 Surface 系列產品
