@@ -8,16 +8,10 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 1/15/2021
+ms.date: 12/01/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: f0fed17dade345bf3f7dc9619eab7981dcb30cb0
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721273"
 ---
 # <a name="deploying-managing--servicing-surface-pro-x"></a>部署、管理及維護 Surface Pro X
 
@@ -42,7 +36,7 @@ Autopilot 部署有幾個優點：允許您使用針對全自動部署所簡化�
 
 ## <a name="image-based-deployment-considerations"></a>映像式部署考量
 
-Microsoft Deployment Toolkit (MDT) 和 Microsoft Endpoint Configuration Manager (舊稱 System Center Configuration Manager) 目前不支援 Surface Pro X 進行作業系統部署。 在持續評估轉換至現代部署解決方案適當時機的期間，仰賴映像式部署的客戶不妨考慮 Surface Pro 7+。 
+Microsoft Deployment Toolkit (MDT) 和 Microsoft Endpoint Configuration Manager (舊稱 System Center Configuration Manager) 目前不支援 Surface Pro X 進行作業系統部署。 在持續評估轉換至現代部署解決方案適當時機的期間，倚賴映像式部署的客戶不妨考慮 Surface Pro 8。 
 
 ## <a name="managing-surface-pro-x-devices"></a>管理 Surface Pro X 裝置
 
@@ -180,7 +174,7 @@ Windows 虛擬桌面可讓您在任何運算裝置或平台上，從任何位置
 
 ### <a name="can-i-deploy-surface-pro-x-with-mdt-or-endpoint-configuration-manager"></a>是否可以使用 MDT 或 Endpoint Configuration Manager 來部署 Surface Pro X？
 
-Microsoft Deployment Toolkit (MDT) 和 Microsoft Endpoint Configuration Manager 目前不支援 Surface Pro X 進行作業系統部署。 仰賴映像式部署的客戶在持續評估轉換至雲端適當時機的期間，應考慮使用 Surface Pro 7+。
+Microsoft Deployment Toolkit (MDT) 和 Microsoft Endpoint Configuration Manager 目前不支援 Surface Pro X 進行作業系統部署。 依賴映像式部署的客戶應考慮 Surface Pro 8，同時繼續評估要轉換至雲端的合適時間。
 
 ### <a name="how-can-i-deploy-surface-pro-x"></a>如何部署 Surface Pro X？
 
