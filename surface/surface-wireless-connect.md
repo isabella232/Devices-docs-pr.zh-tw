@@ -1,6 +1,6 @@
 ---
 title: 最佳化 Surface 裝置的 Wi-Fi 連線能力
-description: 本主題說明建議Wi-Fi設定，以確保 Surface 裝置在塞塞的網路環境和行動情境中保持連接。
+description: 本主題說明建議Wi-Fi，以確保 Surface 裝置在塞塞的網路環境和行動情境中保持連接。
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,14 +12,17 @@ ms.topic: article
 ms.reviewer: tokatz
 manager: laurawi
 ms.date: 11/30/2021
-ms.openlocfilehash: e031b485979b20d6206398840466d553772b6f1d
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 2f0aaaff212475887c3cf446709947d4e960c353
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338246"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449306"
 ---
-# <a name="optimize-wi-fi-connectivity-on-surface-devices"></a>優化Wi-Fi Surface 裝置上的連接能力
+# <a name="optimize-wi-fi-connectivity-on-surface-devices"></a>最佳化 Surface 裝置上的 Wi-Fi 連線能力
 
 為了與全天的電池使用時間保持聯繫，Surface 裝置會採用無線連接設定，以平衡性能和省電。 在最嚴苛的行動能力工作負載之外，使用者可以維持足夠的無線網路連接，而不必修改預設網路介面卡或相關設定。 此頁面會強調使用 Surface 裝置在行動裝置情況下的重要無線連接考慮。
 
@@ -45,7 +48,7 @@ ms.locfileid: "12338246"
 在某些情況下，修改 Surface 裝置內建的進一步網路介面卡設定可能會促進更可靠的連接。 不過，請記住，由於存取點問題、網路設計瑕疵或環境網站問題，無法連到無線資源通常較為頻繁。
 
 > [!TIP]
-> 您按住手機或 Surface Go Surface Pro也會影響訊號強度。 如果您遇到頻寬遺失的問題，請檢查您並未按住顯示畫面頂端 ，因為螢幕Wi-Fi接收器所在的位置。 雖然按住顯示器頂端不會封鎖無線訊號，但可以觸發裝置驅動程式來啟動降低連線性變更。
+> 您按住手機或 Surface Go Surface Pro也會影響訊號強度。 如果您遇到頻寬遺失的問題，請檢查您並未按住顯示畫面頂端 ，因為Wi-Fi的收音器所在的位置。 雖然按住顯示器頂端不會封鎖無線訊號，但可以觸發裝置驅動程式來啟動降低連線性變更。
 
 ### <a name="keep-default-auto-setting-for-dual-bandwidth-capability"></a>保留雙頻寬功能的預設自動設定
 
@@ -60,7 +63,7 @@ ms.locfileid: "12338246"
 請記住，2.4 GHz 比 5 GHz 有一些優點：它更進一步且更容易穿透牆面或其他實心物件。 除非您有明確的使用案例可以連接到 5 GHz，否則建議您將 Band 設定保留為預設狀態，以避免可能的不良後果。 例如：
 
 - 許多位於旅館、咖啡店和機場的熱點仍然只能使用 2.4 GHz，如果 Band 設為 5 GHz，則有效地封鎖裝置存取。
-- 由於Miracast顯示連接需要完成 2.4 GHz 通道的初次握手，因此裝置無法僅以 5 GHz 進行連接。
+- 由於Miracast顯示連接需要在 2.4 GHz 通道上完成初始握手，因此裝置無法僅以 5 GHz 進行連接。
 
 > [!NOTE]
 > 根據預設，Surface 裝置會偏好使用 5 GHz 連接 。如果可用。 不過，Surface 會先尋找 2.4 GHz 連接，以在低電池狀態中維持電力。
@@ -69,7 +72,7 @@ ms.locfileid: "12338246"
 
 ### <a name="roaming-aggressiveness-settings-on-surface-devices-with-intel-adapters"></a>使用 Intel 介面卡在 Surface 裝置上漫遊攻擊性設定
 
-使用者可能會想要選取一個訊號強度閾值，當訊號在漫遊攻擊性降低時提示裝置 (新的) 。 根據預設，如果訊號強度低於中 **度 (** 72%) ，具有 Intel 介面卡的 Surface 裝置會嘗試漫遊到新的) 。 如本頁稍早所述，組織也可以跨多個網路存取點執行專為使用者打造的無線通訊協定，以促進漫遊塞塞網路環境。
+使用者可能會想要選取一個訊號強度閾值，當訊號在漫遊攻擊性降低時，提示裝置 (新的) 。 根據預設，如果訊號強度低於 72 **% (，** 具有 Intel 介面卡的 Surface 裝置會嘗試漫遊到新的) 。 如本頁稍早所述，組織也可以跨多個網路存取點執行專為使用者打造的無線通訊協定，以促進漫遊塞塞網路環境。
 
 在高度塞塞的辦公室或**** 住宅環境中增加漫遊攻擊性可能會改善高度塞塞的辦公室或居住環境中的連線性，但當超出這些環境時，可能會導致連接品質降低。
 
@@ -78,7 +81,7 @@ ms.locfileid: "12338246"
 **若要在 Surface 上啟用漫遊攻擊性：**
 
 1. 前往**StartDevice** ** **  >  Manager。
-2. 在 **[網路介面卡Wi-Fi** **6** ，然後以滑鼠右鍵按一下 **[屬性**。
+2. 在 **[網路介面卡Wi-Fi**中，選取 [ **Intel Wi-Fi 6** ，然後以滑鼠右鍵按一下 **[屬性**。
 3. 選取進 **一頁** 的定位停駐點。
 4. 選取 **漫遊攻擊性** ，然後從下拉式功能表選擇您的偏好值。
 
@@ -86,13 +89,13 @@ ms.locfileid: "12338246"
 
 ### <a name="roaming-aggressiveness-settings-on-surface-go-and-surface-pro-x"></a>Surface Go 和 x 上的漫遊攻擊Surface Pro設定
 
-使用 Surface Go 的前線工作人員可能會想要選取一個訊號強度閾值，當訊號強度降低或漫遊攻擊性降低時，提示裝置 (新的) 。 根據預設，如果訊號強度低於 50% (**，** Surface 裝置會嘗試漫遊到新的) 。 請注意，每當您增加漫遊攻擊性時，就會加速電池電力消耗。
+使用 Surface Go 的前線工作人員可能會想要選取一個訊號強度閾值，當訊號強度降低或漫遊攻擊性降低時，提示裝置 (新的) 。 根據預設，如果訊號強度低於 50 **% (，** Surface 裝置會嘗試漫遊到新的) 。 請注意，每當您增加漫遊攻擊性時，就會加速電池電力消耗。
 
 除非您在特定的行動情境中遇到連接問題，例如執行環境網站檢查，同時在會議期間維護語音和視音訊連接，否則請保持預設狀態中的漫遊攻擊性設定。 如果您沒注意到有任何改善，會還原為預設的中 **態** 。
 
 **若要在 Surface Go 上啟用漫遊攻擊性：**
 
-1. 請前往**控制台>**  >  和**InternetNetwork**  >  **與共享中心開始。**
+1. 請前往**控制台>**  >  **和 InternetNetwork**  >  **與共享中心開始作業。**
 2. 在 **連結下**，選取 **Wi-Fi** ，然後選擇屬性 **。**
 3. 選取 **Microsoft Networks 的用戶端** ， **然後選取設定**
 4. 選取**進**  >  **位攻擊性**，然後從下拉式功能表選擇您的偏好值。

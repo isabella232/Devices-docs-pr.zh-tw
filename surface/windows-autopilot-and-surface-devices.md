@@ -3,7 +3,7 @@ title: Windows Autopilot 與 Surface 裝置
 ms.reviewer: ''
 manager: laurawi
 description: 瞭解 Surface Windows的自動pilot 部署選項。
-keywords: autopilot， windows 10， surface， deployment
+keywords: autopilot， Windows 10， Windows 11， surface， deployment
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -14,16 +14,19 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 9/14/2020
-ms.openlocfilehash: bfcb8c09b3228730e3255c4f92948dc4acfea506
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: ca2dab5483ecb7ae11a102c56308742e348156bb
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338536"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448526"
 ---
 # <a name="windows-autopilot-and-surface-devices"></a>Windows Autopilot 與 Surface 裝置
 
-Windows Autopilot 是一項雲端式部署技術，Windows 10。 您可以使用 Autopilot Windows，立即在零接觸式程式內遠端部署和設定裝置。
+Windows Autopilot 是一項雲端式部署技術，Windows 10 Windows 11。 您可以使用 Autopilot Windows，立即在零接觸程式內遠端部署和設定裝置。
 
 根據傳統，IT 專業人員會花很多時間建立及自訂影像，這些影像稍後會部署至已安裝完美作業系統的裝置。 Windows Autopilot 推出全新的零接觸式部署方法，使用一系列技術來設定Windows裝置。 這可讓 IT 部門設定/自訂影像，而且幾乎不需要管理基礎結構，而且程式簡單簡單。 從使用者的觀點看，讓 Surface 進入生產力狀態只需要幾個簡單的步驟。 事實上，使用者唯一需要的互動是連接網路並驗證其認證。 之後的所有專案都完全自動化。
 
@@ -33,7 +36,7 @@ Windows Autopilot 可讓您：
 - 自動將裝置註冊到 MDM 服務 ，例如Microsoft Intune (需要Azure AD Premium訂閱) 。
 - 限制建立系統管理員帳戶。 Autopilot 是讓第一個以標準使用者Windows第一個登錄使用者的唯一方法。
 - 根據裝置設定檔建立及自動指派裝置至組組。
-- 自訂 OOBE (開箱即用體驗) 內容和品牌，以滿足組織需求。
+- 自訂 OOBE (即用體驗) 內容和品牌，以滿足組織需求。
 - 使用 Intune 啟用完整的裝置配置。
 - 遠端重設或重新開機裝置。
 
@@ -47,11 +50,11 @@ Windows自動pilot註冊的裝置，在初次開機時會透過稱為硬體雜�
 
 Autopilot 是 Surface 裝置的建議部署選項，包括 Surface Pro 8、Surface Laptop Studio、Surface Go 3、Surface Pro 7+、Surface Laptop 4 和 Surface Pro X，這是專為透過 Autopilot 進行部署所設計。
 
- 在註冊 Surface 裝置時，最好使用 Microsoft 雲端解決方案提供者。 此步驟可讓您直接從 Intune 管理 Surface 上的 UEFI 固件設定。 它不需要以實體方式觸控裝置進行憑證管理。 詳細 [資料請參閱 Surface UEFI 設定 Intune](surface-manage-dfci-guide.md) 管理。
+ 最好在註冊您的 Surface 裝置時，使用 Microsoft 雲端解決方案提供者。 此步驟可讓您直接從 Intune 管理 Surface 上的 UEFI 固件設定。 它不需要以實體方式觸控裝置進行憑證管理。 詳細 [資料請參閱 Surface UEFI 設定 Intune](surface-manage-dfci-guide.md) 管理。
 
 ## <a name="windows-version-considerations"></a>Windows版本考慮
 
-透過 Windows Autopilot 廣泛部署 Surface 裝置，包括在購買時由 Surface 合作夥伴註冊，需要 Windows 10 版本 1709 (Fall Creators Update) 或更新。
+透過 Windows Autopilot 廣泛部署 Surface 裝置，包括 Surface 合作夥伴在購買時註冊，需要 Windows 10 版本 1709 (Fall Creators Update) 或更新。
 
 這些 Windows 版本支援 4，000 位元組 (4k) 雜湊值，可唯一識別 Windows Autopilot 的裝置，這是大規模部署的必要功能。
 
@@ -64,7 +67,7 @@ Microsoft 會自動檢查每個 Surface For Autopilot 註冊，並取消註冊�
 
 ## <a name="microsoft-support-registration"></a>Microsoft 支援註冊
 
-客戶與 Microsoft 雲端解決方案提供者 (CSP) 向 Microsoft 支援服務提交要求，以選擇註冊 Surface 裝置。 若要深入瞭解，請參閱[適用于 Autopilot Windows Surface 註冊支援](surface-autopilot-registration-support.md)。
+客戶與 Microsoft 雲端解決方案提供者 (CSP) 向 Microsoft 支援服務提交要求，以選擇註冊 Surface 裝置。 若要深入瞭解，請參閱[適用于自動Windows的 Surface 註冊支援](surface-autopilot-registration-support.md)。
 
 ## <a name="surface-partners-enabled-for-windows-autopilot"></a>Surface 合作夥伴已啟用 Windows Autopilot
 

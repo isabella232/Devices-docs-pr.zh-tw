@@ -9,17 +9,20 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 01/07/2022
+ms.date: 02/03/2022
 ms.reviewer: carlol
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 4d9b845901734e23c5b83ee47f9d6608f7495b91
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 45fd61ff59273e5ae3fc269058b663f271e641d4
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338506"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448686"
 ---
 # <a name="surface-system-sku-reference"></a>Surface 系統 SKU 參考
 
@@ -55,11 +58,11 @@ ms.locfileid: "12338506"
 | Surface Laptop 3 15" Intel                                   | Surface Laptop 3 | Surface_Laptop_3_1872      |
 | Surface Laptop 4 13"                                     | Surface Laptop 4 | Surface_Laptop_4_1958：1959    |
 | Surface Laptop 4 13" Intel                                   | Surface Laptop 4 | Surface_Laptop_4_1950：1951 |
-| Surface Laptop 4 15" 的AMD                                     | Surface Laptop 4 | Surface_Laptop_4_1952：1953     |
+| Surface Laptop 4 15"                                     | Surface Laptop 4 | Surface_Laptop_4_1952：1953     |
 | Surface Laptop 4 15" Intel                                   | Surface Laptop 4 | Surface_Laptop_4_1978：1979     |
 | Surface Laptop Go                                            | Surface Laptop Go | Surface_Laptop_Go_1943      |
 | Surface Laptop SE                                            | Surface Laptop SE | Surface Laptop SE            |
-| Surface Laptop工作室                                        | Surface Laptop工作室 | Surface_Laptop_Studio_1964 |
+| Surface Laptop Studio                                        | Surface Laptop Studio | Surface_Laptop_Studio_1964 |
 | Surface Pro (第 5 代)                                         | Surface Pro      | Surface_Pro_1796                 |
 | Surface Pro LTE Advanced (第 5 代)                       | Surface Pro      | Surface_Pro_1807                 |
 | Surface Pro 6 商業版                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
@@ -68,6 +71,7 @@ ms.locfileid: "12338506"
 | Surface Pro 7+                                               | Surface Pro 7+   | Surface_Pro_7+_1960|
 | Surface Pro 7+ LTE                                           | Surface Pro 7+   | Surface_Pro_7+_with_LTE_Advanced_1961|
 | Surface Pro 8                                                | Surface Pro 8    | Surface_Pro_8_for_Business_1983|
+| Surface Pro 8 消費者                                       | Surface Pro 8    | Surface_Pro_8_1983|
 | Surface Pro 8 LTE                                            | Surface Pro 8    | Surface_Pro_8_for_Business_with_LTE_Advanced_1982|
 | Surface Pro SQ1 處理器的 X                             | Surface Pro X    | Surface_Pro_X_1876         |
 | Surface Pro SQ2 處理器的 X                             | Surface Pro X    | Surface_Pro_X_H_1876        |
@@ -86,13 +90,13 @@ ms.locfileid: "12338506"
 ```
 
 **使用 系統資訊**  
-您也可以在 系統資訊 中找到裝置**的系統 SKU 和系統系統資訊**。 若要這樣做，請執行下列步驟：
+您也可以在 系統資訊 中找到裝置的系統 SKU**和系統系統資訊**。 若要這樣做，請執行下列步驟：
 
 1. 選取 **開始**，然後在搜尋方塊中輸入 **MSInfo32** 。  
 1. 選取**系統資訊**。
 
 **在工作順序 WMI 條件中使用 SKU**  
-您可以將 Microsoft 部署工具組 (MDT) 或 Microsoft Endpoint Configuration Manager中的系統 SKU 資訊做為工作順序 WMI 條件的一部分。
+您可以將 Microsoft 部署工具組 (MDT) 或 Microsoft Endpoint Configuration Manager 中的系統 SKU 資訊做為工作順序 WMI 條件的一部分。
 
  ``` powershell  
     - WMI Namespace – Root\WMI

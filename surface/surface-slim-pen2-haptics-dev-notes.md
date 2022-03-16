@@ -1,5 +1,5 @@
 ---
-title: Surface Slim Pen 2 haptics dev Notes
+title: Surface Slim Pen 2 觸覺技術開發筆記
 description: 此頁面提供適用于想要擴充 Surface Slim 手寫筆 2 Windows 11功能的應用程式開發人員的實現注意事項。
 ms.prod: w11
 ms.mktglfcycl: manage
@@ -12,21 +12,23 @@ ms.date: 12/07/2021
 ms.reviewer: gusing
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 8a3dbbdde85cfdceaf5674750a68fc21d3fcd877
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 11
+ms.openlocfilehash: 881ac52cb7a27b82fa9b7e6b5afd86040581ea86
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338652"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448536"
 ---
-# <a name="surface-slim-pen-2-haptics-dev-notes"></a>Surface Slim Pen 2 haptics dev Notes
+# <a name="surface-slim-pen-2-haptics-dev-notes"></a>Surface Slim Pen 2 觸覺技術開發筆記
 
 此頁面提供適用于想要擴充 Surface Slim 手寫筆 2 Windows 11功能的應用程式開發人員[的實現注意事項](https://www.microsoft.com/d/surface-slim-pen-2-for-business/8mjc4rmvltj0?)。 可自訂的觸感功能包括下列專案：
 
 - **模擬筆** 、鉛筆及其他書寫或繪圖工具之風格之筆墨意見回饋。
 - **直接回應** 使用者動作的互動意見反應，例如將游標停留在按鈕上、按一下按鈕，或使用觸控筆完成工作。
 
-如果您要自訂 Surface Slim 觸控筆 2 相關應用程式，請參閱觸控筆互動Windows Ink觸控筆互動和美感意見回饋中所述的[](/windows/apps/design/input/pen-haptics) Windows Ink 指導方針，然後參閱下列筆記。
+如果您要自訂 Surface Slim 觸控筆 2 相關應用程式，請參閱觸控筆互動Windows Ink觸控筆互動和美感意見回饋中所述[](/windows/apps/design/input/pen-haptics)的 Windows Ink 指導方針，然後參閱下列筆記。
 
 ## <a name="implementation-notes"></a>執行注意事項
 
@@ -37,7 +39,7 @@ Surface Slim 手寫筆 2 符合Windows 11筆墨規範，但下列例外：
 
 ## <a name="learn-more"></a>深入了解
 
-- [應用程式中的筆Windows Ink和Windows筆](/windows/apps/design/input/pen-and-stylus-interactions)
+- [應用程式中的筆Windows Ink和Windows互動](/windows/apps/design/input/pen-and-stylus-interactions)
 - [Surface Slim Pen 2 for Business](https://www.microsoft.com/d/surface-slim-pen-2-for-business/8mjc4rmvltj0?)
 - [Surface 觸控筆功能與相容性](https://support.microsoft.com/surface/identify-your-surface-pen-and-features-c82a0208-2e35-b347-dae0-d7f4922edc77)
 

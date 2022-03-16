@@ -1,5 +1,5 @@
 ---
-title: 優化 Surface 裝置上的視訊會議
+title: 最佳化 Surface 裝置上的視訊會議
 description: 此頁面提供在 Surface 裝置上Microsoft Teams和其他視訊會議解決方案的最佳作法
 ms.prod: w11
 ms.mktglfcycl: manage
@@ -12,14 +12,17 @@ ms.date: 12/10/2021
 ms.reviewer: gusing
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: dd72bf940309fe9f3d7b4bf334a94a557cffe016
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 28ad64b41dedb7d66092cf98388920a732fee737
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338608"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449676"
 ---
-# <a name="optimize-video-conferencing-on-surface-devices"></a>優化 Surface 裝置上的視訊會議
+# <a name="optimize-video-conferencing-on-surface-devices"></a>最佳化 Surface 裝置上的視訊會議
 
 Surface 裝置會利用行動裝置能源消費的最新進展，提供跨工作負載優化的簡化體驗。 對大部分的工作量來說，這會提供很好的體驗。 針對某些使用Microsoft Teams或其他視訊會議應用程式的工作量，您應該遵循這些建議，以確保獲得最佳體驗。
 
@@ -34,7 +37,7 @@ Microsoft 會定期發佈 Surface 裝置更新，併發行數個以視訊會議�
 
 ### <a name="get-updates-to-all-devices"></a>取得所有裝置的更新
 
-請確認貴組織有讓裝置接收這些更新的流程。 如果您使用的是商務Windows更新Windows[更新](/windows/deployment/update/waas-manage-updates-wufb)，則當更新發行時，已經收到最新的 Surface 更新。 使用更新檢查Windows更新，並確認已安裝最新的 Surface 更新。 若要深入瞭解，請參閱：
+請確認貴組織有讓裝置接收這些更新的流程。 如果您使用的是商務Windows更新Windows[更新](/windows/deployment/update/waas-manage-updates-wufb)，則當更新發行時，您已經收到最新的 Surface 更新。 使用更新檢查Windows更新，並確認已安裝最新的 Surface 更新。 若要深入瞭解，請參閱：
 
 - [Surface 更新記錄](https://www.microsoft.com/surface/support/install-update-activate/surface-update-history)
 - [安裝 Surface Windows更新](https://www.microsoft.com/surface/support/performance-and-maintenance/install-software-updates-for-surface?)
@@ -54,11 +57,11 @@ Microsoft 會定期發佈 Surface 裝置更新，併發行數個以視訊會議�
 
 ### <a name="power-settings-optimizations"></a>電源設定優化
 
-Surface 裝置可以在 Windows 中變更Windows 10的電源滑杆位置，Windows 11。
+Surface 裝置可以在 Windows 中變更與Windows Windows 10相關的電源設定，也稱為 Windows 11。
 
 某些 Surface 裝置已收到更新，其中包括根據電源滑杆位置或電源模式針對視訊會議工作負載的電源設定優化。 不過，Windows 10 Windows 11使用視訊會議工作負載的推薦電源滑杆位置和**** 電源模式位置，您必須調整電源滑杆，才能啟用這些優化：
 
-1. 連線電源 (使用電池電源時，系統不會執行) 。  
+1. 連線使用 (電源時，系統不會執行 ac 電源) 。  
 2. 調整電源滑杆或電源模式位置，以使用更好的**效果****或最佳效果。**
 
 ## <a name="learn-more"></a>深入了解

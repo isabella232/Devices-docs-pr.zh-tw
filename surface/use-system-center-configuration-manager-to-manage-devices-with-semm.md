@@ -14,18 +14,21 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 10/28/2020
-ms.openlocfilehash: 3a70f08ded5ad19b8bc2dc8a7e4fe6d85d972c43
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 470fec76afded98127464d956d907e90758de9d6
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911618"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449246"
 ---
 # <a name="use-microsoft-endpoint-configuration-manager-to-manage-devices-with-semm"></a>搭配 SEMM 使用 Microsoft Endpoint Configuration Manager 以管理裝置
 
-Microsoft Surface Enterprise管理模式 (SEMM) Surface UEFI 裝置的功能，可讓系統管理員管理及協助保護 Surface UEFI 設定設定。 對大部分組織來說 Windows，此程式是使用 Microsoft Surface UEFI (.msi) 工具建立安裝程式套件以完成。 這些套件接著會執行或部署到用戶端 Surface 裝置，以在 SEMM 中註冊裝置，並更新 Surface UEFI 設定設定。
+Microsoft Surface Enterprise管理模式 (SEMM) Surface UEFI 裝置的功能，可讓系統管理員管理及協助保護 Surface UEFI 設定設定。 對大部分組織來說，此程式是使用 Microsoft Surface UEFI Windows建立安裝程式 (.msi) 套件來完成。 這些套件接著會執行或部署到用戶端 Surface 裝置，以在 SEMM 中註冊裝置，並更新 Surface UEFI 設定設定。
 
-對於有Microsoft Endpoint Configuration Manager的組織，使用 Microsoft Surface UEFI 組.msi程式來部署和管理 SEMM。 Microsoft Surface UEFI Manager 是一種輕量型安裝程式，可在裝置上提供 SEMM 管理所需的元件。 使用 Microsoft Surface UEFI Manager 在受管理的用戶端上安裝這些程式集，SEMM 就可以由 Configuration Manager 使用 PowerShell 腳本進行管理，並部署為應用程式。 此程式在 Configuration Manager 中執行 SEMM 管理，這樣就不需要外部 Microsoft Surface UEFI Configurationator 工具。
+對於擁有Microsoft Endpoint Configuration Manager的組織，使用 Microsoft Surface UEFI 組.msi程式來部署和管理 SEMM。 Microsoft Surface UEFI Manager 是一種輕量型安裝程式，可在裝置上提供 SEMM 管理所需的元件。 使用 Microsoft Surface UEFI Manager 在受管理的用戶端上安裝這些程式集，SEMM 就可以由 Configuration Manager 使用 PowerShell 腳本進行管理，並部署為應用程式。 此程式在 Configuration Manager 中執行 SEMM 管理，這樣就不需要外部 Microsoft Surface UEFI Configurationator 工具。
 
 > [!Note]
 > 雖然本文所述程式可能與較舊版本的端點組組管理員或其他協力廠商管理解決方案一起使用，但 Microsoft Surface UEFI Manager 和 PowerShell 的 SEMM 管理僅受端點群組原則管理員目前分支的支援。
@@ -41,21 +44,21 @@ Microsoft Surface Enterprise管理模式 (SEMM) Surface UEFI 裝置的功能，�
 
 
 > [!Note]
-> 您也需要存取要用於保護 SEMM 的憑證。 有關此憑證需求的詳細資訊，請參閱 Surface [Enterprise管理模式憑證需求](surface-enterprise-management-mode.md#surface-enterprise-management-mode-certificate-requirements)。
+> 您也需要存取要用於保護 SEMM 的憑證。 有關此憑證需求的詳細資訊，請參閱[Surface Enterprise管理模式憑證需求](surface-enterprise-management-mode.md#surface-enterprise-management-mode-certificate-requirements)。
 > 
 > 此憑證必須存放在安全的位置並妥善備份。這非常重要。 如果此憑證遺失或無法使用，則無法重設 Surface UEFI、變更受管理的 Surface UEFI 設定，或從註冊的 Surface 裝置移除 SEMM。
 
 #### <a name="download-microsoft-surface-uefi-manager"></a>下載 Microsoft Surface UEFI Manager
 
-使用 Configuration Manager 管理 SEMM 需要在每個用戶端 Surface 裝置上安裝 Microsoft Surface UEFI Manager。 您可以下載 Microsoft Surface UEFI Manager (SurfaceUEFIManager.msi) [Microsoft](https://www.microsoft.com/download/details.aspx?id=46703) 下載中心的 IT 版 Surface 工具頁面。
+使用 Configuration Manager 管理 SEMM 需要在每個用戶端 Surface 裝置上安裝 Microsoft Surface UEFI Manager。 您可以下載 Microsoft Surface UEFI Manager (SurfaceUEFIManager.msi) Microsoft 下載中心的 [SURFACE IT 工具](https://www.microsoft.com/download/details.aspx?id=46703) 頁面下載。
 
 #### <a name="download-semm-scripts-for-configuration-manager"></a>下載 Configuration Manager 的 SEMM 腳本
 
-在用戶端 Surface 裝置上安裝 Microsoft Surface UEFI Manager 之後，SEMM 就可以使用 PowerShell 腳本進行部署和管理。 從 IT 用 Surface Tools 下載SEMM_PowerShell.zip取得 [SEMM](https://www.microsoft.com/download/details.aspx?id=46703) 管理腳本範例。
+在用戶端 Surface 裝置上安裝 Microsoft Surface UEFI Manager 之後，SEMM 就可以使用 PowerShell 腳本進行部署和管理。 從 IT 用 [Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703) 下載SEMM_PowerShell.zip取得 SEMM 管理腳本範例。
 
 ## <a name="deploy-microsoft-surface-uefi-manager"></a>部署 Microsoft Surface UEFI Manager
 
-Microsoft Surface UEFI Manager 的部署是典型的應用程式部署。 Microsoft Surface UEFI Manager 安裝程式檔案是一Windows安裝程式檔案，您可以使用標準靜音選項[安裝](https://msdn.microsoft.com/library/windows/desktop/aa367988)。
+Microsoft Surface UEFI Manager 的部署是典型的應用程式部署。 Microsoft Surface UEFI Manager 安裝程式檔案是一Windows安裝程式檔案，您可以使用標準靜音選項[安裝。](https://msdn.microsoft.com/library/windows/desktop/aa367988)
 
 安裝 Microsoft Surface UEFI Manager 的命令如下所示。
 
@@ -67,39 +70,39 @@ Microsoft Surface UEFI Manager 的部署是典型的應用程式部署。 Micros
 
 若要建立新應用程式，並部署到包含 Surface 裝置的集合，請執行下列步驟：
 
-1. 從開始畫面或**開始**功能表開啟 Configuration Manager **Console。**
+1. 從開始畫面或 **開始** 功能表開啟 Configuration Manager **Console** 。
 2. 選取 **視窗左** 下角的軟體庫。
-3. 展開 **軟體庫** 的應用程式管理節點， **然後選取**應用程式 。
+3. 展開 **軟體庫** 的應用程式管理節點， **然後選取應用程式**。
 4. 選取視窗 **頂端** 的 **首頁選項卡下的** 建立應用程式按鈕。 這會啟動建立應用程式精靈。
 5. 建立應用程式精靈會提供一系列步驟：
 
-   * **一** 般 – 預設 **會選取的自動** 偵測來自安裝檔案之此應用程式的資訊選項。 在 "**類型"** 欄位中 **，Windows安裝程式 (.msi檔案) **預設也會選取。 選取 **流覽** 以流覽至 ** 並選取 **SurfaceUEFIManagerSetup.msi，然後選取 下 **一步**。
+   * **一** 般 – 預設 **會選取的自動** 偵測來自安裝檔案之此應用程式的資訊選項。 在類型**欄位中**，**Windows安裝程式 (.msi**檔案) 預設也會選取。 選取 **流覽** 以流覽至 ** 並選取SurfaceUEFIManagerSetup.msi**，然後選取下 **一步**。
    
       > [!Note]
       > 檔案SurfaceUEFIManagerSetup.msi位於網路共用上，並位於不包含其他檔案的資料夾。 無法使用本地檔案位置。
 
-   * **輸入資訊**- 建立應用程式精靈會剖析.msi檔案，並讀取**應用程式名稱和****產品代碼**。 SurfaceUEFIManagerSetup.msi應列為內容檔案行下的唯一 **檔案，如圖**1 所示。 選取 **下一** 步以繼續。
+   * **輸入資訊**- 建立應用程式精靈會剖析.msi，並讀取**應用程式名稱和****產品代碼**。 SurfaceUEFIManagerSetup.msi列于內容檔案行下的唯一檔案，如圖 1 所示****。 選取 **下一** 步以繼續。
 
       ![系統會自動剖析 Surface UEFI Manager 設定的資訊。](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
 
       *圖 1。 系統會自動剖析 Microsoft Surface UEFI Manager 設定的資訊*
 
    * **一般** 資訊 – 您可以修改應用程式的名稱，以及發行者與版本的資訊，或在此頁面上新增批註。 Microsoft Surface UEFI Manager 的安裝命令會顯示在安裝程式欄位中。 系統安裝的預設安裝行為會允許 Microsoft Surface UEFI Manager 安裝 SEMM 所需的程式集，即使使用者未登入 Surface 裝置。 選取 **下一** 步以繼續。
-   * **Summary** – The information that was parsed in the **Import Information** step and your selections from the **General Information** step is displayed on this page. 選取 **下** 一步以確認您的選取專案，然後建立應用程式。
-   * **進度** – 當應用程式已導入並新到軟體文件庫時，會顯示進度列和狀態。
+   * **摘要**： 在 步驟中剖析的資訊****，以及您從一般資訊步驟選取**** 的內容會顯示在此頁面上。 選取 **下** 一步以確認您的選取專案，然後建立應用程式。
+   * **進度** – 當應用程式已導入並新加到軟體文件庫時，會顯示進度列和狀態。
    * **完成** – 應用程式建立程式完成時，會顯示成功建立應用程式的確認。 選取 **關閉** 以完成建立應用程式精靈。
 
 在 Configuration Manager 中建立應用程式之後，您可以將它發佈至您的通訊點，並將其部署到包括 Surface 裝置在內的集合。 此應用程式不會在 Surface 裝置上安裝或啟用 SEMM。 它只會提供使用 PowerShell 腳本啟用 SEMM 所需的程式集。
 
-如果您不想在無法使用 SEMM 管理的裝置上安裝 Microsoft Surface UEFI Manager 程式集，您可以將 Microsoft Surface UEFI Manager 設定為 SEMM Configuration Manager 腳本的相依性。 本文稍後的部署 [SEMM Configuration Manager 腳本](#deploy-semm-configuration-manager-scripts) 一節將涵蓋此案例。
+如果您不想在不會使用 SEMM 管理的裝置上安裝 Microsoft Surface UEFI Manager 程式集，您可以將 Microsoft Surface UEFI Manager 設定為 SEMM Configuration Manager 腳本的相依性。 本文稍後的部署 [SEMM Configuration Manager 腳本](#deploy-semm-configuration-manager-scripts) 一節將涵蓋此案例。
 
 ## <a name="create-or-modify-the-semm-configuration-manager-scripts"></a>建立或修改 SEMM Configuration Manager 腳本
 
-在裝置上安裝必要的程式集之後，在 SEMM 中註冊裝置並配置 Surface UEFI 的程式會使用 PowerShell 腳本完成，並部署為使用 Configuration Manager 的腳本應用程式。 您可以修改這些腳本，以配合貴組織及環境的需求。 例如，您可以為不同部門或角色的受管理的 Surface 裝置建立多個組組。 You can download samples of the scripts for SEMM and Configuration Manager from the link in the [Prerequisites](#prerequisites) section at the beginning of this article.
+在裝置上安裝必要的程式集之後，在 SEMM 中註冊裝置並配置 Surface UEFI 的程式會使用 PowerShell 腳本完成，並部署為使用 Configuration Manager 的腳本應用程式。 您可以修改這些腳本，以配合貴組織及環境的需求。 例如，您可以為不同部門或角色的受管理的 Surface 裝置建立多個組組。 您可以從本文開頭的 區段連結下載 SEMM 和 Configuration Manager 腳本[](#prerequisites)範例。
 
 您需要兩個主要腳本，才能使用 Configuration Manager 執行 SEMM 部署：
 
-* **ConfigureSEMM.ps1** – 使用此腳本為 Surface 裝置建立設定套件，並設定您想要的 Surface UEFI 設定，以將指定的設定套用至 Surface 裝置、在 SEMM 中註冊裝置，以及設定用來識別 SEMM 中裝置註冊的登錄機碼。
+* **ConfigureSEMM.ps1** – 使用此腳本為 Surface 裝置建立設定套件，並設定您想要的 Surface UEFI 設定，將指定的設定套用至 Surface 裝置、在 SEMM 中註冊裝置，以及設定用來識別 SEMM 中裝置註冊的登錄機碼。
 * **ResetSEMM.ps1** – 使用此腳本在 Surface 裝置上重設 SEMM，這會從 SEMM 取消註冊，並移除對 Surface UEFI 設定的控制。
 
 範例腳本包含如何設定 Surface UEFI 設定，以及如何控制這些設定許可權的範例。 您可以修改這些設定來保護 Surface UEFI，並依您的環境需求設定 Surface UEFI 設定。 本文的下列各節說明ConfigureSEMM.ps1腳本，並探索您需要對腳本所做的修改，以配合您的需求。
@@ -132,14 +135,14 @@ Microsoft Surface UEFI Manager 的部署是典型的應用程式部署。 Micros
   73    $password = "1234" 
   ```
 
-以第 58 行的 SEMM 憑證**檔案名**取代 $certName 變數的**FabrikamSEMMSample.pfx**值。 腳本將在腳本所在的資料夾中 (名為 Config) 的工作目錄，然後將憑證檔案複製到此工作目錄。
+以第 58 行的 SEMM 憑證檔案名取代 $certName 變數的**FabrikamSEMMSample.pfx**值。** ** 腳本將在腳本所在的資料夾中 (名為 Config) ，然後複製憑證檔案至此工作目錄。
 
 擁有者套件和重設套件也會在 Config 目錄中建立，並保留 Surface UEFI 設定和腳本產生的許可權設定。
 
-在行 73 中，取代****$password變數的值，從**1234**到憑證檔案的密碼。 如果不需要密碼，請刪除 **1234** 文字。
+在行 73 中，將 $password變數的值從**** **1234**取代為憑證檔案的密碼。 如果不需要密碼，請刪除 **1234** 文字。
 
 > [!Note]
-> 註冊 SEMM 中的裝置時，需要憑證指紋的最後兩個字元。 此腳本會向使用者顯示這些數位，讓使用者或技術人員在系統重新開機以在 SEMM 中註冊裝置之前，先記錄這些數位。 腳本使用第 150-155 行找到的下列程式碼來達成此目的。
+> 註冊 SEMM 中的裝置時，需要憑證指紋的最後兩個字元。 此腳本會向使用者顯示這些數位，讓使用者或技術人員在系統重新開機以在 SEMM 中註冊裝置之前，先記錄這些數位。 腳本會使用第 150-155 行找到的下列程式碼來達成此目的。
 
 ```powershell
 150 # Device owners will need the last two characters of the thumbprint to accept SEMM ownership.
@@ -158,7 +161,7 @@ Microsoft Surface UEFI Manager 的部署是典型的應用程式部署。 Micros
 4. 以滑鼠右鍵按一下主窗格中的憑證，然後選取 [ **開啟**。
 5. Select the **Details** tab.
 6. **在**顯示**下拉式功能表**中，必須選取所有或**** 僅屬性。
-7. 選取拇 **指列印欄位**。
+7. 選取指紋 **欄位**。
 
 > [!NOTE]
 > SEMM 憑證名稱和密碼也必須在 ResetSEMM.ps1 腳本的本節中輸入，才能讓 Configuration Manager 使用卸載動作從裝置移除 SEMM。
@@ -217,7 +220,7 @@ You can find information about the available settings names and IDs for Surface 
 
 ### <a name="configure-settings"></a>進行設定
 
-您指定 Surface UEFI 設定之腳本的第二個區域是 ConfigureSEMM.ps1**** 腳本的設定 設定 區域，可設定每個設定是否已啟用或停用。 範例腳本包含將所有設定設為預設值的指示。 腳本接著會提供明確指示，以停用 PXE Boot 的 IPv6，並維持 Surface UEFI 系統管理員密碼不變。 您可以在範例腳本的第 291 行**設定**第 335 行 #C1 開始尋找此區域。 該區域會顯示如下。
+您指定 Surface UEFI 設定之腳本的第二個區域是 ConfigureSEMM.ps1 腳本的設定 設定 區域****，可設定每個設定是否已啟用或停用。 範例腳本包含將所有設定設為預設值的指示。 腳本接著會提供明確指示，以停用 PXE Boot 的 IPv6，並維持 Surface UEFI 系統管理員密碼不變。 您可以在範例腳本的第 291 行**設定**第 335 行 #C1 開始尋找此區域。 該區域會顯示如下。
 
 ```powershell
 291 # Configure Settings
@@ -267,9 +270,9 @@ You can find information about the available settings names and IDs for Surface 
 335 }
 ```
 
-就像腳本的設定許可權區段**** 所設定的許可權一樣，每個 Surface UEFI 設定都是定義 $uefiV 2 變數**來**執行。 針對定義 $uefiV 2 變數的每 **一行** ，會設定名稱或識別碼來識別 Surface UEFI 設定，且設定的值設為 **啟用** 或 **停用**。
+就像腳本的設定許可權區段**** 所設定的許可權一樣，每個 Surface UEFI 設定都是定義 $uefiV **2**變數來執行。 針對定義 $uefiV **2**變數的每一行，會設定名稱或識別碼來識別 Surface UEFI 設定，且設定的值設為**啟用或****停用**。
 
-如果您不想變更 Surface UEFI 設定設定，例如為了確保 Surface UEFI 系統管理員密碼不會因為將所有 Surface UEFI 設定重設為預設值的動作而清除，您可以使用 **ClearConfiguredValue () ** 來強制執行此設定不會變更。 在範例腳本中，這會用於第 323 行，以防止清除在範例腳本中以其設定識別碼 **501**識別的 Surface UEFI 系統管理員密碼。
+如果您不想變更 Surface UEFI 設定設定，例如為了確保 Surface UEFI 系統管理員密碼不會因為將所有 Surface UEFI 設定重設為預設值的動作而清除，您可以使用 **ClearConfiguredValue () ** 來強制執行此設定不會變更。 在範例腳本中，這會用於第 323 行，以防止清除在範例腳本中以設定識別碼 **501**識別的 Surface UEFI 系統管理員密碼。
 
 You can find information about the available settings names and IDs for Surface UEFI in the [Settings Names and IDs](#settings-names-and-ids) section later in this article.
 
@@ -384,7 +387,7 @@ You can find information about the available settings names and IDs for Surface 
 
 ### <a name="settings-names-and-ids"></a>設定名稱和 ID
 
-若要設定 Surface UEFI 設定或 Surface UEFI 設定的許可權，您必須參照每個設定的名稱或設定識別碼。 隨著 Surface UEFI 的每個新更新，可能會新增新的設定。 在 ShowSettingsOptions.ps1 工具 (執行SEMM_Powershell.zip腳本) [提供](https://www.microsoft.com/download/details.aspx?id=46703) 可用設定的詳細資訊。 執行ShowSettingsOptions.ps1的電腦必須安裝 Microsoft Surface UEFI Manager，但腳本不需要 Surface 裝置。
+若要設定 Surface UEFI 設定或 Surface UEFI 設定的許可權，您必須參照每個設定的名稱或設定識別碼。 隨著 Surface UEFI 的每個新更新，可能會新增新的設定。 在 ShowSettingsOptions.ps1 工具 (執行 [SEMM_Powershell.zip腳本) ](https://www.microsoft.com/download/details.aspx?id=46703) 提供可用設定的詳細資訊。 執行ShowSettingsOptions.ps1的電腦必須安裝 Microsoft Surface UEFI Manager，但腳本不需要 Surface 裝置。
 
 
 ## <a name="deploy-semm-configuration-manager-scripts"></a>部署 SEMM Configuration Manager 腳本
@@ -415,13 +418,13 @@ SEMM Configuration Manager 腳本會新增到 Configuration Manager 做為腳本
 
    - **應用程式目錄** - 此頁面上的欄位可以留有預設值。 選取 **[下一步]**。
 
-   - **部署類型** – 選取 **新增** 以啟動建立部署類型精靈。
+   - **部署類型** – **選取新增** 以啟動建立部署類型精靈。
 
    - 繼續完成建立部署類型精靈的步驟，如下所示：
 
-     * **一**般 – 從**輸入**下拉式功能表選取腳本安裝程式。 **** 系統 **會自動選取手動指定部署類型** 資訊選項。 選取 **下一** 步以繼續。
-     * **一般資訊** - 輸入部署類型的名稱 (例如 SEMM 組) 腳本，然後選取下一 **步以繼續** 。
-     * **內容**–**選取內容**位置**** 欄位旁的流覽，然後選取 SEMM Configuration Manager 腳本所在的資料夾。 在安裝程式 **欄位中** ，輸入 [本文稍早](#deploy-semm-configuration-manager-scripts) 找到的安裝命令。 在卸載**程式**欄位中，輸入本文稍[](#deploy-semm-configuration-manager-scripts)早找到的卸載命令， (圖 2) 。 選取 **下** 一頁以移至下一頁。
+     * **一**般 – 從**輸入**下拉式功能表選取**** 腳本安裝程式。 系統 **會自動選取手動指定部署類型** 資訊選項。 選取 **下一** 步以繼續。
+     * **一般資訊**- 輸入部署類型的名稱 (例如 SEMM 組) 腳本，然後選取下一**步繼續。**
+     * **內容** **– 選取內容**位置欄位旁**** 的流覽，然後選取 SEMM Configuration Manager 腳本所在的資料夾。 在安裝程式 **欄位中** ，輸入 [本文稍早](#deploy-semm-configuration-manager-scripts) 找到的安裝命令。 在卸載**程式**欄位中，輸入本文稍[](#deploy-semm-configuration-manager-scripts)早找到的卸載命令， (圖 2) 。 選取 **下** 一頁以移至下一頁。
     
      ![將 SEMM Configuration Manager 腳本設定為安裝和卸載命令。](images/config-mgr-semm-fig2.png "Set the SEMM Configuration Manager scripts as the install and uninstall commands")
 
@@ -431,8 +434,8 @@ SEMM Configuration Manager 腳本會新增到 Configuration Manager 做為腳本
 
        - 從**設定類型**下拉式功能表選取**** 註冊表。
        - 從 **HKEY_LOCAL_MACHINE** 下拉式 **功能表中** 選取選項。
-       - 在 Key 欄位中輸入**SOFTWARE\Microsoft\Surface\SEMM。** ****
-       - 在**值欄位中輸入 CertName。** ****
+       - 在**Key 欄位中輸入 SOFTWARE\Microsoft\Surface\SEMM**。** **
+       - 在**值欄位中輸入 CertName**。** **
        - 從 **資料類型** 下拉式功能表 **選取** 字串。
        - 選取此 **註冊表設定必須符合下列規則，以表示此應用程式按鈕的** 顯示狀態。
        - 在值欄位的腳本第 58 行輸入您輸入的 **憑證** 名稱。
@@ -444,7 +447,7 @@ SEMM Configuration Manager 腳本會新增到 Configuration Manager 做為腳本
 
      * 選取 **下** 一頁，繼續下一頁。
      
-     * **使用者體驗** – 從安裝 **行為下拉式功能表** 選取 **系統安裝** 。 如果您希望使用者自行錄製並輸入憑證指紋，請保留登入需求設為只有在**使用者登入時。** 如果您希望系統管理員輸入使用者的指紋，而使用者不需要看到指紋，請從登入需求下拉式功能表選取是否要登入使用者。 **** ****
+     * **使用者體驗**– 從安裝**行為下拉式功能表****選取系統安裝**。 如果您希望使用者自行錄製並輸入憑證指紋，請保留登入需求設定為只有在**使用者登入時。** 如果您希望系統管理員輸入使用者的指紋，而使用者不需要看到指紋，請從登入需求下拉式功能表選取是否要登入使用者。** ** ****
 
      * **需求** – ConfigureSEMM.ps1腳本會在嘗試啟用 SEMM 之前，自動驗證裝置是 Surface 裝置。 不過，如果您打算將此腳本應用程式部署至包含要使用 SEMM 管理之裝置外之裝置的集合，您可以在這裡新增需求，以確保此應用程式只會在想要使用 SEMM 管理的 Surface 裝置或裝置上執行。 選取 **下一** 步以繼續。
      
@@ -452,9 +455,9 @@ SEMM Configuration Manager 腳本會新增到 Configuration Manager 做為腳本
 
        * 選取 **新增** 以開啟 **指定所需的應用程式** 視窗。
 
-          - 在相依性組名欄位中輸入 SEMM**** 相依性的名稱 (例如*SEMM 程式集*) 。
+          - 在相依性組名欄位中輸入 SEMM 相**** 依性的名稱 (例如*SEMM 程式集*) 。
 
-          - 從可用應用程式和 MSI 部署類型清單中選取**** Microsoft **Surface UEFI Manager，** 然後**** 選取確定以關閉**指定所需應用程式**視窗。
+          - 從可用應用程式和 MSI 部署類型清單中選取**Microsoft Surface UEFI Manager**，然後選取確定以關閉**指定所需應用程式**視窗。** ** ****
           
          *   如果您想要 **在** 裝置上自動安裝 Microsoft Surface UEFI Manager，請保持選取自動安裝核取方塊，當您嘗試使用 Configuration Manager 腳本啟用 SEMM。 選取 **確定** 以關閉 **新增相依性** 視窗。
 
@@ -485,6 +488,6 @@ SEMM Configuration Manager 腳本會新增到 Configuration Manager 做為腳本
 > 
 > 我們強烈建議您謹慎保護通用重設套件，就像您在 SEMM 中註冊裝置所使用的憑證一樣。 請記住，就像憑證本身一樣，這個通用重設套件可以用來從 SEMM 取消註冊貴組織的任何 Surface 裝置。
 > 
-> 當您安裝重設套件時，LSV (的最低) 值會重設為 1。 您可以使用現有的組組套件重新註冊裝置。 裝置在取得擁有權之前，會提示您輸入憑證指紋。
+> 當您安裝重設套件時，LSV (的最低支援) 值會重設為 1。 您可以使用現有的組組套件重新註冊裝置。 裝置在取得擁有權之前，會提示您輸入憑證指紋。
 > 
 > 基於這個原因，在 SEMM 中重新註冊裝置時，需要在此裝置上建立並安裝新套件。 由於此動作是新的註冊，而非已在 SEMM 中註冊的裝置上的組組變更，因此裝置在取得擁有權之前，會提示您輸入憑證指紋。

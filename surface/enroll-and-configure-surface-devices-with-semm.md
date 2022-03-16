@@ -14,12 +14,15 @@ ms.audience: itpro
 ms.reviewer: hachinda
 manager: laurawi
 ms.date: 1/15/2021
-ms.openlocfilehash: 61b15bf1d7ae5f99d57fb4dcd7bd9f83d9eb4b0a
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7626c6b5d98f65cbaa4f3ffae7649bd5dc05b56f
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337936"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449486"
 ---
 # <a name="enroll-and-configure-surface-devices-with-semm"></a>使用 SEMM 註冊及設定 Surface 裝置
 
@@ -30,7 +33,7 @@ ms.locfileid: "12337936"
 作為 SEMM 的替代方案，較新的 Surface 裝置支援透過 Microsoft Intune 遠端系統管理部分Microsoft Intune。 詳情請參閱 [Surface UEFI 設定 Intune 管理](surface-manage-dfci-guide.md)。
 
 > [!NOTE]
-> 僅透過 UEFI Manager Surface Pro X 支援 SEMM。 若要詳細資訊，請參閱[部署、管理及維護 X Surface Pro。](surface-pro-arm-app-management.md)
+> 僅透過 UEFI Manager Surface Pro X 支援 SEMM。 詳情請參閱部署、管理及維護[X Surface Pro。](surface-pro-arm-app-management.md)
 
 #### <a name="download-and-install-microsoft-surface-uefi-configurator"></a>下載並安裝 Microsoft Surface UEFI Configurator
 
@@ -38,7 +41,7 @@ ms.locfileid: "12337936"
 執行 Microsoft Surface UEFI 組Windows安裝程式 (.msi) 檔案，以開始安裝工具。 安裝程式完成後，在安裝程式的 區段尋找 Microsoft Surface UEFI [開始] 功能表。
 
 >[!NOTE]
->Microsoft Surface UEFI 組Windows 10。
+>Microsoft Surface UEFI Configurator 僅支援 Windows 10 Windows 11。
 
 ## <a name="create-a-surface-uefi-configuration-package"></a>建立 Surface UEFI 組組套件
 
@@ -56,7 +59,7 @@ Surface UEFI 設定套件會同時執行將 Surface UEFI 設定新設定套用�
 
    *圖 1。 選取組組套件以建立適用于 SEMM 註冊和配置的套件*
 
-4. 按一下 **[憑證保護** > 以使用私密金鑰 (.pfx) 匯出的憑證檔案，如圖 2 所示。 流覽至憑證檔案的位置，選取該檔案，然後按一下 [ **確定**。
+4. 按一下 **[憑證保護** > 以使用私密金鑰 (.pfx) 新增匯出的憑證檔案，如圖 2 所示。 流覽至憑證檔案的位置，選取該檔案，然後按一下 [ **確定**。
 
    ![新增 SEM 憑證和 Surface UEFI 密碼至組組套件。](images/surface-ent-mgmt-fig2-securepackage.png "Add the SEM certificate and Surface UEFI password to configuration package")
 
@@ -78,7 +81,7 @@ Surface UEFI 設定套件會同時執行將 Surface UEFI 設定新設定套用�
 
 9. 按 **\[下一步\]**。
 
-10. 如果您想要停用受管理的 Surface 裝置上的元件，請在 [選擇要啟用或停用的元件****？** **  (圖 4.) 顯示每個裝置的預設組組為 **On**。 如果您想要 **將所有** 滑杆返回預設位置，請按一下 [重設按鈕。
+10. 如果您想要停用受管理的 Surface 裝置上的元件，請在 [選擇要啟用或停用的元件****？** **  (圖 4.) 顯示每個裝置的預設群組原則為 **On**。 如果您想要 **將所有** 滑杆返回預設位置，請按一下 [重設按鈕。
 
     ![停用或啟用 Surface 元件。](images/surface-ent-mgmt-fig3-enabledisable.png "Disable or enable Surface components")
 
@@ -86,7 +89,7 @@ Surface UEFI 設定套件會同時執行將 Surface UEFI 設定新設定套用�
 
 11. 按 **\[下一步\]**。
 
-12. 若要在 Surface UEFI 或 Surface UEFI 頁面的顯示中啟用或停用進位選項，請在 [選擇裝置進一步設定> 頁面上，按一下所需設定旁的滑杆，將該選項設定為 [開**** 或關閉**** (如圖 5) 所示。** ** 在**UEFI**首頁區段，您可以使用安全性、裝置和啟動的滑杆來控制哪些**** 頁面可供啟動至**** Surface UEFI 的使用者使用。** **  (有關 Surface UEFI 設定的詳細資訊，請參閱管理[Surface UEFI](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings)設定。) 當您完成選取選項以產生及儲存套件時****，請按一下 [建立>。
+12. 若要在 Surface UEFI 或 Surface UEFI 頁面的顯示中啟用或停用進位選項，請在 [選擇裝置進一步設定> 頁面上，按一下所需設定旁的滑杆，將該選項設定為 [開**** 或關閉**** (如圖 5) 所示。** ** 在**UEFI**首頁區段，您可以使用安全性、裝置和啟動的滑杆來控制哪些**** 頁面可供啟動至**** Surface UEFI 的使用者使用。** **  (有關 Surface UEFI 設定的詳細資訊，請參閱管理[Surface UEFI](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings)設定。) 當您完成選取選項以產生及儲存套件時，**** 請按一下 [建立>。
 
     ![控制進位的 Surface UEFI 設定和 Surface UEFI 頁面。](images/surface-ent-mgmt-fig4-advancedsettings.png "Control advanced Surface UEFI settings and Surface UEFI pages")
 
@@ -120,7 +123,7 @@ Surface UEFI 設定套件會同時執行將 Surface UEFI 設定新設定套用�
 若要使用 Surface UEFI 組組套件在 SEMM 中註冊 Surface 裝置，請遵循下列步驟：
 
 1. 在您想要在 SEMM .msi的 Surface 裝置上，執行 Surface UEFI 組.msi套件。 這會在裝置固件中配置 Surface UEFI 組設定檔。
-2. 選取 **[我**接受授權合約中的條款> 核取方塊，接受 [使用者授權合約 (EULA) ，然後按一下 [安裝> 以開始安裝程式。** **
+2. 選取 **[我**接受授權合約中的條款> 核取方塊以接受使用者授權合約 (EULA) ，然後按一下 [安裝> 以開始安裝程式。** **
 3. 按一下 **[完成** 以完成 Surface UEFI 組組套件安裝並重新啟動 Surface 裝置時，系統提示您執行此作業。
 4. Surface UEFI 會載入組組檔案，並確定裝置上未啟用 SEMM。 Surface UEFI 接著會開始 SEMM 註冊程式，如下所示：
    * Surface UEFI 會確認 SEMM 設定檔包含 SEMM 憑證。
@@ -132,9 +135,9 @@ Surface UEFI 設定套件會同時執行將 Surface UEFI 設定新設定套用�
 
    * Surface UEFI 會將 SEMM 憑證儲存在固件中，並適用 Surface UEFI 設定檔中指定的設定設定。
    
-5. Surface 裝置現在已註冊于 SEMM，而且會啟動Windows。
+5. Surface 裝置現在已註冊于 SEMM，而且會啟動至 Windows。
 
-您可以在程式和**功能 (中**尋找**Microsoft Surface**組組套件 ，如圖 9) 所示，或在儲存在事件檢視器 (中的應用程式和服務記錄中的**Microsoft Surface UEFI Configurationator**記錄中，如圖 10) 所示，確認 Surface 裝置已成功註冊 SEMM。** **
+您可以在程式和**功能 (中**尋找**Microsoft Surface**組組套件 ，如圖 9) 所示，或尋找儲存在事件檢視器 (中的應用程式和服務記錄中的**Microsoft Surface UEFI Configurationator**記錄中的事件，以驗證 Surface 裝置已成功註冊 SEMM，如圖 10) 所示。** **
 
 :::image type="content" alt-text="在程式和功能中驗證 Surface 裝置在 SEMM 中的註冊。" source="images/surface-semm-enroll-fig9.png":::
 
@@ -153,13 +156,13 @@ Surface UEFI 設定套件會同時執行將 Surface UEFI 設定新設定套用�
 
 ## <a name="configure-surface-uefi-settings-with-semm"></a>使用 SEMM 設定 Surface UEFI 設定
 
-在 SEMM 中註冊裝置之後，您可以執行以相同 SEMM 憑證簽署的 Surface UEFI 設定套件，以套用新的 Surface UEFI 設定。 這些設定會在裝置下次啟動時自動套用，而不需要使用者進行任何互動。 您可以使用應用程式部署解決方案 ，Microsoft Endpoint Configuration Manager將 Surface UEFI 設定套件部署到 Surface 裝置，以變更或管理 Surface UEFI 中的設定。
+在 SEMM 中註冊裝置之後，您可以執行以相同 SEMM 憑證簽署的 Surface UEFI 設定套件，以套用新的 Surface UEFI 設定。 這些設定會在裝置下次啟動時自動套用，而不需要使用者進行任何互動。 您可以使用應用程式部署解決方案 ，例如 Microsoft Endpoint Configuration Manager將 Surface UEFI 設定套件部署到 Surface 裝置，以變更或管理 Surface UEFI 中的設定。
 
-若要瞭解如何使用 Configuration Manager Windows安裝程式 (.msi) 部署應用程式，請參閱使用[Microsoft Endpoint Configuration Manager。](https://technet.microsoft.com/library/mt627959)
+若要瞭解如何使用 Configuration Manager Windows安裝程式 (.msi) 檔案，請參閱使用 Microsoft Endpoint Configuration Manager 部署[和管理應用程式](https://technet.microsoft.com/library/mt627959)。
 
 如果您用密碼保護 Surface UEFI，沒有密碼的使用者若嘗試啟動到 Surface UEFI，則只會顯示電腦資訊、關於、Enterprise管理，**** 以及顯示給他們**** 的離開**** 頁面。** **
 
-如果您沒有使用密碼保護 Surface UEFI，或使用者正確輸入密碼，則使用 SEMM 設定設定會呈現暗灰色 (無法使用) 且組織管理的文字會顯示在頁面頂端，如圖 12 所示。
+如果您沒有使用密碼保護 Surface UEFI，或使用者正確輸入密碼，則使用 SEMM 設定設定會呈現灰色 (無法使用) 且組織管理的文字會顯示在頁面頂端，如圖 12 所示。
 
 :::image type="content" alt-text="設定在 Surface UEFI 中停用的 SEMM 管理。" source="images/surface-semm-enroll-fig12.png":::
 

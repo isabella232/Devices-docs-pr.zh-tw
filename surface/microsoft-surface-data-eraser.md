@@ -15,12 +15,15 @@ ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 10/06/2021
-ms.openlocfilehash: e97bc719fb93b0a0b74c7ca51b68cbc59efa9f4a
-ms.sourcegitcommit: fe54b2bab8b205302438426b86c0aa8269ff82ea
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: e40c967003fc6dd40725e5015c01497eb3fa141a
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081203"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449646"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
@@ -33,20 +36,20 @@ ms.locfileid: "12081203"
 
 相容的 Surface 裝置包括：
 
-- Surface Laptop演播室
+- Surface Laptop Studio
 - Surface Book (所有版本) 
 - Surface Go (所有版本) 
-- Surface ProX (所有版本) 
+- Surface Pro X (所有版本) 
 - Surface Laptop (所有版本) 
-- Surface Laptop去
+- Surface Laptop Go
 - Surface Studio (所有版本) 
 - Surface Pro 2 及更高版本
 - Surface 3
-- Windows 10 專業版 2 Enterprise 上Surface Hub及
+- Windows 10 專業版 2 Enterprise上的Surface Hub和
 
 某些 Microsoft Surface Data Eraser 可發揮作用的情況包括：
 
-- 準備要送修的 Surface 裝置。
+- 準備要送往維修的 Surface 裝置。
 - 將 Surface 裝置從公司或組織使用中解除授權。
 - 為新使用者重新使用 Surface 裝置。
 - 重新映射包含機密資料的裝置。
@@ -67,11 +70,11 @@ ms.locfileid: "12081203"
    :::image type="content" source="images/microsoft-surface-data-eraser/fig2-continue.png" alt-text="圖 2. 確認已連接至少 4 GB 的 USB 磁碟機":::<br>
    *圖 2. 確認已連接至少 4 GB 的 USB 磁碟機*
 
-4. 僅**針對 2021** (裝置選擇 x64) 或更新的裝置，從結構選取頁面選擇適用于 2020 及較舊版本的**x64**或 Surface Pro X 的**ARM64，** 如圖 3 所示。 **** 選取 **\[繼續\]**。
+4. 僅針對**2021 (裝置選擇 x64**) 或更新的裝置，從架構選取頁面選擇適用于 2020 及較舊版本的**x64**或 Surface Pro X 的**ARM64**，如圖-3 所示。** ** 選取 **\[繼續\]**。
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig3-select.png" alt-text="圖 3. 選取裝置架構":::
 
-5. 從 USB Thumb Drive 選取頁面選取您所選擇的**USB**磁碟機，如圖 4**** 所示，然後選取開始建立 USB 程式。 將會格式化您選取的磁碟機，且其中的資料將會遺失。
+5. 從 USB Thumb Drive 選取頁面選取您所選擇的**USB**磁碟機，如圖 4 所示，然後選取開始建立 USB 程式。** ** 將會格式化您選取的磁碟機，且其中的資料將會遺失。
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig4-start.png" alt-text="圖 4. USB 大拇指磁碟機>":::<br>
    *圖 4. 選擇 USB 磁碟機*
@@ -93,7 +96,7 @@ ms.locfileid: "12081203"
 建立 Microsoft Surface Data Eraser USB 磁碟機之後，您可以遵循下列程序將支援的 Surface 裝置從該 USB 磁碟機開機：
 
 >[!NOTE]
->Surface Data Eraser Surface Studio 2 Surface Studio最多可能需要 6 分鐘，才能啟動到 WinPE，才能進行磁片清除。
+>Surface Data Eraser Surface Studio 2 Surface Studio最多可能需要 6 分鐘才能啟動到 WinPE，才能進行磁片清除。
 
 1. 將可開機的 Microsoft Surface Data Eraser USB 磁碟機插入支援的 Surface 裝置。
 
@@ -107,7 +110,7 @@ ms.locfileid: "12081203"
    >[!TIP]
    >如果您的裝置無法使用這些步驟開機至 USB，您可能需要開啟 Surface UEFI 中的 **\[Enable Alternate Boot Sequence\] (啟用替代開機順序)** 選項。 您可以在[管理 Surface UEFI 設定](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings)中深入了解Surface UEFI 開機設定。
 
-3. Surface 裝置啟動時， **會顯示 SoftwareLicenseTerms** 文字檔，如圖 5 所示。
+3. 當 Surface 裝置啟動時， **會顯示 SoftwareLicenseTerms** 文字檔，如圖 5 所示。
 
    ![啟動 Microsoft Surface 資料橡皮擦 USB 棒。](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
@@ -165,12 +168,12 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 
 *發行日期：2020 年 9 月 9 日*
 
-此版本的 Surface 資料橡皮擦包含錯誤修正程式，並新增以下支援：
+此版本的 Surface Data 橡皮擦包含錯誤修正程式，並新增以下支援：
 
 - 架構重新設計，以減少使用新產品版本更新需求
-- 適用于新工具更新的通知
+- 新工具更新可用的通知
 - 遙測新增專案
-- Windows 10 專業版 2 Enterprise 上Surface Hub及
+- Windows 10 專業版 2 Enterprise上的Surface Hub和
 
 ### <a name="330139"></a>3.30.139
 
@@ -194,7 +197,7 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 
 *發行日期：2019 年 10 月 21 日*
 
-此版本的 Surface Data 橡皮擦已編譯為 x86，並新增下列裝置的支援：
+此版本的 Surface Data Eraser 已編譯為 x86，並新增下列裝置的支援：
 
 - Surface Pro 7、Surface Pro X 和 Surface Laptop 3
 
@@ -260,4 +263,4 @@ Microsoft 會定期更新 Microsoft Surface Data Eraser。 如需有關每個新
 - Surface 膝上型電腦
 
 >[!NOTE]
->Microsoft Surface Data Eraser USB 磁碟機建立工具無法在 Windows 10 S 上執行。若要抹除 執行 Windows 10 S 的 Surface Laptop，您必須先在安裝 Windows 10 專業版或 Windows 10 企業版的另一部電腦上建立的 Microsoft Surface Data Eraser USB 磁碟機。
+>Microsoft Surface Data Eraser USB 磁碟機建立工具無法在 s 上Windows 10執行。若要抹除執行 Surface Laptop S 的 Windows 10，您必須先在另一部電腦上使用 Windows 10/1 Pro 1 或 Windows 10/11 Enterprise 建立 Microsoft Surface Data 橡皮擦 USB 磁碟機。

@@ -15,12 +15,15 @@ ms.topic: article
 ms.date: 08/02/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 7f9d1bd0b1d8e23432b0e855b2ec5c55d49c250c
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 3eae976b1559c59bf44a94a62eb98dd3a3687424
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338106"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448486"
 ---
 # <a name="secure-surface-dock-2-ports-with-surface-enterprise-management-mode-semm"></a>使用 Surface 管理模式和 SEMM Enterprise保護 Surface Dock 2 (埠) 
 
@@ -30,7 +33,7 @@ Surface Enterprise 管理模式 (SEMM) 可讓 IT 系統管理員在 Windows Inst
 
 ### <a name="supported-devices"></a>支援的裝置
 
-使用 SEMM 管理 Surface Dock 2 適用于連接到 Surface Book 3、Surface Laptop Studio、Surface Laptop 4、Surface Laptop 3、Surface Laptop Go、Surface Pro 8、Surface Pro 7+、Surface Pro 7，以及 Surface Pro X。這些相容的 Surface 裝置通常稱為**主機裝置**。 套件會根據主機裝置是否經過驗證或未經驗證，套用至**** 主機**裝置**。 設定設定會位於主機裝置上的 UEFI 圖層中，以便您管理 Surface Dock 2，就像任何其他內建的外接裝置 ，例如相機一樣。
+使用 SEMM 管理 Surface Dock 2 適用于連接到 Surface Book 3、Surface Laptop Studio、Surface Laptop 4、Surface Laptop 3、Surface Laptop Go、Surface Pro 8、Surface Pro 7+、Surface Pro 7 和 Surface Pro X。這些相容的 Surface 裝置通常稱為**主機裝置**。 套件會根據主機裝置是否經過驗證或未經驗證，套用至**** 主機**裝置**。 設定設定會位於主機裝置上的 UEFI 圖層中，以便您管理 Surface Dock 2，就像任何其他內建的外接裝置 ，例如相機一樣。
 
 >[!NOTE]
 >只有當 Dock 連接到下列其中一個相容裝置時，才能管理 Surface Dock 2 埠：Surface Pro 8、Surface Laptop Studio、Surface Book 3、Surface Laptop 4、Surface Laptop 3、Surface Pro 7+，以及Surface Pro 7。 任何未收到 UEFI 驗證策略設定的裝置，其本身都是未經驗證的裝置。
@@ -49,7 +52,7 @@ Surface Enterprise 管理模式 (SEMM) 可讓 IT 系統管理員在 Windows Inst
    1. 新增您的憑證。
    1. 輸入 Surface Dock 2 裝置 16 位數的 RN 號碼。
    1. 設定 UEFI 設定。
-1. 在 7. (Surface Book 3、Surface Laptop 3 或 7.Surface Pro目標 Surface 裝置上Surface Pro套件) 
+1. 在 7. (Surface Book 3、Surface Laptop 3 或 7.Surface Pro中建立並套用組) 
 
 >[!NOTE]
 >隨機 **數 (RN) ** 是一個唯一的 16 位數十六進位代碼識別碼，在出廠時提供，且以小型類型列印于固定座的背面。 RN 與大多數的序列值不同，因為無法以電子方式讀取。 這可確保主要只有在實際存取裝置時讀取 RN，才能建立擁有證明。 RN 也可能在購買交易期間取得，並記錄在 Microsoft 庫存系統中。
@@ -66,13 +69,13 @@ Surface Enterprise 管理模式 (SEMM) 可讓 IT 系統管理員在 Windows Inst
 
 ### <a name="prerequisites"></a>必要條件
 
-本文假設您從協力廠商提供者取得憑證，或您已有 PKI 憑證服務專業知識，並知道如何建立自己的證書。  您應該熟悉並遵循 Surface Enterprise 管理模式 ([SEMM](surface-enterprise-management-mode.md)) 中所述的建立憑證的一般建議，但只有一個例外。 在此頁面上所記錄之憑證的到期期限為 Dock **證書**頒發機構為 30 年，主機驗證憑證為 20 **年**。
+本文假設您從協力廠商提供者取得憑證，或您已有 PKI 憑證服務專業知識，並知道如何建立自己的證書。  您應該熟悉並遵循 Surface Enterprise 管理模式 ([SEMM](surface-enterprise-management-mode.md)) 中所述建立憑證的一般建議，但只有一個例外。 在此頁面上所記錄之憑證的到期期限為 Dock **證書**頒發機構為 30 年，主機驗證憑證為 20 **年**。
 
 詳細資訊，請參閱憑證服務[](/windows/win32/seccrypto/certificate-services-architecture)架構檔，並參閱 Microsoft Press 提供的[Windows Server 2019 內](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)外部或[Windows Server 2008 PKI](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788)和憑證安全性中的適當章節。
 
 ### <a name="root-and-host-certificate-requirements"></a>根憑證和主機憑證需求
 
-在建立組組套件之前，您需要準備公用金鑰憑證，以驗證 Surface Dock 2 的擁有權，並有助於在裝置生命週期期間對擁有權進行任何後續變更。 主機和布備憑證需要輸入 EKU 識別碼，也稱為用戶端驗證增強金鑰使用量 ** (EKU) 物件識別碼 (OIDs) **。
+在建立組組套件之前，您需要準備公用金鑰憑證，以驗證 Surface Dock 2 的擁有權，並有助於在裝置生命週期期間對擁有權進行任何後續變更。 主機和布備憑證需要輸入 EKU 識別碼，也稱為用戶端驗證增強金鑰使用量 ** (EKU) 物件識別碼 (OIDs **) 。
 
 所需的 EKU 值會列在資料表 1 和表格 2 中。
 
@@ -102,7 +105,7 @@ Surface Enterprise 管理模式 (SEMM) 可讓 IT 系統管理員在 Windows Inst
 
 ### <a name="create-configuration-package"></a>建立組組套件
 
-當您取得或建立憑證時，就可以建立套用至目標 Surface .msi的組.msi組組套件。
+當您取得或建立憑證時，就可以建立套用至目標 Surface .msi組組套件。
 
 1. 執行 Surface **UEFI Configurator**。
 
@@ -138,7 +141,7 @@ Surface Enterprise 管理模式 (SEMM) 可讓 IT 系統管理員在 Windows Inst
 
 ## <a name="verify-managed-state-using-the-surface-app"></a>使用 Surface App 驗證受管理狀態
 
-套用組態套件之後，您可以直接從 Surface App 快速驗證固定程式的結果原則狀態，此程式預設會安裝在所有 Surface 裝置上。 如果裝置上沒有 Surface App，您可以從裝置下載並安裝Microsoft Store。
+套用組態套件之後，您可以直接從 Surface App 快速驗證固定程式的結果原則狀態，此程式預設會安裝在所有 Surface 裝置上。 如果裝置上沒有 Surface App，您可以從裝置下載並Microsoft Store。
 
 ### <a name="test-scenario"></a>測試案例
 

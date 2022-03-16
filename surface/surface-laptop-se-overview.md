@@ -1,5 +1,5 @@
 ---
-title: Surface Laptop SE概觀
+title: Surface Laptop SE 概觀
 description: 本文提供教育Surface Laptop SE概觀。
 ms.prod: w11
 ms.mktglfcycl: manage
@@ -12,32 +12,34 @@ ms.date: 01/11/2022
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 2496c50db10454674f80aec03734849bacf63f38
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 11
+ms.openlocfilehash: a99c3241eea0099b90de9c64ff840306aa98e58d
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338613"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448317"
 ---
-# <a name="surface-laptop-se-overview"></a>Surface Laptop SE概觀
+# <a name="surface-laptop-se-overview"></a>Surface Laptop SE 概觀
 
-Surface Laptop SE管理裝置體驗，以經濟實惠的成本簡化學生的學習。 它Windows 11 SE雲端式作業系統，並預載入廣泛使用的應用程式，[](#pre-installed-apps)例如 Microsoft Teams、Word、PowerPoint、Excel、OneNote、Edge、Minecraft: Education Edition、Flipgrid，以及更多。 
+Surface Laptop SE提供受管理的裝置體驗，以經濟實惠的成本簡化學生的學習。 它Windows 11 SE雲端式作業系統，並預載入廣泛使用的應用程式，例如[](#pre-installed-apps) Microsoft Teams、Word、PowerPoint、Excel、OneNote、Edge、Minecraft: Education Edition、Flipgrid，以及更多。 
 
 :::image type="content" source="images/surface-laptop-se.png" alt-text="Surface Laptop SE顯示Windows 11 SE [開始] 功能表":::<br>
 *圖 1。 Surface Laptop SE顯示Windows 11 SE [開始] 功能表*
 
-Surface Laptop SE支援學生和教育工作者所需的大部分應用程式，包括漸進式 Web App (PWAs) 、通用 Windows 平臺應用程式 (UWP) ，以及一組由[Win32 & Microsoft Store 應用程式](#install-optional-apps)。 與其他 Surface 裝置不同，Surface Laptop SE防止使用者安裝自己的 App。 相反地，IT 系統管理員或技術Surface Laptop SE使用 Microsoft 端點管理員 管理Microsoft Intune、Microsoft Intune和新的[Surface 管理入口網站](surface-management-portal.md)。[ ](/mem/intune/fundamentals/what-is-intune) [ ](https://www.microsoft.com/education/intune) 
+Surface Laptop SE支援學生和教育工作者所需的大部分應用程式，包括漸進式 Web App (PWAs) 、通用 Windows 平臺應用程式 (UWP) ，以及一組由[Win32 & Microsoft Store](#install-optional-apps)應用程式。 與其他 Surface 裝置不同，Surface Laptop SE防止使用者安裝自己的 App。 相反地，IT 系統管理員或技術Surface Laptop SE使用 Microsoft 端點管理員 管理裝置，包括 Microsoft Intune、Microsoft Intune 教育用和新的[Surface 管理入口網站](surface-management-portal.md)。[ ](/mem/intune/fundamentals/what-is-intune) [ ](https://www.microsoft.com/education/intune) 
 
 > [!NOTE]
 > 本文適用于部署及管理學校使用者的裝置之 IT 系統管理員和教育人員。 若要瞭解一般資訊或訂購，請參閱[Surface Laptop SE超薄型膝上型電腦](https://www.microsoft.com/surface/business/surface-laptop-se)。
 
 ## <a name="simplified-deployment-management--security"></a>簡化部署、管理&安全性
 
-- 使用自動Windows，快速套用原則並安裝應用程式，以完成新裝置低Windows部署。 Windows Autopilot 提供開箱即用、低觸控式部署和影像，並預先安裝及預配置許多應用程式與政策。 IT 可以輕鬆地調整裝置設定 ，包括固件設定，並安裝學生所需的應用程式，以便學生第一次在裝置上電源時一切就緒。
+- 使用 Autopilot、快速套用原則Windows安裝應用程式，完成新裝置低觸式部署。 Windows Autopilot 提供開箱即用、低觸控式部署和影像，並預先安裝及預配置許多應用程式與政策。 IT 可以輕鬆地調整裝置設定 ，包括固件設定，並安裝學生所需的應用程式，以便學生第一次在裝置上電源時一切就緒。
 - 部署裝置後，Microsoft Intune整個學年度提供簡化的遠端系統管理，讓 IT 能夠管理應用程式、控制安全性與隱私權，以及產生合規性報告。
 - 當膝上型電腦關閉時，使用蓋鎖定鎖定作業系統，以及使用整合的 Kensington Nano Security Slot 控制實體存取™。
 - 新設計的無外接式轉軸、塑膠底板，以及外接到表圈的螢幕周圍塑膠邊框，可提供額外的耐久度，以更符合學生使用的需求和需求。
-- Intune 和 DFCI 支援安全裝置更新及管理至固件層。 IT 系統管理員可以控制硬體元素，例如麥克風、USB 埠、相機和藍牙，並移除周邊設備電源。 獨一無二的可掃描 Surface 封裝可讓您輕鬆識別裝置，當需要重新註冊時，裝置識別碼號碼會保持不變。
+- Intune 和 DFCI 支援安全裝置更新及管理至固件層。 IT 系統管理員可以控制硬體元素，例如麥克風、USB 埠、相機和藍牙，並移除對周邊設備的電源。 獨一無二的可掃描 Surface 封裝可讓您輕鬆識別裝置，當需要重新註冊時，裝置識別碼號碼會保持不變。
 
 ### <a name="surface-management-portal"></a>Surface 管理入口網站
 
@@ -51,7 +53,7 @@ Surface Laptop SE支援學生和教育工作者所需的大部分應用程式，
 | 案例                                                            | 描述                                                                                                                                                                                                                                                                                                                          | 深入了解                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 使用自動Surface Laptop SE遠端設定Windows裝置 | Windows Autopilot 提供開箱即用、低觸控式部署和影像，並預先安裝及預配置許多應用程式與政策。 IT 可以輕鬆地調整裝置設定 ，包括固件設定，並安裝學生所需的應用程式，以便學生第一次在裝置上電源時一切就緒。                 |[使用 Autopilot 設定教育用 Intune Windows裝置](/intune-education/windows-autopilot-setup)<br><br>[我要如何註冊我的裝置？](/intune-education/how-should-i-enroll-devices)                                                                                                                                                  |
-| 透過 Intune 教育用部署更新                             | IT 系統管理員可以使用 Microsoft Intune，在一年四Surface Laptop SE將作業系統與應用程式更新推送到整個學校的裝置。 如有需要，他們可以停用硬體元素，例如藍牙裝置上的相機或手機，或重設特定裝置 ，如果學生遇到技術問題。 |[管理正在Windows 11 SE](/intune-education/windows-11-se-overview)<br><br>[Microsoft 教育版文件與資源](/microsoft-365/education/)<br><br>[開始使用 Intune 教育用](/microsoft-365/education/deploy/intune-for-education)<br><br>[使用 Intune 教育版管理群組、應用程式及設定](/microsoft-365/education/deploy/use-intune-for-education) |
+| 透過 Intune 教育用部署更新                             | IT 系統管理員可以使用 Microsoft Intune，在一年四Surface Laptop SE將作業系統與應用程式更新推送到整個學校的裝置。 如有需要，他們可以停用硬體元素，例如相機或藍牙裝置上的裝置，或在學生遇到技術問題時重設特定裝置。 |[管理正在Windows 11 SE](/intune-education/windows-11-se-overview)<br><br>[Microsoft 教育版文件與資源](/microsoft-365/education/)<br><br>[開始使用 Intune 教育用](/microsoft-365/education/deploy/intune-for-education)<br><br>[使用 Intune 教育版管理群組、應用程式及設定](/microsoft-365/education/deploy/use-intune-for-education) |
 | 根據需要取代裝置                                           | 如果學生畫面損毀或裝置損毀，IT 系統管理員可以快速部署備用裝置，將學生的雲端身分標識轉移到新裝置。                                                                                                  |[Intune 教育用中的遠端裝置動作](/intune-education/edu-device-remote-actions)                                                                                                                                                                                                                                                                                   |
 | 透過 Intune 部署新應用程式                                          | 如果教師要求新的 App，IT 系統管理員可以使用 Intune 在所有學生裝置上遠端安裝。                                                                                                                                                                                                                            |[為所有使用者安裝應用程式](/microsoft-365/education/deploy/use-intune-for-education#install-apps-for-all-users)                                                                                                                                                                                                                                                              |
 | 透過 Intune 重設裝置                                            | 當學生於Surface Laptop SE結束時開啟他們的 Surface Laptop SE 裝置時，IT 系統管理員可以使用 Intune 來重設下一個班級的裝置，這些裝置將在下一個學年度開始時需要這些裝置。                                                                                                           |[使用 Autopilot Reset 使用 Intune 教育用重新設定裝置](/intune-education/autopilot-reset)                                                                                                                                                                                                                                                                      |

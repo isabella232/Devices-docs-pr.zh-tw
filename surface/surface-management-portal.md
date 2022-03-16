@@ -12,12 +12,15 @@ ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a131e663aadbd10be039cff777001383178f7fc1
-ms.sourcegitcommit: 16889d72b0af81dfe79267c41574c3774e81f178
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8c0f4f6c80ff7341b795839c3897dff6733414bc
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155171"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448876"
 ---
 # <a name="surface-management-portal-overview"></a>Surface 管理入口網站概觀
 
@@ -35,7 +38,7 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 
 ## <a name="get-started"></a>開始使用
 
-請登錄至 Microsoft 端點管理員，按一下 [**所有服務**，然後按一下**Surface Management Portal**。
+請Microsoft 端點管理員，按一下 [所有**服務**，然後按一下**Surface Management Portal**。
 
 :::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="啟動 Surface 管理入口網站":::
 
@@ -50,13 +53,13 @@ Surface 管理入口網站是公司或使用者擁有 Surface 裝置端對端可
 - 未啟用磁片磁碟機加密的裝置。
 - 目前處於非使用中的裝置。
 
-選取 **查看報表** 以查看每個深入資訊類別的詳細資訊，提供您可以自訂和匯出的診斷資訊。
+選取 **查看報表** 以查看每個深入分析類別的詳細資訊，提供您可以自訂和匯出的診斷資訊。
 
 :::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="取得 Surface 裝置深入資訊及查看報告":::
 
 ## <a name="device-warranty-and-coverage"></a>裝置保固與保固
 
-如果您管理數百或數千部裝置，可直接存取每個裝置之保固狀態特別有用，讓您快速看到下列資訊：
+如果您管理數百或數千部裝置，可直接存取每個裝置之保固狀態特別有用，讓您快速查看下列資訊：
 
 - 保固期間內的裝置
 - 即將過期的裝置
@@ -71,7 +74,7 @@ Surface 管理入口網站提供支援活動的完整可見度，以及每個要
 
 ## <a name="try-for-free"></a>免費試用
 
-Surface 管理入口網站適用于透過 Intune Microsoft 端點管理員註冊 Surface 裝置的客戶。 如果您是 Intune 的新使用者，請流覽快速入門來立即設定您的 Intune 租使用者[：免費試用 Microsoft Intune。](/mem/intune/fundamentals/free-trial-sign-up)
+Surface 管理入口網站適用于透過 Intune Microsoft 端點管理員註冊 Surface 裝置的客戶。 如果您是 Intune 的新使用者，請流覽快速入門來立即設定您的 Intune 租使用者[：Microsoft Intune試用。](/mem/intune/fundamentals/free-trial-sign-up)
 
 ## <a name="known-issues"></a>已知問題
 
@@ -81,4 +84,4 @@ Surface 管理入口網站適用于透過 Intune Microsoft 端點管理員註冊
 
 - [什麼是 Microsoft Surface 管理入口網站？](/mem/intune/fundamentals/surface-management-portal?)
 - [MicrosoftMicrosoftMicrosoft](https://youtu.be/_MmutkqNudk)
-- [Surface IT Pro部落格文章：Surface 管理入口網站](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-management-portal/ba-p/1419017)
+- [Surface IT Pro部落格文章：Surface Management Portal](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-management-portal/ba-p/1419017)

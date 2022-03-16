@@ -20,12 +20,15 @@ ms.topic: article
 manager: laurawi
 ms.audience: itpro
 ms.date: 12/08/2021
-ms.openlocfilehash: e8e4ddbd559fc6aea2d04e61208b911ebef3ec22
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 44508875254d2e3d004afef710b43ada2911de08
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338396"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448656"
 ---
 # <a name="wake-on-power-for-surface-devices"></a>適用於 Surface 裝置的電源喚醒
 
@@ -39,18 +42,18 @@ Surface 裝置可在您離開桌面時關閉電源，或設定為睡眠模式以
 - Surface Pro 7 (所有 SKUs) 
 - Surface Go 3 (商務 SKUs) 
 - Surface Laptop Studio (只供應商業 SKUs) 
-- Surface Book 3 (所有 SKUs) 
+- Surface Book 3 (SKUs) 
 - Surface Laptop只 (4 個商業 SKUS) 
-- Surface Laptop 3 (SKUs) 
+- Surface Laptop 3 (所有 SKUs) 
 - Surface Laptop前往 (所有 SKUs) 
 
 
 >[!TIP]
-> 商業 SKUs (或 Surface 商務版) Windows 10 專業版/Enterprise 或 Windows 11 專業版/Enterprise;消費者 SKUs Windows 10/Windows 11 家用版。 若要深入瞭解，請參閱 [查看系統資訊](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00)。 
+> 商業 SKUS (或 Surface 商務版) Windows 10 專業版/Enterprise 或 Windows 11 專業版/Enterprise;消費者 SKUs Windows 10/Windows 11 家用版。 若要深入瞭解，請參閱 [查看系統資訊](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00)。 
 
 ## <a name="overview-and-prerequisites"></a>概觀與先決條件
 
-Surface UEFI 設定器可讓您將個別的 UEFI 設定儲存在 Windows 安裝程式.msi套件中，以發佈至目標裝置。 
+Surface UEFI 設定器可讓您將個別的 UEFI 設定儲存在 Windows安裝程式.msi套件中，以發佈至目標裝置。 
 
 > [!NOTE]
 > 本文假設您知道如何使用 SEMM。 詳細資訊請參閱[SURFACE Enterprise管理模式 (SEMM) ](surface-enterprise-management-mode.md)檔。
@@ -78,7 +81,7 @@ Surface UEFI 設定器可讓您將個別的 UEFI 設定儲存在 Windows 安裝�
 
 ## <a name="apply-the-msi-package"></a>套用 MSI 套件 
 
-您可以使用軟體發佈工具 ，例如軟體發佈工具，將 MSI 套件套用至Microsoft Endpoint Configuration Manager。 此套裝程式含將套件安裝在您本地電腦上的步驟。 
+您可以使用軟體發佈工具 ，例如軟體發佈工具，將 MSI 套件套用至整個網路的Microsoft Endpoint Configuration Manager。 此套裝程式含將套件安裝在您本地電腦上的步驟。 
 
 1.  在提升的命令提示符中，輸入.msi的完整路徑，以執行.msi套件。 
 

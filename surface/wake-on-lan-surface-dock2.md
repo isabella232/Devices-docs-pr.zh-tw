@@ -14,16 +14,19 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 11/30/2021
-ms.openlocfilehash: 09982dff2e44ffc2ebe9b890588e5a62a3259cf5
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8f09941b555ba1b0870bd1e27fa1b85d0d72a19c
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338486"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448436"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>使用 Surface Dock 2 的網路喚醒
 
-若要讓裝置保持在最新狀態，IT 系統管理員必須能夠在裝置不在使用時管理裝置，通常是在夜間維護期間。 Surface Dock 2 提供 LAN 喚醒 (WOL) 的最佳支援，讓系統管理員能夠遠端喚醒 Surface 裝置，並自動使用 Microsoft 端點管理員 或其他協力廠商解決方案執行管理工作。
+若要讓裝置保持在最新狀態，IT 系統管理員必須能夠在裝置不在使用時管理裝置，通常是在夜間維護期間。 Surface Dock 2 提供 LAN (WOL 喚醒的最佳支援) 讓系統管理員能夠遠端喚醒 Surface 裝置，並自動使用 Microsoft 端點管理員 或其他協力廠商解決方案執行管理工作。
 
 ## <a name="requirements"></a>需求
 
@@ -33,7 +36,7 @@ ms.locfileid: "12338486"
 > ![Surface Dock 2。](images/surface-dock2-angled.png)
 
 > [!NOTE]
-> 喚醒連接到 Surface Dock 2 的裝置不需要使用 Surface Enterprise 管理模式 (SEMM) 或啟用任何 UEFI 策略設定。
+> 喚醒連接到 Surface Dock 2 的裝置不需要使用 Surface Enterprise管理模式 (SEMM) 或啟用任何 UEFI 策略設定。
  
 ## <a name="supported-surface-devices"></a>支援的 Surface 裝置
 
@@ -59,7 +62,7 @@ Surface Dock 2 為下列電源狀態中的裝置提供 WOL 支援：
 
 ## <a name="how-it-works"></a>運作方式
 
-不使用時，Surface 裝置會進入空閒、低電源狀態，稱為新式備用或已連接備用。 或者，裝置在 S4 (中) ，或 (S5) 電源狀態，根據裝置上設定電源設定。 IT 系統管理員可以使用喚醒要求 (魔術封包) 遠端觸發裝置，其中包含目標 Surface 裝置之媒體存取控制 (MAC) 位址。 許多管理解決方案 ，Microsoft Endpoint Configuration Manager協力廠商應用程式Microsoft Store提供 WOL 的內建支援。
+不使用時，Surface 裝置會進入空閒、低電源狀態，稱為新式備用或已連接備用。 或者，根據裝置上設定 (電源設定) 裝置 (S5 或關機) 進入休眠狀態。 IT 系統管理員可以使用喚醒要求 (魔術封包) 遠端觸發裝置 (MAC) 目標 Surface 裝置的位址。 許多管理解決方案 ，Microsoft Endpoint Configuration Manager協力廠商應用程式Microsoft Store提供 WOL 的內建支援。
 
 若要在沒有 Surface Dock 2 的裝置上啟用 WOL，請參閱：
 

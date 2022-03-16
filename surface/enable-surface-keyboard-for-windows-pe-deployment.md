@@ -1,6 +1,6 @@
 ---
 title: 如何在 MDT 部署期間Surface Laptop鍵盤
-description: 當您使用 MDT 將電腦Windows 10 Surface 膝上型電腦時，您需要將鍵盤驅動程式導入到 Windows環境中使用。
+description: 當您使用 MDT 將 Windows 10 Surface 膝上型電腦部署時，您需要將鍵盤驅動程式輸入到 Windows 環境中使用。
 keywords: windows 10 surface， 自動化， 自訂， mdt
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,12 +21,14 @@ appliesto:
 - Surface Laptop 4
 - Surface Laptop Studio
 - Surface Pro 8
-ms.openlocfilehash: b65fbcb0221fe923e1e2240b8da163d868b46122
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8707d022ae5e3d3f34c59fab88328b5720896898
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338266"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449186"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>如何在 MDT 部署期間Surface Laptop鍵盤
 
@@ -70,7 +72,7 @@ ms.locfileid: "12338266"
 
 | 裝置                                | 匯出資料夾                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 其他資訊                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Laptop工作室                 | Heci<br>ialpss2_gpio2_tgl<br>ialpss2_uart2_tgl<br>intelthcbase<br>surfacehidminidriver<br>surfacehotplug<br>surfaceintegrationdriver<br>surfacepenwirelesschargerhotkey<br>surfacesarmanager<br>surfaceserialhubdriver<br>surfacestoragefwupdateenum<br>surfacestoragefwupdatekbg40zns256gpackage<br>surfacewakeontouchcontrol | 不適用 |
+| Surface Laptop Studio                 | Heci<br>ialpss2_gpio2_tgl<br>ialpss2_uart2_tgl<br>intelthcbase<br>surfacehidminidriver<br>surfacehotplug<br>surfaceintegrationdriver<br>surfacepenwirelesschargerhotkey<br>surfacesarmanager<br>surfaceserialhubdriver<br>surfacestoragefwupdateenum<br>surfacestoragefwupdatekbg40zns256gpackage<br>surfacewakeontouchcontrol | 不適用 |
 | Surface Pro 8                         | Heci<br>ialpss2_gpio2_tgl<br>ialpss2_i2c_tgl<br>ialpss2_spi_tgl<br>ialpss2_uart2_tgl<br>intelthcbase<br>msux64w10<br>netwtw08<br>surfacebattery<br>surfacehidminidriver<br>surfaceintegrationdriver<br>surfacesarmanager<br>surfaceserialhubdriver<br>surfacetimealarmacpifilter<br>surfacevirtualfunctionenum<br>tbthostcontroller<br>tbthostcontrollerhacomponent<br> |不適用 |
 | Surface Laptop 4 與 Intel 處理器 | TglSerial<br>IntelPreciseTouch<br>SurfaceEthernetAdapter<br>SurfaceBattery<br>SurfaceHidMini<br>SurfaceHotPlug<br>SurfaceSerialHub<br>SurfaceTconDriver<br>surfacetimealarmacpifilter<br>surfacevirtualfunctionenum<br>TglChipset<br>ManagementEngine                                                                                                                                                                                                                                                                                                                          |不適用                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Surface Laptop 4 個使用AMD 處理器   | U0361415<br>AMDfendr<br>AMDGpio2<br>AMDI2c<br>AMDLpcFilterDriverAMDMicroPEP<br>APP<br>AMDSmf<br>AMDSpi<br>AMDUart<br>SurfaceEthernetAdapter<br>SMBUS<br>SurfaceBattery<br>SurfaceButton<br>SurfaceDigitizerHidSpiExtnPackage<br>SurfaceHIDLylyNames<br>SurfaceHidMini<br>SurfaceHotPlug<br>Surface Surface SurfacePanel<br>SurfacePowerMeter<br>SurfacePowerTrackerCore<br>SurfaceSerialHub<br>SurfaceSMFClient<br>SurfaceSmfDisplayClient<br>SurfaceSystemManagementFramework<br>SurfaceTconDriver<br>SurfaceThermalPolicy<br>Surfacetimealarmacpifilter<br>SurfaceUcmUcsiHidClient |不適用                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -79,7 +81,7 @@ ms.locfileid: "12338266"
 | Surface Laptop (第一代)               | SurfacePlatformInstaller\Drivers\System\GPIO<br>SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver<br>SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver<br>SurfacePlatformInstaller\Drivers\System\PreciseTouch                                                                                                                                                                                                                                                                                                                                         | 針對以.msi SurfaceUpdate"開頭的較新檔案，請使用：<br>SurfaceUpdate\SerialIOGPIO<br>SurfaceUpdate\SurfaceHidMiniDriver<br>SurfaceUpdate\SurfaceSerialHubDriver<br>SurfaceUpdate\Itouch                                                                                                                                                                                                                                                |
 
   > [!TIP]
-  > 檢查已下載.msi套件，以判斷格式和目錄結構。  目錄結構會從 SurfacePlatformInstaller (.msi 檔案) 或 SurfaceUpdate (.msi 檔案) 視 .msi 發行時間開始。
+  > 檢查已下載.msi套件，以決定格式和目錄結構。  目錄結構會從 SurfacePlatformInstaller (.msi 檔案) 或 SurfaceUpdate (.msi) 視 .msi 發行時間開始。
 
 ## <a name="verify-imported-drivers--configure-windows-pe-properties"></a>驗證已輸入的驅動程式&設定WINDOWS PE 屬性
 

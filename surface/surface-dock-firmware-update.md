@@ -12,12 +12,15 @@ ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
 ms.date: 10/25/2021
-ms.openlocfilehash: ebdb6e5999eb3564a21d23e661fa75d90a32e698
-ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8d714ad9e7d301b4691655faaf9e39b0f4147301
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12154048"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449376"
 ---
 # <a name="surface-dock-1-firmware-update"></a>Surface Dock 1 韌體更新
 
@@ -29,20 +32,20 @@ ms.locfileid: "12154048"
 此工具取代先前 Microsoft Surface Dock Updater 工具，先前可下載為 IT 用 Surface Tools 的一部分。 先前工具的Surface_Dock_Updater_vx.xx.xxx.x.msi (x 代表版本號碼) 且無法再下載，因此不應使用。
 
 > [!IMPORTANT]
-> 本文包含適用于 IT 系統管理員的技術指示。 如果您是家用使用者，請參閱如何在 Microsoft 支援網站上更新[Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)   固件。 支援網站的指示與下列一般安裝步驟相同，但本文提供監控、驗證更新，以及將更新部署到網路上多個裝置的其他資訊。
+> 本文包含適用于 IT 系統管理員的技術指示。 如果您是家用使用者，請參閱如何在 Microsoft 支援網站上更新[Surface Dock Firmware](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)   。 支援網站上的指示與下列一般安裝步驟相同，但本文提供監控、驗證更新，以及將更新部署到網路上多個裝置的其他資訊。
 
 ## <a name="supported-devices"></a>支援的裝置
 
 下列裝置支援 Surface Dock 1 的固件更新：
 
 - Surface Pro 3 及更高版本
-- Surface ProX (代) 
+- Surface Pro X (代) 
 - Surface 3
 - Surface Book (代) 
-- Surface Laptop演播室
+- Surface Laptop Studio
 - Surface Studio (代) 
 - Surface Laptop (代) 
-- Surface Laptop去
+- Surface Laptop Go
 - Surface Go (代) 
 
 ### <a name="minimum-os-requirement"></a>最低作業系統需求
@@ -54,9 +57,9 @@ ms.locfileid: "12154048"
 本節說明如何在 Surface Dock 1 上手動安裝固件更新。
 
 > [!TIP]
-> Microsoft 會定期發行新版本的 Surface Dock 1 固件更新。 MSI 檔案並未自我更新。 如果您已經將 MSI 部署到 Surface 裝置，且發行新版本的固件，則需要部署新版本。
+> Microsoft 會定期發行新版本的 Surface Dock 1 固件更新。 MSI 檔案並未自我更新。 如果您已經將 MSI 部署到 Surface 裝置，且新版本的固件已發行，則需要部署新版本。
 
-1. 請前往 [適用于 IT 的 Surface Tools，](https://www.microsoft.com/download/details.aspx?id=46703) 然後下載並安裝 .msi 名為 **Surface_Dock_FwUpdate.** 的檔案，後面接著適當的版本。 如果您是在 X 上Surface Pro，請下載 **.arm64**建立。 針對所有其他裝置，請使用 **.amd64** 版本。  
+1. 請前往 [適用于 IT 的 Surface Tools](https://www.microsoft.com/download/details.aspx?id=46703) ，然後下載並安裝.msi名為 **Surface_Dock_FwUpdate.**，後面接著適當的版本。 如果您是在 X 上Surface Pro，請下載 **.arm64**版本。 針對所有其他裝置，請使用 **.amd64** 版本。  
 
     - 更新需要 Surface 裝置Windows 10版本 1803 或更新版本。
     - 安裝 MSI 檔案可能會提示您重新開機 Surface。 不過，執行更新時不需要重新開機。
@@ -69,7 +72,7 @@ ms.locfileid: "12154048"
 
 若要監控更新：
 
-1. 開啟 [事件檢視器**** Windows流覽至 **>** 記錄應用程式，然後在右側窗格中的 [**** 動作> 下，按一下 [篩選**目前**記錄，輸入事件來源旁**的 SurfaceDockFwUpdate，** 然後按一下 **[確定**> 。
+1. 開啟 [事件**** 檢視器Windows流覽至 **>** 記錄應用程式，然後在右側窗格中的 [動作> 下，**** 按一下 [篩選**目前**記錄，輸入事件來源旁**的 SurfaceDockFwUpdate**，然後按一下 **[確定**。
 
 2. 在提升的命令提示符中輸入下列命令：
 
@@ -81,15 +84,15 @@ ms.locfileid: "12154048"
 
 4. 包含下列文字的事件 2007 表示更新成功：完成固件更新 **。hr=0 DriverTelementry EventCode = 2007**。
 
-   如果更新失敗，則事件識別碼 2007 會顯示為錯誤事件，而不是******資訊**。 此外，註冊表中Windows版本不會為最新版本。
+   如果更新失敗，則事件識別碼 2007 會顯示為錯誤事件，而不是**資訊**。** ** 此外，註冊表中Windows的版本不會為最新版本。
 
-5. 更新完成後，更新的 DWORD 值會顯示在 Windows 註冊表中，對應到目前版本的工具。 請參閱 [本文中的版本](#versions-reference) 參考區段以瞭解詳細資料。 例如：
+5. 更新完成後，更新的 DWORD 值會顯示在 Windows註冊表中，對應到目前版本的工具。 請參閱 [本文中的版本](#versions-reference) 參考區段以瞭解詳細資料。 例如：
 
     - Component10CurrentFwVersion 0x04ac3970 (78395760) 
     - Component20CurrentFwVersion 0x04915a70 (76634736) 
 
 >[!TIP]
->如果您在事件文字中看到「找不到來源 SurfaceDockFwUpdate 的事件識別碼 xxxx 描述」，這是預期且可以忽略的。
+>如果您在事件文字中看到「找不到來源 SurfaceDockFwUpdate 的事件識別碼 xxxx 描述」，這是預期的結果，而且可以忽略。
 
 另請參閱本文中的下列各節：
 
@@ -111,16 +114,16 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 ```
 
 > [!NOTE]
-> 根據預設，不會建立記錄檔案。 若要建立記錄檔案，您必須附加「/l*v [path]」。例如：Msiexec.exe /i \<path to msi file\> /l*v %windir%\log\ SurfaceDockFWI.log"
+> 根據預設，不會建立記錄檔案。 若要建立記錄檔案，您必須附加「/*lv [path]」。例如：Msiexec.exe /i /lv \<path to msi file\> *%windir%\log\ SurfaceDockFWI.log"
 
 詳情請參閱命令列 [選項](/windows/win32/msi/command-line-options) 檔。
 
 > [!IMPORTANT]
-> 如果您想要使用任何其他方法持續更新 Surface Dock，請參閱更新 Surface [Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) 以瞭解詳細資料。
+> 如果您想要使用任何其他方法持續更新 Surface Dock，請參閱更新 [Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) 以尋找詳細資料。
 
 ## <a name="intune-deployment"></a>Intune 部署
 
-您可以使用 Intune 將 Surface Dock 1 的固件更新發佈至您的裝置。 首先，您需要將 MSI 檔案轉換成 .intunewin 格式，如下列檔所述 [：Intune 獨立版 - Win32 應用程式管理](/intune/apps/apps-win32-app-management)。
+您可以使用 Intune 將 Surface Dock 1 的固件更新發佈至您的裝置。 首先，您需要將 MSI 檔案轉換成 .intunewin 格式，如下列檔所述： [Intune 獨立版 - Win32 應用程式管理](/intune/apps/apps-win32-app-management)。
 
 請使用下列命令：
 
@@ -131,21 +134,21 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 Surface Dock 固件由兩個元件組成：
 
 - **元件10：** MICRO 控制器單元 (微控制器) 固件
-- **元件20：** 在DP (顯示) 埠。
+- **元件20：** 顯示DP (或) 埠。
 
 成功完成 Surface Dock 1 的固件更新後，這些固件元件會獲得新的註冊表鍵值。
 
-### <a name="to-verify-updates"></a>驗證更新
+### <a name="to-verify-updates"></a>若要驗證更新
 
 1. 開啟 Regedit 並流覽至下列註冊表路徑：
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
 
-2. 尋找登錄機碼 **：Component10CurrentFwVersion和 Component20CurrentFwVersion，** 這是指目前裝置上的固件。
+2. 尋找登錄機碼： **Component10CurrentFwVersion和 Component20CurrentFwVersion**，這是指目前裝置上的固件。
 
    ![Surface Dock 1 的固件更新安裝程式。](images/regeditDock.png)
 
-3. 確認新的登錄機碼值符合本檔結尾版本參照中列出的更新的登錄機碼值。 如果值相符，則已成功更新該固件。
+3. 確認新的登錄機碼值符合本檔結尾的版本參照中列出的更新的登錄機碼值。 如果值相符，則已成功更新該固件。
 
 4. 如果無法驗證，請查看下一節中的事件記錄與疑難排解提示。
 
@@ -155,12 +158,12 @@ Surface Dock 固件由兩個元件組成：
 
 | 記錄檔                              | 位置                               | 附註                                                                                                                                                                                                         |
 | -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Dock 1 固件更新記錄 | 必須指定路徑， (附注)  | 此工具的較舊版本將事件撰寫至應用程式與服務記錄\Microsoft Surface Dock Updater。                                                                                                  |
-| Windows裝置安裝記錄       | %windir%\inf\setupapi.dev.log           | 有關使用裝置安裝記錄程式的資訊，請參閱 [SetupAPI 記錄](/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) 檔。 |
+| Surface Dock 1 固件更新記錄 | 必須指定路徑 (請參閱附注)  | 此工具的較舊版本會將事件記錄至應用程式與服務記錄\Microsoft Surface Dock Updater。                                                                                                  |
+| Windows安裝記錄       | %windir%\inf\setupapi.dev.log           | 有關使用裝置安裝記錄程式詳細資訊，請參閱 [SetupAPI 記錄](/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) 檔。 |
 
-### <a name="table-2-event-log-ids-for-surface-dock-1-firmware-update"></a>表 2. Surface Dock 1 固件更新的事件記錄號
+### <a name="table-2-event-log-ids-for-surface-dock-1-firmware-update"></a>表 2. Surface Dock 1 固件更新的事件記錄
 
-事件會記錄在應用程式事件記錄中。  注意：此工具的較舊版本會將事件記錄至應用程式和服務記錄\Microsoft Surface Dock Updater。
+事件會記錄在應用程式事件記錄中。  注意：此工具的較舊版本會將事件記錄至應用程式與服務記錄\Microsoft Surface Dock Updater。
 
 | 事件識別碼 | 事件類型                                                           |
 | -------- | -------------------------------------------------------------------- |
@@ -185,7 +188,7 @@ Surface Dock 固件由兩個元件組成：
 ## <a name="versions-reference"></a>版本參照
 
 >[!NOTE]
->安裝檔案會以下列命名格式發行：Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI(：Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) 預設為 C：\Program Files\SurfaceUpdate。 ****
+>安裝檔案會以下列命名格式發行：Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI(： **** Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) 預設為 C：\Program Files\SurfaceUpdate。
 
 ### <a name="version-1531390"></a>版本 1.53.139.0
 
@@ -206,7 +209,7 @@ Surface Dock 固件由兩個元件組成：
 
 #### <a name="release-date-september-18-2019"></a>發行日期：2019 年 9 月 18 日
 
-此版本包含于 Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI，會更新背景中的固件。
+此版本包含在 Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI中，會更新背景中的固件。
 
 #### <a name="updated-registry-key-values"></a>更新的登錄機碼值
 

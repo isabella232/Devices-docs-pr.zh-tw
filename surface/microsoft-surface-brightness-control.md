@@ -12,12 +12,15 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 660a96a8825002c6d52d067dac77894bb0c0b7a9
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7c27bacde65ef8c0fab75b123283bf2e6699afed
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337826"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449106"
 ---
 # <a name="surface-brightness-control"></a>Surface 亮度控制
 
@@ -35,7 +38,7 @@ ms.locfileid: "12337826"
 - Surface Pro X (代) 
 - Surface 3
 - Surface Book (代) 
-- Surface Laptop工作室
+- Surface Laptop Studio
 - Surface Studio (代) 
 - Surface Laptop (代) 
 - Surface Laptop Go
@@ -48,7 +51,7 @@ ms.locfileid: "12337826"
 
 ## <a name="configure-surface-brightness-control"></a>設定 Surface 亮度控制
 
-您可以透過註冊表來調整Windows值。 若要進一Windows註冊表，請參閱[註冊表檔](/windows/desktop/sysinfo/registry)。
+您可以透過註冊表來調整Windows值。 有關使用註冊表Windows，請參閱[註冊表檔](/windows/desktop/sysinfo/registry)。
 
 1. 從**命令提示符執行 regedit**，以開啟 Windows編輯器。
 2. 流覽至電腦\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Surface\Surface 亮度控制。

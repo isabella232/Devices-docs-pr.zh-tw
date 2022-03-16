@@ -15,12 +15,15 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 12/14/2021
-ms.openlocfilehash: 6cfe5f44c156c8042172741739fffbfed3ceba07
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: f914678f2317ce4e08554d27b74bac4e33e3c641
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338576"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449636"
 ---
 # <a name="manage-and-deploy-surface-driver-and-firmware-updates"></a>管理和部署 Surface 驅動程式與韌體更新
 
@@ -57,11 +60,11 @@ Windows安裝程式.msi檔案包含所有 Surface 裝置所需的累積驅動程
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Surface Pro**                                                                                                                                       | - [Surface Pro 8](https://www.microsoft.com/en-us/download/details.aspx?id=103503)<br>- [Surface Pro 7+ Surface Pro 7+ (LTE) ](https://www.microsoft.com/en-us/download/details.aspx?id=102633)<br>- [Surface Pro 7](https://www.microsoft.com/download/details.aspx?id=100419)<br>- [Surface Pro 6](https://www.microsoft.com/download/details.aspx?id=57514)<br>- [Surface Pro 5 (LTE) ](https://www.microsoft.com/download/details.aspx?id=56278)<br>- [Surface Pro 5 (Wi-Fi) ](https://www.microsoft.com/download/details.aspx?id=55484)<br>- [Surface Pro 4](https://www.microsoft.com/download/details.aspx?id=49498)<br>- [Surface Pro 3](https://www.microsoft.com/download/details.aspx?id=38826)<br>- [Surface Pro 2](https://www.microsoft.com/download/details.aspx?id=49042)<br>- [Surface Pro](https://www.microsoft.com/download/details.aspx?id=49038) |
 | **Surface 膝上型電腦**                                                                                                                                    | - [Surface Laptop Go](https://www.microsoft.com/download/details.aspx?id=102261)<br>- [Surface Laptop Intel 處理器使用 4](https://www.microsoft.com/download/details.aspx?id=102924)<br>- [Surface Laptop 4 使用AMD 處理器](https://www.microsoft.com/download/details.aspx?id=102923)<br>- [Surface Laptop 3 與 Intel 處理器](https://www.microsoft.com/download/details.aspx?id=100429)<br>- [Surface Laptop 3 與AMD 處理器](https://www.microsoft.com/download/details.aspx?id=100428)<br>- [Surface Laptop 2](https://www.microsoft.com/download/details.aspx?id=57515)<br>- [Surface Laptop](https://www.microsoft.com/en-us/download/details.aspx?id=55489)                                                                                                                                                                                    |
-| **Surface Laptop工作室**                                                                                                                             | - [Surface Laptop工作室](https://www.microsoft.com/en-us/download/details.aspx?id=103505)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Surface Laptop Studio**                                                                                                                             | - [Surface Laptop工作室](https://www.microsoft.com/en-us/download/details.aspx?id=103505)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Surface Book**                                                                                                                                      | - [Surface Book 3](https://www.microsoft.com/download/details.aspx?id=101315)<br>- [Surface Book 2](https://www.microsoft.com/download/details.aspx?id=56261)<br>- [Surface Book](https://www.microsoft.com/download/details.aspx?id=49497)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Surface Go**                                                                                                                                        | - [Surface Go 3](https://www.microsoft.com/en-us/download/details.aspx?id=103504)<br>- [Surface Go 2](https://www.microsoft.com/download/details.aspx?id=101304)<br>- [Surface Go (Wi-Fi) ](https://www.microsoft.com/download/details.aspx?id=57439)<br>- [Surface Go (LTE) ](https://www.microsoft.com/download/details.aspx?id=57601)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Surface Studio**                                                                                                                                    | - [Surface Studio 2](https://www.microsoft.com/download/details.aspx?id=57593)<br>- [Surface Studio](https://www.microsoft.com/download/details.aspx?id=54311)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Surface 3**                                                                                                                                         | - [Surface 3 (Wi-Fi) ](https://www.microsoft.com/download/details.aspx?id=49040)<br>- [Surface 3 (LTE) - ATT](https://www.microsoft.com/download/details.aspx?id=49039)<br>- [Surface 3 (LTE) - Verizon](https://www.microsoft.com/download/details.aspx?id=49920)<br>- [Surface 3 (LTE) - 北美電信公司未鎖定](https://www.microsoft.com/download/details.aspx?id=49037)<br>- [Surface 3 (LTE) - 北美以外的地區，以及日本 Y！mobile](https://www.microsoft.com/download/details.aspx?id=49041)                                                                                                                                                                                                                                                                                                                                                   |
+| **Surface 3**                                                                                                                                         | - [Surface 3 (Wi-Fi) ](https://www.microsoft.com/download/details.aspx?id=49040)<br>- [Surface 3 (LTE) - ATT](https://www.microsoft.com/download/details.aspx?id=49039)<br>- [Surface 3 (LTE) - Verizon](https://www.microsoft.com/download/details.aspx?id=49920)<br>- [Surface 3 (LTE) - 北美電信公司未鎖定](https://www.microsoft.com/download/details.aspx?id=49037)<br>- [Surface 3 (LTE) - 北美以外的地區，以及日本地區的 Y！mobile](https://www.microsoft.com/download/details.aspx?id=49041)                                                                                                                                                                                                                                                                                                                                                   |
 | **Surface Hub Windows 10 專業版**[**或Windows 10 企業版**](/surface-hub/surface-hub-2s-migrate-os)   | - [Windows 10 專業版 2 Enterprise上的 Surface Hub作業系統](https://www.microsoft.com/download/details.aspx?id=101974)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Surface Hub 2020 Windows 10 Teams更新**                                                                                                  | - 請參閱[管理Windows更新Surface Hub](/surface-hub/manage-windows-updates-for-surface-hub)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Surface Dock 2**                                                                                                                                    | - [Surface Dock 2](https://www.microsoft.com/download/details.aspx?id=101317)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -69,11 +72,11 @@ Windows安裝程式.msi檔案包含所有 Surface 裝置所需的累積驅動程
  
 
 > [!TIP]
-> 針對包含不同版本不同檔案Windows的較舊版本，請選取.msi與 Surface 模型和版本名稱Windows。 .msi檔案名包含安裝驅動程式和Windows所需的最低支援建制編號。 例如，若要更新具有 Surface Book 18362 的 Windows 10 2，請選擇SurfaceBook2_Win10_18362_19.101.13994.msi **。** 對於具有 Surface Book 16299 之 Windows 10 2 的**SurfaceBook2_Win10_16299_1803509_3.msi。**
+> 針對包含不同版本不同檔案Windows的較舊版本，請選取.msi與 Surface 模型和版本名稱Windows。 .msi檔案名包含安裝驅動程式和Windows所需的最低支援建制編號。 例如，若要更新具有 Surface Book 18362 的 Windows 10 2，請選擇SurfaceBook2_Win10_18362_19.101.13994.msi **。** 對於具有 Surface Book 16299 的 Windows 10 2，**請選擇SurfaceBook2_Win10_16299_1803509_3.msi。**
 
 ## <a name="central-update-management-in-commercial-environments"></a>商業環境中的中央更新管理
 
-管理裝置的工具 ，包括驅動程式和固件更新 ，包含在[Microsoft 端點管理員。](https://devicemanagement.microsoft.com/) 
+管理裝置的工具 ，包括驅動程式和[Microsoft 端點管理員。](https://devicemanagement.microsoft.com/) 
 
 ### <a name="manage-updates-with-configuration-manager-and-intune"></a>使用 Configuration Manager 和 Intune 管理更新
 
@@ -94,11 +97,11 @@ Microsoft 部署工具組 (MDT) 包含在端點群組原則管理器中。 視�
 - [Microsoft 部署工具組檔](/configmgr/mdt/)
 - [準備使用 MDT 進行部署](/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 
-有關如何使用端點 Configuration Manager 部署更新的指示，請參閱 [使用 Configuration Manager 部署應用程式](/configmgr/apps/deploy-use/deploy-applications)。 有關如何使用 MDT 部署更新的指示，請參閱使用[MDT 部署Windows 10映射](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)。
+有關如何使用端點 Configuration Manager 部署更新的指示，請參閱 [使用 Configuration Manager 部署應用程式](/configmgr/apps/deploy-use/deploy-applications)。 有關如何使用 MDT 部署更新的指示，請參閱使用[MDT](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)部署Windows 10映射。
 
 **WindowsPE 和 Surface 的固件和驅動程式**
 
-端點組Windows和 MDT 在部署過程中 (WindowsPE) 預先安裝環境。 WindowsPE 僅支援一組有限的基本驅動程式，例如網路介面卡和儲存控制器。 非 WindowsPE Windows元件的驅動程式可能會產生錯誤。 最佳做法是，您可以將部署程式在 WindowsPE 階段期間只使用所需的驅動程式，以防止這類錯誤。
+端點組Windows和 MDT 在部署Windows WindowsPE (中) 預先安裝環境。 WindowsPE 僅支援一組有限的基本驅動程式，例如網路介面卡和儲存控制器。 非 WindowsPE Windows元件的驅動程式可能會產生錯誤。 最佳做法是，您可以將部署程式在 WindowsPE 階段期間只使用所需的驅動程式，以防止這類錯誤。
 
 ### <a name="endpoint-configuration-manager"></a>Endpoint Configuration Manager
 
@@ -106,11 +109,11 @@ Microsoft 部署工具組 (MDT) 包含在端點群組原則管理器中。 視�
 
 ## <a name="supported-devices"></a>支援的裝置
 
-除了在 ARM .msi 上執行 Windows 10 X 以外，Surface Pro 2 或更新 (裝置Surface Pro可下載) 。
+除了在 ARM .msi 上執行 Windows 10 X 以外，Surface Pro 2 及更新 (裝置Surface Pro可下載) 。
 
 ## <a name="managing-firmware-with-dfci"></a>使用 DFCI 管理固件
 
-Surface UEFI 管理 (內建 DFCI) [設定檔](/intune/configuration/device-firmware-configuration-interface-windows)，將新式管理堆疊延伸至 UEFI 硬體層級。 DFCI 支援零點式資源配置、消除BIOS 密碼、提供安全性設定 (包括啟動選項和內建的周邊設備) 的控制權，並打下未來進一步安全性案例的基礎。 如需詳細資訊，請參閱下列各項：
+在 [Intune](/intune/configuration/device-firmware-configuration-interface-windows)中 (DFCI) 設定檔的裝置固件組組介面，Surface UEFI 管理可將新式管理堆疊延伸至 UEFI 硬體層級。 DFCI 支援零點式資源配置、消除BIOS 密碼、提供安全性設定 (包括啟動選項和內建的周邊設備) 的控制權，並打下未來進一步安全性案例的基礎。 如需詳細資訊，請參閱下列各項：
 
 - [在 Surface 裝置上管理 DFCI](surface-manage-dfci-guide.md)
 - [Ignite 2019：宣佈從 Intune 遠端系統管理 Surface UEFI 設定](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)。
@@ -123,7 +126,7 @@ Surface UEFI 管理 (內建 DFCI) [設定檔](/intune/configuration/device-firmw
 
 自 2019 年 8 月.msi，所有檔案都使用下列命名慣例：
 
-- *產品*_*Windows發行*_*Windows建立 numberVersion* _* *_ *numberRevision 版本*號碼 (一般為零) 。
+- *產品*_*Windows發行*_*Windows建立* _*numberVersion*_ *numberRevision 版本號碼 (一般為零) *。
 
 **範例**
 
@@ -138,11 +141,11 @@ Surface UEFI 管理 (內建 DFCI) [設定檔](/intune/configuration/device-firmw
   - **年份：** 2019 (19) 
   - **月與周：** 073 (年 7 月的第三周) 
   - **一個月的分鐘數：** 44195
-- **版本修訂：0 (** 版本第一次發行) 
+- **版本修訂：** 0 (版本第一次發行) 
 
 ### <a name="legacy-surface-msi-naming-convention"></a>舊版 Surface .msi命名慣例
 
-舊版.msi檔案 (于 2019 年 8 月之前) 遵循相同的整體命名公式，但使用不同的方法來推匯出版本號碼。
+舊版.msi檔案 (于 2019 年 8 月前建立) 遵循相同的整體命名公式，但使用不同的方法來推匯出版本號碼。
 
 **範例**
 
@@ -156,8 +159,8 @@ Surface UEFI 管理 (內建 DFCI) [設定檔](/intune/configuration/device-firmw
 - **版本：** 1900307 – 這會顯示檔案的建立日期及其在發行順序中的位置，如下所示：
   - **年份：** 2019 (19) 
   - **發行數量：** 003 (年第三次發行) 
-  - **產品版本號碼：** 07 (Surface Pro 6 正式為第七版Surface Pro) 
-- **版本修訂：0 (** 版本第一次發行) 
+  - **產品版本號碼：** 07 (Surface Pro 6 正式為第七版 Surface Pro) 
+- **版本修訂：** 0 (版本第一次發行) 
 
 ## <a name="learn-more"></a>深入了解
 

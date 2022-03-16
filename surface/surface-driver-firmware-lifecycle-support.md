@@ -12,8 +12,16 @@ ms.date: 11/30/2021
 ms.reviewer: phorton
 manager: laurawi
 audience: itpro
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 54a6fd560b16d29e8a155bcf24efd814a6d5bf77
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449616"
 ---
-
 # <a name="surface-driver-and-firmware-lifecycle-for-windows-based-devices"></a>適用於 Windows 型裝置的 Surface 驅動程式與韌體生命週期
  
 為回應客戶要求提供更詳細的生命週期資訊，協助規劃及管理硬體和軟體部署，Surface 現在提供驅動程式和韌體更新的其他指引。

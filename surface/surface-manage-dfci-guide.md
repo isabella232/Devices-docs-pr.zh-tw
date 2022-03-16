@@ -12,12 +12,15 @@ ms.date: 10/01/2021
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: cedb4584952d5852efde3ea7644976e7bc6573e1
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: c4a39c094c0621ed491ab04148f0c8338771a6a6
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337986"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448596"
 ---
 # <a name="manage-dfci-on-surface-devices"></a>在 Surface 裝置上管理 DFCI
 
@@ -27,15 +30,15 @@ ms.locfileid: "12337986"
 
 ### <a name="background"></a>背景
 
-與執行 Windows 10的電腦一樣，Surface 裝置會仰賴儲存在 SoC 中的程式碼，讓 CPU 能夠與硬碟、顯示裝置、USB 埠及其他裝置進行介面。 儲存在此唯讀記憶體中的程式 (ROM) 稱為 (，而儲存在動態媒體中的程式稱為軟體) 。
+與執行 Windows 10 或 Windows 11 的電腦一樣，Surface 裝置會仰賴儲存在 SoC 中的程式碼，讓 CPU 能夠與硬碟、顯示裝置、USB 埠及其他裝置進行介面。 儲存在此唯讀記憶體中的程式 (ROM) 稱為 (，而儲存在動態媒體中的程式稱為軟體) 。
 
-與現今市Windows 10的其他裝置不同，Surface 提供 IT 系統管理員透過豐富的 UEFI 設定設定集來設定和管理固件的能力。 這會在軟體型策略管理上提供一層硬體控制，透過行動裝置管理或 MDM (、Configuration Manager 或組) 策略來執行。 例如，將裝置部署在具有敏感性資訊的高度安全區域的組織，可以移除硬體層級的功能，以防止相機使用。 從裝置角度而言，透過固件設定關閉相機相當於實際移除相機。 比較在固件層級管理新增的安全性，與僅仰賴作業系統軟體設定。 例如，如果您透過網域Windows設定停用音訊服務，則當地系統管理員仍可重新啟用服務。
+與現今市Windows的其他裝置不同，Surface 提供 IT 系統管理員透過豐富的 UEFI 設定設定集來設定和管理固件的能力。 這會在軟體型策略管理上提供一層硬體控制，透過行動裝置管理、MDM (、Configuration Manager 或組) 策略來執行。 例如，將裝置部署在具有敏感性資訊的高度安全區域的組織，可以移除硬體層級的功能，以防止相機使用。 從裝置角度而言，透過固件設定關閉相機相當於實際移除相機。 比較在固件層級管理新增的安全性，與僅仰賴作業系統軟體設定。 例如，如果您透過網域Windows設定停用音訊服務，則當地系統管理員仍可重新啟用服務。
 
 ### <a name="dfci-versus-semm"></a>DFCI 與 SEMM
 
 之前，管理固件時，需要將裝置註冊到 Surface Enterprise管理模式 (SEMM) ，而需要持續進行大量手動 IT 工作。 例如，SEMM 要求 IT 員工以實體方式存取每部電腦，才能在憑證管理程式過程中輸入兩位數的圖釘。 雖然 SEMM 仍然是嚴格內部部署環境中組織的良好解決方案，但其複雜度和 IT 需求高，因此使用成本高。
 
-在 Microsoft Intune 中整合的 UEFI 固件管理功能，可簡化鎖定硬體的功能，並更輕鬆地與新功能一起使用，以在單一主機中進行部署、安全性和簡化更新，現在整合為[Microsoft 端點管理員](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)。 下圖顯示直接在裝置上查看的 UEFI 設定 (左側) 在 端點管理員 主控台 (右) 。
+在 Microsoft Intune 中整合的 UEFI 固件管理功能，可簡化鎖定硬體的功能，並更輕鬆地與新功能一起使用，以在單一主機中進行部署、安全性和簡化更新，現在整合為[Microsoft 端點管理員](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)。 下圖顯示直接在裝置上查看的 UEFI 設定 (左) ，並端點管理員主控台 (右) 。
 
 :::image type="content" alt-text="裝置上顯示的 UEFI 設定 (左) ，端點管理員主控台 (右) 。" source="images/uefidfci.png" lightbox="images/uefidfci.png":::
 
@@ -59,14 +62,14 @@ ms.locfileid: "12337986"
 
 
 >[!TIP]
-> 商業 SKUs (或 Surface 商務版) Windows 10 專業版/Enterprise 或 Windows 11 專業版/Enterprise;消費者 SKUs Windows 10/Windows 11 家用版。 若要深入瞭解，請參閱 [查看系統資訊](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00)。 
+> 商業 SKUS (或 Surface 商務版) Windows 10 專業版/Enterprise 或 Windows 11 專業版/Enterprise;消費者 SKUs Windows 10/Windows 11 家用版。 若要深入瞭解，請參閱 [查看系統資訊](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00)。 
 
 > [!NOTE]
 > Surface Pro X 不支援內建相機、音訊和 Wi-Fi/藍牙。
 
 ## <a name="prerequisites"></a>必要條件
 
-- 裝置必須由合作夥伴或 OEM Windows[的 CSP Microsoft 雲端解決方案提供者 (在](https://partner.microsoft.com/membership/cloud-solution-provider)Autopilot) 註冊。
+- 裝置必須由合作夥伴或 OEM Windows[的 CSP Microsoft 雲端解決方案提供者 (Autopilot) ](https://partner.microsoft.com/membership/cloud-solution-provider)註冊。
 
 - 在針對 Surface 配置 DFCI 之前，您應該先熟悉 Microsoft Intune 和 Azure Active Directory (Azure AD) 。[ ](/intune/) [](/azure/active-directory/)
 
@@ -84,7 +87,7 @@ DFCI 環境需要設定包含設定和 Autopilot 設定檔的 DFCI 設定檔，�
 
 1. 請于您的租使用者 devicemanagement.microsoft.com。
 
-2. 在 Microsoft 端點管理員系統管理中心中，選取 >設定檔的裝置>**建立**設定檔並輸入名稱;例如**DFCI 群組原則。**
+2. 在系統管理Microsoft 端點管理員中，選取 >設定檔**** 的裝置>建立設定檔並輸入名稱;例如**DFCI 群組原則。**
 
 3. 選取**Windows 10及稍後**的平臺類型。
 
@@ -94,7 +97,7 @@ DFCI 環境需要設定包含設定和 Autopilot 設定檔的 DFCI 設定檔，�
 
 5. 按一下 **[確定** ，然後 **選取建立**。
 
-6. 選取**作業**，然後**** 選取Azure AD群組以包含目標裝置的安全性群組，如下圖所示。 按一下 [儲存]****。
+6. 選取**作業**，Azure AD**** 選取包含您目標裝置的安全性群組，如下圖所示。 按一下 [儲存]****。
 
    :::image type="content" alt-text="指派安全性群組。" source="images/df2a.png":::
 
@@ -143,14 +146,14 @@ DFCI 包含一組簡化的 UEFI 設定策略，可鎖定硬體層級的裝置，
 
 | 裝置管理目標                        | 組組步驟                                                                           |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| 封鎖當地使用者變更 UEFI 設定 | 在**安全性功能>允許當地使用者變更 UEFI 設定**，**選取無。**              |
+| 封鎖當地使用者變更 UEFI 設定 | 在**安全性功能>允許本地使用者變更 UEFI 設定**，**選取無。**              |
 | 停用相機                               | 在 **內建硬體>相機**下，選取已 **停用**。                                       |
 | 停用麥克風和喇叭              | 在 **內建硬體>麥克風和喇**叭下，選取已 **停用**。                      |
 | 停用無線 (藍牙、Wi-Fi)              | 在**內建硬體>無線 (藍牙、Wi-Fi 等...**) ，選取已**停用**。                   |
 | 停用從外部媒體啟動 (USB、SD)     | 在 **內建硬體>啟動選項> USB、SD ** (從外部媒體啟動) ，選取已 **停用**。 |
 
 > [!CAUTION]
-> 停用**無線 (藍牙 Wi-Fi) **設定只能用於有有線乙太網路連接的裝置上。
+> 停用**無線 (藍牙 Wi-Fi) **設定只能用於有有線乙太網路連接的裝置。
  
 > [!NOTE]
 >  Intune 中的 DFCI 包含兩個目前不適用於 Surface 裝置設定： (1) CPU 和 IO 虛擬化，以及 (2) 從網路介面卡停用開機。
@@ -159,13 +162,13 @@ Intune 提供範圍標記以委派系統管理許可權和適用規則來管理�
 
 ## <a name="register-devices-in-autopilot"></a>在 Autopilot 中註冊裝置
 
-如上所述，DFCI 只能用於轉銷商或轉銷商在 Windows Autopilot 中註冊的裝置，且支援 Surface Pro 8、Surface Laptop Studio、Surface Go 3、Surface Pro 7+、Surface Laptop Go、Surface Pro 7，Surface Pro X，Surface Laptop 3。 基於安全性考慮，您無法將裝置「自我布供」到 Autopilot。 若要深入瞭解，請參閱適用于自動[Windows的 Surface 註冊支援](surface-autopilot-registration-support.md)。 
+如上所述，DFCI 只能在轉銷商或轉銷商于 Windows Autopilot 註冊的裝置上，且支援 Surface Pro 8、Surface Laptop Studio、Surface Go 3、Surface Pro 7+、Surface Laptop Go、Surface Pro 7、Surface Pro X，Surface Laptop 3。 基於安全性考慮，您無法將裝置「自我布供」到 Autopilot。 若要深入瞭解，請參閱適用于[Autopilot Windows Surface 註冊支援](surface-autopilot-registration-support.md)。 
 
 ## <a name="manually-sync-autopilot-devices"></a>手動同步處理自動駕駛裝置
 
 雖然 Intune 原則設定通常幾乎會立即採用，但設定在目標裝置上生效之前，可能會延遲 10 分鐘。 在少數情況下，最多可能會延遲 8 小時。 若要確保設定儘快適用， (例如測試案例) ，您可以手動同步處理目標裝置。
 
-- 在 端點管理員的 devicemanagement.microsoft.com，前往 > 裝置註冊> Windows自動> Windows裝置，然後選取**同步****。**
+- 在 端點管理員的 devicemanagement.microsoft.com，請前往 > 裝置註冊> Windows自動> Windows裝置，然後選取**同步****。**
 
  詳情請參閱手動同步[Windows您的裝置](/intune-user-help/sync-your-device-manually-windows)。
 
@@ -200,7 +203,7 @@ Intune 提供範圍標記以委派系統管理許可權和適用規則來管理�
 1. 從 Intune 淘汰裝置：
     1. 在 端點管理員的 devicemanagement.microsoft.com，選擇 **>所有裝置**。 選取您想要淘汰的裝置，然後選擇淘汰 **/抹掉。** 若要深入瞭解，請參閱使用 [抹](/intune/remote-actions/devices-wipe)除、淘汰或手動取消註冊裝置來移除裝置。 
 2. 從 Intune 刪除 Autopilot 註冊：
-    1.  選擇**裝置註冊> Windows裝置>註冊**。
+    1.  選擇**裝置註冊> Windows註冊>裝置**。
     2. 在 Windows裝置下，選擇您想要刪除的裝置，**然後選擇刪除。**
 3. 連線 Surface 品牌乙太網路介面卡將裝置連接到有線網際網路。 重新開機裝置並開啟 UEFI 功能表 (按住放大按鈕，同時按並放開電源按鈕) 。
 4. 選取 **管理>從>重新設定** ，然後選擇 **退出宣告。**

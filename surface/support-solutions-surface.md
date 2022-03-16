@@ -15,17 +15,20 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 65cd0822f9419d2a2b678c598681891539855c9f
-ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 0308c2e721e441ebb354e6cfb8a22a5a5a26d268
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "11939524"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449446"
 ---
 # <a name="top-support-solutions-for-surface-devices"></a>Surface 裝置的最佳支援解決方案
 
 > [!Note]
-> **家用使用者**：本文僅供 IT 專業人員和技術支援人員使用，且僅適用于 Surface 裝置。 如果您正在尋找有關家用裝置問題之協助，請參閱 [Surface Devices Help](https://support.microsoft.com/products/surface-devices)。
+> **家用使用者**：本文僅供 IT 專業人員和技術支援人員使用，並僅適用于 Surface 裝置。 如果您正在尋找家用裝置問題之協助，請參閱 [Surface Devices 協助](https://support.microsoft.com/products/surface-devices)。
 
 這些是 Microsoft 支援解決方案，適用于您可能在企業使用 Surface 裝置時可能會遇到的常見問題。 如果此處未列出您的問題， [請聯絡 Surface 支援服務](contact-surface-support.md?tabs=online)。
 
@@ -51,7 +54,7 @@ Microsoft 會定期發行 Surface 裝置的更新及解決方案。 為了確保
 
 ## <a name="screen-cracked-or-scratched-issues"></a>螢幕破裂或刮痕問題
 
-- [連絡 Surface 支援服務](contact-surface-support.md?tabs=online)
+- [連絡 Surface 支援](contact-surface-support.md?tabs=online)
 
 ## <a name="surface-power-or-battery-issues"></a>Surface Power 或電池問題
 
@@ -68,7 +71,7 @@ Microsoft 會定期發行 Surface 裝置的更新及解決方案。 為了確保
 
 ## <a name="deployment-issues"></a>部署問題
 
-- [當您在模型 1796 或 Windows 上部署Surface Pro時找不到 DISK0 Surface Laptop](https://support.microsoft.com/help/4046108)
-- [Surface Pro型號 1796 和 Surface Laptop 1TB 會顯示兩個磁片磁碟機](https://support.microsoft.com/help/4046105)
+- [當您在模型 1796 或 Windows上Surface Pro時找不到 DISK0 Surface Laptop](https://support.microsoft.com/help/4046108)
+- [Surface Pro 1796 和 1TB Surface Laptop顯示兩個磁片磁碟機](https://support.microsoft.com/help/4046105)
 - [系統 SKU 參照](surface-system-sku-reference.md)
 

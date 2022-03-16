@@ -10,12 +10,12 @@ ms.date: 01/18/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 8edc5bf1da384809e38451c9d164503bfcc10241
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: 01ee3530f7d9db9947d4be6395660170cfb30142
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911768"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448706"
 ---
 # <a name="whats-new-in-windows-10-version-1703-for-microsoft-surface-hub"></a>Windows10 (版本 1703) 中 Microsoft Surface Hub 的新增功能有哪些？
 
@@ -53,15 +53,6 @@ Windows 10 版本 1703 (也稱為 Creators Update)，為 Microsoft Surface Hub �
 ## <a name="miracast-on-your-existing-wireless-network-or-lan"></a>您現有無線網路或區域網路上的 Miracast 
 
 Microsoft 擴充了[透過區域網路傳送 Miracast 串流的能力](miracast-over-infrastructure.md)，而不是透過直接的無線連結。 
-    
-## <a name="cloud-recovery"></a>雲端復原
-
-當您重設 Surface Hub 裝置時，您現在可以從雲端下載並安裝作業系統的原廠組建。 [深入了解雲端復原。](device-reset-surface-hub.md#cloud-recovery)
-
->[!NOTE]
->如果您使用的是 Proxy 伺服器，則無法使用雲端復原。
-    
-![安裝。](images/reinstall.png)
     
 ## <a name="end-session"></a>結束工作階段
 

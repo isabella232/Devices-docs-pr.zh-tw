@@ -7,16 +7,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/23/2021
+ms.date: 02/15/2022
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 3bc5d7e26d565ca26ec23eefaee406c47eac395e
-ms.sourcegitcommit: 2493c83b1b3cb28b0836926cd406d4b28cd6abfa
+ms.openlocfilehash: 6963a51b492bfbdc09da5ec667d091d62eed4569
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "12094456"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449236"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>作業系統基本資訊 (Surface Hub)
 
@@ -24,7 +24,7 @@ Surface Hub 作業系統 Windows 10 團隊版是以 Windows 10 企業版為基�
 
 從 2020 年 9 月開始，客戶可選擇在 2S Windows 10 專業版 Enterprise移Surface Hub移。 若要深入了解，請參閱下列主題：
 
-- [于 2 Windows 10 專業版 Enterprise 宣佈Surface Hub可用](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
+- [于 2 日宣佈Windows 10 專業版Enterprise Surface Hub可用](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)。
 
 - [移轉到 Windows 10 專業版或 Surface Hub 2 企業版](surface-hub-2s-migrate-os.md)
 
@@ -67,7 +67,7 @@ Surface Hub 是針對在公共空間 (例如會議室) 使用所設計。 與 Wi
 
 儲存在這些本機目錄中的檔案會在使用者按下 **\[結束工作階段\]** 時刪除。 若要儲存會議期間建立的內容，使用者應將檔案儲存到 USB 磁碟機或 OneDrive。
 
-*可能會影響的組織原則：-* 與存取許可權和檔案和資料夾擁有權相關的原則不適用於Surface Hub。 使用者無法瀏覽及儲存檔案到系統目錄與網路資料夾。
+*可能會影響的組織原則：*- 與存取許可權和檔案和資料夾擁有權相關的原則不適用於Surface Hub。 使用者無法瀏覽及儲存檔案到系統目錄與網路資料夾。
 
 ## <a name="applications"></a>應用程式
 
@@ -147,11 +147,22 @@ Surface Hub 會實作這些 Windows 10 安全性功能：
 
 ### <a name="administrative-features"></a>管理功能
 
-Surface Hub 不支援 Windows 10 企業版中的管理功能，例如 Microsoft Management Console、執行、命令提示字元、PowerShell、登錄編輯程式、事件檢視器，以及工作管理員。 設定應用程式包含 Surface Hub 本機可用的所有系統管理功能。
+系統不支援 Windows 10 企業版 中的管理功能，例如 Microsoft 管理主控台、執行、命令提示、PowerShell、登錄編輯器和工作管理員Surface Hub。 設定應用程式包含 Surface Hub 本機可用的所有系統管理功能。
+
+#### <a name="event-viewer"></a>活動檢視器
+
+Windows 10 團隊版 2020 Update 2 新增 Windows 事件檢視器的支援，與安裝在 Windows 10 專業版 或 Windows 10 企業版 的事件檢視器相同。[ ](/host-integration-server/core/windows-event-viewer1) 
+
+**若要開啟活動檢視器：**
+
+1. 使用系統管理員**認證設定**應用程式。
+2. 選取**更新安全性&**  >  **，** 然後選取活動檢視器**下的開啟。** 
+
+若要深入瞭解，請參閱[Windows檢視器](/host-integration-server/core/windows-event-viewer1)。
 
 ### <a name="remote-management-and-monitoring"></a>遠端管理及監視工具
 
-Surface Hub透過行動裝置管理與 MDM (管理) 管理，例如透過[Azure Monitor](/azure/azure-monitor/) [](/mem/intune/) Microsoft Intune監控。 
+Surface Hub透過行動裝置管理 (MDM) 解決方案 ，Microsoft Intune [Azure 監視器](/azure/azure-monitor/)進行監控。[ ](/mem/intune/) 
 
 *這可能會影響下列組織原則：* 
 

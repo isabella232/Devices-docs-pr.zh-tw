@@ -14,16 +14,19 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 10/12/2020
-ms.openlocfilehash: 9578893ad96d84380adfc038dd42c4791d29c7cd
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: b12704e7e0709e1a6315d0d5e5eb7a68799acfe9
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338276"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449506"
 ---
 # <a name="prepare-surface-deployment-with-microsoft-deployment-toolkit"></a>使用 Microsoft 部署工具組準備 Surface 部署
 
-**套用至**
+**適用於**
 
 - Surface Studio (代) 
 - Surface Pro 4及之後
