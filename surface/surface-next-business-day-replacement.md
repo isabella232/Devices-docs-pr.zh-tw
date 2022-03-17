@@ -13,12 +13,12 @@ appliesto:
 - Surface
 ms.reviewer: irenewhite
 description: 下一個工作日換貨資訊與涵蓋範圍。
-ms.openlocfilehash: ac5b006f2ada1bf27c2df5ff5b8b54ed5fcde149
-ms.sourcegitcommit: a039b4f1b0ef24c7da9edddb10300f158ba86250
+ms.openlocfilehash: a6086b7175b336c45fa56d9388c0fac5f36fe549
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "12053205"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448279"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>下一個工作日換貨資訊與涵蓋範圍
 
@@ -169,6 +169,7 @@ ms.locfileid: "12053205"
 ### <a name="united-kingdom"></a>英國
 
 - 截止時間：12 點 0 分 CET (UTC+1)
+- [次日工作天涵蓋範圍](https://download.microsoft.com/download/a/4/8/a48a3872-f5de-43ac-8a24-564228b9b3bf/NBD%20Coverage%20UK%20Post%20Codes%20022222.xlsx)
 
 #### <a name="united-states"></a>美國 
 

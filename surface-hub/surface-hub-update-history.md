@@ -2,15 +2,20 @@
 title: Surface Hub 更新歷程記錄
 description: Surface Hub 更新歷程記錄
 ms.assetid: d66a9392-2b14-4cb2-95c3-92db0ae2de34
-keywords: null
+keywords: ''
 ms.prod: surface-hub
 ms.sitesec: library
 author: v-miegge
 ms.author: dpandre
 ms.topic: article
 ms.localizationpriority: high
+ms.openlocfilehash: a5556181b6d7642933bcb10c3073ffddc494015f
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449126"
 ---
-
 # <a name="surface-hub-update-history"></a>Surface Hub 更新歷程記錄
 
 Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更新而變得更好。 好消息是，您通常不需要執行任何動作，即可取得最新的 Windows 10 更新 — 系統會在更新可供使用時，自動下載並安裝。
@@ -26,6 +31,19 @@ Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 團隊版 2020 更新 (20H2) 
 
 <details>
+<summary>2022 年 2 月 15 日 - 根據 KB5010415* (作業系統組建 19042.1566) 的團隊版更新</summary>
+
+ 此 Surface Hub 更新包括品質改良與安全性問題修正。 [Windows 10 團隊版 2020 更新 2](surface-hub-2020-update-whats-new.md#windows-10-team-2020-update-2) 中概述了 Surface Hub 的重要更新，同時也包含下列內容：
+
+* 修正了允許在 [裝置帳戶] 設定期間停用 Exchange 服務的問題。
+* 改善使用內部部署 Exchange 信箱時，某些 [裝置帳戶] 設定案例的可靠性。
+* 提高了使用 SurfaceHub CSP 時某些 MDM 原則設定案例的可靠性。
+* 提高了在使用商務用 Skype 時來電案例的可靠性。
+
+如需啟用/停用裝置功能和服務的詳細資訊，請參閱 [Surface Hub 系統管理員指南](/surface-hub/)。 *[KB5010415](https://support.microsoft.com/help/5010415)
+</details>
+
+<details>
 <summary>2022 年 1 月 25 日 - 根據 KB5009596* (作業系統組建 19042.1503) 的團隊版更新</summary>
 
 此 Surface Hub 更新包括品質改良與安全性問題修正。 Surface Hub 的重要更新，尚未於 [[Windows 10 更新記錄]](https://support.microsoft.com/help/4581839/windows-10-update-history) 中概述，包括：
@@ -39,7 +57,18 @@ Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更
 </details>
 
 <details>
-<summary>2021 年 11 月 22 日 - 根據 KB5007253* (作業系統組建 19042.1382) 的團隊版更新</summary>
+<summary>2022 年 1 月 21 日 - 適用於 Surface Hub 2S 的更新</summary>
+
+此更新是 Surface Hub 2S 特有的更新，並提供以下所述的驅動程式和韌體更新：
+
+* Surface UEFI 更新 - 694.3924.768.0
+  * 改善系統安全性與穩定性。
+* Intel(R) Management Engine Interface 驅動程式 - 2120.100.0.1085
+  * 改善系統安全性與穩定性。
+</details>
+
+<details>
+<summary>2021 年 11 月 22 日 - 根據 KB5007253* (作業系統組建 19042.1387) 的團隊版更新</summary>
 
 此 Surface Hub 更新包括品質改良與安全性問題修正。 Surface Hub 的重要更新，尚未於 [[Windows 10 更新記錄]](https://support.microsoft.com/help/4581839/windows-10-update-history) 中概述，包括：
 
@@ -71,7 +100,7 @@ Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更
 <details>
 <summary>2021 年 9 月 1 日 - 根據 KB5005101* (作業系統組建 19042.1202) 的團隊版更新</summary>
 
-此 Surface Hub 更新包括品質改良與安全性問題修正。 [Windows 10 團隊版 2020 更新 1](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/windows-10-team-2020-update-1-released-to-all-surface-hubs/ba-p/2653503) 中概述了 Surface Hub 的重要更新，同時也包含下列內容：
+此 Surface Hub 更新包括品質改良與安全性問題修正。 [Windows 10 團隊版 2020 更新 1](surface-hub-2020-update-whats-new.md#windows-10-team-2020-update-1) 中概述了 Surface Hub 的重要更新，同時也包含下列內容：
 
 * 改善使用內部部署 Exchange 信箱時，某些 [裝置帳戶] 設定案例的可靠性。
 
