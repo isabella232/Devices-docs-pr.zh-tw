@@ -15,21 +15,20 @@ ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 7ead08e49d3eee2d616ac9fcf06b85dd82e136dc
-ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
+ms.openlocfilehash: fa393eca697897ee620732b543ebb6889aa035d1
+ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474730"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "12472572"
 ---
 # <a name="applying-activesync-policies-to-device-accounts-surface-hub"></a>將 ActiveSync 原則套用到裝置帳戶 (Surface Hub)
 
+Windows 10 團隊版 1703 和舊版上的 Surface Hub 使用 ActiveSync 來同步處理郵件&行事曆。
 
-使用 Active Directory 裝置帳戶的 Surface Hub (以網域 **\使用者** 名稱格式) 和內部部署 Exchange 服務在中樞上部署，因此可以使用 ActiveSync 同步處理郵件和日曆。 這讓使用者能夠從 Surface Hub 加入和啟動排程的會議，並讓他們能夠透過電子郵件傳送他們在會議期間製作的任何白板。
+組織中 ActiveSync 原則的Surface Hub需求如下：
 
-為了讓這些功能運作，您必須以下列方式設定適用於組織的 ActiveSync 原則：
-
--   不能有任何會封鎖同步處理 Surface Hub 裝置帳戶所使用之資源信箱的全域原則。 如果有這類封鎖政策，您必須將 Surface Hub 新增為允許的裝置。
+-   沒有任何全域原則會封鎖Surface Hub裝置帳戶所使用之資源信箱的同步處理。 如果有這類封鎖原則，您必須將Surface Hub新增為允許的裝置。
 -   您必須設定行動裝置信箱原則，將 **PasswordEnabled** 設定設為 False。 其他的行動裝置信箱原則設定均與 Surface Hub 不相容。
 
 ## <a name="allowing-the-deviceid"></a>允許 DeviceID
