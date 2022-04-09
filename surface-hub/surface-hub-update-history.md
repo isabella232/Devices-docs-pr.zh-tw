@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: dpandre
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: a5556181b6d7642933bcb10c3073ffddc494015f
-ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.openlocfilehash: 70b052ec9bc87c0062f72e884c17e6be9cdfdbc0
+ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "12449126"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "12472332"
 ---
 # <a name="surface-hub-update-history"></a>Surface Hub 更新歷程記錄
 
@@ -31,9 +31,21 @@ Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 團隊版 2020 更新 (20H2) 
 
 <details>
+<summary>2022 年 3 月 22 日 - 根據 KB5011543* (作業系統組建 19042.1620) 的團隊版更新</summary>
+
+此 Surface Hub 更新包括品質改良與安全性問題修正。 Surface Hub 的重要更新，尚未於 [[Windows 10 更新記錄]](https://support.microsoft.com/help/4581839/windows-10-update-history) 中概述，包括：
+
+* 新增讓系統管理員 [安裝漸進式 Web 應用程式](install-pwa-surface-hub.md) (PBA) 的能力。
+* 解決已加入 Azure AD 或使用本機系統管理員帳戶設定的 Surface Hub 可能無法同步其電腦時鐘的問題。
+* 解決以驗證器應用程式一起使用會議和檔案登入建議時，可能會強制使用者重複登入程序的問題。
+ 
+如需啟用/停用裝置功能和服務的詳細資訊，請參閱 [Surface Hub 系統管理員指南](/surface-hub/)。 *[KB5011543](https://support.microsoft.com/help/5011543)
+</details>
+
+<details>
 <summary>2022 年 2 月 15 日 - 根據 KB5010415* (作業系統組建 19042.1566) 的團隊版更新</summary>
 
- 此 Surface Hub 更新包括品質改良與安全性問題修正。 [Windows 10 團隊版 2020 更新 2](surface-hub-2020-update-whats-new.md#windows-10-team-2020-update-2) 中概述了 Surface Hub 的重要更新，同時也包含下列內容：
+此 Surface Hub 更新包括品質改良與安全性問題修正。 [Windows 10 團隊版 2020 更新 2](surface-hub-2020-update-whats-new.md#windows-10-team-2020-update-2) 中概述了 Surface Hub 的重要更新，同時也包含下列內容：
 
 * 修正了允許在 [裝置帳戶] 設定期間停用 Exchange 服務的問題。
 * 改善使用內部部署 Exchange 信箱時，某些 [裝置帳戶] 設定案例的可靠性。
@@ -114,7 +126,7 @@ Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更
 
 * 更新至「收集記錄」功能，以 csv 格式包含 Windows 診斷資料。
 * 可確保 [結束工作階段] 清理完全移除與 Edge Chromium 相關的所有資料之修正。
-* 改善使用 [驗證器] 應用程式時，加入 Azure AD 的 Surface Hub 的某些案例。
+* 使用驗證器應用程式時，改善一些與 Azure AD 連結的 Surface Hub 個人化登入案例。
 
 如需啟用/停用裝置功能和服務的詳細資訊，請參閱 [Surface Hub 系統管理員指南](/surface-hub/)。 *[KB5004296](https://support.microsoft.com/help/5004296)
 </details>
@@ -161,7 +173,7 @@ Windows 10 是專為服務所設計，這表示它會自動透過定期軟體更
 此 Surface Hub 更新包括品質改良與安全性問題修正。 Surface Hub 的重要更新，尚未於 [[Windows 10 更新記錄]](https://support.microsoft.com/help/4581839/windows-10-update-history) 中概述，包括：
 
 * 當 [裝置帳戶] 的 UPN 不等於其 SMTP 時，允許與 Exchange 進行行事曆同步處理的修正。
-* 新增系統管理員在與 Exchange 進行行事曆同步處理期間，停用新式驗證的能力。
+* 新增讓系統管理員在行事曆與 Exchange 同步處理的期間，[停用新式驗證的使用](/windows/client-management/mdm/surfacehub-csp#deviceaccount-exchangemodernauthenabled) 的能力。
 * 確保啟用「使用裝置帳號憑證」功能之後，不會提示 Surface Hub 使用者輸入 Proxy 認證。
 * 解決若使用需要驗證的 Proxy 時，Windows Update 和 Store 更新檢查永遠不會完成的問題。
 * 改善有線內接案例期間，[連接應用程式] 的可靠性。

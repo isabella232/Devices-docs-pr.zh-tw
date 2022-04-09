@@ -15,12 +15,12 @@ audience: itpro
 appliesto:
 - Windows 10
 - Windows 11
-ms.openlocfilehash: 54a6fd560b16d29e8a155bcf24efd814a6d5bf77
-ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.openlocfilehash: 37cea81c7d23b2b00e5d7d1136963fae55d9c193
+ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "12449616"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "12472432"
 ---
 # <a name="surface-driver-and-firmware-lifecycle-for-windows-based-devices"></a>適用於 Windows 型裝置的 Surface 驅動程式與韌體生命週期
  
@@ -77,6 +77,7 @@ Surface Driver 和韌體生命週期由兩部分組成：裝置驅動程式和�
 | Surface Pro 8                      | 2021 年 10 月 5 日   |2025 年 10 月 5 日|
 | Surface Laptop Studio              | 2021 年 10 月 5 日   |2025 年 10 月 5 日|
 | Surface Go 3                       | 2021 年 10 月 5 日   |2025 年 10 月 5 日|
+| Surface Laptop SE                  | 2022 年 1 月 11 日  |2026 年 1 月 11 日|
 
  **1.** *表示先前宣告的韌體/驅動程式維護支援日期結束的裝置。*
 
