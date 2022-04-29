@@ -17,12 +17,12 @@ ms.date: 12/08/2021
 appliesto:
 - Windows 10
 - Windows 11
-ms.openlocfilehash: 9e08b3dd804b8b4ac6e2ee4dd4041ed2e684d5d7
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 5e54a56a49e16ce23d760337f5ae8a1d76ab7728
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472642"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497746"
 ---
 # <a name="microsoft-surface-enterprise-management-mode-semm"></a>MICROSOFT Surface Enterprise管理模式 (SEMM) 
 
@@ -264,7 +264,7 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 4. 請確定您的許可權已設定為允許腳本執行。 根據預設，除非您修改執行原則，否則腳本會遭到封鎖而無法執行。 若要深入瞭解，請 [參閱關於執行原則](/powershell/module/microsoft.powershell.core/about/about_execution_policies)。
 5. 在命令提示字元中，輸入腳本的完整路徑，然後按 **Enter**。 腳本會建立名為 TempOwner.pfx 的示範憑證。
 
-或者，您可以使用 PowerShell 建立自己的自我簽署憑證。 如需詳細資訊，請 [參閱 New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate)。
+或者，您可以使用 PowerShell 建立自己的自我簽署憑證。 如需詳細資訊，請 [參閱 New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps&preserve-view=true)。
 
 >[!NOTE]
 >對於在其 PKI 基礎結構中使用離線根目錄的組織，必須在連線到根 CA 的環境中執行 Microsoft Surface UEFI 設定程式，才能驗證 SEMM 憑證。 Microsoft Surface UEFI Configurator 所產生的套件可以當做檔案傳輸，因此可以使用抽取式儲存體在離線網路環境外傳輸，例如 USB 搖桿。
@@ -347,7 +347,7 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 
 此版本的 SEMM 包括：
 
-- 支援使用 Intel 處理器Surface Pro 7、Surface Pro X 和 Surface Laptop 3 13.5" 和 15" 模型。
+- 支援使用 Intel 處理器Surface Pro 7、Surface Pro X 和 Surface Laptop 3 13.5「 和 15」 模型。
     >[!NOTE]
     >不支援 Surface Laptop 3 15 吋 AMD 處理器。
 - 支援電源喚醒功能。

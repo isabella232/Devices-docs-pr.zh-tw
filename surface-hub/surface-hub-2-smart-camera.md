@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 03/16/2022
 ms.localizationpriority: Medium
-ms.openlocfilehash: 9cdf7d2d5b6f1f6a99d2f3caa1168804c2110159
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 1b510d98cf65b5b1594d300a3bcf6c928e1f27e2
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472676"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497516"
 ---
 # <a name="install-and-manage-surface-hub-2-smart-camera"></a>安裝和管理 Surface Hub 2 智慧相機
 
@@ -35,7 +35,7 @@ Surface Hub 2 Smart Camera1 <sup> </sup> 是專為混合式小組所設計，並
 若要深入瞭解，請參閱[Surface Hub更新歷程記錄](surface-hub-update-history.md)。
 
 > [!NOTE]
-> 移轉的 Surface Hub 不需要額外的更新，即可執行Windows 10或Windows 11 專業版/Enterprise。
+> 移轉的 Surface Hub 不需要額外的更新，即可執行 Windows 10/11 Pro或Enterprise。
 
 ## <a name="install-smart-camera"></a>安裝智慧相機
 
@@ -104,4 +104,4 @@ Surface Hub 2 Smart Camera1 <sup> </sup> 是專為混合式小組所設計，並
 
 ### <a name="references"></a>參考
 
-1. Surface Hub 2 智慧相機，自 2022 年 3 月 16 日起分別銷售，可動態調整遠端參與者的視訊摘要。 從 2022 年 5 月開始，Surface Hub 2 智慧相機會包含在Surface Hub 2S 85" 的方塊中。
+1. Surface Hub 2 智慧相機，自 2022 年 3 月 16 日起分別銷售，可動態調整遠端參與者的視訊摘要。 從 2022 年 5 月開始，Surface Hub 2 智慧相機會包含在Surface Hub 2S 85「 的方塊中。

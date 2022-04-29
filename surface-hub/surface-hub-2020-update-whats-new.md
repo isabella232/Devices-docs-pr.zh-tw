@@ -11,16 +11,16 @@ audience: Admin
 ms.topic: article
 ms.date: 02/15/2022
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6a35783c08fdc4da3b3c7aabcd99da385c292d24
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 995766eb216051de270a387c15c96ee42dd008a3
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472532"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497956"
 ---
 # <a name="whats-new-in-windows-10-team-2020-updates"></a>Windows 10 團隊版 2020 更新的新功能
 
-Surface Hub提供新功能的定期更新所帶來的好處。 2020 Update (20H2 會) Windows 10 團隊版，後續更新 1 & Update 2，提供裝置部署和管理能力的重大改善，以及最新的Windows 10功能。
+Surface Hub提供新功能的定期更新所帶來的好處。 2020 Update (20H2) Windows 10 團隊版，後續更新 1 & Update 2，提供裝置部署和管理能力的重大改善，以及最新的Windows功能。
 
 ## <a name="windows-10-team-2020-update-2"></a>Windows 10 團隊版 2020 Update 2 
 
@@ -38,7 +38,7 @@ AI 支援的 Surface Hub 2 智慧相機已針對混合式小組優化，可讓�
 
 ### <a name="ease-of-access-updates"></a>輕鬆存取更新
 
-使用者可以在Surface Hub會話期間調整 [輕鬆存取] 設定，並關閉應用程式，就像在其他版本的Windows 10一樣。 
+使用者可以在Surface Hub會話期間調整 [輕鬆存取] 設定，並關閉應用程式，就像在其他版本的Windows 10或Windows 11一樣。 
 
 - **輕鬆存取**。 使用者可以在不登入的情況下調整下列設定：顯示器、文字游標、放大鏡、高對比、朗讀程式、隱藏式輔助字幕和鍵盤。 
 - **應用程式的熟悉 UI**。 使用者可以選取應用程式右上角的 [關閉] 按鈕，以關閉Surface Hub上的應用程式。 這可讓您將應用程式拖曳到Surface Hub顯示器的底部，藉此關閉應用程式的需求。  (注意：這項功能將在 Edge 瀏覽器上作為下一個 Edge 更新的一部分提供，排程為 2022 年 3 月。)  
